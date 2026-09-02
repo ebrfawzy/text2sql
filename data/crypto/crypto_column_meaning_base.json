@@ -1,0 +1,202 @@
+{
+  "crypto|users|usersnode": "A BIGSERIAL primary key uniquely identifying each user (e.g., 1001).",
+  "crypto|users|userstamp": "A CHAR(36) UUID linking to external/client user references (e.g., 'e3bd1f12-3e93-4b3c-a9f3-84be2593a6d7').",
+  "crypto|users|acctscope": "An enum (AcctScope_enum) indicating the account scope (Margin, Spot, Options, Futures).",
+  "crypto|orders|orderspivot": "A BIGSERIAL primary key uniquely identifying each order (e.g., 15002).",
+  "crypto|orders|recordvault": "A CHAR(36) unique order reference (e.g., '58d9c141-7f13-4cd3-ba93-f520bf922f7c').",
+  "crypto|orders|timecode": "A TIMESTAMP recording order creation (e.g., '2025-05-10 13:45:00').",
+  "crypto|orders|exchspot": "A CHAR(10) referencing the exchange ID (e.g., 'BINANCE').",
+  "crypto|orders|mktnote": "A VARCHAR(30) naming the market pair or trading symbol (e.g., 'BTC/USDT').",
+  "crypto|orders|orderstamp": "A CHAR(36) external or client order ID (e.g., 'CL-3c4a8f89-9aed').",
+  "crypto|orders|userlink": "A CHAR(36) FK to Users(UserStamp), linking this order to its owner.",
+  "crypto|orders|ordertune": "An enum (OrderTune_enum) describing order type (Stop, Market, Limit, StopLimit).",
+  "crypto|orders|dealedge": "An enum (DealEdge_enum) indicating side (Sell, Buy).",
+  "crypto|orders|dealquote": "A DECIMAL(12,3) capturing the limit or stop price (e.g., '27800.500').",
+  "crypto|orders|dealcount": "A NUMERIC(12,4) for the order quantity (e.g., '0.1250').",
+  "crypto|orders|notionsum": "A DECIMAL(12,3) notional value (price × quantity) (e.g., '3475.063').",
+  "crypto|orders|orderflow": "An enum (OrderFlow_enum) describing the status (New, PartiallyFilled, Cancelled, Filled).",
+  "crypto|orders|timespan": "An enum (TimeSpan_enum) for time-in-force (IOC, GTC, GTD, FOK).",
+  "crypto|orders|orderbase": "An enum (OrderBase_enum) indicating how the order was placed (API, Web, Mobile, Bot).",
+  "crypto|orders|clientmark": "A VARCHAR(80) holding an optional client-supplied tag (e.g., 'myXtrOrder001').",
+  "crypto|orders|createspot": "A TIMESTAMP showing when the order was first persisted (e.g., '2025-05-10 13:45:00').",
+  "crypto|orders|updatespot": "A TIMESTAMP noting the last update to this order (e.g., '2025-05-10 14:02:15').",
+  "crypto|orderexecutions|orderexecmark": "A BIGSERIAL primary key for each fill/execution (e.g., 210345).",
+  "crypto|orderexecutions|fillcount": "A DECIMAL(8,4) showing how many units were filled (e.g., '0.0500').",
+  "crypto|orderexecutions|remaincount": "A NUMERIC(8,4) showing how many units remain unfilled (e.g., '0.0750').",
+  "crypto|orderexecutions|fillquote": "A DECIMAL(12,3) capturing the fill price (e.g., '27699.150').",
+  "crypto|orderexecutions|fillsum": "A DECIMAL(12,3) notional of the fill (e.g., '1384.958').",
+  "crypto|orderexecutions|expirespot": "A TIMESTAMP if the partial fill or order slice expires (e.g., '2025-05-10 15:00:00').",
+  "crypto|orderexecutions|cancelnote": "An enum (CancelNote_enum) describing cancel reason (Expired, InsufficientFunds, UserRequested).",
+  "crypto|orderexecutions|exectune": "An enum (ExecTune_enum) indicating execution style (Maker, Taker).",
+  "crypto|orderexecutions|ordersmark": "A CHAR(36) referencing Orders(RecordVault) to link back to the original order.",
+  "crypto|fees|feesnode": "A BIGSERIAL primary key for fee records (e.g., 30012).",
+  "crypto|fees|feerange": "An enum (FeeRange_enum) describing the user's fee tier (Tier4, Tier1, Tier3, Tier2).",
+  "crypto|fees|feerate": "A DECIMAL(8,5) capturing fee percentage (e.g., '0.00050').",
+  "crypto|fees|feetotal": "A DECIMAL(12,6) total fee charged (e.g., '0.250000').",
+  "crypto|fees|feecoin": "An enum (FeeCoin_enum) for the currency used to pay fees (USDC, USD, USDT).",
+  "crypto|fees|rebrate": "A DECIMAL(8,5) capturing the maker rebate rate (e.g., '0.00015').",
+  "crypto|fees|rebtotal": "A DECIMAL(12,6) total rebate (e.g., '0.075000').",
+  "crypto|fees|orderslink": "A CHAR(36) referencing Orders(RecordVault), linking fees to a specific order.",
+  "crypto|marketdata|marketdatanode": "A BIGSERIAL PK identifying a market data snapshot (e.g., 987654).",
+  "crypto|marketstats|marketstatsmark": "A BIGSERIAL PK for market stats (e.g., 112233).",
+  "crypto|marketstats|fundrate": "A DECIMAL(6,4) funding rate for futures (e.g., '0.0100').",
+  "crypto|marketstats|fundspot": "A TIMESTAMP for next or recent funding event (e.g., '2025-05-11 08:00:00').",
+  "crypto|marketstats|openstake": "A NUMERIC(15,5) open interest (e.g., '125000.50000').",
+  "crypto|marketstats|volday": "A DOUBLE PRECISION showing 24h volume (e.g., 1204567.8).",
+  "crypto|marketstats|tradeday": "An INTEGER for 24h trade count (e.g., 34567).",
+  "crypto|marketstats|tnoverday": "A DECIMAL(12,3) 24h turnover or notional (e.g., '356789.230').",
+  "crypto|marketstats|priceshiftday": "A DECIMAL(12,3) net 24h price change (e.g., '-350.250').",
+  "crypto|marketstats|highspotday": "A DECIMAL(12,3) 24h high (e.g., '28100.000').",
+  "crypto|marketstats|lowspotday": "A DECIMAL(12,3) 24h low (e.g., '27200.000').",
+  "crypto|marketstats|vwapday": "A DECIMAL(12,3) volume-weighted average price (e.g., '27700.125').",
+  "crypto|marketstats|mktsize": "A NUMERIC(13,3) total market cap or size (e.g., '125000000.000').",
+  "crypto|marketstats|circtotal": "A NUMERIC(13,3) circulating supply (e.g., '18000000.000').",
+  "crypto|marketstats|totsupply": "A NUMERIC(13,3) total supply (e.g., '21000000.000').",
+  "crypto|marketstats|maxsupply": "A NUMERIC(13,3) maximum supply if applicable (e.g., '21000000.000').",
+  "crypto|marketstats|mkthold": "A DECIMAL(13,3) market dominance or share (e.g., '45.000').",
+  "crypto|marketstats|traderank": "An INTEGER rank for volume or liquidity (e.g., 2).",
+  "crypto|marketstats|liquidscore": "A DECIMAL(8,2) liquidity measure (e.g., '85.20').",
+  "crypto|marketstats|volmeter": "A DECIMAL(8,2) volatility or fluctuation rating (e.g., '35.50').",
+  "crypto|marketstats|mdlink": "A BIGINT FK to MarketData(MarketDataNode), associating stats with a snapshot.",
+  "crypto|analyticsindicators|analyticsindicatorsnode": "A BIGSERIAL PK for analytics records (e.g., 99999).",
+  "crypto|analyticsindicators|mdataref": "A BIGINT FK referencing MarketData(MarketDataNode).",
+  "crypto|analyticsindicators|mstatsref": "A BIGINT FK referencing MarketStats(MarketStatsMark).",
+  "crypto|riskandmargin|riskandmarginpivot": "A BIGSERIAL PK for risk/margin records (e.g., 444444).",
+  "crypto|riskandmargin|ordervault": "A CHAR(36) FK referencing Orders(RecordVault).",
+  "crypto|accountbalances|accountbalancesnode": "A BIGSERIAL PK for each balance record (e.g., 88888).",
+  "crypto|accountbalances|walletsum": "A DECIMAL(12,3) total wallet balance (e.g., '1500.500').",
+  "crypto|accountbalances|availsum": "A DECIMAL(12,3) freely available portion (e.g., '1000.250').",
+  "crypto|accountbalances|frozensum": "A DECIMAL(12,3) locked/frozen portion (e.g., '500.250').",
+  "crypto|accountbalances|margsum": "A DECIMAL(12,3) margin account balance (e.g., '2000.000').",
+  "crypto|accountbalances|unrealline": "A DOUBLE PRECISION unrealized PNL (e.g., 120.75).",
+  "crypto|accountbalances|realline": "A DOUBLE PRECISION realized PNL (e.g., -45.25).",
+  "crypto|accountbalances|usertag": "A CHAR(36) FK referencing Users(UserStamp).",
+  "crypto|systemmonitoring|systemmonitoringpivot": "A BIGSERIAL PK for system monitoring info (e.g., 56789).",
+  "crypto|systemmonitoring|apireqtotal": "An INTEGER counting total API requests in a window (e.g., 45230).",
+  "crypto|systemmonitoring|apierrtotal": "An INTEGER total of API errors (e.g., 123).",
+  "crypto|systemmonitoring|apilatmark": "A REAL capturing average API latency (e.g., 150.2).",
+  "crypto|systemmonitoring|wsstate": "An enum (WSState_enum) describing websocket state (Connected, Disconnected).",
+  "crypto|systemmonitoring|rateremain": "A SMALLINT for remaining requests before rate limit (e.g., 75).",
+  "crypto|systemmonitoring|lastupdnote": "A VARCHAR(60) short note on last system update (e.g., 'AutoScale triggered').",
+  "crypto|systemmonitoring|seqcode": "A VARCHAR(60) sequence/version code for real-time updates (e.g., 'seq-0012').",
+  "crypto|systemmonitoring|slipratio": "A DECIMAL(12,3) average slippage measure (e.g., '0.250').",
+  "crypto|systemmonitoring|exectimespan": "A DECIMAL(8,2) typical order execution time in ms or s (e.g., '12.50').",
+  "crypto|systemmonitoring|queueline": "An INTEGER tracking queued tasks or orders (e.g., 45).",
+  "crypto|systemmonitoring|mkteffect": "A REAL approximating internal market impact (e.g., 1.2).",
+  "crypto|systemmonitoring|priceeffect": "A REAL approximating net price improvement (e.g., 0.4).",
+  "crypto|systemmonitoring|aitrack": "A BIGINT FK to AnalyticsIndicators(AnalyticsIndicatorsNode), linking to advanced analytics.",
+  "crypto|riskandmargin|risk_margin_profile": {
+    "column_meaning": "JSONB column. Bundles leverage settings, margin thresholds, liquidation levels, iceberg layout, multifaceted risk labels, position sizing, margin‑call figures, and collateral details into one field for rapid risk evaluation.",
+    "fields_meaning": {
+      "leverage": {
+        "margform": "An enum (MargForm_enum) for margin mode (Isolated, Cross).",
+        "levscale": "An enum (LevScale_enum) for leverage (1, 2, 3, 5, 10, 20, 50, 100)."
+      },
+      "margin_thresholds": {
+        "inithold": "A DECIMAL(12,3) initial margin required (e.g., '500.250').",
+        "mainthold": "A DECIMAL(12,3) maintenance margin threshold (e.g., '300.125')."
+      },
+      "price_levels": {
+        "liqquote": "A NUMERIC(12,3) liquidation price estimate (e.g., '25000.750').",
+        "stopquote": "A NUMERIC(12,3) stop price (e.g., '27000.000').",
+        "trigquote": "A DECIMAL(12,3) advanced trigger price (e.g., '26950.250').",
+        "traildiff": "A DECIMAL(12,3) trailing delta (e.g., '150.500')."
+      },
+      "iceberg": {
+        "icebcount": "A DOUBLE PRECISION iceberg hidden portion (e.g., 3.25).",
+        "viscount": "A DOUBLE PRECISION visible portion (e.g., 1.75)."
+      },
+      "risk_factors": {
+        "liqfactor": "A VARCHAR(20) label for liquidation risk (e.g., 'HighRisk').",
+        "cpfactor": "A VARCHAR(30) label for counterparty risk (e.g., 'Tier2Counterparty').",
+        "setfactor": "A VARCHAR(30) settlement risk label (e.g., 'DailySettle').",
+        "custfactor": "A VARCHAR(30) custody risk label (e.g., 'ColdStorage').",
+        "netfactor": "A VARCHAR(30) network risk label (e.g., 'ChainCongestion').",
+        "regfactor": "A VARCHAR(30) regulatory risk label (e.g., 'RestrictedRegion')."
+      },
+      "position": {
+        "poscount": "A DECIMAL(12,3) position size in base units (e.g., '0.300').",
+        "possum": "A DECIMAL(12,3) notional value of position (e.g., '8100.000').",
+        "posedge": "An enum (PosEdge_enum) for position direction (Short, Long).",
+        "posmagn": "An enum (PosMagn_enum) representing position leverage (1, 2, 3, 5, 10, 20, 50, 100).",
+        "posriskrate": "A DECIMAL(5,3) position risk ratio (e.g., '0.455')."
+      },
+      "margin_rates": {
+        "margrate": "A DECIMAL(5,3) margin ratio (e.g., '0.300').",
+        "margcallquote": "A DECIMAL(12,3) margin-call trigger price (e.g., '25500.250').",
+        "bkptquote": "A DECIMAL(12,3) bankruptcy or forced liquidation price (e.g., '25000.000')."
+      },
+      "collateral": {
+        "collrate": "A DECIMAL(5,3) collateral ratio (e.g., '0.600').",
+        "collsum": "A DECIMAL(12,3) collateral amount posted (e.g., '5000.000').",
+        "collcoin": "An enum (CollCoin_enum) referencing collateral currency (USDT, USDC, BTC, ETH).",
+        "insfundshare": "A DECIMAL(12,3) portion allocated from the insurance fund (e.g., '50.000')."
+      }
+    }
+  },
+  "crypto|marketdata|quote_depth_snapshot": {
+    "column_meaning": "JSONB column. Captures a full market‑microstructure snapshot—best quotes, size, depth, spreads, and derived mid/mark/index prices—inside a single JSONB column.",
+    "fields_meaning": {
+      "metadata": {
+        "exchnote": "A CHAR(10) for exchange code (e.g., 'FTX').",
+        "mktcombo": "A VARCHAR(30) naming the trading pair (e.g., 'ETH/USDT').",
+        "timetrack": "A TIMESTAMP noting when data was recorded (e.g., '2025-05-10 13:45:30')."
+      },
+      "quotes": {
+        "bidquote": "A DECIMAL(12,3) best bid price (e.g., '27550.250').",
+        "askquote": "A DECIMAL(12,3) best ask price (e.g., '27555.100').",
+        "midquote": "A DECIMAL(12,3) midpoint price (e.g., '27552.675').",
+        "markquote": "A DECIMAL(12,3) reference 'mark' price for derivatives (e.g., '27553.000').",
+        "indexquote": "A DECIMAL(12,3) index price if used (e.g., '27560.125')."
+      },
+      "depth": {
+        "bidunits": "A NUMERIC(12,4) quantity at best bid (e.g., '12.5000').",
+        "askunits": "A NUMERIC(12,4) quantity at best ask (e.g., '8.0000').",
+        "biddepth": "A REAL summarizing deeper bid liquidity (e.g., 56.7).",
+        "askdepth": "A REAL summarizing deeper ask liquidity (e.g., 42.1)."
+      },
+      "spread": {
+        "spreadband": "A DOUBLE PRECISION for raw spread (e.g., 4.850).",
+        "spreadrate": "A DECIMAL(8,4) spread as a ratio or percentage (e.g., '0.0175')."
+      }
+    }
+  },
+  "crypto|analyticsindicators|market_sentiment_indicators": {
+    "column_meaning": "JSONB column. Aggregates order‑book walls, momentum gauges, technical oscillators, flow imbalances, large‑player activity, and arbitrage signals to streamline advanced analytics and back‑testing.",
+    "fields_meaning": {
+      "walls": {
+        "buywallband": "A DECIMAL(10,3) measuring buy wall distance (e.g., '450.500').",
+        "sellwallband": "A DECIMAL(10,3) measuring sell wall distance (e.g., '480.250')."
+      },
+      "momentum": {
+        "buyforce": "A REAL indicating buy momentum (e.g., 35.7).",
+        "sellforce": "A REAL indicating sell momentum (e.g., 25.4).",
+        "mktfeel": "An enum (MktFeel_enum) for overall sentiment (Bearish, Bullish, Neutral).",
+        "techmeter": "An enum (TechMeter_enum) summarizing technical signals (Buy, Sell, Hold)."
+      },
+      "oscillators": {
+        "rsi14spot": "A NUMERIC(13,3) storing RSI(14) (e.g., '45.123').",
+        "macdtrail": "A NUMERIC(12,3) capturing MACD line (e.g., '1.234').",
+        "bbandspan": "A NUMERIC(12,3) Bollinger Band width (e.g., '150.250')."
+      },
+      "flow": {
+        "flowimbal": "A DOUBLE PRECISION for order-flow imbalance (e.g., 12.5).",
+        "tradeimbal": "A DOUBLE PRECISION for trade-flow imbalance (e.g., -8.75).",
+        "largeflowrate": "A DECIMAL(12,3) fraction of large orders (e.g., '0.125').",
+        "smartforce": "A REAL capturing 'smart money' flows (e.g., 10.2).",
+        "retailflow": "A REAL capturing retail flows (e.g., 5.3).",
+        "instflow": "A REAL capturing institutional flows (e.g., 7.9)."
+      },
+      "big_players": {
+        "whalemotion": "An enum (WhaleMotion_enum) for large trader activity (Low, Medium, High).",
+        "makermotion": "An enum (MakerMotion_enum) for market maker activity (Low, Medium, High)."
+      },
+      "arbitrage": {
+        "arbpotential": "A NUMERIC(10,4) arbitrage potential (e.g., '0.0575').",
+        "xexchband": "A NUMERIC(10,4) cross-exchange spread (e.g., '0.0125').",
+        "fundgap": "A NUMERIC(10,4) funding arbitrage difference (e.g., '0.0050').",
+        "basisgap": "A NUMERIC(10,4) basis spread (futures vs spot) (e.g., '0.0300')."
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+services:
+  text2sql:
+    build: .
+    env_file:
+      - path: .env
+        required: false
+    volumes:
+      # Mount source for live development
+      - ./src:/app/src
+      - ./configs:/app/configs
+
+      # Mount datasets
+      - ./data:/app/data
+
+      # Mount results
+      - ./results:/app/results
+
+      # Persist cache
+      - ./.cache:/app/.cache
+
+    stdin_open: true
+    tty: true
+    ports:
+      - "8000:8000"
+  # Optional: local Postgres for testing
+  # postgres:
+  #   image: postgres:16-alpine
+  #   environment:
+  #     POSTGRES_USER: text2sql
+  #     POSTGRES_PASSWORD: text2sql
+  #     POSTGRES_DB: testdb
+  #   ports:
+  #     - "5432:5432"
+  #   volumes:
+  #     - pgdata:/var/lib/postgresql/data
+
+  # volumes:
+  #   pgdata:

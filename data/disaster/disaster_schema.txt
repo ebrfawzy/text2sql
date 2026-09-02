@@ -1,0 +1,239 @@
+CREATE TABLE "beneficiariesandassessments" (
+beneregistry text(20) NOT NULL,
+benedistref text(20) NULL,
+beneopsref text(20) NULL,
+beneregister TEXT NULL,
+vulnerabilityreview TEXT NULL,
+needsassessstatus TEXT NULL,
+distequityidx real(5,2) NULL,
+benefeedbackscore real(5,2) NULL,
+commengagelvl TEXT NULL,
+localcapacitygrowth TEXT NULL,
+    PRIMARY KEY (beneregistry),
+    FOREIGN KEY (beneopsref) REFERENCES operations(opsregistry),
+    FOREIGN KEY (benedistref) REFERENCES disasterevents(distregistry)
+);
+First 3 rows:
+beneregistry    benedistref    beneopsref    beneregister    vulnerabilityreview    needsassessstatus      distequityidx    benefeedbackscore  commengagelvl    localcapacitygrowth
+BENE_4NZJ       DIST_SB6K7     OPS_76ZOW     Complete        Complete               Due                             0.54                  2.3  High             Limited
+BENE_FJSN       DIST_PGACZ     OPS_QXWBZ     Pending         Complete               Overdue                         0.87                  1.3  Low              Limited
+BENE_RCD9       DIST_HJ1BQ     OPS_GGBVJ     Complete        Pending                Overdue                         0.88                  1.5  Medium           Active
+...
+
+CREATE TABLE "coordinationandevaluation" (
+coordevalregistry text(20) NOT NULL,
+coorddistref text(20) NULL,
+coordopsref text(20) NULL,
+secincidentcount integer(32) NULL,
+safetyranking TEXT NULL,
+accesslimitation TEXT NULL,
+coordeffectlvl TEXT NULL,
+partnerorgs TEXT NULL,
+infosharingstate TEXT NULL,
+reportcompliance real(4,1) NULL,
+dataqualityvalue integer(32) NULL,
+monitoringfreq TEXT NULL,
+evaluationstage TEXT NULL,
+lessonslearnedstage TEXT NULL,
+contingencyplanstage TEXT NULL,
+riskmitigationsteps TEXT NULL,
+insurancescope TEXT NULL,
+compliancestate TEXT NULL,
+auditstate TEXT NULL,
+qualitycontrolsteps TEXT NULL,
+stakeholdersatisf real(3,2) NULL,
+mediacoversentiment TEXT NULL,
+publicperception real(5,1) NULL,
+documentationstate TEXT NULL,
+lessonsrecorded TEXT NULL,
+bestpracticeslisted TEXT NULL,
+improvementrecs TEXT NULL,
+nextreviewdate TEXT NULL,
+notes TEXT NULL,
+    PRIMARY KEY (coordevalregistry),
+    FOREIGN KEY (coordopsref) REFERENCES operations(opsregistry),
+    FOREIGN KEY (coorddistref) REFERENCES disasterevents(distregistry)
+);
+First 3 rows:
+coordevalregistry    coorddistref    coordopsref      secincidentcount  safetyranking    accesslimitation    coordeffectlvl      partnerorgs  infosharingstate      reportcompliance    dataqualityvalue  monitoringfreq    evaluationstage    lessonslearnedstage    contingencyplanstage    riskmitigationsteps    insurancescope    compliancestate    auditstate    qualitycontrolsteps      stakeholdersatisf  mediacoversentiment      publicperception  documentationstate      lessonsrecorded    bestpracticeslisted    improvementrecs  nextreviewdate    notes
+COORD_D3PK           DIST_SB6K7      OPS_76ZOW                      83  Safe             Partial             Medium                        9  Poor                              91                     4  Monthly           Overdue            In Progress            Overdue                 Insufficient           Full              Partial            Completed     Moderate                               4    Positive                              3.5  Partial                               5                      2                 25  2025-04-22        Record item between direction program media bed across.
+COORD_Z5NY           DIST_PGACZ      OPS_QXWBZ                      45  Safe             Partial             Low                          36  Limited                           77.4                   3  Daily             Overdue            Documented             Due                     Insufficient           Partial           Partial            Due           Moderate                               2.1  Positive                              1.5  Partial                              22                      4                 16  2025-03-09
+COORD_67A3           DIST_HJ1BQ      OPS_GGBVJ                      49  Moderate         Severe              Low                          21  Limited                           77.1                   4  Monthly           Due                Pending                Overdue                 Partial                Full              Partial            Completed     Strong                                 3.8  Neutral                               2.1  Incomplete                           19                      4                 26  2025-07-05        Recent discuss part seven fact.
+...
+
+CREATE TABLE "disasterevents" (
+distregistry text(20) NOT NULL,
+timemark text(6) NOT NULL,
+haztype TEXT NOT NULL,
+hazlevel TEXT NULL,
+affectedarea text(100) NULL,
+regiontag text(10) NULL,
+latcoord real(9,6) NULL,
+loncoord real(10,7) NULL,
+impactmetrics TEXT NULL,
+    PRIMARY KEY (distregistry)
+);
+First 3 rows:
+distregistry    timemark                   haztype     hazlevel    affectedarea      regiontag      latcoord    loncoord  impactmetrics
+DIST_SB6K7      2024-12-21 19:49:09.72037  Wildfire    Level 3     East Jeremy       RC7250          51.2036     36.2211  {"population": {"injured": 4524, "missing": 212, "affected": 228943, "displaced": 38806, "casualties": 174}, "damage_level": "Severe", "communication": "Limited", "infrastructure": {"damage_percent": 19.00, "power_outage_percent": 93.200, "water_damage_percent": 77}, "transportation": "Full"}
+DIST_PGACZ      2024-03-13 16:56:26.72037  Earthquake  Level 5     Lake Mariah       RC2170         -89.8906     62.0815  {"population": {"injured": 4304, "missing": 363, "affected": 241273, "displaced": 31578, "casualties": 8}, "damage_level": "Moderate", "communication": "Operational", "infrastructure": {"damage_percent": 68.90, "power_outage_percent": 22.500, "water_damage_percent": 40}, "transportation": "Full"}
+DIST_HJ1BQ      2024-12-08 06:09:09.72037  Earthquake  Level 5     New Kellychester  RC8678          80.0269   -146.007   {"population": {"injured": 4333, "missing": 222, "affected": 389569, "displaced": 66484, "casualties": 355}, "damage_level": "Minor", "communication": "Limited", "infrastructure": {"damage_percent": 79.70, "power_outage_percent": 83.800, "water_damage_percent": 27}, "transportation": "Limited"}
+...
+
+CREATE TABLE "distributionhubs" (
+hubregistry text(20) NOT NULL,
+disteventref text(20) NULL,
+hubcaptons real(11,2) NULL,
+hubutilpct real(7,3) NULL,
+storecapm3 real(9,2) NULL,
+storeavailm3 real(8,3) NULL,
+coldstorecapm3 real(10,3) NULL,
+coldstoretempc real(4,1) NULL,
+warehousestate TEXT NULL,
+invaccpct real(5,2) NULL,
+stockturnrate real(5,2) NULL,
+    PRIMARY KEY (hubregistry),
+    FOREIGN KEY (disteventref) REFERENCES disasterevents(distregistry)
+);
+First 3 rows:
+hubregistry    disteventref      hubcaptons    hubutilpct    storecapm3    storeavailm3    coldstorecapm3    coldstoretempc  warehousestate      invaccpct    stockturnrate
+HUB_HS0I       DIST_SB6K7              5101           9.4         93293            7279               249               6.6  Fair                     91.3             3.31
+HUB_UGZM       DIST_PGACZ              1825          52.3         45603            9050               151               5.9  Excellent                98.4             0.63
+HUB_05ZL       DIST_HJ1BQ              7553          79.7          2908            9396               395               4    Good                     92.9             1.14
+...
+
+CREATE TABLE "environmentandhealth" (
+envhealthregistry text(20) NOT NULL,
+envdistref text(20) NULL,
+envimpactrate TEXT NULL,
+wastemanagementstate TEXT NULL,
+recyclepct real(4,1) NULL,
+carbontons real(10,3) NULL,
+renewenergypct real(5,2) NULL,
+waterqualityindex real(5,2) NULL,
+sanitationcoverage real(7,3) NULL,
+diseaserisk TEXT NULL,
+medicalemergencycapacity TEXT NULL,
+vaccinationcoverage real(6,3) NULL,
+mentalhealthaid TEXT NULL,
+    PRIMARY KEY (envhealthregistry),
+    FOREIGN KEY (envdistref) REFERENCES disasterevents(distregistry)
+);
+First 3 rows:
+envhealthregistry    envdistref    envimpactrate    wastemanagementstate      recyclepct    carbontons    renewenergypct    waterqualityindex    sanitationcoverage  diseaserisk    medicalemergencycapacity      vaccinationcoverage  mentalhealthaid
+ENV_XU4H             DIST_SB6K7    Low              Adequate                        68.4         793.5              43.3                 85.6                  53.5  High           Adequate                                     14.8  Limited
+ENV_NO2C             DIST_PGACZ    Low              Adequate                        62.4         403.3              27.5                 90.9                  65.5  High           Critical                                     77.7  Available
+ENV_U9JR             DIST_HJ1BQ    High             Adequate                        18.1         270.2              27.7                 11.7                   6.6  Medium         Adequate                                     24.6  Limited
+...
+
+CREATE TABLE "financials" (
+financeregistry text(20) NOT NULL,
+findistref text(20) NULL,
+finopsref text(20) NULL,
+budgetallotusd real(16,3) NULL,
+fundsutilpct real(7,3) NULL,
+costbeneusd real(14,3) NULL,
+opscostsusd real(15,2) NULL,
+transportcostsusd integer(32) NULL,
+storagecostsusd real(13,3) NULL,
+personnelcostsusd real(15,4) NULL,
+fundingstate TEXT NULL,
+donorcommitmentsusd real(14,2) NULL,
+resourcegapsusd integer(32) NULL,
+    PRIMARY KEY (financeregistry),
+    FOREIGN KEY (finopsref) REFERENCES operations(opsregistry),
+    FOREIGN KEY (findistref) REFERENCES disasterevents(distregistry)
+);
+First 3 rows:
+financeregistry    findistref    finopsref      budgetallotusd    fundsutilpct    costbeneusd    opscostsusd    transportcostsusd    storagecostsusd    personnelcostsusd  fundingstate      donorcommitmentsusd    resourcegapsusd
+FIN_OMQ1           DIST_SB6K7    OPS_76ZOW         4.22709e+06             9.8         844.12          88256               976202             111548               364821  Critical                  7.69918e+06              95367
+FIN_W50I           DIST_PGACZ    OPS_QXWBZ         3.62534e+06            35            18.76         919777                77922             272650               470856  Adequate                  4.06898e+06             442493
+FIN_5B9D           DIST_HJ1BQ    OPS_GGBVJ         7.98724e+06            42.5         837.72         594338               811935             492222               906025  Adequate                  6.77819e+06             426146
+...
+
+CREATE TABLE "humanresources" (
+hrregistry text(20) NOT NULL,
+hrdistref text(20) NULL,
+hropsref text(20) NULL,
+staffingprofile TEXT NULL,
+    PRIMARY KEY (hrregistry),
+    FOREIGN KEY (hropsref) REFERENCES operations(opsregistry),
+    FOREIGN KEY (hrdistref) REFERENCES disasterevents(distregistry)
+);
+First 3 rows:
+hrregistry    hrdistref    hropsref    staffingprofile
+HR_HV7U       DIST_SB6K7   OPS_76ZOW   {"personnel": {"total": 140, "medical": 52, "security": 90, "logistics": 99, "volunteers": 435}, "readiness": {"ppe_status": "Limited", "comm_equipment": "Sufficient", "training_status": "Complete", "availability_percent": 94.10}}
+HR_ZZXC       DIST_PGACZ   OPS_QXWBZ   {"personnel": {"total": 55, "medical": 30, "security": 53, "logistics": 197, "volunteers": 541}, "readiness": {"ppe_status": "Critical", "comm_equipment": "Sufficient", "training_status": "In Progress", "availability_percent": 87.70}}
+HR_JA87       DIST_HJ1BQ   OPS_GGBVJ   {"personnel": {"total": 234, "medical": 38, "security": 46, "logistics": 93, "volunteers": 781}, "readiness": {"ppe_status": "Adequate", "comm_equipment": "Sufficient", "training_status": "In Progress", "availability_percent": 82.50}}
+...
+
+CREATE TABLE "operations" (
+opsregistry text(20) NOT NULL,
+opsdistref text(20) NULL,
+opshubref text(20) NULL,
+emerglevel TEXT NULL,
+respphase TEXT NULL,
+opsstatus TEXT NULL,
+coordcenter text(80) NULL,
+opsstartdate TEXT NULL,
+estdurationdays integer(32) NULL,
+priorityrank TEXT NULL,
+resourceallocstate TEXT NULL,
+supplyflowstate TEXT NULL,
+    PRIMARY KEY (opsregistry),
+    FOREIGN KEY (opshubref) REFERENCES distributionhubs(hubregistry),
+    FOREIGN KEY (opsdistref) REFERENCES disasterevents(distregistry)
+);
+First 3 rows:
+opsregistry    opsdistref    opshubref    emerglevel    respphase       opsstatus     coordcenter    opsstartdate      estdurationdays  priorityrank    resourceallocstate    supplyflowstate
+OPS_76ZOW      DIST_SB6K7    HUB_HS0I     Black         Reconstruction  Completed     CC7649         2025-01-26                     12  High            Limited               Disrupted
+OPS_QXWBZ      DIST_PGACZ    HUB_UGZM     Black         Recovery        Completed     CC6010         2025-02-08                    362  Medium          Limited               Stable
+OPS_GGBVJ      DIST_HJ1BQ    HUB_05ZL     Orange        Emergency       Scaling Down  CC3314         2025-02-17                    291  Medium          Critical              Strained
+...
+
+CREATE TABLE "supplies" (
+supplyregistry text(20) NOT NULL,
+supplydistref text(20) NULL,
+supplyhubref text(20) NULL,
+resourceinventory TEXT NULL,
+    PRIMARY KEY (supplyregistry),
+    FOREIGN KEY (supplyhubref) REFERENCES distributionhubs(hubregistry),
+    FOREIGN KEY (supplydistref) REFERENCES disasterevents(distregistry)
+);
+First 3 rows:
+supplyregistry    supplydistref    supplyhubref    resourceinventory
+SUP_4BZN3         DIST_SB6K7       HUB_HS0I        {"power": {"generators": 568, "fuel_liters": 86011.0}, "medical": 50590, "shelter": {"units": 7534, "blankets": 46019}, "essentials": {"food_tons": 479.400, "water_liters": 283596.000}, "hygiene_kits": 46981}
+SUP_ZJ88H         DIST_PGACZ       HUB_UGZM        {"power": {"generators": 733, "fuel_liters": 59156.0}, "medical": 51298, "shelter": {"units": 1968, "blankets": 26671}, "essentials": {"food_tons": 187.100, "water_liters": 139603.000}, "hygiene_kits": 99277}
+SUP_MCBWM         DIST_HJ1BQ       HUB_05ZL        {"power": {"generators": 881, "fuel_liters": 46825.0}, "medical": 15593, "shelter": {"units": 6390, "blankets": 78690}, "essentials": {"food_tons": 640.800, "water_liters": 878396.000}, "hygiene_kits": 31061}
+...
+
+CREATE TABLE "transportation" (
+transportregistry text(20) NOT NULL,
+transportdistref text(20) NULL,
+transporthubref text(20) NULL,
+transportsupref text(20) NULL,
+vehiclecount integer(32) NULL,
+trucksavailable integer(32) NULL,
+helosavailable integer(32) NULL,
+boatsavailable integer(64) NULL,
+totaldeliverytons real(9,3) NULL,
+dailydeliverytons real(8,2) NULL,
+lastmilestatus TEXT NULL,
+distributionpoints integer(32) NULL,
+avgdeliveryhours real(5,2) NULL,
+deliverysuccessrate real(7,3) NULL,
+routeoptstatus TEXT NULL,
+fuelefficiencylpk real(6,3) NULL,
+maintenancestate TEXT NULL,
+vehiclebreakrate real(4,1) NULL,
+    PRIMARY KEY (transportregistry),
+    FOREIGN KEY (transportsupref) REFERENCES supplies(supplyregistry),
+    FOREIGN KEY (transporthubref) REFERENCES distributionhubs(hubregistry),
+    FOREIGN KEY (transportdistref) REFERENCES disasterevents(distregistry)
+);
+First 3 rows:
+transportregistry    transportdistref    transporthubref    transportsupref      vehiclecount    trucksavailable    helosavailable    boatsavailable    totaldeliverytons    dailydeliverytons  lastmilestatus      distributionpoints    avgdeliveryhours    deliverysuccessrate  routeoptstatus      fuelefficiencylpk  maintenancestate      vehiclebreakrate
+TRANS_B6EA6          DIST_SB6K7          HUB_HS0I           SUP_4BZN3                     141                 88                 7                 7                  368                  227  On Track                            35                52.6                   79.4  In Progress                      10.6  Overdue                            9.2
+TRANS_0870R          DIST_PGACZ          HUB_UGZM           SUP_ZJ88H                      50                 87                 8                 2                 2771                  364  On Track                            14                20.7                   92.6  Optimized                        17.7  Overdue                            6.9
+TRANS_FGSRQ          DIST_HJ1BQ          HUB_05ZL           SUP_MCBWM                      20                 77                 4                 4                 1505                  150  Delayed                              6                17.8                   79.9  Optimized                        18.7  Up to Date                         5
+...

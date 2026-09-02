@@ -1,0 +1,18 @@
+# ── AWS Lambda deployment image ──────────────────────────────────
+FROM public.ecr.aws/lambda/python:3.12
+
+# Install uv for dependency management
+COPY --from=ghcr.io/astral-sh/uv:latest /uv /usr/local/bin/uv
+
+# Copy dependency files first for layer caching
+COPY pyproject.toml uv.lock ./
+
+# Install with Lambda extra, no dev dependencies
+RUN uv sync --frozen --extra lambda --no-dev
+
+# Copy application source
+COPY src/ ./src/
+COPY configs/ ./configs/
+
+# Lambda handler entry point
+CMD ["text2sql.api.lambda_handler"]

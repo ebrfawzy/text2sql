@@ -1,0 +1,788 @@
+--------------------------------------------------
+BIRD CRITIC Stack Overflow Result Statistics (Postgres, Multi-Thread):
+Number of Instances: 270
+Number of Execution Errors: 23
+Number of Timeouts: 0
+Number of Assertion Errors: 129
+Total Errors: 152
+Overall Accuracy: 43.70%
+Timestamp: 2026-08-30 12:15:28.657520
+
+Question_alien_1: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_alien_10: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_alien_2: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_alien_3: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_alien_4: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_alien_5: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_alien_6: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_alien_7: (1/0) test cases passed, failed test cases: None
+Question_alien_8: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_alien_9: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_alien_M_1: (1/1) test cases passed, failed test cases: None
+Question_alien_M_2: (1/1) test cases passed, failed test cases: None
+Question_alien_M_3: (0/1) test cases passed, failed test cases: test_1 | Eval Phase: Assertion Error
+Question_alien_M_4: (0/1) test cases passed, failed test cases:  | Eval Phase: Execution Error
+Question_alien_M_5: (1/1) test cases passed, failed test cases: None
+Question_archeology_1: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_archeology_10: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_archeology_2: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_archeology_3: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_archeology_4: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_archeology_5: (0/0) test cases passed, failed test cases: None | Eval Phase: Execution Error
+Question_archeology_6: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_archeology_7: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_archeology_8: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_archeology_9: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_archeology_M_1: (0/1) test cases passed, failed test cases: test_1 | Eval Phase: Assertion Error
+Question_archeology_M_2: (1/1) test cases passed, failed test cases: None
+Question_archeology_M_3: (1/1) test cases passed, failed test cases: None
+Question_archeology_M_4: (0/1) test cases passed, failed test cases: test_1 | Eval Phase: Assertion Error
+Question_archeology_M_5: (0/1) test cases passed, failed test cases: test_1 | Eval Phase: Assertion Error
+Question_credit_1: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_credit_10: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_credit_2: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_credit_3: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_credit_4: (1/0) test cases passed, failed test cases: None
+Question_credit_5: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_credit_6: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_credit_7: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_credit_8: (0/0) test cases passed, failed test cases: None | Eval Phase: Execution Error
+Question_credit_9: (1/0) test cases passed, failed test cases: None
+Question_credit_M_1: (1/1) test cases passed, failed test cases: None
+Question_credit_M_2: (1/1) test cases passed, failed test cases: None
+Question_credit_M_3: (1/1) test cases passed, failed test cases: None
+Question_credit_M_4: (0/1) test cases passed, failed test cases: test_1 | Eval Phase: Assertion Error
+Question_credit_M_5: (0/1) test cases passed, failed test cases: test_1 | Eval Phase: Assertion Error
+Question_cross_db_1: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_cross_db_10: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_cross_db_2: (1/0) test cases passed, failed test cases: None
+Question_cross_db_3: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_cross_db_4: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_cross_db_5: (1/0) test cases passed, failed test cases: None
+Question_cross_db_6: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_cross_db_7: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_cross_db_8: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_cross_db_9: (1/0) test cases passed, failed test cases: None
+Question_cross_db_M_1: (1/1) test cases passed, failed test cases: None
+Question_cross_db_M_2: (0/1) test cases passed, failed test cases:  | Eval Phase: Execution Error
+Question_cross_db_M_3: (0/1) test cases passed, failed test cases: test_1 | Eval Phase: Assertion Error
+Question_cross_db_M_4: (1/1) test cases passed, failed test cases: None
+Question_cross_db_M_5: (0/1) test cases passed, failed test cases: test_1 | Eval Phase: Assertion Error
+Question_crypto_1: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_crypto_10: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_crypto_2: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_crypto_3: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_crypto_4: (1/0) test cases passed, failed test cases: None
+Question_crypto_5: (1/0) test cases passed, failed test cases: None
+Question_crypto_6: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_crypto_7: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_crypto_8: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_crypto_9: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_crypto_M_1: (1/1) test cases passed, failed test cases: None
+Question_crypto_M_2: (1/1) test cases passed, failed test cases: None
+Question_crypto_M_3: (0/1) test cases passed, failed test cases:  | Eval Phase: Execution Error
+Question_crypto_M_4: (1/1) test cases passed, failed test cases: None
+Question_crypto_M_5: (1/1) test cases passed, failed test cases: None
+Question_cybermarket_1: (1/0) test cases passed, failed test cases: None
+Question_cybermarket_10: (1/0) test cases passed, failed test cases: None
+Question_cybermarket_2: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_cybermarket_3: (1/0) test cases passed, failed test cases: None
+Question_cybermarket_4: (1/0) test cases passed, failed test cases: None
+Question_cybermarket_5: (1/0) test cases passed, failed test cases: None
+Question_cybermarket_6: (1/0) test cases passed, failed test cases: None
+Question_cybermarket_7: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_cybermarket_8: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_cybermarket_9: (1/0) test cases passed, failed test cases: None
+Question_cybermarket_M_1: (0/1) test cases passed, failed test cases: test_1 | Eval Phase: Assertion Error
+Question_cybermarket_M_2: (0/1) test cases passed, failed test cases: test_1 | Eval Phase: Assertion Error
+Question_cybermarket_M_3: (1/1) test cases passed, failed test cases: None
+Question_cybermarket_M_4: (0/1) test cases passed, failed test cases: test_1 | Eval Phase: Assertion Error
+Question_cybermarket_M_5: (1/1) test cases passed, failed test cases: None
+Question_disaster_1: (1/0) test cases passed, failed test cases: None
+Question_disaster_10: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_disaster_2: (1/0) test cases passed, failed test cases: None
+Question_disaster_3: (1/0) test cases passed, failed test cases: None
+Question_disaster_4: (1/0) test cases passed, failed test cases: None
+Question_disaster_5: (1/0) test cases passed, failed test cases: None
+Question_disaster_6: (1/0) test cases passed, failed test cases: None
+Question_disaster_7: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_disaster_8: (1/0) test cases passed, failed test cases: None
+Question_disaster_9: (1/0) test cases passed, failed test cases: None
+Question_disaster_M_1: (3/3) test cases passed, failed test cases: None
+Question_disaster_M_2: (1/1) test cases passed, failed test cases: None
+Question_disaster_M_3: (0/1) test cases passed, failed test cases:  | Eval Phase: Execution Error
+Question_disaster_M_4: (1/1) test cases passed, failed test cases: None
+Question_disaster_M_5: (1/1) test cases passed, failed test cases: None
+Question_fake_1: (1/0) test cases passed, failed test cases: None
+Question_fake_10: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_fake_2: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_fake_3: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_fake_4: (1/0) test cases passed, failed test cases: None
+Question_fake_5: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_fake_6: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_fake_7: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_fake_8: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_fake_9: (1/0) test cases passed, failed test cases: None
+Question_fake_M_1: (1/1) test cases passed, failed test cases: None
+Question_fake_M_2: (0/1) test cases passed, failed test cases:  | Eval Phase: Execution Error
+Question_fake_M_3: (0/1) test cases passed, failed test cases: test_1 | Eval Phase: Assertion Error
+Question_fake_M_4: (0/1) test cases passed, failed test cases:  | Eval Phase: Execution Error
+Question_fake_M_5: (1/1) test cases passed, failed test cases: None
+Question_gaming_1: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_gaming_10: (1/0) test cases passed, failed test cases: None
+Question_gaming_2: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_gaming_3: (1/0) test cases passed, failed test cases: None
+Question_gaming_4: (1/0) test cases passed, failed test cases: None
+Question_gaming_5: (1/0) test cases passed, failed test cases: None
+Question_gaming_6: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_gaming_7: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_gaming_8: (1/0) test cases passed, failed test cases: None
+Question_gaming_9: (1/0) test cases passed, failed test cases: None
+Question_gaming_M_1: (0/1) test cases passed, failed test cases: test_1 | Eval Phase: Assertion Error
+Question_gaming_M_2: (1/1) test cases passed, failed test cases: None
+Question_gaming_M_3: (0/1) test cases passed, failed test cases: test_1 | Eval Phase: Assertion Error
+Question_gaming_M_4: (0/1) test cases passed, failed test cases:  | Eval Phase: Execution Error
+Question_gaming_M_5: (0/1) test cases passed, failed test cases:  | Eval Phase: Execution Error
+Question_insider_1: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_insider_10: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_insider_2: (1/0) test cases passed, failed test cases: None
+Question_insider_3: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_insider_4: (1/0) test cases passed, failed test cases: None
+Question_insider_5: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_insider_6: (1/0) test cases passed, failed test cases: None
+Question_insider_7: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_insider_8: (1/0) test cases passed, failed test cases: None
+Question_insider_9: (1/0) test cases passed, failed test cases: None
+Question_insider_M_1: (0/1) test cases passed, failed test cases: test_1 | Eval Phase: Assertion Error
+Question_insider_M_2: (0/1) test cases passed, failed test cases: test_1 | Eval Phase: Assertion Error
+Question_insider_M_3: (1/1) test cases passed, failed test cases: None
+Question_insider_M_4: (0/1) test cases passed, failed test cases:  | Eval Phase: Execution Error
+Question_insider_M_5: (0/1) test cases passed, failed test cases:  | Eval Phase: Execution Error
+Question_mental_1: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_mental_10: (1/0) test cases passed, failed test cases: None
+Question_mental_2: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_mental_3: (1/0) test cases passed, failed test cases: None
+Question_mental_4: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_mental_5: (0/0) test cases passed, failed test cases: None | Eval Phase: Execution Error
+Question_mental_6: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_mental_7: (1/0) test cases passed, failed test cases: None
+Question_mental_8: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_mental_9: (1/0) test cases passed, failed test cases: None
+Question_mental_M_1: (1/1) test cases passed, failed test cases: None
+Question_mental_M_2: (1/1) test cases passed, failed test cases: None
+Question_mental_M_3: (1/1) test cases passed, failed test cases: None
+Question_mental_M_4: (1/1) test cases passed, failed test cases: None
+Question_mental_M_5: (1/1) test cases passed, failed test cases: None
+Question_museum_1: (1/0) test cases passed, failed test cases: None
+Question_museum_10: (0/0) test cases passed, failed test cases: None | Eval Phase: Execution Error
+Question_museum_2: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_museum_3: (1/0) test cases passed, failed test cases: None
+Question_museum_4: (0/0) test cases passed, failed test cases: None | Eval Phase: Execution Error
+Question_museum_5: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_museum_6: (1/0) test cases passed, failed test cases: None
+Question_museum_7: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_museum_8: (1/0) test cases passed, failed test cases: None
+Question_museum_9: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_museum_M_1: (1/1) test cases passed, failed test cases: None
+Question_museum_M_2: (1/1) test cases passed, failed test cases: None
+Question_museum_M_3: (0/1) test cases passed, failed test cases:  | Eval Phase: Execution Error
+Question_museum_M_4: (0/1) test cases passed, failed test cases:  | Eval Phase: Execution Error
+Question_museum_M_5: (1/1) test cases passed, failed test cases: None
+Question_news_1: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_news_10: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_news_2: (1/0) test cases passed, failed test cases: None
+Question_news_3: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_news_4: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_news_5: (1/0) test cases passed, failed test cases: None
+Question_news_6: (1/0) test cases passed, failed test cases: None
+Question_news_7: (1/0) test cases passed, failed test cases: None
+Question_news_8: (1/0) test cases passed, failed test cases: None
+Question_news_9: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_news_M_1: (1/1) test cases passed, failed test cases: None
+Question_news_M_2: (1/1) test cases passed, failed test cases: None
+Question_news_M_3: (0/1) test cases passed, failed test cases:  | Eval Phase: Execution Error
+Question_news_M_4: (1/1) test cases passed, failed test cases: None
+Question_news_M_5: (1/1) test cases passed, failed test cases: None
+Question_polar_1: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_polar_10: (1/0) test cases passed, failed test cases: None
+Question_polar_2: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_polar_3: (1/0) test cases passed, failed test cases: None
+Question_polar_4: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_polar_5: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_polar_6: (1/0) test cases passed, failed test cases: None
+Question_polar_7: (1/0) test cases passed, failed test cases: None
+Question_polar_8: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_polar_9: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_polar_M_1: (1/1) test cases passed, failed test cases: None
+Question_polar_M_2: (1/1) test cases passed, failed test cases: None
+Question_polar_M_3: (2/2) test cases passed, failed test cases: None
+Question_polar_M_4: (1/1) test cases passed, failed test cases: None
+Question_polar_M_5: (2/2) test cases passed, failed test cases: None
+Question_robot_1: (1/0) test cases passed, failed test cases: None
+Question_robot_10: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_robot_2: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_robot_3: (1/0) test cases passed, failed test cases: None
+Question_robot_4: (1/0) test cases passed, failed test cases: None
+Question_robot_5: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_robot_6: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_robot_7: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_robot_8: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_robot_9: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_robot_M_1: (1/1) test cases passed, failed test cases: None
+Question_robot_M_2: (1/1) test cases passed, failed test cases: None
+Question_robot_M_3: (0/1) test cases passed, failed test cases:  | Eval Phase: Execution Error
+Question_robot_M_4: (0/1) test cases passed, failed test cases:  | Eval Phase: Execution Error
+Question_robot_M_5: (0/1) test cases passed, failed test cases: test_1 | Eval Phase: Assertion Error
+Question_solar_1: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_solar_10: (1/0) test cases passed, failed test cases: None
+Question_solar_2: (0/1) test cases passed, failed test cases: test_1 | Eval Phase: Assertion Error
+Question_solar_3: (1/0) test cases passed, failed test cases: None
+Question_solar_4: (1/0) test cases passed, failed test cases: None
+Question_solar_5: (1/0) test cases passed, failed test cases: None
+Question_solar_6: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_solar_7: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_solar_8: (1/0) test cases passed, failed test cases: None
+Question_solar_9: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_solar_M_1: (1/1) test cases passed, failed test cases: None
+Question_solar_M_2: (1/1) test cases passed, failed test cases: None
+Question_solar_M_3: (1/1) test cases passed, failed test cases: None
+Question_solar_M_4: (0/1) test cases passed, failed test cases:  | Eval Phase: Execution Error
+Question_solar_M_5: (0/1) test cases passed, failed test cases:  | Eval Phase: Execution Error
+Question_vaccine_1: (0/1) test cases passed, failed test cases: test_1 | Eval Phase: Assertion Error
+Question_vaccine_10: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_vaccine_2: (1/0) test cases passed, failed test cases: None
+Question_vaccine_3: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_vaccine_4: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_vaccine_5: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_vaccine_6: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_vaccine_7: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_vaccine_8: (1/0) test cases passed, failed test cases: None
+Question_vaccine_9: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_vaccine_M_1: (0/1) test cases passed, failed test cases: test_1 | Eval Phase: Assertion Error
+Question_vaccine_M_2: (0/1) test cases passed, failed test cases:  | Eval Phase: Execution Error
+Question_vaccine_M_3: (1/1) test cases passed, failed test cases: None
+Question_vaccine_M_4: (1/1) test cases passed, failed test cases: None
+Question_vaccine_M_5: (1/1) test cases passed, failed test cases: None
+Question_virtual_1: (1/0) test cases passed, failed test cases: None
+Question_virtual_10: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_virtual_2: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_virtual_3: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_virtual_4: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_virtual_5: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_virtual_6: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_virtual_7: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_virtual_8: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_virtual_9: (0/0) test cases passed, failed test cases: None | Eval Phase: Assertion Error
+Question_virtual_M_1: (1/1) test cases passed, failed test cases: None
+Question_virtual_M_2: (2/2) test cases passed, failed test cases: None
+Question_virtual_M_3: (0/1) test cases passed, failed test cases: test_1 | Eval Phase: Assertion Error
+Question_virtual_M_4: (1/1) test cases passed, failed test cases: None
+Question_virtual_M_5: (1/1) test cases passed, failed test cases: None
+
+==================================================
+EXECUTION STATISTICS:
+==================================================
+Total Executable Instances (no syntax/execution errors): 247
+Executable Instances with Assertion Errors: 129
+Executable Instances Successfully Passed: 118
+
+Executable Instance IDs:
+  1. alien_1 (Assertion Error)
+  2. alien_10 (Assertion Error)
+  3. alien_2 (Assertion Error)
+  4. alien_3 (Assertion Error)
+  5. alien_4 (Assertion Error)
+  6. alien_5 (Assertion Error)
+  7. alien_6 (Assertion Error)
+  8. alien_7 (Success)
+  9. alien_8 (Assertion Error)
+  10. alien_9 (Assertion Error)
+  11. alien_M_1 (Success)
+  12. alien_M_2 (Success)
+  13. alien_M_3 (Assertion Error)
+  14. alien_M_5 (Success)
+  15. archeology_1 (Assertion Error)
+  16. archeology_10 (Assertion Error)
+  17. archeology_2 (Assertion Error)
+  18. archeology_3 (Assertion Error)
+  19. archeology_4 (Assertion Error)
+  20. archeology_6 (Assertion Error)
+  21. archeology_7 (Assertion Error)
+  22. archeology_8 (Assertion Error)
+  23. archeology_9 (Assertion Error)
+  24. archeology_M_1 (Assertion Error)
+  25. archeology_M_2 (Success)
+  26. archeology_M_3 (Success)
+  27. archeology_M_4 (Assertion Error)
+  28. archeology_M_5 (Assertion Error)
+  29. credit_1 (Assertion Error)
+  30. credit_10 (Assertion Error)
+  31. credit_2 (Assertion Error)
+  32. credit_3 (Assertion Error)
+  33. credit_4 (Success)
+  34. credit_5 (Assertion Error)
+  35. credit_6 (Assertion Error)
+  36. credit_7 (Assertion Error)
+  37. credit_9 (Success)
+  38. credit_M_1 (Success)
+  39. credit_M_2 (Success)
+  40. credit_M_3 (Success)
+  41. credit_M_4 (Assertion Error)
+  42. credit_M_5 (Assertion Error)
+  43. cross_db_1 (Assertion Error)
+  44. cross_db_10 (Assertion Error)
+  45. cross_db_2 (Success)
+  46. cross_db_3 (Assertion Error)
+  47. cross_db_4 (Assertion Error)
+  48. cross_db_5 (Success)
+  49. cross_db_6 (Assertion Error)
+  50. cross_db_7 (Assertion Error)
+  51. cross_db_8 (Assertion Error)
+  52. cross_db_9 (Success)
+  53. cross_db_M_1 (Success)
+  54. cross_db_M_3 (Assertion Error)
+  55. cross_db_M_4 (Success)
+  56. cross_db_M_5 (Assertion Error)
+  57. crypto_1 (Assertion Error)
+  58. crypto_10 (Assertion Error)
+  59. crypto_2 (Assertion Error)
+  60. crypto_3 (Assertion Error)
+  61. crypto_4 (Success)
+  62. crypto_5 (Success)
+  63. crypto_6 (Assertion Error)
+  64. crypto_7 (Assertion Error)
+  65. crypto_8 (Assertion Error)
+  66. crypto_9 (Assertion Error)
+  67. crypto_M_1 (Success)
+  68. crypto_M_2 (Success)
+  69. crypto_M_4 (Success)
+  70. crypto_M_5 (Success)
+  71. cybermarket_1 (Success)
+  72. cybermarket_10 (Success)
+  73. cybermarket_2 (Assertion Error)
+  74. cybermarket_3 (Success)
+  75. cybermarket_4 (Success)
+  76. cybermarket_5 (Success)
+  77. cybermarket_6 (Success)
+  78. cybermarket_7 (Assertion Error)
+  79. cybermarket_8 (Assertion Error)
+  80. cybermarket_9 (Success)
+  81. cybermarket_M_1 (Assertion Error)
+  82. cybermarket_M_2 (Assertion Error)
+  83. cybermarket_M_3 (Success)
+  84. cybermarket_M_4 (Assertion Error)
+  85. cybermarket_M_5 (Success)
+  86. disaster_1 (Success)
+  87. disaster_10 (Assertion Error)
+  88. disaster_2 (Success)
+  89. disaster_3 (Success)
+  90. disaster_4 (Success)
+  91. disaster_5 (Success)
+  92. disaster_6 (Success)
+  93. disaster_7 (Assertion Error)
+  94. disaster_8 (Success)
+  95. disaster_9 (Success)
+  96. disaster_M_1 (Success)
+  97. disaster_M_2 (Success)
+  98. disaster_M_4 (Success)
+  99. disaster_M_5 (Success)
+  100. fake_1 (Success)
+  101. fake_10 (Assertion Error)
+  102. fake_2 (Assertion Error)
+  103. fake_3 (Assertion Error)
+  104. fake_4 (Success)
+  105. fake_5 (Assertion Error)
+  106. fake_6 (Assertion Error)
+  107. fake_7 (Assertion Error)
+  108. fake_8 (Assertion Error)
+  109. fake_9 (Success)
+  110. fake_M_1 (Success)
+  111. fake_M_3 (Assertion Error)
+  112. fake_M_5 (Success)
+  113. gaming_1 (Assertion Error)
+  114. gaming_10 (Success)
+  115. gaming_2 (Assertion Error)
+  116. gaming_3 (Success)
+  117. gaming_4 (Success)
+  118. gaming_5 (Success)
+  119. gaming_6 (Assertion Error)
+  120. gaming_7 (Assertion Error)
+  121. gaming_8 (Success)
+  122. gaming_9 (Success)
+  123. gaming_M_1 (Assertion Error)
+  124. gaming_M_2 (Success)
+  125. gaming_M_3 (Assertion Error)
+  126. insider_1 (Assertion Error)
+  127. insider_10 (Assertion Error)
+  128. insider_2 (Success)
+  129. insider_3 (Assertion Error)
+  130. insider_4 (Success)
+  131. insider_5 (Assertion Error)
+  132. insider_6 (Success)
+  133. insider_7 (Assertion Error)
+  134. insider_8 (Success)
+  135. insider_9 (Success)
+  136. insider_M_1 (Assertion Error)
+  137. insider_M_2 (Assertion Error)
+  138. insider_M_3 (Success)
+  139. mental_1 (Assertion Error)
+  140. mental_10 (Success)
+  141. mental_2 (Assertion Error)
+  142. mental_3 (Success)
+  143. mental_4 (Assertion Error)
+  144. mental_6 (Assertion Error)
+  145. mental_7 (Success)
+  146. mental_8 (Assertion Error)
+  147. mental_9 (Success)
+  148. mental_M_1 (Success)
+  149. mental_M_2 (Success)
+  150. mental_M_3 (Success)
+  151. mental_M_4 (Success)
+  152. mental_M_5 (Success)
+  153. museum_1 (Success)
+  154. museum_2 (Assertion Error)
+  155. museum_3 (Success)
+  156. museum_5 (Assertion Error)
+  157. museum_6 (Success)
+  158. museum_7 (Assertion Error)
+  159. museum_8 (Success)
+  160. museum_9 (Assertion Error)
+  161. museum_M_1 (Success)
+  162. museum_M_2 (Success)
+  163. museum_M_5 (Success)
+  164. news_1 (Assertion Error)
+  165. news_10 (Assertion Error)
+  166. news_2 (Success)
+  167. news_3 (Assertion Error)
+  168. news_4 (Assertion Error)
+  169. news_5 (Success)
+  170. news_6 (Success)
+  171. news_7 (Success)
+  172. news_8 (Success)
+  173. news_9 (Assertion Error)
+  174. news_M_1 (Success)
+  175. news_M_2 (Success)
+  176. news_M_4 (Success)
+  177. news_M_5 (Success)
+  178. polar_1 (Assertion Error)
+  179. polar_10 (Success)
+  180. polar_2 (Assertion Error)
+  181. polar_3 (Success)
+  182. polar_4 (Assertion Error)
+  183. polar_5 (Assertion Error)
+  184. polar_6 (Success)
+  185. polar_7 (Success)
+  186. polar_8 (Assertion Error)
+  187. polar_9 (Assertion Error)
+  188. polar_M_1 (Success)
+  189. polar_M_2 (Success)
+  190. polar_M_3 (Success)
+  191. polar_M_4 (Success)
+  192. polar_M_5 (Success)
+  193. robot_1 (Success)
+  194. robot_10 (Assertion Error)
+  195. robot_2 (Assertion Error)
+  196. robot_3 (Success)
+  197. robot_4 (Success)
+  198. robot_5 (Assertion Error)
+  199. robot_6 (Assertion Error)
+  200. robot_7 (Assertion Error)
+  201. robot_8 (Assertion Error)
+  202. robot_9 (Assertion Error)
+  203. robot_M_1 (Success)
+  204. robot_M_2 (Success)
+  205. robot_M_5 (Assertion Error)
+  206. solar_1 (Assertion Error)
+  207. solar_10 (Success)
+  208. solar_2 (Assertion Error)
+  209. solar_3 (Success)
+  210. solar_4 (Success)
+  211. solar_5 (Success)
+  212. solar_6 (Assertion Error)
+  213. solar_7 (Assertion Error)
+  214. solar_8 (Success)
+  215. solar_9 (Assertion Error)
+  216. solar_M_1 (Success)
+  217. solar_M_2 (Success)
+  218. solar_M_3 (Success)
+  219. vaccine_1 (Assertion Error)
+  220. vaccine_10 (Assertion Error)
+  221. vaccine_2 (Success)
+  222. vaccine_3 (Assertion Error)
+  223. vaccine_4 (Assertion Error)
+  224. vaccine_5 (Assertion Error)
+  225. vaccine_6 (Assertion Error)
+  226. vaccine_7 (Assertion Error)
+  227. vaccine_8 (Success)
+  228. vaccine_9 (Assertion Error)
+  229. vaccine_M_1 (Assertion Error)
+  230. vaccine_M_3 (Success)
+  231. vaccine_M_4 (Success)
+  232. vaccine_M_5 (Success)
+  233. virtual_1 (Success)
+  234. virtual_10 (Assertion Error)
+  235. virtual_2 (Assertion Error)
+  236. virtual_3 (Assertion Error)
+  237. virtual_4 (Assertion Error)
+  238. virtual_5 (Assertion Error)
+  239. virtual_6 (Assertion Error)
+  240. virtual_7 (Assertion Error)
+  241. virtual_8 (Assertion Error)
+  242. virtual_9 (Assertion Error)
+  243. virtual_M_1 (Success)
+  244. virtual_M_2 (Success)
+  245. virtual_M_3 (Assertion Error)
+  246. virtual_M_4 (Success)
+  247. virtual_M_5 (Success)
+
+Executable Instances with Assertion Errors:
+  1. alien_1
+  2. alien_10
+  3. alien_2
+  4. alien_3
+  5. alien_4
+  6. alien_5
+  7. alien_6
+  8. alien_8
+  9. alien_9
+  10. alien_M_3
+  11. archeology_1
+  12. archeology_10
+  13. archeology_2
+  14. archeology_3
+  15. archeology_4
+  16. archeology_6
+  17. archeology_7
+  18. archeology_8
+  19. archeology_9
+  20. archeology_M_1
+  21. archeology_M_4
+  22. archeology_M_5
+  23. credit_1
+  24. credit_10
+  25. credit_2
+  26. credit_3
+  27. credit_5
+  28. credit_6
+  29. credit_7
+  30. credit_M_4
+  31. credit_M_5
+  32. cross_db_1
+  33. cross_db_10
+  34. cross_db_3
+  35. cross_db_4
+  36. cross_db_6
+  37. cross_db_7
+  38. cross_db_8
+  39. cross_db_M_3
+  40. cross_db_M_5
+  41. crypto_1
+  42. crypto_10
+  43. crypto_2
+  44. crypto_3
+  45. crypto_6
+  46. crypto_7
+  47. crypto_8
+  48. crypto_9
+  49. cybermarket_2
+  50. cybermarket_7
+  51. cybermarket_8
+  52. cybermarket_M_1
+  53. cybermarket_M_2
+  54. cybermarket_M_4
+  55. disaster_10
+  56. disaster_7
+  57. fake_10
+  58. fake_2
+  59. fake_3
+  60. fake_5
+  61. fake_6
+  62. fake_7
+  63. fake_8
+  64. fake_M_3
+  65. gaming_1
+  66. gaming_2
+  67. gaming_6
+  68. gaming_7
+  69. gaming_M_1
+  70. gaming_M_3
+  71. insider_1
+  72. insider_10
+  73. insider_3
+  74. insider_5
+  75. insider_7
+  76. insider_M_1
+  77. insider_M_2
+  78. mental_1
+  79. mental_2
+  80. mental_4
+  81. mental_6
+  82. mental_8
+  83. museum_2
+  84. museum_5
+  85. museum_7
+  86. museum_9
+  87. news_1
+  88. news_10
+  89. news_3
+  90. news_4
+  91. news_9
+  92. polar_1
+  93. polar_2
+  94. polar_4
+  95. polar_5
+  96. polar_8
+  97. polar_9
+  98. robot_10
+  99. robot_2
+  100. robot_5
+  101. robot_6
+  102. robot_7
+  103. robot_8
+  104. robot_9
+  105. robot_M_5
+  106. solar_1
+  107. solar_2
+  108. solar_6
+  109. solar_7
+  110. solar_9
+  111. vaccine_1
+  112. vaccine_10
+  113. vaccine_3
+  114. vaccine_4
+  115. vaccine_5
+  116. vaccine_6
+  117. vaccine_7
+  118. vaccine_9
+  119. vaccine_M_1
+  120. virtual_10
+  121. virtual_2
+  122. virtual_3
+  123. virtual_4
+  124. virtual_5
+  125. virtual_6
+  126. virtual_7
+  127. virtual_8
+  128. virtual_9
+  129. virtual_M_3
+
+Executable Instances Successfully Passed:
+  1. alien_7
+  2. alien_M_1
+  3. alien_M_2
+  4. alien_M_5
+  5. archeology_M_2
+  6. archeology_M_3
+  7. credit_4
+  8. credit_9
+  9. credit_M_1
+  10. credit_M_2
+  11. credit_M_3
+  12. cross_db_2
+  13. cross_db_5
+  14. cross_db_9
+  15. cross_db_M_1
+  16. cross_db_M_4
+  17. crypto_4
+  18. crypto_5
+  19. crypto_M_1
+  20. crypto_M_2
+  21. crypto_M_4
+  22. crypto_M_5
+  23. cybermarket_1
+  24. cybermarket_10
+  25. cybermarket_3
+  26. cybermarket_4
+  27. cybermarket_5
+  28. cybermarket_6
+  29. cybermarket_9
+  30. cybermarket_M_3
+  31. cybermarket_M_5
+  32. disaster_1
+  33. disaster_2
+  34. disaster_3
+  35. disaster_4
+  36. disaster_5
+  37. disaster_6
+  38. disaster_8
+  39. disaster_9
+  40. disaster_M_1
+  41. disaster_M_2
+  42. disaster_M_4
+  43. disaster_M_5
+  44. fake_1
+  45. fake_4
+  46. fake_9
+  47. fake_M_1
+  48. fake_M_5
+  49. gaming_10
+  50. gaming_3
+  51. gaming_4
+  52. gaming_5
+  53. gaming_8
+  54. gaming_9
+  55. gaming_M_2
+  56. insider_2
+  57. insider_4
+  58. insider_6
+  59. insider_8
+  60. insider_9
+  61. insider_M_3
+  62. mental_10
+  63. mental_3
+  64. mental_7
+  65. mental_9
+  66. mental_M_1
+  67. mental_M_2
+  68. mental_M_3
+  69. mental_M_4
+  70. mental_M_5
+  71. museum_1
+  72. museum_3
+  73. museum_6
+  74. museum_8
+  75. museum_M_1
+  76. museum_M_2
+  77. museum_M_5
+  78. news_2
+  79. news_5
+  80. news_6
+  81. news_7
+  82. news_8
+  83. news_M_1
+  84. news_M_2
+  85. news_M_4
+  86. news_M_5
+  87. polar_10
+  88. polar_3
+  89. polar_6
+  90. polar_7
+  91. polar_M_1
+  92. polar_M_2
+  93. polar_M_3
+  94. polar_M_4
+  95. polar_M_5
+  96. robot_1
+  97. robot_3
+  98. robot_4
+  99. robot_M_1
+  100. robot_M_2
+  101. solar_10
+  102. solar_3
+  103. solar_4
+  104. solar_5
+  105. solar_8
+  106. solar_M_1
+  107. solar_M_2
+  108. solar_M_3
+  109. vaccine_2
+  110. vaccine_8
+  111. vaccine_M_3
+  112. vaccine_M_4
+  113. vaccine_M_5
+  114. virtual_1
+  115. virtual_M_1
+  116. virtual_M_2
+  117. virtual_M_4
+  118. virtual_M_5
+

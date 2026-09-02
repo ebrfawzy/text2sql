@@ -1,0 +1,7059 @@
+{
+  "version": 1,
+  "profiled_at": "2026-08-30T10:41:54.686774+00:00",
+  "columns": {
+    "alien_template|observationalconditions|signalref": {
+      "table_name": "observationalconditions",
+      "column_name": "signalref",
+      "column_type": "TEXT(36)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "AS100974                            ",
+      "max_value": "AS999544                            ",
+      "top_k_values": [
+        {
+          "value": "AS100974                            ",
+          "count": 1
+        },
+        {
+          "value": "AS101100                            ",
+          "count": 1
+        },
+        {
+          "value": "AS103055                            ",
+          "count": 1
+        },
+        {
+          "value": "AS104302                            ",
+          "count": 1
+        },
+        {
+          "value": "AS104491                            ",
+          "count": 1
+        },
+        {
+          "value": "AS104801                            ",
+          "count": 1
+        },
+        {
+          "value": "AS105071                            ",
+          "count": 1
+        },
+        {
+          "value": "AS105686                            ",
+          "count": 1
+        },
+        {
+          "value": "AS107126                            ",
+          "count": 1
+        },
+        {
+          "value": "AS107131                            ",
+          "count": 1
+        }
+      ],
+      "min_length": 36,
+      "max_length": 36,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDDDD                            "
+      ]
+    },
+    "alien_template|observationalconditions|obstime": {
+      "table_name": "observationalconditions",
+      "column_name": "obstime",
+      "column_type": "TEXT(6)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1,
+      "min_value": "00:00:00",
+      "max_value": "00:00:00",
+      "top_k_values": [
+        {
+          "value": "00:00:00",
+          "count": 1000
+        }
+      ],
+      "min_length": 8,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DD:DD:DD"
+      ]
+    },
+    "alien_template|observationalconditions|obsdate": {
+      "table_name": "observationalconditions",
+      "column_name": "obsdate",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 864,
+      "min_value": "2015-02-23",
+      "max_value": "2025-02-09",
+      "top_k_values": [
+        {
+          "value": "2020-07-05",
+          "count": 4
+        },
+        {
+          "value": "2024-07-26",
+          "count": 3
+        },
+        {
+          "value": "2024-07-05",
+          "count": 3
+        },
+        {
+          "value": "2023-05-18",
+          "count": 3
+        },
+        {
+          "value": "2019-07-29",
+          "count": 3
+        },
+        {
+          "value": "2018-05-20",
+          "count": 3
+        },
+        {
+          "value": "2015-04-06",
+          "count": 3
+        },
+        {
+          "value": "2015-03-03",
+          "count": 3
+        },
+        {
+          "value": "2025-01-21",
+          "count": 2
+        },
+        {
+          "value": "2024-12-20",
+          "count": 2
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDD-DD-DD"
+      ]
+    },
+    "alien_template|observationalconditions|obsdurhrs": {
+      "table_name": "observationalconditions",
+      "column_name": "obsdurhrs",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 811,
+      "min_value": "0.01",
+      "max_value": "9.93",
+      "top_k_values": [
+        {
+          "value": "20.42",
+          "count": 4
+        },
+        {
+          "value": "6.47",
+          "count": 4
+        },
+        {
+          "value": "23.14",
+          "count": 3
+        },
+        {
+          "value": "21.95",
+          "count": 3
+        },
+        {
+          "value": "21.52",
+          "count": 3
+        },
+        {
+          "value": "21.04",
+          "count": 3
+        },
+        {
+          "value": "20.8",
+          "count": 3
+        },
+        {
+          "value": "19.36",
+          "count": 3
+        },
+        {
+          "value": "17.19",
+          "count": 3
+        },
+        {
+          "value": "14.14",
+          "count": 3
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.DD",
+        "D.DD",
+        "DD.D",
+        "D.D"
+      ]
+    },
+    "alien_template|observatories|observstation": {
+      "table_name": "observatories",
+      "column_name": "observstation",
+      "column_type": "TEXT(60)",
+      "row_count": 963,
+      "null_count": 0,
+      "non_null_count": 963,
+      "distinct_count": 963,
+      "min_value": "Observatory-Adammouth                                       ",
+      "max_value": "Observatory-Youngland                                       ",
+      "top_k_values": [
+        {
+          "value": "Observatory-Adammouth                                       ",
+          "count": 1
+        },
+        {
+          "value": "Observatory-Adrianfurt                                      ",
+          "count": 1
+        },
+        {
+          "value": "Observatory-Adriantown                                      ",
+          "count": 1
+        },
+        {
+          "value": "Observatory-Aguilarfurt                                     ",
+          "count": 1
+        },
+        {
+          "value": "Observatory-Aguilarmouth                                    ",
+          "count": 1
+        },
+        {
+          "value": "Observatory-Aguirreside                                     ",
+          "count": 1
+        },
+        {
+          "value": "Observatory-Alanshire                                       ",
+          "count": 1
+        },
+        {
+          "value": "Observatory-Alexanderville                                  ",
+          "count": 1
+        },
+        {
+          "value": "Observatory-Alexandrafort                                   ",
+          "count": 1
+        },
+        {
+          "value": "Observatory-Allenport                                       ",
+          "count": 1
+        }
+      ],
+      "min_length": 60,
+      "max_length": 60,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAAAAAAAAA-AAAAAAAAAAA                                     ",
+        "AAAAAAAAAAA-AAAAAAAAAA                                      ",
+        "AAAAAAAAAAA-AAAAAAAAA                                       ",
+        "AAAAAAAAAAA-AAAAAAAAAAAA                                    ",
+        "AAAAAAAAAAA-AAAAAAAAAAAAA                                   "
+      ]
+    },
+    "alien_template|observatories|weathprofile": {
+      "table_name": "observatories",
+      "column_name": "weathprofile",
+      "column_type": "TEXT(40)",
+      "row_count": 963,
+      "null_count": 0,
+      "non_null_count": 963,
+      "distinct_count": 3,
+      "min_value": "Clear",
+      "max_value": "Partially Cloudy",
+      "top_k_values": [
+        {
+          "value": "Clear",
+          "count": 327
+        },
+        {
+          "value": "Cloudy",
+          "count": 319
+        },
+        {
+          "value": "Partially Cloudy",
+          "count": 317
+        }
+      ],
+      "min_length": 5,
+      "max_length": 16,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAA",
+        "AAAAAA",
+        "AAAAAAAAA AAAAAA"
+      ]
+    },
+    "alien_template|observatories|seeingprofile": {
+      "table_name": "observatories",
+      "column_name": "seeingprofile",
+      "column_type": "TEXT(50)",
+      "row_count": 963,
+      "null_count": 0,
+      "non_null_count": 963,
+      "distinct_count": 3,
+      "min_value": "Excellent",
+      "max_value": "Poor",
+      "top_k_values": [
+        {
+          "value": "Good",
+          "count": 357
+        },
+        {
+          "value": "Excellent",
+          "count": 315
+        },
+        {
+          "value": "Poor",
+          "count": 291
+        }
+      ],
+      "min_length": 4,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAAAAAAAA"
+      ]
+    },
+    "alien_template|observatories|atmostransparency": {
+      "table_name": "observatories",
+      "column_name": "atmostransparency",
+      "column_type": "REAL",
+      "row_count": 963,
+      "null_count": 0,
+      "non_null_count": 963,
+      "distinct_count": 101,
+      "min_value": "0.0",
+      "max_value": "1.0",
+      "top_k_values": [
+        {
+          "value": "0.26",
+          "count": 17
+        },
+        {
+          "value": "0.14",
+          "count": 17
+        },
+        {
+          "value": "0.89",
+          "count": 16
+        },
+        {
+          "value": "0.87",
+          "count": 16
+        },
+        {
+          "value": "0.96",
+          "count": 15
+        },
+        {
+          "value": "0.8",
+          "count": 14
+        },
+        {
+          "value": "0.61",
+          "count": 14
+        },
+        {
+          "value": "0.09",
+          "count": 14
+        },
+        {
+          "value": "0.04",
+          "count": 14
+        },
+        {
+          "value": "0.95",
+          "count": 13
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "alien_template|observatories|lunarstage": {
+      "table_name": "observatories",
+      "column_name": "lunarstage",
+      "column_type": "TEXT(25)",
+      "row_count": 963,
+      "null_count": 0,
+      "non_null_count": 963,
+      "distinct_count": 4,
+      "min_value": "First Quarter",
+      "max_value": "New",
+      "top_k_values": [
+        {
+          "value": "Last Quarter",
+          "count": 248
+        },
+        {
+          "value": "Full",
+          "count": 242
+        },
+        {
+          "value": "First Quarter",
+          "count": 241
+        },
+        {
+          "value": "New",
+          "count": 232
+        }
+      ],
+      "min_length": 3,
+      "max_length": 13,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA AAAAAAA",
+        "AAAA",
+        "AAAAA AAAAAAA",
+        "AAA"
+      ]
+    },
+    "alien_template|observatories|lunardistdeg": {
+      "table_name": "observatories",
+      "column_name": "lunardistdeg",
+      "column_type": "REAL",
+      "row_count": 963,
+      "null_count": 0,
+      "non_null_count": 963,
+      "distinct_count": 944,
+      "min_value": "0.07",
+      "max_value": "99.95",
+      "top_k_values": [
+        {
+          "value": "166.63",
+          "count": 2
+        },
+        {
+          "value": "161.18",
+          "count": 2
+        },
+        {
+          "value": "160.64",
+          "count": 2
+        },
+        {
+          "value": "151.18",
+          "count": 2
+        },
+        {
+          "value": "148.07",
+          "count": 2
+        },
+        {
+          "value": "143.19",
+          "count": 2
+        },
+        {
+          "value": "140.89",
+          "count": 2
+        },
+        {
+          "value": "137.12",
+          "count": 2
+        },
+        {
+          "value": "134.8",
+          "count": 2
+        },
+        {
+          "value": "132.19",
+          "count": 2
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.DD",
+        "DDD.DD",
+        "DD.D",
+        "DDD.D",
+        "D.DD"
+      ]
+    },
+    "alien_template|observatories|solarstatus": {
+      "table_name": "observatories",
+      "column_name": "solarstatus",
+      "column_type": "TEXT(35)",
+      "row_count": 963,
+      "null_count": 0,
+      "non_null_count": 963,
+      "distinct_count": 3,
+      "min_value": "High",
+      "max_value": "Moderate",
+      "top_k_values": [
+        {
+          "value": "High",
+          "count": 338
+        },
+        {
+          "value": "Low",
+          "count": 324
+        },
+        {
+          "value": "Moderate",
+          "count": 301
+        }
+      ],
+      "min_length": 3,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAA",
+        "AAAAAAAA"
+      ]
+    },
+    "alien_template|observatories|geomagstatus": {
+      "table_name": "observatories",
+      "column_name": "geomagstatus",
+      "column_type": "TEXT(35)",
+      "row_count": 963,
+      "null_count": 0,
+      "non_null_count": 963,
+      "distinct_count": 3,
+      "min_value": "Active",
+      "max_value": "Storm",
+      "top_k_values": [
+        {
+          "value": "Quiet",
+          "count": 330
+        },
+        {
+          "value": "Active",
+          "count": 321
+        },
+        {
+          "value": "Storm",
+          "count": 312
+        }
+      ],
+      "min_length": 5,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAA",
+        "AAAAAA"
+      ]
+    },
+    "alien_template|observatories|sidereallocal": {
+      "table_name": "observatories",
+      "column_name": "sidereallocal",
+      "column_type": "TEXT(8)",
+      "row_count": 963,
+      "null_count": 0,
+      "non_null_count": 963,
+      "distinct_count": 960,
+      "min_value": "0.0395  ",
+      "max_value": "9.9891  ",
+      "top_k_values": [
+        {
+          "value": "2.8145  ",
+          "count": 2
+        },
+        {
+          "value": "17.5037 ",
+          "count": 2
+        },
+        {
+          "value": "15.6326 ",
+          "count": 2
+        },
+        {
+          "value": "9.9891  ",
+          "count": 1
+        },
+        {
+          "value": "9.916   ",
+          "count": 1
+        },
+        {
+          "value": "9.9121  ",
+          "count": 1
+        },
+        {
+          "value": "9.8684  ",
+          "count": 1
+        },
+        {
+          "value": "9.8197  ",
+          "count": 1
+        },
+        {
+          "value": "9.7993  ",
+          "count": 1
+        },
+        {
+          "value": "9.7553  ",
+          "count": 1
+        }
+      ],
+      "min_length": 8,
+      "max_length": 8,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DD.DDDD ",
+        "D.DDDD  ",
+        "DD.DDD  ",
+        "D.DDD   ",
+        "DD.DD   "
+      ]
+    },
+    "alien_template|observatories|airtempc": {
+      "table_name": "observatories",
+      "column_name": "airtempc",
+      "column_type": "REAL",
+      "row_count": 963,
+      "null_count": 0,
+      "non_null_count": 963,
+      "distinct_count": 458,
+      "min_value": "-0.2",
+      "max_value": "9.9",
+      "top_k_values": [
+        {
+          "value": "9.8",
+          "count": 7
+        },
+        {
+          "value": "34.3",
+          "count": 6
+        },
+        {
+          "value": "15.8",
+          "count": 6
+        },
+        {
+          "value": "-5.0",
+          "count": 6
+        },
+        {
+          "value": "-8.7",
+          "count": 6
+        },
+        {
+          "value": "36.4",
+          "count": 5
+        },
+        {
+          "value": "33.6",
+          "count": 5
+        },
+        {
+          "value": "31.8",
+          "count": 5
+        },
+        {
+          "value": "25.2",
+          "count": 5
+        },
+        {
+          "value": "24.9",
+          "count": 5
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.D",
+        "D.D",
+        "-D.D",
+        "-DD.D"
+      ]
+    },
+    "alien_template|observatories|humidityrate": {
+      "table_name": "observatories",
+      "column_name": "humidityrate",
+      "column_type": "REAL",
+      "row_count": 963,
+      "null_count": 0,
+      "non_null_count": 963,
+      "distinct_count": 612,
+      "min_value": "0.0",
+      "max_value": "99.9",
+      "top_k_values": [
+        {
+          "value": "30.9",
+          "count": 5
+        },
+        {
+          "value": "13.4",
+          "count": 5
+        },
+        {
+          "value": "91.7",
+          "count": 4
+        },
+        {
+          "value": "90.9",
+          "count": 4
+        },
+        {
+          "value": "82.1",
+          "count": 4
+        },
+        {
+          "value": "79.4",
+          "count": 4
+        },
+        {
+          "value": "76.4",
+          "count": 4
+        },
+        {
+          "value": "67.7",
+          "count": 4
+        },
+        {
+          "value": "60.5",
+          "count": 4
+        },
+        {
+          "value": "56.0",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.D",
+        "D.D"
+      ]
+    },
+    "alien_template|observatories|windspeedms": {
+      "table_name": "observatories",
+      "column_name": "windspeedms",
+      "column_type": "REAL",
+      "row_count": 963,
+      "null_count": 0,
+      "non_null_count": 963,
+      "distinct_count": 287,
+      "min_value": "0.0",
+      "max_value": "9.9",
+      "top_k_values": [
+        {
+          "value": "19.3",
+          "count": 10
+        },
+        {
+          "value": "22.2",
+          "count": 9
+        },
+        {
+          "value": "18.8",
+          "count": 9
+        },
+        {
+          "value": "10.6",
+          "count": 9
+        },
+        {
+          "value": "19.7",
+          "count": 8
+        },
+        {
+          "value": "14.9",
+          "count": 8
+        },
+        {
+          "value": "18.1",
+          "count": 7
+        },
+        {
+          "value": "17.1",
+          "count": 7
+        },
+        {
+          "value": "11.6",
+          "count": 7
+        },
+        {
+          "value": "8.8",
+          "count": 7
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.D",
+        "D.D"
+      ]
+    },
+    "alien_template|observatories|presshpa": {
+      "table_name": "observatories",
+      "column_name": "presshpa",
+      "column_type": "REAL",
+      "row_count": 963,
+      "null_count": 0,
+      "non_null_count": 963,
+      "distinct_count": 425,
+      "min_value": "1000.0",
+      "max_value": "999.9",
+      "top_k_values": [
+        {
+          "value": "995.8",
+          "count": 8
+        },
+        {
+          "value": "990.8",
+          "count": 8
+        },
+        {
+          "value": "985.3",
+          "count": 7
+        },
+        {
+          "value": "980.6",
+          "count": 7
+        },
+        {
+          "value": "1028.6",
+          "count": 6
+        },
+        {
+          "value": "1025.7",
+          "count": 6
+        },
+        {
+          "value": "1022.3",
+          "count": 6
+        },
+        {
+          "value": "1019.7",
+          "count": 6
+        },
+        {
+          "value": "1018.8",
+          "count": 6
+        },
+        {
+          "value": "1001.9",
+          "count": 6
+        }
+      ],
+      "min_length": 5,
+      "max_length": 6,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDD.D",
+        "DDD.D"
+      ]
+    },
+    "alien_template|researchprocess|signalref": {
+      "table_name": "researchprocess",
+      "column_name": "signalref",
+      "column_type": "TEXT(36)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "AS100974                            ",
+      "max_value": "AS999544                            ",
+      "top_k_values": [
+        {
+          "value": "AS100974                            ",
+          "count": 1
+        },
+        {
+          "value": "AS101100                            ",
+          "count": 1
+        },
+        {
+          "value": "AS103055                            ",
+          "count": 1
+        },
+        {
+          "value": "AS104302                            ",
+          "count": 1
+        },
+        {
+          "value": "AS104491                            ",
+          "count": 1
+        },
+        {
+          "value": "AS104801                            ",
+          "count": 1
+        },
+        {
+          "value": "AS105071                            ",
+          "count": 1
+        },
+        {
+          "value": "AS105686                            ",
+          "count": 1
+        },
+        {
+          "value": "AS107126                            ",
+          "count": 1
+        },
+        {
+          "value": "AS107131                            ",
+          "count": 1
+        }
+      ],
+      "min_length": 36,
+      "max_length": 36,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDDDD                            "
+      ]
+    },
+    "alien_template|researchprocess|analysisprio": {
+      "table_name": "researchprocess",
+      "column_name": "analysisprio",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "High",
+      "max_value": "Urgent",
+      "top_k_values": [
+        {
+          "value": "Urgent",
+          "count": 257
+        },
+        {
+          "value": "High",
+          "count": 257
+        },
+        {
+          "value": "Low",
+          "count": 247
+        },
+        {
+          "value": "Medium",
+          "count": 239
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AAAA",
+        "AAA"
+      ]
+    },
+    "alien_template|researchprocess|followstat": {
+      "table_name": "researchprocess",
+      "column_name": "followstat",
+      "column_type": "TEXT(25)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Completed",
+      "max_value": "Scheduled",
+      "top_k_values": [
+        {
+          "value": "Completed",
+          "count": 352
+        },
+        {
+          "value": "Required",
+          "count": 335
+        },
+        {
+          "value": "Scheduled",
+          "count": 313
+        }
+      ],
+      "min_length": 8,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "alien_template|researchprocess|peerrevstat": {
+      "table_name": "researchprocess",
+      "column_name": "peerrevstat",
+      "column_type": "TEXT(25)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Completed",
+      "max_value": "Pending",
+      "top_k_values": [
+        {
+          "value": "Completed",
+          "count": 361
+        },
+        {
+          "value": "Pending",
+          "count": 326
+        },
+        {
+          "value": "In Progress",
+          "count": 313
+        }
+      ],
+      "min_length": 7,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAA",
+        "AAAAAAA",
+        "AA AAAAAAAA"
+      ]
+    },
+    "alien_template|researchprocess|pubstat": {
+      "table_name": "researchprocess",
+      "column_name": "pubstat",
+      "column_type": "TEXT(25)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Draft                    ",
+      "max_value": "Submitted                ",
+      "top_k_values": [
+        {
+          "value": "Published                ",
+          "count": 340
+        },
+        {
+          "value": "Draft                    ",
+          "count": 339
+        },
+        {
+          "value": "Submitted                ",
+          "count": 321
+        }
+      ],
+      "min_length": 25,
+      "max_length": 25,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAAAAAAA                ",
+        "AAAAA                    "
+      ]
+    },
+    "alien_template|researchprocess|resprio": {
+      "table_name": "researchprocess",
+      "column_name": "resprio",
+      "column_type": "TEXT(30)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "High",
+      "max_value": "Medium",
+      "top_k_values": [
+        {
+          "value": "Low",
+          "count": 351
+        },
+        {
+          "value": "Medium",
+          "count": 339
+        },
+        {
+          "value": "High",
+          "count": 310
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAA",
+        "AAAAAA",
+        "AAAA"
+      ]
+    },
+    "alien_template|researchprocess|fundstat": {
+      "table_name": "researchprocess",
+      "column_name": "fundstat",
+      "column_type": "TEXT(30)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Funded                        ",
+      "max_value": "Unfunded                      ",
+      "top_k_values": [
+        {
+          "value": "Pending                       ",
+          "count": 346
+        },
+        {
+          "value": "Unfunded                      ",
+          "count": 335
+        },
+        {
+          "value": "Funded                        ",
+          "count": 319
+        }
+      ],
+      "min_length": 30,
+      "max_length": 30,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAAAAA                       ",
+        "AAAAAAAA                      ",
+        "AAAAAA                        "
+      ]
+    },
+    "alien_template|researchprocess|collabstat": {
+      "table_name": "researchprocess",
+      "column_name": "collabstat",
+      "column_type": "TEXT(35)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "International                      ",
+      "max_value": "Team                               ",
+      "top_k_values": [
+        {
+          "value": "Team                               ",
+          "count": 351
+        },
+        {
+          "value": "International                      ",
+          "count": 347
+        },
+        {
+          "value": "Solo                               ",
+          "count": 302
+        }
+      ],
+      "min_length": 35,
+      "max_length": 35,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAA                               ",
+        "AAAAAAAAAAAAA                      "
+      ]
+    },
+    "alien_template|researchprocess|secclass": {
+      "table_name": "researchprocess",
+      "column_name": "secclass",
+      "column_type": "TEXT(35)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Classified                         ",
+      "max_value": "Restricted                         ",
+      "top_k_values": [
+        {
+          "value": "Public                             ",
+          "count": 354
+        },
+        {
+          "value": "Restricted                         ",
+          "count": 338
+        },
+        {
+          "value": "Classified                         ",
+          "count": 308
+        }
+      ],
+      "min_length": 35,
+      "max_length": 35,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAAAAAAAA                         ",
+        "AAAAAA                             "
+      ]
+    },
+    "alien_template|researchprocess|discstat": {
+      "table_name": "researchprocess",
+      "column_name": "discstat",
+      "column_type": "TEXT(40)",
+      "row_count": 1000,
+      "null_count": 326,
+      "non_null_count": 674,
+      "distinct_count": 2,
+      "min_value": "Full",
+      "max_value": "Partial",
+      "top_k_values": [
+        {
+          "value": "Full",
+          "count": 341
+        },
+        {
+          "value": "Partial",
+          "count": 333
+        }
+      ],
+      "min_length": 4,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAAAAAA"
+      ]
+    },
+    "alien_template|researchprocess|notesmemo": {
+      "table_name": "researchprocess",
+      "column_name": "notesmemo",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 492,
+      "non_null_count": 508,
+      "distinct_count": 508,
+      "min_value": "Accept whether budget tree increase despite finally baby.",
+      "max_value": "Yet school stock southern scene.",
+      "top_k_values": [
+        {
+          "value": "Yet school stock southern scene.",
+          "count": 1
+        },
+        {
+          "value": "Yes might through dinner economic American.",
+          "count": 1
+        },
+        {
+          "value": "Yard participant in.",
+          "count": 1
+        },
+        {
+          "value": "Write range consumer bill detail author personal.",
+          "count": 1
+        },
+        {
+          "value": "Worry officer effect now the.",
+          "count": 1
+        },
+        {
+          "value": "Word reality take reduce never.",
+          "count": 1
+        },
+        {
+          "value": "Wonder usually hundred company personal wide.",
+          "count": 1
+        },
+        {
+          "value": "Without knowledge white language box.",
+          "count": 1
+        },
+        {
+          "value": "Wish believe road sense into require run allow.",
+          "count": 1
+        },
+        {
+          "value": "Will for most expect move.",
+          "count": 1
+        }
+      ],
+      "min_length": 12,
+      "max_length": 64,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA AAAAA AAAA AAAA.",
+        "AAAAA AAA AAAA AAAAA.",
+        "AAAA AAA AAAA AAAAAAA.",
+        "AAAAA AAAAAAAA AAAAA AAAAAAA.",
+        "AAAAAA AAAAA AAAAA."
+      ]
+    },
+    "alien_template|signaladvancedphenomena|signalref": {
+      "table_name": "signaladvancedphenomena",
+      "column_name": "signalref",
+      "column_type": "TEXT(36)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "AS100974                            ",
+      "max_value": "AS999544                            ",
+      "top_k_values": [
+        {
+          "value": "AS100974                            ",
+          "count": 1
+        },
+        {
+          "value": "AS101100                            ",
+          "count": 1
+        },
+        {
+          "value": "AS103055                            ",
+          "count": 1
+        },
+        {
+          "value": "AS104302                            ",
+          "count": 1
+        },
+        {
+          "value": "AS104491                            ",
+          "count": 1
+        },
+        {
+          "value": "AS104801                            ",
+          "count": 1
+        },
+        {
+          "value": "AS105071                            ",
+          "count": 1
+        },
+        {
+          "value": "AS105686                            ",
+          "count": 1
+        },
+        {
+          "value": "AS107126                            ",
+          "count": 1
+        },
+        {
+          "value": "AS107131                            ",
+          "count": 1
+        }
+      ],
+      "min_length": 36,
+      "max_length": 36,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDDDD                            "
+      ]
+    },
+    "alien_template|signaladvancedphenomena|intermedeffects": {
+      "table_name": "signaladvancedphenomena",
+      "column_name": "intermedeffects",
+      "column_type": "TEXT(40)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Minimal",
+      "max_value": "Severe",
+      "top_k_values": [
+        {
+          "value": "Minimal",
+          "count": 357
+        },
+        {
+          "value": "Moderate",
+          "count": 329
+        },
+        {
+          "value": "Severe",
+          "count": 314
+        }
+      ],
+      "min_length": 6,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAAAA",
+        "AAAAAA"
+      ]
+    },
+    "alien_template|signaladvancedphenomena|gravlens": {
+      "table_name": "signaladvancedphenomena",
+      "column_name": "gravlens",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 333,
+      "non_null_count": 667,
+      "distinct_count": 2,
+      "min_value": "Strong",
+      "max_value": "Weak",
+      "top_k_values": [
+        {
+          "value": "Strong",
+          "count": 347
+        },
+        {
+          "value": "Weak",
+          "count": 320
+        }
+      ],
+      "min_length": 4,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AAAA"
+      ]
+    },
+    "alien_template|signaladvancedphenomena|quanteffects": {
+      "table_name": "signaladvancedphenomena",
+      "column_name": "quanteffects",
+      "column_type": "TEXT(85)",
+      "row_count": 1000,
+      "null_count": 346,
+      "non_null_count": 654,
+      "distinct_count": 2,
+      "min_value": "Observed",
+      "max_value": "Significant",
+      "top_k_values": [
+        {
+          "value": "Observed",
+          "count": 340
+        },
+        {
+          "value": "Significant",
+          "count": 314
+        }
+      ],
+      "min_length": 8,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAAAAAAAAA"
+      ]
+    },
+    "alien_template|signaladvancedphenomena|encryptevid": {
+      "table_name": "signaladvancedphenomena",
+      "column_name": "encryptevid",
+      "column_type": "TEXT(40)",
+      "row_count": 1000,
+      "null_count": 339,
+      "non_null_count": 661,
+      "distinct_count": 2,
+      "min_value": "Possible",
+      "max_value": "Strong",
+      "top_k_values": [
+        {
+          "value": "Strong",
+          "count": 350
+        },
+        {
+          "value": "Possible",
+          "count": 311
+        }
+      ],
+      "min_length": 6,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "alien_template|signaladvancedphenomena|langstruct": {
+      "table_name": "signaladvancedphenomena",
+      "column_name": "langstruct",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 335,
+      "non_null_count": 665,
+      "distinct_count": 2,
+      "min_value": "Complex",
+      "max_value": "Simple",
+      "top_k_values": [
+        {
+          "value": "Complex",
+          "count": 356
+        },
+        {
+          "value": "Simple",
+          "count": 309
+        }
+      ],
+      "min_length": 6,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAA"
+      ]
+    },
+    "alien_template|signaladvancedphenomena|msgcontent": {
+      "table_name": "signaladvancedphenomena",
+      "column_name": "msgcontent",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 304,
+      "non_null_count": 696,
+      "distinct_count": 2,
+      "min_value": "Identified",
+      "max_value": "Possible",
+      "top_k_values": [
+        {
+          "value": "Identified",
+          "count": 360
+        },
+        {
+          "value": "Possible",
+          "count": 336
+        }
+      ],
+      "min_length": 8,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "alien_template|signaladvancedphenomena|cultsig": {
+      "table_name": "signaladvancedphenomena",
+      "column_name": "cultsig",
+      "column_type": "TEXT(60)",
+      "row_count": 1000,
+      "null_count": 346,
+      "non_null_count": 654,
+      "distinct_count": 2,
+      "min_value": "High",
+      "max_value": "Low",
+      "top_k_values": [
+        {
+          "value": "High",
+          "count": 332
+        },
+        {
+          "value": "Low",
+          "count": 322
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAA"
+      ]
+    },
+    "alien_template|signaladvancedphenomena|sciimpact": {
+      "table_name": "signaladvancedphenomena",
+      "column_name": "sciimpact",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Major",
+      "max_value": "Moderate",
+      "top_k_values": [
+        {
+          "value": "Moderate",
+          "count": 338
+        },
+        {
+          "value": "Major",
+          "count": 332
+        },
+        {
+          "value": "Minor",
+          "count": 330
+        }
+      ],
+      "min_length": 5,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "alien_template|signalclassification|signalref": {
+      "table_name": "signalclassification",
+      "column_name": "signalref",
+      "column_type": "TEXT(36)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "AS100974                            ",
+      "max_value": "AS999544                            ",
+      "top_k_values": [
+        {
+          "value": "AS100974                            ",
+          "count": 1
+        },
+        {
+          "value": "AS101100                            ",
+          "count": 1
+        },
+        {
+          "value": "AS103055                            ",
+          "count": 1
+        },
+        {
+          "value": "AS104302                            ",
+          "count": 1
+        },
+        {
+          "value": "AS104491                            ",
+          "count": 1
+        },
+        {
+          "value": "AS104801                            ",
+          "count": 1
+        },
+        {
+          "value": "AS105071                            ",
+          "count": 1
+        },
+        {
+          "value": "AS105686                            ",
+          "count": 1
+        },
+        {
+          "value": "AS107126                            ",
+          "count": 1
+        },
+        {
+          "value": "AS107131                            ",
+          "count": 1
+        }
+      ],
+      "min_length": 36,
+      "max_length": 36,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDDDD                            "
+      ]
+    },
+    "alien_template|signalclassification|sigclasstype": {
+      "table_name": "signalclassification",
+      "column_name": "sigclasstype",
+      "column_type": "TEXT(40)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "Artificial",
+      "max_value": "Unknown",
+      "top_k_values": [
+        {
+          "value": "Artificial",
+          "count": 269
+        },
+        {
+          "value": "Natural",
+          "count": 251
+        },
+        {
+          "value": "Candidate",
+          "count": 248
+        },
+        {
+          "value": "Unknown",
+          "count": 232
+        }
+      ],
+      "min_length": 7,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAAAAAA",
+        "AAAAAAAAA"
+      ]
+    },
+    "alien_template|signalclassification|sigpattern": {
+      "table_name": "signalclassification",
+      "column_name": "sigpattern",
+      "column_type": "TEXT(60)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "Periodic",
+      "max_value": "Unknown",
+      "top_k_values": [
+        {
+          "value": "Structured",
+          "count": 265
+        },
+        {
+          "value": "Random",
+          "count": 262
+        },
+        {
+          "value": "Unknown",
+          "count": 239
+        },
+        {
+          "value": "Periodic",
+          "count": 234
+        }
+      ],
+      "min_length": 6,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAAA",
+        "AAAAAA",
+        "AAAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "alien_template|signalclassification|repeatcount": {
+      "table_name": "signalclassification",
+      "column_name": "repeatcount",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 101,
+      "min_value": "0",
+      "max_value": "99",
+      "top_k_values": [
+        {
+          "value": "72",
+          "count": 19
+        },
+        {
+          "value": "22",
+          "count": 18
+        },
+        {
+          "value": "98",
+          "count": 17
+        },
+        {
+          "value": "56",
+          "count": 16
+        },
+        {
+          "value": "86",
+          "count": 15
+        },
+        {
+          "value": "70",
+          "count": 15
+        },
+        {
+          "value": "59",
+          "count": 15
+        },
+        {
+          "value": "45",
+          "count": 15
+        },
+        {
+          "value": "40",
+          "count": 15
+        },
+        {
+          "value": "25",
+          "count": 15
+        }
+      ],
+      "min_length": 1,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D",
+        "DDD"
+      ]
+    },
+    "alien_template|signalclassification|periodsec": {
+      "table_name": "signalclassification",
+      "column_name": "periodsec",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "10142.14",
+      "max_value": "9915.24",
+      "top_k_values": [
+        {
+          "value": "86398.95",
+          "count": 1
+        },
+        {
+          "value": "86389.08",
+          "count": 1
+        },
+        {
+          "value": "86156.86",
+          "count": 1
+        },
+        {
+          "value": "86107.64",
+          "count": 1
+        },
+        {
+          "value": "86069.46",
+          "count": 1
+        },
+        {
+          "value": "85893.88",
+          "count": 1
+        },
+        {
+          "value": "85750.99",
+          "count": 1
+        },
+        {
+          "value": "85529.15",
+          "count": 1
+        },
+        {
+          "value": "85468.78",
+          "count": 1
+        },
+        {
+          "value": "85462.01",
+          "count": 1
+        }
+      ],
+      "min_length": 5,
+      "max_length": 8,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDD.DD",
+        "DDDD.DD",
+        "DDDDD.D",
+        "DDDD.D",
+        "DDD.DD"
+      ]
+    },
+    "alien_template|signalclassification|complexidx": {
+      "table_name": "signalclassification",
+      "column_name": "complexidx",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 631,
+      "min_value": "0.001",
+      "max_value": "1.0",
+      "top_k_values": [
+        {
+          "value": "0.336",
+          "count": 6
+        },
+        {
+          "value": "0.828",
+          "count": 5
+        },
+        {
+          "value": "0.189",
+          "count": 5
+        },
+        {
+          "value": "0.93",
+          "count": 4
+        },
+        {
+          "value": "0.908",
+          "count": 4
+        },
+        {
+          "value": "0.862",
+          "count": 4
+        },
+        {
+          "value": "0.799",
+          "count": 4
+        },
+        {
+          "value": "0.794",
+          "count": 4
+        },
+        {
+          "value": "0.731",
+          "count": 4
+        },
+        {
+          "value": "0.722",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "alien_template|signalclassification|entropyval": {
+      "table_name": "signalclassification",
+      "column_name": "entropyval",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 573,
+      "min_value": "0.0",
+      "max_value": "7.99",
+      "top_k_values": [
+        {
+          "value": "6.42",
+          "count": 5
+        },
+        {
+          "value": "5.85",
+          "count": 5
+        },
+        {
+          "value": "4.94",
+          "count": 5
+        },
+        {
+          "value": "4.53",
+          "count": 5
+        },
+        {
+          "value": "3.36",
+          "count": 5
+        },
+        {
+          "value": "3.1",
+          "count": 5
+        },
+        {
+          "value": "1.57",
+          "count": 5
+        },
+        {
+          "value": "1.16",
+          "count": 5
+        },
+        {
+          "value": "1.08",
+          "count": 5
+        },
+        {
+          "value": "0.5",
+          "count": 5
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "alien_template|signalclassification|infodense": {
+      "table_name": "signalclassification",
+      "column_name": "infodense",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 628,
+      "min_value": "0.002",
+      "max_value": "0.999",
+      "top_k_values": [
+        {
+          "value": "0.06",
+          "count": 6
+        },
+        {
+          "value": "0.924",
+          "count": 5
+        },
+        {
+          "value": "0.435",
+          "count": 5
+        },
+        {
+          "value": "0.234",
+          "count": 5
+        },
+        {
+          "value": "0.031",
+          "count": 5
+        },
+        {
+          "value": "0.971",
+          "count": 4
+        },
+        {
+          "value": "0.757",
+          "count": 4
+        },
+        {
+          "value": "0.667",
+          "count": 4
+        },
+        {
+          "value": "0.349",
+          "count": 4
+        },
+        {
+          "value": "0.344",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "alien_template|signalclassification|classconf": {
+      "table_name": "signalclassification",
+      "column_name": "classconf",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 646,
+      "min_value": "0.0",
+      "max_value": "99.9",
+      "top_k_values": [
+        {
+          "value": "91.7",
+          "count": 5
+        },
+        {
+          "value": "90.1",
+          "count": 5
+        },
+        {
+          "value": "83.4",
+          "count": 5
+        },
+        {
+          "value": "75.9",
+          "count": 5
+        },
+        {
+          "value": "75.3",
+          "count": 5
+        },
+        {
+          "value": "48.9",
+          "count": 5
+        },
+        {
+          "value": "7.6",
+          "count": 5
+        },
+        {
+          "value": "98.5",
+          "count": 4
+        },
+        {
+          "value": "92.7",
+          "count": 4
+        },
+        {
+          "value": "90.6",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.D",
+        "D.D"
+      ]
+    },
+    "alien_template|signaldecoding|signalref": {
+      "table_name": "signaldecoding",
+      "column_name": "signalref",
+      "column_type": "TEXT(36)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "AS100974                            ",
+      "max_value": "AS999544                            ",
+      "top_k_values": [
+        {
+          "value": "AS100974                            ",
+          "count": 1
+        },
+        {
+          "value": "AS101100                            ",
+          "count": 1
+        },
+        {
+          "value": "AS103055                            ",
+          "count": 1
+        },
+        {
+          "value": "AS104302                            ",
+          "count": 1
+        },
+        {
+          "value": "AS104491                            ",
+          "count": 1
+        },
+        {
+          "value": "AS104801                            ",
+          "count": 1
+        },
+        {
+          "value": "AS105071                            ",
+          "count": 1
+        },
+        {
+          "value": "AS105686                            ",
+          "count": 1
+        },
+        {
+          "value": "AS107126                            ",
+          "count": 1
+        },
+        {
+          "value": "AS107131                            ",
+          "count": 1
+        }
+      ],
+      "min_length": 36,
+      "max_length": 36,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDDDD                            "
+      ]
+    },
+    "alien_template|signaldecoding|encodetype": {
+      "table_name": "signaldecoding",
+      "column_name": "encodetype",
+      "column_type": "TEXT(40)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "Binary",
+      "max_value": "Unknown",
+      "top_k_values": [
+        {
+          "value": "Unknown",
+          "count": 267
+        },
+        {
+          "value": "Tertiary",
+          "count": 249
+        },
+        {
+          "value": "Complex",
+          "count": 246
+        },
+        {
+          "value": "Binary",
+          "count": 238
+        }
+      ],
+      "min_length": 6,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAAAA",
+        "AAAAAA"
+      ]
+    },
+    "alien_template|signaldecoding|compressratio": {
+      "table_name": "signaldecoding",
+      "column_name": "compressratio",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 614,
+      "min_value": "1.0",
+      "max_value": "9.97",
+      "top_k_values": [
+        {
+          "value": "8.17",
+          "count": 6
+        },
+        {
+          "value": "5.59",
+          "count": 5
+        },
+        {
+          "value": "3.96",
+          "count": 5
+        },
+        {
+          "value": "3.33",
+          "count": 5
+        },
+        {
+          "value": "1.58",
+          "count": 5
+        },
+        {
+          "value": "8.31",
+          "count": 4
+        },
+        {
+          "value": "7.35",
+          "count": 4
+        },
+        {
+          "value": "7.19",
+          "count": 4
+        },
+        {
+          "value": "7.0",
+          "count": 4
+        },
+        {
+          "value": "6.59",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "alien_template|signaldecoding|errcorrlvl": {
+      "table_name": "signaldecoding",
+      "column_name": "errcorrlvl",
+      "column_type": "TEXT(35)",
+      "row_count": 1000,
+      "null_count": 265,
+      "non_null_count": 735,
+      "distinct_count": 3,
+      "min_value": "High",
+      "max_value": "Medium",
+      "top_k_values": [
+        {
+          "value": "Low",
+          "count": 250
+        },
+        {
+          "value": "High",
+          "count": 248
+        },
+        {
+          "value": "Medium",
+          "count": 237
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAA",
+        "AAAA",
+        "AAAAAA"
+      ]
+    },
+    "alien_template|signaldecoding|decodeconf": {
+      "table_name": "signaldecoding",
+      "column_name": "decodeconf",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 627,
+      "min_value": "0.2",
+      "max_value": "99.8",
+      "top_k_values": [
+        {
+          "value": "5.6",
+          "count": 7
+        },
+        {
+          "value": "38.7",
+          "count": 5
+        },
+        {
+          "value": "30.1",
+          "count": 5
+        },
+        {
+          "value": "82.7",
+          "count": 4
+        },
+        {
+          "value": "77.4",
+          "count": 4
+        },
+        {
+          "value": "63.7",
+          "count": 4
+        },
+        {
+          "value": "52.2",
+          "count": 4
+        },
+        {
+          "value": "49.9",
+          "count": 4
+        },
+        {
+          "value": "43.0",
+          "count": 4
+        },
+        {
+          "value": "25.6",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.D",
+        "D.D"
+      ]
+    },
+    "alien_template|signaldecoding|decodemethod": {
+      "table_name": "signaldecoding",
+      "column_name": "decodemethod",
+      "column_type": "TEXT(35)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "FFT",
+      "max_value": "Wavelet",
+      "top_k_values": [
+        {
+          "value": "FFT",
+          "count": 267
+        },
+        {
+          "value": "Wavelet",
+          "count": 259
+        },
+        {
+          "value": "Neural Network",
+          "count": 239
+        },
+        {
+          "value": "Quantum",
+          "count": 235
+        }
+      ],
+      "min_length": 3,
+      "max_length": 14,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAA",
+        "AAAAAA AAAAAAA"
+      ]
+    },
+    "alien_template|signaldecoding|decodestat": {
+      "table_name": "signaldecoding",
+      "column_name": "decodestat",
+      "column_type": "TEXT(25)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Completed",
+      "max_value": "In Progress",
+      "top_k_values": [
+        {
+          "value": "In Progress",
+          "count": 345
+        },
+        {
+          "value": "Completed",
+          "count": 343
+        },
+        {
+          "value": "Failed",
+          "count": 312
+        }
+      ],
+      "min_length": 6,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AA AAAAAAAA",
+        "AAAAAAAAA",
+        "AAAAAA"
+      ]
+    },
+    "alien_template|signaldecoding|decodeiters": {
+      "table_name": "signaldecoding",
+      "column_name": "decodeiters",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 637,
+      "min_value": "1000",
+      "max_value": "998",
+      "top_k_values": [
+        {
+          "value": "829",
+          "count": 6
+        },
+        {
+          "value": "536",
+          "count": 5
+        },
+        {
+          "value": "2",
+          "count": 5
+        },
+        {
+          "value": "983",
+          "count": 4
+        },
+        {
+          "value": "834",
+          "count": 4
+        },
+        {
+          "value": "830",
+          "count": 4
+        },
+        {
+          "value": "765",
+          "count": 4
+        },
+        {
+          "value": "693",
+          "count": 4
+        },
+        {
+          "value": "629",
+          "count": 4
+        },
+        {
+          "value": "558",
+          "count": 4
+        }
+      ],
+      "min_length": 1,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D",
+        "DDDD"
+      ]
+    },
+    "alien_template|signaldecoding|proctimehrs": {
+      "table_name": "signaldecoding",
+      "column_name": "proctimehrs",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 993,
+      "min_value": "10.22",
+      "max_value": "998.72",
+      "top_k_values": [
+        {
+          "value": "966.69",
+          "count": 2
+        },
+        {
+          "value": "960.71",
+          "count": 2
+        },
+        {
+          "value": "522.46",
+          "count": 2
+        },
+        {
+          "value": "469.79",
+          "count": 2
+        },
+        {
+          "value": "419.85",
+          "count": 2
+        },
+        {
+          "value": "398.14",
+          "count": 2
+        },
+        {
+          "value": "152.32",
+          "count": 2
+        },
+        {
+          "value": "998.72",
+          "count": 1
+        },
+        {
+          "value": "997.9",
+          "count": 1
+        },
+        {
+          "value": "997.25",
+          "count": 1
+        }
+      ],
+      "min_length": 4,
+      "max_length": 6,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD.DD",
+        "DDD.D",
+        "DD.DD",
+        "D.DD",
+        "DD.D"
+      ]
+    },
+    "alien_template|signaldecoding|compresources": {
+      "table_name": "signaldecoding",
+      "column_name": "compresources",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "Extreme",
+      "max_value": "Medium",
+      "top_k_values": [
+        {
+          "value": "Low",
+          "count": 274
+        },
+        {
+          "value": "Medium",
+          "count": 269
+        },
+        {
+          "value": "Extreme",
+          "count": 233
+        },
+        {
+          "value": "High",
+          "count": 224
+        }
+      ],
+      "min_length": 3,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAA",
+        "AAAAAA",
+        "AAAAAAA",
+        "AAAA"
+      ]
+    },
+    "alien_template|signaldecoding|analysisdp": {
+      "table_name": "signaldecoding",
+      "column_name": "analysisdp",
+      "column_type": "TEXT(25)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Comprehensive",
+      "max_value": "Preliminary",
+      "top_k_values": [
+        {
+          "value": "Preliminary",
+          "count": 344
+        },
+        {
+          "value": "Detailed",
+          "count": 336
+        },
+        {
+          "value": "Comprehensive",
+          "count": 320
+        }
+      ],
+      "min_length": 8,
+      "max_length": 13,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAAAA",
+        "AAAAAAAA",
+        "AAAAAAAAAAAAA"
+      ]
+    },
+    "alien_template|signaldecoding|veriflvl": {
+      "table_name": "signaldecoding",
+      "column_name": "veriflvl",
+      "column_type": "TEXT(30)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Partially",
+      "max_value": "Verified",
+      "top_k_values": [
+        {
+          "value": "Unverified",
+          "count": 340
+        },
+        {
+          "value": "Partially",
+          "count": 335
+        },
+        {
+          "value": "Verified",
+          "count": 325
+        }
+      ],
+      "min_length": 8,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAAA",
+        "AAAAAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "alien_template|signaldecoding|confirmstat": {
+      "table_name": "signaldecoding",
+      "column_name": "confirmstat",
+      "column_type": "TEXT(30)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Confirmed",
+      "max_value": "Rejected",
+      "top_k_values": [
+        {
+          "value": "Rejected",
+          "count": 370
+        },
+        {
+          "value": "Confirmed",
+          "count": 317
+        },
+        {
+          "value": "Pending",
+          "count": 313
+        }
+      ],
+      "min_length": 7,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAAAAAAA",
+        "AAAAAAA"
+      ]
+    },
+    "alien_template|signaldynamics|signalref": {
+      "table_name": "signaldynamics",
+      "column_name": "signalref",
+      "column_type": "TEXT(36)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "AS100974                            ",
+      "max_value": "AS999544                            ",
+      "top_k_values": [
+        {
+          "value": "AS100974                            ",
+          "count": 1
+        },
+        {
+          "value": "AS101100                            ",
+          "count": 1
+        },
+        {
+          "value": "AS103055                            ",
+          "count": 1
+        },
+        {
+          "value": "AS104302                            ",
+          "count": 1
+        },
+        {
+          "value": "AS104491                            ",
+          "count": 1
+        },
+        {
+          "value": "AS104801                            ",
+          "count": 1
+        },
+        {
+          "value": "AS105071                            ",
+          "count": 1
+        },
+        {
+          "value": "AS105686                            ",
+          "count": 1
+        },
+        {
+          "value": "AS107126                            ",
+          "count": 1
+        },
+        {
+          "value": "AS107131                            ",
+          "count": 1
+        }
+      ],
+      "min_length": 36,
+      "max_length": 36,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDDDD                            "
+      ]
+    },
+    "alien_template|signaldynamics|sigintegrity": {
+      "table_name": "signaldynamics",
+      "column_name": "sigintegrity",
+      "column_type": "TEXT(30)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 633,
+      "min_value": "0.2",
+      "max_value": "99.9",
+      "top_k_values": [
+        {
+          "value": "92.3",
+          "count": 5
+        },
+        {
+          "value": "48.7",
+          "count": 5
+        },
+        {
+          "value": "43.7",
+          "count": 5
+        },
+        {
+          "value": "36.4",
+          "count": 5
+        },
+        {
+          "value": "89.7",
+          "count": 4
+        },
+        {
+          "value": "87.5",
+          "count": 4
+        },
+        {
+          "value": "76.6",
+          "count": 4
+        },
+        {
+          "value": "7.2",
+          "count": 4
+        },
+        {
+          "value": "66.8",
+          "count": 4
+        },
+        {
+          "value": "62.1",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.D",
+        "D.D",
+        "DDD.D"
+      ]
+    },
+    "alien_template|signaldynamics|sigrecurr": {
+      "table_name": "signaldynamics",
+      "column_name": "sigrecurr",
+      "column_type": "TEXT(25)",
+      "row_count": 1000,
+      "null_count": 331,
+      "non_null_count": 669,
+      "distinct_count": 2,
+      "min_value": "Regular",
+      "max_value": "Sporadic",
+      "top_k_values": [
+        {
+          "value": "Regular",
+          "count": 349
+        },
+        {
+          "value": "Sporadic",
+          "count": 320
+        }
+      ],
+      "min_length": 7,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "alien_template|signaldynamics|sigevolve": {
+      "table_name": "signaldynamics",
+      "column_name": "sigevolve",
+      "column_type": "TEXT(25)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Dynamic",
+      "max_value": "Unknown",
+      "top_k_values": [
+        {
+          "value": "Static",
+          "count": 351
+        },
+        {
+          "value": "Dynamic",
+          "count": 339
+        },
+        {
+          "value": "Unknown",
+          "count": 310
+        }
+      ],
+      "min_length": 6,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAA"
+      ]
+    },
+    "alien_template|signaldynamics|tempstab": {
+      "table_name": "signaldynamics",
+      "column_name": "tempstab",
+      "column_type": "TEXT(20)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 632,
+      "min_value": "0.001",
+      "max_value": "0.999",
+      "top_k_values": [
+        {
+          "value": "0.172",
+          "count": 5
+        },
+        {
+          "value": "0.994",
+          "count": 4
+        },
+        {
+          "value": "0.976",
+          "count": 4
+        },
+        {
+          "value": "0.969",
+          "count": 4
+        },
+        {
+          "value": "0.936",
+          "count": 4
+        },
+        {
+          "value": "0.882",
+          "count": 4
+        },
+        {
+          "value": "0.822",
+          "count": 4
+        },
+        {
+          "value": "0.784",
+          "count": 4
+        },
+        {
+          "value": "0.43",
+          "count": 4
+        },
+        {
+          "value": "0.256",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "alien_template|signaldynamics|spatstab": {
+      "table_name": "signaldynamics",
+      "column_name": "spatstab",
+      "column_type": "TEXT(20)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 640,
+      "min_value": "0.003",
+      "max_value": "0.999",
+      "top_k_values": [
+        {
+          "value": "0.851",
+          "count": 5
+        },
+        {
+          "value": "0.767",
+          "count": 5
+        },
+        {
+          "value": "0.249",
+          "count": 5
+        },
+        {
+          "value": "0.171",
+          "count": 5
+        },
+        {
+          "value": "0.163",
+          "count": 5
+        },
+        {
+          "value": "0.037",
+          "count": 5
+        },
+        {
+          "value": "0.987",
+          "count": 4
+        },
+        {
+          "value": "0.973",
+          "count": 4
+        },
+        {
+          "value": "0.862",
+          "count": 4
+        },
+        {
+          "value": "0.798",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "alien_template|signaldynamics|freqstab": {
+      "table_name": "signaldynamics",
+      "column_name": "freqstab",
+      "column_type": "TEXT(35)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 633,
+      "min_value": "0.0",
+      "max_value": "1.0",
+      "top_k_values": [
+        {
+          "value": "0.59",
+          "count": 5
+        },
+        {
+          "value": "0.538",
+          "count": 5
+        },
+        {
+          "value": "0.383",
+          "count": 5
+        },
+        {
+          "value": "0.165",
+          "count": 5
+        },
+        {
+          "value": "0.888",
+          "count": 4
+        },
+        {
+          "value": "0.853",
+          "count": 4
+        },
+        {
+          "value": "0.848",
+          "count": 4
+        },
+        {
+          "value": "0.83",
+          "count": 4
+        },
+        {
+          "value": "0.819",
+          "count": 4
+        },
+        {
+          "value": "0.813",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "alien_template|signaldynamics|phasestab": {
+      "table_name": "signaldynamics",
+      "column_name": "phasestab",
+      "column_type": "TEXT(35)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 632,
+      "min_value": "0.0",
+      "max_value": "0.999",
+      "top_k_values": [
+        {
+          "value": "0.922",
+          "count": 5
+        },
+        {
+          "value": "0.879",
+          "count": 5
+        },
+        {
+          "value": "0.814",
+          "count": 5
+        },
+        {
+          "value": "0.747",
+          "count": 5
+        },
+        {
+          "value": "0.374",
+          "count": 5
+        },
+        {
+          "value": "0.897",
+          "count": 4
+        },
+        {
+          "value": "0.858",
+          "count": 4
+        },
+        {
+          "value": "0.677",
+          "count": 4
+        },
+        {
+          "value": "0.613",
+          "count": 4
+        },
+        {
+          "value": "0.531",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "alien_template|signaldynamics|ampstab": {
+      "table_name": "signaldynamics",
+      "column_name": "ampstab",
+      "column_type": "TEXT(20)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 630,
+      "min_value": "0.001",
+      "max_value": "1.0",
+      "top_k_values": [
+        {
+          "value": "0.405",
+          "count": 7
+        },
+        {
+          "value": "0.184",
+          "count": 6
+        },
+        {
+          "value": "0.985",
+          "count": 5
+        },
+        {
+          "value": "0.936",
+          "count": 5
+        },
+        {
+          "value": "0.653",
+          "count": 5
+        },
+        {
+          "value": "0.441",
+          "count": 5
+        },
+        {
+          "value": "0.858",
+          "count": 4
+        },
+        {
+          "value": "0.814",
+          "count": 4
+        },
+        {
+          "value": "0.792",
+          "count": 4
+        },
+        {
+          "value": "0.694",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "alien_template|signaldynamics|modstab": {
+      "table_name": "signaldynamics",
+      "column_name": "modstab",
+      "column_type": "TEXT(30)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 630,
+      "min_value": "0.001",
+      "max_value": "0.999",
+      "top_k_values": [
+        {
+          "value": "0.55",
+          "count": 6
+        },
+        {
+          "value": "0.752",
+          "count": 5
+        },
+        {
+          "value": "0.254",
+          "count": 5
+        },
+        {
+          "value": "0.988",
+          "count": 4
+        },
+        {
+          "value": "0.979",
+          "count": 4
+        },
+        {
+          "value": "0.886",
+          "count": 4
+        },
+        {
+          "value": "0.798",
+          "count": 4
+        },
+        {
+          "value": "0.754",
+          "count": 4
+        },
+        {
+          "value": "0.694",
+          "count": 4
+        },
+        {
+          "value": "0.652",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "alien_template|signaldynamics|sigcoherence": {
+      "table_name": "signaldynamics",
+      "column_name": "sigcoherence",
+      "column_type": "TEXT(25)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 631,
+      "min_value": "0.001",
+      "max_value": "1.0",
+      "top_k_values": [
+        {
+          "value": "0.376",
+          "count": 6
+        },
+        {
+          "value": "0.853",
+          "count": 5
+        },
+        {
+          "value": "0.437",
+          "count": 5
+        },
+        {
+          "value": "0.121",
+          "count": 5
+        },
+        {
+          "value": "0.936",
+          "count": 4
+        },
+        {
+          "value": "0.92",
+          "count": 4
+        },
+        {
+          "value": "0.881",
+          "count": 4
+        },
+        {
+          "value": "0.83",
+          "count": 4
+        },
+        {
+          "value": "0.826",
+          "count": 4
+        },
+        {
+          "value": "0.698",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "alien_template|signaldynamics|sigdisp": {
+      "table_name": "signaldynamics",
+      "column_name": "sigdisp",
+      "column_type": "TEXT(25)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 992,
+      "min_value": "1.49",
+      "max_value": "997.83",
+      "top_k_values": [
+        {
+          "value": "902.25",
+          "count": 2
+        },
+        {
+          "value": "847.97",
+          "count": 2
+        },
+        {
+          "value": "747.07",
+          "count": 2
+        },
+        {
+          "value": "732.45",
+          "count": 2
+        },
+        {
+          "value": "716.23",
+          "count": 2
+        },
+        {
+          "value": "563.42",
+          "count": 2
+        },
+        {
+          "value": "329.4",
+          "count": 2
+        },
+        {
+          "value": "185.79",
+          "count": 2
+        },
+        {
+          "value": "997.83",
+          "count": 1
+        },
+        {
+          "value": "995.2",
+          "count": 1
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD.DD",
+        "DD.DD",
+        "DDD.D",
+        "D.DD",
+        "DD.D"
+      ]
+    },
+    "alien_template|signaldynamics|sigscint": {
+      "table_name": "signaldynamics",
+      "column_name": "sigscint",
+      "column_type": "TEXT(45)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 629,
+      "min_value": "0.002",
+      "max_value": "0.999",
+      "top_k_values": [
+        {
+          "value": "0.989",
+          "count": 5
+        },
+        {
+          "value": "0.919",
+          "count": 5
+        },
+        {
+          "value": "0.701",
+          "count": 5
+        },
+        {
+          "value": "0.56",
+          "count": 5
+        },
+        {
+          "value": "0.229",
+          "count": 5
+        },
+        {
+          "value": "0.85",
+          "count": 4
+        },
+        {
+          "value": "0.789",
+          "count": 4
+        },
+        {
+          "value": "0.744",
+          "count": 4
+        },
+        {
+          "value": "0.639",
+          "count": 4
+        },
+        {
+          "value": "0.431",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "alien_template|signalprobabilities|signalref": {
+      "table_name": "signalprobabilities",
+      "column_name": "signalref",
+      "column_type": "TEXT(36)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "AS100974                            ",
+      "max_value": "AS999544                            ",
+      "top_k_values": [
+        {
+          "value": "AS100974                            ",
+          "count": 1
+        },
+        {
+          "value": "AS101100                            ",
+          "count": 1
+        },
+        {
+          "value": "AS103055                            ",
+          "count": 1
+        },
+        {
+          "value": "AS104302                            ",
+          "count": 1
+        },
+        {
+          "value": "AS104491                            ",
+          "count": 1
+        },
+        {
+          "value": "AS104801                            ",
+          "count": 1
+        },
+        {
+          "value": "AS105071                            ",
+          "count": 1
+        },
+        {
+          "value": "AS105686                            ",
+          "count": 1
+        },
+        {
+          "value": "AS107126                            ",
+          "count": 1
+        },
+        {
+          "value": "AS107131                            ",
+          "count": 1
+        }
+      ],
+      "min_length": 36,
+      "max_length": 36,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDDDD                            "
+      ]
+    },
+    "alien_template|signalprobabilities|falseposprob": {
+      "table_name": "signalprobabilities",
+      "column_name": "falseposprob",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 619,
+      "min_value": "0.001",
+      "max_value": "1.0",
+      "top_k_values": [
+        {
+          "value": "0.998",
+          "count": 5
+        },
+        {
+          "value": "0.415",
+          "count": 5
+        },
+        {
+          "value": "0.955",
+          "count": 4
+        },
+        {
+          "value": "0.824",
+          "count": 4
+        },
+        {
+          "value": "0.778",
+          "count": 4
+        },
+        {
+          "value": "0.761",
+          "count": 4
+        },
+        {
+          "value": "0.75",
+          "count": 4
+        },
+        {
+          "value": "0.686",
+          "count": 4
+        },
+        {
+          "value": "0.65",
+          "count": 4
+        },
+        {
+          "value": "0.639",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "alien_template|signalprobabilities|sigunique": {
+      "table_name": "signalprobabilities",
+      "column_name": "sigunique",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 634,
+      "min_value": "0.001",
+      "max_value": "0.999",
+      "top_k_values": [
+        {
+          "value": "0.985",
+          "count": 5
+        },
+        {
+          "value": "0.679",
+          "count": 5
+        },
+        {
+          "value": "0.495",
+          "count": 5
+        },
+        {
+          "value": "0.016",
+          "count": 5
+        },
+        {
+          "value": "0.952",
+          "count": 4
+        },
+        {
+          "value": "0.879",
+          "count": 4
+        },
+        {
+          "value": "0.741",
+          "count": 4
+        },
+        {
+          "value": "0.627",
+          "count": 4
+        },
+        {
+          "value": "0.551",
+          "count": 4
+        },
+        {
+          "value": "0.53",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "alien_template|signalprobabilities|simindex": {
+      "table_name": "signalprobabilities",
+      "column_name": "simindex",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 643,
+      "min_value": "0.001",
+      "max_value": "1.0",
+      "top_k_values": [
+        {
+          "value": "0.817",
+          "count": 5
+        },
+        {
+          "value": "0.738",
+          "count": 5
+        },
+        {
+          "value": "0.343",
+          "count": 5
+        },
+        {
+          "value": "0.307",
+          "count": 5
+        },
+        {
+          "value": "0.878",
+          "count": 4
+        },
+        {
+          "value": "0.871",
+          "count": 4
+        },
+        {
+          "value": "0.764",
+          "count": 4
+        },
+        {
+          "value": "0.7",
+          "count": 4
+        },
+        {
+          "value": "0.678",
+          "count": 4
+        },
+        {
+          "value": "0.674",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "alien_template|signalprobabilities|corrscore": {
+      "table_name": "signalprobabilities",
+      "column_name": "corrscore",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 775,
+      "min_value": "-0.003",
+      "max_value": "0.989",
+      "top_k_values": [
+        {
+          "value": "0.748",
+          "count": 5
+        },
+        {
+          "value": "0.989",
+          "count": 3
+        },
+        {
+          "value": "0.986",
+          "count": 3
+        },
+        {
+          "value": "0.781",
+          "count": 3
+        },
+        {
+          "value": "0.779",
+          "count": 3
+        },
+        {
+          "value": "0.628",
+          "count": 3
+        },
+        {
+          "value": "0.623",
+          "count": 3
+        },
+        {
+          "value": "0.603",
+          "count": 3
+        },
+        {
+          "value": "0.57",
+          "count": 3
+        },
+        {
+          "value": "0.506",
+          "count": 3
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "-D.DDD",
+        "-D.DD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "alien_template|signalprobabilities|anomscore": {
+      "table_name": "signalprobabilities",
+      "column_name": "anomscore",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 628,
+      "min_value": "0",
+      "max_value": "1",
+      "top_k_values": [
+        {
+          "value": "0.814",
+          "count": 7
+        },
+        {
+          "value": "0.084",
+          "count": 6
+        },
+        {
+          "value": "0.972",
+          "count": 5
+        },
+        {
+          "value": "0.008",
+          "count": 5
+        },
+        {
+          "value": "0.993",
+          "count": 4
+        },
+        {
+          "value": "0.879",
+          "count": 4
+        },
+        {
+          "value": "0.872",
+          "count": 4
+        },
+        {
+          "value": "0.827",
+          "count": 4
+        },
+        {
+          "value": "0.723",
+          "count": 4
+        },
+        {
+          "value": "0.478",
+          "count": 4
+        }
+      ],
+      "min_length": 1,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D",
+        "D"
+      ]
+    },
+    "alien_template|signalprobabilities|techsigprob": {
+      "table_name": "signalprobabilities",
+      "column_name": "techsigprob",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 646,
+      "min_value": "0.001",
+      "max_value": "1.0",
+      "top_k_values": [
+        {
+          "value": "0.839",
+          "count": 7
+        },
+        {
+          "value": "0.77",
+          "count": 6
+        },
+        {
+          "value": "0.116",
+          "count": 6
+        },
+        {
+          "value": "0.926",
+          "count": 5
+        },
+        {
+          "value": "0.314",
+          "count": 5
+        },
+        {
+          "value": "0.877",
+          "count": 4
+        },
+        {
+          "value": "0.666",
+          "count": 4
+        },
+        {
+          "value": "0.635",
+          "count": 4
+        },
+        {
+          "value": "0.522",
+          "count": 4
+        },
+        {
+          "value": "0.491",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "alien_template|signalprobabilities|biosigprob": {
+      "table_name": "signalprobabilities",
+      "column_name": "biosigprob",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 101,
+      "min_value": "0.0",
+      "max_value": "1.0",
+      "top_k_values": [
+        {
+          "value": "0.02",
+          "count": 21
+        },
+        {
+          "value": "0.76",
+          "count": 18
+        },
+        {
+          "value": "0.84",
+          "count": 17
+        },
+        {
+          "value": "0.54",
+          "count": 16
+        },
+        {
+          "value": "0.35",
+          "count": 16
+        },
+        {
+          "value": "0.91",
+          "count": 15
+        },
+        {
+          "value": "0.89",
+          "count": 15
+        },
+        {
+          "value": "0.6",
+          "count": 14
+        },
+        {
+          "value": "0.43",
+          "count": 14
+        },
+        {
+          "value": "0.4",
+          "count": 14
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "alien_template|signalprobabilities|natsrcprob": {
+      "table_name": "signalprobabilities",
+      "column_name": "natsrcprob",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 634,
+      "min_value": "0.002",
+      "max_value": "1.0",
+      "top_k_values": [
+        {
+          "value": "0.74",
+          "count": 5
+        },
+        {
+          "value": "0.629",
+          "count": 5
+        },
+        {
+          "value": "0.382",
+          "count": 5
+        },
+        {
+          "value": "0.287",
+          "count": 5
+        },
+        {
+          "value": "0.197",
+          "count": 5
+        },
+        {
+          "value": "0.962",
+          "count": 4
+        },
+        {
+          "value": "0.939",
+          "count": 4
+        },
+        {
+          "value": "0.768",
+          "count": 4
+        },
+        {
+          "value": "0.727",
+          "count": 4
+        },
+        {
+          "value": "0.689",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "alien_template|signalprobabilities|artsrcprob": {
+      "table_name": "signalprobabilities",
+      "column_name": "artsrcprob",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 11,
+      "min_value": "0.0",
+      "max_value": "1.0",
+      "top_k_values": [
+        {
+          "value": "0.5",
+          "count": 111
+        },
+        {
+          "value": "0.4",
+          "count": 110
+        },
+        {
+          "value": "0.9",
+          "count": 106
+        },
+        {
+          "value": "0.2",
+          "count": 103
+        },
+        {
+          "value": "0.3",
+          "count": 102
+        },
+        {
+          "value": "0.1",
+          "count": 95
+        },
+        {
+          "value": "0.7",
+          "count": 93
+        },
+        {
+          "value": "0.8",
+          "count": 89
+        },
+        {
+          "value": "0.6",
+          "count": 80
+        },
+        {
+          "value": "0.0",
+          "count": 57
+        }
+      ],
+      "min_length": 3,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D.D"
+      ]
+    },
+    "alien_template|signals|signalregistry": {
+      "table_name": "signals",
+      "column_name": "signalregistry",
+      "column_type": "TEXT(36)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "AS100974                            ",
+      "max_value": "AS999544                            ",
+      "top_k_values": [
+        {
+          "value": "AS100974                            ",
+          "count": 1
+        },
+        {
+          "value": "AS101100                            ",
+          "count": 1
+        },
+        {
+          "value": "AS103055                            ",
+          "count": 1
+        },
+        {
+          "value": "AS104302                            ",
+          "count": 1
+        },
+        {
+          "value": "AS104491                            ",
+          "count": 1
+        },
+        {
+          "value": "AS104801                            ",
+          "count": 1
+        },
+        {
+          "value": "AS105071                            ",
+          "count": 1
+        },
+        {
+          "value": "AS105686                            ",
+          "count": 1
+        },
+        {
+          "value": "AS107126                            ",
+          "count": 1
+        },
+        {
+          "value": "AS107131                            ",
+          "count": 1
+        }
+      ],
+      "min_length": 36,
+      "max_length": 36,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDDDD                            "
+      ]
+    },
+    "alien_template|signals|timemark": {
+      "table_name": "signals",
+      "column_name": "timemark",
+      "column_type": "TEXT(6)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "2015-02-23 23:56:36.943339+08",
+      "max_value": "2025-02-16 14:10:11.943339+08",
+      "top_k_values": [
+        {
+          "value": "2025-02-16 14:10:11.943339+08",
+          "count": 1
+        },
+        {
+          "value": "2025-02-14 00:24:57.880324+08",
+          "count": 1
+        },
+        {
+          "value": "2025-02-13 09:24:42.943339+08",
+          "count": 1
+        },
+        {
+          "value": "2025-02-09 14:47:31.927207+08",
+          "count": 1
+        },
+        {
+          "value": "2025-02-08 17:12:08.911583+08",
+          "count": 1
+        },
+        {
+          "value": "2025-02-08 08:42:23.880324+08",
+          "count": 1
+        },
+        {
+          "value": "2025-02-01 07:49:38.880324+08",
+          "count": 1
+        },
+        {
+          "value": "2025-01-26 00:01:11.943339+08",
+          "count": 1
+        },
+        {
+          "value": "2025-01-24 15:28:02.880324+08",
+          "count": 1
+        },
+        {
+          "value": "2025-01-19 01:29:40.927207+08",
+          "count": 1
+        }
+      ],
+      "min_length": 29,
+      "max_length": 29,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDD-DD-DD DD:DD:DD.DDDDDD+DD"
+      ]
+    },
+    "alien_template|signals|telescref": {
+      "table_name": "signals",
+      "column_name": "telescref",
+      "column_type": "TEXT(20)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 949,
+      "min_value": "T1000               ",
+      "max_value": "T9993               ",
+      "top_k_values": [
+        {
+          "value": "T9880               ",
+          "count": 2
+        },
+        {
+          "value": "T9786               ",
+          "count": 2
+        },
+        {
+          "value": "T9578               ",
+          "count": 2
+        },
+        {
+          "value": "T9570               ",
+          "count": 2
+        },
+        {
+          "value": "T9464               ",
+          "count": 2
+        },
+        {
+          "value": "T9001               ",
+          "count": 2
+        },
+        {
+          "value": "T8939               ",
+          "count": 2
+        },
+        {
+          "value": "T8860               ",
+          "count": 2
+        },
+        {
+          "value": "T8478               ",
+          "count": 2
+        },
+        {
+          "value": "T8462               ",
+          "count": 2
+        }
+      ],
+      "min_length": 20,
+      "max_length": 20,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "ADDDD               "
+      ]
+    },
+    "alien_template|signals|detectinstr": {
+      "table_name": "signals",
+      "column_name": "detectinstr",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "Infrared Array",
+      "max_value": "Radio Telescope",
+      "top_k_values": [
+        {
+          "value": "Optical Telescope",
+          "count": 273
+        },
+        {
+          "value": "Radio Telescope",
+          "count": 260
+        },
+        {
+          "value": "Infrared Array",
+          "count": 238
+        },
+        {
+          "value": "Quantum Detector",
+          "count": 229
+        }
+      ],
+      "min_length": 14,
+      "max_length": 17,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA AAAAAAAAA",
+        "AAAAA AAAAAAAAA",
+        "AAAAAAAA AAAAA",
+        "AAAAAAA AAAAAAAA"
+      ]
+    },
+    "alien_template|signals|signalclass": {
+      "table_name": "signals",
+      "column_name": "signalclass",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 5,
+      "min_value": "Broadband",
+      "max_value": "Pulsed",
+      "top_k_values": [
+        {
+          "value": "Broadband",
+          "count": 210
+        },
+        {
+          "value": "Continuous",
+          "count": 209
+        },
+        {
+          "value": "Pulsed",
+          "count": 199
+        },
+        {
+          "value": "Narrowband",
+          "count": 197
+        },
+        {
+          "value": "Modulated",
+          "count": 185
+        }
+      ],
+      "min_length": 6,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAAA",
+        "AAAAAAAAA",
+        "AAAAAA"
+      ]
+    },
+    "alien_template|signals|sigstrdb": {
+      "table_name": "signals",
+      "column_name": "sigstrdb",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 970,
+      "min_value": "-100.0",
+      "max_value": "-99.76",
+      "top_k_values": [
+        {
+          "value": "-56.71",
+          "count": 2
+        },
+        {
+          "value": "-68.46",
+          "count": 2
+        },
+        {
+          "value": "-70.91",
+          "count": 2
+        },
+        {
+          "value": "-77.71",
+          "count": 2
+        },
+        {
+          "value": "-100.17",
+          "count": 2
+        },
+        {
+          "value": "-106.84",
+          "count": 2
+        },
+        {
+          "value": "-107.54",
+          "count": 2
+        },
+        {
+          "value": "-111.19",
+          "count": 2
+        },
+        {
+          "value": "-118.69",
+          "count": 2
+        },
+        {
+          "value": "-124.66",
+          "count": 2
+        }
+      ],
+      "min_length": 5,
+      "max_length": 7,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "-DDD.DD",
+        "-DD.DD",
+        "-DDD.D",
+        "-DD.D"
+      ]
+    },
+    "alien_template|signals|freqmhz": {
+      "table_name": "signals",
+      "column_name": "freqmhz",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "10029.048",
+      "max_value": "99900.635",
+      "top_k_values": [
+        {
+          "value": "99900.635",
+          "count": 1
+        },
+        {
+          "value": "99595.579",
+          "count": 1
+        },
+        {
+          "value": "99563.661",
+          "count": 1
+        },
+        {
+          "value": "99539.736",
+          "count": 1
+        },
+        {
+          "value": "99520.797",
+          "count": 1
+        },
+        {
+          "value": "99105.076",
+          "count": 1
+        },
+        {
+          "value": "99056.588",
+          "count": 1
+        },
+        {
+          "value": "99011.251",
+          "count": 1
+        },
+        {
+          "value": "98915.559",
+          "count": 1
+        },
+        {
+          "value": "98896.722",
+          "count": 1
+        }
+      ],
+      "min_length": 6,
+      "max_length": 9,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDD.DDD",
+        "DDDD.DDD",
+        "DDDDD.DD",
+        "DDDD.DD",
+        "DDD.DDD"
+      ]
+    },
+    "alien_template|signals|bwhz": {
+      "table_name": "signals",
+      "column_name": "bwhz",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 999,
+      "min_value": "0.31",
+      "max_value": "999.81",
+      "top_k_values": [
+        {
+          "value": "331.3",
+          "count": 2
+        },
+        {
+          "value": "999.81",
+          "count": 1
+        },
+        {
+          "value": "999.46",
+          "count": 1
+        },
+        {
+          "value": "999.01",
+          "count": 1
+        },
+        {
+          "value": "996.48",
+          "count": 1
+        },
+        {
+          "value": "995.82",
+          "count": 1
+        },
+        {
+          "value": "993.76",
+          "count": 1
+        },
+        {
+          "value": "993.4",
+          "count": 1
+        },
+        {
+          "value": "992.98",
+          "count": 1
+        },
+        {
+          "value": "992.77",
+          "count": 1
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD.DD",
+        "DD.DD",
+        "DDD.D",
+        "DD.D",
+        "D.DD"
+      ]
+    },
+    "alien_template|signals|centerfreqmhz": {
+      "table_name": "signals",
+      "column_name": "centerfreqmhz",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "10123.449",
+      "max_value": "9993.782",
+      "top_k_values": [
+        {
+          "value": "99845.019",
+          "count": 1
+        },
+        {
+          "value": "99842.578",
+          "count": 1
+        },
+        {
+          "value": "99816.706",
+          "count": 1
+        },
+        {
+          "value": "99795.17",
+          "count": 1
+        },
+        {
+          "value": "99728.347",
+          "count": 1
+        },
+        {
+          "value": "99587.692",
+          "count": 1
+        },
+        {
+          "value": "99399.86",
+          "count": 1
+        },
+        {
+          "value": "99354.216",
+          "count": 1
+        },
+        {
+          "value": "99297.756",
+          "count": 1
+        },
+        {
+          "value": "99176.099",
+          "count": 1
+        }
+      ],
+      "min_length": 6,
+      "max_length": 9,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDD.DDD",
+        "DDDD.DDD",
+        "DDDDD.DD",
+        "DDDD.DD",
+        "DDDDD.D"
+      ]
+    },
+    "alien_template|signals|freqdrifthzs": {
+      "table_name": "signals",
+      "column_name": "freqdrifthzs",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 975,
+      "min_value": "-0.009",
+      "max_value": "9.99",
+      "top_k_values": [
+        {
+          "value": "9.382",
+          "count": 2
+        },
+        {
+          "value": "8.609",
+          "count": 2
+        },
+        {
+          "value": "8.385",
+          "count": 2
+        },
+        {
+          "value": "7.291",
+          "count": 2
+        },
+        {
+          "value": "7.2",
+          "count": 2
+        },
+        {
+          "value": "6.544",
+          "count": 2
+        },
+        {
+          "value": "6.057",
+          "count": 2
+        },
+        {
+          "value": "4.303",
+          "count": 2
+        },
+        {
+          "value": "3.262",
+          "count": 2
+        },
+        {
+          "value": "1.821",
+          "count": 2
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "-D.DDD",
+        "D.DD",
+        "-D.DD",
+        "D.D"
+      ]
+    },
+    "alien_template|signals|doppshifthz": {
+      "table_name": "signals",
+      "column_name": "doppshifthz",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 998,
+      "min_value": "-10.24",
+      "max_value": "996.23",
+      "top_k_values": [
+        {
+          "value": "365.8",
+          "count": 2
+        },
+        {
+          "value": "283.8",
+          "count": 2
+        },
+        {
+          "value": "996.23",
+          "count": 1
+        },
+        {
+          "value": "988.09",
+          "count": 1
+        },
+        {
+          "value": "987.63",
+          "count": 1
+        },
+        {
+          "value": "984.94",
+          "count": 1
+        },
+        {
+          "value": "984.03",
+          "count": 1
+        },
+        {
+          "value": "982.63",
+          "count": 1
+        },
+        {
+          "value": "975.67",
+          "count": 1
+        },
+        {
+          "value": "966.6",
+          "count": 1
+        }
+      ],
+      "min_length": 2,
+      "max_length": 7,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "-DDD.DD",
+        "DDD.DD",
+        "DD.DD",
+        "DDD.D",
+        "-DDD.D"
+      ]
+    },
+    "alien_template|signals|sigdursec": {
+      "table_name": "signals",
+      "column_name": "sigdursec",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 998,
+      "min_value": "1005.07",
+      "max_value": "998.75",
+      "top_k_values": [
+        {
+          "value": "950.65",
+          "count": 2
+        },
+        {
+          "value": "434.01",
+          "count": 2
+        },
+        {
+          "value": "3586.84",
+          "count": 1
+        },
+        {
+          "value": "3585.07",
+          "count": 1
+        },
+        {
+          "value": "3579.36",
+          "count": 1
+        },
+        {
+          "value": "3579.11",
+          "count": 1
+        },
+        {
+          "value": "3578.74",
+          "count": 1
+        },
+        {
+          "value": "3575.66",
+          "count": 1
+        },
+        {
+          "value": "3567.77",
+          "count": 1
+        },
+        {
+          "value": "3567.69",
+          "count": 1
+        }
+      ],
+      "min_length": 4,
+      "max_length": 7,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDD.DD",
+        "DDD.DD",
+        "DDDD.D",
+        "DD.DD",
+        "DDD.D"
+      ]
+    },
+    "alien_template|signals|pulsepersec": {
+      "table_name": "signals",
+      "column_name": "pulsepersec",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 958,
+      "min_value": "0.003",
+      "max_value": "9.997",
+      "top_k_values": [
+        {
+          "value": "9.641",
+          "count": 2
+        },
+        {
+          "value": "9.161",
+          "count": 2
+        },
+        {
+          "value": "8.997",
+          "count": 2
+        },
+        {
+          "value": "8.757",
+          "count": 2
+        },
+        {
+          "value": "8.7",
+          "count": 2
+        },
+        {
+          "value": "8.19",
+          "count": 2
+        },
+        {
+          "value": "8.03",
+          "count": 2
+        },
+        {
+          "value": "7.859",
+          "count": 2
+        },
+        {
+          "value": "7.653",
+          "count": 2
+        },
+        {
+          "value": "7.606",
+          "count": 2
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "alien_template|signals|pulsewidms": {
+      "table_name": "signals",
+      "column_name": "pulsewidms",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 996,
+      "min_value": "0.37",
+      "max_value": "999.89",
+      "top_k_values": [
+        {
+          "value": "877.45",
+          "count": 2
+        },
+        {
+          "value": "813.37",
+          "count": 2
+        },
+        {
+          "value": "611.02",
+          "count": 2
+        },
+        {
+          "value": "487.12",
+          "count": 2
+        },
+        {
+          "value": "999.89",
+          "count": 1
+        },
+        {
+          "value": "998.85",
+          "count": 1
+        },
+        {
+          "value": "991.77",
+          "count": 1
+        },
+        {
+          "value": "990.33",
+          "count": 1
+        },
+        {
+          "value": "987.49",
+          "count": 1
+        },
+        {
+          "value": "985.65",
+          "count": 1
+        }
+      ],
+      "min_length": 4,
+      "max_length": 6,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD.DD",
+        "DDD.D",
+        "DD.DD",
+        "DD.D",
+        "D.DD"
+      ]
+    },
+    "alien_template|signals|modtype": {
+      "table_name": "signals",
+      "column_name": "modtype",
+      "column_type": "TEXT(30)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 5,
+      "min_value": "AM",
+      "max_value": "Unknown",
+      "top_k_values": [
+        {
+          "value": "PM",
+          "count": 222
+        },
+        {
+          "value": "FM",
+          "count": 204
+        },
+        {
+          "value": "AM",
+          "count": 202
+        },
+        {
+          "value": "Unknown",
+          "count": 193
+        },
+        {
+          "value": "QAM",
+          "count": 179
+        }
+      ],
+      "min_length": 2,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AA",
+        "AAAAAAA",
+        "AAA"
+      ]
+    },
+    "alien_template|signals|modindex": {
+      "table_name": "signals",
+      "column_name": "modindex",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 637,
+      "min_value": "0.0",
+      "max_value": "1.0",
+      "top_k_values": [
+        {
+          "value": "0.726",
+          "count": 5
+        },
+        {
+          "value": "0.481",
+          "count": 5
+        },
+        {
+          "value": "0.993",
+          "count": 4
+        },
+        {
+          "value": "0.953",
+          "count": 4
+        },
+        {
+          "value": "0.938",
+          "count": 4
+        },
+        {
+          "value": "0.902",
+          "count": 4
+        },
+        {
+          "value": "0.775",
+          "count": 4
+        },
+        {
+          "value": "0.7",
+          "count": 4
+        },
+        {
+          "value": "0.61",
+          "count": 4
+        },
+        {
+          "value": "0.457",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "alien_template|signals|carrierfreqmhz": {
+      "table_name": "signals",
+      "column_name": "carrierfreqmhz",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "10023.874",
+      "max_value": "99908.533",
+      "top_k_values": [
+        {
+          "value": "99908.533",
+          "count": 1
+        },
+        {
+          "value": "99790.352",
+          "count": 1
+        },
+        {
+          "value": "99635.829",
+          "count": 1
+        },
+        {
+          "value": "99413.505",
+          "count": 1
+        },
+        {
+          "value": "99360.953",
+          "count": 1
+        },
+        {
+          "value": "99065.993",
+          "count": 1
+        },
+        {
+          "value": "99031.122",
+          "count": 1
+        },
+        {
+          "value": "99014.262",
+          "count": 1
+        },
+        {
+          "value": "98808.687",
+          "count": 1
+        },
+        {
+          "value": "98716.285",
+          "count": 1
+        }
+      ],
+      "min_length": 6,
+      "max_length": 9,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDD.DDD",
+        "DDDDD.DD",
+        "DDDD.DDD",
+        "DDDD.DD",
+        "DDD.DDD"
+      ]
+    },
+    "alien_template|signals|phaseshiftdeg": {
+      "table_name": "signals",
+      "column_name": "phaseshiftdeg",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 988,
+      "min_value": "0.24",
+      "max_value": "99.58",
+      "top_k_values": [
+        {
+          "value": "345.8",
+          "count": 2
+        },
+        {
+          "value": "336.07",
+          "count": 2
+        },
+        {
+          "value": "219.24",
+          "count": 2
+        },
+        {
+          "value": "209.41",
+          "count": 2
+        },
+        {
+          "value": "120.81",
+          "count": 2
+        },
+        {
+          "value": "92.72",
+          "count": 2
+        },
+        {
+          "value": "91.46",
+          "count": 2
+        },
+        {
+          "value": "70.6",
+          "count": 2
+        },
+        {
+          "value": "55.62",
+          "count": 2
+        },
+        {
+          "value": "36.62",
+          "count": 2
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD.DD",
+        "DD.DD",
+        "DDD.D",
+        "DD.D",
+        "D.DD"
+      ]
+    },
+    "alien_template|signals|polarmode": {
+      "table_name": "signals",
+      "column_name": "polarmode",
+      "column_type": "TEXT(30)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "Circular",
+      "max_value": "Unknown",
+      "top_k_values": [
+        {
+          "value": "Linear",
+          "count": 287
+        },
+        {
+          "value": "Unknown",
+          "count": 258
+        },
+        {
+          "value": "Circular",
+          "count": 231
+        },
+        {
+          "value": "Elliptical",
+          "count": 224
+        }
+      ],
+      "min_length": 6,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AAAAAAA",
+        "AAAAAAAA",
+        "AAAAAAAAAA"
+      ]
+    },
+    "alien_template|signals|polarangledeg": {
+      "table_name": "signals",
+      "column_name": "polarangledeg",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 752,
+      "min_value": "0.1",
+      "max_value": "99.8",
+      "top_k_values": [
+        {
+          "value": "74.0",
+          "count": 5
+        },
+        {
+          "value": "102.0",
+          "count": 4
+        },
+        {
+          "value": "101.4",
+          "count": 4
+        },
+        {
+          "value": "78.9",
+          "count": 4
+        },
+        {
+          "value": "78.8",
+          "count": 4
+        },
+        {
+          "value": "75.1",
+          "count": 4
+        },
+        {
+          "value": "59.7",
+          "count": 4
+        },
+        {
+          "value": "24.7",
+          "count": 4
+        },
+        {
+          "value": "152.7",
+          "count": 3
+        },
+        {
+          "value": "145.6",
+          "count": 3
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.D",
+        "DDD.D",
+        "D.D"
+      ]
+    },
+    "alien_template|signals|snrratio": {
+      "table_name": "signals",
+      "column_name": "snrratio",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 921,
+      "min_value": "-0.03",
+      "max_value": "9.95",
+      "top_k_values": [
+        {
+          "value": "32.17",
+          "count": 3
+        },
+        {
+          "value": "19.77",
+          "count": 3
+        },
+        {
+          "value": "-8.48",
+          "count": 3
+        },
+        {
+          "value": "-16.37",
+          "count": 3
+        },
+        {
+          "value": "-18.83",
+          "count": 3
+        },
+        {
+          "value": "39.52",
+          "count": 2
+        },
+        {
+          "value": "37.55",
+          "count": 2
+        },
+        {
+          "value": "36.63",
+          "count": 2
+        },
+        {
+          "value": "36.33",
+          "count": 2
+        },
+        {
+          "value": "33.7",
+          "count": 2
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.DD",
+        "-D.DD",
+        "-DD.DD",
+        "D.DD",
+        "DD.D"
+      ]
+    },
+    "alien_template|signals|noisefloordbm": {
+      "table_name": "signals",
+      "column_name": "noisefloordbm",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 948,
+      "min_value": "-100.04",
+      "max_value": "-99.96",
+      "top_k_values": [
+        {
+          "value": "-91.57",
+          "count": 2
+        },
+        {
+          "value": "-94.43",
+          "count": 2
+        },
+        {
+          "value": "-95.47",
+          "count": 2
+        },
+        {
+          "value": "-96.39",
+          "count": 2
+        },
+        {
+          "value": "-98.53",
+          "count": 2
+        },
+        {
+          "value": "-99.37",
+          "count": 2
+        },
+        {
+          "value": "-100.24",
+          "count": 2
+        },
+        {
+          "value": "-101.06",
+          "count": 2
+        },
+        {
+          "value": "-101.81",
+          "count": 2
+        },
+        {
+          "value": "-103.52",
+          "count": 2
+        }
+      ],
+      "min_length": 3,
+      "max_length": 7,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "-DDD.DD",
+        "-DD.DD",
+        "-DDD.D",
+        "-DD.D",
+        "-DDD"
+      ]
+    },
+    "alien_template|signals|interflvl": {
+      "table_name": "signals",
+      "column_name": "interflvl",
+      "column_type": "TEXT(30)",
+      "row_count": 1000,
+      "null_count": 235,
+      "non_null_count": 765,
+      "distinct_count": 3,
+      "min_value": "High",
+      "max_value": "Medium",
+      "top_k_values": [
+        {
+          "value": "Medium",
+          "count": 270
+        },
+        {
+          "value": "Low",
+          "count": 250
+        },
+        {
+          "value": "High",
+          "count": 245
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AAA",
+        "AAAA"
+      ]
+    },
+    "alien_template|signals|rfistat": {
+      "table_name": "signals",
+      "column_name": "rfistat",
+      "column_type": "TEXT(30)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Clean",
+      "max_value": "Unknown",
+      "top_k_values": [
+        {
+          "value": "Unknown",
+          "count": 356
+        },
+        {
+          "value": "Contaminated",
+          "count": 331
+        },
+        {
+          "value": "Clean",
+          "count": 313
+        }
+      ],
+      "min_length": 5,
+      "max_length": 12,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAAAAAAAA",
+        "AAAAA"
+      ]
+    },
+    "alien_template|signals|atmointerf": {
+      "table_name": "signals",
+      "column_name": "atmointerf",
+      "column_type": "TEXT(30)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Minimal",
+      "max_value": "Severe",
+      "top_k_values": [
+        {
+          "value": "Minimal",
+          "count": 364
+        },
+        {
+          "value": "Moderate",
+          "count": 324
+        },
+        {
+          "value": "Severe",
+          "count": 312
+        }
+      ],
+      "min_length": 6,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAAAA",
+        "AAAAAA"
+      ]
+    },
+    "alien_template|sourceproperties|signalref": {
+      "table_name": "sourceproperties",
+      "column_name": "signalref",
+      "column_type": "TEXT(36)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "AS100974                            ",
+      "max_value": "AS999544                            ",
+      "top_k_values": [
+        {
+          "value": "AS100974                            ",
+          "count": 1
+        },
+        {
+          "value": "AS101100                            ",
+          "count": 1
+        },
+        {
+          "value": "AS103055                            ",
+          "count": 1
+        },
+        {
+          "value": "AS104302                            ",
+          "count": 1
+        },
+        {
+          "value": "AS104491                            ",
+          "count": 1
+        },
+        {
+          "value": "AS104801                            ",
+          "count": 1
+        },
+        {
+          "value": "AS105071                            ",
+          "count": 1
+        },
+        {
+          "value": "AS105686                            ",
+          "count": 1
+        },
+        {
+          "value": "AS107126                            ",
+          "count": 1
+        },
+        {
+          "value": "AS107131                            ",
+          "count": 1
+        }
+      ],
+      "min_length": 36,
+      "max_length": 36,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDDDD                            "
+      ]
+    },
+    "alien_template|sourceproperties|sourceradeg": {
+      "table_name": "sourceproperties",
+      "column_name": "sourceradeg",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "0.0177",
+      "max_value": "98.5347",
+      "top_k_values": [
+        {
+          "value": "359.9213",
+          "count": 1
+        },
+        {
+          "value": "359.2925",
+          "count": 1
+        },
+        {
+          "value": "358.4498",
+          "count": 1
+        },
+        {
+          "value": "358.1368",
+          "count": 1
+        },
+        {
+          "value": "358.0298",
+          "count": 1
+        },
+        {
+          "value": "357.7387",
+          "count": 1
+        },
+        {
+          "value": "357.6913",
+          "count": 1
+        },
+        {
+          "value": "357.3052",
+          "count": 1
+        },
+        {
+          "value": "356.7348",
+          "count": 1
+        },
+        {
+          "value": "356.2514",
+          "count": 1
+        }
+      ],
+      "min_length": 5,
+      "max_length": 8,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD.DDDD",
+        "DD.DDDD",
+        "DDD.DDD",
+        "D.DDDD",
+        "DD.DDD"
+      ]
+    },
+    "alien_template|sourceproperties|sourcedecdeg": {
+      "table_name": "sourceproperties",
+      "column_name": "sourcedecdeg",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 999,
+      "min_value": "-0.0312",
+      "max_value": "9.9763",
+      "top_k_values": [
+        {
+          "value": "68.3382",
+          "count": 2
+        },
+        {
+          "value": "89.8432",
+          "count": 1
+        },
+        {
+          "value": "89.5119",
+          "count": 1
+        },
+        {
+          "value": "89.4906",
+          "count": 1
+        },
+        {
+          "value": "89.3723",
+          "count": 1
+        },
+        {
+          "value": "89.3591",
+          "count": 1
+        },
+        {
+          "value": "89.2409",
+          "count": 1
+        },
+        {
+          "value": "89.1965",
+          "count": 1
+        },
+        {
+          "value": "89.039",
+          "count": 1
+        },
+        {
+          "value": "89.036",
+          "count": 1
+        }
+      ],
+      "min_length": 5,
+      "max_length": 8,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.DDDD",
+        "-DD.DDDD",
+        "-D.DDDD",
+        "D.DDDD",
+        "DD.DDD"
+      ]
+    },
+    "alien_template|sourceproperties|sourcedistly": {
+      "table_name": "sourceproperties",
+      "column_name": "sourcedistly",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "100012.5",
+      "max_value": "99972.25",
+      "top_k_values": [
+        {
+          "value": "999592.72",
+          "count": 1
+        },
+        {
+          "value": "997357.65",
+          "count": 1
+        },
+        {
+          "value": "997090.14",
+          "count": 1
+        },
+        {
+          "value": "996044.05",
+          "count": 1
+        },
+        {
+          "value": "993822.88",
+          "count": 1
+        },
+        {
+          "value": "991879.65",
+          "count": 1
+        },
+        {
+          "value": "990880.67",
+          "count": 1
+        },
+        {
+          "value": "990549.27",
+          "count": 1
+        },
+        {
+          "value": "988212.53",
+          "count": 1
+        },
+        {
+          "value": "985338.26",
+          "count": 1
+        }
+      ],
+      "min_length": 7,
+      "max_length": 9,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDDD.DD",
+        "DDDDD.DD",
+        "DDDDDD.D",
+        "DDDDD.D",
+        "DDDD.DD"
+      ]
+    },
+    "alien_template|sourceproperties|gallong": {
+      "table_name": "sourceproperties",
+      "column_name": "gallong",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 986,
+      "min_value": "0.68",
+      "max_value": "99.64",
+      "top_k_values": [
+        {
+          "value": "358.91",
+          "count": 2
+        },
+        {
+          "value": "357.93",
+          "count": 2
+        },
+        {
+          "value": "301.33",
+          "count": 2
+        },
+        {
+          "value": "299.75",
+          "count": 2
+        },
+        {
+          "value": "296.77",
+          "count": 2
+        },
+        {
+          "value": "295.81",
+          "count": 2
+        },
+        {
+          "value": "228.06",
+          "count": 2
+        },
+        {
+          "value": "225.72",
+          "count": 2
+        },
+        {
+          "value": "146.34",
+          "count": 2
+        },
+        {
+          "value": "123.06",
+          "count": 2
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD.DD",
+        "DD.DD",
+        "DDD.D",
+        "D.DD",
+        "DD.D"
+      ]
+    },
+    "alien_template|sourceproperties|gallat": {
+      "table_name": "sourceproperties",
+      "column_name": "gallat",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 967,
+      "min_value": "-0.06",
+      "max_value": "9.89",
+      "top_k_values": [
+        {
+          "value": "72.72",
+          "count": 3
+        },
+        {
+          "value": "62.63",
+          "count": 3
+        },
+        {
+          "value": "-82.53",
+          "count": 3
+        },
+        {
+          "value": "89.3",
+          "count": 2
+        },
+        {
+          "value": "79.88",
+          "count": 2
+        },
+        {
+          "value": "64.97",
+          "count": 2
+        },
+        {
+          "value": "63.23",
+          "count": 2
+        },
+        {
+          "value": "61.63",
+          "count": 2
+        },
+        {
+          "value": "55.49",
+          "count": 2
+        },
+        {
+          "value": "55.01",
+          "count": 2
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.DD",
+        "-DD.DD",
+        "-D.DD",
+        "D.DD",
+        "-DD.D"
+      ]
+    },
+    "alien_template|sourceproperties|celestobj": {
+      "table_name": "sourceproperties",
+      "column_name": "celestobj",
+      "column_type": "TEXT(75)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "Galaxy",
+      "max_value": "Unknown",
+      "top_k_values": [
+        {
+          "value": "Galaxy",
+          "count": 263
+        },
+        {
+          "value": "Unknown",
+          "count": 255
+        },
+        {
+          "value": "Planet",
+          "count": 246
+        },
+        {
+          "value": "Star",
+          "count": 236
+        }
+      ],
+      "min_length": 4,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AAAAAAA",
+        "AAAA"
+      ]
+    },
+    "alien_template|sourceproperties|objtype": {
+      "table_name": "sourceproperties",
+      "column_name": "objtype",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "Dwarf",
+      "max_value": "Unknown",
+      "top_k_values": [
+        {
+          "value": "Unknown",
+          "count": 272
+        },
+        {
+          "value": "Dwarf",
+          "count": 258
+        },
+        {
+          "value": "Giant",
+          "count": 236
+        },
+        {
+          "value": "Main Sequence",
+          "count": 234
+        }
+      ],
+      "min_length": 5,
+      "max_length": 13,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAA",
+        "AAAAAAA",
+        "AAAA AAAAAAAA"
+      ]
+    },
+    "alien_template|sourceproperties|objmag": {
+      "table_name": "sourceproperties",
+      "column_name": "objmag",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 917,
+      "min_value": "-0.02",
+      "max_value": "9.98",
+      "top_k_values": [
+        {
+          "value": "19.97",
+          "count": 3
+        },
+        {
+          "value": "-6.23",
+          "count": 3
+        },
+        {
+          "value": "-15.96",
+          "count": 3
+        },
+        {
+          "value": "29.39",
+          "count": 2
+        },
+        {
+          "value": "29.38",
+          "count": 2
+        },
+        {
+          "value": "29.37",
+          "count": 2
+        },
+        {
+          "value": "29.03",
+          "count": 2
+        },
+        {
+          "value": "28.44",
+          "count": 2
+        },
+        {
+          "value": "27.82",
+          "count": 2
+        },
+        {
+          "value": "27.42",
+          "count": 2
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.DD",
+        "-DD.DD",
+        "D.DD",
+        "-D.DD",
+        "DD.D"
+      ]
+    },
+    "alien_template|sourceproperties|objtempk": {
+      "table_name": "sourceproperties",
+      "column_name": "objtempk",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 989,
+      "min_value": "10033",
+      "max_value": "9965",
+      "top_k_values": [
+        {
+          "value": "48337",
+          "count": 2
+        },
+        {
+          "value": "37552",
+          "count": 2
+        },
+        {
+          "value": "35025",
+          "count": 2
+        },
+        {
+          "value": "31194",
+          "count": 2
+        },
+        {
+          "value": "27538",
+          "count": 2
+        },
+        {
+          "value": "26874",
+          "count": 2
+        },
+        {
+          "value": "22815",
+          "count": 2
+        },
+        {
+          "value": "19981",
+          "count": 2
+        },
+        {
+          "value": "17339",
+          "count": 2
+        },
+        {
+          "value": "14696",
+          "count": 2
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDD",
+        "DDDD",
+        "DDD"
+      ]
+    },
+    "alien_template|sourceproperties|objmasssol": {
+      "table_name": "sourceproperties",
+      "column_name": "objmasssol",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 995,
+      "min_value": "0.166",
+      "max_value": "99.852",
+      "top_k_values": [
+        {
+          "value": "72.646",
+          "count": 2
+        },
+        {
+          "value": "41.86",
+          "count": 2
+        },
+        {
+          "value": "34.477",
+          "count": 2
+        },
+        {
+          "value": "0.666",
+          "count": 2
+        },
+        {
+          "value": "0.179",
+          "count": 2
+        },
+        {
+          "value": "99.852",
+          "count": 1
+        },
+        {
+          "value": "99.849",
+          "count": 1
+        },
+        {
+          "value": "99.799",
+          "count": 1
+        },
+        {
+          "value": "99.798",
+          "count": 1
+        },
+        {
+          "value": "99.739",
+          "count": 1
+        }
+      ],
+      "min_length": 4,
+      "max_length": 6,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.DDD",
+        "D.DDD",
+        "DD.DD",
+        "D.DD",
+        "DD.D"
+      ]
+    },
+    "alien_template|sourceproperties|objagegyr": {
+      "table_name": "sourceproperties",
+      "column_name": "objagegyr",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 957,
+      "min_value": "0.026",
+      "max_value": "9.995",
+      "top_k_values": [
+        {
+          "value": "13.461",
+          "count": 2
+        },
+        {
+          "value": "12.916",
+          "count": 2
+        },
+        {
+          "value": "12.724",
+          "count": 2
+        },
+        {
+          "value": "12.611",
+          "count": 2
+        },
+        {
+          "value": "12.569",
+          "count": 2
+        },
+        {
+          "value": "12.442",
+          "count": 2
+        },
+        {
+          "value": "12.141",
+          "count": 2
+        },
+        {
+          "value": "11.727",
+          "count": 2
+        },
+        {
+          "value": "11.216",
+          "count": 2
+        },
+        {
+          "value": "11.172",
+          "count": 2
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "DD.DDD",
+        "D.DD",
+        "DD.DD",
+        "D.D"
+      ]
+    },
+    "alien_template|sourceproperties|objmetal": {
+      "table_name": "sourceproperties",
+      "column_name": "objmetal",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 889,
+      "min_value": "-0.003",
+      "max_value": "0.998",
+      "top_k_values": [
+        {
+          "value": "0.497",
+          "count": 3
+        },
+        {
+          "value": "-0.469",
+          "count": 3
+        },
+        {
+          "value": "-0.762",
+          "count": 3
+        },
+        {
+          "value": "-0.859",
+          "count": 3
+        },
+        {
+          "value": "-1.414",
+          "count": 3
+        },
+        {
+          "value": "-2.576",
+          "count": 3
+        },
+        {
+          "value": "-2.784",
+          "count": 3
+        },
+        {
+          "value": "-2.962",
+          "count": 3
+        },
+        {
+          "value": "0.902",
+          "count": 2
+        },
+        {
+          "value": "0.8",
+          "count": 2
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "-D.DDD",
+        "D.DDD",
+        "-D.DD",
+        "D.DD",
+        "-D.D"
+      ]
+    },
+    "alien_template|sourceproperties|objpropmotion": {
+      "table_name": "sourceproperties",
+      "column_name": "objpropmotion",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 619,
+      "min_value": "0.02",
+      "max_value": "9.99",
+      "top_k_values": [
+        {
+          "value": "7.7",
+          "count": 6
+        },
+        {
+          "value": "3.87",
+          "count": 5
+        },
+        {
+          "value": "1.37",
+          "count": 5
+        },
+        {
+          "value": "0.72",
+          "count": 5
+        },
+        {
+          "value": "7.57",
+          "count": 4
+        },
+        {
+          "value": "7.08",
+          "count": 4
+        },
+        {
+          "value": "6.64",
+          "count": 4
+        },
+        {
+          "value": "6.11",
+          "count": 4
+        },
+        {
+          "value": "6.03",
+          "count": 4
+        },
+        {
+          "value": "5.34",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D",
+        "DD.D"
+      ]
+    },
+    "alien_template|sourceproperties|objradvel": {
+      "table_name": "sourceproperties",
+      "column_name": "objradvel",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 999,
+      "min_value": "-0.63",
+      "max_value": "997.91",
+      "top_k_values": [
+        {
+          "value": "429.93",
+          "count": 2
+        },
+        {
+          "value": "997.91",
+          "count": 1
+        },
+        {
+          "value": "995.07",
+          "count": 1
+        },
+        {
+          "value": "992.49",
+          "count": 1
+        },
+        {
+          "value": "988.42",
+          "count": 1
+        },
+        {
+          "value": "985.83",
+          "count": 1
+        },
+        {
+          "value": "984.26",
+          "count": 1
+        },
+        {
+          "value": "978.39",
+          "count": 1
+        },
+        {
+          "value": "972.16",
+          "count": 1
+        },
+        {
+          "value": "971.12",
+          "count": 1
+        }
+      ],
+      "min_length": 4,
+      "max_length": 7,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD.DD",
+        "-DDD.DD",
+        "DDD.D",
+        "DD.DD",
+        "-DD.DD"
+      ]
+    },
+    "alien_template|telescopes|telescregistry": {
+      "table_name": "telescopes",
+      "column_name": "telescregistry",
+      "column_type": "TEXT(20)",
+      "row_count": 949,
+      "null_count": 0,
+      "non_null_count": 949,
+      "distinct_count": 949,
+      "min_value": "T1000               ",
+      "max_value": "T9993               ",
+      "top_k_values": [
+        {
+          "value": "T1000               ",
+          "count": 1
+        },
+        {
+          "value": "T1001               ",
+          "count": 1
+        },
+        {
+          "value": "T1011               ",
+          "count": 1
+        },
+        {
+          "value": "T1021               ",
+          "count": 1
+        },
+        {
+          "value": "T1023               ",
+          "count": 1
+        },
+        {
+          "value": "T1040               ",
+          "count": 1
+        },
+        {
+          "value": "T1063               ",
+          "count": 1
+        },
+        {
+          "value": "T1066               ",
+          "count": 1
+        },
+        {
+          "value": "T1069               ",
+          "count": 1
+        },
+        {
+          "value": "T1075               ",
+          "count": 1
+        }
+      ],
+      "min_length": 20,
+      "max_length": 20,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "ADDDD               "
+      ]
+    },
+    "alien_template|telescopes|observstation": {
+      "table_name": "telescopes",
+      "column_name": "observstation",
+      "column_type": "TEXT(60)",
+      "row_count": 949,
+      "null_count": 0,
+      "non_null_count": 949,
+      "distinct_count": 915,
+      "min_value": "Observatory-Adrianfurt                                      ",
+      "max_value": "Observatory-Youngland                                       ",
+      "top_k_values": [
+        {
+          "value": "Observatory-New Michael                                     ",
+          "count": 3
+        },
+        {
+          "value": "Observatory-East Michael                                    ",
+          "count": 3
+        },
+        {
+          "value": "Observatory-West Richard                                    ",
+          "count": 2
+        },
+        {
+          "value": "Observatory-Thompsonshire                                   ",
+          "count": 2
+        },
+        {
+          "value": "Observatory-Sullivanmouth                                   ",
+          "count": 2
+        },
+        {
+          "value": "Observatory-Stewartstad                                     ",
+          "count": 2
+        },
+        {
+          "value": "Observatory-South Robert                                    ",
+          "count": 2
+        },
+        {
+          "value": "Observatory-Ryanland                                        ",
+          "count": 2
+        },
+        {
+          "value": "Observatory-Richardview                                     ",
+          "count": 2
+        },
+        {
+          "value": "Observatory-Rebeccabury                                     ",
+          "count": 2
+        }
+      ],
+      "min_length": 60,
+      "max_length": 60,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAAAAAAAAA-AAAAAAAAAAA                                     ",
+        "AAAAAAAAAAA-AAAAAAAAAA                                      ",
+        "AAAAAAAAAAA-AAAAAAAAA                                       ",
+        "AAAAAAAAAAA-AAAAAAAAAAAA                                    ",
+        "AAAAAAAAAAA-AAAAAAAAAAAAA                                   "
+      ]
+    },
+    "alien_template|telescopes|equipstatus": {
+      "table_name": "telescopes",
+      "column_name": "equipstatus",
+      "column_type": "TEXT(35)",
+      "row_count": 949,
+      "null_count": 0,
+      "non_null_count": 949,
+      "distinct_count": 3,
+      "min_value": "Degraded",
+      "max_value": "Operational",
+      "top_k_values": [
+        {
+          "value": "Maintenance",
+          "count": 360
+        },
+        {
+          "value": "Degraded",
+          "count": 297
+        },
+        {
+          "value": "Operational",
+          "count": 292
+        }
+      ],
+      "min_length": 8,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "alien_template|telescopes|calibrstatus": {
+      "table_name": "telescopes",
+      "column_name": "calibrstatus",
+      "column_type": "TEXT(50)",
+      "row_count": 949,
+      "null_count": 0,
+      "non_null_count": 949,
+      "distinct_count": 3,
+      "min_value": "Current",
+      "max_value": "Overdue",
+      "top_k_values": [
+        {
+          "value": "Current",
+          "count": 333
+        },
+        {
+          "value": "Overdue",
+          "count": 320
+        },
+        {
+          "value": "Due",
+          "count": 296
+        }
+      ],
+      "min_length": 3,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAA"
+      ]
+    },
+    "alien_template|telescopes|pointaccarc": {
+      "table_name": "telescopes",
+      "column_name": "pointaccarc",
+      "column_type": "REAL",
+      "row_count": 949,
+      "null_count": 0,
+      "non_null_count": 949,
+      "distinct_count": 608,
+      "min_value": "0.01",
+      "max_value": "9.99",
+      "top_k_values": [
+        {
+          "value": "5.24",
+          "count": 5
+        },
+        {
+          "value": "3.49",
+          "count": 5
+        },
+        {
+          "value": "1.48",
+          "count": 5
+        },
+        {
+          "value": "8.35",
+          "count": 4
+        },
+        {
+          "value": "6.31",
+          "count": 4
+        },
+        {
+          "value": "5.76",
+          "count": 4
+        },
+        {
+          "value": "5.5",
+          "count": 4
+        },
+        {
+          "value": "5.29",
+          "count": 4
+        },
+        {
+          "value": "5.09",
+          "count": 4
+        },
+        {
+          "value": "4.86",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "alien_template|telescopes|trackaccarc": {
+      "table_name": "telescopes",
+      "column_name": "trackaccarc",
+      "column_type": "REAL",
+      "row_count": 949,
+      "null_count": 0,
+      "non_null_count": 949,
+      "distinct_count": 616,
+      "min_value": "0.01",
+      "max_value": "9.98",
+      "top_k_values": [
+        {
+          "value": "6.98",
+          "count": 5
+        },
+        {
+          "value": "0.41",
+          "count": 5
+        },
+        {
+          "value": "9.81",
+          "count": 4
+        },
+        {
+          "value": "9.39",
+          "count": 4
+        },
+        {
+          "value": "8.12",
+          "count": 4
+        },
+        {
+          "value": "7.07",
+          "count": 4
+        },
+        {
+          "value": "6.55",
+          "count": 4
+        },
+        {
+          "value": "5.47",
+          "count": 4
+        },
+        {
+          "value": "4.05",
+          "count": 4
+        },
+        {
+          "value": "3.74",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "alien_template|telescopes|focusquality": {
+      "table_name": "telescopes",
+      "column_name": "focusquality",
+      "column_type": "TEXT(25)",
+      "row_count": 949,
+      "null_count": 0,
+      "non_null_count": 949,
+      "distinct_count": 3,
+      "min_value": "Excellent",
+      "max_value": "Poor",
+      "top_k_values": [
+        {
+          "value": "Good",
+          "count": 322
+        },
+        {
+          "value": "Poor",
+          "count": 317
+        },
+        {
+          "value": "Excellent",
+          "count": 310
+        }
+      ],
+      "min_length": 4,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAAAAAAAA"
+      ]
+    },
+    "alien_template|telescopes|detecttempk": {
+      "table_name": "telescopes",
+      "column_name": "detecttempk",
+      "column_type": "REAL",
+      "row_count": 949,
+      "null_count": 0,
+      "non_null_count": 949,
+      "distinct_count": 933,
+      "min_value": "0.25",
+      "max_value": "99.81",
+      "top_k_values": [
+        {
+          "value": "290.78",
+          "count": 2
+        },
+        {
+          "value": "275.68",
+          "count": 2
+        },
+        {
+          "value": "255.31",
+          "count": 2
+        },
+        {
+          "value": "235.48",
+          "count": 2
+        },
+        {
+          "value": "233.01",
+          "count": 2
+        },
+        {
+          "value": "229.84",
+          "count": 2
+        },
+        {
+          "value": "222.59",
+          "count": 2
+        },
+        {
+          "value": "204.89",
+          "count": 2
+        },
+        {
+          "value": "195.47",
+          "count": 2
+        },
+        {
+          "value": "186.75",
+          "count": 2
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD.DD",
+        "DD.DD",
+        "DDD.D",
+        "DD.D",
+        "D.DD"
+      ]
+    },
+    "alien_template|telescopes|coolsysstatus": {
+      "table_name": "telescopes",
+      "column_name": "coolsysstatus",
+      "column_type": "TEXT(35)",
+      "row_count": 949,
+      "null_count": 0,
+      "non_null_count": 949,
+      "distinct_count": 3,
+      "min_value": "Critical",
+      "max_value": "Warning",
+      "top_k_values": [
+        {
+          "value": "Critical",
+          "count": 352
+        },
+        {
+          "value": "Warning",
+          "count": 326
+        },
+        {
+          "value": "Normal",
+          "count": 271
+        }
+      ],
+      "min_length": 6,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAAAAA",
+        "AAAAAA"
+      ]
+    },
+    "alien_template|telescopes|powerstatus": {
+      "table_name": "telescopes",
+      "column_name": "powerstatus",
+      "column_type": "TEXT(30)",
+      "row_count": 949,
+      "null_count": 0,
+      "non_null_count": 949,
+      "distinct_count": 3,
+      "min_value": "Backup",
+      "max_value": "Main",
+      "top_k_values": [
+        {
+          "value": "Main",
+          "count": 335
+        },
+        {
+          "value": "Backup",
+          "count": 317
+        },
+        {
+          "value": "Critical",
+          "count": 297
+        }
+      ],
+      "min_length": 4,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "alien_template|telescopes|datastorstatus": {
+      "table_name": "telescopes",
+      "column_name": "datastorstatus",
+      "column_type": "TEXT(35)",
+      "row_count": 949,
+      "null_count": 0,
+      "non_null_count": 949,
+      "distinct_count": 3,
+      "min_value": "Available",
+      "max_value": "Low",
+      "top_k_values": [
+        {
+          "value": "Critical",
+          "count": 319
+        },
+        {
+          "value": "Low",
+          "count": 317
+        },
+        {
+          "value": "Available",
+          "count": 313
+        }
+      ],
+      "min_length": 3,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAA",
+        "AAAAAAAAA"
+      ]
+    },
+    "alien_template|telescopes|netstatus": {
+      "table_name": "telescopes",
+      "column_name": "netstatus",
+      "column_type": "TEXT(40)",
+      "row_count": 949,
+      "null_count": 0,
+      "non_null_count": 949,
+      "distinct_count": 3,
+      "min_value": "Connected",
+      "max_value": "Limited",
+      "top_k_values": [
+        {
+          "value": "Disconnected",
+          "count": 356
+        },
+        {
+          "value": "Connected",
+          "count": 298
+        },
+        {
+          "value": "Limited",
+          "count": 295
+        }
+      ],
+      "min_length": 7,
+      "max_length": 12,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAAAAA",
+        "AAAAAAAAA",
+        "AAAAAAA"
+      ]
+    },
+    "alien_template|telescopes|bandusagepct": {
+      "table_name": "telescopes",
+      "column_name": "bandusagepct",
+      "column_type": "REAL",
+      "row_count": 949,
+      "null_count": 0,
+      "non_null_count": 949,
+      "distinct_count": 617,
+      "min_value": "0.0",
+      "max_value": "99.9",
+      "top_k_values": [
+        {
+          "value": "47.6",
+          "count": 5
+        },
+        {
+          "value": "90.4",
+          "count": 4
+        },
+        {
+          "value": "90.1",
+          "count": 4
+        },
+        {
+          "value": "89.5",
+          "count": 4
+        },
+        {
+          "value": "67.7",
+          "count": 4
+        },
+        {
+          "value": "53.5",
+          "count": 4
+        },
+        {
+          "value": "38.4",
+          "count": 4
+        },
+        {
+          "value": "22.2",
+          "count": 4
+        },
+        {
+          "value": "15.8",
+          "count": 4
+        },
+        {
+          "value": "7.8",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.D",
+        "D.D"
+      ]
+    },
+    "alien_template|telescopes|procqueuestatus": {
+      "table_name": "telescopes",
+      "column_name": "procqueuestatus",
+      "column_type": "TEXT(40)",
+      "row_count": 949,
+      "null_count": 0,
+      "non_null_count": 949,
+      "distinct_count": 3,
+      "min_value": "Empty",
+      "max_value": "Normal",
+      "top_k_values": [
+        {
+          "value": "Full",
+          "count": 332
+        },
+        {
+          "value": "Empty",
+          "count": 313
+        },
+        {
+          "value": "Normal",
+          "count": 304
+        }
+      ],
+      "min_length": 4,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAAAA",
+        "AAAAAA"
+      ]
+    }
+  },
+  "meta": {
+    "observatories": {
+      "profiled_at": "2026-08-30T10:41:54.686774+00:00",
+      "row_count": 963
+    },
+    "signalclassification": {
+      "profiled_at": "2026-08-30T10:41:54.686774+00:00",
+      "row_count": 1000
+    },
+    "signals": {
+      "profiled_at": "2026-08-30T10:41:54.686774+00:00",
+      "row_count": 1000
+    },
+    "observationalconditions": {
+      "profiled_at": "2026-08-30T10:41:54.686774+00:00",
+      "row_count": 1000
+    },
+    "signaladvancedphenomena": {
+      "profiled_at": "2026-08-30T10:41:54.686774+00:00",
+      "row_count": 1000
+    },
+    "telescopes": {
+      "profiled_at": "2026-08-30T10:41:54.686774+00:00",
+      "row_count": 949
+    },
+    "researchprocess": {
+      "profiled_at": "2026-08-30T10:41:54.686774+00:00",
+      "row_count": 1000
+    },
+    "sourceproperties": {
+      "profiled_at": "2026-08-30T10:41:54.686774+00:00",
+      "row_count": 1000
+    },
+    "signaldecoding": {
+      "profiled_at": "2026-08-30T10:41:54.686774+00:00",
+      "row_count": 1000
+    },
+    "signalprobabilities": {
+      "profiled_at": "2026-08-30T10:41:54.686774+00:00",
+      "row_count": 1000
+    },
+    "signaldynamics": {
+      "profiled_at": "2026-08-30T10:41:54.686774+00:00",
+      "row_count": 1000
+    }
+  }
+}

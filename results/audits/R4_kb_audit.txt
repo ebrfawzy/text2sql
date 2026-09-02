@@ -1,0 +1,25 @@
+### GENERATED: .cache/profiles-deepseek4flash
+.cache/profiles-deepseek4flash: 1435 entries
+
+  cross-table                172   12.0%
+  single-table              1059   73.8%
+  no columns (term-only)     204   14.2%
+  stored-result identity     431   30.0%
+  term composite              40    2.8%
+  refuted by the data         76    5.3%
+  unsound against the data     0    0.0%
+
+  question terms named          3  of 471 (0.6%)
+
+### SHIPPED (target)
+shipped: 1082 entries
+
+  cross-table                138   12.8%
+  single-table               400   37.0%
+  no columns (term-only)     544   50.3%
+  stored-result identity       0    0.0%
+  term composite             364   33.6%
+  refuted by the data          0    0.0%
+  unsound against the data     0    0.0%
+
+  question terms named        471  of 471 (100.0%)

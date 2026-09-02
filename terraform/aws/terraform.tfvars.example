@@ -1,0 +1,25 @@
+# ── AWS Deployment Variables ────────────────────────────────────────
+# Copy this file to terraform.tfvars and fill in your values.
+# NEVER commit terraform.tfvars to version control.
+
+aws_region     = "us-east-1"
+environment    = "dev"
+project_name   = "text2sql"
+
+# ── LLM Configuration ──────────────────────────────────────────────
+openai_api_key = "sk-your-api-key-here"
+llm_model      = "gpt-4o-mini"
+
+# ── Database ────────────────────────────────────────────────────────
+db_uri = "sqlite:///example.db"
+# db_uri = "postgresql://user:pass@your-rds-host:5432/mydb"
+
+# ── Lambda Settings ─────────────────────────────────────────────────
+lambda_memory_mb       = 1024    # 1 GB (increase for larger DBs)
+lambda_timeout_seconds = 900     # 15 min (max for Lambda)
+lambda_architecture    = "x86_64" # or "arm64" for Graviton2
+
+# ── VPC (optional — for private RDS access) ─────────────────────────
+enable_vpc = false
+# vpc_id     = "vpc-0123456789abcdef0"
+# subnet_ids = ["subnet-0123456789a", "subnet-0123456789b"]

@@ -1,0 +1,5740 @@
+{
+  "version": 1,
+  "profiled_at": "2026-08-30T12:03:13.819014+00:00",
+  "columns": {
+    "insider_template|advancedbehavior|abhvreg": {
+      "table_name": "advancedbehavior",
+      "column_name": "abhvreg",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "ABHV_00FZ1",
+      "max_value": "ABHV_ZXLJM",
+      "top_k_values": [
+        {
+          "value": "ABHV_00FZ1",
+          "count": 1
+        },
+        {
+          "value": "ABHV_00V91",
+          "count": 1
+        },
+        {
+          "value": "ABHV_017SY",
+          "count": 1
+        },
+        {
+          "value": "ABHV_0561R",
+          "count": 1
+        },
+        {
+          "value": "ABHV_089LJ",
+          "count": 1
+        },
+        {
+          "value": "ABHV_08BHW",
+          "count": 1
+        },
+        {
+          "value": "ABHV_0AUZA",
+          "count": 1
+        },
+        {
+          "value": "ABHV_0C9EJ",
+          "count": 1
+        },
+        {
+          "value": "ABHV_0EPDJ",
+          "count": 1
+        },
+        {
+          "value": "ABHV_0F0QO",
+          "count": 1
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAA_AAAAA",
+        "AAAA_ADAAA",
+        "AAAA_AAADA",
+        "AAAA_AAAAD",
+        "AAAA_DAAAA"
+      ]
+    },
+    "insider_template|advancedbehavior|translink": {
+      "table_name": "advancedbehavior",
+      "column_name": "translink",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 999,
+      "min_value": "IT100092",
+      "max_value": "IT997378",
+      "top_k_values": [
+        {
+          "value": "IT216758",
+          "count": 2
+        },
+        {
+          "value": "IT997378",
+          "count": 1
+        },
+        {
+          "value": "IT995973",
+          "count": 1
+        },
+        {
+          "value": "IT995414",
+          "count": 1
+        },
+        {
+          "value": "IT995112",
+          "count": 1
+        },
+        {
+          "value": "IT994987",
+          "count": 1
+        },
+        {
+          "value": "IT994553",
+          "count": 1
+        },
+        {
+          "value": "IT991833",
+          "count": 1
+        },
+        {
+          "value": "IT985494",
+          "count": 1
+        },
+        {
+          "value": "IT985468",
+          "count": 1
+        }
+      ],
+      "min_length": 8,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDDDD"
+      ]
+    },
+    "insider_template|advancedbehavior|patsim": {
+      "table_name": "advancedbehavior",
+      "column_name": "patsim",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 610,
+      "min_value": "0.005",
+      "max_value": "0.997",
+      "top_k_values": [
+        {
+          "value": "0.638",
+          "count": 5
+        },
+        {
+          "value": "0.439",
+          "count": 5
+        },
+        {
+          "value": "0.336",
+          "count": 5
+        },
+        {
+          "value": "0.205",
+          "count": 5
+        },
+        {
+          "value": "0.191",
+          "count": 5
+        },
+        {
+          "value": "0.181",
+          "count": 5
+        },
+        {
+          "value": "0.825",
+          "count": 4
+        },
+        {
+          "value": "0.823",
+          "count": 4
+        },
+        {
+          "value": "0.747",
+          "count": 4
+        },
+        {
+          "value": "0.725",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "insider_template|advancedbehavior|peercorr": {
+      "table_name": "advancedbehavior",
+      "column_name": "peercorr",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 801,
+      "min_value": "-0.001",
+      "max_value": "0.998",
+      "top_k_values": [
+        {
+          "value": "-0.255",
+          "count": 5
+        },
+        {
+          "value": "0.873",
+          "count": 4
+        },
+        {
+          "value": "0.491",
+          "count": 4
+        },
+        {
+          "value": "0.193",
+          "count": 4
+        },
+        {
+          "value": "-0.298",
+          "count": 4
+        },
+        {
+          "value": "-0.742",
+          "count": 4
+        },
+        {
+          "value": "-0.863",
+          "count": 4
+        },
+        {
+          "value": "0.839",
+          "count": 3
+        },
+        {
+          "value": "0.374",
+          "count": 3
+        },
+        {
+          "value": "0.232",
+          "count": 3
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "-D.DDD",
+        "D.DDD",
+        "-D.DD",
+        "D.DD",
+        "-D.D"
+      ]
+    },
+    "insider_template|advancedbehavior|mktcorr": {
+      "table_name": "advancedbehavior",
+      "column_name": "mktcorr",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 782,
+      "min_value": "-0.004",
+      "max_value": "0.997",
+      "top_k_values": [
+        {
+          "value": "0.603",
+          "count": 4
+        },
+        {
+          "value": "0.115",
+          "count": 4
+        },
+        {
+          "value": "0.967",
+          "count": 3
+        },
+        {
+          "value": "0.694",
+          "count": 3
+        },
+        {
+          "value": "0.654",
+          "count": 3
+        },
+        {
+          "value": "0.57",
+          "count": 3
+        },
+        {
+          "value": "0.503",
+          "count": 3
+        },
+        {
+          "value": "0.378",
+          "count": 3
+        },
+        {
+          "value": "0.318",
+          "count": 3
+        },
+        {
+          "value": "0.241",
+          "count": 3
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "-D.DDD",
+        "-D.DD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "insider_template|advancedbehavior|secrotimp": {
+      "table_name": "advancedbehavior",
+      "column_name": "secrotimp",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 782,
+      "min_value": "-0.007",
+      "max_value": "1.0",
+      "top_k_values": [
+        {
+          "value": "-0.3",
+          "count": 4
+        },
+        {
+          "value": "-0.318",
+          "count": 4
+        },
+        {
+          "value": "-0.707",
+          "count": 4
+        },
+        {
+          "value": "-0.903",
+          "count": 4
+        },
+        {
+          "value": "0.994",
+          "count": 3
+        },
+        {
+          "value": "0.981",
+          "count": 3
+        },
+        {
+          "value": "0.959",
+          "count": 3
+        },
+        {
+          "value": "0.849",
+          "count": 3
+        },
+        {
+          "value": "0.708",
+          "count": 3
+        },
+        {
+          "value": "0.658",
+          "count": 3
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "-D.DDD",
+        "D.DDD",
+        "-D.DD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "insider_template|compliancecase|compreg": {
+      "table_name": "compliancecase",
+      "column_name": "compreg",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "CASE_00NJG",
+      "max_value": "CASE_ZYFCV",
+      "top_k_values": [
+        {
+          "value": "CASE_00NJG",
+          "count": 1
+        },
+        {
+          "value": "CASE_07KCJ",
+          "count": 1
+        },
+        {
+          "value": "CASE_082PB",
+          "count": 1
+        },
+        {
+          "value": "CASE_0A94G",
+          "count": 1
+        },
+        {
+          "value": "CASE_0CCPB",
+          "count": 1
+        },
+        {
+          "value": "CASE_0DC0G",
+          "count": 1
+        },
+        {
+          "value": "CASE_0EC2L",
+          "count": 1
+        },
+        {
+          "value": "CASE_0EO9Y",
+          "count": 1
+        },
+        {
+          "value": "CASE_0HIPC",
+          "count": 1
+        },
+        {
+          "value": "CASE_0HLW6",
+          "count": 1
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAA_AAAAA",
+        "AAAA_AAADA",
+        "AAAA_AADAA",
+        "AAAA_ADAAA",
+        "AAAA_AAAAD"
+      ]
+    },
+    "insider_template|compliancecase|transref": {
+      "table_name": "compliancecase",
+      "column_name": "transref",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 999,
+      "min_value": "IT100092",
+      "max_value": "IT997378",
+      "top_k_values": [
+        {
+          "value": "IT216758",
+          "count": 2
+        },
+        {
+          "value": "IT997378",
+          "count": 1
+        },
+        {
+          "value": "IT995973",
+          "count": 1
+        },
+        {
+          "value": "IT995414",
+          "count": 1
+        },
+        {
+          "value": "IT995112",
+          "count": 1
+        },
+        {
+          "value": "IT994987",
+          "count": 1
+        },
+        {
+          "value": "IT994553",
+          "count": 1
+        },
+        {
+          "value": "IT991833",
+          "count": 1
+        },
+        {
+          "value": "IT985494",
+          "count": 1
+        },
+        {
+          "value": "IT985468",
+          "count": 1
+        }
+      ],
+      "min_length": 8,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDDDD"
+      ]
+    },
+    "insider_template|compliancecase|regfilestat": {
+      "table_name": "compliancecase",
+      "column_name": "regfilestat",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Current",
+      "max_value": "Missing",
+      "top_k_values": [
+        {
+          "value": "Delayed",
+          "count": 347
+        },
+        {
+          "value": "Current",
+          "count": 333
+        },
+        {
+          "value": "Missing",
+          "count": 320
+        }
+      ],
+      "min_length": 7,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAAAAA"
+      ]
+    },
+    "insider_template|compliancecase|disclosecmp": {
+      "table_name": "compliancecase",
+      "column_name": "disclosecmp",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Full",
+      "max_value": "Partial",
+      "top_k_values": [
+        {
+          "value": "Full",
+          "count": 345
+        },
+        {
+          "value": "Partial",
+          "count": 338
+        },
+        {
+          "value": "Non-compliant",
+          "count": 317
+        }
+      ],
+      "min_length": 4,
+      "max_length": 13,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAAAAAA",
+        "AAA-AAAAAAAAA"
+      ]
+    },
+    "insider_template|compliancecase|brokrepstat": {
+      "table_name": "compliancecase",
+      "column_name": "brokrepstat",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Complete",
+      "max_value": "Late",
+      "top_k_values": [
+        {
+          "value": "Complete",
+          "count": 353
+        },
+        {
+          "value": "Incomplete",
+          "count": 337
+        },
+        {
+          "value": "Late",
+          "count": 310
+        }
+      ],
+      "min_length": 4,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAAAAAAAA",
+        "AAAA"
+      ]
+    },
+    "insider_template|compliancecase|exchnotif": {
+      "table_name": "compliancecase",
+      "column_name": "exchnotif",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 2,
+      "min_value": "Inquiry",
+      "max_value": "Warning",
+      "top_k_values": [
+        {
+          "value": "Warning",
+          "count": 662
+        },
+        {
+          "value": "Inquiry",
+          "count": 338
+        }
+      ],
+      "min_length": 7,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAAAAA"
+      ]
+    },
+    "insider_template|compliancecase|prevviol": {
+      "table_name": "compliancecase",
+      "column_name": "prevviol",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 6,
+      "min_value": "0",
+      "max_value": "5",
+      "top_k_values": [
+        {
+          "value": "1",
+          "count": 182
+        },
+        {
+          "value": "0",
+          "count": 171
+        },
+        {
+          "value": "3",
+          "count": 165
+        },
+        {
+          "value": "2",
+          "count": 165
+        },
+        {
+          "value": "4",
+          "count": 163
+        },
+        {
+          "value": "5",
+          "count": 154
+        }
+      ],
+      "min_length": 1,
+      "max_length": 1,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D"
+      ]
+    },
+    "insider_template|compliancecase|comprate": {
+      "table_name": "compliancecase",
+      "column_name": "comprate",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "A",
+      "max_value": "D",
+      "top_k_values": [
+        {
+          "value": "A",
+          "count": 255
+        },
+        {
+          "value": "D",
+          "count": 254
+        },
+        {
+          "value": "B",
+          "count": 253
+        },
+        {
+          "value": "C",
+          "count": 238
+        }
+      ],
+      "min_length": 1,
+      "max_length": 1,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "A"
+      ]
+    },
+    "insider_template|compliancecase|risksc": {
+      "table_name": "compliancecase",
+      "column_name": "risksc",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 954,
+      "min_value": "0.1",
+      "max_value": "99.75",
+      "top_k_values": [
+        {
+          "value": "52.41",
+          "count": 3
+        },
+        {
+          "value": "99.68",
+          "count": 2
+        },
+        {
+          "value": "99.48",
+          "count": 2
+        },
+        {
+          "value": "94.42",
+          "count": 2
+        },
+        {
+          "value": "94.34",
+          "count": 2
+        },
+        {
+          "value": "94.11",
+          "count": 2
+        },
+        {
+          "value": "81.99",
+          "count": 2
+        },
+        {
+          "value": "81.68",
+          "count": 2
+        },
+        {
+          "value": "79.11",
+          "count": 2
+        },
+        {
+          "value": "78.07",
+          "count": 2
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.DD",
+        "D.DD",
+        "DD.D",
+        "D.D"
+      ]
+    },
+    "insider_template|compliancecase|alertlvl": {
+      "table_name": "compliancecase",
+      "column_name": "alertlvl",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "Critical",
+      "max_value": "Medium",
+      "top_k_values": [
+        {
+          "value": "Critical",
+          "count": 266
+        },
+        {
+          "value": "Medium",
+          "count": 251
+        },
+        {
+          "value": "High",
+          "count": 243
+        },
+        {
+          "value": "Low",
+          "count": 240
+        }
+      ],
+      "min_length": 3,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAAAA",
+        "AAAA",
+        "AAA"
+      ]
+    },
+    "insider_template|compliancecase|invstprior": {
+      "table_name": "compliancecase",
+      "column_name": "invstprior",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "High",
+      "max_value": "Medium",
+      "top_k_values": [
+        {
+          "value": "Medium",
+          "count": 339
+        },
+        {
+          "value": "High",
+          "count": 335
+        },
+        {
+          "value": "Low",
+          "count": 326
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AAAA",
+        "AAA"
+      ]
+    },
+    "insider_template|compliancecase|casestat": {
+      "table_name": "compliancecase",
+      "column_name": "casestat",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Closed",
+      "max_value": "Monitoring",
+      "top_k_values": [
+        {
+          "value": "Monitoring",
+          "count": 339
+        },
+        {
+          "value": "Closed",
+          "count": 337
+        },
+        {
+          "value": "Investigation",
+          "count": 324
+        }
+      ],
+      "min_length": 6,
+      "max_length": 13,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAAA",
+        "AAAAAA",
+        "AAAAAAAAAAAAA"
+      ]
+    },
+    "insider_template|compliancecase|revfreq": {
+      "table_name": "compliancecase",
+      "column_name": "revfreq",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Daily",
+      "max_value": "Weekly",
+      "top_k_values": [
+        {
+          "value": "Monthly",
+          "count": 357
+        },
+        {
+          "value": "Weekly",
+          "count": 334
+        },
+        {
+          "value": "Daily",
+          "count": 309
+        }
+      ],
+      "min_length": 5,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAA",
+        "AAAAA"
+      ]
+    },
+    "insider_template|compliancecase|lastrevdt": {
+      "table_name": "compliancecase",
+      "column_name": "lastrevdt",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 31,
+      "min_value": "2025-01-20",
+      "max_value": "2025-02-19",
+      "top_k_values": [
+        {
+          "value": "2025-02-11",
+          "count": 42
+        },
+        {
+          "value": "2025-02-16",
+          "count": 40
+        },
+        {
+          "value": "2025-02-15",
+          "count": 39
+        },
+        {
+          "value": "2025-01-30",
+          "count": 39
+        },
+        {
+          "value": "2025-01-27",
+          "count": 39
+        },
+        {
+          "value": "2025-02-12",
+          "count": 38
+        },
+        {
+          "value": "2025-02-13",
+          "count": 37
+        },
+        {
+          "value": "2025-02-03",
+          "count": 37
+        },
+        {
+          "value": "2025-02-02",
+          "count": 36
+        },
+        {
+          "value": "2025-01-25",
+          "count": 36
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDD-DD-DD"
+      ]
+    },
+    "insider_template|compliancecase|nextrevdt": {
+      "table_name": "compliancecase",
+      "column_name": "nextrevdt",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 30,
+      "min_value": "2025-02-20",
+      "max_value": "2025-03-21",
+      "top_k_values": [
+        {
+          "value": "2025-02-22",
+          "count": 47
+        },
+        {
+          "value": "2025-03-12",
+          "count": 42
+        },
+        {
+          "value": "2025-03-04",
+          "count": 40
+        },
+        {
+          "value": "2025-03-18",
+          "count": 39
+        },
+        {
+          "value": "2025-03-07",
+          "count": 38
+        },
+        {
+          "value": "2025-03-02",
+          "count": 38
+        },
+        {
+          "value": "2025-02-23",
+          "count": 38
+        },
+        {
+          "value": "2025-03-13",
+          "count": 37
+        },
+        {
+          "value": "2025-03-06",
+          "count": 37
+        },
+        {
+          "value": "2025-03-16",
+          "count": 36
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDD-DD-DD"
+      ]
+    },
+    "insider_template|compliancecase|monitint": {
+      "table_name": "compliancecase",
+      "column_name": "monitint",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Enhanced",
+      "max_value": "Standard",
+      "top_k_values": [
+        {
+          "value": "Standard",
+          "count": 341
+        },
+        {
+          "value": "Enhanced",
+          "count": 330
+        },
+        {
+          "value": "Intensive",
+          "count": 329
+        }
+      ],
+      "min_length": 8,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAAAAAAA"
+      ]
+    },
+    "insider_template|compliancecase|survsys": {
+      "table_name": "compliancecase",
+      "column_name": "survsys",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Multiple",
+      "max_value": "Secondary",
+      "top_k_values": [
+        {
+          "value": "Secondary",
+          "count": 360
+        },
+        {
+          "value": "Multiple",
+          "count": 354
+        },
+        {
+          "value": "Primary",
+          "count": 286
+        }
+      ],
+      "min_length": 7,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAA",
+        "AAAAAAAA",
+        "AAAAAAA"
+      ]
+    },
+    "insider_template|compliancecase|detectmth": {
+      "table_name": "compliancecase",
+      "column_name": "detectmth",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Automated",
+      "max_value": "Manual",
+      "top_k_values": [
+        {
+          "value": "Automated",
+          "count": 356
+        },
+        {
+          "value": "Manual",
+          "count": 325
+        },
+        {
+          "value": "Hybrid",
+          "count": 319
+        }
+      ],
+      "min_length": 6,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AAAAAAAAA"
+      ]
+    },
+    "insider_template|compliancecase|fposrate": {
+      "table_name": "compliancecase",
+      "column_name": "fposrate",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 31,
+      "min_value": "0.0",
+      "max_value": "0.3",
+      "top_k_values": [
+        {
+          "value": "0.16",
+          "count": 47
+        },
+        {
+          "value": "0.22",
+          "count": 44
+        },
+        {
+          "value": "0.26",
+          "count": 43
+        },
+        {
+          "value": "0.18",
+          "count": 41
+        },
+        {
+          "value": "0.11",
+          "count": 41
+        },
+        {
+          "value": "0.2",
+          "count": 40
+        },
+        {
+          "value": "0.06",
+          "count": 40
+        },
+        {
+          "value": "0.27",
+          "count": 37
+        },
+        {
+          "value": "0.25",
+          "count": 37
+        },
+        {
+          "value": "0.23",
+          "count": 37
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "insider_template|compliancecase|modelconf": {
+      "table_name": "compliancecase",
+      "column_name": "modelconf",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 435,
+      "min_value": "0.501",
+      "max_value": "0.999",
+      "top_k_values": [
+        {
+          "value": "0.793",
+          "count": 7
+        },
+        {
+          "value": "0.563",
+          "count": 7
+        },
+        {
+          "value": "0.95",
+          "count": 6
+        },
+        {
+          "value": "0.942",
+          "count": 6
+        },
+        {
+          "value": "0.901",
+          "count": 6
+        },
+        {
+          "value": "0.599",
+          "count": 6
+        },
+        {
+          "value": "0.562",
+          "count": 6
+        },
+        {
+          "value": "0.549",
+          "count": 6
+        },
+        {
+          "value": "0.934",
+          "count": 5
+        },
+        {
+          "value": "0.924",
+          "count": 5
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "insider_template|compliancecase|abhvref": {
+      "table_name": "compliancecase",
+      "column_name": "abhvref",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "ABHV_00FZ1",
+      "max_value": "ABHV_ZXLJM",
+      "top_k_values": [
+        {
+          "value": "ABHV_ZXLJM",
+          "count": 1
+        },
+        {
+          "value": "ABHV_ZVK5R",
+          "count": 1
+        },
+        {
+          "value": "ABHV_ZSYGS",
+          "count": 1
+        },
+        {
+          "value": "ABHV_ZQ8N0",
+          "count": 1
+        },
+        {
+          "value": "ABHV_ZPKFA",
+          "count": 1
+        },
+        {
+          "value": "ABHV_ZLR3J",
+          "count": 1
+        },
+        {
+          "value": "ABHV_ZKH3S",
+          "count": 1
+        },
+        {
+          "value": "ABHV_ZJ9DX",
+          "count": 1
+        },
+        {
+          "value": "ABHV_ZIKEZ",
+          "count": 1
+        },
+        {
+          "value": "ABHV_ZIE1G",
+          "count": 1
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAA_AAAAA",
+        "AAAA_ADAAA",
+        "AAAA_AAADA",
+        "AAAA_AAAAD",
+        "AAAA_DAAAA"
+      ]
+    },
+    "insider_template|enforcementactions|enforcereg": {
+      "table_name": "enforcementactions",
+      "column_name": "enforcereg",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "ENF_016T6",
+      "max_value": "ENF_ZZIT2",
+      "top_k_values": [
+        {
+          "value": "ENF_016T6",
+          "count": 1
+        },
+        {
+          "value": "ENF_01VGQ",
+          "count": 1
+        },
+        {
+          "value": "ENF_0208I",
+          "count": 1
+        },
+        {
+          "value": "ENF_02JFC",
+          "count": 1
+        },
+        {
+          "value": "ENF_03ZC9",
+          "count": 1
+        },
+        {
+          "value": "ENF_057D6",
+          "count": 1
+        },
+        {
+          "value": "ENF_05FWG",
+          "count": 1
+        },
+        {
+          "value": "ENF_05QWL",
+          "count": 1
+        },
+        {
+          "value": "ENF_05VDY",
+          "count": 1
+        },
+        {
+          "value": "ENF_062P1",
+          "count": 1
+        }
+      ],
+      "min_length": 9,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAA_AAAAA",
+        "AAA_AAAAD",
+        "AAA_ADAAA",
+        "AAA_AAADA",
+        "AAA_AADAA"
+      ]
+    },
+    "insider_template|enforcementactions|compref2": {
+      "table_name": "enforcementactions",
+      "column_name": "compref2",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "CASE_00NJG",
+      "max_value": "CASE_ZYFCV",
+      "top_k_values": [
+        {
+          "value": "CASE_ZYFCV",
+          "count": 1
+        },
+        {
+          "value": "CASE_ZWYOM",
+          "count": 1
+        },
+        {
+          "value": "CASE_ZWHYO",
+          "count": 1
+        },
+        {
+          "value": "CASE_ZVVBG",
+          "count": 1
+        },
+        {
+          "value": "CASE_ZT1LP",
+          "count": 1
+        },
+        {
+          "value": "CASE_ZSMHH",
+          "count": 1
+        },
+        {
+          "value": "CASE_ZON9H",
+          "count": 1
+        },
+        {
+          "value": "CASE_ZOAFM",
+          "count": 1
+        },
+        {
+          "value": "CASE_ZLZ02",
+          "count": 1
+        },
+        {
+          "value": "CASE_ZLB4E",
+          "count": 1
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAA_AAAAA",
+        "AAAA_AAADA",
+        "AAAA_AADAA",
+        "AAAA_ADAAA",
+        "AAAA_AAAAD"
+      ]
+    },
+    "insider_template|enforcementactions|acttake": {
+      "table_name": "enforcementactions",
+      "column_name": "acttake",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Restriction",
+      "max_value": "Warning",
+      "top_k_values": [
+        {
+          "value": "Warning",
+          "count": 512
+        },
+        {
+          "value": "Suspension",
+          "count": 260
+        },
+        {
+          "value": "Restriction",
+          "count": 228
+        }
+      ],
+      "min_length": 7,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAAAAAA",
+        "AAAAAAAAAAA"
+      ]
+    },
+    "insider_template|enforcementactions|esclvl": {
+      "table_name": "enforcementactions",
+      "column_name": "esclvl",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Compliance",
+      "max_value": "Supervisor",
+      "top_k_values": [
+        {
+          "value": "Supervisor",
+          "count": 488
+        },
+        {
+          "value": "Legal",
+          "count": 262
+        },
+        {
+          "value": "Compliance",
+          "count": 250
+        }
+      ],
+      "min_length": 5,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAAA",
+        "AAAAA"
+      ]
+    },
+    "insider_template|enforcementactions|resstat": {
+      "table_name": "enforcementactions",
+      "column_name": "resstat",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "In Progress",
+      "max_value": "Resolved",
+      "top_k_values": [
+        {
+          "value": "In Progress",
+          "count": 357
+        },
+        {
+          "value": "Pending",
+          "count": 324
+        },
+        {
+          "value": "Resolved",
+          "count": 319
+        }
+      ],
+      "min_length": 7,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AA AAAAAAAA",
+        "AAAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "insider_template|enforcementactions|penimp": {
+      "table_name": "enforcementactions",
+      "column_name": "penimp",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Ban",
+      "max_value": "Warning",
+      "top_k_values": [
+        {
+          "value": "Warning",
+          "count": 502
+        },
+        {
+          "value": "Fine",
+          "count": 254
+        },
+        {
+          "value": "Ban",
+          "count": 244
+        }
+      ],
+      "min_length": 3,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAA",
+        "AAA"
+      ]
+    },
+    "insider_template|enforcementactions|penamt": {
+      "table_name": "enforcementactions",
+      "column_name": "penamt",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "101049.51",
+      "max_value": "996958.45",
+      "top_k_values": [
+        {
+          "value": "996958.45",
+          "count": 1
+        },
+        {
+          "value": "995619.11",
+          "count": 1
+        },
+        {
+          "value": "995487.75",
+          "count": 1
+        },
+        {
+          "value": "994421.67",
+          "count": 1
+        },
+        {
+          "value": "993861.98",
+          "count": 1
+        },
+        {
+          "value": "993337.09",
+          "count": 1
+        },
+        {
+          "value": "993018.53",
+          "count": 1
+        },
+        {
+          "value": "992543.7",
+          "count": 1
+        },
+        {
+          "value": "990563.69",
+          "count": 1
+        },
+        {
+          "value": "990438.22",
+          "count": 1
+        }
+      ],
+      "min_length": 6,
+      "max_length": 9,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDDD.DD",
+        "DDDDDD.D",
+        "DDDDD.DD",
+        "DDDD.DD",
+        "DDDDD.D"
+      ]
+    },
+    "insider_template|enforcementactions|legactstat": {
+      "table_name": "enforcementactions",
+      "column_name": "legactstat",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 2,
+      "min_value": "Active",
+      "max_value": "Pending",
+      "top_k_values": [
+        {
+          "value": "Pending",
+          "count": 666
+        },
+        {
+          "value": "Active",
+          "count": 334
+        }
+      ],
+      "min_length": 6,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAA"
+      ]
+    },
+    "insider_template|enforcementactions|settlestat": {
+      "table_name": "enforcementactions",
+      "column_name": "settlestat",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 2,
+      "min_value": "Negotiating",
+      "max_value": "Settled",
+      "top_k_values": [
+        {
+          "value": "Negotiating",
+          "count": 685
+        },
+        {
+          "value": "Settled",
+          "count": 315
+        }
+      ],
+      "min_length": 7,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAAAA",
+        "AAAAAAA"
+      ]
+    },
+    "insider_template|enforcementactions|repimp": {
+      "table_name": "enforcementactions",
+      "column_name": "repimp",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Minimal",
+      "max_value": "Severe",
+      "top_k_values": [
+        {
+          "value": "Moderate",
+          "count": 367
+        },
+        {
+          "value": "Severe",
+          "count": 328
+        },
+        {
+          "value": "Minimal",
+          "count": 305
+        }
+      ],
+      "min_length": 6,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAAAA",
+        "AAAAAAA"
+      ]
+    },
+    "insider_template|enforcementactions|busrestr": {
+      "table_name": "enforcementactions",
+      "column_name": "busrestr",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 2,
+      "min_value": "Full",
+      "max_value": "Partial",
+      "top_k_values": [
+        {
+          "value": "Partial",
+          "count": 676
+        },
+        {
+          "value": "Full",
+          "count": 324
+        }
+      ],
+      "min_length": 4,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAA"
+      ]
+    },
+    "insider_template|enforcementactions|remedstat": {
+      "table_name": "enforcementactions",
+      "column_name": "remedstat",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Completed",
+      "max_value": "Pending",
+      "top_k_values": [
+        {
+          "value": "Not Required",
+          "count": 340
+        },
+        {
+          "value": "Pending",
+          "count": 335
+        },
+        {
+          "value": "Completed",
+          "count": 325
+        }
+      ],
+      "min_length": 7,
+      "max_length": 12,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAA AAAAAAAA",
+        "AAAAAAA",
+        "AAAAAAAAA"
+      ]
+    },
+    "insider_template|enforcementactions|traderestr": {
+      "table_name": "enforcementactions",
+      "column_name": "traderestr",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 2,
+      "min_value": "Blackout",
+      "max_value": "Special",
+      "top_k_values": [
+        {
+          "value": "Special",
+          "count": 673
+        },
+        {
+          "value": "Blackout",
+          "count": 327
+        }
+      ],
+      "min_length": 7,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "insider_template|enforcementactions|sysupdneed": {
+      "table_name": "enforcementactions",
+      "column_name": "sysupdneed",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Major",
+      "max_value": "No",
+      "top_k_values": [
+        {
+          "value": "No",
+          "count": 340
+        },
+        {
+          "value": "Minor",
+          "count": 331
+        },
+        {
+          "value": "Major",
+          "count": 329
+        }
+      ],
+      "min_length": 2,
+      "max_length": 5,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAA",
+        "AA"
+      ]
+    },
+    "insider_template|enforcementactions|polupdneed": {
+      "table_name": "enforcementactions",
+      "column_name": "polupdneed",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "No",
+      "max_value": "Yes",
+      "top_k_values": [
+        {
+          "value": "Yes",
+          "count": 345
+        },
+        {
+          "value": "No",
+          "count": 343
+        },
+        {
+          "value": "Urgent",
+          "count": 312
+        }
+      ],
+      "min_length": 2,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAA",
+        "AA",
+        "AAAAAA"
+      ]
+    },
+    "insider_template|enforcementactions|trainreq": {
+      "table_name": "enforcementactions",
+      "column_name": "trainreq",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 2,
+      "min_value": "Comprehensive",
+      "max_value": "Refresher",
+      "top_k_values": [
+        {
+          "value": "Refresher",
+          "count": 676
+        },
+        {
+          "value": "Comprehensive",
+          "count": 324
+        }
+      ],
+      "min_length": 9,
+      "max_length": 13,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAA",
+        "AAAAAAAAAAAAA"
+      ]
+    },
+    "insider_template|enforcementactions|repgenstat": {
+      "table_name": "enforcementactions",
+      "column_name": "repgenstat",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Automated",
+      "max_value": "Manual",
+      "top_k_values": [
+        {
+          "value": "Manual",
+          "count": 372
+        },
+        {
+          "value": "Automated",
+          "count": 316
+        },
+        {
+          "value": "Hybrid",
+          "count": 312
+        }
+      ],
+      "min_length": 6,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AAAAAAAAA"
+      ]
+    },
+    "insider_template|enforcementactions|dataretstat": {
+      "table_name": "enforcementactions",
+      "column_name": "dataretstat",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Archived",
+      "max_value": "Deleted",
+      "top_k_values": [
+        {
+          "value": "Archived",
+          "count": 351
+        },
+        {
+          "value": "Current",
+          "count": 327
+        },
+        {
+          "value": "Deleted",
+          "count": 322
+        }
+      ],
+      "min_length": 7,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "insider_template|enforcementactions|auditstat": {
+      "table_name": "enforcementactions",
+      "column_name": "auditstat",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Complete",
+      "max_value": "Partial",
+      "top_k_values": [
+        {
+          "value": "Complete",
+          "count": 344
+        },
+        {
+          "value": "Partial",
+          "count": 328
+        },
+        {
+          "value": "Missing",
+          "count": 328
+        }
+      ],
+      "min_length": 7,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "insider_template|enforcementactions|conflvl": {
+      "table_name": "enforcementactions",
+      "column_name": "conflvl",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Highly Sensitive",
+      "max_value": "Sensitive",
+      "top_k_values": [
+        {
+          "value": "Sensitive",
+          "count": 347
+        },
+        {
+          "value": "Normal",
+          "count": 331
+        },
+        {
+          "value": "Highly Sensitive",
+          "count": 322
+        }
+      ],
+      "min_length": 6,
+      "max_length": 16,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAA",
+        "AAAAAA",
+        "AAAAAA AAAAAAAAA"
+      ]
+    },
+    "insider_template|enforcementactions|accrestr": {
+      "table_name": "enforcementactions",
+      "column_name": "accrestr",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Internal",
+      "max_value": "Restricted",
+      "top_k_values": [
+        {
+          "value": "Public",
+          "count": 351
+        },
+        {
+          "value": "Restricted",
+          "count": 343
+        },
+        {
+          "value": "Internal",
+          "count": 306
+        }
+      ],
+      "min_length": 6,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AAAAAAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "insider_template|enforcementactions|datashare": {
+      "table_name": "enforcementactions",
+      "column_name": "datashare",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Allowed",
+      "max_value": "Prohibited",
+      "top_k_values": [
+        {
+          "value": "Limited",
+          "count": 338
+        },
+        {
+          "value": "Prohibited",
+          "count": 333
+        },
+        {
+          "value": "Allowed",
+          "count": 329
+        }
+      ],
+      "min_length": 7,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAAAAAA"
+      ]
+    },
+    "insider_template|enforcementactions|invdetref": {
+      "table_name": "enforcementactions",
+      "column_name": "invdetref",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "INV_01QP1",
+      "max_value": "INV_ZYYAL",
+      "top_k_values": [
+        {
+          "value": "INV_ZYYAL",
+          "count": 1
+        },
+        {
+          "value": "INV_ZY4YC",
+          "count": 1
+        },
+        {
+          "value": "INV_ZXL92",
+          "count": 1
+        },
+        {
+          "value": "INV_ZWYRE",
+          "count": 1
+        },
+        {
+          "value": "INV_ZVBR7",
+          "count": 1
+        },
+        {
+          "value": "INV_ZR7WO",
+          "count": 1
+        },
+        {
+          "value": "INV_ZQGH7",
+          "count": 1
+        },
+        {
+          "value": "INV_ZPYCR",
+          "count": 1
+        },
+        {
+          "value": "INV_ZP73H",
+          "count": 1
+        },
+        {
+          "value": "INV_ZNTV7",
+          "count": 1
+        }
+      ],
+      "min_length": 9,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAA_AAAAA",
+        "AAA_AAAAD",
+        "AAA_ADAAA",
+        "AAA_DAAAA",
+        "AAA_AADAA"
+      ]
+    },
+    "insider_template|investigationdetails|invdetreg": {
+      "table_name": "investigationdetails",
+      "column_name": "invdetreg",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "INV_01QP1",
+      "max_value": "INV_ZYYAL",
+      "top_k_values": [
+        {
+          "value": "INV_01QP1",
+          "count": 1
+        },
+        {
+          "value": "INV_037ZG",
+          "count": 1
+        },
+        {
+          "value": "INV_03V64",
+          "count": 1
+        },
+        {
+          "value": "INV_03WXH",
+          "count": 1
+        },
+        {
+          "value": "INV_04JA0",
+          "count": 1
+        },
+        {
+          "value": "INV_053L8",
+          "count": 1
+        },
+        {
+          "value": "INV_05L26",
+          "count": 1
+        },
+        {
+          "value": "INV_05W98",
+          "count": 1
+        },
+        {
+          "value": "INV_05XUQ",
+          "count": 1
+        },
+        {
+          "value": "INV_06ESD",
+          "count": 1
+        }
+      ],
+      "min_length": 9,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAA_AAAAA",
+        "AAA_AAAAD",
+        "AAA_ADAAA",
+        "AAA_DAAAA",
+        "AAA_AADAA"
+      ]
+    },
+    "insider_template|investigationdetails|compref": {
+      "table_name": "investigationdetails",
+      "column_name": "compref",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "CASE_00NJG",
+      "max_value": "CASE_ZYFCV",
+      "top_k_values": [
+        {
+          "value": "CASE_ZYFCV",
+          "count": 1
+        },
+        {
+          "value": "CASE_ZWYOM",
+          "count": 1
+        },
+        {
+          "value": "CASE_ZWHYO",
+          "count": 1
+        },
+        {
+          "value": "CASE_ZVVBG",
+          "count": 1
+        },
+        {
+          "value": "CASE_ZT1LP",
+          "count": 1
+        },
+        {
+          "value": "CASE_ZSMHH",
+          "count": 1
+        },
+        {
+          "value": "CASE_ZON9H",
+          "count": 1
+        },
+        {
+          "value": "CASE_ZOAFM",
+          "count": 1
+        },
+        {
+          "value": "CASE_ZLZ02",
+          "count": 1
+        },
+        {
+          "value": "CASE_ZLB4E",
+          "count": 1
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAA_AAAAA",
+        "AAAA_AAADA",
+        "AAAA_AADAA",
+        "AAAA_ADAAA",
+        "AAAA_AAAAD"
+      ]
+    },
+    "insider_template|investigationdetails|reginv": {
+      "table_name": "investigationdetails",
+      "column_name": "reginv",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 2,
+      "min_value": "Active",
+      "max_value": "Preliminary",
+      "top_k_values": [
+        {
+          "value": "Preliminary",
+          "count": 691
+        },
+        {
+          "value": "Active",
+          "count": 309
+        }
+      ],
+      "min_length": 6,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAAAA",
+        "AAAAAA"
+      ]
+    },
+    "insider_template|investigationdetails|patrecsc": {
+      "table_name": "investigationdetails",
+      "column_name": "patrecsc",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 958,
+      "min_value": "0.03",
+      "max_value": "99.99",
+      "top_k_values": [
+        {
+          "value": "62.24",
+          "count": 3
+        },
+        {
+          "value": "92.76",
+          "count": 2
+        },
+        {
+          "value": "92.07",
+          "count": 2
+        },
+        {
+          "value": "91.09",
+          "count": 2
+        },
+        {
+          "value": "89.62",
+          "count": 2
+        },
+        {
+          "value": "87.3",
+          "count": 2
+        },
+        {
+          "value": "85.75",
+          "count": 2
+        },
+        {
+          "value": "78.89",
+          "count": 2
+        },
+        {
+          "value": "77.23",
+          "count": 2
+        },
+        {
+          "value": "73.28",
+          "count": 2
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.DD",
+        "D.DD",
+        "DD.D",
+        "D.D"
+      ]
+    },
+    "insider_template|investigationdetails|behansc": {
+      "table_name": "investigationdetails",
+      "column_name": "behansc",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 958,
+      "min_value": "0.0",
+      "max_value": "99.93",
+      "top_k_values": [
+        {
+          "value": "98.24",
+          "count": 2
+        },
+        {
+          "value": "96.95",
+          "count": 2
+        },
+        {
+          "value": "96.7",
+          "count": 2
+        },
+        {
+          "value": "95.63",
+          "count": 2
+        },
+        {
+          "value": "95.49",
+          "count": 2
+        },
+        {
+          "value": "93.22",
+          "count": 2
+        },
+        {
+          "value": "92.82",
+          "count": 2
+        },
+        {
+          "value": "86.5",
+          "count": 2
+        },
+        {
+          "value": "81.83",
+          "count": 2
+        },
+        {
+          "value": "80.99",
+          "count": 2
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.DD",
+        "DD.D",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "insider_template|investigationdetails|netansc": {
+      "table_name": "investigationdetails",
+      "column_name": "netansc",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 955,
+      "min_value": "0.17",
+      "max_value": "99.97",
+      "top_k_values": [
+        {
+          "value": "45.37",
+          "count": 3
+        },
+        {
+          "value": "35.61",
+          "count": 3
+        },
+        {
+          "value": "35.47",
+          "count": 3
+        },
+        {
+          "value": "17.06",
+          "count": 3
+        },
+        {
+          "value": "94.26",
+          "count": 2
+        },
+        {
+          "value": "94.13",
+          "count": 2
+        },
+        {
+          "value": "93.15",
+          "count": 2
+        },
+        {
+          "value": "86.59",
+          "count": 2
+        },
+        {
+          "value": "85.74",
+          "count": 2
+        },
+        {
+          "value": "84.79",
+          "count": 2
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.DD",
+        "DD.D",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "insider_template|investigationdetails|relmapstat": {
+      "table_name": "investigationdetails",
+      "column_name": "relmapstat",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Complete",
+      "max_value": "Pending",
+      "top_k_values": [
+        {
+          "value": "Pending",
+          "count": 347
+        },
+        {
+          "value": "Complete",
+          "count": 332
+        },
+        {
+          "value": "Partial",
+          "count": 321
+        }
+      ],
+      "min_length": 7,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "insider_template|investigationdetails|connent": {
+      "table_name": "investigationdetails",
+      "column_name": "connent",
+      "column_type": "TEXT(100)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 21,
+      "min_value": "0",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "8",
+          "count": 58
+        },
+        {
+          "value": "16",
+          "count": 56
+        },
+        {
+          "value": "17",
+          "count": 55
+        },
+        {
+          "value": "19",
+          "count": 54
+        },
+        {
+          "value": "5",
+          "count": 53
+        },
+        {
+          "value": "12",
+          "count": 53
+        },
+        {
+          "value": "9",
+          "count": 51
+        },
+        {
+          "value": "18",
+          "count": 51
+        },
+        {
+          "value": "10",
+          "count": 51
+        },
+        {
+          "value": "0",
+          "count": 50
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D"
+      ]
+    },
+    "insider_template|investigationdetails|commaddr": {
+      "table_name": "investigationdetails",
+      "column_name": "commaddr",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 6,
+      "min_value": "0",
+      "max_value": "5",
+      "top_k_values": [
+        {
+          "value": "2",
+          "count": 176
+        },
+        {
+          "value": "0",
+          "count": 173
+        },
+        {
+          "value": "4",
+          "count": 172
+        },
+        {
+          "value": "3",
+          "count": 163
+        },
+        {
+          "value": "5",
+          "count": 162
+        },
+        {
+          "value": "1",
+          "count": 154
+        }
+      ],
+      "min_length": 1,
+      "max_length": 1,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D"
+      ]
+    },
+    "insider_template|investigationdetails|sharectc": {
+      "table_name": "investigationdetails",
+      "column_name": "sharectc",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Email",
+      "max_value": "Phone",
+      "top_k_values": [
+        {
+          "value": "Multiple",
+          "count": 470
+        },
+        {
+          "value": "Phone",
+          "count": 265
+        },
+        {
+          "value": "Email",
+          "count": 265
+        }
+      ],
+      "min_length": 5,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "insider_template|investigationdetails|finrel": {
+      "table_name": "investigationdetails",
+      "column_name": "finrel",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 2,
+      "min_value": "Business",
+      "max_value": "Personal",
+      "top_k_values": [
+        {
+          "value": "Business",
+          "count": 648
+        },
+        {
+          "value": "Personal",
+          "count": 352
+        }
+      ],
+      "min_length": 8,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAAAAAA"
+      ]
+    },
+    "insider_template|investigationdetails|commpat": {
+      "table_name": "investigationdetails",
+      "column_name": "commpat",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 2,
+      "min_value": "Irregular",
+      "max_value": "Regular",
+      "top_k_values": [
+        {
+          "value": "Regular",
+          "count": 654
+        },
+        {
+          "value": "Irregular",
+          "count": 346
+        }
+      ],
+      "min_length": 7,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAAAAA"
+      ]
+    },
+    "insider_template|investigationdetails|tcirclesz": {
+      "table_name": "investigationdetails",
+      "column_name": "tcirclesz",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 50,
+      "min_value": "1",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "27",
+          "count": 27
+        },
+        {
+          "value": "24",
+          "count": 27
+        },
+        {
+          "value": "49",
+          "count": 26
+        },
+        {
+          "value": "35",
+          "count": 26
+        },
+        {
+          "value": "28",
+          "count": 26
+        },
+        {
+          "value": "12",
+          "count": 26
+        },
+        {
+          "value": "50",
+          "count": 25
+        },
+        {
+          "value": "16",
+          "count": 25
+        },
+        {
+          "value": "9",
+          "count": 25
+        },
+        {
+          "value": "34",
+          "count": 24
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D"
+      ]
+    },
+    "insider_template|investigationdetails|grpbehsc": {
+      "table_name": "investigationdetails",
+      "column_name": "grpbehsc",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 957,
+      "min_value": "0.23",
+      "max_value": "99.87",
+      "top_k_values": [
+        {
+          "value": "94.67",
+          "count": 2
+        },
+        {
+          "value": "93.46",
+          "count": 2
+        },
+        {
+          "value": "82.29",
+          "count": 2
+        },
+        {
+          "value": "78.32",
+          "count": 2
+        },
+        {
+          "value": "78.0",
+          "count": 2
+        },
+        {
+          "value": "77.11",
+          "count": 2
+        },
+        {
+          "value": "76.42",
+          "count": 2
+        },
+        {
+          "value": "75.06",
+          "count": 2
+        },
+        {
+          "value": "71.88",
+          "count": 2
+        },
+        {
+          "value": "69.01",
+          "count": 2
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.DD",
+        "D.DD",
+        "DD.D",
+        "D.D"
+      ]
+    },
+    "insider_template|investigationdetails|mktabprob": {
+      "table_name": "investigationdetails",
+      "column_name": "mktabprob",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 101,
+      "min_value": "0.0",
+      "max_value": "1.0",
+      "top_k_values": [
+        {
+          "value": "0.94",
+          "count": 18
+        },
+        {
+          "value": "0.91",
+          "count": 18
+        },
+        {
+          "value": "0.72",
+          "count": 18
+        },
+        {
+          "value": "0.5",
+          "count": 18
+        },
+        {
+          "value": "0.03",
+          "count": 17
+        },
+        {
+          "value": "0.84",
+          "count": 15
+        },
+        {
+          "value": "0.09",
+          "count": 15
+        },
+        {
+          "value": "0.37",
+          "count": 14
+        },
+        {
+          "value": "0.31",
+          "count": 14
+        },
+        {
+          "value": "0.99",
+          "count": 13
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "insider_template|investigationdetails|evidstr": {
+      "table_name": "investigationdetails",
+      "column_name": "evidstr",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Moderate",
+      "max_value": "Weak",
+      "top_k_values": [
+        {
+          "value": "Strong",
+          "count": 338
+        },
+        {
+          "value": "Moderate",
+          "count": 333
+        },
+        {
+          "value": "Weak",
+          "count": 329
+        }
+      ],
+      "min_length": 4,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AAAAAAAA",
+        "AAAA"
+      ]
+    },
+    "insider_template|investigationdetails|docustat": {
+      "table_name": "investigationdetails",
+      "column_name": "docustat",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Complete",
+      "max_value": "Partial",
+      "top_k_values": [
+        {
+          "value": "Incomplete",
+          "count": 346
+        },
+        {
+          "value": "Partial",
+          "count": 328
+        },
+        {
+          "value": "Complete",
+          "count": 326
+        }
+      ],
+      "min_length": 7,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAAA",
+        "AAAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "insider_template|investigationdetails|sentref": {
+      "table_name": "investigationdetails",
+      "column_name": "sentref",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "SENT_012AH",
+      "max_value": "SENT_ZZP3U",
+      "top_k_values": [
+        {
+          "value": "SENT_ZZP3U",
+          "count": 1
+        },
+        {
+          "value": "SENT_ZY3RT",
+          "count": 1
+        },
+        {
+          "value": "SENT_ZU94D",
+          "count": 1
+        },
+        {
+          "value": "SENT_ZSG6L",
+          "count": 1
+        },
+        {
+          "value": "SENT_ZQP5T",
+          "count": 1
+        },
+        {
+          "value": "SENT_ZP9G3",
+          "count": 1
+        },
+        {
+          "value": "SENT_ZOX9J",
+          "count": 1
+        },
+        {
+          "value": "SENT_ZOG1D",
+          "count": 1
+        },
+        {
+          "value": "SENT_ZLKD2",
+          "count": 1
+        },
+        {
+          "value": "SENT_ZL66E",
+          "count": 1
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAA_AAAAA",
+        "AAAA_AADAA",
+        "AAAA_AAADA",
+        "AAAA_AAAAD",
+        "AAAA_DAAAA"
+      ]
+    },
+    "insider_template|sentimentandfundamentals|sentreg": {
+      "table_name": "sentimentandfundamentals",
+      "column_name": "sentreg",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "SENT_012AH",
+      "max_value": "SENT_ZZP3U",
+      "top_k_values": [
+        {
+          "value": "SENT_012AH",
+          "count": 1
+        },
+        {
+          "value": "SENT_01KYB",
+          "count": 1
+        },
+        {
+          "value": "SENT_01RDI",
+          "count": 1
+        },
+        {
+          "value": "SENT_04225",
+          "count": 1
+        },
+        {
+          "value": "SENT_0639V",
+          "count": 1
+        },
+        {
+          "value": "SENT_06KFW",
+          "count": 1
+        },
+        {
+          "value": "SENT_076TZ",
+          "count": 1
+        },
+        {
+          "value": "SENT_07OV2",
+          "count": 1
+        },
+        {
+          "value": "SENT_07URQ",
+          "count": 1
+        },
+        {
+          "value": "SENT_09AS6",
+          "count": 1
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAA_AAAAA",
+        "AAAA_AADAA",
+        "AAAA_AAADA",
+        "AAAA_AAAAD",
+        "AAAA_DAAAA"
+      ]
+    },
+    "insider_template|sentimentandfundamentals|transref": {
+      "table_name": "sentimentandfundamentals",
+      "column_name": "transref",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 999,
+      "min_value": "IT100092",
+      "max_value": "IT997378",
+      "top_k_values": [
+        {
+          "value": "IT216758",
+          "count": 2
+        },
+        {
+          "value": "IT997378",
+          "count": 1
+        },
+        {
+          "value": "IT995973",
+          "count": 1
+        },
+        {
+          "value": "IT995414",
+          "count": 1
+        },
+        {
+          "value": "IT995112",
+          "count": 1
+        },
+        {
+          "value": "IT994987",
+          "count": 1
+        },
+        {
+          "value": "IT994553",
+          "count": 1
+        },
+        {
+          "value": "IT991833",
+          "count": 1
+        },
+        {
+          "value": "IT985494",
+          "count": 1
+        },
+        {
+          "value": "IT985468",
+          "count": 1
+        }
+      ],
+      "min_length": 8,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDDDD"
+      ]
+    },
+    "insider_template|sentimentandfundamentals|newsscore": {
+      "table_name": "sentimentandfundamentals",
+      "column_name": "newsscore",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 200,
+      "min_value": "-0.01",
+      "max_value": "1.0",
+      "top_k_values": [
+        {
+          "value": "0.58",
+          "count": 11
+        },
+        {
+          "value": "-0.39",
+          "count": 11
+        },
+        {
+          "value": "0.97",
+          "count": 10
+        },
+        {
+          "value": "0.94",
+          "count": 10
+        },
+        {
+          "value": "0.64",
+          "count": 10
+        },
+        {
+          "value": "-0.26",
+          "count": 10
+        },
+        {
+          "value": "-0.48",
+          "count": 10
+        },
+        {
+          "value": "0.95",
+          "count": 9
+        },
+        {
+          "value": "0.86",
+          "count": 9
+        },
+        {
+          "value": "0.26",
+          "count": 9
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "-D.DD",
+        "D.DD",
+        "D.D",
+        "-D.D"
+      ]
+    },
+    "insider_template|sentimentandfundamentals|socscore": {
+      "table_name": "sentimentandfundamentals",
+      "column_name": "socscore",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 196,
+      "min_value": "-0.01",
+      "max_value": "1.0",
+      "top_k_values": [
+        {
+          "value": "0.35",
+          "count": 14
+        },
+        {
+          "value": "-0.29",
+          "count": 12
+        },
+        {
+          "value": "-0.84",
+          "count": 12
+        },
+        {
+          "value": "0.78",
+          "count": 10
+        },
+        {
+          "value": "-0.96",
+          "count": 10
+        },
+        {
+          "value": "0.61",
+          "count": 9
+        },
+        {
+          "value": "0.56",
+          "count": 9
+        },
+        {
+          "value": "0.54",
+          "count": 9
+        },
+        {
+          "value": "0.28",
+          "count": 9
+        },
+        {
+          "value": "0.0",
+          "count": 9
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "-D.DD",
+        "D.DD",
+        "D.D",
+        "-D.D"
+      ]
+    },
+    "insider_template|sentimentandfundamentals|anlycount": {
+      "table_name": "sentimentandfundamentals",
+      "column_name": "anlycount",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 31,
+      "min_value": "0",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "22",
+          "count": 50
+        },
+        {
+          "value": "6",
+          "count": 43
+        },
+        {
+          "value": "27",
+          "count": 40
+        },
+        {
+          "value": "18",
+          "count": 40
+        },
+        {
+          "value": "23",
+          "count": 37
+        },
+        {
+          "value": "9",
+          "count": 37
+        },
+        {
+          "value": "26",
+          "count": 36
+        },
+        {
+          "value": "24",
+          "count": 36
+        },
+        {
+          "value": "5",
+          "count": 35
+        },
+        {
+          "value": "17",
+          "count": 34
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D"
+      ]
+    },
+    "insider_template|sentimentandfundamentals|inholdpct": {
+      "table_name": "sentimentandfundamentals",
+      "column_name": "inholdpct",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 907,
+      "min_value": "0.05",
+      "max_value": "9.98",
+      "top_k_values": [
+        {
+          "value": "29.44",
+          "count": 4
+        },
+        {
+          "value": "48.72",
+          "count": 3
+        },
+        {
+          "value": "20.6",
+          "count": 3
+        },
+        {
+          "value": "9.93",
+          "count": 3
+        },
+        {
+          "value": "5.85",
+          "count": 3
+        },
+        {
+          "value": "0.26",
+          "count": 3
+        },
+        {
+          "value": "49.22",
+          "count": 2
+        },
+        {
+          "value": "48.92",
+          "count": 2
+        },
+        {
+          "value": "48.89",
+          "count": 2
+        },
+        {
+          "value": "48.74",
+          "count": 2
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.DD",
+        "D.DD",
+        "DD.D",
+        "D.D"
+      ]
+    },
+    "insider_template|sentimentandfundamentals|instownpct": {
+      "table_name": "sentimentandfundamentals",
+      "column_name": "instownpct",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 953,
+      "min_value": "0.19",
+      "max_value": "9.89",
+      "top_k_values": [
+        {
+          "value": "86.73",
+          "count": 2
+        },
+        {
+          "value": "85.11",
+          "count": 2
+        },
+        {
+          "value": "84.65",
+          "count": 2
+        },
+        {
+          "value": "82.36",
+          "count": 2
+        },
+        {
+          "value": "76.96",
+          "count": 2
+        },
+        {
+          "value": "75.94",
+          "count": 2
+        },
+        {
+          "value": "75.63",
+          "count": 2
+        },
+        {
+          "value": "71.65",
+          "count": 2
+        },
+        {
+          "value": "69.33",
+          "count": 2
+        },
+        {
+          "value": "69.18",
+          "count": 2
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.DD",
+        "DD.D",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "insider_template|sentimentandfundamentals|shortintrt": {
+      "table_name": "sentimentandfundamentals",
+      "column_name": "shortintrt",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 795,
+      "min_value": "0.01",
+      "max_value": "9.97",
+      "top_k_values": [
+        {
+          "value": "5.49",
+          "count": 4
+        },
+        {
+          "value": "18.57",
+          "count": 3
+        },
+        {
+          "value": "17.92",
+          "count": 3
+        },
+        {
+          "value": "17.86",
+          "count": 3
+        },
+        {
+          "value": "17.2",
+          "count": 3
+        },
+        {
+          "value": "15.44",
+          "count": 3
+        },
+        {
+          "value": "15.33",
+          "count": 3
+        },
+        {
+          "value": "14.77",
+          "count": 3
+        },
+        {
+          "value": "14.62",
+          "count": 3
+        },
+        {
+          "value": "14.04",
+          "count": 3
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.DD",
+        "D.DD",
+        "DD.D",
+        "D.D"
+      ]
+    },
+    "insider_template|sentimentandfundamentals|optvolrt": {
+      "table_name": "sentimentandfundamentals",
+      "column_name": "optvolrt",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 427,
+      "min_value": "0.01",
+      "max_value": "4.99",
+      "top_k_values": [
+        {
+          "value": "2.68",
+          "count": 7
+        },
+        {
+          "value": "4.18",
+          "count": 6
+        },
+        {
+          "value": "4.12",
+          "count": 6
+        },
+        {
+          "value": "3.82",
+          "count": 6
+        },
+        {
+          "value": "2.64",
+          "count": 6
+        },
+        {
+          "value": "2.02",
+          "count": 6
+        },
+        {
+          "value": "1.6",
+          "count": 6
+        },
+        {
+          "value": "0.29",
+          "count": 6
+        },
+        {
+          "value": "4.93",
+          "count": 5
+        },
+        {
+          "value": "4.36",
+          "count": 5
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "insider_template|sentimentandfundamentals|putcallrt": {
+      "table_name": "sentimentandfundamentals",
+      "column_name": "putcallrt",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 189,
+      "min_value": "0.1",
+      "max_value": "2.0",
+      "top_k_values": [
+        {
+          "value": "0.95",
+          "count": 12
+        },
+        {
+          "value": "1.85",
+          "count": 11
+        },
+        {
+          "value": "1.71",
+          "count": 11
+        },
+        {
+          "value": "0.27",
+          "count": 11
+        },
+        {
+          "value": "1.94",
+          "count": 10
+        },
+        {
+          "value": "1.52",
+          "count": 10
+        },
+        {
+          "value": "1.45",
+          "count": 10
+        },
+        {
+          "value": "1.13",
+          "count": 10
+        },
+        {
+          "value": "0.13",
+          "count": 10
+        },
+        {
+          "value": "1.82",
+          "count": 9
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "insider_template|sentimentandfundamentals|impvolrank": {
+      "table_name": "sentimentandfundamentals",
+      "column_name": "impvolrank",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 957,
+      "min_value": "0.01",
+      "max_value": "99.9",
+      "top_k_values": [
+        {
+          "value": "51.64",
+          "count": 3
+        },
+        {
+          "value": "99.72",
+          "count": 2
+        },
+        {
+          "value": "97.6",
+          "count": 2
+        },
+        {
+          "value": "97.33",
+          "count": 2
+        },
+        {
+          "value": "95.38",
+          "count": 2
+        },
+        {
+          "value": "95.23",
+          "count": 2
+        },
+        {
+          "value": "93.66",
+          "count": 2
+        },
+        {
+          "value": "90.11",
+          "count": 2
+        },
+        {
+          "value": "88.18",
+          "count": 2
+        },
+        {
+          "value": "82.63",
+          "count": 2
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.DD",
+        "D.DD",
+        "DD.D",
+        "D.D"
+      ]
+    },
+    "insider_template|sentimentandfundamentals|unuoptact": {
+      "table_name": "sentimentandfundamentals",
+      "column_name": "unuoptact",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 2,
+      "min_value": "High",
+      "max_value": "Moderate",
+      "top_k_values": [
+        {
+          "value": "Moderate",
+          "count": 678
+        },
+        {
+          "value": "High",
+          "count": 322
+        }
+      ],
+      "min_length": 4,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAA"
+      ]
+    },
+    "insider_template|sentimentandfundamentals|corpeventprx": {
+      "table_name": "sentimentandfundamentals",
+      "column_name": "corpeventprx",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Earnings",
+      "max_value": "Restructuring",
+      "top_k_values": [
+        {
+          "value": "Earnings",
+          "count": 500
+        },
+        {
+          "value": "Restructuring",
+          "count": 260
+        },
+        {
+          "value": "M&A",
+          "count": 240
+        }
+      ],
+      "min_length": 3,
+      "max_length": 13,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAAAAAAAAAAA",
+        "A&A"
+      ]
+    },
+    "insider_template|sentimentandfundamentals|eventannotm": {
+      "table_name": "sentimentandfundamentals",
+      "column_name": "eventannotm",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Intraday",
+      "max_value": "Pre-market",
+      "top_k_values": [
+        {
+          "value": "Pre-market",
+          "count": 337
+        },
+        {
+          "value": "Post-market",
+          "count": 334
+        },
+        {
+          "value": "Intraday",
+          "count": 329
+        }
+      ],
+      "min_length": 8,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAA-AAAAAA",
+        "AAAA-AAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "insider_template|sentimentandfundamentals|infoleaksc": {
+      "table_name": "sentimentandfundamentals",
+      "column_name": "infoleaksc",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 950,
+      "min_value": "0.09",
+      "max_value": "99.96",
+      "top_k_values": [
+        {
+          "value": "26.95",
+          "count": 3
+        },
+        {
+          "value": "3.46",
+          "count": 3
+        },
+        {
+          "value": "99.84",
+          "count": 2
+        },
+        {
+          "value": "99.39",
+          "count": 2
+        },
+        {
+          "value": "92.76",
+          "count": 2
+        },
+        {
+          "value": "89.34",
+          "count": 2
+        },
+        {
+          "value": "83.64",
+          "count": 2
+        },
+        {
+          "value": "81.8",
+          "count": 2
+        },
+        {
+          "value": "81.68",
+          "count": 2
+        },
+        {
+          "value": "80.37",
+          "count": 2
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.DD",
+        "DD.D",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "insider_template|sentimentandfundamentals|trdref2": {
+      "table_name": "sentimentandfundamentals",
+      "column_name": "trdref2",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 1000,
+      "non_null_count": 0,
+      "distinct_count": 0,
+      "min_value": null,
+      "max_value": null,
+      "top_k_values": [],
+      "min_length": null,
+      "max_length": null,
+      "is_always_numeric": null,
+      "is_constant_length": null,
+      "common_patterns": []
+    },
+    "insider_template|trader|tradereg": {
+      "table_name": "trader",
+      "column_name": "tradereg",
+      "column_type": "TEXT(50)",
+      "row_count": 995,
+      "null_count": 0,
+      "non_null_count": 995,
+      "distinct_count": 995,
+      "min_value": "TR10282",
+      "max_value": "TR99922",
+      "top_k_values": [
+        {
+          "value": "TR10282",
+          "count": 1
+        },
+        {
+          "value": "TR10473",
+          "count": 1
+        },
+        {
+          "value": "TR10841",
+          "count": 1
+        },
+        {
+          "value": "TR10947",
+          "count": 1
+        },
+        {
+          "value": "TR10951",
+          "count": 1
+        },
+        {
+          "value": "TR11179",
+          "count": 1
+        },
+        {
+          "value": "TR11189",
+          "count": 1
+        },
+        {
+          "value": "TR11371",
+          "count": 1
+        },
+        {
+          "value": "TR11390",
+          "count": 1
+        },
+        {
+          "value": "TR11422",
+          "count": 1
+        }
+      ],
+      "min_length": 7,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDDD"
+      ]
+    },
+    "insider_template|trader|tradekind": {
+      "table_name": "trader",
+      "column_name": "tradekind",
+      "column_type": "TEXT",
+      "row_count": 995,
+      "null_count": 0,
+      "non_null_count": 995,
+      "distinct_count": 4,
+      "min_value": "Broker",
+      "max_value": "Market Maker",
+      "top_k_values": [
+        {
+          "value": "Market Maker",
+          "count": 265
+        },
+        {
+          "value": "Institution",
+          "count": 246
+        },
+        {
+          "value": "Broker",
+          "count": 244
+        },
+        {
+          "value": "Individual",
+          "count": 240
+        }
+      ],
+      "min_length": 6,
+      "max_length": 12,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA AAAAA",
+        "AAAAAAAAAAA",
+        "AAAAAA",
+        "AAAAAAAAAA"
+      ]
+    },
+    "insider_template|trader|acctdays": {
+      "table_name": "trader",
+      "column_name": "acctdays",
+      "column_type": "INTEGER",
+      "row_count": 995,
+      "null_count": 0,
+      "non_null_count": 995,
+      "distinct_count": 865,
+      "min_value": "100",
+      "max_value": "993",
+      "top_k_values": [
+        {
+          "value": "932",
+          "count": 4
+        },
+        {
+          "value": "3633",
+          "count": 3
+        },
+        {
+          "value": "3544",
+          "count": 3
+        },
+        {
+          "value": "3517",
+          "count": 3
+        },
+        {
+          "value": "2963",
+          "count": 3
+        },
+        {
+          "value": "2927",
+          "count": 3
+        },
+        {
+          "value": "2836",
+          "count": 3
+        },
+        {
+          "value": "2601",
+          "count": 3
+        },
+        {
+          "value": "2198",
+          "count": 3
+        },
+        {
+          "value": "2117",
+          "count": 3
+        }
+      ],
+      "min_length": 2,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDD",
+        "DDD",
+        "DD"
+      ]
+    },
+    "insider_template|trader|acctbal": {
+      "table_name": "trader",
+      "column_name": "acctbal",
+      "column_type": "REAL",
+      "row_count": 995,
+      "null_count": 0,
+      "non_null_count": 995,
+      "distinct_count": 995,
+      "min_value": "1022898.57",
+      "max_value": "9961158.17",
+      "top_k_values": [
+        {
+          "value": "9961158.17",
+          "count": 1
+        },
+        {
+          "value": "9930905.63",
+          "count": 1
+        },
+        {
+          "value": "9930161.0",
+          "count": 1
+        },
+        {
+          "value": "9923897.1",
+          "count": 1
+        },
+        {
+          "value": "9915664.83",
+          "count": 1
+        },
+        {
+          "value": "9915623.01",
+          "count": 1
+        },
+        {
+          "value": "9915154.58",
+          "count": 1
+        },
+        {
+          "value": "9897795.88",
+          "count": 1
+        },
+        {
+          "value": "9885318.94",
+          "count": 1
+        },
+        {
+          "value": "9872495.72",
+          "count": 1
+        }
+      ],
+      "min_length": 7,
+      "max_length": 10,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDDDD.DD",
+        "DDDDDDD.D",
+        "DDDDDD.DD",
+        "DDDDDD.D",
+        "DDDDD.DD"
+      ]
+    },
+    "insider_template|trader|freqscope": {
+      "table_name": "trader",
+      "column_name": "freqscope",
+      "column_type": "TEXT",
+      "row_count": 995,
+      "null_count": 0,
+      "non_null_count": 995,
+      "distinct_count": 3,
+      "min_value": "High",
+      "max_value": "Medium",
+      "top_k_values": [
+        {
+          "value": "High",
+          "count": 349
+        },
+        {
+          "value": "Medium",
+          "count": 334
+        },
+        {
+          "value": "Low",
+          "count": 312
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAAAAA",
+        "AAA"
+      ]
+    },
+    "insider_template|trader|voldaily": {
+      "table_name": "trader",
+      "column_name": "voldaily",
+      "column_type": "REAL",
+      "row_count": 995,
+      "null_count": 0,
+      "non_null_count": 995,
+      "distinct_count": 995,
+      "min_value": "1004.05",
+      "max_value": "999001.15",
+      "top_k_values": [
+        {
+          "value": "999001.15",
+          "count": 1
+        },
+        {
+          "value": "998956.5",
+          "count": 1
+        },
+        {
+          "value": "998164.01",
+          "count": 1
+        },
+        {
+          "value": "997905.45",
+          "count": 1
+        },
+        {
+          "value": "996645.26",
+          "count": 1
+        },
+        {
+          "value": "994015.42",
+          "count": 1
+        },
+        {
+          "value": "992401.13",
+          "count": 1
+        },
+        {
+          "value": "991520.31",
+          "count": 1
+        },
+        {
+          "value": "991225.3",
+          "count": 1
+        },
+        {
+          "value": "990572.77",
+          "count": 1
+        }
+      ],
+      "min_length": 6,
+      "max_length": 9,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDDD.DD",
+        "DDDDDD.D",
+        "DDDDD.DD",
+        "DDDD.DD",
+        "DDDDD.D"
+      ]
+    },
+    "insider_template|trader|posavg": {
+      "table_name": "trader",
+      "column_name": "posavg",
+      "column_type": "REAL",
+      "row_count": 995,
+      "null_count": 0,
+      "non_null_count": 995,
+      "distinct_count": 995,
+      "min_value": "100119.72",
+      "max_value": "99594.2",
+      "top_k_values": [
+        {
+          "value": "497539.19",
+          "count": 1
+        },
+        {
+          "value": "497351.92",
+          "count": 1
+        },
+        {
+          "value": "496974.32",
+          "count": 1
+        },
+        {
+          "value": "496588.77",
+          "count": 1
+        },
+        {
+          "value": "496048.06",
+          "count": 1
+        },
+        {
+          "value": "495978.89",
+          "count": 1
+        },
+        {
+          "value": "495752.7",
+          "count": 1
+        },
+        {
+          "value": "495067.46",
+          "count": 1
+        },
+        {
+          "value": "493443.77",
+          "count": 1
+        },
+        {
+          "value": "493427.03",
+          "count": 1
+        }
+      ],
+      "min_length": 6,
+      "max_length": 9,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDDD.DD",
+        "DDDDD.DD",
+        "DDDDDD.D",
+        "DDDDD.D",
+        "DDDD.DD"
+      ]
+    },
+    "insider_template|trader|posspan": {
+      "table_name": "trader",
+      "column_name": "posspan",
+      "column_type": "TEXT",
+      "row_count": 995,
+      "null_count": 0,
+      "non_null_count": 995,
+      "distinct_count": 4,
+      "min_value": "Intraday",
+      "max_value": "Swing",
+      "top_k_values": [
+        {
+          "value": "Intraday",
+          "count": 267
+        },
+        {
+          "value": "Long-term",
+          "count": 255
+        },
+        {
+          "value": "Position",
+          "count": 247
+        },
+        {
+          "value": "Swing",
+          "count": 226
+        }
+      ],
+      "min_length": 5,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAA-AAAA",
+        "AAAAA"
+      ]
+    },
+    "insider_template|trader|trading_performance": {
+      "table_name": "trader",
+      "column_name": "trading_performance",
+      "column_type": "TEXT",
+      "row_count": 995,
+      "null_count": 0,
+      "non_null_count": 995,
+      "distinct_count": 995,
+      "min_value": "{\"winpct\": 30.13, \"plratio\": 2.9400, \"risklevel\": {\"margpct\": 66.03, \"levratio\": 5.9200, \"risklevel\": \"Aggressive\"}}",
+      "max_value": "{\"winpct\": 89.90, \"plratio\": 0.6900, \"risklevel\": {\"margpct\": 21.26, \"levratio\": 4.3100, \"risklevel\": \"Conservative\"}}",
+      "top_k_values": [
+        {
+          "value": "{\"winpct\": 89.90, \"plratio\": 0.6900, \"risklevel\": {\"margpct\": 21.26, \"levratio\": 4.3100, \"risklevel\": \"Conservative\"}}",
+          "count": 1
+        },
+        {
+          "value": "{\"winpct\": 89.60, \"plratio\": 0.7300, \"risklevel\": {\"margpct\": 39.30, \"levratio\": 2.3900, \"risklevel\": \"Conservative\"}}",
+          "count": 1
+        },
+        {
+          "value": "{\"winpct\": 89.57, \"plratio\": 2.1800, \"risklevel\": {\"margpct\": 78.43, \"levratio\": 4.4200, \"risklevel\": \"Aggressive\"}}",
+          "count": 1
+        },
+        {
+          "value": "{\"winpct\": 89.45, \"plratio\": 0.9700, \"risklevel\": {\"margpct\": 27.52, \"levratio\": 8.6300, \"risklevel\": \"Conservative\"}}",
+          "count": 1
+        },
+        {
+          "value": "{\"winpct\": 89.43, \"plratio\": 2.7900, \"risklevel\": {\"margpct\": 63.84, \"levratio\": 2.0900, \"risklevel\": \"Moderate\"}}",
+          "count": 1
+        },
+        {
+          "value": "{\"winpct\": 89.38, \"plratio\": 2.5500, \"risklevel\": {\"margpct\": 69.30, \"levratio\": 4.9300, \"risklevel\": \"Aggressive\"}}",
+          "count": 1
+        },
+        {
+          "value": "{\"winpct\": 89.26, \"plratio\": 1.6000, \"risklevel\": {\"margpct\": 33.71, \"levratio\": 7.7100, \"risklevel\": \"Conservative\"}}",
+          "count": 1
+        },
+        {
+          "value": "{\"winpct\": 89.22, \"plratio\": 1.6000, \"risklevel\": {\"margpct\": 32.70, \"levratio\": 8.4500, \"risklevel\": \"Aggressive\"}}",
+          "count": 1
+        },
+        {
+          "value": "{\"winpct\": 89.16, \"plratio\": 1.2300, \"risklevel\": {\"margpct\": 77.23, \"levratio\": 7.1500, \"risklevel\": \"Moderate\"}}",
+          "count": 1
+        },
+        {
+          "value": "{\"winpct\": 89.15, \"plratio\": 0.7000, \"risklevel\": {\"margpct\": 37.71, \"levratio\": 4.7800, \"risklevel\": \"Moderate\"}}",
+          "count": 1
+        }
+      ],
+      "min_length": 113,
+      "max_length": 118,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "{\"AAAAAA\": DD.DD, \"AAAAAAA\": D.DDDD, \"AAAAAAAAA\": {\"AAAAAAA\": DD.DD, \"AAAAAAAA\": D.DDDD, \"AAAAAAAAA\": \"AAAAAAAA\"}}",
+        "{\"AAAAAA\": DD.DD, \"AAAAAAA\": D.DDDD, \"AAAAAAAAA\": {\"AAAAAAA\": DD.DD, \"AAAAAAAA\": D.DDDD, \"AAAAAAAAA\": \"AAAAAAAAAAAA\"}}",
+        "{\"AAAAAA\": DD.DD, \"AAAAAAA\": D.DDDD, \"AAAAAAAAA\": {\"AAAAAAA\": DD.DD, \"AAAAAAAA\": D.DDDD, \"AAAAAAAAA\": \"AAAAAAAAAA\"}}",
+        "{\"AAAAAA\": DD.DD, \"AAAAAAA\": D.DDDD, \"AAAAAAAAA\": {\"AAAAAAA\": D.DD, \"AAAAAAAA\": D.DDDD, \"AAAAAAAAA\": \"AAAAAAAA\"}}",
+        "{\"AAAAAA\": DD.DD, \"AAAAAAA\": D.DDDD, \"AAAAAAAAA\": {\"AAAAAAA\": D.DD, \"AAAAAAAA\": D.DDDD, \"AAAAAAAAA\": \"AAAAAAAAAAAA\"}}"
+      ]
+    },
+    "insider_template|trader|trading_performance.winpct": {
+      "table_name": "trader",
+      "column_name": "trading_performance.winpct",
+      "column_type": "JSON field",
+      "row_count": 995,
+      "null_count": 0,
+      "non_null_count": 995,
+      "distinct_count": 921,
+      "min_value": "30.13",
+      "max_value": "89.9",
+      "top_k_values": [
+        {
+          "value": "39.5",
+          "count": 3
+        },
+        {
+          "value": "30.66",
+          "count": 3
+        },
+        {
+          "value": "85.7",
+          "count": 3
+        },
+        {
+          "value": "85.15",
+          "count": 2
+        },
+        {
+          "value": "46.14",
+          "count": 2
+        },
+        {
+          "value": "60.46",
+          "count": 2
+        },
+        {
+          "value": "78.08",
+          "count": 2
+        },
+        {
+          "value": "74.84",
+          "count": 2
+        },
+        {
+          "value": "70.97",
+          "count": 2
+        },
+        {
+          "value": "86.32",
+          "count": 2
+        }
+      ],
+      "min_length": 4,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.DD",
+        "DD.D"
+      ]
+    },
+    "insider_template|trader|trading_performance.plratio": {
+      "table_name": "trader",
+      "column_name": "trading_performance.plratio",
+      "column_type": "JSON field",
+      "row_count": 995,
+      "null_count": 0,
+      "non_null_count": 995,
+      "distinct_count": 247,
+      "min_value": "0.51",
+      "max_value": "3.0",
+      "top_k_values": [
+        {
+          "value": "2.42",
+          "count": 11
+        },
+        {
+          "value": "1.83",
+          "count": 9
+        },
+        {
+          "value": "2.41",
+          "count": 9
+        },
+        {
+          "value": "0.77",
+          "count": 8
+        },
+        {
+          "value": "0.97",
+          "count": 8
+        },
+        {
+          "value": "2.33",
+          "count": 8
+        },
+        {
+          "value": "2.82",
+          "count": 8
+        },
+        {
+          "value": "2.91",
+          "count": 8
+        },
+        {
+          "value": "1.91",
+          "count": 8
+        },
+        {
+          "value": "2.76",
+          "count": 7
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "insider_template|trader|trading_performance.risklevel.margpct": {
+      "table_name": "trader",
+      "column_name": "trading_performance.risklevel.margpct",
+      "column_type": "JSON field",
+      "row_count": 995,
+      "null_count": 0,
+      "non_null_count": 995,
+      "distinct_count": 936,
+      "min_value": "0.03",
+      "max_value": "80.0",
+      "top_k_values": [
+        {
+          "value": "8.39",
+          "count": 3
+        },
+        {
+          "value": "51.07",
+          "count": 2
+        },
+        {
+          "value": "11.25",
+          "count": 2
+        },
+        {
+          "value": "39.19",
+          "count": 2
+        },
+        {
+          "value": "56.88",
+          "count": 2
+        },
+        {
+          "value": "29.46",
+          "count": 2
+        },
+        {
+          "value": "45.03",
+          "count": 2
+        },
+        {
+          "value": "26.67",
+          "count": 2
+        },
+        {
+          "value": "44.19",
+          "count": 2
+        },
+        {
+          "value": "46.55",
+          "count": 2
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.DD",
+        "D.DD",
+        "DD.D",
+        "D.D"
+      ]
+    },
+    "insider_template|trader|trading_performance.risklevel.levratio": {
+      "table_name": "trader",
+      "column_name": "trading_performance.risklevel.levratio",
+      "column_type": "JSON field",
+      "row_count": 995,
+      "null_count": 0,
+      "non_null_count": 995,
+      "distinct_count": 601,
+      "min_value": "1.0",
+      "max_value": "9.99",
+      "top_k_values": [
+        {
+          "value": "8.25",
+          "count": 6
+        },
+        {
+          "value": "9.61",
+          "count": 5
+        },
+        {
+          "value": "8.7",
+          "count": 5
+        },
+        {
+          "value": "8.11",
+          "count": 5
+        },
+        {
+          "value": "6.05",
+          "count": 5
+        },
+        {
+          "value": "1.05",
+          "count": 5
+        },
+        {
+          "value": "7.71",
+          "count": 4
+        },
+        {
+          "value": "8.83",
+          "count": 4
+        },
+        {
+          "value": "2.99",
+          "count": 4
+        },
+        {
+          "value": "9.16",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "insider_template|trader|trading_performance.risklevel.risklevel": {
+      "table_name": "trader",
+      "column_name": "trading_performance.risklevel.risklevel",
+      "column_type": "JSON field",
+      "row_count": 995,
+      "null_count": 0,
+      "non_null_count": 995,
+      "distinct_count": 3,
+      "min_value": "Aggressive",
+      "max_value": "Moderate",
+      "top_k_values": [
+        {
+          "value": "Moderate",
+          "count": 348
+        },
+        {
+          "value": "Conservative",
+          "count": 334
+        },
+        {
+          "value": "Aggressive",
+          "count": 313
+        }
+      ],
+      "min_length": 8,
+      "max_length": 12,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAAAAAAAAAA",
+        "AAAAAAAAAA"
+      ]
+    },
+    "insider_template|transactionrecord|transreg": {
+      "table_name": "transactionrecord",
+      "column_name": "transreg",
+      "column_type": "TEXT(50)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "IT100092",
+      "max_value": "IT997378",
+      "top_k_values": [
+        {
+          "value": "IT100092",
+          "count": 1
+        },
+        {
+          "value": "IT100160",
+          "count": 1
+        },
+        {
+          "value": "IT100232",
+          "count": 1
+        },
+        {
+          "value": "IT100968",
+          "count": 1
+        },
+        {
+          "value": "IT102321",
+          "count": 1
+        },
+        {
+          "value": "IT102872",
+          "count": 1
+        },
+        {
+          "value": "IT103915",
+          "count": 1
+        },
+        {
+          "value": "IT104741",
+          "count": 1
+        },
+        {
+          "value": "IT104871",
+          "count": 1
+        },
+        {
+          "value": "IT104923",
+          "count": 1
+        }
+      ],
+      "min_length": 8,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDDDD"
+      ]
+    },
+    "insider_template|transactionrecord|transtime": {
+      "table_name": "transactionrecord",
+      "column_name": "transtime",
+      "column_type": "TEXT(6)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "2024-02-19 09:48:40.113506",
+      "max_value": "2025-02-18 18:04:13.127706",
+      "top_k_values": [
+        {
+          "value": "2025-02-18 18:04:13.127706",
+          "count": 1
+        },
+        {
+          "value": "2025-02-17 10:32:58.107361",
+          "count": 1
+        },
+        {
+          "value": "2025-02-17 08:34:45.137927",
+          "count": 1
+        },
+        {
+          "value": "2025-02-17 03:22:58.123825",
+          "count": 1
+        },
+        {
+          "value": "2025-02-16 21:46:27.107361",
+          "count": 1
+        },
+        {
+          "value": "2025-02-16 12:32:24.105258",
+          "count": 1
+        },
+        {
+          "value": "2025-02-16 03:43:59.131798",
+          "count": 1
+        },
+        {
+          "value": "2025-02-15 23:27:09.129702",
+          "count": 1
+        },
+        {
+          "value": "2025-02-15 10:55:53.122433",
+          "count": 1
+        },
+        {
+          "value": "2025-02-15 08:19:42.125631",
+          "count": 1
+        }
+      ],
+      "min_length": 25,
+      "max_length": 26,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDD-DD-DD DD:DD:DD.DDDDDD",
+        "DDDD-DD-DD DD:DD:DD.DDDDD"
+      ]
+    },
+    "insider_template|transactionrecord|trdref": {
+      "table_name": "transactionrecord",
+      "column_name": "trdref",
+      "column_type": "TEXT(50)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 994,
+      "min_value": "TR10282",
+      "max_value": "TR99922",
+      "top_k_values": [
+        {
+          "value": "TR85752",
+          "count": 2
+        },
+        {
+          "value": "TR76065",
+          "count": 2
+        },
+        {
+          "value": "TR59443",
+          "count": 2
+        },
+        {
+          "value": "TR48873",
+          "count": 2
+        },
+        {
+          "value": "TR40351",
+          "count": 2
+        },
+        {
+          "value": "TR99922",
+          "count": 1
+        },
+        {
+          "value": "TR99880",
+          "count": 1
+        },
+        {
+          "value": "TR99800",
+          "count": 1
+        },
+        {
+          "value": "TR99794",
+          "count": 1
+        },
+        {
+          "value": "TR99556",
+          "count": 1
+        }
+      ],
+      "min_length": 7,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDDD"
+      ]
+    },
+    "insider_template|transactionrecord|ordervar": {
+      "table_name": "transactionrecord",
+      "column_name": "ordervar",
+      "column_type": "REAL",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 791,
+      "min_value": "0.004",
+      "max_value": "1.991",
+      "top_k_values": [
+        {
+          "value": "1.642",
+          "count": 5
+        },
+        {
+          "value": "1.668",
+          "count": 4
+        },
+        {
+          "value": "0.114",
+          "count": 4
+        },
+        {
+          "value": "1.926",
+          "count": 3
+        },
+        {
+          "value": "1.89",
+          "count": 3
+        },
+        {
+          "value": "1.871",
+          "count": 3
+        },
+        {
+          "value": "1.795",
+          "count": 3
+        },
+        {
+          "value": "1.719",
+          "count": 3
+        },
+        {
+          "value": "1.706",
+          "count": 3
+        },
+        {
+          "value": "1.629",
+          "count": 3
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "insider_template|transactionrecord|ordertimepat": {
+      "table_name": "transactionrecord",
+      "column_name": "ordertimepat",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 3,
+      "min_value": "Irregular",
+      "max_value": "Suspicious",
+      "top_k_values": [
+        {
+          "value": "Suspicious",
+          "count": 336
+        },
+        {
+          "value": "Regular",
+          "count": 333
+        },
+        {
+          "value": "Irregular",
+          "count": 330
+        }
+      ],
+      "min_length": 7,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAAA",
+        "AAAAAAA",
+        "AAAAAAAAA"
+      ]
+    },
+    "insider_template|transactionrecord|ordertypedist": {
+      "table_name": "transactionrecord",
+      "column_name": "ordertypedist",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 3,
+      "min_value": "Limit",
+      "max_value": "Mixed",
+      "top_k_values": [
+        {
+          "value": "Mixed",
+          "count": 338
+        },
+        {
+          "value": "Market",
+          "count": 338
+        },
+        {
+          "value": "Limit",
+          "count": 323
+        }
+      ],
+      "min_length": 5,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAA",
+        "AAAAAA"
+      ]
+    },
+    "insider_template|transactionrecord|cancelpct": {
+      "table_name": "transactionrecord",
+      "column_name": "cancelpct",
+      "column_type": "REAL",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 289,
+      "min_value": "0.0",
+      "max_value": "0.3",
+      "top_k_values": [
+        {
+          "value": "0.134",
+          "count": 9
+        },
+        {
+          "value": "0.298",
+          "count": 8
+        },
+        {
+          "value": "0.231",
+          "count": 8
+        },
+        {
+          "value": "0.188",
+          "count": 8
+        },
+        {
+          "value": "0.067",
+          "count": 8
+        },
+        {
+          "value": "0.296",
+          "count": 7
+        },
+        {
+          "value": "0.228",
+          "count": 7
+        },
+        {
+          "value": "0.216",
+          "count": 7
+        },
+        {
+          "value": "0.144",
+          "count": 7
+        },
+        {
+          "value": "0.124",
+          "count": 7
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "insider_template|transactionrecord|modfreq": {
+      "table_name": "transactionrecord",
+      "column_name": "modfreq",
+      "column_type": "REAL",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 444,
+      "min_value": "0.0",
+      "max_value": "0.5",
+      "top_k_values": [
+        {
+          "value": "0.283",
+          "count": 7
+        },
+        {
+          "value": "0.425",
+          "count": 6
+        },
+        {
+          "value": "0.297",
+          "count": 6
+        },
+        {
+          "value": "0.255",
+          "count": 6
+        },
+        {
+          "value": "0.242",
+          "count": 6
+        },
+        {
+          "value": "0.193",
+          "count": 6
+        },
+        {
+          "value": "0.495",
+          "count": 5
+        },
+        {
+          "value": "0.476",
+          "count": 5
+        },
+        {
+          "value": "0.46",
+          "count": 5
+        },
+        {
+          "value": "0.406",
+          "count": 5
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "insider_template|transactionrecord|darkusage": {
+      "table_name": "transactionrecord",
+      "column_name": "darkusage",
+      "column_type": "TEXT(100)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 362,
+      "min_value": "0.0",
+      "max_value": "0.4",
+      "top_k_values": [
+        {
+          "value": "0.22",
+          "count": 8
+        },
+        {
+          "value": "0.337",
+          "count": 7
+        },
+        {
+          "value": "0.234",
+          "count": 7
+        },
+        {
+          "value": "0.249",
+          "count": 6
+        },
+        {
+          "value": "0.248",
+          "count": 6
+        },
+        {
+          "value": "0.237",
+          "count": 6
+        },
+        {
+          "value": "0.19",
+          "count": 6
+        },
+        {
+          "value": "0.092",
+          "count": 6
+        },
+        {
+          "value": "0.035",
+          "count": 6
+        },
+        {
+          "value": "0.016",
+          "count": 6
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "insider_template|transactionrecord|offmkt": {
+      "table_name": "transactionrecord",
+      "column_name": "offmkt",
+      "column_type": "TEXT(100)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 200,
+      "min_value": "0.0",
+      "max_value": "0.2",
+      "top_k_values": [
+        {
+          "value": "0.102",
+          "count": 11
+        },
+        {
+          "value": "0.085",
+          "count": 11
+        },
+        {
+          "value": "0.063",
+          "count": 11
+        },
+        {
+          "value": "0.176",
+          "count": 10
+        },
+        {
+          "value": "0.146",
+          "count": 10
+        },
+        {
+          "value": "0.167",
+          "count": 9
+        },
+        {
+          "value": "0.113",
+          "count": 9
+        },
+        {
+          "value": "0.06",
+          "count": 9
+        },
+        {
+          "value": "0.03",
+          "count": 9
+        },
+        {
+          "value": "0.025",
+          "count": 9
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "insider_template|transactionrecord|crossfreq": {
+      "table_name": "transactionrecord",
+      "column_name": "crossfreq",
+      "column_type": "REAL",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 101,
+      "min_value": "0.0",
+      "max_value": "0.1",
+      "top_k_values": [
+        {
+          "value": "0.017",
+          "count": 18
+        },
+        {
+          "value": "0.095",
+          "count": 17
+        },
+        {
+          "value": "0.072",
+          "count": 16
+        },
+        {
+          "value": "0.068",
+          "count": 16
+        },
+        {
+          "value": "0.066",
+          "count": 16
+        },
+        {
+          "value": "0.05",
+          "count": 16
+        },
+        {
+          "value": "0.099",
+          "count": 15
+        },
+        {
+          "value": "0.085",
+          "count": 14
+        },
+        {
+          "value": "0.055",
+          "count": 14
+        },
+        {
+          "value": "0.032",
+          "count": 14
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "insider_template|transactionrecord|risk_indicators": {
+      "table_name": "transactionrecord",
+      "column_name": "risk_indicators",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "{\"washsus\": \"High\", \"layerind\": \"Confirmed\", \"spoofprob\": 0.02, \"frontscore\": 27.7100, \"momentignit\": \"Weak\", \"qstuffindex\": 0.5320, \"markclosepat\": \"Occasional\"}",
+      "max_value": "{\"washsus\": \"Medium\", \"layerind\": \"Suspected\", \"spoofprob\": 0.99, \"frontscore\": 74.8200, \"momentignit\": \"Weak\", \"qstuffindex\": 0.9010, \"markclosepat\": \"Occasional\"}",
+      "top_k_values": [
+        {
+          "value": "{\"washsus\": \"Medium\", \"layerind\": \"Suspected\", \"spoofprob\": 0.99, \"frontscore\": 74.8200, \"momentignit\": \"Weak\", \"qstuffindex\": 0.9010, \"markclosepat\": \"Occasional\"}",
+          "count": 1
+        },
+        {
+          "value": "{\"washsus\": \"Medium\", \"layerind\": \"Suspected\", \"spoofprob\": 0.99, \"frontscore\": 11.6100, \"momentignit\": \"Weak\", \"qstuffindex\": 0.0470, \"markclosepat\": \"Occasional\"}",
+          "count": 1
+        },
+        {
+          "value": "{\"washsus\": \"Medium\", \"layerind\": \"Suspected\", \"spoofprob\": 0.97, \"frontscore\": 96.5000, \"momentignit\": \"Weak\", \"qstuffindex\": 0.5450, \"markclosepat\": \"Occasional\"}",
+          "count": 1
+        },
+        {
+          "value": "{\"washsus\": \"Medium\", \"layerind\": \"Suspected\", \"spoofprob\": 0.97, \"frontscore\": 56.8500, \"momentignit\": \"Weak\", \"qstuffindex\": 0.8830, \"markclosepat\": \"Occasional\"}",
+          "count": 1
+        },
+        {
+          "value": "{\"washsus\": \"Medium\", \"layerind\": \"Suspected\", \"spoofprob\": 0.95, \"frontscore\": 98.9600, \"momentignit\": \"Weak\", \"qstuffindex\": 0.2880, \"markclosepat\": \"Frequent\"}",
+          "count": 1
+        },
+        {
+          "value": "{\"washsus\": \"Medium\", \"layerind\": \"Suspected\", \"spoofprob\": 0.95, \"frontscore\": 49.7600, \"momentignit\": \"Strong\", \"qstuffindex\": 0.2040, \"markclosepat\": \"Frequent\"}",
+          "count": 1
+        },
+        {
+          "value": "{\"washsus\": \"Medium\", \"layerind\": \"Suspected\", \"spoofprob\": 0.95, \"frontscore\": 22.7200, \"momentignit\": \"Strong\", \"qstuffindex\": 0.8050, \"markclosepat\": \"Occasional\"}",
+          "count": 1
+        },
+        {
+          "value": "{\"washsus\": \"Medium\", \"layerind\": \"Suspected\", \"spoofprob\": 0.95, \"frontscore\": 15.4900, \"momentignit\": \"Strong\", \"qstuffindex\": 0.5570, \"markclosepat\": \"Frequent\"}",
+          "count": 1
+        },
+        {
+          "value": "{\"washsus\": \"Medium\", \"layerind\": \"Suspected\", \"spoofprob\": 0.95, \"frontscore\": 1.4900, \"momentignit\": \"Strong\", \"qstuffindex\": 0.3640, \"markclosepat\": \"Occasional\"}",
+          "count": 1
+        },
+        {
+          "value": "{\"washsus\": \"Medium\", \"layerind\": \"Suspected\", \"spoofprob\": 0.93, \"frontscore\": 58.0700, \"momentignit\": \"Weak\", \"qstuffindex\": 0.8790, \"markclosepat\": \"Occasional\"}",
+          "count": 1
+        }
+      ],
+      "min_length": 158,
+      "max_length": 166,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "{\"AAAAAAA\": \"AAA\", \"AAAAAAAA\": \"AAAAAAAAA\", \"AAAAAAAAA\": D.DD, \"AAAAAAAAAA\": DD.DDDD, \"AAAAAAAAAAA\": \"AAAA\", \"AAAAAAAAAAA\": D.DDDD, \"AAAAAAAAAAAA\": \"AAAAAAAAAA\"}",
+        "{\"AAAAAAA\": \"AAA\", \"AAAAAAAA\": \"AAAAAAAAA\", \"AAAAAAAAA\": D.DD, \"AAAAAAAAAA\": DD.DDDD, \"AAAAAAAAAAA\": \"AAAA\", \"AAAAAAAAAAA\": D.DDDD, \"AAAAAAAAAAAA\": \"AAAAAAAA\"}",
+        "{\"AAAAAAA\": \"AAA\", \"AAAAAAAA\": \"AAAAAAAAA\", \"AAAAAAAAA\": D.DD, \"AAAAAAAAAA\": DD.DDDD, \"AAAAAAAAAAA\": \"AAAAAA\", \"AAAAAAAAAAA\": D.DDDD, \"AAAAAAAAAAAA\": \"AAAAAAAAAA\"}",
+        "{\"AAAAAAA\": \"AAAA\", \"AAAAAAAA\": \"AAAAAAAAA\", \"AAAAAAAAA\": D.DD, \"AAAAAAAAAA\": DD.DDDD, \"AAAAAAAAAAA\": \"AAAA\", \"AAAAAAAAAAA\": D.DDDD, \"AAAAAAAAAAAA\": \"AAAAAAAAAA\"}",
+        "{\"AAAAAAA\": \"AAAAAA\", \"AAAAAAAA\": \"AAAAAAAAA\", \"AAAAAAAAA\": D.DD, \"AAAAAAAAAA\": DD.DDDD, \"AAAAAAAAAAA\": \"AAAA\", \"AAAAAAAAAAA\": D.DDDD, \"AAAAAAAAAAAA\": \"AAAAAAAAAA\"}"
+      ]
+    },
+    "insider_template|transactionrecord|risk_indicators.washsus": {
+      "table_name": "transactionrecord",
+      "column_name": "risk_indicators.washsus",
+      "column_type": "JSON field",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 3,
+      "min_value": "High",
+      "max_value": "Medium",
+      "top_k_values": [
+        {
+          "value": "Low",
+          "count": 510
+        },
+        {
+          "value": "Medium",
+          "count": 253
+        },
+        {
+          "value": "High",
+          "count": 236
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAA",
+        "AAAAAA",
+        "AAAA"
+      ]
+    },
+    "insider_template|transactionrecord|risk_indicators.layerind": {
+      "table_name": "transactionrecord",
+      "column_name": "risk_indicators.layerind",
+      "column_type": "JSON field",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 2,
+      "min_value": "Confirmed",
+      "max_value": "Suspected",
+      "top_k_values": [
+        {
+          "value": "Suspected",
+          "count": 646
+        },
+        {
+          "value": "Confirmed",
+          "count": 353
+        }
+      ],
+      "min_length": 9,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAAAAAAA"
+      ]
+    },
+    "insider_template|transactionrecord|risk_indicators.spoofprob": {
+      "table_name": "transactionrecord",
+      "column_name": "risk_indicators.spoofprob",
+      "column_type": "JSON field",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 101,
+      "min_value": "0.0",
+      "max_value": "1.0",
+      "top_k_values": [
+        {
+          "value": "0.15",
+          "count": 17
+        },
+        {
+          "value": "0.61",
+          "count": 17
+        },
+        {
+          "value": "0.45",
+          "count": 17
+        },
+        {
+          "value": "0.53",
+          "count": 16
+        },
+        {
+          "value": "0.22",
+          "count": 16
+        },
+        {
+          "value": "0.59",
+          "count": 15
+        },
+        {
+          "value": "0.64",
+          "count": 14
+        },
+        {
+          "value": "0.63",
+          "count": 14
+        },
+        {
+          "value": "0.74",
+          "count": 14
+        },
+        {
+          "value": "0.65",
+          "count": 14
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "insider_template|transactionrecord|risk_indicators.frontscore": {
+      "table_name": "transactionrecord",
+      "column_name": "risk_indicators.frontscore",
+      "column_type": "JSON field",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 956,
+      "min_value": "0.26",
+      "max_value": "99.97",
+      "top_k_values": [
+        {
+          "value": "90.72",
+          "count": 3
+        },
+        {
+          "value": "86.82",
+          "count": 3
+        },
+        {
+          "value": "76.49",
+          "count": 2
+        },
+        {
+          "value": "13.94",
+          "count": 2
+        },
+        {
+          "value": "95.87",
+          "count": 2
+        },
+        {
+          "value": "69.77",
+          "count": 2
+        },
+        {
+          "value": "10.91",
+          "count": 2
+        },
+        {
+          "value": "52.73",
+          "count": 2
+        },
+        {
+          "value": "32.24",
+          "count": 2
+        },
+        {
+          "value": "81.9",
+          "count": 2
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.DD",
+        "DD.D",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "insider_template|transactionrecord|risk_indicators.momentignit": {
+      "table_name": "transactionrecord",
+      "column_name": "risk_indicators.momentignit",
+      "column_type": "JSON field",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 2,
+      "min_value": "Strong",
+      "max_value": "Weak",
+      "top_k_values": [
+        {
+          "value": "Weak",
+          "count": 672
+        },
+        {
+          "value": "Strong",
+          "count": 327
+        }
+      ],
+      "min_length": 4,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAAAAA"
+      ]
+    },
+    "insider_template|transactionrecord|risk_indicators.qstuffindex": {
+      "table_name": "transactionrecord",
+      "column_name": "risk_indicators.qstuffindex",
+      "column_type": "JSON field",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 620,
+      "min_value": "0.002",
+      "max_value": "0.999",
+      "top_k_values": [
+        {
+          "value": "0.733",
+          "count": 6
+        },
+        {
+          "value": "0.255",
+          "count": 5
+        },
+        {
+          "value": "0.588",
+          "count": 5
+        },
+        {
+          "value": "0.97",
+          "count": 5
+        },
+        {
+          "value": "0.7",
+          "count": 4
+        },
+        {
+          "value": "0.077",
+          "count": 4
+        },
+        {
+          "value": "0.943",
+          "count": 4
+        },
+        {
+          "value": "0.506",
+          "count": 4
+        },
+        {
+          "value": "0.673",
+          "count": 4
+        },
+        {
+          "value": "0.211",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "insider_template|transactionrecord|risk_indicators.markclosepat": {
+      "table_name": "transactionrecord",
+      "column_name": "risk_indicators.markclosepat",
+      "column_type": "JSON field",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 2,
+      "min_value": "Frequent",
+      "max_value": "Occasional",
+      "top_k_values": [
+        {
+          "value": "Occasional",
+          "count": 655
+        },
+        {
+          "value": "Frequent",
+          "count": 344
+        }
+      ],
+      "min_length": 8,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAAA",
+        "AAAAAAAA"
+      ]
+    }
+  },
+  "meta": {
+    "advancedbehavior": {
+      "profiled_at": "2026-08-30T12:03:13.819014+00:00",
+      "row_count": 1000
+    },
+    "enforcementactions": {
+      "profiled_at": "2026-08-30T12:03:13.819014+00:00",
+      "row_count": 1000
+    },
+    "compliancecase": {
+      "profiled_at": "2026-08-30T12:03:13.819014+00:00",
+      "row_count": 1000
+    },
+    "investigationdetails": {
+      "profiled_at": "2026-08-30T12:03:13.819014+00:00",
+      "row_count": 1000
+    },
+    "sentimentandfundamentals": {
+      "profiled_at": "2026-08-30T12:03:13.819014+00:00",
+      "row_count": 1000
+    },
+    "transactionrecord": {
+      "profiled_at": "2026-08-30T12:03:13.819014+00:00",
+      "row_count": 999
+    },
+    "trader": {
+      "profiled_at": "2026-08-30T12:03:13.819014+00:00",
+      "row_count": 995
+    }
+  }
+}

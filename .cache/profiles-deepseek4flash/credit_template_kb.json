@@ -1,0 +1,942 @@
+{
+  "version": 1,
+  "profiled_at": "2026-08-30T12:56:01.751643+00:00",
+  "columns": {
+    "credit_template|credit_and_compliance|Credit inquiry count (credingq)": {
+      "id": 0,
+      "knowledge": "Credit inquiry count (credingq)",
+      "description": "Total credit inquiry count is the sum of hard and soft inquiry counts. No column stores this; compute the formula.",
+      "definition": "credingq = hardinq + softinq",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "credit_and_compliance"
+      ],
+      "refuted": false
+    },
+    "credit_template|credit_and_compliance|Delinquency under late payments": {
+      "id": 1,
+      "knowledge": "Delinquency under late payments",
+      "description": "Delinquency count cannot be greater than late payment count. Selects 76% of rows.",
+      "definition": "delinqcount <= latepaycount",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "credit_and_compliance"
+      ],
+      "refuted": false
+    },
+    "credit_template|credit_and_compliance|Subprime borrower": {
+      "id": 2,
+      "knowledge": "Subprime borrower",
+      "description": "Borrower is subprime when credit score is below 670. Selects 66% of rows.",
+      "definition": "credscore < 670",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "credit_and_compliance"
+      ],
+      "refuted": false
+    },
+    "credit_template|credit_and_compliance|Sanctions/PEP failure": {
+      "id": 3,
+      "knowledge": "Sanctions/PEP failure",
+      "description": "Company fails either sanctions or politically exposed person screening. Selects 58% of rows.",
+      "definition": "sancresult = 'Fail' OR pepresult = 'Fail'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "credit_and_compliance"
+      ],
+      "refuted": false
+    },
+    "credit_template|credit_and_compliance|Compliance review flag": {
+      "id": 4,
+      "knowledge": "Compliance review flag",
+      "description": "Company is flagged by sanctions or PEP screening or has under-review legal status. Selects 71% of rows.",
+      "definition": "sancresult = 'Flag' OR pepresult = 'Flag' OR legalstat = 'Under Review'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "credit_and_compliance"
+      ],
+      "refuted": false
+    },
+    "credit_template|credit_and_compliance|Non-clear legal status": {
+      "id": 5,
+      "knowledge": "Non-clear legal status",
+      "description": "Legal status is restricted or under review. Selects 67% of rows.",
+      "definition": "legalstat = 'Restricted' OR legalstat = 'Under Review'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "credit_and_compliance"
+      ],
+      "refuted": false
+    },
+    "credit_template|credit_and_compliance|High or very high risk": {
+      "id": 6,
+      "knowledge": "High or very high risk",
+      "description": "Company has high or very high credit risk level. Selects 49% of rows.",
+      "definition": "risklev = 'High' OR risklev = 'Very High'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "credit_and_compliance"
+      ],
+      "refuted": false
+    },
+    "credit_template|credit_and_compliance|Adverse public records": {
+      "id": 7,
+      "knowledge": "Adverse public records",
+      "description": "Company has bankruptcy, tax lien, or civil judgment records. Selects 92% of rows.",
+      "definition": "bankr = 1 OR taxlien = 1 OR civiljudge > 0",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "credit_and_compliance"
+      ],
+      "refuted": false
+    },
+    "credit_template|credit_and_compliance|Regulatory non-compliance with screening failure": {
+      "id": 8,
+      "knowledge": "Regulatory non-compliance with screening failure",
+      "description": "Regulatory status is non-compliant when sanctions or PEP screening fails. Selects 28% of rows.",
+      "definition": "regcompliance = 'Non-compliant' AND (sancresult = 'Fail' OR pepresult = 'Fail')",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "credit_and_compliance"
+      ],
+      "refuted": false
+    },
+    "credit_template|credit_and_compliance|Clean credit profile": {
+      "id": 9,
+      "knowledge": "Clean credit profile",
+      "description": "No delinquencies, collections, charge-offs, bankruptcies, tax liens, or civil judgments.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "credit_and_compliance"
+      ],
+      "refuted": false
+    },
+    "credit_template|core_record|Manual override": {
+      "id": 10,
+      "knowledge": "Manual override",
+      "description": "Override manually entered rather than set by policy. Selects 49% of rows.",
+      "definition": "TRIM(overridestat) = 'Manual'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "core_record"
+      ],
+      "refuted": false
+    },
+    "credit_template|core_record|Policy exception": {
+      "id": 11,
+      "knowledge": "Policy exception",
+      "description": "Override note indicating a policy exception. Selects 48% of rows.",
+      "definition": "TRIM(overridenote) = 'Policy Exception'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "core_record"
+      ],
+      "refuted": false
+    },
+    "credit_template|core_record|Approved decision": {
+      "id": 12,
+      "knowledge": "Approved decision",
+      "description": "Application decision recorded as approved. Selects 34% of rows.",
+      "definition": "TRIM(decidestat) = 'Approved'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "core_record"
+      ],
+      "refuted": false
+    },
+    "credit_template|core_record|Senior client": {
+      "id": 13,
+      "knowledge": "Senior client",
+      "description": "Client aged 65 years or older. Selects 26% of rows.",
+      "definition": "agespan >= 65",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "core_record"
+      ],
+      "refuted": false
+    },
+    "credit_template|core_record|Female client": {
+      "id": 14,
+      "knowledge": "Female client",
+      "description": "Client whose gender label is female. Selects 50% of rows.",
+      "definition": "TRIM(gendlabel) = 'F'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "core_record"
+      ],
+      "refuted": false
+    },
+    "credit_template|core_record|Married client": {
+      "id": 15,
+      "knowledge": "Married client",
+      "description": "Client whose marital status is married. Selects 27% of rows.",
+      "definition": "TRIM(maritalform) = 'Married'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "core_record"
+      ],
+      "refuted": false
+    },
+    "credit_template|core_record|Large family": {
+      "id": 16,
+      "knowledge": "Large family",
+      "description": "Client with three or more dependents. Selects 50% of rows.",
+      "definition": "depcount >= 3",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "core_record"
+      ],
+      "refuted": false
+    },
+    "credit_template|core_record|Permanent resident": {
+      "id": 17,
+      "knowledge": "Permanent resident",
+      "description": "Client with permanent residency form. Selects 31% of rows.",
+      "definition": "TRIM(resdform) = 'Permanent'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "core_record"
+      ],
+      "refuted": false
+    },
+    "credit_template|core_record|High address stability": {
+      "id": 18,
+      "knowledge": "High address stability",
+      "description": "Client with address stability score at least 10. Selects 53% of rows.",
+      "definition": "addrstab >= 10",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "core_record"
+      ],
+      "refuted": false
+    },
+    "credit_template|core_record|High phone stability": {
+      "id": 19,
+      "knowledge": "High phone stability",
+      "description": "Client with phone stability score at least 9. Selects 44% of rows.",
+      "definition": "phonestab >= 9",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "core_record"
+      ],
+      "refuted": false
+    },
+    "credit_template|core_record|High email stability": {
+      "id": 20,
+      "knowledge": "High email stability",
+      "description": "Client with email stability score at least 6. Selects 47% of rows.",
+      "definition": "CAST(emailstab AS REAL) >= 6",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "core_record"
+      ],
+      "refuted": false
+    },
+    "credit_template|core_record|Premium client": {
+      "id": 21,
+      "knowledge": "Premium client",
+      "description": "Client in the premium segment. Selects 31% of rows.",
+      "definition": "TRIM(clientseg) = 'Premium'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "core_record"
+      ],
+      "refuted": false
+    },
+    "credit_template|core_record|Long-tenured client": {
+      "id": 22,
+      "knowledge": "Long-tenured client",
+      "description": "Client with tenure of at least 9 years. Selects 68% of rows.",
+      "definition": "tenureyrs >= 9",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "core_record"
+      ],
+      "refuted": false
+    },
+    "credit_template|employment_and_income|Annual income": {
+      "id": 23,
+      "knowledge": "Annual income",
+      "description": "Total income earned over one year, derived from monthly income.",
+      "definition": "annlincome != mthincome * 12",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        24,
+        25
+      ],
+      "tables": [
+        "employment_and_income"
+      ],
+      "refuted": true
+    },
+    "credit_template|employment_and_income|Monthly income": {
+      "id": 24,
+      "knowledge": "Monthly income",
+      "description": "Income earned in one month, derived from annual income.",
+      "definition": "mthincome != annlincome / 12",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        23
+      ],
+      "tables": [
+        "employment_and_income"
+      ],
+      "refuted": true
+    },
+    "credit_template|employment_and_income|Total income": {
+      "id": 25,
+      "knowledge": "Total income",
+      "description": "Sum of primary annual income and additional income.",
+      "definition": "annlincome + addincome",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        23
+      ],
+      "tables": [
+        "employment_and_income"
+      ],
+      "refuted": false
+    },
+    "credit_template|employment_and_income|High industry risk": {
+      "id": 26,
+      "knowledge": "High industry risk",
+      "description": "Cohort whose industry sector is classified as high risk. Selects 33% of rows.",
+      "definition": "indrisklvl = 'High'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "employment_and_income"
+      ],
+      "refuted": false
+    },
+    "credit_template|employment_and_income|High occupation risk": {
+      "id": 27,
+      "knowledge": "High occupation risk",
+      "description": "Cohort whose occupation is classified as high risk. Selects 34% of rows.",
+      "definition": "occrisklvl = 'High'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "employment_and_income"
+      ],
+      "refuted": false
+    },
+    "credit_template|employment_and_income|High income source risk": {
+      "id": 28,
+      "knowledge": "High income source risk",
+      "description": "Cohort whose income source is classified as high risk. Selects 33% of rows.",
+      "definition": "incsrcrisk = 'High'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "employment_and_income"
+      ],
+      "refuted": false
+    },
+    "credit_template|employment_and_income|High geographic risk": {
+      "id": 29,
+      "knowledge": "High geographic risk",
+      "description": "Cohort whose geographic location is classified as high risk. Selects 34% of rows.",
+      "definition": "georisk = 'High'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "employment_and_income"
+      ],
+      "refuted": false
+    },
+    "credit_template|employment_and_income|High demographic risk": {
+      "id": 30,
+      "knowledge": "High demographic risk",
+      "description": "Cohort whose demographic profile is classified as high risk. Selects 33% of rows.",
+      "definition": "demrisk = 'High'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "employment_and_income"
+      ],
+      "refuted": false
+    },
+    "credit_template|employment_and_income|Verified income": {
+      "id": 31,
+      "knowledge": "Verified income",
+      "description": "Cohort whose income verification status is verified. Selects 33% of rows.",
+      "definition": "incverify = 'Verified'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "employment_and_income"
+      ],
+      "refuted": false
+    },
+    "credit_template|employment_and_income|Unemployed": {
+      "id": 32,
+      "knowledge": "Unemployed",
+      "description": "Cohort whose employment status is unemployed. Selects 26% of rows.",
+      "definition": "emplstat = 'Unemployed'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "employment_and_income"
+      ],
+      "refuted": false
+    },
+    "credit_template|credit_accounts_and_history|Credit utilization ratio (credutil)": {
+      "id": 33,
+      "knowledge": "Credit utilization ratio (credutil)",
+      "description": "Ratio of used credit limit to total credit limit, same as credit limit usage ratio.",
+      "definition": "credutil != credlimusage",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "credit_accounts_and_history"
+      ],
+      "refuted": true
+    },
+    "credit_template|credit_accounts_and_history|Account mix score (accmixscore)": {
+      "id": 34,
+      "knowledge": "Account mix score (accmixscore)",
+      "description": "Balance between card and loan account counts; 1 means an even mix, 0 means only one type.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "credit_accounts_and_history"
+      ],
+      "refuted": false
+    },
+    "credit_template|credit_accounts_and_history|Total credit accounts": {
+      "id": 35,
+      "knowledge": "Total credit accounts",
+      "description": "Total number of credit card and loan accounts.",
+      "definition": "cardcount + loancount",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "credit_accounts_and_history"
+      ],
+      "refuted": false
+    },
+    "credit_template|credit_accounts_and_history|Average account age (avgaccage)": {
+      "id": 36,
+      "knowledge": "Average account age (avgaccage)",
+      "description": "The average account age cannot be younger than the newest account age. Selects 86% of rows.",
+      "definition": "avgaccage >= newaccage",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "credit_accounts_and_history"
+      ],
+      "refuted": false
+    },
+    "credit_template|credit_accounts_and_history|Active loans (activeloan)": {
+      "id": 37,
+      "knowledge": "Active loans (activeloan)",
+      "description": "The number of active loans cannot exceed the total number of loans. Selects 73% of rows.",
+      "definition": "activeloan <= loancount",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "credit_accounts_and_history"
+      ],
+      "refuted": false
+    },
+    "credit_template|credit_accounts_and_history|Recent behavior: Improving (recentbeh)": {
+      "id": 38,
+      "knowledge": "Recent behavior: Improving (recentbeh)",
+      "description": "Customer's recent behavior category is Improving. Selects 33% of rows.",
+      "definition": "TRIM(recentbeh) = 'Improving'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "credit_accounts_and_history"
+      ],
+      "refuted": false
+    },
+    "credit_template|credit_accounts_and_history|Seeking behavior: High (seekbeh)": {
+      "id": 39,
+      "knowledge": "Seeking behavior: High (seekbeh)",
+      "description": "Customer's seeking behavior level is High. Selects 33% of rows.",
+      "definition": "TRIM(seekbeh) = 'High'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "credit_accounts_and_history"
+      ],
+      "refuted": false
+    },
+    "credit_template|credit_accounts_and_history|Card payment history: Excellent (cardpayhist)": {
+      "id": 40,
+      "knowledge": "Card payment history: Excellent (cardpayhist)",
+      "description": "Card payment history rating is Excellent. Selects 24% of rows.",
+      "definition": "TRIM(cardpayhist) = 'Excellent'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "credit_accounts_and_history"
+      ],
+      "refuted": false
+    },
+    "credit_template|credit_accounts_and_history|Loan payment history: Excellent (loanpayhist)": {
+      "id": 41,
+      "knowledge": "Loan payment history: Excellent (loanpayhist)",
+      "description": "Loan payment history rating is Excellent. Selects 25% of rows.",
+      "definition": "TRIM(loanpayhist) = 'Excellent'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "credit_accounts_and_history"
+      ],
+      "refuted": false
+    },
+    "credit_template|credit_accounts_and_history|Complaint history: High (complainthist)": {
+      "id": 42,
+      "knowledge": "Complaint history: High (complainthist)",
+      "description": "Complaint history level is High. Selects 33% of rows.",
+      "definition": "TRIM(complainthist) = 'High'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "credit_accounts_and_history"
+      ],
+      "refuted": false
+    },
+    "credit_template|bank_and_transactions|bank transaction frequency level (banktxfreq)": {
+      "id": 43,
+      "knowledge": "bank transaction frequency level (banktxfreq)",
+      "description": "Categorical level of the bank transaction amount. Selects 34% of rows.",
+      "definition": "banktxfreq = CASE WHEN banktxamt >= 9000 THEN 'High' WHEN banktxamt >= 5000 THEN 'Medium' ELSE 'Low' END",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "bank_and_transactions"
+      ],
+      "refuted": false
+    },
+    "credit_template|bank_and_transactions|overdraft frequency (ovrfreq)": {
+      "id": 44,
+      "knowledge": "overdraft frequency (ovrfreq)",
+      "description": "Categorical frequency of overdrafts derived from bounced transaction count. Selects 28% of rows.",
+      "definition": "ovrfreq = CASE WHEN bouncecount = 0 THEN 'Never' WHEN bouncecount <= 3 THEN 'Rare' WHEN bouncecount <= 7 THEN 'Occasional' ELSE 'Frequent' END",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "bank_and_transactions"
+      ],
+      "refuted": false
+    },
+    "credit_template|bank_and_transactions|insurance coverage level (inscoverage)": {
+      "id": 45,
+      "knowledge": "insurance coverage level (inscoverage)",
+      "description": "Coverage level derived from life insurance value. Selects 45% of rows.",
+      "definition": "inscoverage = CASE WHEN lifeinsval >= 500000 THEN 'Comprehensive' ELSE 'Basic' END",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "bank_and_transactions"
+      ],
+      "refuted": false
+    },
+    "credit_template|bank_and_transactions|verified document (docverstat)": {
+      "id": 46,
+      "knowledge": "verified document (docverstat)",
+      "description": "Cohort where the document verification status is Verified. Selects 31% of rows.",
+      "definition": "TRIM(docverstat) = 'Verified'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "bank_and_transactions"
+      ],
+      "refuted": false
+    },
+    "credit_template|bank_and_transactions|passed AML screen (amlresult)": {
+      "id": 47,
+      "knowledge": "passed AML screen (amlresult)",
+      "description": "Cohort where the AML screening result is Pass. Selects 36% of rows.",
+      "definition": "TRIM(amlresult) = 'Pass'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "bank_and_transactions"
+      ],
+      "refuted": false
+    },
+    "credit_template|bank_and_transactions|KYC status (kycstat)": {
+      "id": 48,
+      "knowledge": "KYC status (kycstat)",
+      "description": "KYC status computed from document verification and AML screening result. Selects 35% of rows.",
+      "definition": "kycstat = CASE WHEN TRIM(docverstat) = 'Failed' OR TRIM(amlresult) = 'Fail' THEN 'Failed' WHEN TRIM(docverstat) = 'Verified' AND TRIM(amlresult) = 'Pass' THEN 'Completed' ELSE 'Pending' END",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        46,
+        47
+      ],
+      "tables": [
+        "bank_and_transactions"
+      ],
+      "refuted": false
+    },
+    "credit_template|bank_and_transactions|identity verification score (idverscore)": {
+      "id": 49,
+      "knowledge": "identity verification score (idverscore)",
+      "description": "Identity verification score based on verified document, completed KYC, and passed AML screen.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        46,
+        47,
+        48
+      ],
+      "tables": [
+        "bank_and_transactions"
+      ],
+      "refuted": false
+    },
+    "credit_template|bank_and_transactions|fraud risk score (fraudrisk)": {
+      "id": 50,
+      "knowledge": "fraud risk score (fraudrisk)",
+      "description": "Fraud risk score built from bounced transactions, overdraft frequency, and AML screen failure.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        44,
+        47
+      ],
+      "tables": [
+        "bank_and_transactions"
+      ],
+      "refuted": false
+    },
+    "credit_template|bank_and_transactions|bank relationship score (bankrelscore)": {
+      "id": 51,
+      "knowledge": "bank relationship score (bankrelscore)",
+      "description": "Relationship score combining transaction frequency, overdraft frequency, identity verification, and fraud risk.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        43,
+        44,
+        49,
+        50
+      ],
+      "tables": [
+        "bank_and_transactions"
+      ],
+      "refuted": false
+    },
+    "credit_template|bank_and_transactions|autopay depositor (chaninvdatablock.autopay, chaninvdatablock.depostat)": {
+      "id": 52,
+      "knowledge": "autopay depositor (chaninvdatablock.autopay, chaninvdatablock.depostat)",
+      "description": "Cohort with autopay enabled and deposit status enabled. Selects 27% of rows.",
+      "definition": "json_extract(chaninvdatablock, '$.autopay') = 'Yes' AND json_extract(chaninvdatablock, '$.depostat') = 'Yes'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "bank_and_transactions"
+      ],
+      "refuted": false
+    },
+    "credit_template|bank_and_transactions|active omnichannel user (chaninvdatablock.mobileuse, chaninvdatablock.onlineuse)": {
+      "id": 53,
+      "knowledge": "active omnichannel user (chaninvdatablock.mobileuse, chaninvdatablock.onlineuse)",
+      "description": "Cohort with both mobile and online usage levels High. Selects 11% of rows.",
+      "definition": "json_extract(chaninvdatablock, '$.mobileuse') = 'High' AND json_extract(chaninvdatablock, '$.onlineuse') = 'High'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "bank_and_transactions"
+      ],
+      "refuted": false
+    },
+    "credit_template|expenses_and_assets|Fixed Expense Ratio": {
+      "id": 54,
+      "knowledge": "Fixed Expense Ratio",
+      "description": "Fixed expense ratio is the complement of the discretionary expense ratio.",
+      "definition": "fixexpratio != 1 - discexpratio",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        55
+      ],
+      "tables": [
+        "expenses_and_assets"
+      ],
+      "refuted": true
+    },
+    "credit_template|expenses_and_assets|Discretionary Expense Ratio": {
+      "id": 55,
+      "knowledge": "Discretionary Expense Ratio",
+      "description": "Discretionary expense ratio is the complement of the fixed expense ratio.",
+      "definition": "discexpratio != 1 - fixexpratio",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        54
+      ],
+      "tables": [
+        "expenses_and_assets"
+      ],
+      "refuted": true
+    },
+    "credit_template|expenses_and_assets|Liquid Assets": {
+      "id": 56,
+      "knowledge": "Liquid Assets",
+      "description": "Liquid assets equal bank account balance plus savings amount plus investment amount.",
+      "definition": "liqassets != bankaccbal + savamount + investamt",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        57,
+        58,
+        59
+      ],
+      "tables": [
+        "expenses_and_assets"
+      ],
+      "refuted": true
+    },
+    "credit_template|expenses_and_assets|Savings Amount": {
+      "id": 57,
+      "knowledge": "Savings Amount",
+      "description": "Savings amount is liquid assets minus investment amount minus bank account balance.",
+      "definition": "savamount != liqassets - investamt - bankaccbal",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        56,
+        58,
+        59
+      ],
+      "tables": [
+        "expenses_and_assets"
+      ],
+      "refuted": true
+    },
+    "credit_template|expenses_and_assets|Investment Amount": {
+      "id": 58,
+      "knowledge": "Investment Amount",
+      "description": "Investment amount is liquid assets minus savings amount minus bank account balance.",
+      "definition": "investamt != liqassets - savamount - bankaccbal",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        56,
+        57,
+        59
+      ],
+      "tables": [
+        "expenses_and_assets"
+      ],
+      "refuted": true
+    },
+    "credit_template|expenses_and_assets|Bank Account Balance": {
+      "id": 59,
+      "knowledge": "Bank Account Balance",
+      "description": "Bank account balance is liquid assets minus savings amount minus investment amount.",
+      "definition": "bankaccbal != liqassets - savamount - investamt",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        56,
+        57,
+        58
+      ],
+      "tables": [
+        "expenses_and_assets"
+      ],
+      "refuted": true
+    },
+    "credit_template|expenses_and_assets|Property Value": {
+      "id": 62,
+      "knowledge": "Property Value",
+      "description": "Property value is total assets minus liquid assets minus vehicle value.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        56
+      ],
+      "tables": [
+        "expenses_and_assets"
+      ],
+      "refuted": false
+    },
+    "credit_template|expenses_and_assets|Net Worth": {
+      "id": 63,
+      "knowledge": "Net Worth",
+      "description": "Net worth equals total assets minus total liabilities.",
+      "definition": "networth != totassets - totliabs",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        64
+      ],
+      "tables": [
+        "expenses_and_assets"
+      ],
+      "refuted": true
+    },
+    "credit_template|expenses_and_assets|Total Liabilities": {
+      "id": 64,
+      "knowledge": "Total Liabilities",
+      "description": "Total liabilities equal total assets minus net worth.",
+      "definition": "totliabs != totassets - networth",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        63
+      ],
+      "tables": [
+        "expenses_and_assets"
+      ],
+      "refuted": true
+    },
+    "credit_template|employment_and_income,expenses_and_assets|Monthly expense burden ratio (MEBR)": {
+      "id": 65,
+      "knowledge": "Monthly expense burden ratio (MEBR)",
+      "description": "Monthly expenses as a percentage of monthly income.",
+      "definition": "mthexp / mthincome * 100",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        24
+      ],
+      "tables": [
+        "employment_and_income",
+        "expenses_and_assets"
+      ],
+      "refuted": false
+    },
+    "credit_template|credit_accounts_and_history,employment_and_income|Credit limit-to-income ratio (CLIR)": {
+      "id": 66,
+      "knowledge": "Credit limit-to-income ratio (CLIR)",
+      "description": "Total available credit as a percentage of annual income.",
+      "definition": "totcredlimit / annlincome * 100",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        23
+      ],
+      "tables": [
+        "credit_accounts_and_history",
+        "employment_and_income"
+      ],
+      "refuted": false
+    },
+    "credit_template|bank_and_transactions,credit_accounts_and_history|Fraud-adjusted credit utilization (FACU)": {
+      "id": 67,
+      "knowledge": "Fraud-adjusted credit utilization (FACU)",
+      "description": "Credit utilization scaled upward by fraud risk; values above 1 signal overexposure.",
+      "definition": "credutil * (1 + fraudrisk)",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        33,
+        50
+      ],
+      "tables": [
+        "bank_and_transactions",
+        "credit_accounts_and_history"
+      ],
+      "refuted": false
+    },
+    "credit_template|bank_and_transactions,credit_and_compliance|Compliant AML-verified borrower (CAVB)": {
+      "id": 68,
+      "knowledge": "Compliant AML-verified borrower (CAVB)",
+      "description": "Borrower who is regulatory compliant, passes AML screening, and has verified documents.",
+      "definition": "regcompliance = 'Compliant' AND amlresult = 'Pass' AND docverstat = 'Verified'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        46,
+        47
+      ],
+      "tables": [
+        "bank_and_transactions",
+        "credit_and_compliance"
+      ],
+      "refuted": false
+    },
+    "credit_template|core_record,credit_accounts_and_history|Premium low-utilization borrower (PLUB)": {
+      "id": 69,
+      "knowledge": "Premium low-utilization borrower (PLUB)",
+      "description": "Premium segment borrower who keeps credit utilization below 30 percent.",
+      "definition": "clientseg = 'Premium' AND credutil < 0.3",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        21,
+        33
+      ],
+      "tables": [
+        "core_record",
+        "credit_accounts_and_history"
+      ],
+      "refuted": false
+    },
+    "credit_template|core_record,expenses_and_assets|High net worth long-tenured client (HNWL)": {
+      "id": 70,
+      "knowledge": "High net worth long-tenured client (HNWL)",
+      "description": "Client with positive net worth and at least ten years of tenure.",
+      "definition": "networth > 0 AND tenureyrs >= 10",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        22,
+        63
+      ],
+      "tables": [
+        "core_record",
+        "expenses_and_assets"
+      ],
+      "refuted": false
+    }
+  },
+  "meta": {
+    "credit_and_compliance": {
+      "profiled_at": "2026-08-30T12:56:01.751643+00:00"
+    },
+    "core_record": {
+      "profiled_at": "2026-08-30T12:56:01.751643+00:00"
+    },
+    "core_record,expenses_and_assets": {
+      "profiled_at": "2026-08-30T12:56:01.751643+00:00"
+    },
+    "credit_accounts_and_history,employment_and_income": {
+      "profiled_at": "2026-08-30T12:56:01.751643+00:00"
+    },
+    "expenses_and_assets": {
+      "profiled_at": "2026-08-30T12:56:01.751643+00:00"
+    },
+    "core_record,credit_accounts_and_history": {
+      "profiled_at": "2026-08-30T12:56:01.751643+00:00"
+    },
+    "employment_and_income": {
+      "profiled_at": "2026-08-30T12:56:01.751643+00:00"
+    },
+    "bank_and_transactions,credit_and_compliance": {
+      "profiled_at": "2026-08-30T12:56:01.751643+00:00"
+    },
+    "credit_accounts_and_history": {
+      "profiled_at": "2026-08-30T12:56:01.751643+00:00"
+    },
+    "bank_and_transactions": {
+      "profiled_at": "2026-08-30T12:56:01.751643+00:00"
+    },
+    "employment_and_income,expenses_and_assets": {
+      "profiled_at": "2026-08-30T12:56:01.751643+00:00"
+    },
+    "bank_and_transactions,credit_accounts_and_history": {
+      "profiled_at": "2026-08-30T12:56:01.751643+00:00"
+    }
+  }
+}

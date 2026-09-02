@@ -1,0 +1,962 @@
+{
+  "version": 1,
+  "profiled_at": "2026-08-30T12:49:32.704710+00:00",
+  "columns": {
+    "vaccine_template|regulatoryandmaintenance|Composite Score (compscore)": {
+      "id": 0,
+      "knowledge": "Composite Score (compscore)",
+      "description": "Overall regulatory and maintenance composite score computed from maintenance, calibration, documentation, risk, inspection, resolution, corrective action, preventive step, validation, and incident components.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "tables": [
+        "regulatoryandmaintenance"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|regulatoryandmaintenance|Maintenance Up to Date": {
+      "id": 1,
+      "knowledge": "Maintenance Up to Date",
+      "description": "The maintenance status flag is currently up to date. Selects 34% of rows.",
+      "definition": "maintflag = 'Up to Date'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "regulatoryandmaintenance"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|regulatoryandmaintenance|Calibration Valid": {
+      "id": 2,
+      "knowledge": "Calibration Valid",
+      "description": "The calibration status flag is currently valid. Selects 31% of rows.",
+      "definition": "calibflag = 'Valid'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "regulatoryandmaintenance"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|regulatoryandmaintenance|Documentation Complete": {
+      "id": 3,
+      "knowledge": "Documentation Complete",
+      "description": "The documentation status flag is complete. Selects 31% of rows.",
+      "definition": "docuflag = 'Complete'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "regulatoryandmaintenance"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|regulatoryandmaintenance|Low Risk": {
+      "id": 4,
+      "knowledge": "Low Risk",
+      "description": "The risk level flag is low risk. Selects 35% of rows.",
+      "definition": "riskflag = 'Low Risk'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "regulatoryandmaintenance"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|regulatoryandmaintenance|Inspection Pass": {
+      "id": 5,
+      "knowledge": "Inspection Pass",
+      "description": "The inspection outcome is a pass. Selects 30% of rows.",
+      "definition": "inspectoutcome = 'Pass'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "regulatoryandmaintenance"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|regulatoryandmaintenance|Resolution Resolved": {
+      "id": 6,
+      "knowledge": "Resolution Resolved",
+      "description": "The resolution status flag is resolved. Selects 32% of rows.",
+      "definition": "resolveflag = 'Resolved'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "regulatoryandmaintenance"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|regulatoryandmaintenance|Corrective Action Satisfied": {
+      "id": 7,
+      "knowledge": "Corrective Action Satisfied",
+      "description": "Corrective action is either completed or none is required. Selects 68% of rows.",
+      "definition": "correctactions = 'Completed' OR correctactions = 'None Required'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "regulatoryandmaintenance"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|regulatoryandmaintenance|Preventive Step Implemented": {
+      "id": 8,
+      "knowledge": "Preventive Step Implemented",
+      "description": "The preventive step status flag is implemented. Selects 35% of rows.",
+      "definition": "preventsteps = 'Implemented'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "regulatoryandmaintenance"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|regulatoryandmaintenance|Record Validated": {
+      "id": 9,
+      "knowledge": "Record Validated",
+      "description": "The validation status flag is validated. Selects 32% of rows.",
+      "definition": "validflag = 'Validated'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "regulatoryandmaintenance"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|regulatoryandmaintenance|Low Incident Count": {
+      "id": 10,
+      "knowledge": "Low Incident Count",
+      "description": "Incident count is at most two. Selects 50% of rows.",
+      "definition": "incidents <= 2",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "regulatoryandmaintenance"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|regulatoryandmaintenance|High Incident Count": {
+      "id": 11,
+      "knowledge": "High Incident Count",
+      "description": "Incident count is more than two. Selects 50% of rows.",
+      "definition": "incidents > 2",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "regulatoryandmaintenance"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|container|container registry ID format": {
+      "id": 12,
+      "knowledge": "container registry ID format",
+      "description": "Container ID is the letter C followed by five digits.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "container"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|container|container model category": {
+      "id": 13,
+      "knowledge": "container model category",
+      "description": "Container model is one of three categories.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "container"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|container|container status flag": {
+      "id": 14,
+      "knowledge": "container status flag",
+      "description": "Container status is one of four flags.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "container"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|container|coolant type": {
+      "id": 15,
+      "knowledge": "coolant type",
+      "description": "Coolant used by the container is one of three types.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "container"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|container|power feed source": {
+      "id": 16,
+      "knowledge": "power feed source",
+      "description": "Main power feed is one of three sources.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "container"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|container|backup power availability": {
+      "id": 17,
+      "knowledge": "backup power availability",
+      "description": "Backup power availability is one of three flags.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "container"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|container|shipment owner ID format": {
+      "id": 18,
+      "knowledge": "shipment owner ID format",
+      "description": "Shipment owner ID is VS followed by six digits.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "container"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|shipments|Compliant route": {
+      "id": 19,
+      "knowledge": "Compliant route",
+      "description": "Shipment route alignment is marked compliant. Selects 34% of rows.",
+      "definition": "TRIM(routealign) = 'Compliant'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "shipments"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|shipments|Cleared customs": {
+      "id": 20,
+      "knowledge": "Cleared customs",
+      "description": "Customs processing status is cleared. Selects 34% of rows.",
+      "definition": "TRIM(customsflag) = 'Cleared'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "shipments"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|shipments|Compliant registration profile": {
+      "id": 21,
+      "knowledge": "Compliant registration profile",
+      "description": "Registration profile status is compliant. Selects 34% of rows.",
+      "definition": "TRIM(regprofile) = 'Compliant'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "shipments"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|shipments|Active insurance": {
+      "id": 22,
+      "knowledge": "Active insurance",
+      "description": "Insurance status flag is active. Selects 32% of rows.",
+      "definition": "TRIM(insureflag) = 'Active'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "shipments"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|shipments|Passed quality check": {
+      "id": 23,
+      "knowledge": "Passed quality check",
+      "description": "Quality check status is passed. Selects 34% of rows.",
+      "definition": "TRIM(qualcheck) = 'Passed'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "shipments"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|shipments|Intact integrity": {
+      "id": 24,
+      "knowledge": "Intact integrity",
+      "description": "Integrity status is intact. Selects 32% of rows.",
+      "definition": "TRIM(integritymark) = 'Intact'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "shipments"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|shipments|Low contamination": {
+      "id": 25,
+      "knowledge": "Low contamination",
+      "description": "Contamination level is low. Selects 36% of rows.",
+      "definition": "TRIM(contamlevel) = 'Low'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "shipments"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|shipments|Maintained sterility": {
+      "id": 26,
+      "knowledge": "Maintained sterility",
+      "description": "Sterility status is maintained. Selects 31% of rows.",
+      "definition": "TRIM(sterilemark) = 'Maintained'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "shipments"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|shipments|Physical integrity": {
+      "id": 27,
+      "knowledge": "Physical integrity",
+      "description": "Seal is intact and no tampering evidence is present. Selects 12% of rows.",
+      "definition": "TRIM(sealflag) = 'Intact' AND TRIM(tampersign) = 'None Detected'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "shipments"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|shipments|Shipment fully compliant": {
+      "id": 28,
+      "knowledge": "Shipment fully compliant",
+      "description": "Shipment meets all positive status conditions across key inspection and compliance fields.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "tables": [
+        "shipments"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|datalogger|Memory usage percentage (memusepct)": {
+      "id": 29,
+      "knowledge": "Memory usage percentage (memusepct)",
+      "description": "Percentage of storage capacity used, derived from total and remaining storage.",
+      "definition": "memusepct != (storecapmb - storeremainmb) / storecapmb * 100",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "datalogger"
+      ],
+      "refuted": true
+    },
+    "vaccine_template|datalogger|Used storage (used_storage_mb)": {
+      "id": 30,
+      "knowledge": "Used storage (used_storage_mb)",
+      "description": "Storage capacity consumed in megabytes.",
+      "definition": "storecapmb - storeremainmb",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "datalogger"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|datalogger|Remaining storage percentage (remaining_storage_pct)": {
+      "id": 31,
+      "knowledge": "Remaining storage percentage (remaining_storage_pct)",
+      "description": "Percentage of storage capacity still free.",
+      "definition": "storeremainmb / storecapmb * 100",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "datalogger"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|datalogger|Logs per sync (logs_per_sync)": {
+      "id": 32,
+      "knowledge": "Logs per sync (logs_per_sync)",
+      "description": "Number of log records expected between synchronizations.",
+      "definition": "syncfreqhr * 60 / loginterval",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "datalogger"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|datalogger|Logs per day (logs_per_day)": {
+      "id": 33,
+      "knowledge": "Logs per day (logs_per_day)",
+      "description": "Number of log records expected in a 24-hour day.",
+      "definition": "1440 / loginterval",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "datalogger"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|datalogger|Syncs per day (syncs_per_day)": {
+      "id": 34,
+      "knowledge": "Syncs per day (syncs_per_day)",
+      "description": "Number of synchronization cycles expected per day.",
+      "definition": "24 / syncfreqhr",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "datalogger"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|datalogger|Days since battery swap (days_since_batteryswap)": {
+      "id": 35,
+      "knowledge": "Days since battery swap (days_since_batteryswap)",
+      "description": "Time from last battery swap to latest data upload, in days.",
+      "definition": "JULIANDAY(datauptime) - JULIANDAY(batteryswap)",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "datalogger"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|datalogger|Battery Low (logflag)": {
+      "id": 36,
+      "knowledge": "Battery Low (logflag)",
+      "description": "Logging flag report indicating low battery. Selects 36% of rows.",
+      "definition": "TRIM(logflag) = 'Battery Low'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "datalogger"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|datalogger|Malfunctioning logger (logflag)": {
+      "id": 37,
+      "knowledge": "Malfunctioning logger (logflag)",
+      "description": "Logging flag report indicating logger malfunction. Selects 31% of rows.",
+      "definition": "TRIM(logflag) = 'Malfunction'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "datalogger"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|sensordata|temperature deviation count (tempdevcount)": {
+      "id": 38,
+      "knowledge": "temperature deviation count (tempdevcount)",
+      "description": "Number of temperature readings outside the allowed tolerance from the store temperature.",
+      "definition": "tempdevcount = SUM(CASE WHEN ABS(tempnowc - storetempc) > temptolc THEN 1 ELSE 0 END)",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        39
+      ],
+      "tables": [
+        "sensordata"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|sensordata|temperature deviation": {
+      "id": 39,
+      "knowledge": "temperature deviation",
+      "description": "Current temperature is outside the store temperature tolerance band. Selects 77% of rows.",
+      "definition": "ABS(tempnowc - storetempc) > temptolc",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sensordata"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|sensordata|temperature stability index (tempstabidx)": {
+      "id": 40,
+      "knowledge": "temperature stability index (tempstabidx)",
+      "description": "Normalized closeness of the current temperature to the store temperature within the observed temperature range.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        41
+      ],
+      "tables": [
+        "sensordata"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|sensordata|temperature range": {
+      "id": 41,
+      "knowledge": "temperature range",
+      "description": "Difference between the maximum and minimum recorded temperatures.",
+      "definition": "tempmaxc - tempminc",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sensordata"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|sensordata|non-critical handled events": {
+      "id": 42,
+      "knowledge": "non-critical handled events",
+      "description": "Handled events that are not classified as critical.",
+      "definition": "handleevents - critevents",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sensordata"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|sensordata|critical event ratio": {
+      "id": 43,
+      "knowledge": "critical event ratio",
+      "description": "Proportion of handled events that are critical.",
+      "definition": "critevents * 1.0 / handleevents",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sensordata"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|sensordata|alert rate": {
+      "id": 44,
+      "knowledge": "alert rate",
+      "description": "Number of alerts generated per handled event.",
+      "definition": "alerts * 1.0 / handleevents",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sensordata"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|sensordata|temperature alert": {
+      "id": 45,
+      "knowledge": "temperature alert",
+      "description": "An alert is a temperature alert when the current temperature deviates beyond tolerance. Selects 16% of rows.",
+      "definition": "TRIM(alertkind) = 'Temperature' AND ABS(tempnowc - storetempc) > temptolc",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        39
+      ],
+      "tables": [
+        "sensordata"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|sensordata|shock trigger": {
+      "id": 46,
+      "knowledge": "shock trigger",
+      "description": "Shock flag is triggered when vibration exceeds the safe vibration threshold. Selects 7% of rows.",
+      "definition": "TRIM(shockflag) = 'Triggered' AND vibelvlmms > 8.0",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sensordata"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|sensordata|tilt trigger": {
+      "id": 47,
+      "knowledge": "tilt trigger",
+      "description": "Tilt flag is triggered when acceleration exceeds the tilt threshold. Selects 8% of rows.",
+      "definition": "TRIM(tiltflag) = 'Triggered' AND acceldata > 1.5",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sensordata"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|sensordata|security alert": {
+      "id": 48,
+      "knowledge": "security alert",
+      "description": "An alert is a security alert when any motion sensor flag is triggered. Selects 15% of rows.",
+      "definition": "TRIM(alertkind) = 'Security' AND (TRIM(shockflag) = 'Triggered' OR TRIM(tiltflag) = 'Triggered' OR TRIM(impactflag) = 'Triggered')",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sensordata"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|transportinfo|Estimated time of arrival (ETA)": {
+      "id": 49,
+      "knowledge": "Estimated time of arrival (ETA)",
+      "description": "Predicted time the vehicle reaches its destination.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "transportinfo"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|transportinfo|Speed": {
+      "id": 50,
+      "knowledge": "Speed",
+      "description": "Vehicle speed in kilometers per hour.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "transportinfo"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|transportinfo|Remaining distance": {
+      "id": 51,
+      "knowledge": "Remaining distance",
+      "description": "Distance still to travel to destination.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "transportinfo"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|transportinfo|Location update minute": {
+      "id": 52,
+      "knowledge": "Location update minute",
+      "description": "Minute component of the location update timestamp. Selects 3% of rows.",
+      "definition": "locupdatemin = CAST(strftime('%M', TRIM(locupdatemark)) AS INTEGER)",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "transportinfo"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|transportinfo|Total trip distance": {
+      "id": 53,
+      "knowledge": "Total trip distance",
+      "description": "Combined distance already traveled and remaining.",
+      "definition": "distdonekm + distleftkm",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "transportinfo"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|transportinfo|Trip completion percentage": {
+      "id": 54,
+      "knowledge": "Trip completion percentage",
+      "description": "Percentage of the total trip distance already traveled.",
+      "definition": "distdonekm / (distdonekm + distleftkm) * 100",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        53
+      ],
+      "tables": [
+        "transportinfo"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|transportinfo|Refrigerated transport": {
+      "id": 55,
+      "knowledge": "Refrigerated transport",
+      "description": "Transport unit capable of refrigerated cargo. Selects 67% of rows.",
+      "definition": "vehiclekind = 'Refrigerated Truck' OR vehiclekind = 'Reefer Container'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "transportinfo"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|transportinfo|Air transport mode": {
+      "id": 56,
+      "knowledge": "Air transport mode",
+      "description": "Transport mode is by air. Selects 26% of rows.",
+      "definition": "transmode = 'Air'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "transportinfo"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|transportinfo|Active GPS tracking": {
+      "id": 57,
+      "knowledge": "Active GPS tracking",
+      "description": "Vehicle GPS is currently active and reporting. Selects 34% of rows.",
+      "definition": "gpsflag = 'Active'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "transportinfo"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|transportinfo|Pharma cold-chain carrier": {
+      "id": 58,
+      "knowledge": "Pharma cold-chain carrier",
+      "description": "Carrier has pharmaceutical cold-chain certification. Selects 67% of rows.",
+      "definition": "TRIM(carrcert) = 'CEIV Pharma' OR TRIM(carrcert) = 'GDP'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "transportinfo"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|vaccinedetails|Total dose count (dosetotal)": {
+      "id": 59,
+      "knowledge": "Total dose count (dosetotal)",
+      "description": "Total number of vaccine doses in a lot, computed from vial tally and doses per vial.",
+      "definition": "dosetotal = vialtally * dosepervial",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "vaccinedetails"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|vaccinedetails|Vial tally (vialtally)": {
+      "id": 60,
+      "knowledge": "Vial tally (vialtally)",
+      "description": "Number of vials represented by the total dose count at a given dose-per-vial rate.",
+      "definition": "vialtally = dosetotal / dosepervial",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "vaccinedetails"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|vaccinedetails|Doses per vial (dosepervial)": {
+      "id": 61,
+      "knowledge": "Doses per vial (dosepervial)",
+      "description": "Number of doses in each vial, derived from total dose count and vial tally.",
+      "definition": "dosepervial = dosetotal / vialtally",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "vaccinedetails"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|vaccinedetails|Shelf life (days)": {
+      "id": 62,
+      "knowledge": "Shelf life (days)",
+      "description": "Length of time from production date to expiration date, in days.",
+      "definition": "JULIANDAY(expireday) - JULIANDAY(prodday)",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "vaccinedetails"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|vaccinedetails|Expiration after production": {
+      "id": 63,
+      "knowledge": "Expiration after production",
+      "description": "Constraint that a vaccine's expiration date must be later than its production date.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "vaccinedetails"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|vaccinedetails|mRNA vaccine": {
+      "id": 64,
+      "knowledge": "mRNA vaccine",
+      "description": "Vaccine lot whose vaccine type category is mRNA. Selects 22% of rows.",
+      "definition": "TRIM(vacvariant) = 'mRNA'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "vaccinedetails"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|container,regulatoryandmaintenance|Overdue Maintenance on Active Container": {
+      "id": 65,
+      "knowledge": "Overdue Maintenance on Active Container",
+      "description": "A container currently marked Active while its linked regulatory maintenance is Overdue.",
+      "definition": "TRIM(container.containflag) = 'Active' AND TRIM(regulatoryandmaintenance.maintflag) = 'Overdue'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        14
+      ],
+      "tables": [
+        "container",
+        "regulatoryandmaintenance"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|container,regulatoryandmaintenance|Expired Calibration on In-Transit Container": {
+      "id": 66,
+      "knowledge": "Expired Calibration on In-Transit Container",
+      "description": "An in-transit container whose linked calibration status is Expired.",
+      "definition": "TRIM(container.containflag) = 'In Transit' AND TRIM(regulatoryandmaintenance.calibflag) = 'Expired'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        14
+      ],
+      "tables": [
+        "container",
+        "regulatoryandmaintenance"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|regulatoryandmaintenance,shipments|High-Risk Compromised Shipment": {
+      "id": 67,
+      "knowledge": "High-Risk Compromised Shipment",
+      "description": "A shipment flagged High Risk whose physical integrity is Compromised.",
+      "definition": "TRIM(regulatoryandmaintenance.riskflag) = 'High Risk' AND TRIM(shipments.integritymark) = 'Compromised'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        27
+      ],
+      "tables": [
+        "regulatoryandmaintenance",
+        "shipments"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|datalogger,sensordata|Poor Logger Health with Temperature Deviations": {
+      "id": 68,
+      "knowledge": "Poor Logger Health with Temperature Deviations",
+      "description": "A logger reporting Poor system health linked to sensor data with more than five temperature deviations.",
+      "definition": "TRIM(datalogger.syshealth) = 'Poor' AND sensordata.tempdevcount > 5",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        38
+      ],
+      "tables": [
+        "datalogger",
+        "sensordata"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|container,vaccinedetails|Vaccine Vial Density": {
+      "id": 69,
+      "knowledge": "Vaccine Vial Density",
+      "description": "Vials per liter of container volume for a vaccine load.",
+      "definition": "vaccinedetails.vialtally / container.volliters",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        60
+      ],
+      "tables": [
+        "container",
+        "vaccinedetails"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|sensordata,vaccinedetails|mRNA Vaccine Temperature Alert": {
+      "id": 70,
+      "knowledge": "mRNA Vaccine Temperature Alert",
+      "description": "A temperature alert recorded against a container holding an mRNA vaccine.",
+      "definition": "TRIM(vaccinedetails.vacvariant) = 'mRNA' AND TRIM(sensordata.alertkind) = 'Temperature'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        45,
+        64
+      ],
+      "tables": [
+        "sensordata",
+        "vaccinedetails"
+      ],
+      "refuted": false
+    },
+    "vaccine_template|regulatoryandmaintenance,transportinfo|Incidents per Total Trip Distance": {
+      "id": 71,
+      "knowledge": "Incidents per Total Trip Distance",
+      "description": "Incident count divided by the total planned trip distance in kilometers.",
+      "definition": "regulatoryandmaintenance.incidents / (transportinfo.distdonekm + transportinfo.distleftkm)",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        53
+      ],
+      "tables": [
+        "regulatoryandmaintenance",
+        "transportinfo"
+      ],
+      "refuted": false
+    }
+  },
+  "meta": {
+    "regulatoryandmaintenance,shipments": {
+      "profiled_at": "2026-08-30T12:49:32.704710+00:00"
+    },
+    "datalogger,sensordata": {
+      "profiled_at": "2026-08-30T12:49:32.704710+00:00"
+    },
+    "shipments": {
+      "profiled_at": "2026-08-30T12:49:32.704710+00:00"
+    },
+    "sensordata": {
+      "profiled_at": "2026-08-30T12:49:32.704710+00:00"
+    },
+    "regulatoryandmaintenance,transportinfo": {
+      "profiled_at": "2026-08-30T12:49:32.704710+00:00"
+    },
+    "container,vaccinedetails": {
+      "profiled_at": "2026-08-30T12:49:32.704710+00:00"
+    },
+    "regulatoryandmaintenance": {
+      "profiled_at": "2026-08-30T12:49:32.704710+00:00"
+    },
+    "sensordata,vaccinedetails": {
+      "profiled_at": "2026-08-30T12:49:32.704710+00:00"
+    },
+    "container,regulatoryandmaintenance": {
+      "profiled_at": "2026-08-30T12:49:32.704710+00:00"
+    },
+    "datalogger": {
+      "profiled_at": "2026-08-30T12:49:32.704710+00:00"
+    },
+    "container": {
+      "profiled_at": "2026-08-30T12:49:32.704710+00:00"
+    },
+    "transportinfo": {
+      "profiled_at": "2026-08-30T12:49:32.704710+00:00"
+    },
+    "vaccinedetails": {
+      "profiled_at": "2026-08-30T12:49:32.704710+00:00"
+    }
+  }
+}

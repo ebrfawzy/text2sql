@@ -1,0 +1,214 @@
+CREATE TABLE "container" (
+containregistry text(20) NOT NULL,
+containmodel text(40) NULL,
+volliters integer(32) NULL,
+masskg integer(24) NULL,
+containflag text(30) NULL,
+coolkind text(40) NULL,
+coolmass integer(24) NULL,
+coolremainpct real(5,2) NULL,
+coolrefills integer(16) NULL,
+refilllatest TEXT NULL,
+refillnext TEXT NULL,
+batterypct integer(24) NULL,
+pwrfeed text(40) NULL,
+pwrbackupflag text(40) NULL,
+shipown text(20) NOT NULL,
+    PRIMARY KEY (containregistry),
+    FOREIGN KEY (shipown) REFERENCES shipments(shipmentregistry)
+);
+First 3 rows:
+containregistry    containmodel         volliters    masskg  containflag    coolkind      coolmass    coolremainpct    coolrefills  refilllatest    refillnext      batterypct  pwrfeed    pwrbackupflag    shipown
+C62575             Cryo Container             155     153.7  In Transit     Dry Ice           37.8             80.3              0  2025-02-09      2025-02-20              72  Battery    Available        VS113526
+C52903             Ultra-Low Freezer          494      99.7  Active         Dry Ice           19.3             35.7              2  2025-02-14      2025-02-24              27  External   In Use           VS255467
+C13929             Ultra-Low Freezer          321     148.6  Active         Dry Ice           40.9             70.8              0  2025-02-09      2025-02-24              45  Battery    Not Available    VS971688
+...
+
+CREATE TABLE "datalogger" (
+loggerreg text(20) NOT NULL,
+logflag TEXT NULL,
+loginterval integer(16) NULL,
+transmitflag TEXT NULL,
+datauptime text(6) NULL,
+datapct integer(24) NULL,
+batteryswap TEXT NULL,
+firmvers text(50) NULL,
+softupdate TEXT NULL,
+syshealth TEXT NULL,
+memusepct integer(16) NULL,
+storecapmb integer(32) NULL,
+storeremainmb integer(32) NULL,
+netsignal TEXT NULL,
+commproto text(20) NULL,
+syncflag text(20) NULL,
+syncfreqhr integer(16) NULL,
+containlog text(20) NOT NULL,
+shiplog text(20) NULL,
+    PRIMARY KEY (loggerreg),
+    FOREIGN KEY (shiplog) REFERENCES shipments(shipmentregistry),
+    FOREIGN KEY (containlog) REFERENCES container(containregistry)
+);
+First 3 rows:
+loggerreg    logflag        loginterval  transmitflag    datauptime             datapct  batteryswap    firmvers    softupdate    syshealth      memusepct    storecapmb    storeremainmb  netsignal    commproto    syncflag      syncfreqhr  containlog    shiplog
+DL3959       Malfunction              1  Failed          2025-02-19 08:02:08       84.7  2025-06-24     5.2.4       Pending       Poor                  71            81              989  Good         RF           Pending                8  C62575        VS113526
+DL5868       Battery Low             10  Failed          2025-02-19 08:32:08       93.6  2025-03-11     4.8.4       Pending       Fair                  66           209              721  Poor         Bluetooth    Pending                8  C52903        VS255467
+DL6970       Malfunction             30  Failed          2025-02-19 08:27:08       93.4  2025-07-10     1.1.6       Failed        Poor                  51           221              570  Excellent    Satellite    Success                4  C13929        VS971688
+...
+
+CREATE TABLE "regulatoryandmaintenance" (
+regmaintregistry integer(32) NOT NULL,
+maintflag text(20) NULL,
+maintdatelast TEXT NULL,
+maintdatenext TEXT NULL,
+calibflag text(20) NULL,
+calibdatelast TEXT NULL,
+calibdatenext TEXT NULL,
+docuflag text(20) NULL,
+compscore integer(24) NULL,
+riskflag text(50) NULL,
+incidents integer(16) NULL,
+resolveflag text(50) NULL,
+respperson text(100) NULL,
+contactno text(50) NULL,
+contactemerg text(50) NULL,
+inspectdatelast TEXT NULL,
+inspectdatenext TEXT NULL,
+inspectoutcome text(50) NULL,
+correctactions TEXT NULL,
+preventsteps TEXT NULL,
+validflag text(20) NULL,
+verifymethod text(50) NULL,
+shipgov text(20) NOT NULL,
+vehgov text(20) NULL,
+    PRIMARY KEY (regmaintregistry),
+    FOREIGN KEY (vehgov) REFERENCES transportinfo(vehiclereg),
+    FOREIGN KEY (shipgov) REFERENCES shipments(shipmentregistry)
+);
+First 3 rows:
+  regmaintregistry  maintflag    maintdatelast    maintdatenext    calibflag    calibdatelast    calibdatenext    docuflag      compscore  riskflag      incidents  resolveflag    respperson     contactno            contactemerg         inspectdatelast    inspectdatenext    inspectoutcome    correctactions    preventsteps    validflag    verifymethod    shipgov    vehgov
+                 1  Overdue      2025-02-05       2025-03-02       Expired      2024-11-12       2025-04-30       Missing            84.7  High Risk             2  Escalated      Teresa Benson  868-426-9972x25284   +1-363-545-7828x013  2025-02-16         2025-03-10         Fail              None Required     Under Review    In Process   Hybrid          VS113526   V7868
+                 2  Up to Date   2024-12-23       2025-04-09       Expired      2024-10-22       2025-04-24       Missing            73.6  High Risk             4  Pending        Louis George   857-274-3420x58308   (736)899-8992        2025-02-06         2025-03-19         Fail              Pending           Under Review    Validated    Manual          VS255467   V7577
+                 3  Overdue      2025-01-03       2025-05-09       Valid        2024-10-04       2025-02-21       Complete           37.5  Low Risk              2  Escalated      Keith Valdez   +1-519-779-3754x364  260-450-9095x342     2025-02-04         2025-03-14         Pass              Pending           Under Review    Validated    Electronic      VS971688   V2591
+...
+
+CREATE TABLE "sensordata" (
+sensortrack integer(32) NOT NULL,
+storetempc integer(24) NULL,
+temptolc real(4,1) NULL,
+tempnowc integer(24) NULL,
+tempdevcount integer(16) NULL,
+tempmaxc real(5,2) NULL,
+tempminc real(5,2) NULL,
+tempstabidx integer(24) NULL,
+humiditypct real(4,1) NULL,
+presskpa integer(24) NULL,
+shockflag text(20) NULL,
+tiltflag text(20) NULL,
+impactflag text(20) NULL,
+vibelvlmms real(6,2) NULL,
+lightlux integer(32) NULL,
+acceldata integer(24) NULL,
+handleevents integer(16) NULL,
+critevents integer(16) NULL,
+alerts integer(16) NULL,
+alerttime text(6) NULL,
+alertkind text(50) NULL,
+containlink text(20) NOT NULL,
+vehsenseref text(20) NULL,
+    PRIMARY KEY (sensortrack),
+    FOREIGN KEY (vehsenseref) REFERENCES transportinfo(vehiclereg),
+    FOREIGN KEY (containlink) REFERENCES container(containregistry)
+);
+First 3 rows:
+  sensortrack    storetempc    temptolc    tempnowc    tempdevcount    tempmaxc    tempminc    tempstabidx    humiditypct    presskpa  shockflag    tiltflag     impactflag      vibelvlmms    lightlux    acceldata    handleevents    critevents    alerts  alerttime            alertkind    containlink    vehsenseref
+            1         -88.1         4.4       -81.2               4       -46.6       -89            0.99            12.9        91.5  Normal       Normal       Malfunction           5.19         335         0.32               9             0        10  2025-02-19 03:32:08  N/A          C62575         V7868
+            2         -79.2         2.9       -66.2               8       -46.6       -88.7          0.943           10.9       108.9  Malfunction  Triggered    Triggered             1.16         190         1.21               3             1         8  2025-02-18 21:32:08  Temperature  C52903         V7577
+            3         -79           4.8       -85.5               7       -50.5       -94.6          0.969           30          92.3  Normal       Malfunction  Normal                0.26         631         0.67              13             3        10  2025-02-19 03:32:08  Security     C13929         V2591
+...
+
+CREATE TABLE "shipments" (
+shipmentregistry text(20) NOT NULL,
+timemark text(6) NOT NULL,
+routealign text(30) NULL,
+customsflag TEXT NULL,
+imppermitref text(50) NULL,
+exppermitref text(50) NULL,
+regprofile text(50) NULL,
+insureflag TEXT NULL,
+insureref text(50) NULL,
+qualcheck TEXT NULL,
+integritymark TEXT NULL,
+contamlevel TEXT NULL,
+sterilemark TEXT NULL,
+packagestate TEXT NULL,
+sealflag TEXT NULL,
+sealref text(50) NULL,
+tampersign TEXT NULL,
+handlingguide TEXT NULL,
+storagepose text(40) NULL,
+generalnote TEXT NULL,
+    PRIMARY KEY (shipmentregistry)
+);
+First 3 rows:
+shipmentregistry    timemark                    routealign    customsflag    imppermitref    exppermitref    regprofile     insureflag    insureref    qualcheck    integritymark        contamlevel    sterilemark    packagestate    sealflag    sealref    tampersign     handlingguide    storagepose    generalnote
+VS113526            2024-12-07 05:24:11.095446  Compliant     Cleared        IP92460         EP46429         Non-Compliant  Active        INS97642     Failed       Intact               High           Unknown        Excellent       Broken      SEAL34744  None Detected  Urgent           Horizontal     Rise industry maintain year structure north.
+VS255467            2024-07-17 11:50:00.095446  Under Review  In Process     IP48778         EP89571         Non-Compliant  Active        INS90844     Passed       Intact               Low            Compromised    Fair            Broken      SEAL28196  Suspected      Standard         Horizontal
+VS971688            2024-08-06 10:58:47.096472  Compliant     In Process     IP85517         EP33313         Under Review   Expired       INS69630     Failed       Under Investigation  Medium         Unknown        Fair            Broken      SEAL19194  Confirmed      Special Care     Not Specified  On within old stock president development total.
+...
+
+CREATE TABLE "transportinfo" (
+vehiclereg text(20) NOT NULL,
+vehiclekind TEXT NULL,
+vehtempc integer(24) NULL,
+speedkm integer(24) NULL,
+distdonekm real(9,2) NULL,
+distleftkm real(9,2) NULL,
+eta text(6) NULL,
+departsite text(100) NULL,
+currentsite text(100) NULL,
+destsite text(100) NULL,
+gpsflag TEXT NULL,
+latvalue integer(53) NULL,
+lonvalue integer(53) NULL,
+altmeter integer(24) NULL,
+locupdatemin integer(16) NULL,
+locupdatemark text(6) NULL,
+transmode TEXT NULL,
+carrlabel TEXT NULL,
+carrcert text(50) NULL,
+shiptransit text(20) NOT NULL,
+containtransit text(20) NULL,
+    PRIMARY KEY (vehiclereg),
+    FOREIGN KEY (shiptransit) REFERENCES shipments(shipmentregistry),
+    FOREIGN KEY (containtransit) REFERENCES container(containregistry)
+);
+First 3 rows:
+vehiclereg    vehiclekind           vehtempc    speedkm    distdonekm    distleftkm  eta                  departsite    currentsite     destsite         gpsflag      latvalue    lonvalue    altmeter    locupdatemin  locupdatemark        transmode    carrlabel                     carrcert     shiptransit    containtransit
+V7868         Refrigerated Truck       -61.5          0          9499          2553  2025-02-22 01:32:08  Greenchester  Shawnburgh      East Dannymouth  Active         3.0487     92.2587      8016.9              30  2025-02-19 08:31:08  Road         Garcia, Carpenter and Porter  ISO 9001     VS113526       C62575
+V7577         Cargo Aircraft           -69           24          7366            40  2025-02-21 15:32:08  Hughesshire   Kristenborough  Port James       Lost          25.186     -64.999        846.3               5  2025-02-19 08:06:08  Rail         Harrison Group                CEIV Pharma  VS255467       C52903
+V2591         Refrigerated Truck       -79.3         43          7443          2008  2025-02-22 06:32:08  Port Wesley   Kennethberg     East John        Lost          31.68      106.075       7126.4              15  2025-02-19 08:08:08  Air          Miller and Sons               GDP          VS971688       C13929
+...
+
+CREATE TABLE "vaccinedetails" (
+vacregistry integer(32) NOT NULL,
+vacvariant text(50) NULL,
+mfgsource TEXT NULL,
+batchlabel text(50) NULL,
+prodday TEXT NULL,
+expireday TEXT NULL,
+lotmeasure integer(64) NULL,
+vialtally integer(16) NULL,
+dosepervial integer(16) NULL,
+dosetotal integer(32) NULL,
+shipinject text(20) NOT NULL,
+containvac text(20) NULL,
+    PRIMARY KEY (vacregistry),
+    FOREIGN KEY (shipinject) REFERENCES shipments(shipmentregistry),
+    FOREIGN KEY (containvac) REFERENCES container(containregistry)
+);
+First 3 rows:
+  vacregistry  vacvariant    mfgsource    batchlabel    prodday     expireday      lotmeasure    vialtally    dosepervial    dosetotal  shipinject    containvac
+            1  Viral Vector  Sinovac      B14726        2024-12-14  2026-01-05          50097         4717             10        47170  VS113526      C62575
+            2  Viral Vector  Sinovac      B71663        2024-11-21  2026-11-20          84282         5457              1         5457  VS255467      C52903
+            3  mRNA          AstraZeneca  B46385        2024-09-20  2026-06-06          25462         6288              1         6288  VS971688      C13929
+...

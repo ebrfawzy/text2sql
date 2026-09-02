@@ -1,0 +1,9 @@
+{# version: v1, description: the agent's search_knowledge tool result — matched terms with definitions #}
+{% for e in entries %}
+- {{ e.knowledge }}: {{ e.description }}
+{% if e.refuted %}
+  Measured: {{ e.refutes[0] }} does not hold {{ e.refutes[1] }} in this database
+{% elif e.definition %}
+  Definition: {{ e.definition }}
+{% endif %}
+{% endfor %}

@@ -1,0 +1,142 @@
+{
+  "full": {
+    "table": {
+      "kept": 0.9874,
+      "precision": 0.2685,
+      "recall": 0.9175,
+      "covered": 0.8206,
+      "f1": 0.3942,
+      "exact_match": 0.0,
+      "n": 262
+    },
+    "column": {
+      "kept": 0.4888,
+      "precision": 0.1221,
+      "recall": 0.9593,
+      "covered": 0.8548,
+      "f1": 0.2111,
+      "exact_match": 0.0,
+      "n": 241
+    }
+  },
+  "no_key_promotion": {
+    "table": {
+      "kept": 0.993,
+      "precision": 0.267,
+      "recall": 0.9175,
+      "covered": 0.8206,
+      "f1": 0.3924,
+      "exact_match": 0.0,
+      "n": 262
+    },
+    "column": {
+      "kept": 0.5497,
+      "precision": 0.1088,
+      "recall": 0.96,
+      "covered": 0.8589,
+      "f1": 0.1909,
+      "exact_match": 0.0,
+      "n": 241
+    }
+  },
+  "no_named_fields": {
+    "table": {
+      "kept": 0.9874,
+      "precision": 0.2685,
+      "recall": 0.9175,
+      "covered": 0.8206,
+      "f1": 0.3942,
+      "exact_match": 0.0,
+      "n": 262
+    },
+    "column": {
+      "kept": 0.4886,
+      "precision": 0.1222,
+      "recall": 0.9593,
+      "covered": 0.8548,
+      "f1": 0.2113,
+      "exact_match": 0.0,
+      "n": 241
+    }
+  },
+  "no_join_closure": {
+    "table": {
+      "kept": 0.876,
+      "precision": 0.3024,
+      "recall": 0.9083,
+      "covered": 0.7824,
+      "f1": 0.4289,
+      "exact_match": 0.0038,
+      "n": 262
+    },
+    "column": {
+      "kept": 0.4652,
+      "precision": 0.1259,
+      "recall": 0.9448,
+      "covered": 0.7925,
+      "f1": 0.2161,
+      "exact_match": 0.0,
+      "n": 241
+    }
+  },
+  "detail_short_only": {
+    "table": {
+      "kept": 0.9969,
+      "precision": 0.2656,
+      "recall": 0.9175,
+      "covered": 0.8206,
+      "f1": 0.3908,
+      "exact_match": 0.0,
+      "n": 262
+    },
+    "column": {
+      "kept": 0.4822,
+      "precision": 0.1228,
+      "recall": 0.9529,
+      "covered": 0.8008,
+      "f1": 0.212,
+      "exact_match": 0.0,
+      "n": 241
+    }
+  },
+  "detail_no_name_level": {
+    "table": {
+      "kept": 0.9958,
+      "precision": 0.266,
+      "recall": 0.9175,
+      "covered": 0.8206,
+      "f1": 0.3913,
+      "exact_match": 0.0,
+      "n": 262
+    },
+    "column": {
+      "kept": 0.4819,
+      "precision": 0.1234,
+      "recall": 0.9564,
+      "covered": 0.8257,
+      "f1": 0.2129,
+      "exact_match": 0.0,
+      "n": 241
+    }
+  },
+  "detail_name_only": {
+    "table": {
+      "kept": 0.9677,
+      "precision": 0.2749,
+      "recall": 0.9175,
+      "covered": 0.8206,
+      "f1": 0.4015,
+      "exact_match": 0.0,
+      "n": 262
+    },
+    "column": {
+      "kept": 0.4698,
+      "precision": 0.1263,
+      "recall": 0.9503,
+      "covered": 0.7884,
+      "f1": 0.2175,
+      "exact_match": 0.0,
+      "n": 241
+    }
+  }
+}

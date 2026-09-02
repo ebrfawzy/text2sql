@@ -1,0 +1,189 @@
+{
+  "fake|account|accindex": "A CHAR(12) primary key uniquely identifying each account record (e.g., 'AC1234567890').",
+  "fake|account|acctident": "A VARCHAR(14) field holding an external-facing or system-defined account identifier (e.g., 'ACC2686094').",
+  "fake|account|platident": "An 8-character field indicating which platform ID the account is associated with (e.g., 'PL784').",
+  "fake|account|plattype": "An enum (PlatformType_enum) describing the platform type (Microblog, Social Network, Video Platform, Forum).",
+  "fake|account|acctcreatedate": "A DATE indicating when the account was created (e.g., '2025-02-20').",
+  "fake|account|acctagespan": "A SMALLINT showing the account’s age in days since creation (e.g., '45').",
+  "fake|account|acctstatus": "An enum (AccountStatus_enum) capturing the account status (Active, Deleted, Suspended, Dormant).",
+  "fake|account|acctcategory": "An enum (AccountType_enum) labeling the account type (Personal, Bot, Hybrid, Business).",
+  "fake|account|authstatus": "An enum (VerificationStatus_enum) describing the verification state (Unverified, Pending, Failed, Suspicious).",
+  "fake|profile|profkey": "A CHAR(12) primary key uniquely identifying each profile record (e.g., 'PF1234567890').",
+  "fake|profile|profaccref": "A CHAR(12) referencing Account(AccIndex), linking this profile to a single account (e.g., 'AC1234567890').",
+  "fake|sessionbehavior|sessref": "A CHAR(12) primary key uniquely identifying each session behavior record (e.g., 'SE1234567890').",
+  "fake|sessionbehavior|sessprofref": "A CHAR(12) referencing Profile(ProfKey) (e.g., 'PF1234567890').",
+  "fake|sessionbehavior|logintimepat": "An enum (LoginTimePattern_enum) describing login times (Burst, Bot-like, Random, Regular).",
+  "fake|sessionbehavior|loginfreq": "An enum (LoginFrequency_enum) labeling login frequency (Medium, High, Low, Suspicious).",
+  "fake|sessionbehavior|loginlocvar": "NUMERIC(4,1) measuring variance in login locations (e.g., '2.7').",
+  "fake|sessionbehavior|sesslenmean": "NUMERIC(7,2) average session length (e.g., '123.45').",
+  "fake|sessionbehavior|sesscount": "An INTEGER counting total sessions (e.g., '57').",
+  "fake|sessionbehavior|actregval": "NUMERIC(4,2) measuring how regularly the user logs in (e.g., '0.75').",
+  "fake|sessionbehavior|acttimedist": "A JSONB structure capturing session activity distribution (e.g., '{\"morning\": 30, \"night\": 70}').",
+  "fake|networkmetrics|netkey": "A CHAR(12) primary key for each network metrics record (e.g., 'NE1234567890').",
+  "fake|networkmetrics|netsessref": "A CHAR(12) referencing SessionBehavior(SessRef) (e.g., 'SE1234567890').",
+  "fake|contentbehavior|cntref": "A CHAR(12) primary key for each content behavior record (e.g., 'CB1234567890').",
+  "fake|contentbehavior|cntsessref": "A CHAR(12) referencing SessionBehavior(SessRef) (e.g., 'SE1234567890').",
+  "fake|contentbehavior|postnum": "An INTEGER counting total posts (e.g., '45').",
+  "fake|contentbehavior|postfreq": "NUMERIC(5,3) capturing post frequency (e.g., '1.235').",
+  "fake|contentbehavior|postintvar": "NUMERIC(6,3) variance in posting intervals (e.g., '0.457').",
+  "fake|contentbehavior|cntsimscore": "NUMERIC(4,2) content similarity (e.g., '0.85').",
+  "fake|contentbehavior|cntuniqscore": "NUMERIC(5,4) content uniqueness measure (e.g., '0.9432').",
+  "fake|contentbehavior|cntdiverseval": "NUMERIC(6,3) diversity of user’s content (e.g., '1.234').",
+  "fake|contentbehavior|cntlangnum": "An enum (ContentLanguageCount_enum) showing language count in posts (1, 2, 3, 4, or 5).",
+  "fake|contentbehavior|cnttopicent": "NUMERIC(4,3) topic entropy measure (e.g., '0.123').",
+  "fake|contentbehavior|hashusepat": "An enum (HashtagUsagePattern_enum) describing hashtag usage (Trending, Normal, Random, Spam).",
+  "fake|contentbehavior|hashratio": "NUMERIC(3,2) fraction of posts with at least one hashtag (e.g., '0.23').",
+  "fake|contentbehavior|mentionpat": "An enum (MentionPattern_enum) describing mention usage (Normal, Random, Targeted, Spam).",
+  "fake|contentbehavior|mentionratio": "NUMERIC(5,3) fraction of posts with mentions (e.g., '0.568').",
+  "fake|contentbehavior|urlsharefreq": "A VARCHAR(24) showing how often URLs are shared (e.g., 'HighFreq').",
+  "fake|contentbehavior|urldomdiv": "NUMERIC(4,2) domain diversity among shared URLs (e.g., '1.23').",
+  "fake|contentbehavior|mediaupratio": "NUMERIC(5,3) fraction of posts including media (e.g., '0.345').",
+  "fake|contentbehavior|mediareratio": "NUMERIC(6,4) how often the same media is reused (e.g., '0.2345').",
+  "fake|messaginganalysis|msgkey": "A CHAR(12) primary key for each messaging analysis record (e.g., 'MA1234567890').",
+  "fake|messaginganalysis|msgcntref": "References ContentBehavior(CntRef) (e.g., 'CB1234567890').",
+  "fake|messaginganalysis|msgnetref": "References NetworkMetrics(NetKey) (e.g., 'NE1234567890').",
+  "fake|messaginganalysis|msgsimscore": "NUMERIC(4,3) message similarity measure (e.g., '0.562').",
+  "fake|messaginganalysis|msgfreq": "NUMERIC(6,2) how frequently messages are sent (e.g., '45.67').",
+  "fake|messaginganalysis|msgtgtdiv": "NUMERIC(4,2) diversity of message targets (e.g., '1.25').",
+  "fake|messaginganalysis|resptimepat": "An enum (ResponseTimePattern_enum) labeling response speed (Natural, Delayed, Random, Instant).",
+  "fake|messaginganalysis|convnatval": "NUMERIC(4,3) how natural conversation flow is (e.g., '0.753').",
+  "fake|messaginganalysis|sentvar": "NUMERIC(6,4) sentiment variation (e.g., '0.1234').",
+  "fake|messaginganalysis|langsoph": "NUMERIC(5,3) linguistic sophistication (e.g., '0.763').",
+  "fake|messaginganalysis|txtuniq": "NUMERIC(4,2) text uniqueness across messages (e.g., '0.85').",
+  "fake|messaginganalysis|keypatmatch": "A VARCHAR(32) describing detected keyword/pattern (e.g., 'spam_trigger').",
+  "fake|messaginganalysis|topiccoh": "NUMERIC(5,4) topic coherence rating (e.g., '0.8743').",
+  "fake|technicalinfo|techkey": "A CHAR(12) primary key for each technical info record (e.g., 'TI1234567890').",
+  "fake|technicalinfo|technetref": "References NetworkMetrics(NetKey) (e.g., 'NE1234567890').",
+  "fake|technicalinfo|techmsgref": "References MessagingAnalysis(MsgKey) (e.g., 'MA1234567890').",
+  "fake|technicalinfo|regip": "An INET column storing the registration IP (e.g., '192.168.0.10').",
+  "fake|technicalinfo|iprepscore": "A NUMERIC(6,3) rating IP reputation (e.g., '0.752').",
+  "fake|technicalinfo|ipcountrynum": "A SMALLINT tracking how many countries this IP is linked to (e.g., '1').",
+  "fake|technicalinfo|vpnratio": "A NUMERIC(7,4) fraction indicating VPN usage frequency (e.g., '0.3456').",
+  "fake|technicalinfo|proxycount": "A SMALLINT counting times a proxy was detected (e.g., '2').",
+  "fake|technicalinfo|torflag": "An enum (TorUsageDetected_enum) (Yes, Suspected, No).",
+  "fake|technicalinfo|devtotal": "A SMALLINT total number of devices (e.g., '3').",
+  "fake|technicalinfo|devtypedist": "A JSONB describing device types (e.g., '{\"mobile\":2, \"desktop\":1}').",
+  "fake|technicalinfo|browserdiv": "A NUMERIC(5,3) measure of browser diversity (e.g., '1.230').",
+  "fake|technicalinfo|uaconsval": "A NUMERIC(6,5) capturing user-agent consistency (e.g., '0.76543').",
+  "fake|securitydetection|secdetkey": "A CHAR(12) primary key uniquely identifying each security detection (e.g., 'SD1234567890').",
+  "fake|securitydetection|sectechref": "A CHAR(12) referencing TechnicalInfo(TechKey) (e.g., 'TI1234567890').",
+  "fake|securitydetection|detecttime": "A TIMESTAMP noting when the security event was detected (e.g., '2025-03-14 10:15:00').",
+  "fake|securitydetection|detectsource": "An enum (DetectionSource_enum) for how detection was triggered (Manual Review, User Report, Pattern Match, Algorithm).",
+  "fake|securitydetection|lastupd": "A TIMESTAMP indicating the last update (e.g., '2025-03-15 05:20:00').",
+  "fake|securitydetection|updfreqhrs": "A SMALLINT for how often (in hours) re-evaluation occurs (e.g., '24').",
+  "fake|moderationaction|modactkey": "A CHAR(12) primary key uniquely identifying each moderation action record (e.g., 'MA0000001234').",
+  "fake|moderationaction|masedetref": "A CHAR(12) referencing SecurityDetection(SecDetKey) (e.g., 'SD1234567890').",
+  "fake|moderationaction|macntref": "A CHAR(12) referencing ContentBehavior(CntRef) (e.g., 'CB1234567890').",
+  "fake|moderationaction|abuserepnum": "A SMALLINT counting how many abuse reports (e.g., '2').",
+  "fake|moderationaction|violtypedist": "A JSONB mapping violation types (e.g., '{\"spam\":5, \"hate\":1}').",
+  "fake|moderationaction|susphist": "An enum (SuspensionHistory_enum) detailing past suspensions (0 through 5).",
+  "fake|moderationaction|warnnum": "A SMALLINT showing how many warnings were issued (e.g., '1').",
+  "fake|moderationaction|appealnum": "An enum (AppealCount_enum) for how many appeals were filed (0 through 5).",
+  "fake|moderationaction|linkacctnum": "A SMALLINT counting linked/sockpuppet accounts (e.g., '3').",
+  "fake|moderationaction|clustsize": "A SMALLINT representing the size of the related account cluster (e.g., '10').",
+  "fake|moderationaction|clustrole": "An enum (ClusterRole_enum) labeling the user’s cluster role (Isolated, Follower, Leader, Amplifier).",
+  "fake|moderationaction|netinflscore": "A NUMERIC(5,2) rating network influence (e.g., '7.85').",
+  "fake|moderationaction|coordscore": "A NUMERIC(4,2) measuring coordinated behavior (e.g., '0.73').",
+  "fake|moderationaction|authenscore": "A NUMERIC(5,3) rating authenticity (e.g., '0.745').",
+  "fake|moderationaction|credscore": "A NUMERIC(4,1) rating credibility (e.g., '7.9').",
+  "fake|moderationaction|reputscore": "A NUMERIC(5,4) user’s reputation measure (e.g., '0.8943').",
+  "fake|moderationaction|trustval": "A NUMERIC(4,2) capturing trust level (e.g., '0.60').",
+  "fake|moderationaction|impactval": "A NUMERIC(4,3) rating the potential impact of the violation (e.g., '1.034').",
+  "fake|moderationaction|monitorpriority": "An enum (MonitoringPriority_enum) indicating how closely to watch (Low, Medium, Urgent, High).",
+  "fake|moderationaction|investstatus": "An enum (InvestigationStatus_enum) describing investigation status (Pending, Active, Completed).",
+  "fake|moderationaction|actiontaken": "An enum (ActionTaken_enum) summarizing final moderation (Suspension, Warning, Restriction).",
+  "fake|moderationaction|reviewfreq": "An enum (ReviewFrequency_enum) describing re-review frequency (Monthly, Quarterly, Daily, Weekly).",
+  "fake|moderationaction|lastrevdate": "A DATE showing last moderation review (e.g., '2025-03-20').",
+  "fake|moderationaction|nextrevdate": "A DATE scheduling the next moderation review (e.g., '2025-04-20').",
+  "fake|securitydetection|detection_score_profile": {
+    "column_meaning": "JSONB column. Aggregates all granular detection scores, risk indicators, and model‑reliability attributes so the full threat posture of a security event can be inspected with a single JSONB read.",
+    "fields_meaning": {
+      "overall": {
+        "detectconf": "A NUMERIC(3,2) confidence level (e.g., '0.93').",
+        "riskval": "NUMERIC(4,2) overall risk rating (e.g., '0.93').",
+        "threatlvl": "An enum (ThreatLevel_enum) describing threat priority (Critical, High, Low, Medium).",
+        "confval": "NUMERIC(6,5) confidence in the final detection verdict (e.g., '0.98765').",
+        "fposprob": "NUMERIC(5,4) false positive probability (e.g., '0.0345')."
+      },
+      "behavior_scores": {
+        "autobehavscore": "NUMERIC(5,3) rating how automated the user’s behavior is (e.g., '0.754').",
+        "botlikscore": "NUMERIC(6,3) capturing the likelihood of bot behavior (e.g., '0.784').",
+        "spambehavscore": "NUMERIC(4,2) measuring spam-related behavior (e.g., '0.87').",
+        "commintscore": "NUMERIC(6,4) rating commercial/spam intent (e.g., '0.1234')."
+      },
+      "pattern_scores": {
+        "behavpatscore": "NUMERIC(5,2) capturing overall suspicious patterns (e.g., '0.75').",
+        "temppatscore": "NUMERIC(6,3) measuring irregularities in temporal patterns (e.g., '1.234').",
+        "netpatscore": "NUMERIC(4,2) capturing suspicious network-level patterns (e.g., '0.85').",
+        "contpatscore": "NUMERIC(5,3) capturing suspicious content patterns (e.g., '0.642').",
+        "profpatscore": "NUMERIC(4,3) suspicious profile patterns (e.g., '0.632').",
+        "techpatscore": "NUMERIC(4,3) suspicious technical patterns (e.g., '0.872')."
+      },
+      "detection_reliability": {
+        "detmethrel": "NUMERIC(4,3) detection method reliability (e.g., '0.855').",
+        "modelver": "A VARCHAR(12) labeling the detection model version (e.g., 'mdl_v1.3').",
+        "featver": "A VARCHAR(12) labeling the detection feature set version (e.g., 'feat_set2')."
+      }
+    }
+  },
+  "fake|networkmetrics|network_engagement_metrics": {
+    "column_meaning": "JSONB column. Groups connection‑growth, engagement‑quality, and interaction‑diversity measures into one JSONB field for quick network‑level behaviour profiling.",
+    "fields_meaning": {
+      "connection_metrics": {
+        "follownum": "A BIGINT for how many followers the user has (e.g., '12345').",
+        "followingnum": "A BIGINT for how many accounts the user follows (e.g., '6789').",
+        "followgrowrate": "NUMERIC(4,3) how quickly follower count grows (e.g., '1.234').",
+        "followinggrowrate": "NUMERIC(5,4) how quickly following count grows (e.g., '2.5678').",
+        "followratio": "NUMERIC(6,2) ratio of followers to following (e.g., '1.50').",
+        "mutualconnratio": "NUMERIC(3,1) ratio of mutual connections (e.g., '0.8').",
+        "conngrowpat": "An enum (ConnectionGrowthPattern_enum) describing connection growth (Suspicious, Burst, Bot-like, Organic).",
+        "connqualscore": "NUMERIC(4,1) rating connection quality (e.g., '7.5')."
+      },
+      "engagement_metrics": {
+        "engrate": "NUMERIC(4,3) user’s engagement rate (e.g., '0.123').",
+        "engauth": "NUMERIC(5,4) measuring authenticity of engagement (e.g., '0.8524').",
+        "likeratio": "NUMERIC(3,2) portion of interactions that are likes (e.g., '0.25').",
+        "cmtratio": "NUMERIC(3,2) portion of interactions that are comments (e.g., '0.30').",
+        "sharerate": "NUMERIC(4,3) portion of interactions that are shares (e.g., '0.456')."
+      },
+      "interaction_metrics": {
+        "interactreci": "NUMERIC(5,3) reciprocity measure (e.g., '0.789').",
+        "interactdiv": "NUMERIC(4,2) diversity of interactions (e.g., '1.25').",
+        "tempinteractpat": "An enum (TemporalInteractionPattern_enum) describing interaction timing (Natural, Periodic, Random, Automated)."
+      }
+    }
+  },
+  "fake|profile|profile_composition": {
+    "column_meaning": "JSONB column. Consolidates username, picture, bio, location, and contact‑credibility attributes to streamline profile‑quality checks and downstream ML feature extraction.",
+    "fields_meaning": {
+      "completeness": "NUMERIC(3,2) reflecting how complete the profile is (e.g., '0.85').",
+      "username": {
+        "profnametag": "An enum (ProfileNamePattern_enum) describing the profile’s name style (Sequential, Template, Random, Natural).",
+        "usrentval": "NUMERIC(5,4) capturing username entropy (e.g., '0.2549').",
+        "usrlen": "A SMALLINT indicating how many characters are in the username (e.g., '12').",
+        "usrpatn": "An enum (UsernamePattern_enum) storing the username pattern (Random, Generated, Meaningful, AlphaNum)."
+      },
+      "display_name": {
+        "dispnameshift": "A SMALLINT counting how many times the display name changed (e.g., '3')."
+      },
+      "picture": {
+        "picformat": "An enum (ProfilePictureType_enum) describing the profile picture type (Stock, AI Generated, Real, Celebrity).",
+        "picscval": "NUMERIC(4,1) scoring the authenticity/quality of the picture (e.g., '7.5')."
+      },
+      "bio": {
+        "biospan": "A SMALLINT measuring bio length in characters (e.g., '160').",
+        "biolang": "An enum (BioLanguage_enum) for the bio’s language code (en, multiple, mixed, unknown).",
+        "biolinknum": "An enum (BioLinkCount_enum) for the number of links (0 through 5).",
+        "biokeycheck": "An enum (BioKeywordMatch_enum) flagging suspicious or notable keywords (Suspicious, Normal, Spam, Promo)."
+      },
+      "location": {
+        "locgiven": "An enum (LocationProvided_enum) describing location provisioning (Fake, No, Yes, Multiple).",
+        "locshiftnum": "A SMALLINT showing how many times the stated location changed (e.g., '2')."
+      },
+      "contact": {
+        "maildomainfmt": "An enum (EmailDomainType_enum) describing the email domain (Free, Unknown, Custom, Disposable).",
+        "phnumstate": "An enum (PhoneNumberStatus_enum) describing phone number status (Invalid, VOIP, Valid)."
+      }
+    }
+  }
+}

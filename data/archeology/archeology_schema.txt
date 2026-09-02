@@ -1,0 +1,311 @@
+CREATE TABLE "equipment" (
+equipregistry text(50) NOT NULL,
+equipform text(28) NULL,
+equipdesign text(14) NULL,
+equiptune TEXT NULL,
+equipstatus text(16) NULL,
+powerlevel integer(16) NULL,
+    PRIMARY KEY (equipregistry)
+);
+First 3 rows:
+equipregistry    equipform         equipdesign    equiptune    equipstatus      powerlevel
+SN20065          LiDAR             Model-669      2024-11-01   Excellent                62
+SN29799          Structured Light  Model-835      2024-09-09   Good                     21
+SN83019          Photogrammetry    Model-566      2025-02-08   Good                     46
+...
+
+CREATE TABLE "personnel" (
+crewregistry text(50) NOT NULL,
+crewlabel text(50) NULL,
+leadregistry text(50) NULL,
+leadlabel text(40) NULL,
+    PRIMARY KEY (crewregistry)
+);
+First 3 rows:
+crewregistry    crewlabel      leadregistry    leadlabel
+OP4641          Joel Wallace   SV7658          Michael Kaiser
+OP8435          Latoya Abbott  SV2189          Stephanie Marquez
+OP7199          Aaron Knight   SV6920          Victoria George
+...
+
+CREATE TABLE "projects" (
+arcregistry text(50) NOT NULL,
+vesseltag text(60) NULL,
+fundflux TEXT NULL,
+authpin text(50) NULL,
+authhalt TEXT NULL,
+    PRIMARY KEY (arcregistry)
+);
+First 3 rows:
+arcregistry    vesseltag        fundflux    authpin    authhalt
+PR7509         Project Happy    Government  PMT4719    2025-12-05
+PR8078         Project Off      Government  PMT4944    2025-09-20
+PR9973         Project Central  University  PMT5400    2025-03-18
+...
+
+CREATE TABLE "scanconservation" (
+cureregistry integer(64) NOT NULL,
+arcref text(50) NOT NULL,
+zoneref text(12) NOT NULL,
+harmassess text(15) NULL,
+curerank text(15) NULL,
+structstate text(15) NULL,
+intervhistory TEXT NULL,
+priordocs TEXT NULL,
+    PRIMARY KEY (cureregistry),
+    FOREIGN KEY (zoneref) REFERENCES sites(zoneregistry),
+    FOREIGN KEY (arcref) REFERENCES projects(arcregistry)
+);
+First 3 rows:
+  cureregistry  arcref    zoneref    harmassess    curerank    structstate    intervhistory    priordocs
+             1  PR7509    SC9016                   Critical    Moderate       Minor
+             2  PR8078    SC9081     Severe        Low         Moderate       Major            Partial
+             3  PR9973    SC4817     Moderate      High        Moderate
+...
+
+CREATE TABLE "scanenvironment" (
+airregistry integer(64) NOT NULL,
+zoneref text(12) NOT NULL,
+equipref text(50) NOT NULL,
+ambictemp real(5,2) NULL,
+humepct real(5,2) NULL,
+illumelux integer(32) NULL,
+geosignal text(15) NULL,
+trackstatus text(12) NULL,
+linkstatus text(12) NULL,
+photomap text(4) NULL,
+imgcount integer(16) NULL,
+    PRIMARY KEY (airregistry),
+    FOREIGN KEY (zoneref) REFERENCES sites(zoneregistry),
+    FOREIGN KEY (equipref) REFERENCES equipment(equipregistry)
+);
+First 3 rows:
+  airregistry  zoneref    equipref      ambictemp    humepct    illumelux  geosignal    trackstatus    linkstatus    photomap      imgcount
+            1  SC9016     SN20065            25.3       60.4        86054                              Disconnected  80%                248
+            2  SC9081     SN29799             8.8       32.9        51271                              Connected     60%                874
+            3  SC4817     SN83019            -3.9       72.6        21889  Poor         Fixed          Disconnected  80%                750
+...
+
+CREATE TABLE "scanfeatures" (
+traitregistry integer(64) NOT NULL,
+zoneref text(12) NOT NULL,
+equipref text(50) NOT NULL,
+traitextract text(25) NULL,
+traitcount integer(32) NULL,
+articount integer(32) NULL,
+structkind text(15) NULL,
+matkind text(15) NULL,
+huestudy text(15) NULL,
+texturestudy text(15) NULL,
+patternnote TEXT NULL,
+    PRIMARY KEY (traitregistry),
+    FOREIGN KEY (zoneref) REFERENCES sites(zoneregistry),
+    FOREIGN KEY (equipref) REFERENCES equipment(equipregistry)
+);
+First 3 rows:
+  traitregistry  zoneref    equipref    traitextract      traitcount    articount  structkind    matkind    huestudy    texturestudy    patternnote
+              1  SC9016     SN20065     Manual                   516           71  Artifact      Organic    Partial     Partial         Not Required
+              2  SC9081     SN29799     Semi-automatic           899           22  Complex       Metal      Partial     Not Required    Partial
+              3  SC4817     SN83019     Manual                   103           69  Complex       Ceramic    Completed   Partial         Not Required
+...
+
+CREATE TABLE "scanmesh" (
+facetregistry integer(64) NOT NULL,
+zoneref text(12) NOT NULL,
+equipref text(50) NOT NULL,
+facetverts integer(64) NULL,
+facetfaces integer(64) NULL,
+facetresmm real(5,2) NULL,
+texdist text(5) NULL,
+texpix integer(32) NULL,
+uvmapqual text(50) NULL,
+geomdeltamm real(6,3) NULL,
+    PRIMARY KEY (facetregistry),
+    FOREIGN KEY (zoneref) REFERENCES sites(zoneregistry),
+    FOREIGN KEY (equipref) REFERENCES equipment(equipregistry)
+);
+First 3 rows:
+  facetregistry  zoneref    equipref      facetverts    facetfaces    facetresmm  texdist      texpix  uvmapqual      geomdeltamm
+              1  SC9016     SN20065          7234721       5997318          3.2   2K             2048  Medium                2.74
+              2  SC9081     SN29799          2361491       7708278          9.79  2K             8192  High                  3.79
+              3  SC4817     SN83019           542100       1973487          2.33  1K             4096  Low                   0.48
+...
+
+CREATE TABLE "scanpointcloud" (
+cloudregistry integer(64) NOT NULL,
+crewref text(50) NOT NULL,
+arcref text(50) NOT NULL,
+scanresolmm real(5,2) NULL,
+pointdense integer(32) NULL,
+coverpct real(4,1) NULL,
+totalpts integer(64) NULL,
+clouddense integer(32) NULL,
+lappct real(4,1) NULL,
+noisedb real(6,3) NULL,
+refpct real(4,1) NULL,
+    PRIMARY KEY (cloudregistry),
+    FOREIGN KEY (crewref) REFERENCES personnel(crewregistry),
+    FOREIGN KEY (arcref) REFERENCES projects(arcregistry)
+);
+First 3 rows:
+  cloudregistry  crewref    arcref      scanresolmm    pointdense    coverpct    totalpts    clouddense    lappct    noisedb    refpct
+              1  OP4641     PR7509             2.4          42812        91.2    46562436          9449      31.3      1.318      11
+              2  OP8435     PR8078             4.72        974154        84.7    73534012           431      48.6      1.788      65.4
+              3  OP7199     PR9973             4.9         934361        98.1    87734478          1746      31.7      1.79       53.8
+...
+
+CREATE TABLE "scanprocessing" (
+flowregistry integer(64) NOT NULL,
+equipref text(50) NOT NULL,
+zoneref text(12) NOT NULL,
+flowsoft text(25) NULL,
+flowhrs real(5,2) NULL,
+proccpu integer(16) NULL,
+memusagegb real(6,2) NULL,
+procgpu integer(16) NULL,
+stashloc text(12) NULL,
+safebak text(50) NULL,
+datalevel TEXT NULL,
+metabench text(50) NULL,
+coordframe text(12) NULL,
+elevref text(16) NULL,
+remaingb real(7,2) NULL,
+stationlink text(50) NULL,
+camcal TEXT NULL,
+lensdist text(14) NULL,
+colortune text(50) NULL,
+flowstage text(18) NULL,
+fmtver text(3) NULL,
+    PRIMARY KEY (flowregistry),
+    FOREIGN KEY (zoneref) REFERENCES sites(zoneregistry),
+    FOREIGN KEY (equipref) REFERENCES equipment(equipregistry)
+);
+First 3 rows:
+  flowregistry  equipref    zoneref    flowsoft          flowhrs    proccpu    memusagegb    procgpu  stashloc    safebak      datalevel     metabench    coordframe    elevref      remaingb  stationlink    camcal    lensdist    colortune    flowstage      fmtver
+             1  SN20065     SC9016     RealityCapture       21.9         81          70.3         84  Local       In Progress  Confidential  Dublin Core  Local         Arbitrary       983.5  Partial        Invalid   Corrected   Required     Aligned           2.3
+             2  SN29799     SC9081     CloudCompare         34.9        100          13.4         56  Network     Completed    Public        CIDOC CRM    WGS84         Local           599.6  Partial        Required  Unknown     Required     Aligned           2.7
+             3  SN83019     SC4817     Agisoft              25.7         67          51.7         66  Network     Pending      Confidential  CIDOC CRM    Custom        Sea Level       306.1  Partial        Required  Unknown     Adjusted     Meshed            4
+...
+
+CREATE TABLE "scanqc" (
+qualregistry integer(64) NOT NULL,
+arcref text(50) NOT NULL,
+crewref text(50) NOT NULL,
+accucheck text(22) NULL,
+ctrlstate text(50) NULL,
+valimeth text(18) NULL,
+valistate TEXT NULL,
+archstat text(50) NULL,
+pubstat text(24) NULL,
+copystat text(50) NULL,
+refmention text(60) NULL,
+remark TEXT NULL,
+    PRIMARY KEY (qualregistry),
+    FOREIGN KEY (crewref) REFERENCES personnel(crewregistry),
+    FOREIGN KEY (arcref) REFERENCES projects(arcregistry)
+);
+First 3 rows:
+  qualregistry  arcref    crewref    accucheck     ctrlstate    valimeth    valistate    archstat    pubstat    copystat     refmention     remark
+             1  PR7509    OP4641     Not Required  Pending      Automated   Rejected     Verified    Draft      Reserved     Citation-8447
+             2  PR8078    OP8435     Completed     Pending      Visual      Rejected     Verified    Submitted  Open Access  Citation-6197
+             3  PR9973    OP7199     Pending       Failed       Visual      Approved     Pending     Draft      Open Access  Citation-8090  Sell shoulder understand serious degree particular game.
+...
+
+CREATE TABLE "scanregistration" (
+logregistry integer(64) NOT NULL,
+crewref text(50) NOT NULL,
+arcref text(50) NOT NULL,
+logaccumm real(5,3) NULL,
+refmark text(6) NULL,
+ctrlpts text(6) NULL,
+logmethod text(15) NULL,
+transform text(15) NULL,
+errscale text(20) NULL,
+errvalmm real(6,3) NULL,
+    PRIMARY KEY (logregistry),
+    FOREIGN KEY (crewref) REFERENCES personnel(crewregistry),
+    FOREIGN KEY (arcref) REFERENCES projects(arcregistry)
+);
+First 3 rows:
+  logregistry  crewref    arcref      logaccumm    refmark    ctrlpts  logmethod     transform    errscale          errvalmm
+            1  OP4641     PR7509           0.84         40         73  Hybrid        Matrix-47    Cloud-to-Mesh        6.962
+            2  OP8435     PR8078           3.44         21          6  Target-based  Matrix-712   Cloud-to-Mesh        4.442
+            3  OP7199     PR9973           3.95         25         84  Hybrid        Matrix-113   Cloud-to-Cloud       6.069
+...
+
+CREATE TABLE "scans" (
+questregistry text(16) NOT NULL,
+chronotag text(6) NULL,
+arcref text(50) NOT NULL,
+crewref text(50) NOT NULL,
+zoneref text(12) NOT NULL,
+scancount integer(16) NULL,
+climtune text(22) NULL,
+huecatch text(50) NULL,
+fmtfile text(4) NULL,
+gbsize real(5,2) NULL,
+pressratio real(4,2) NULL,
+spanmin real(5,2) NULL,
+    PRIMARY KEY (questregistry),
+    FOREIGN KEY (zoneref) REFERENCES sites(zoneregistry),
+    FOREIGN KEY (crewref) REFERENCES personnel(crewregistry),
+    FOREIGN KEY (arcref) REFERENCES projects(arcregistry)
+);
+First 3 rows:
+questregistry    chronotag                   arcref    crewref    zoneref      scancount  climtune    huecatch    fmtfile      gbsize    pressratio    spanmin
+ASD409481        2024-09-03 07:20:28.479288  PR7509    OP4641     SC9016               5  Windy       RGB         PTS           24.71          3.22         63
+ASD648638        2024-07-27 08:52:12.479479  PR8078    OP8435     SC9081               2  Rainy       RGB         PLY           21.63          6.86        240
+ASD535327        2025-01-24 12:45:10.479479  PR9973    OP7199     SC4817               7  Windy       RGB         PLY           41.48          4.2          37
+...
+
+CREATE TABLE "scanspatial" (
+domainregistry integer(64) NOT NULL,
+arcref text(50) NOT NULL,
+crewref text(50) NOT NULL,
+aream2 real(8,3) NULL,
+volm3 real(9,4) NULL,
+boxx real(8,2) NULL,
+boxy real(8,3) NULL,
+boxz real(9,2) NULL,
+angleaz integer(24) NULL,
+angletilt integer(53) NULL,
+groundspan real(6,3) NULL,
+    PRIMARY KEY (domainregistry),
+    FOREIGN KEY (crewref) REFERENCES personnel(crewregistry),
+    FOREIGN KEY (arcref) REFERENCES projects(arcregistry)
+);
+First 3 rows:
+  domainregistry  arcref    crewref      aream2    volm3    boxx    boxy    boxz    angleaz    angletilt    groundspan
+               1  PR7509    OP4641        78.01    76.7    40.12    1.06    8.74      342.4         23.9          4.13
+               2  PR8078    OP8435       746.55    85.66   26.17    8.75   16.41      113           12.9          0.93
+               3  PR9973    OP7199       294.59     6.02   15.32   31.08   36.71      275.4        -22.1          1.12
+...
+
+CREATE TABLE "sites" (
+zoneregistry text(12) NOT NULL,
+zonelabel TEXT NULL,
+digunit text(50) NULL,
+gridtrace text(12) NULL,
+geox real(8,5) NULL,
+geoy real(8,5) NULL,
+heightm real(7,1) NULL,
+depthc real(7,1) NULL,
+phasefactor text(25) NULL,
+guessdate text(20) NULL,
+typesite text(25) NULL,
+presstat text(25) NULL,
+guardhint text(50) NULL,
+entrystat text(50) NULL,
+saferank text(15) NULL,
+insurstat text(15) NULL,
+riskeval TEXT NULL,
+healtheval text(12) NULL,
+envhaz text(50) NULL,
+    PRIMARY KEY (zoneregistry)
+);
+First 3 rows:
+zoneregistry    zonelabel                  digunit    gridtrace        geox       geoy    heightm    depthc  phasefactor    guessdate    typesite    presstat    guardhint    entrystat    saferank    insurstat    riskeval    healtheval    envhaz
+SC9016          Site-North Alexanderville  Unit-C9    S29-E8       -9.60214   -2.75641     4391.4     329.9  Iron Age       -2929 BCE    Burial      Excellent                Closed       Minimal     Expired      Required    Approved      Low
+SC9081          Site-Grahammouth           Unit-A14   N44-W27      57.1075    70.0361       429.3      97.5  Medieval       1335 BCE     Industrial  Fair        Temporary    Restricted   Standard    Pending      Pending     Pending       Low
+SC4817          Site-Port Brianside        Unit-D19   S48-W26      73.6055   141.711       4934.6     499.9  Iron Age       -4985 BCE    Burial      Critical                 Closed       High        Expired      Completed   Review        High
+...

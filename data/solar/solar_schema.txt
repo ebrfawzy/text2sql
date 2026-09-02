@@ -1,0 +1,175 @@
+CREATE TABLE "alerts" (
+alertreg text(50) NOT NULL,
+compreg text(36) NULL,
+deviceref text(50) NULL,
+incidentref text(50) NULL,
+alertmoment text(6) NULL,
+alertstat text(50) NULL,
+alertcnt integer(16) NULL,
+maintprior text(50) NULL,
+replaceprior text(50) NULL,
+optpotential text(100) NULL,
+    PRIMARY KEY (alertreg),
+    FOREIGN KEY (incidentref) REFERENCES performance(perfregistry),
+    FOREIGN KEY (deviceref) REFERENCES panel(panemark),
+    FOREIGN KEY (compreg) REFERENCES plant(growregistry)
+);
+First 3 rows:
+alertreg                              compreg                               deviceref                             incidentref                           alertmoment                 alertstat      alertcnt  maintprior    replaceprior    optpotential
+34671e50-c3dc-4acb-af54-ccde16eb0ea6  34671e50-c3dc-4acb-af54-ccde16eb0ea6  34671e50-c3dc-4acb-af54-ccde16eb0ea6  34671e50-c3dc-4acb-af54-ccde16eb0ea6  2018-08-03 12:21:20.051523                        6  High          High            Medium
+34d240f4-6ed9-43bc-b7a8-24b56fdd315a  34d240f4-6ed9-43bc-b7a8-24b56fdd315a  34d240f4-6ed9-43bc-b7a8-24b56fdd315a  34d240f4-6ed9-43bc-b7a8-24b56fdd315a  2023-03-05 14:10:48.052345  Warning               2  High          High            High
+e00b3472-780b-490f-941b-a4f298882d7f  e00b3472-780b-490f-941b-a4f298882d7f  e00b3472-780b-490f-941b-a4f298882d7f  e00b3472-780b-490f-941b-a4f298882d7f  2023-01-30 02:55:15.052451  Critical              9  High          High            Low
+...
+
+CREATE TABLE "electrical" (
+elecregistry text(50) NOT NULL,
+engyunitref text(50) NULL,
+efflogref text(50) NULL,
+iscinita real(7,3) NULL,
+isccurra real(7,3) NULL,
+vocinitv real(7,3) NULL,
+voccurrv real(7,3) NULL,
+impinita real(7,3) NULL,
+impcurra real(7,3) NULL,
+vmpinitv real(7,3) NULL,
+vmpcurrv real(6,2) NULL,
+ffactorinit real(7,3) NULL,
+ffactorcurr real(7,3) NULL,
+seriesresohm real(7,3) NULL,
+shuntresohm real(4,1) NULL,
+    PRIMARY KEY (elecregistry),
+    FOREIGN KEY (engyunitref) REFERENCES panel(panemark),
+    FOREIGN KEY (efflogref) REFERENCES performance(perfregistry)
+);
+First 3 rows:
+elecregistry                          engyunitref                           efflogref                               iscinita    isccurra    vocinitv    voccurrv    impinita    impcurra    vmpinitv    vmpcurrv    ffactorinit    ffactorcurr    seriesresohm    shuntresohm
+34671e50-c3dc-4acb-af54-ccde16eb0ea6  34671e50-c3dc-4acb-af54-ccde16eb0ea6  34671e50-c3dc-4acb-af54-ccde16eb0ea6        9.09        8.51       49.74       43.32        9.17        7.21       38.48       36.98          0.773          0.71            0.174          437.3
+34d240f4-6ed9-43bc-b7a8-24b56fdd315a  34d240f4-6ed9-43bc-b7a8-24b56fdd315a  34d240f4-6ed9-43bc-b7a8-24b56fdd315a       10.85        8.41       45.3        43.1         9.93        7.3        38.25       36.73          0.775          0.788           0.349          880.7
+e00b3472-780b-490f-941b-a4f298882d7f  e00b3472-780b-490f-941b-a4f298882d7f  e00b3472-780b-490f-941b-a4f298882d7f       10.78        9.03       46.07       43.28        8.47        8.05       37.87       36.78          0.836          0.706           0.995          703.9
+...
+
+CREATE TABLE "environment" (
+envregistry text(50) NOT NULL,
+arearegistry text(36) NULL,
+envmoment text(6) NULL,
+celltempc real(7,3) NULL,
+ambtempc real(7,3) NULL,
+soillosspct real(7,3) NULL,
+dustdengm2 real(7,3) NULL,
+cleancycledays integer(16) NULL,
+lastcleandt TEXT NULL,
+relhumpct real(7,3) NULL,
+windspdms real(7,3) NULL,
+winddirdeg real(7,3) NULL,
+preciptmm real(6,2) NULL,
+airpresshpa real(6,2) NULL,
+uv_idx real(7,3) NULL,
+cloudcovpct real(7,3) NULL,
+snowcovpct real(7,3) NULL,
+irradiance_conditions TEXT NULL,
+    PRIMARY KEY (envregistry),
+    FOREIGN KEY (arearegistry) REFERENCES plant(growregistry)
+);
+First 3 rows:
+envregistry                           arearegistry                          envmoment                     celltempc    ambtempc    soillosspct    dustdengm2    cleancycledays  lastcleandt      relhumpct    windspdms    winddirdeg    preciptmm    airpresshpa    uv_idx    cloudcovpct    snowcovpct  irradiance_conditions
+34671e50-c3dc-4acb-af54-ccde16eb0ea6  34671e50-c3dc-4acb-af54-ccde16eb0ea6  2018-08-03 12:21:20.051523         47.3        41.2          13.41         0.056                38  2025-01-14            76.1         11.6         249.3         41.3         1099.2       1.1           12.4          24.8  {"specmisfac": 1.005, "irradiance_types": [530.40, 169.3, 44.100, 135.100]}
+34d240f4-6ed9-43bc-b7a8-24b56fdd315a  34d240f4-6ed9-43bc-b7a8-24b56fdd315a  2023-03-05 14:10:48.052345         36.1        22.7          11.27         3.519                52  2025-01-23            50           22.6          29.8         36.2          958.3       3.6           93.8          59.7  {"specmisfac": 0.996, "irradiance_types": [556.40, 686.2, 81.900, 500.100]}
+e00b3472-780b-490f-941b-a4f298882d7f  e00b3472-780b-490f-941b-a4f298882d7f  2023-01-30 02:55:15.052451         59.2        26.2           1.12         3.3                  17  2025-02-05            98.5         18.3         179.3         18.1         1050.6       1.7           69.2          92.7  {"specmisfac": 1.047, "irradiance_types": [637.10, 656.6, 71.400, 1155.000]}
+...
+
+CREATE TABLE "inverter" (
+invertregistry text(50) NOT NULL,
+siteref text(36) NULL,
+invertmoment text(6) NULL,
+inverttempc real(7,3) NULL,
+gridvolt real(7,3) NULL,
+gridfreqhz real(7,3) NULL,
+pwrqualidx real(7,3) NULL,
+power_metrics TEXT NULL,
+    PRIMARY KEY (invertregistry),
+    FOREIGN KEY (siteref) REFERENCES plant(growregistry)
+);
+First 3 rows:
+invertregistry                        siteref                               invertmoment                  inverttempc    gridvolt    gridfreqhz    pwrqualidx  power_metrics
+657d7976-fb98-45f4-a916-4315352d235d  657d7976-fb98-45f4-a916-4315352d235d  2022-07-14 06:51:30.052646           48.8       223.2         50.49         0.778  {"harmdistpct": 0.750, "reacpwrkvar": 75.46, "inverteffpct": 98.090, "invertpowfac": 0.928}
+7da8ce5b-0710-48ac-ae70-cfd4c2bda1fa  7da8ce5b-0710-48ac-ae70-cfd4c2bda1fa  2022-07-16 15:18:16.052646           30.3       225.3         49.95         0.714  {"harmdistpct": 0.890, "reacpwrkvar": 80.82, "inverteffpct": 98.780, "invertpowfac": 0.988}
+fa1e0808-8e5c-4044-bbaf-4a17fbad26f2  fa1e0808-8e5c-4044-bbaf-4a17fbad26f2  2016-08-02 03:08:36.052646           30.5       233.1         49.87         0.007  {"harmdistpct": 0.930, "reacpwrkvar": 64.01, "inverteffpct": 97.360, "invertpowfac": 0.983}
+...
+
+CREATE TABLE "maintenance" (
+maintregistry text(50) NOT NULL,
+powerref text(36) NULL,
+compref text(50) NULL,
+obsref text(50) NULL,
+inspectmeth text(100) NULL,
+inspectres text(150) NULL,
+inspectdate TEXT NULL,
+maintsched text(100) NULL,
+wtystatus text(50) NULL,
+wtyclaimcnt integer(16) NULL,
+maintcostusd real(9,2) NULL,
+cleancostusd real(8,3) NULL,
+replacecostusd real(9,3) NULL,
+revlossusd real(7,2) NULL,
+    PRIMARY KEY (maintregistry),
+    FOREIGN KEY (powerref) REFERENCES plant(growregistry),
+    FOREIGN KEY (obsref) REFERENCES performance(perfregistry),
+    FOREIGN KEY (compref) REFERENCES panel(panemark)
+);
+First 3 rows:
+maintregistry                         powerref                              compref                               obsref                                inspectmeth    inspectres    inspectdate    maintsched    wtystatus      wtyclaimcnt    maintcostusd    cleancostusd    replacecostusd    revlossusd
+34671e50-c3dc-4acb-af54-ccde16eb0ea6  34671e50-c3dc-4acb-af54-ccde16eb0ea6  34671e50-c3dc-4acb-af54-ccde16eb0ea6  34671e50-c3dc-4acb-af54-ccde16eb0ea6  Visual         Minor Issues  2024-08-24     Delayed       Claimed                  2          178.82         1034.89          31529.1        13375.6
+34d240f4-6ed9-43bc-b7a8-24b56fdd315a  34d240f4-6ed9-43bc-b7a8-24b56fdd315a  34d240f4-6ed9-43bc-b7a8-24b56fdd315a  34d240f4-6ed9-43bc-b7a8-24b56fdd315a  IR Thermal     Major Issues  2024-12-23     Overdue       Active                   4         9549.83         2957.08          15984.1        17065.2
+e00b3472-780b-490f-941b-a4f298882d7f  e00b3472-780b-490f-941b-a4f298882d7f  e00b3472-780b-490f-941b-a4f298882d7f  e00b3472-780b-490f-941b-a4f298882d7f  Visual         Major Issues  2025-01-30     Overdue       Claimed                  2         9298.61         1934.67           3604.59       14035.9
+...
+
+CREATE TABLE "panel" (
+panemark text(50) NOT NULL,
+hubregistry text(36) NULL,
+panemfr text(100) NULL,
+paneline text(100) NULL,
+panetype text(50) NULL,
+powratew integer(16) NULL,
+paneeffpct real(7,3) NULL,
+nomtempc real(7,3) NULL,
+tempcoef real(4,3) NULL,
+    PRIMARY KEY (panemark),
+    FOREIGN KEY (hubregistry) REFERENCES plant(growregistry)
+);
+First 3 rows:
+panemark                              hubregistry                           panemfr    paneline    panetype      powratew    paneeffpct    nomtempc    tempcoef
+34671e50-c3dc-4acb-af54-ccde16eb0ea6  34671e50-c3dc-4acb-af54-ccde16eb0ea6  Longi      Model-102   Mono-PERC          650         20.86        45.7      -0.389
+34d240f4-6ed9-43bc-b7a8-24b56fdd315a  34d240f4-6ed9-43bc-b7a8-24b56fdd315a  Longi      Model-892   HJT                650         21.65        45.5      -0.446
+e00b3472-780b-490f-941b-a4f298882d7f  e00b3472-780b-490f-941b-a4f298882d7f  Longi      Model-677   Poly-PERC          450         21.93        46.7      -0.432
+...
+
+CREATE TABLE "performance" (
+perfregistry text(50) NOT NULL,
+solmodref text(50) NULL,
+perfmoment text(6) NULL,
+measpoww real(9,3) NULL,
+powlossw real(8,3) NULL,
+efficiency_profile TEXT NULL,
+    PRIMARY KEY (perfregistry),
+    FOREIGN KEY (solmodref) REFERENCES panel(panemark)
+);
+First 3 rows:
+perfregistry                          solmodref                             perfmoment                    measpoww    powlossw  efficiency_profile
+61881c67-e019-431b-92f4-540d018ce556  61881c67-e019-431b-92f4-540d018ce556  2023-04-24 05:22:00.052646      587.22       12.78  {"degradation": {"cumdegpct": 2.130, "anndegrate": 0.710}, "current_efficiency": {"curreffpct": 19.360, "efflosspct": 2.960}}
+d0e8b043-26a7-44a0-92aa-8d8719e49e10  d0e8b043-26a7-44a0-92aa-8d8719e49e10  2020-12-10 14:06:40.053132      518.82       31.18  {"degradation": {"cumdegpct": 5.670, "anndegrate": 1.010}, "current_efficiency": {"curreffpct": 20.050, "efflosspct": 1.280}}
+e2324feb-31cd-417a-ba69-86c74e8e65c0  e2324feb-31cd-417a-ba69-86c74e8e65c0  2016-07-08 20:40:53.053213      384.03       65.97  {"degradation": {"cumdegpct": 14.660, "anndegrate": 0.470}, "current_efficiency": {"curreffpct": 19.530, "efflosspct": 0.710}}
+...
+
+CREATE TABLE "plant" (
+growregistry text(36) NOT NULL,
+growalias text(100) NULL,
+gencapmw real(7,3) NULL,
+initdate TEXT NULL,
+    PRIMARY KEY (growregistry)
+);
+First 3 rows:
+growregistry                          growalias                     gencapmw  initdate
+34671e50-c3dc-4acb-af54-ccde16eb0ea6  Solar Plant West Davidport      257.58  2018-02-28
+34d240f4-6ed9-43bc-b7a8-24b56fdd315a  Solar Plant Dillonmouth         437.71  2023-08-06
+e00b3472-780b-490f-941b-a4f298882d7f  Solar Plant North Xavier        397.96  2022-06-18
+...

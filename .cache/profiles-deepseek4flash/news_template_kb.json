@@ -1,0 +1,952 @@
+{
+  "version": 1,
+  "profiled_at": "2026-08-30T12:55:22.187482+00:00",
+  "columns": {
+    "news_template|sessions|Click-through rate (CTR)": {
+      "id": 0,
+      "knowledge": "Click-through rate (CTR)",
+      "description": "Fraction of page views that result in a click. Selects 5% of rows.",
+      "definition": "ctrval = seshclicks / NULLIF(seshviews, 0)",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sessions"
+      ],
+      "refuted": false
+    },
+    "news_template|sessions|Duration per page view (DPV)": {
+      "id": 1,
+      "knowledge": "Duration per page view (DPV)",
+      "description": "Average session duration spent per page view.",
+      "definition": "seshdur / NULLIF(seshviews, 0)",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sessions"
+      ],
+      "refuted": false
+    },
+    "news_template|sessions|Clicks per recommendation (CPR)": {
+      "id": 2,
+      "knowledge": "Clicks per recommendation (CPR)",
+      "description": "Number of clicks divided by number of recommendations shown.",
+      "definition": "seshclicks / NULLIF(seshrecs, 0)",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sessions"
+      ],
+      "refuted": false
+    },
+    "news_template|sessions|Views per click (VPC)": {
+      "id": 3,
+      "knowledge": "Views per click (VPC)",
+      "description": "Number of page views per click.",
+      "definition": "seshviews / NULLIF(seshclicks, 0)",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sessions"
+      ],
+      "refuted": false
+    },
+    "news_template|sessions|Bounce session": {
+      "id": 4,
+      "knowledge": "Bounce session",
+      "description": "Session that viewed exactly one page. Selects 3% of rows.",
+      "definition": "seshviews = 1",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        21
+      ],
+      "tables": [
+        "sessions"
+      ],
+      "refuted": false
+    },
+    "news_template|sessions|High-click session": {
+      "id": 5,
+      "knowledge": "High-click session",
+      "description": "Session with more than three clicks. Selects 80% of rows.",
+      "definition": "seshclicks > 3",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sessions"
+      ],
+      "refuted": false
+    },
+    "news_template|sessions|Recommendation-heavy session": {
+      "id": 6,
+      "knowledge": "Recommendation-heavy session",
+      "description": "Session with more than ten recommendations shown. Selects 85% of rows.",
+      "definition": "seshrecs > 10",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sessions"
+      ],
+      "refuted": false
+    },
+    "news_template|sessions|English-language session": {
+      "id": 7,
+      "knowledge": "English-language session",
+      "description": "Session using English language code. Selects 21% of rows.",
+      "definition": "TRIM(langcode) = 'en'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sessions"
+      ],
+      "refuted": false
+    },
+    "news_template|sessions|UTC-8 timezone session": {
+      "id": 8,
+      "knowledge": "UTC-8 timezone session",
+      "description": "Session whose UTC offset is -8 hours. Selects 22% of rows.",
+      "definition": "tzoffset = '-8'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sessions"
+      ],
+      "refuted": false
+    },
+    "news_template|sessions|Qatar session": {
+      "id": 9,
+      "knowledge": "Qatar session",
+      "description": "Session occurring in Qatar. Selects 1% of rows.",
+      "definition": "TRIM(geoctry) = 'Qatar'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sessions"
+      ],
+      "refuted": false
+    },
+    "news_template|sessions|Nevada session": {
+      "id": 10,
+      "knowledge": "Nevada session",
+      "description": "Session occurring in Nevada. Selects 3% of rows.",
+      "definition": "TRIM(georeg) = 'Nevada'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sessions"
+      ],
+      "refuted": false
+    },
+    "news_template|sessions|Experiment EXP966 session": {
+      "id": 11,
+      "knowledge": "Experiment EXP966 session",
+      "description": "Session enrolled in experiment EXP966.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sessions"
+      ],
+      "refuted": false
+    },
+    "news_template|recommendations|Recommendation score (recscore)": {
+      "id": 12,
+      "knowledge": "Recommendation score (recscore)",
+      "description": "Overall recommendation score computed as the average of confidence, diversity, novelty, and serendipity values.",
+      "definition": "recscore != (confval + divval + novval + seryval) / 4.0",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "recommendations"
+      ],
+      "refuted": true
+    },
+    "news_template|recommendations|Hybrid recommendation": {
+      "id": 13,
+      "knowledge": "Hybrid recommendation",
+      "description": "A recommendation generated using the Hybrid algorithm label. Selects 27% of rows.",
+      "definition": "alglabel = 'Hybrid'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "recommendations"
+      ],
+      "refuted": false
+    },
+    "news_template|recommendations|Trending recommendation": {
+      "id": 14,
+      "knowledge": "Trending recommendation",
+      "description": "A recommendation with the Trending strategy label. Selects 25% of rows.",
+      "definition": "stratlabel = 'Trending'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "recommendations"
+      ],
+      "refuted": false
+    },
+    "news_template|recommendations|Personalized recommendation": {
+      "id": 15,
+      "knowledge": "Personalized recommendation",
+      "description": "A recommendation with the Personalized strategy label. Selects 23% of rows.",
+      "definition": "stratlabel = 'Personalized'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "recommendations"
+      ],
+      "refuted": false
+    },
+    "news_template|recommendations|Category page recommendation": {
+      "id": 16,
+      "knowledge": "Category page recommendation",
+      "description": "A recommendation displayed on a Category page. Selects 26% of rows.",
+      "definition": "recpage = 'Category'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "recommendations"
+      ],
+      "refuted": false
+    },
+    "news_template|recommendations|Related section recommendation": {
+      "id": 17,
+      "knowledge": "Related section recommendation",
+      "description": "A recommendation displayed in the Related section. Selects 27% of rows.",
+      "definition": "recsec = 'Related'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "recommendations"
+      ],
+      "refuted": false
+    },
+    "news_template|interactionmetrics|Natural exit": {
+      "id": 18,
+      "knowledge": "Natural exit",
+      "description": "Exit category where the user left naturally. Selects 26% of rows.",
+      "definition": "json_extract(interaction_behavior, '$.exit_type') = 'Natural'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "interactionmetrics"
+      ],
+      "refuted": false
+    },
+    "news_template|interactionmetrics|External exit": {
+      "id": 19,
+      "knowledge": "External exit",
+      "description": "Exit category where the user left through an external link. Selects 26% of rows.",
+      "definition": "json_extract(interaction_behavior, '$.exit_type') = 'External'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "interactionmetrics"
+      ],
+      "refuted": false
+    },
+    "news_template|interactionmetrics|Timeout exit": {
+      "id": 20,
+      "knowledge": "Timeout exit",
+      "description": "Exit category where the session ended due to timeout. Selects 24% of rows.",
+      "definition": "json_extract(interaction_behavior, '$.exit_type') = 'Timeout'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "interactionmetrics"
+      ],
+      "refuted": false
+    },
+    "news_template|interactionmetrics|Bounce": {
+      "id": 21,
+      "knowledge": "Bounce",
+      "description": "Interaction flagged as a bounce. Selects 52% of rows.",
+      "definition": "json_extract(interaction_behavior, '$.bounce_status') = 'Yes'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "interactionmetrics"
+      ],
+      "refuted": false
+    },
+    "news_template|interactionmetrics|Subscription": {
+      "id": 22,
+      "knowledge": "Subscription",
+      "description": "Conversion type indicating a subscription. Selects 49% of rows.",
+      "definition": "json_extract(interaction_behavior, '$.conversion.status') = 'Subscription'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "interactionmetrics"
+      ],
+      "refuted": false
+    },
+    "news_template|interactionmetrics|Newsletter": {
+      "id": 23,
+      "knowledge": "Newsletter",
+      "description": "Conversion type indicating a newsletter signup. Selects 24% of rows.",
+      "definition": "json_extract(interaction_behavior, '$.conversion.status') = 'Newsletter'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "interactionmetrics"
+      ],
+      "refuted": false
+    },
+    "news_template|interactionmetrics|Share conversion": {
+      "id": 24,
+      "knowledge": "Share conversion",
+      "description": "Conversion type indicating a share. Selects 28% of rows.",
+      "definition": "json_extract(interaction_behavior, '$.conversion.status') = 'Share'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "interactionmetrics"
+      ],
+      "refuted": false
+    },
+    "news_template|articles|Estimated reading time (readsec)": {
+      "id": 25,
+      "knowledge": "Estimated reading time (readsec)",
+      "description": "Time in seconds needed to read an article based on word count at 200 words per minute.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "articles"
+      ],
+      "refuted": false
+    },
+    "news_template|articles|News article": {
+      "id": 26,
+      "knowledge": "News article",
+      "description": "Article in the News top-level category. Selects 21% of rows.",
+      "definition": "catlabel = 'News'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "articles"
+      ],
+      "refuted": false
+    },
+    "news_template|articles|Business article": {
+      "id": 27,
+      "knowledge": "Business article",
+      "description": "Article in the Business top-level category. Selects 21% of rows.",
+      "definition": "catlabel = 'Business'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "articles"
+      ],
+      "refuted": false
+    },
+    "news_template|articles|Entertainment article": {
+      "id": 28,
+      "knowledge": "Entertainment article",
+      "description": "Article in the Entertainment top-level category. Selects 20% of rows.",
+      "definition": "catlabel = 'Entertainment'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "articles"
+      ],
+      "refuted": false
+    },
+    "news_template|articles|Sports article": {
+      "id": 29,
+      "knowledge": "Sports article",
+      "description": "Article in the Sports top-level category. Selects 20% of rows.",
+      "definition": "catlabel = 'Sports'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "articles"
+      ],
+      "refuted": false
+    },
+    "news_template|articles|Technology article": {
+      "id": 30,
+      "knowledge": "Technology article",
+      "description": "Article in the Technology top-level category. Selects 17% of rows.",
+      "definition": "catlabel = 'Technology'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "articles"
+      ],
+      "refuted": false
+    },
+    "news_template|articles|Feature article": {
+      "id": 31,
+      "knowledge": "Feature article",
+      "description": "Article with a Feature subcategory label. Selects 27% of rows.",
+      "definition": "subcatlbl = 'Feature'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "articles"
+      ],
+      "refuted": false
+    },
+    "news_template|articles|Opinion article": {
+      "id": 32,
+      "knowledge": "Opinion article",
+      "description": "Article with an Opinion subcategory label. Selects 25% of rows.",
+      "definition": "subcatlbl = 'Opinion'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "articles"
+      ],
+      "refuted": false
+    },
+    "news_template|articles|International article": {
+      "id": 33,
+      "knowledge": "International article",
+      "description": "Article with an International subcategory label. Selects 25% of rows.",
+      "definition": "subcatlbl = 'International'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "articles"
+      ],
+      "refuted": false
+    },
+    "news_template|articles|Local article": {
+      "id": 34,
+      "knowledge": "Local article",
+      "description": "Article with a Local subcategory label. Selects 23% of rows.",
+      "definition": "subcatlbl = 'Local'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "articles"
+      ],
+      "refuted": false
+    },
+    "news_template|articles|Basic article": {
+      "id": 35,
+      "knowledge": "Basic article",
+      "description": "Article with Basic difficulty level. Selects 34% of rows.",
+      "definition": "difflevel = 'Basic'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "articles"
+      ],
+      "refuted": false
+    },
+    "news_template|articles|Intermediate article": {
+      "id": 36,
+      "knowledge": "Intermediate article",
+      "description": "Article with Intermediate difficulty level. Selects 34% of rows.",
+      "definition": "difflevel = 'Intermediate'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "articles"
+      ],
+      "refuted": false
+    },
+    "news_template|articles|Advanced article": {
+      "id": 37,
+      "knowledge": "Advanced article",
+      "description": "Article with Advanced difficulty level. Selects 32% of rows.",
+      "definition": "difflevel = 'Advanced'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "articles"
+      ],
+      "refuted": false
+    },
+    "news_template|articles|Video article": {
+      "id": 38,
+      "knowledge": "Video article",
+      "description": "Article whose content type is Video. Selects 24% of rows.",
+      "definition": "conttype = 'Video'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "articles"
+      ],
+      "refuted": false
+    },
+    "news_template|systemperformance|Performance score (perfscore)": {
+      "id": 39,
+      "knowledge": "Performance score (perfscore)",
+      "description": "Composite performance metric normalized from 0 to 1, with lower load, error, and warning counts giving a higher score.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        40,
+        41
+      ],
+      "tables": [
+        "systemperformance"
+      ],
+      "refuted": false
+    },
+    "news_template|systemperformance|Error-free run (errcount)": {
+      "id": 40,
+      "knowledge": "Error-free run (errcount)",
+      "description": "A system run with zero errors. Selects 16% of rows.",
+      "definition": "TRIM(errcount) = '0'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "systemperformance"
+      ],
+      "refuted": false
+    },
+    "news_template|systemperformance|Warning-free run (warncount)": {
+      "id": 41,
+      "knowledge": "Warning-free run (warncount)",
+      "description": "A system run with zero warnings. Selects 9% of rows.",
+      "definition": "warncount = 0",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "systemperformance"
+      ],
+      "refuted": false
+    },
+    "news_template|systemperformance|Cache hit (cachestate)": {
+      "id": 42,
+      "knowledge": "Cache hit (cachestate)",
+      "description": "A system run whose cache state is Hit. Selects 35% of rows.",
+      "definition": "TRIM(cachestate) = 'Hit'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "systemperformance"
+      ],
+      "refuted": false
+    },
+    "news_template|systemperformance|API v3 (apiver)": {
+      "id": 43,
+      "knowledge": "API v3 (apiver)",
+      "description": "A system run using API version 3. Selects 34% of rows.",
+      "definition": "TRIM(apiver) = 'v3'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "systemperformance"
+      ],
+      "refuted": false
+    },
+    "news_template|systemperformance|Feature f4 enabled (featset)": {
+      "id": 44,
+      "knowledge": "Feature f4 enabled (featset)",
+      "description": "A system run in which feature set includes feature f4. Selects 40% of rows.",
+      "definition": "',' || TRIM(featset) || ',' LIKE '%,f4,%'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "systemperformance"
+      ],
+      "refuted": false
+    },
+    "news_template|interactions|interaction identifier (intkey)": {
+      "id": 45,
+      "knowledge": "interaction identifier (intkey)",
+      "description": "Unique integer identifier for each interaction row, ordered by interaction timestamp.",
+      "definition": "intkey = ROW_NUMBER() OVER (ORDER BY intts DESC)",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "interactions"
+      ],
+      "refuted": false
+    },
+    "news_template|interactions|numeric sequence value (seqval)": {
+      "id": 46,
+      "knowledge": "numeric sequence value (seqval)",
+      "description": "Numeric sequence of an interaction within its session by interaction timestamp.",
+      "definition": "seqval = ROW_NUMBER() OVER (PARTITION BY seshlink2 ORDER BY intts)",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "interactions"
+      ],
+      "refuted": false
+    },
+    "news_template|interactions|click position (clkpos)": {
+      "id": 47,
+      "knowledge": "click position (clkpos)",
+      "description": "Ordinal position of a click event among click events by click timestamp.",
+      "definition": "clkpos = ROW_NUMBER() OVER (PARTITION BY evttype ORDER BY clkts)",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        48
+      ],
+      "tables": [
+        "interactions"
+      ],
+      "refuted": false
+    },
+    "news_template|interactions|click event": {
+      "id": 48,
+      "knowledge": "click event",
+      "description": "An interaction whose event type is click and that has a click timestamp. Selects 22% of rows.",
+      "definition": "TRIM(evttype) = 'click' AND clkts IS NOT NULL",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "interactions"
+      ],
+      "refuted": false
+    },
+    "news_template|interactions|click metadata": {
+      "id": 49,
+      "knowledge": "click metadata",
+      "description": "Click events include click type, click source, and click context. Selects 22% of rows.",
+      "definition": "TRIM(evttype) = 'click' AND COALESCE(TRIM(clktype), '') <> '' AND COALESCE(TRIM(clksrc), '') <> '' AND COALESCE(TRIM(clkctx), '') <> ''",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        48
+      ],
+      "tables": [
+        "interactions"
+      ],
+      "refuted": false
+    },
+    "news_template|interactions|mobile interaction": {
+      "id": 50,
+      "knowledge": "mobile interaction",
+      "description": "An interaction from a mobile or in-app user agent. Selects 50% of rows.",
+      "definition": "TRIM(agentval) = 'Mobile' OR TRIM(agentval) = 'App'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "interactions"
+      ],
+      "refuted": false
+    },
+    "news_template|interactions|homepage click": {
+      "id": 51,
+      "knowledge": "homepage click",
+      "description": "A click event whose click source is the homepage. Selects 6% of rows.",
+      "definition": "TRIM(evttype) = 'click' AND TRIM(clksrc) = 'Homepage'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        48
+      ],
+      "tables": [
+        "interactions"
+      ],
+      "refuted": false
+    },
+    "news_template|devices|Network speed tier": {
+      "id": 52,
+      "knowledge": "Network speed tier",
+      "description": "Network connection type is assigned from network speed thresholds. Selects 25% of rows.",
+      "definition": "TRIM(conntype) = CASE WHEN netspd >= 80.0 THEN 'Cable' WHEN netspd >= 65.0 AND netspd < 80.0 THEN 'WiFi' WHEN netspd >= 48.0 AND netspd < 65.0 THEN '5G' ELSE '4G' END",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "devices"
+      ],
+      "refuted": false
+    },
+    "news_template|devices|Mobile device platform": {
+      "id": 53,
+      "knowledge": "Mobile device platform",
+      "description": "A device platform is mobile when devtype is Android or iOS. Selects 51% of rows.",
+      "definition": "TRIM(devtype) = 'Android' OR TRIM(devtype) = 'iOS'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "devices"
+      ],
+      "refuted": false
+    },
+    "news_template|devices|Desktop device platform": {
+      "id": 54,
+      "knowledge": "Desktop device platform",
+      "description": "A device platform is desktop when devtype is Windows or MacOS. Selects 49% of rows.",
+      "definition": "TRIM(devtype) = 'Windows' OR TRIM(devtype) = 'MacOS'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "devices"
+      ],
+      "refuted": false
+    },
+    "news_template|devices|Apple device platform": {
+      "id": 55,
+      "knowledge": "Apple device platform",
+      "description": "An Apple device platform is iOS or MacOS. Selects 46% of rows.",
+      "definition": "TRIM(devtype) = 'iOS' OR TRIM(devtype) = 'MacOS'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "devices"
+      ],
+      "refuted": false
+    },
+    "news_template|devices|Safari platform availability": {
+      "id": 56,
+      "knowledge": "Safari platform availability",
+      "description": "Safari is available only on Apple device platforms. Selects 89% of rows.",
+      "definition": "TRIM(brwtype) <> 'Safari' OR TRIM(devtype) IN ('iOS', 'MacOS')",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        55
+      ],
+      "tables": [
+        "devices"
+      ],
+      "refuted": false
+    },
+    "news_template|users|Trial account type": {
+      "id": 57,
+      "knowledge": "Trial account type",
+      "description": "Account type classified as Trial. Selects 36% of rows.",
+      "definition": "TRIM(typelabel) = 'Trial'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "users"
+      ],
+      "refuted": false
+    },
+    "news_template|users|Free account type": {
+      "id": 58,
+      "knowledge": "Free account type",
+      "description": "Account type classified as Free. Selects 30% of rows.",
+      "definition": "TRIM(typelabel) = 'Free'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "users"
+      ],
+      "refuted": false
+    },
+    "news_template|users|Premium account type": {
+      "id": 59,
+      "knowledge": "Premium account type",
+      "description": "Account type classified as Premium. Selects 34% of rows.",
+      "definition": "TRIM(typelabel) = 'Premium'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "users"
+      ],
+      "refuted": false
+    },
+    "news_template|users|New user segment": {
+      "id": 60,
+      "knowledge": "New user segment",
+      "description": "User segment classified as New. Selects 25% of rows.",
+      "definition": "TRIM(seglabel) = 'New'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "users"
+      ],
+      "refuted": false
+    },
+    "news_template|users|Active user segment": {
+      "id": 61,
+      "knowledge": "Active user segment",
+      "description": "User segment classified as Active. Selects 26% of rows.",
+      "definition": "TRIM(seglabel) = 'Active'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "users"
+      ],
+      "refuted": false
+    },
+    "news_template|users|Dormant user segment": {
+      "id": 62,
+      "knowledge": "Dormant user segment",
+      "description": "User segment classified as Dormant. Selects 24% of rows.",
+      "definition": "TRIM(seglabel) = 'Dormant'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "users"
+      ],
+      "refuted": false
+    },
+    "news_template|users|Regular user segment": {
+      "id": 63,
+      "knowledge": "Regular user segment",
+      "description": "User segment classified as Regular. Selects 26% of rows.",
+      "definition": "TRIM(seglabel) = 'Regular'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "users"
+      ],
+      "refuted": false
+    },
+    "news_template|users|Like feedback": {
+      "id": 64,
+      "knowledge": "Like feedback",
+      "description": "User feedback sentiment classified as Like. Selects 68% of rows.",
+      "definition": "TRIM(json_extract(user_preferences, '$.feedback.type')) = 'Like'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "users"
+      ],
+      "refuted": false
+    },
+    "news_template|users|Dislike feedback": {
+      "id": 65,
+      "knowledge": "Dislike feedback",
+      "description": "User feedback sentiment classified as Dislike. Selects 32% of rows.",
+      "definition": "TRIM(json_extract(user_preferences, '$.feedback.type')) = 'Dislike'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "users"
+      ],
+      "refuted": false
+    },
+    "news_template|interactionmetrics,sessions|Reading-to-duration ratio": {
+      "id": 66,
+      "knowledge": "Reading-to-duration ratio",
+      "description": "Reading time spent in an interaction divided by total session duration.",
+      "definition": "json_extract(interaction_behavior, '$.time_spent.reading_seconds') / seshdur",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "interactionmetrics",
+        "sessions"
+      ],
+      "refuted": false
+    },
+    "news_template|interactionmetrics,sessions|Attention-to-duration ratio": {
+      "id": 67,
+      "knowledge": "Attention-to-duration ratio",
+      "description": "Attention time spent in an interaction divided by total session duration.",
+      "definition": "json_extract(interaction_behavior, '$.time_spent.attention_time') / seshdur",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "interactionmetrics",
+        "sessions"
+      ],
+      "refuted": false
+    },
+    "news_template|articles,sessions|Long-session article view": {
+      "id": 68,
+      "knowledge": "Long-session article view",
+      "description": "Session lasting longer than the article's estimated reading time.",
+      "definition": "seshdur > readsec",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        25
+      ],
+      "tables": [
+        "articles",
+        "sessions"
+      ],
+      "refuted": false
+    },
+    "news_template|articles,sessions|High-quality article session": {
+      "id": 69,
+      "knowledge": "High-quality article session",
+      "description": "Session where a high-quality article was viewed with high engagement.",
+      "definition": "qualscore > 0.8 AND engscore > 0.5",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "articles",
+        "sessions"
+      ],
+      "refuted": false
+    },
+    "news_template|recommendations,sessions|Recommendation overperformance": {
+      "id": 70,
+      "knowledge": "Recommendation overperformance",
+      "description": "Recommendation whose score exceeds the session's click-through rate.",
+      "definition": "recscore > ctrval",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        0,
+        12
+      ],
+      "tables": [
+        "recommendations",
+        "sessions"
+      ],
+      "refuted": false
+    },
+    "news_template|sessions|Relevance-utility gap": {
+      "id": 71,
+      "knowledge": "Relevance-utility gap",
+      "description": "Difference between session relevance score and recommendation utility score.",
+      "definition": "relscore - recutil",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sessions"
+      ],
+      "refuted": false
+    },
+    "news_template|sessions|Personalized engagement score": {
+      "id": 72,
+      "knowledge": "Personalized engagement score",
+      "description": "Product of session personalization accuracy and article engagement rate.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sessions"
+      ],
+      "refuted": false
+    },
+    "news_template|sessions|Preference-weighted engagement": {
+      "id": 73,
+      "knowledge": "Preference-weighted engagement",
+      "description": "Product of user satisfaction score and session engagement score.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sessions"
+      ],
+      "refuted": false
+    }
+  },
+  "meta": {
+    "sessions": {
+      "profiled_at": "2026-08-30T12:55:22.187482+00:00"
+    },
+    "recommendations": {
+      "profiled_at": "2026-08-30T12:55:22.187482+00:00"
+    },
+    "interactionmetrics": {
+      "profiled_at": "2026-08-30T12:55:22.187482+00:00"
+    },
+    "articles": {
+      "profiled_at": "2026-08-30T12:55:22.187482+00:00"
+    },
+    "systemperformance": {
+      "profiled_at": "2026-08-30T12:55:22.187482+00:00"
+    },
+    "interactions": {
+      "profiled_at": "2026-08-30T12:55:22.187482+00:00"
+    },
+    "articles,sessions": {
+      "profiled_at": "2026-08-30T12:55:22.187482+00:00"
+    },
+    "devices": {
+      "profiled_at": "2026-08-30T12:55:22.187482+00:00"
+    },
+    "recommendations,sessions": {
+      "profiled_at": "2026-08-30T12:55:22.187482+00:00"
+    },
+    "interactionmetrics,sessions": {
+      "profiled_at": "2026-08-30T12:55:22.187482+00:00"
+    },
+    "users": {
+      "profiled_at": "2026-08-30T12:55:22.187482+00:00"
+    }
+  }
+}

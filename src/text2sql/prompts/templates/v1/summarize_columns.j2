@@ -1,0 +1,9 @@
+{# version: v1, description: Column profiling summarization — one table's columns; the rules are the cached system prefix #}
+Table: {{ table_name }}
+Other columns in table: {{ other_columns }}
+
+Columns
+{% for c in columns %}
+### {{ c.column_name }} ({{ c.column_type }})
+Profile: {{ c.profile_english }}
+{% endfor %}

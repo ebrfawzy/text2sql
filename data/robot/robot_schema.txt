@@ -1,0 +1,250 @@
+CREATE TABLE "actuation_data" (
+actreg text(20) NOT NULL,
+actoperref text(20) NULL,
+actdetref text(20) NULL,
+actrecref text(20) NULL,
+tcpxval real(7,2) NULL,
+tcpyval integer(24) NULL,
+tcpzval integer(24) NULL,
+tcp_rxval real(6,2) NULL,
+tcp_ryval integer(24) NULL,
+tcp_rzval integer(24) NULL,
+tcpspeedval real(8,2) NULL,
+tcpaccelval integer(24) NULL,
+pathaccmmval real(6,3) NULL,
+poserrmmval integer(24) NULL,
+orienterrdegval integer(24) NULL,
+payloadwval real(6,2) NULL,
+payloadival integer(24) NULL,
+m1currval real(6,2) NULL,
+m2currval integer(24) NULL,
+m3currval integer(24) NULL,
+m4currval real(6,2) NULL,
+m5currval integer(24) NULL,
+m6currval integer(24) NULL,
+m1voltval real(5,2) NULL,
+m2voltval integer(24) NULL,
+m3voltval integer(24) NULL,
+m4voltval real(6,2) NULL,
+m5voltval integer(24) NULL,
+m6voltval integer(24) NULL,
+    PRIMARY KEY (actreg),
+    FOREIGN KEY (actrecref) REFERENCES robot_record(recreg),
+    FOREIGN KEY (actoperref) REFERENCES operation(operreg),
+    FOREIGN KEY (actdetref) REFERENCES robot_details(botdetreg)
+);
+First 3 rows:
+actreg    actoperref    actdetref    actrecref      tcpxval    tcpyval    tcpzval    tcp_rxval    tcp_ryval    tcp_rzval    tcpspeedval    tcpaccelval    pathaccmmval    poserrmmval    orienterrdegval    payloadwval    payloadival    m1currval    m2currval    m3currval    m4currval    m5currval    m6currval    m1voltval    m2voltval    m3voltval    m4voltval    m5voltval    m6voltval
+RF100725  RF100725      RF100725     RF100725       -105.98    -662.19    1023.44      -156.28      -150.3         -6.26        1231.14           6.65           0.797          0.069              0.471           1.98           1.78         1.36         8.61         3.31        14.16         6.16         1.76         1.26        15.66        10.6          9.13        28.47        32.12
+RF506310  RF506310      RF506310     RF506310        655        726.58    1952.1       -153.02       153.21      -130.1         1923.65           2.02           0.835          0.493              0.365           0.83           8.7          6.58         3.11        10.97        16.01        14.88        13.27        46.58        43.21        38.36        13.53        40.07        30.29
+RF422033  RF422033      RF422033     RF422033        426.2      873       1618.63      -133.16       -85.31       166.64         191.04           8.43           0.07           0.355              0.234         144.85           8.85        14.97        13.39        19.18         1.31         2.38         1.81        40.66         5.33        14.07        45.05        19.58        11.39
+...
+
+CREATE TABLE "joint_condition" (
+jcondoperref text(20) NULL,
+jcrecref text(20) NULL,
+jcdetref text(20) NULL,
+j1tempval real(5,2) NULL,
+j2tempval integer(24) NULL,
+j3tempval real(6,3) NULL,
+j4tempval integer(24) NULL,
+j5tempval real(7,2) NULL,
+j6tempval integer(24) NULL,
+j1vibval real(5,3) NULL,
+j2vibval integer(24) NULL,
+j3vibval integer(24) NULL,
+j4vibval real(5,3) NULL,
+j5vibval integer(24) NULL,
+j6vibval integer(24) NULL,
+j1backval real(5,4) NULL,
+j2backval real(6,3) NULL,
+j3backval integer(24) NULL,
+j4backval integer(24) NULL,
+j5backval real(7,4) NULL,
+j6backval integer(24) NULL,
+    FOREIGN KEY (jcrecref) REFERENCES robot_record(recreg),
+    FOREIGN KEY (jcondoperref) REFERENCES operation(operreg),
+    FOREIGN KEY (jcdetref) REFERENCES robot_details(botdetreg)
+);
+First 3 rows:
+jcondoperref    jcrecref    jcdetref      j1tempval    j2tempval    j3tempval    j4tempval    j5tempval    j6tempval    j1vibval    j2vibval    j3vibval    j4vibval    j5vibval    j6vibval    j1backval    j2backval    j3backval    j4backval    j5backval    j6backval
+RF100725        RF100725    RF100725          20.57        39.54        42.16        34.88        70.15        64.39       1.14        1.636       1.687       3.264       2.052       6.422       0.0352        0.027       0.0946       0.056        0.0907       0.046
+RF506310        RF506310    RF506310          22.06        36.77        23.04        57.44        64.65        79.03       6.271       2.268       9.437       9.296       8.948       5.126       0.0995        0.067       0.0927       0.0269       0.0183       0.0941
+RF422033        RF422033    RF422033          40.14        36.75        24.8         47.02        42.92        53.8        5.295       1.125       5.297       0.86        0.146       0.779       0.0968        0.019       0.0447       0.0974       0.0116       0.0868
+...
+
+CREATE TABLE "joint_performance" (
+jperfoperref text(20) NULL,
+jperfrecref text(20) NULL,
+jperfdetref text(20) NULL,
+joint_metrics TEXT NULL,
+    FOREIGN KEY (jperfrecref) REFERENCES robot_record(recreg),
+    FOREIGN KEY (jperfoperref) REFERENCES operation(operreg),
+    FOREIGN KEY (jperfdetref) REFERENCES robot_details(botdetreg)
+);
+First 3 rows:
+jperfoperref    jperfrecref    jperfdetref    joint_metrics
+RF100725        RF100725       RF100725       {"joint1": {"angle": -37.72, "speed": 36.7, "torque": 12.00}, "joint2": {"angle": 177.36, "speed": 65.060, "torque": 79.88}, "joint3": {"angle": 83.27, "speed": 174.45, "torque": 55.91}, "joint4": {"angle": -151.100, "speed": 96.65, "torque": 75.220}, "joint5": {"angle": -162.94, "speed": 167.12, "torque": 2.1400}, "joint6": {"angle": -72.08, "speed": 69.94, "torque": 45.07}}
+RF506310        RF506310       RF506310       {"joint1": {"angle": -101.41, "speed": 149.9, "torque": 96.26}, "joint2": {"angle": -102.61, "speed": 169.960, "torque": 51.7}, "joint3": {"angle": -99.46, "speed": 79.3, "torque": 55.51}, "joint4": {"angle": 27.540, "speed": 127.46, "torque": 5.630}, "joint5": {"angle": -173.82, "speed": 80.96, "torque": 89.0200}, "joint6": {"angle": -79.11, "speed": 41.42, "torque": 72.09}}
+RF422033        RF422033       RF422033       {"joint1": {"angle": -148.20, "speed": 87.8, "torque": 47.04}, "joint2": {"angle": 176.99, "speed": 134.130, "torque": 49.17}, "joint3": {"angle": 18.72, "speed": 22.11, "torque": 31.22}, "joint4": {"angle": 90.830, "speed": 7.6, "torque": 6.700}, "joint5": {"angle": 17.32, "speed": 9.00, "torque": 21.6600}, "joint6": {"angle": -24.51, "speed": 86.84, "torque": 34.4}}
+...
+
+CREATE TABLE "maintenance_and_fault" (
+upkeepactuation text(20) NOT NULL,
+upkeepoperation text(20) NULL,
+upkeeprobot text(20) NULL,
+faultcodeval text(25) NULL,
+issuecategoryval text(22) NULL,
+issuelevelval text(18) NULL,
+faultpredscore integer(24) NULL,
+faulttypeestimation text(20) NULL,
+rulhours integer(32) NULL,
+upkeepduedays integer(16) NULL,
+upkeepcostest real(9,3) NULL,
+    PRIMARY KEY (upkeepactuation),
+    FOREIGN KEY (upkeeprobot) REFERENCES robot_details(botdetreg),
+    FOREIGN KEY (upkeepoperation) REFERENCES operation(operreg),
+    FOREIGN KEY (upkeepactuation) REFERENCES actuation_data(actreg)
+);
+First 3 rows:
+upkeepactuation    upkeepoperation    upkeeprobot    faultcodeval    issuecategoryval    issuelevelval      faultpredscore  faulttypeestimation      rulhours    upkeepduedays    upkeepcostest
+RF100725           RF100725           RF100725       E8902                               Low                         0.021  Motor                        1601               16          7299.59
+RF506310           RF506310           RF506310                       Communication       High                        0.493  Joint                        4728              161          5236.28
+RF422033           RF422033           RF422033                       Electrical          Medium                      0.69   Gearbox                      4309              135          7885.93
+...
+
+CREATE TABLE "mechanical_status" (
+mechactref text(20) NULL,
+mechoperref text(20) NULL,
+mechdetref text(20) NULL,
+brk1statval text(20) NULL,
+brk2statval text(30) NULL,
+brk3statval text(25) NULL,
+brk4statval text(25) NULL,
+brk5statval text(55) NULL,
+brk6statval text(25) NULL,
+enc1statval text(35) NULL,
+enc2statval text(20) NULL,
+enc3statval text(40) NULL,
+enc4statval text(45) NULL,
+enc5statval text(25) NULL,
+enc6statval text(20) NULL,
+gb1tempval real(6,2) NULL,
+gb2tempval integer(24) NULL,
+gb3tempval integer(24) NULL,
+gb4tempval real(7,3) NULL,
+gb5tempval integer(24) NULL,
+gb6tempval integer(24) NULL,
+gb1vibval real(6,3) NULL,
+gb2vibval integer(24) NULL,
+gb3vibval integer(24) NULL,
+gb4vibval real(5,3) NULL,
+gb5vibval integer(24) NULL,
+gb6vibval integer(24) NULL,
+    FOREIGN KEY (mechoperref) REFERENCES operation(operreg),
+    FOREIGN KEY (mechdetref) REFERENCES robot_details(botdetreg),
+    FOREIGN KEY (mechactref) REFERENCES actuation_data(actreg)
+);
+First 3 rows:
+mechactref    mechoperref    mechdetref    brk1statval    brk2statval    brk3statval    brk4statval    brk5statval    brk6statval    enc1statval    enc2statval    enc3statval    enc4statval    enc5statval    enc6statval      gb1tempval    gb2tempval    gb3tempval    gb4tempval    gb5tempval    gb6tempval    gb1vibval    gb2vibval    gb3vibval    gb4vibval    gb5vibval    gb6vibval
+RF100725      RF100725       RF100725      Normal         Error          Normal         Warning        Warning        Normal         Warning        Error          Normal         Normal         Normal         Normal                24.92         21.86         56.76         35.39         60.72         48.18        3.273        1.912        4.821        5.302        7.001        5.74
+RF506310      RF506310       RF506310      Warning        Warning        Error          Warning        Warning        Warning        Warning        Warning        Error          Error          Normal         Warning               70.89         79.14         25.94         24            60.1          41.26        9.278        5.005        1.995        9.881        0.224        4.942
+RF422033      RF422033       RF422033      Normal         Warning        Normal         Normal         Warning        Error          Normal         Error          Normal         Warning        Warning        Warning               68.57         26.55         36.3          53.52         71            22.96        8.652        8.889        2.674        5.214        5.057        5.418
+...
+
+CREATE TABLE "operation" (
+operreg text(20) NOT NULL,
+operbotdetref text(20) NULL,
+operrecref text(20) NULL,
+totopshrval real(9,2) NULL,
+apptypeval text(40) NULL,
+opermodeval text(25) NULL,
+currprogval text(40) NULL,
+progcyclecount integer(32) NULL,
+cycletimesecval real(8,3) NULL,
+axiscountval integer(16) NULL,
+    PRIMARY KEY (operreg),
+    FOREIGN KEY (operrecref) REFERENCES robot_record(recreg),
+    FOREIGN KEY (operbotdetref) REFERENCES robot_details(botdetreg)
+);
+First 3 rows:
+operreg    operbotdetref    operrecref      totopshrval  apptypeval    opermodeval    currprogval      progcyclecount    cycletimesecval    axiscountval
+RF100725   RF100725         RF100725              43138  Assembly      Programming    PRG_8419                 177681              39.29               7
+RF506310   RF506310         RF506310              34903  Painting      Maintenance    PRG_9097                 498231             211.82               6
+RF422033   RF422033         RF422033               9861  Palletizing   Programming    PRG_4901                 508274              80.74               5
+...
+
+CREATE TABLE "performance_and_safety" (
+effectivenessactuation text(20) NOT NULL,
+effectivenessoperation text(20) NULL,
+effectivenessrobot text(20) NULL,
+conditionindexval real(6,4) NULL,
+effectivenessindexval real(4,2) NULL,
+qualitymeasureval integer(24) NULL,
+energyusekwhval real(7,2) NULL,
+pwrfactorval integer(24) NULL,
+airpressval real(6,3) NULL,
+toolchangecount integer(32) NULL,
+toolwearpct integer(24) NULL,
+safety_metrics TEXT NULL,
+    PRIMARY KEY (effectivenessactuation),
+    FOREIGN KEY (effectivenessrobot) REFERENCES robot_details(botdetreg),
+    FOREIGN KEY (effectivenessoperation) REFERENCES operation(operreg),
+    FOREIGN KEY (effectivenessactuation) REFERENCES actuation_data(actreg)
+);
+First 3 rows:
+effectivenessactuation    effectivenessoperation    effectivenessrobot      conditionindexval    effectivenessindexval    qualitymeasureval    energyusekwhval    pwrfactorval    airpressval    toolchangecount    toolwearpct  safety_metrics
+RF806459                  RF806459                  RF806459                            0.708                     0.63                0.896              97.67           0.959           5.11                864          50.31  {"overloads": 5, "collisions": 1, "safety_state": "Normal", "emergency_stops": 3, "zone_violations": 4, "speed_violations": 10, "calibration_state": "Valid               "}
+RF478822                  RF478822                  RF478822                            0.794                     0.56                0.24               75.64           0.845           6.76                464          86.9   {"overloads": 4, "collisions": null, "safety_state": "Normal", "emergency_stops": null, "zone_violations": 4, "speed_violations": 7, "calibration_state": "Due                 "}
+RF196869                  RF196869                  RF196869                            0.407                     0.73                0.24               52.24           0.837           6.06                954          94.66  {"overloads": 1, "collisions": 3, "safety_state": "Normal", "emergency_stops": 3, "zone_violations": 2, "speed_violations": 10, "calibration_state": "Valid               "}
+...
+
+CREATE TABLE "robot_details" (
+botdetreg text(20) NOT NULL,
+mfgnameval text(60) NULL,
+modelseriesval text(40) NULL,
+bottypeval text(15) NULL,
+payloadcapkg real(9,2) NULL,
+reachmmval integer(16) NULL,
+instdateval TEXT NULL,
+fwversionval text(25) NULL,
+ctrltypeval text(40) NULL,
+    PRIMARY KEY (botdetreg),
+    FOREIGN KEY (botdetreg) REFERENCES robot_record(recreg)
+);
+First 3 rows:
+botdetreg    mfgnameval    modelseriesval    bottypeval       payloadcapkg    reachmmval  instdateval    fwversionval    ctrltypeval
+RF100725     FANUC         Series_784        Delta                       5          1592  2023-06-10     9.6.6           Controller_C2
+RF506310     Yaskawa       Series_892        Collaborative               5          1160  2022-09-14     3.3.7           Controller_C4
+RF422033     Yaskawa       Series_525        Cartesian                 200          2374  2022-11-19     4.6.6           Controller_B5
+...
+
+CREATE TABLE "robot_record" (
+recreg text(20) NOT NULL,
+rects text(6) NOT NULL,
+botcode text(25) NOT NULL,
+    PRIMARY KEY (recreg)
+);
+First 3 rows:
+recreg    rects                       botcode
+RF100725  2025-02-19 00:10:46.275346  RB2073
+RF506310  2025-02-18 08:48:23.275346  RB9067
+RF422033  2025-02-18 12:20:12.276376  RB2996
+...
+
+CREATE TABLE "system_controller" (
+systemoverseeractuation text(20) NOT NULL,
+systemoverseeroperation text(20) NULL,
+systemoverseerrobot text(20) NULL,
+controller_metrics TEXT NULL,
+    PRIMARY KEY (systemoverseeractuation),
+    FOREIGN KEY (systemoverseerrobot) REFERENCES robot_details(botdetreg),
+    FOREIGN KEY (systemoverseeroperation) REFERENCES operation(operreg),
+    FOREIGN KEY (systemoverseeractuation) REFERENCES actuation_data(actreg)
+);
+First 3 rows:
+systemoverseeractuation    systemoverseeroperation    systemoverseerrobot    controller_metrics
+RF977036                   RF977036                   RF977036               {"load_value": 75.46, "memory_usage": 63.97, "thermal_level": 52.38, "cabinet_humidity": 53.91, "cabinet_temperature": 36.090}
+RF616012                   RF616012                   RF616012               {"load_value": 18.80, "memory_usage": 43.92, "thermal_level": 31.23, "cabinet_humidity": 61.66, "cabinet_temperature": 44.210}
+RF997271                   RF997271                   RF997271               {"load_value": 30.27, "memory_usage": 69.84, "thermal_level": 33.65, "cabinet_humidity": 59.50, "cabinet_temperature": 39.140}
+...

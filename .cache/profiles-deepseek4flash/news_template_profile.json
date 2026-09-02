@@ -1,0 +1,7351 @@
+{
+  "version": 1,
+  "profiled_at": "2026-08-30T11:43:21.040343+00:00",
+  "columns": {
+    "news_template|articles|artkey": {
+      "table_name": "articles",
+      "column_name": "artkey",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "1",
+      "max_value": "999",
+      "top_k_values": [
+        {
+          "value": "1",
+          "count": 1
+        },
+        {
+          "value": "2",
+          "count": 1
+        },
+        {
+          "value": "3",
+          "count": 1
+        },
+        {
+          "value": "4",
+          "count": 1
+        },
+        {
+          "value": "5",
+          "count": 1
+        },
+        {
+          "value": "6",
+          "count": 1
+        },
+        {
+          "value": "7",
+          "count": 1
+        },
+        {
+          "value": "8",
+          "count": 1
+        },
+        {
+          "value": "9",
+          "count": 1
+        },
+        {
+          "value": "10",
+          "count": 1
+        }
+      ],
+      "min_length": 1,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D",
+        "DDDD"
+      ]
+    },
+    "news_template|articles|catlabel": {
+      "table_name": "articles",
+      "column_name": "catlabel",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 5,
+      "min_value": "Business",
+      "max_value": "Technology",
+      "top_k_values": [
+        {
+          "value": "News",
+          "count": 212
+        },
+        {
+          "value": "Business",
+          "count": 212
+        },
+        {
+          "value": "Entertainment",
+          "count": 205
+        },
+        {
+          "value": "Sports",
+          "count": 202
+        },
+        {
+          "value": "Technology",
+          "count": 169
+        }
+      ],
+      "min_length": 4,
+      "max_length": 13,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAAAAAAA",
+        "AAAAAAAAAAAAA",
+        "AAAAAA",
+        "AAAAAAAAAA"
+      ]
+    },
+    "news_template|articles|subcatlbl": {
+      "table_name": "articles",
+      "column_name": "subcatlbl",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "Feature",
+      "max_value": "Opinion",
+      "top_k_values": [
+        {
+          "value": "Feature",
+          "count": 269
+        },
+        {
+          "value": "Opinion",
+          "count": 252
+        },
+        {
+          "value": "International",
+          "count": 249
+        },
+        {
+          "value": "Local",
+          "count": 230
+        }
+      ],
+      "min_length": 5,
+      "max_length": 13,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAAAAAAAAA",
+        "AAAAA"
+      ]
+    },
+    "news_template|articles|pubtime": {
+      "table_name": "articles",
+      "column_name": "pubtime",
+      "column_type": "TEXT(6)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 169,
+      "min_value": "2025-02-12 08:31:16",
+      "max_value": "2025-02-19 08:31:16",
+      "top_k_values": [
+        {
+          "value": "2025-02-14 11:31:16",
+          "count": 15
+        },
+        {
+          "value": "2025-02-14 15:31:16",
+          "count": 13
+        },
+        {
+          "value": "2025-02-17 07:31:16",
+          "count": 12
+        },
+        {
+          "value": "2025-02-16 10:31:16",
+          "count": 12
+        },
+        {
+          "value": "2025-02-12 16:31:16",
+          "count": 12
+        },
+        {
+          "value": "2025-02-18 15:31:16",
+          "count": 11
+        },
+        {
+          "value": "2025-02-17 22:31:16",
+          "count": 11
+        },
+        {
+          "value": "2025-02-16 03:31:16",
+          "count": 11
+        },
+        {
+          "value": "2025-02-15 04:31:16",
+          "count": 11
+        },
+        {
+          "value": "2025-02-14 02:31:16",
+          "count": 11
+        }
+      ],
+      "min_length": 19,
+      "max_length": 19,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDD-DD-DD DD:DD:DD"
+      ]
+    },
+    "news_template|articles|authname": {
+      "table_name": "articles",
+      "column_name": "authname",
+      "column_type": "TEXT(200)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 991,
+      "min_value": "Aaron Allen",
+      "max_value": "Zachary Walters",
+      "top_k_values": [
+        {
+          "value": "Michael Brown",
+          "count": 3
+        },
+        {
+          "value": "Valerie Hudson",
+          "count": 2
+        },
+        {
+          "value": "Stephanie Davis",
+          "count": 2
+        },
+        {
+          "value": "Scott Williams",
+          "count": 2
+        },
+        {
+          "value": "Melissa Garcia",
+          "count": 2
+        },
+        {
+          "value": "Megan Doyle",
+          "count": 2
+        },
+        {
+          "value": "Katherine Rodriguez",
+          "count": 2
+        },
+        {
+          "value": "John Stevens",
+          "count": 2
+        },
+        {
+          "value": "Zachary Walters",
+          "count": 1
+        },
+        {
+          "value": "Zachary Travis",
+          "count": 1
+        }
+      ],
+      "min_length": 7,
+      "max_length": 24,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA AAAAAA",
+        "AAAAA AAAAA",
+        "AAAAAAA AAAAAA",
+        "AAAAAA AAAAAAA",
+        "AAAAAA AAAAA"
+      ]
+    },
+    "news_template|articles|srcref": {
+      "table_name": "articles",
+      "column_name": "srcref",
+      "column_type": "TEXT(150)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 983,
+      "min_value": "Abbott Group",
+      "max_value": "Zamora, Hernandez and Carpenter",
+      "top_k_values": [
+        {
+          "value": "Smith Group",
+          "count": 3
+        },
+        {
+          "value": "Miller and Sons",
+          "count": 3
+        },
+        {
+          "value": "Wright Ltd",
+          "count": 2
+        },
+        {
+          "value": "Williams Group",
+          "count": 2
+        },
+        {
+          "value": "Stewart and Sons",
+          "count": 2
+        },
+        {
+          "value": "Smith PLC",
+          "count": 2
+        },
+        {
+          "value": "Rodriguez Ltd",
+          "count": 2
+        },
+        {
+          "value": "Ramirez Ltd",
+          "count": 2
+        },
+        {
+          "value": "Odonnell Inc",
+          "count": 2
+        },
+        {
+          "value": "Montgomery Inc",
+          "count": 2
+        }
+      ],
+      "min_length": 7,
+      "max_length": 32,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA AAA",
+        "AAAAA AAA",
+        "AAAAAAA AAA",
+        "AAAAAA-AAAAAA",
+        "AAAAA-AAAAAA"
+      ]
+    },
+    "news_template|articles|wordlen": {
+      "table_name": "articles",
+      "column_name": "wordlen",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 904,
+      "min_value": "1002",
+      "max_value": "996",
+      "top_k_values": [
+        {
+          "value": "3950",
+          "count": 4
+        },
+        {
+          "value": "3406",
+          "count": 4
+        },
+        {
+          "value": "4778",
+          "count": 3
+        },
+        {
+          "value": "4168",
+          "count": 3
+        },
+        {
+          "value": "4060",
+          "count": 3
+        },
+        {
+          "value": "2241",
+          "count": 3
+        },
+        {
+          "value": "1865",
+          "count": 3
+        },
+        {
+          "value": "413",
+          "count": 3
+        },
+        {
+          "value": "4930",
+          "count": 2
+        },
+        {
+          "value": "4828",
+          "count": 2
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDD",
+        "DDD"
+      ]
+    },
+    "news_template|articles|readsec": {
+      "table_name": "articles",
+      "column_name": "readsec",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 668,
+      "min_value": "100",
+      "max_value": "997",
+      "top_k_values": [
+        {
+          "value": "1147",
+          "count": 5
+        },
+        {
+          "value": "876",
+          "count": 5
+        },
+        {
+          "value": "1032",
+          "count": 4
+        },
+        {
+          "value": "974",
+          "count": 4
+        },
+        {
+          "value": "948",
+          "count": 4
+        },
+        {
+          "value": "837",
+          "count": 4
+        },
+        {
+          "value": "817",
+          "count": 4
+        },
+        {
+          "value": "577",
+          "count": 4
+        },
+        {
+          "value": "556",
+          "count": 4
+        },
+        {
+          "value": "538",
+          "count": 4
+        }
+      ],
+      "min_length": 2,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DDDD",
+        "DD"
+      ]
+    },
+    "news_template|articles|difflevel": {
+      "table_name": "articles",
+      "column_name": "difflevel",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Advanced",
+      "max_value": "Intermediate",
+      "top_k_values": [
+        {
+          "value": "Intermediate",
+          "count": 342
+        },
+        {
+          "value": "Basic",
+          "count": 335
+        },
+        {
+          "value": "Advanced",
+          "count": 323
+        }
+      ],
+      "min_length": 5,
+      "max_length": 12,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAAAAA",
+        "AAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "news_template|articles|freshscore": {
+      "table_name": "articles",
+      "column_name": "freshscore",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 101,
+      "min_value": "0.0",
+      "max_value": "1.0",
+      "top_k_values": [
+        {
+          "value": "0.32",
+          "count": 20
+        },
+        {
+          "value": "0.11",
+          "count": 17
+        },
+        {
+          "value": "0.93",
+          "count": 16
+        },
+        {
+          "value": "0.54",
+          "count": 16
+        },
+        {
+          "value": "0.48",
+          "count": 16
+        },
+        {
+          "value": "0.73",
+          "count": 14
+        },
+        {
+          "value": "0.57",
+          "count": 14
+        },
+        {
+          "value": "0.46",
+          "count": 14
+        },
+        {
+          "value": "0.1",
+          "count": 14
+        },
+        {
+          "value": "0.02",
+          "count": 14
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "news_template|articles|qualscore": {
+      "table_name": "articles",
+      "column_name": "qualscore",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 101,
+      "min_value": "0.0",
+      "max_value": "1.0",
+      "top_k_values": [
+        {
+          "value": "0.12",
+          "count": 21
+        },
+        {
+          "value": "0.42",
+          "count": 20
+        },
+        {
+          "value": "0.85",
+          "count": 18
+        },
+        {
+          "value": "0.15",
+          "count": 17
+        },
+        {
+          "value": "0.3",
+          "count": 16
+        },
+        {
+          "value": "0.93",
+          "count": 15
+        },
+        {
+          "value": "0.53",
+          "count": 15
+        },
+        {
+          "value": "0.24",
+          "count": 15
+        },
+        {
+          "value": "0.19",
+          "count": 15
+        },
+        {
+          "value": "0.02",
+          "count": 15
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "news_template|articles|sentscore": {
+      "table_name": "articles",
+      "column_name": "sentscore",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 200,
+      "min_value": "-0.01",
+      "max_value": "1.0",
+      "top_k_values": [
+        {
+          "value": "0.4",
+          "count": 15
+        },
+        {
+          "value": "-0.25",
+          "count": 12
+        },
+        {
+          "value": "0.35",
+          "count": 11
+        },
+        {
+          "value": "-0.33",
+          "count": 11
+        },
+        {
+          "value": "0.51",
+          "count": 10
+        },
+        {
+          "value": "0.48",
+          "count": 10
+        },
+        {
+          "value": "0.45",
+          "count": 10
+        },
+        {
+          "value": "-0.77",
+          "count": 10
+        },
+        {
+          "value": "0.79",
+          "count": 9
+        },
+        {
+          "value": "0.53",
+          "count": 9
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "-D.DD",
+        "D.DD",
+        "D.D",
+        "-D.D"
+      ]
+    },
+    "news_template|articles|contrscore": {
+      "table_name": "articles",
+      "column_name": "contrscore",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 101,
+      "min_value": "0.0",
+      "max_value": "1.0",
+      "top_k_values": [
+        {
+          "value": "0.96",
+          "count": 17
+        },
+        {
+          "value": "0.84",
+          "count": 17
+        },
+        {
+          "value": "0.71",
+          "count": 17
+        },
+        {
+          "value": "0.7",
+          "count": 17
+        },
+        {
+          "value": "0.53",
+          "count": 17
+        },
+        {
+          "value": "0.15",
+          "count": 17
+        },
+        {
+          "value": "0.1",
+          "count": 16
+        },
+        {
+          "value": "0.41",
+          "count": 15
+        },
+        {
+          "value": "0.27",
+          "count": 15
+        },
+        {
+          "value": "0.77",
+          "count": 14
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "news_template|articles|tagset": {
+      "table_name": "articles",
+      "column_name": "tagset",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 85,
+      "min_value": "Analysis",
+      "max_value": "Trending,Investigation,Interview",
+      "top_k_values": [
+        {
+          "value": "Breaking",
+          "count": 76
+        },
+        {
+          "value": "Interview",
+          "count": 72
+        },
+        {
+          "value": "Trending",
+          "count": 70
+        },
+        {
+          "value": "Analysis",
+          "count": 67
+        },
+        {
+          "value": "Investigation",
+          "count": 64
+        },
+        {
+          "value": "Trending,Breaking",
+          "count": 24
+        },
+        {
+          "value": "Investigation,Trending",
+          "count": 24
+        },
+        {
+          "value": "Interview,Investigation",
+          "count": 21
+        },
+        {
+          "value": "Analysis,Trending",
+          "count": 20
+        },
+        {
+          "value": "Analysis,Interview",
+          "count": 20
+        }
+      ],
+      "min_length": 8,
+      "max_length": 32,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAAAAAA,AAAAAAAA",
+        "AAAAAAAAA",
+        "AAAAAAAAAAAAA",
+        "AAAAAAAAAAAAA,AAAAAAAA"
+      ]
+    },
+    "news_template|articles|conttype": {
+      "table_name": "articles",
+      "column_name": "conttype",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "Article",
+      "max_value": "Video",
+      "top_k_values": [
+        {
+          "value": "Article",
+          "count": 260
+        },
+        {
+          "value": "Gallery",
+          "count": 250
+        },
+        {
+          "value": "Interactive",
+          "count": 247
+        },
+        {
+          "value": "Video",
+          "count": 243
+        }
+      ],
+      "min_length": 5,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAAAAAAA",
+        "AAAAA"
+      ]
+    },
+    "news_template|articles|contformat": {
+      "table_name": "articles",
+      "column_name": "contformat",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "AMP",
+      "max_value": "Text",
+      "top_k_values": [
+        {
+          "value": "AMP",
+          "count": 259
+        },
+        {
+          "value": "HTML",
+          "count": 256
+        },
+        {
+          "value": "Text",
+          "count": 252
+        },
+        {
+          "value": "Mobile",
+          "count": 233
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAA",
+        "AAAAAA"
+      ]
+    },
+    "news_template|articles|accscore": {
+      "table_name": "articles",
+      "column_name": "accscore",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 101,
+      "min_value": "0.0",
+      "max_value": "1.0",
+      "top_k_values": [
+        {
+          "value": "0.98",
+          "count": 18
+        },
+        {
+          "value": "0.92",
+          "count": 16
+        },
+        {
+          "value": "0.47",
+          "count": 16
+        },
+        {
+          "value": "0.21",
+          "count": 16
+        },
+        {
+          "value": "0.15",
+          "count": 16
+        },
+        {
+          "value": "0.6",
+          "count": 15
+        },
+        {
+          "value": "0.17",
+          "count": 15
+        },
+        {
+          "value": "0.85",
+          "count": 14
+        },
+        {
+          "value": "0.82",
+          "count": 14
+        },
+        {
+          "value": "0.79",
+          "count": 14
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "news_template|articles|mediacount": {
+      "table_name": "articles",
+      "column_name": "mediacount",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 21,
+      "min_value": "0",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "11",
+          "count": 62
+        },
+        {
+          "value": "6",
+          "count": 56
+        },
+        {
+          "value": "8",
+          "count": 54
+        },
+        {
+          "value": "14",
+          "count": 53
+        },
+        {
+          "value": "16",
+          "count": 52
+        },
+        {
+          "value": "5",
+          "count": 52
+        },
+        {
+          "value": "13",
+          "count": 51
+        },
+        {
+          "value": "3",
+          "count": 51
+        },
+        {
+          "value": "0",
+          "count": 51
+        },
+        {
+          "value": "20",
+          "count": 50
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D"
+      ]
+    },
+    "news_template|articles|vidsec": {
+      "table_name": "articles",
+      "column_name": "vidsec",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 212,
+      "min_value": "0",
+      "max_value": "98",
+      "top_k_values": [
+        {
+          "value": "0",
+          "count": 757
+        },
+        {
+          "value": "887",
+          "count": 3
+        },
+        {
+          "value": "855",
+          "count": 2
+        },
+        {
+          "value": "846",
+          "count": 2
+        },
+        {
+          "value": "799",
+          "count": 2
+        },
+        {
+          "value": "759",
+          "count": 2
+        },
+        {
+          "value": "722",
+          "count": 2
+        },
+        {
+          "value": "703",
+          "count": 2
+        },
+        {
+          "value": "553",
+          "count": 2
+        },
+        {
+          "value": "473",
+          "count": 2
+        }
+      ],
+      "min_length": 1,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D",
+        "DDD",
+        "DD"
+      ]
+    },
+    "news_template|articles|paywall": {
+      "table_name": "articles",
+      "column_name": "paywall",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Free",
+      "max_value": "Premium",
+      "top_k_values": [
+        {
+          "value": "Metered",
+          "count": 346
+        },
+        {
+          "value": "Premium",
+          "count": 328
+        },
+        {
+          "value": "Free",
+          "count": 326
+        }
+      ],
+      "min_length": 4,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAA"
+      ]
+    },
+    "news_template|articles|authref": {
+      "table_name": "articles",
+      "column_name": "authref",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 994,
+      "min_value": "1",
+      "max_value": "994",
+      "top_k_values": [
+        {
+          "value": "865",
+          "count": 2
+        },
+        {
+          "value": "682",
+          "count": 2
+        },
+        {
+          "value": "572",
+          "count": 2
+        },
+        {
+          "value": "513",
+          "count": 2
+        },
+        {
+          "value": "494",
+          "count": 2
+        },
+        {
+          "value": "351",
+          "count": 2
+        },
+        {
+          "value": "994",
+          "count": 1
+        },
+        {
+          "value": "993",
+          "count": 1
+        },
+        {
+          "value": "992",
+          "count": 1
+        },
+        {
+          "value": "991",
+          "count": 1
+        }
+      ],
+      "min_length": 1,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D"
+      ]
+    },
+    "news_template|articles|engagement_metrics": {
+      "table_name": "articles",
+      "column_name": "engagement_metrics",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "{\"social\": {\"shares\": 1001, \"comments\": 488}, \"average_rating\": 2.4, \"completion_rate\": 0.48, \"engagement_rate\": 0.98, \"popularity_score\": 0.12}",
+      "max_value": "{\"social\": {\"shares\": 9999, \"comments\": 344}, \"average_rating\": 2.1, \"completion_rate\": 0.75, \"engagement_rate\": 0.38, \"popularity_score\": 0.29}",
+      "top_k_values": [
+        {
+          "value": "{\"social\": {\"shares\": 9999, \"comments\": 344}, \"average_rating\": 2.1, \"completion_rate\": 0.75, \"engagement_rate\": 0.38, \"popularity_score\": 0.29}",
+          "count": 1
+        },
+        {
+          "value": "{\"social\": {\"shares\": 9996, \"comments\": 325}, \"average_rating\": 1.1, \"completion_rate\": 0.49, \"engagement_rate\": 0.45, \"popularity_score\": 0.01}",
+          "count": 1
+        },
+        {
+          "value": "{\"social\": {\"shares\": 9988, \"comments\": 647}, \"average_rating\": 4.8, \"completion_rate\": 0.18, \"engagement_rate\": 0.38, \"popularity_score\": 0.04}",
+          "count": 1
+        },
+        {
+          "value": "{\"social\": {\"shares\": 9981, \"comments\": 262}, \"average_rating\": 1.8, \"completion_rate\": 0.32, \"engagement_rate\": 0.86, \"popularity_score\": 0.55}",
+          "count": 1
+        },
+        {
+          "value": "{\"social\": {\"shares\": 9974, \"comments\": 73}, \"average_rating\": 2.8, \"completion_rate\": 1.00, \"engagement_rate\": 0.48, \"popularity_score\": 0.84}",
+          "count": 1
+        },
+        {
+          "value": "{\"social\": {\"shares\": 9952, \"comments\": 913}, \"average_rating\": 4.1, \"completion_rate\": 0.06, \"engagement_rate\": 0.79, \"popularity_score\": 0.10}",
+          "count": 1
+        },
+        {
+          "value": "{\"social\": {\"shares\": 9949, \"comments\": 370}, \"average_rating\": 3.0, \"completion_rate\": 0.23, \"engagement_rate\": 0.48, \"popularity_score\": 0.81}",
+          "count": 1
+        },
+        {
+          "value": "{\"social\": {\"shares\": 9944, \"comments\": 465}, \"average_rating\": 3.7, \"completion_rate\": 0.60, \"engagement_rate\": 0.52, \"popularity_score\": 0.34}",
+          "count": 1
+        },
+        {
+          "value": "{\"social\": {\"shares\": 9927, \"comments\": 862}, \"average_rating\": 1.9, \"completion_rate\": 0.29, \"engagement_rate\": 0.39, \"popularity_score\": 0.64}",
+          "count": 1
+        },
+        {
+          "value": "{\"social\": {\"shares\": 9916, \"comments\": 338}, \"average_rating\": 4.9, \"completion_rate\": 0.37, \"engagement_rate\": 0.74, \"popularity_score\": 0.57}",
+          "count": 1
+        }
+      ],
+      "min_length": 140,
+      "max_length": 144,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "{\"AAAAAA\": {\"AAAAAA\": DDDD, \"AAAAAAAA\": DDD}, \"AAAAAAA_AAAAAA\": D.D, \"AAAAAAAAAA_AAAA\": D.DD, \"AAAAAAAAAA_AAAA\": D.DD, \"AAAAAAAAAA_AAAAA\": D.DD}",
+        "{\"AAAAAA\": {\"AAAAAA\": DDDD, \"AAAAAAAA\": DD}, \"AAAAAAA_AAAAAA\": D.D, \"AAAAAAAAAA_AAAA\": D.DD, \"AAAAAAAAAA_AAAA\": D.DD, \"AAAAAAAAAA_AAAAA\": D.DD}",
+        "{\"AAAAAA\": {\"AAAAAA\": DDD, \"AAAAAAAA\": DDD}, \"AAAAAAA_AAAAAA\": D.D, \"AAAAAAAAAA_AAAA\": D.DD, \"AAAAAAAAAA_AAAA\": D.DD, \"AAAAAAAAAA_AAAAA\": D.DD}",
+        "{\"AAAAAA\": {\"AAAAAA\": DDDD, \"AAAAAAAA\": D}, \"AAAAAAA_AAAAAA\": D.D, \"AAAAAAAAAA_AAAA\": D.DD, \"AAAAAAAAAA_AAAA\": D.DD, \"AAAAAAAAAA_AAAAA\": D.DD}",
+        "{\"AAAAAA\": {\"AAAAAA\": DDD, \"AAAAAAAA\": DD}, \"AAAAAAA_AAAAAA\": D.D, \"AAAAAAAAAA_AAAA\": D.DD, \"AAAAAAAAAA_AAAA\": D.DD, \"AAAAAAAAAA_AAAAA\": D.DD}"
+      ]
+    },
+    "news_template|articles|engagement_metrics.social.shares": {
+      "table_name": "articles",
+      "column_name": "engagement_metrics.social.shares",
+      "column_type": "JSON field",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 951,
+      "min_value": "12",
+      "max_value": "9999",
+      "top_k_values": [
+        {
+          "value": "1340",
+          "count": 3
+        },
+        {
+          "value": "142",
+          "count": 3
+        },
+        {
+          "value": "706",
+          "count": 2
+        },
+        {
+          "value": "682",
+          "count": 2
+        },
+        {
+          "value": "2563",
+          "count": 2
+        },
+        {
+          "value": "5104",
+          "count": 2
+        },
+        {
+          "value": "8294",
+          "count": 2
+        },
+        {
+          "value": "9043",
+          "count": 2
+        },
+        {
+          "value": "7847",
+          "count": 2
+        },
+        {
+          "value": "3801",
+          "count": 2
+        }
+      ],
+      "min_length": 2,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDD",
+        "DDD",
+        "DD"
+      ]
+    },
+    "news_template|articles|engagement_metrics.social.comments": {
+      "table_name": "articles",
+      "column_name": "engagement_metrics.social.comments",
+      "column_type": "JSON field",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 620,
+      "min_value": "0",
+      "max_value": "999",
+      "top_k_values": [
+        {
+          "value": "86",
+          "count": 5
+        },
+        {
+          "value": "262",
+          "count": 5
+        },
+        {
+          "value": "293",
+          "count": 5
+        },
+        {
+          "value": "416",
+          "count": 5
+        },
+        {
+          "value": "847",
+          "count": 5
+        },
+        {
+          "value": "281",
+          "count": 5
+        },
+        {
+          "value": "382",
+          "count": 4
+        },
+        {
+          "value": "23",
+          "count": 4
+        },
+        {
+          "value": "362",
+          "count": 4
+        },
+        {
+          "value": "49",
+          "count": 4
+        }
+      ],
+      "min_length": 1,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D"
+      ]
+    },
+    "news_template|articles|engagement_metrics.average_rating": {
+      "table_name": "articles",
+      "column_name": "engagement_metrics.average_rating",
+      "column_type": "JSON field",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 41,
+      "min_value": "1.0",
+      "max_value": "5.0",
+      "top_k_values": [
+        {
+          "value": "4.2",
+          "count": 34
+        },
+        {
+          "value": "2.6",
+          "count": 34
+        },
+        {
+          "value": "2.5",
+          "count": 33
+        },
+        {
+          "value": "2.4",
+          "count": 33
+        },
+        {
+          "value": "1.1",
+          "count": 33
+        },
+        {
+          "value": "4.9",
+          "count": 32
+        },
+        {
+          "value": "3.7",
+          "count": 32
+        },
+        {
+          "value": "1.4",
+          "count": 30
+        },
+        {
+          "value": "1.7",
+          "count": 29
+        },
+        {
+          "value": "1.2",
+          "count": 29
+        }
+      ],
+      "min_length": 3,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D.D"
+      ]
+    },
+    "news_template|articles|engagement_metrics.completion_rate": {
+      "table_name": "articles",
+      "column_name": "engagement_metrics.completion_rate",
+      "column_type": "JSON field",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 101,
+      "min_value": "0.0",
+      "max_value": "1.0",
+      "top_k_values": [
+        {
+          "value": "0.66",
+          "count": 20
+        },
+        {
+          "value": "0.91",
+          "count": 17
+        },
+        {
+          "value": "0.93",
+          "count": 15
+        },
+        {
+          "value": "0.92",
+          "count": 15
+        },
+        {
+          "value": "0.77",
+          "count": 15
+        },
+        {
+          "value": "0.21",
+          "count": 14
+        },
+        {
+          "value": "0.65",
+          "count": 14
+        },
+        {
+          "value": "0.07",
+          "count": 14
+        },
+        {
+          "value": "0.45",
+          "count": 14
+        },
+        {
+          "value": "0.74",
+          "count": 14
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "news_template|articles|engagement_metrics.engagement_rate": {
+      "table_name": "articles",
+      "column_name": "engagement_metrics.engagement_rate",
+      "column_type": "JSON field",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 101,
+      "min_value": "0.0",
+      "max_value": "1.0",
+      "top_k_values": [
+        {
+          "value": "0.07",
+          "count": 18
+        },
+        {
+          "value": "0.24",
+          "count": 18
+        },
+        {
+          "value": "0.55",
+          "count": 17
+        },
+        {
+          "value": "0.87",
+          "count": 17
+        },
+        {
+          "value": "0.68",
+          "count": 16
+        },
+        {
+          "value": "0.74",
+          "count": 16
+        },
+        {
+          "value": "0.86",
+          "count": 16
+        },
+        {
+          "value": "0.34",
+          "count": 15
+        },
+        {
+          "value": "0.77",
+          "count": 14
+        },
+        {
+          "value": "0.23",
+          "count": 14
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "news_template|articles|engagement_metrics.popularity_score": {
+      "table_name": "articles",
+      "column_name": "engagement_metrics.popularity_score",
+      "column_type": "JSON field",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 101,
+      "min_value": "0.0",
+      "max_value": "1.0",
+      "top_k_values": [
+        {
+          "value": "0.24",
+          "count": 18
+        },
+        {
+          "value": "0.04",
+          "count": 17
+        },
+        {
+          "value": "0.13",
+          "count": 16
+        },
+        {
+          "value": "0.23",
+          "count": 16
+        },
+        {
+          "value": "0.74",
+          "count": 15
+        },
+        {
+          "value": "0.37",
+          "count": 14
+        },
+        {
+          "value": "0.84",
+          "count": 14
+        },
+        {
+          "value": "0.17",
+          "count": 14
+        },
+        {
+          "value": "0.06",
+          "count": 14
+        },
+        {
+          "value": "0.53",
+          "count": 14
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "news_template|devices|devkey": {
+      "table_name": "devices",
+      "column_name": "devkey",
+      "column_type": "INTEGER",
+      "row_count": 993,
+      "null_count": 0,
+      "non_null_count": 993,
+      "distinct_count": 993,
+      "min_value": "1",
+      "max_value": "993",
+      "top_k_values": [
+        {
+          "value": "1",
+          "count": 1
+        },
+        {
+          "value": "2",
+          "count": 1
+        },
+        {
+          "value": "3",
+          "count": 1
+        },
+        {
+          "value": "4",
+          "count": 1
+        },
+        {
+          "value": "5",
+          "count": 1
+        },
+        {
+          "value": "6",
+          "count": 1
+        },
+        {
+          "value": "7",
+          "count": 1
+        },
+        {
+          "value": "8",
+          "count": 1
+        },
+        {
+          "value": "9",
+          "count": 1
+        },
+        {
+          "value": "10",
+          "count": 1
+        }
+      ],
+      "min_length": 1,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D"
+      ]
+    },
+    "news_template|devices|devtype": {
+      "table_name": "devices",
+      "column_name": "devtype",
+      "column_type": "TEXT",
+      "row_count": 993,
+      "null_count": 0,
+      "non_null_count": 993,
+      "distinct_count": 4,
+      "min_value": "Android",
+      "max_value": "iOS",
+      "top_k_values": [
+        {
+          "value": "Windows",
+          "count": 270
+        },
+        {
+          "value": "Android",
+          "count": 270
+        },
+        {
+          "value": "iOS",
+          "count": 234
+        },
+        {
+          "value": "MacOS",
+          "count": 219
+        }
+      ],
+      "min_length": 3,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAA",
+        "AAAAA"
+      ]
+    },
+    "news_template|devices|brwtype": {
+      "table_name": "devices",
+      "column_name": "brwtype",
+      "column_type": "TEXT",
+      "row_count": 993,
+      "null_count": 0,
+      "non_null_count": 993,
+      "distinct_count": 4,
+      "min_value": "Chrome",
+      "max_value": "Safari",
+      "top_k_values": [
+        {
+          "value": "Firefox",
+          "count": 268
+        },
+        {
+          "value": "Chrome",
+          "count": 263
+        },
+        {
+          "value": "Edge",
+          "count": 252
+        },
+        {
+          "value": "Safari",
+          "count": 210
+        }
+      ],
+      "min_length": 4,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AAAAAAA",
+        "AAAA"
+      ]
+    },
+    "news_template|devices|osver": {
+      "table_name": "devices",
+      "column_name": "osver",
+      "column_type": "TEXT(40)",
+      "row_count": 993,
+      "null_count": 0,
+      "non_null_count": 993,
+      "distinct_count": 80,
+      "min_value": "10.0",
+      "max_value": "9.9",
+      "top_k_values": [
+        {
+          "value": "15.9",
+          "count": 20
+        },
+        {
+          "value": "8.2",
+          "count": 19
+        },
+        {
+          "value": "12.2",
+          "count": 19
+        },
+        {
+          "value": "15.5",
+          "count": 18
+        },
+        {
+          "value": "15.1",
+          "count": 18
+        },
+        {
+          "value": "10.1",
+          "count": 18
+        },
+        {
+          "value": "9.9",
+          "count": 17
+        },
+        {
+          "value": "9.5",
+          "count": 17
+        },
+        {
+          "value": "15.8",
+          "count": 17
+        },
+        {
+          "value": "13.3",
+          "count": 17
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.D",
+        "D.D"
+      ]
+    },
+    "news_template|devices|appver": {
+      "table_name": "devices",
+      "column_name": "appver",
+      "column_type": "TEXT(20)",
+      "row_count": 993,
+      "null_count": 0,
+      "non_null_count": 993,
+      "distinct_count": 425,
+      "min_value": "1.0.0",
+      "max_value": "5.9.8",
+      "top_k_values": [
+        {
+          "value": "1.9.5",
+          "count": 8
+        },
+        {
+          "value": "3.5.8",
+          "count": 7
+        },
+        {
+          "value": "5.9.8",
+          "count": 6
+        },
+        {
+          "value": "5.5.4",
+          "count": 6
+        },
+        {
+          "value": "4.2.9",
+          "count": 6
+        },
+        {
+          "value": "2.2.5",
+          "count": 6
+        },
+        {
+          "value": "1.2.1",
+          "count": 6
+        },
+        {
+          "value": "5.8.2",
+          "count": 5
+        },
+        {
+          "value": "5.7.4",
+          "count": 5
+        },
+        {
+          "value": "5.7.0",
+          "count": 5
+        }
+      ],
+      "min_length": 5,
+      "max_length": 5,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D.D.D"
+      ]
+    },
+    "news_template|devices|scrres": {
+      "table_name": "devices",
+      "column_name": "scrres",
+      "column_type": "TEXT(15)",
+      "row_count": 993,
+      "null_count": 0,
+      "non_null_count": 993,
+      "distinct_count": 16,
+      "min_value": "1280x1080",
+      "max_value": "750x900",
+      "top_k_values": [
+        {
+          "value": "750x1080",
+          "count": 82
+        },
+        {
+          "value": "1440x1334",
+          "count": 74
+        },
+        {
+          "value": "1440x1080",
+          "count": 68
+        },
+        {
+          "value": "1280x1080",
+          "count": 68
+        },
+        {
+          "value": "1920x1080",
+          "count": 64
+        },
+        {
+          "value": "1440x900",
+          "count": 64
+        },
+        {
+          "value": "1920x720",
+          "count": 63
+        },
+        {
+          "value": "1920x1334",
+          "count": 63
+        },
+        {
+          "value": "1280x1334",
+          "count": 61
+        },
+        {
+          "value": "750x1334",
+          "count": 60
+        }
+      ],
+      "min_length": 7,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDADDDD",
+        "DDDDADDD",
+        "DDDADDDD",
+        "DDDADDD"
+      ]
+    },
+    "news_template|devices|vpsize": {
+      "table_name": "devices",
+      "column_name": "vpsize",
+      "column_type": "TEXT(15)",
+      "row_count": 993,
+      "null_count": 0,
+      "non_null_count": 993,
+      "distinct_count": 991,
+      "min_value": "1003x532",
+      "max_value": "999x616",
+      "top_k_values": [
+        {
+          "value": "809x557",
+          "count": 2
+        },
+        {
+          "value": "604x649",
+          "count": 2
+        },
+        {
+          "value": "999x616",
+          "count": 1
+        },
+        {
+          "value": "997x784",
+          "count": 1
+        },
+        {
+          "value": "997x737",
+          "count": 1
+        },
+        {
+          "value": "997x675",
+          "count": 1
+        },
+        {
+          "value": "996x791",
+          "count": 1
+        },
+        {
+          "value": "995x787",
+          "count": 1
+        },
+        {
+          "value": "995x637",
+          "count": 1
+        },
+        {
+          "value": "995x616",
+          "count": 1
+        }
+      ],
+      "min_length": 7,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDADDD",
+        "DDDDADDD"
+      ]
+    },
+    "news_template|devices|conntype": {
+      "table_name": "devices",
+      "column_name": "conntype",
+      "column_type": "TEXT",
+      "row_count": 993,
+      "null_count": 0,
+      "non_null_count": 993,
+      "distinct_count": 4,
+      "min_value": "4G",
+      "max_value": "WiFi",
+      "top_k_values": [
+        {
+          "value": "Cable",
+          "count": 261
+        },
+        {
+          "value": "WiFi",
+          "count": 253
+        },
+        {
+          "value": "5G",
+          "count": 249
+        },
+        {
+          "value": "4G",
+          "count": 230
+        }
+      ],
+      "min_length": 2,
+      "max_length": 5,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DA",
+        "AAAAA",
+        "AAAA"
+      ]
+    },
+    "news_template|devices|netspd": {
+      "table_name": "devices",
+      "column_name": "netspd",
+      "column_type": "REAL",
+      "row_count": 993,
+      "null_count": 0,
+      "non_null_count": 993,
+      "distinct_count": 630,
+      "min_value": "1.1",
+      "max_value": "99.9",
+      "top_k_values": [
+        {
+          "value": "99.4",
+          "count": 4
+        },
+        {
+          "value": "82.4",
+          "count": 4
+        },
+        {
+          "value": "80.1",
+          "count": 4
+        },
+        {
+          "value": "78.3",
+          "count": 4
+        },
+        {
+          "value": "75.5",
+          "count": 4
+        },
+        {
+          "value": "72.1",
+          "count": 4
+        },
+        {
+          "value": "65.0",
+          "count": 4
+        },
+        {
+          "value": "48.7",
+          "count": 4
+        },
+        {
+          "value": "47.1",
+          "count": 4
+        },
+        {
+          "value": "46.4",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.D",
+        "D.D",
+        "DDD.D"
+      ]
+    },
+    "news_template|devices|uselink": {
+      "table_name": "devices",
+      "column_name": "uselink",
+      "column_type": "INTEGER",
+      "row_count": 993,
+      "null_count": 0,
+      "non_null_count": 993,
+      "distinct_count": 987,
+      "min_value": "1",
+      "max_value": "994",
+      "top_k_values": [
+        {
+          "value": "865",
+          "count": 2
+        },
+        {
+          "value": "682",
+          "count": 2
+        },
+        {
+          "value": "572",
+          "count": 2
+        },
+        {
+          "value": "513",
+          "count": 2
+        },
+        {
+          "value": "494",
+          "count": 2
+        },
+        {
+          "value": "351",
+          "count": 2
+        },
+        {
+          "value": "994",
+          "count": 1
+        },
+        {
+          "value": "993",
+          "count": 1
+        },
+        {
+          "value": "992",
+          "count": 1
+        },
+        {
+          "value": "991",
+          "count": 1
+        }
+      ],
+      "min_length": 1,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D"
+      ]
+    },
+    "news_template|interactionmetrics|intmetkey": {
+      "table_name": "interactionmetrics",
+      "column_name": "intmetkey",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "1",
+      "max_value": "999",
+      "top_k_values": [
+        {
+          "value": "1",
+          "count": 1
+        },
+        {
+          "value": "2",
+          "count": 1
+        },
+        {
+          "value": "3",
+          "count": 1
+        },
+        {
+          "value": "4",
+          "count": 1
+        },
+        {
+          "value": "5",
+          "count": 1
+        },
+        {
+          "value": "6",
+          "count": 1
+        },
+        {
+          "value": "7",
+          "count": 1
+        },
+        {
+          "value": "8",
+          "count": 1
+        },
+        {
+          "value": "9",
+          "count": 1
+        },
+        {
+          "value": "10",
+          "count": 1
+        }
+      ],
+      "min_length": 1,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D",
+        "DDDD"
+      ]
+    },
+    "news_template|interactionmetrics|interaction_behavior": {
+      "table_name": "interactionmetrics",
+      "column_name": "interaction_behavior",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "{\"scroll\": {\"depth\": 1, \"speed\": 149.60, \"percentage\": 34.00}, \"exit_type\": \"Bounce\", \"conversion\": {\"value\": 39.74, \"status\": \"Newsletter\"}, \"time_spent\": {\"viewport_time\": 2.50, \"attention_time\": 117.10, \"reading_seconds\": 1511.00, \"duration_seconds\": 1013}, \"next_action\": \"Search\", \"bounce_status\": \"No\", \"click_seconds\": 45.90}",
+      "max_value": "{\"scroll\": {\"depth\": 99, \"speed\": 985.40, \"percentage\": 49.00}, \"exit_type\": \"Bounce\", \"conversion\": {\"value\": 92.05, \"status\": \"Subscription\"}, \"time_spent\": {\"viewport_time\": 268.10, \"attention_time\": 408.90, \"reading_seconds\": 173.70, \"duration_seconds\": 2396}, \"next_action\": \"Search\", \"bounce_status\": \"Yes\", \"click_seconds\": 58.80}",
+      "top_k_values": [
+        {
+          "value": "{\"scroll\": {\"depth\": 99, \"speed\": 985.40, \"percentage\": 49.00}, \"exit_type\": \"Bounce\", \"conversion\": {\"value\": 92.05, \"status\": \"Subscription\"}, \"time_spent\": {\"viewport_time\": 268.10, \"attention_time\": 408.90, \"reading_seconds\": 173.70, \"duration_seconds\": 2396}, \"next_action\": \"Search\", \"bounce_status\": \"Yes\", \"click_seconds\": 58.80}",
+          "count": 1
+        },
+        {
+          "value": "{\"scroll\": {\"depth\": 99, \"speed\": 867.50, \"percentage\": 73.80}, \"exit_type\": \"Timeout\", \"conversion\": {\"value\": 5.95, \"status\": \"Subscription\"}, \"time_spent\": {\"viewport_time\": 82.50, \"attention_time\": 288.40, \"reading_seconds\": 483.80, \"duration_seconds\": 2153}, \"next_action\": \"Another Article\", \"bounce_status\": \"No\", \"click_seconds\": 20.00}",
+          "count": 1
+        },
+        {
+          "value": "{\"scroll\": {\"depth\": 99, \"speed\": 833.20, \"percentage\": 14.50}, \"exit_type\": \"Natural\", \"conversion\": {\"value\": 47.66, \"status\": \"Newsletter\"}, \"time_spent\": {\"viewport_time\": 23.80, \"attention_time\": 692.80, \"reading_seconds\": 317.80, \"duration_seconds\": 839}, \"next_action\": \"Share\", \"bounce_status\": \"No\", \"click_seconds\": 59.00}",
+          "count": 1
+        },
+        {
+          "value": "{\"scroll\": {\"depth\": 99, \"speed\": 796.70, \"percentage\": 78.60}, \"exit_type\": \"External\", \"conversion\": {\"value\": 11.39, \"status\": \"Subscription\"}, \"time_spent\": {\"viewport_time\": 14.60, \"attention_time\": 478.60, \"reading_seconds\": 280.10, \"duration_seconds\": 2555}, \"next_action\": \"Exit\", \"bounce_status\": \"No\", \"click_seconds\": 5.50}",
+          "count": 1
+        },
+        {
+          "value": "{\"scroll\": {\"depth\": 99, \"speed\": 593.70, \"percentage\": 7.00}, \"exit_type\": \"External\", \"conversion\": {\"value\": 46.75, \"status\": \"Subscription\"}, \"time_spent\": {\"viewport_time\": 131.40, \"attention_time\": 271.60, \"reading_seconds\": 126.70, \"duration_seconds\": 2574}, \"next_action\": \"Another Article\", \"bounce_status\": \"No\", \"click_seconds\": 20.60}",
+          "count": 1
+        },
+        {
+          "value": "{\"scroll\": {\"depth\": 99, \"speed\": 47.60, \"percentage\": 52.20}, \"exit_type\": \"Timeout\", \"conversion\": {\"value\": 91.36, \"status\": \"Share\"}, \"time_spent\": {\"viewport_time\": 116.60, \"attention_time\": 805.80, \"reading_seconds\": 122.40, \"duration_seconds\": 3564}, \"next_action\": \"Exit\", \"bounce_status\": \"No\", \"click_seconds\": 7.20}",
+          "count": 1
+        },
+        {
+          "value": "{\"scroll\": {\"depth\": 99, \"speed\": 389.80, \"percentage\": 38.10}, \"exit_type\": \"Bounce\", \"conversion\": {\"value\": 74.47, \"status\": \"Subscription\"}, \"time_spent\": {\"viewport_time\": 35.20, \"attention_time\": 43.30, \"reading_seconds\": 1514.50, \"duration_seconds\": 543}, \"next_action\": \"Search\", \"bounce_status\": \"Yes\", \"click_seconds\": 42.70}",
+          "count": 1
+        },
+        {
+          "value": "{\"scroll\": {\"depth\": 99, \"speed\": 243.80, \"percentage\": 91.50}, \"exit_type\": \"Natural\", \"conversion\": {\"value\": 0.61, \"status\": \"Newsletter\"}, \"time_spent\": {\"viewport_time\": 154.60, \"attention_time\": 621.00, \"reading_seconds\": 397.80, \"duration_seconds\": 1877}, \"next_action\": \"Exit\", \"bounce_status\": \"Yes\", \"click_seconds\": 11.60}",
+          "count": 1
+        },
+        {
+          "value": "{\"scroll\": {\"depth\": 99, \"speed\": 22.30, \"percentage\": 94.90}, \"exit_type\": \"External\", \"conversion\": {\"value\": 2.06, \"status\": \"Newsletter\"}, \"time_spent\": {\"viewport_time\": 98.00, \"attention_time\": 72.40, \"reading_seconds\": 1501.20, \"duration_seconds\": 850}, \"next_action\": \"Search\", \"bounce_status\": \"No\", \"click_seconds\": 0.30}",
+          "count": 1
+        },
+        {
+          "value": "{\"scroll\": {\"depth\": 99, \"speed\": 150.80, \"percentage\": 12.90}, \"exit_type\": \"Bounce\", \"conversion\": {\"value\": 95.90, \"status\": \"Share\"}, \"time_spent\": {\"viewport_time\": 15.10, \"attention_time\": 270.10, \"reading_seconds\": 274.70, \"duration_seconds\": 2553}, \"next_action\": \"Exit\", \"bounce_status\": \"Yes\", \"click_seconds\": 47.30}",
+          "count": 1
+        }
+      ],
+      "min_length": 325,
+      "max_length": 349,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "{\"AAAAAA\": {\"AAAAA\": DD, \"AAAAA\": DDD.DD, \"AAAAAAAAAA\": DD.DD}, \"AAAA_AAAA\": \"AAAAAAA\", \"AAAAAAAAAA\": {\"AAAAA\": DD.DD, \"AAAAAA\": \"AAAAAAAAAAAA\"}, \"AAAA_AAAAA\": {\"AAAAAAAA_AAAA\": DDD.DD, \"AAAAAAAAA_AAAA\": DDD.DD, \"AAAAAAA_AAAAAAA\": DDD.DD, \"AAAAAAAA_AAAAAAA\": DDDD}, \"AAAA_AAAAAA\": \"AAAAA\", \"AAAAAA_AAAAAA\": \"AAA\", \"AAAAA_AAAAAAA\": DD.DD}",
+        "{\"AAAAAA\": {\"AAAAA\": DD, \"AAAAA\": DDD.DD, \"AAAAAAAAAA\": DD.DD}, \"AAAA_AAAA\": \"AAAAAAA\", \"AAAAAAAAAA\": {\"AAAAA\": DD.DD, \"AAAAAA\": \"AAAAAAAAAAAA\"}, \"AAAA_AAAAA\": {\"AAAAAAAA_AAAA\": DDD.DD, \"AAAAAAAAA_AAAA\": DDD.DD, \"AAAAAAA_AAAAAAA\": DDD.DD, \"AAAAAAAA_AAAAAAA\": DDDD}, \"AAAA_AAAAAA\": \"AAAA\", \"AAAAAA_AAAAAA\": \"AA\", \"AAAAA_AAAAAAA\": DD.DD}",
+        "{\"AAAAAA\": {\"AAAAA\": DD, \"AAAAA\": DDD.DD, \"AAAAAAAAAA\": DD.DD}, \"AAAA_AAAA\": \"AAAAAAA\", \"AAAAAAAAAA\": {\"AAAAA\": DD.DD, \"AAAAAA\": \"AAAAAAAAAAAA\"}, \"AAAA_AAAAA\": {\"AAAAAAAA_AAAA\": DDD.DD, \"AAAAAAAAA_AAAA\": DDD.DD, \"AAAAAAA_AAAAAAA\": DDDD.DD, \"AAAAAAAA_AAAAAAA\": DDDD}, \"AAAA_AAAAAA\": \"AAAAAA\", \"AAAAAA_AAAAAA\": \"AA\", \"AAAAA_AAAAAAA\": DD.DD}",
+        "{\"AAAAAA\": {\"AAAAA\": DD, \"AAAAA\": DDD.DD, \"AAAAAAAAAA\": DD.DD}, \"AAAA_AAAA\": \"AAAAAAA\", \"AAAAAAAAAA\": {\"AAAAA\": DD.DD, \"AAAAAA\": \"AAAAAAAAAA\"}, \"AAAA_AAAAA\": {\"AAAAAAAA_AAAA\": DDD.DD, \"AAAAAAAAA_AAAA\": DDD.DD, \"AAAAAAA_AAAAAAA\": DDD.DD, \"AAAAAAAA_AAAAAAA\": DDDD}, \"AAAA_AAAAAA\": \"AAAAAA\", \"AAAAAA_AAAAAA\": \"AAA\", \"AAAAA_AAAAAAA\": DD.DD}",
+        "{\"AAAAAA\": {\"AAAAA\": DD, \"AAAAA\": DDD.DD, \"AAAAAAAAAA\": DD.DD}, \"AAAA_AAAA\": \"AAAAAAA\", \"AAAAAAAAAA\": {\"AAAAA\": DD.DD, \"AAAAAA\": \"AAAAAAAAAAAA\"}, \"AAAA_AAAAA\": {\"AAAAAAAA_AAAA\": DDD.DD, \"AAAAAAAAA_AAAA\": DDD.DD, \"AAAAAAA_AAAAAAA\": DDD.DD, \"AAAAAAAA_AAAAAAA\": DDDD}, \"AAAA_AAAAAA\": \"AAAAAA\", \"AAAAAA_AAAAAA\": \"AA\", \"AAAAA_AAAAAAA\": DD.DD}"
+      ]
+    },
+    "news_template|interactionmetrics|interaction_behavior.scroll.depth": {
+      "table_name": "interactionmetrics",
+      "column_name": "interaction_behavior.scroll.depth",
+      "column_type": "JSON field",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 100,
+      "min_value": "1",
+      "max_value": "100",
+      "top_k_values": [
+        {
+          "value": "70",
+          "count": 21
+        },
+        {
+          "value": "23",
+          "count": 18
+        },
+        {
+          "value": "66",
+          "count": 17
+        },
+        {
+          "value": "100",
+          "count": 17
+        },
+        {
+          "value": "51",
+          "count": 16
+        },
+        {
+          "value": "18",
+          "count": 15
+        },
+        {
+          "value": "48",
+          "count": 15
+        },
+        {
+          "value": "94",
+          "count": 15
+        },
+        {
+          "value": "85",
+          "count": 15
+        },
+        {
+          "value": "79",
+          "count": 15
+        }
+      ],
+      "min_length": 1,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D",
+        "DDD"
+      ]
+    },
+    "news_template|interactionmetrics|interaction_behavior.scroll.speed": {
+      "table_name": "interactionmetrics",
+      "column_name": "interaction_behavior.scroll.speed",
+      "column_type": "JSON field",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 952,
+      "min_value": "10.0",
+      "max_value": "999.2",
+      "top_k_values": [
+        {
+          "value": "922.3",
+          "count": 3
+        },
+        {
+          "value": "303.1",
+          "count": 2
+        },
+        {
+          "value": "688.0",
+          "count": 2
+        },
+        {
+          "value": "285.6",
+          "count": 2
+        },
+        {
+          "value": "969.0",
+          "count": 2
+        },
+        {
+          "value": "90.1",
+          "count": 2
+        },
+        {
+          "value": "268.2",
+          "count": 2
+        },
+        {
+          "value": "193.7",
+          "count": 2
+        },
+        {
+          "value": "994.8",
+          "count": 2
+        },
+        {
+          "value": "368.1",
+          "count": 2
+        }
+      ],
+      "min_length": 4,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD.D",
+        "DD.D"
+      ]
+    },
+    "news_template|interactionmetrics|interaction_behavior.scroll.percentage": {
+      "table_name": "interactionmetrics",
+      "column_name": "interaction_behavior.scroll.percentage",
+      "column_type": "JSON field",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 639,
+      "min_value": "0.3",
+      "max_value": "100.0",
+      "top_k_values": [
+        {
+          "value": "61.5",
+          "count": 6
+        },
+        {
+          "value": "80.1",
+          "count": 4
+        },
+        {
+          "value": "37.4",
+          "count": 4
+        },
+        {
+          "value": "92.3",
+          "count": 4
+        },
+        {
+          "value": "19.6",
+          "count": 4
+        },
+        {
+          "value": "79.0",
+          "count": 4
+        },
+        {
+          "value": "44.6",
+          "count": 4
+        },
+        {
+          "value": "2.0",
+          "count": 4
+        },
+        {
+          "value": "96.1",
+          "count": 4
+        },
+        {
+          "value": "83.7",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.D",
+        "D.D",
+        "DDD.D"
+      ]
+    },
+    "news_template|interactionmetrics|interaction_behavior.exit_type": {
+      "table_name": "interactionmetrics",
+      "column_name": "interaction_behavior.exit_type",
+      "column_type": "JSON field",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "Bounce",
+      "max_value": "Timeout",
+      "top_k_values": [
+        {
+          "value": "Natural",
+          "count": 264
+        },
+        {
+          "value": "External",
+          "count": 260
+        },
+        {
+          "value": "Timeout",
+          "count": 242
+        },
+        {
+          "value": "Bounce",
+          "count": 234
+        }
+      ],
+      "min_length": 6,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAAAA",
+        "AAAAAA"
+      ]
+    },
+    "news_template|interactionmetrics|interaction_behavior.conversion.value": {
+      "table_name": "interactionmetrics",
+      "column_name": "interaction_behavior.conversion.value",
+      "column_type": "JSON field",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 948,
+      "min_value": "0.05",
+      "max_value": "99.96",
+      "top_k_values": [
+        {
+          "value": "22.11",
+          "count": 3
+        },
+        {
+          "value": "34.5",
+          "count": 2
+        },
+        {
+          "value": "19.25",
+          "count": 2
+        },
+        {
+          "value": "31.0",
+          "count": 2
+        },
+        {
+          "value": "69.2",
+          "count": 2
+        },
+        {
+          "value": "55.47",
+          "count": 2
+        },
+        {
+          "value": "81.42",
+          "count": 2
+        },
+        {
+          "value": "32.3",
+          "count": 2
+        },
+        {
+          "value": "33.65",
+          "count": 2
+        },
+        {
+          "value": "61.9",
+          "count": 2
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.DD",
+        "D.DD",
+        "DD.D",
+        "D.D"
+      ]
+    },
+    "news_template|interactionmetrics|interaction_behavior.conversion.status": {
+      "table_name": "interactionmetrics",
+      "column_name": "interaction_behavior.conversion.status",
+      "column_type": "JSON field",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Newsletter",
+      "max_value": "Subscription",
+      "top_k_values": [
+        {
+          "value": "Subscription",
+          "count": 486
+        },
+        {
+          "value": "Share",
+          "count": 277
+        },
+        {
+          "value": "Newsletter",
+          "count": 237
+        }
+      ],
+      "min_length": 5,
+      "max_length": 12,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAAAAA",
+        "AAAAA",
+        "AAAAAAAAAA"
+      ]
+    },
+    "news_template|interactionmetrics|interaction_behavior.time_spent.viewport_time": {
+      "table_name": "interactionmetrics",
+      "column_name": "interaction_behavior.time_spent.viewport_time",
+      "column_type": "JSON field",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 846,
+      "min_value": "1.1",
+      "max_value": "299.7",
+      "top_k_values": [
+        {
+          "value": "227.7",
+          "count": 4
+        },
+        {
+          "value": "141.4",
+          "count": 3
+        },
+        {
+          "value": "252.5",
+          "count": 3
+        },
+        {
+          "value": "294.4",
+          "count": 3
+        },
+        {
+          "value": "130.3",
+          "count": 3
+        },
+        {
+          "value": "9.0",
+          "count": 3
+        },
+        {
+          "value": "83.3",
+          "count": 3
+        },
+        {
+          "value": "222.7",
+          "count": 3
+        },
+        {
+          "value": "37.7",
+          "count": 3
+        },
+        {
+          "value": "82.2",
+          "count": 3
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD.D",
+        "DD.D",
+        "D.D"
+      ]
+    },
+    "news_template|interactionmetrics|interaction_behavior.time_spent.attention_time": {
+      "table_name": "interactionmetrics",
+      "column_name": "interaction_behavior.time_spent.attention_time",
+      "column_type": "JSON field",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 949,
+      "min_value": "1.4",
+      "max_value": "899.9",
+      "top_k_values": [
+        {
+          "value": "733.9",
+          "count": 2
+        },
+        {
+          "value": "641.3",
+          "count": 2
+        },
+        {
+          "value": "777.1",
+          "count": 2
+        },
+        {
+          "value": "392.8",
+          "count": 2
+        },
+        {
+          "value": "171.7",
+          "count": 2
+        },
+        {
+          "value": "799.5",
+          "count": 2
+        },
+        {
+          "value": "727.8",
+          "count": 2
+        },
+        {
+          "value": "479.1",
+          "count": 2
+        },
+        {
+          "value": "145.3",
+          "count": 2
+        },
+        {
+          "value": "159.7",
+          "count": 2
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD.D",
+        "DD.D",
+        "D.D"
+      ]
+    },
+    "news_template|interactionmetrics|interaction_behavior.time_spent.reading_seconds": {
+      "table_name": "interactionmetrics",
+      "column_name": "interaction_behavior.time_spent.reading_seconds",
+      "column_type": "JSON field",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 980,
+      "min_value": "11.6",
+      "max_value": "1798.2",
+      "top_k_values": [
+        {
+          "value": "954.6",
+          "count": 3
+        },
+        {
+          "value": "1599.8",
+          "count": 2
+        },
+        {
+          "value": "1760.2",
+          "count": 2
+        },
+        {
+          "value": "763.7",
+          "count": 2
+        },
+        {
+          "value": "1595.3",
+          "count": 2
+        },
+        {
+          "value": "796.9",
+          "count": 2
+        },
+        {
+          "value": "1346.7",
+          "count": 2
+        },
+        {
+          "value": "11.9",
+          "count": 2
+        },
+        {
+          "value": "1627.5",
+          "count": 2
+        },
+        {
+          "value": "280.1",
+          "count": 2
+        }
+      ],
+      "min_length": 4,
+      "max_length": 6,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD.D",
+        "DDDD.D",
+        "DD.D"
+      ]
+    },
+    "news_template|interactionmetrics|interaction_behavior.time_spent.duration_seconds": {
+      "table_name": "interactionmetrics",
+      "column_name": "interaction_behavior.time_spent.duration_seconds",
+      "column_type": "JSON field",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 857,
+      "min_value": "1",
+      "max_value": "3597",
+      "top_k_values": [
+        {
+          "value": "1604",
+          "count": 4
+        },
+        {
+          "value": "610",
+          "count": 3
+        },
+        {
+          "value": "2749",
+          "count": 3
+        },
+        {
+          "value": "1042",
+          "count": 3
+        },
+        {
+          "value": "3108",
+          "count": 3
+        },
+        {
+          "value": "1246",
+          "count": 3
+        },
+        {
+          "value": "3546",
+          "count": 3
+        },
+        {
+          "value": "2197",
+          "count": 3
+        },
+        {
+          "value": "890",
+          "count": 3
+        },
+        {
+          "value": "2603",
+          "count": 2
+        }
+      ],
+      "min_length": 1,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDD",
+        "DDD",
+        "DD",
+        "D"
+      ]
+    },
+    "news_template|interactionmetrics|interaction_behavior.next_action": {
+      "table_name": "interactionmetrics",
+      "column_name": "interaction_behavior.next_action",
+      "column_type": "JSON field",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "Another Article",
+      "max_value": "Share",
+      "top_k_values": [
+        {
+          "value": "Another Article",
+          "count": 268
+        },
+        {
+          "value": "Share",
+          "count": 267
+        },
+        {
+          "value": "Search",
+          "count": 235
+        },
+        {
+          "value": "Exit",
+          "count": 230
+        }
+      ],
+      "min_length": 4,
+      "max_length": 15,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA AAAAAAA",
+        "AAAAA",
+        "AAAAAA",
+        "AAAA"
+      ]
+    },
+    "news_template|interactionmetrics|interaction_behavior.bounce_status": {
+      "table_name": "interactionmetrics",
+      "column_name": "interaction_behavior.bounce_status",
+      "column_type": "JSON field",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 2,
+      "min_value": "No",
+      "max_value": "Yes",
+      "top_k_values": [
+        {
+          "value": "Yes",
+          "count": 525
+        },
+        {
+          "value": "No",
+          "count": 475
+        }
+      ],
+      "min_length": 2,
+      "max_length": 3,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAA",
+        "AA"
+      ]
+    },
+    "news_template|interactionmetrics|interaction_behavior.click_seconds": {
+      "table_name": "interactionmetrics",
+      "column_name": "interaction_behavior.click_seconds",
+      "column_type": "JSON field",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 492,
+      "min_value": "0.2",
+      "max_value": "59.9",
+      "top_k_values": [
+        {
+          "value": "30.5",
+          "count": 6
+        },
+        {
+          "value": "29.9",
+          "count": 6
+        },
+        {
+          "value": "23.5",
+          "count": 6
+        },
+        {
+          "value": "30.7",
+          "count": 6
+        },
+        {
+          "value": "36.9",
+          "count": 6
+        },
+        {
+          "value": "36.2",
+          "count": 5
+        },
+        {
+          "value": "31.6",
+          "count": 5
+        },
+        {
+          "value": "45.6",
+          "count": 5
+        },
+        {
+          "value": "40.6",
+          "count": 5
+        },
+        {
+          "value": "41.8",
+          "count": 5
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.D",
+        "D.D"
+      ]
+    },
+    "news_template|interactions|intkey": {
+      "table_name": "interactions",
+      "column_name": "intkey",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "1",
+      "max_value": "999",
+      "top_k_values": [
+        {
+          "value": "1",
+          "count": 1
+        },
+        {
+          "value": "2",
+          "count": 1
+        },
+        {
+          "value": "3",
+          "count": 1
+        },
+        {
+          "value": "4",
+          "count": 1
+        },
+        {
+          "value": "5",
+          "count": 1
+        },
+        {
+          "value": "6",
+          "count": 1
+        },
+        {
+          "value": "7",
+          "count": 1
+        },
+        {
+          "value": "8",
+          "count": 1
+        },
+        {
+          "value": "9",
+          "count": 1
+        },
+        {
+          "value": "10",
+          "count": 1
+        }
+      ],
+      "min_length": 1,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D",
+        "DDDD"
+      ]
+    },
+    "news_template|interactions|seshlink2": {
+      "table_name": "interactions",
+      "column_name": "seshlink2",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "1",
+      "max_value": "999",
+      "top_k_values": [
+        {
+          "value": "1000",
+          "count": 1
+        },
+        {
+          "value": "999",
+          "count": 1
+        },
+        {
+          "value": "998",
+          "count": 1
+        },
+        {
+          "value": "997",
+          "count": 1
+        },
+        {
+          "value": "996",
+          "count": 1
+        },
+        {
+          "value": "995",
+          "count": 1
+        },
+        {
+          "value": "994",
+          "count": 1
+        },
+        {
+          "value": "993",
+          "count": 1
+        },
+        {
+          "value": "992",
+          "count": 1
+        },
+        {
+          "value": "991",
+          "count": 1
+        }
+      ],
+      "min_length": 1,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D",
+        "DDDD"
+      ]
+    },
+    "news_template|interactions|reclink": {
+      "table_name": "interactions",
+      "column_name": "reclink",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 999,
+      "min_value": "1",
+      "max_value": "999",
+      "top_k_values": [
+        {
+          "value": "102",
+          "count": 2
+        },
+        {
+          "value": "999",
+          "count": 1
+        },
+        {
+          "value": "998",
+          "count": 1
+        },
+        {
+          "value": "997",
+          "count": 1
+        },
+        {
+          "value": "996",
+          "count": 1
+        },
+        {
+          "value": "995",
+          "count": 1
+        },
+        {
+          "value": "994",
+          "count": 1
+        },
+        {
+          "value": "993",
+          "count": 1
+        },
+        {
+          "value": "992",
+          "count": 1
+        },
+        {
+          "value": "991",
+          "count": 1
+        }
+      ],
+      "min_length": 1,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D"
+      ]
+    },
+    "news_template|interactions|artval": {
+      "table_name": "interactions",
+      "column_name": "artval",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 994,
+      "min_value": "10038",
+      "max_value": "99979",
+      "top_k_values": [
+        {
+          "value": "89389",
+          "count": 2
+        },
+        {
+          "value": "78592",
+          "count": 2
+        },
+        {
+          "value": "60601",
+          "count": 2
+        },
+        {
+          "value": "22421",
+          "count": 2
+        },
+        {
+          "value": "18957",
+          "count": 2
+        },
+        {
+          "value": "13976",
+          "count": 2
+        },
+        {
+          "value": "99979",
+          "count": 1
+        },
+        {
+          "value": "99798",
+          "count": 1
+        },
+        {
+          "value": "99752",
+          "count": 1
+        },
+        {
+          "value": "99492",
+          "count": 1
+        }
+      ],
+      "min_length": 5,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDDD"
+      ]
+    },
+    "news_template|interactions|intts": {
+      "table_name": "interactions",
+      "column_name": "intts",
+      "column_type": "TEXT(6)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "2025-01-19 07:37:43.783057",
+      "max_value": "2025-02-19 07:58:30.827922",
+      "top_k_values": [
+        {
+          "value": "2025-02-19 07:58:30.827922",
+          "count": 1
+        },
+        {
+          "value": "2025-02-19 07:45:16.768727",
+          "count": 1
+        },
+        {
+          "value": "2025-02-19 03:51:16.806703",
+          "count": 1
+        },
+        {
+          "value": "2025-02-19 03:49:04.917421",
+          "count": 1
+        },
+        {
+          "value": "2025-02-19 03:21:48.870529",
+          "count": 1
+        },
+        {
+          "value": "2025-02-19 01:20:42.84927",
+          "count": 1
+        },
+        {
+          "value": "2025-02-19 00:39:32.941146",
+          "count": 1
+        },
+        {
+          "value": "2025-02-19 00:16:14.69467",
+          "count": 1
+        },
+        {
+          "value": "2025-02-18 23:46:14.917421",
+          "count": 1
+        },
+        {
+          "value": "2025-02-18 23:01:57.933042",
+          "count": 1
+        }
+      ],
+      "min_length": 25,
+      "max_length": 26,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDD-DD-DD DD:DD:DD.DDDDDD",
+        "DDDD-DD-DD DD:DD:DD.DDDDD"
+      ]
+    },
+    "news_template|interactions|evttype": {
+      "table_name": "interactions",
+      "column_name": "evttype",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 5,
+      "min_value": "bookmark",
+      "max_value": "view",
+      "top_k_values": [
+        {
+          "value": "click",
+          "count": 218
+        },
+        {
+          "value": "scroll",
+          "count": 200
+        },
+        {
+          "value": "bookmark",
+          "count": 198
+        },
+        {
+          "value": "view",
+          "count": 193
+        },
+        {
+          "value": "share",
+          "count": 191
+        }
+      ],
+      "min_length": 4,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAA",
+        "AAAAAA",
+        "AAAAAAAA",
+        "AAAA"
+      ]
+    },
+    "news_template|interactions|seqval": {
+      "table_name": "interactions",
+      "column_name": "seqval",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 50,
+      "min_value": "1",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "17",
+          "count": 32
+        },
+        {
+          "value": "4",
+          "count": 30
+        },
+        {
+          "value": "39",
+          "count": 29
+        },
+        {
+          "value": "47",
+          "count": 27
+        },
+        {
+          "value": "36",
+          "count": 27
+        },
+        {
+          "value": "23",
+          "count": 26
+        },
+        {
+          "value": "50",
+          "count": 25
+        },
+        {
+          "value": "40",
+          "count": 25
+        },
+        {
+          "value": "38",
+          "count": 25
+        },
+        {
+          "value": "24",
+          "count": 24
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D"
+      ]
+    },
+    "news_template|interactions|agentval": {
+      "table_name": "interactions",
+      "column_name": "agentval",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "App",
+      "max_value": "Tablet",
+      "top_k_values": [
+        {
+          "value": "Desktop",
+          "count": 253
+        },
+        {
+          "value": "Tablet",
+          "count": 250
+        },
+        {
+          "value": "Mobile",
+          "count": 249
+        },
+        {
+          "value": "App",
+          "count": 248
+        }
+      ],
+      "min_length": 3,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AAAAAAA",
+        "AAA"
+      ]
+    },
+    "news_template|interactions|clkts": {
+      "table_name": "interactions",
+      "column_name": "clkts",
+      "column_type": "TEXT(6)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 128,
+      "min_value": "2025-02-19 08:31:16.69467",
+      "max_value": "2025-02-19 08:31:16.942145",
+      "top_k_values": [
+        {
+          "value": "2025-02-19 08:31:16.88619",
+          "count": 66
+        },
+        {
+          "value": "2025-02-19 08:31:16.870529",
+          "count": 66
+        },
+        {
+          "value": "2025-02-19 08:31:16.917421",
+          "count": 65
+        },
+        {
+          "value": "2025-02-19 08:31:16.901813",
+          "count": 64
+        },
+        {
+          "value": "2025-02-19 08:31:16.724688",
+          "count": 64
+        },
+        {
+          "value": "2025-02-19 08:31:16.69467",
+          "count": 44
+        },
+        {
+          "value": "2025-02-19 08:31:16.809703",
+          "count": 39
+        },
+        {
+          "value": "2025-02-19 08:31:16.757116",
+          "count": 37
+        },
+        {
+          "value": "2025-02-19 08:31:16.827922",
+          "count": 31
+        },
+        {
+          "value": "2025-02-19 08:31:16.791518",
+          "count": 30
+        }
+      ],
+      "min_length": 25,
+      "max_length": 26,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDD-DD-DD DD:DD:DD.DDDDDD",
+        "DDDD-DD-DD DD:DD:DD.DDDDD"
+      ]
+    },
+    "news_template|interactions|clkpos": {
+      "table_name": "interactions",
+      "column_name": "clkpos",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 10,
+      "min_value": "1",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "6",
+          "count": 120
+        },
+        {
+          "value": "9",
+          "count": 107
+        },
+        {
+          "value": "3",
+          "count": 104
+        },
+        {
+          "value": "2",
+          "count": 100
+        },
+        {
+          "value": "5",
+          "count": 99
+        },
+        {
+          "value": "1",
+          "count": 99
+        },
+        {
+          "value": "4",
+          "count": 97
+        },
+        {
+          "value": "10",
+          "count": 95
+        },
+        {
+          "value": "7",
+          "count": 94
+        },
+        {
+          "value": "8",
+          "count": 85
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D",
+        "DD"
+      ]
+    },
+    "news_template|interactions|clktype": {
+      "table_name": "interactions",
+      "column_name": "clktype",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "Direct",
+      "max_value": "Trending",
+      "top_k_values": [
+        {
+          "value": "Related",
+          "count": 268
+        },
+        {
+          "value": "Recommended",
+          "count": 264
+        },
+        {
+          "value": "Direct",
+          "count": 256
+        },
+        {
+          "value": "Trending",
+          "count": 212
+        }
+      ],
+      "min_length": 6,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAAAAAAA",
+        "AAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "news_template|interactions|clksrc": {
+      "table_name": "interactions",
+      "column_name": "clksrc",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "Article",
+      "max_value": "Search",
+      "top_k_values": [
+        {
+          "value": "Homepage",
+          "count": 283
+        },
+        {
+          "value": "Article",
+          "count": 255
+        },
+        {
+          "value": "Search",
+          "count": 231
+        },
+        {
+          "value": "External",
+          "count": 231
+        }
+      ],
+      "min_length": 6,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAAAAA",
+        "AAAAAA"
+      ]
+    },
+    "news_template|interactions|clkctx": {
+      "table_name": "interactions",
+      "column_name": "clkctx",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "Author",
+      "max_value": "Summary",
+      "top_k_values": [
+        {
+          "value": "Image",
+          "count": 269
+        },
+        {
+          "value": "Summary",
+          "count": 257
+        },
+        {
+          "value": "Author",
+          "count": 239
+        },
+        {
+          "value": "Headline",
+          "count": 235
+        }
+      ],
+      "min_length": 5,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAA",
+        "AAAAAAA",
+        "AAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "news_template|interactions|inttype": {
+      "table_name": "interactions",
+      "column_name": "inttype",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "Click",
+      "max_value": "Share",
+      "top_k_values": [
+        {
+          "value": "Hover",
+          "count": 264
+        },
+        {
+          "value": "Click",
+          "count": 248
+        },
+        {
+          "value": "Share",
+          "count": 244
+        },
+        {
+          "value": "Scroll",
+          "count": 244
+        }
+      ],
+      "min_length": 5,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAA",
+        "AAAAAA"
+      ]
+    },
+    "news_template|recommendations|reckey": {
+      "table_name": "recommendations",
+      "column_name": "reckey",
+      "column_type": "INTEGER",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "1",
+      "max_value": "999",
+      "top_k_values": [
+        {
+          "value": "1",
+          "count": 1
+        },
+        {
+          "value": "2",
+          "count": 1
+        },
+        {
+          "value": "3",
+          "count": 1
+        },
+        {
+          "value": "4",
+          "count": 1
+        },
+        {
+          "value": "5",
+          "count": 1
+        },
+        {
+          "value": "6",
+          "count": 1
+        },
+        {
+          "value": "7",
+          "count": 1
+        },
+        {
+          "value": "8",
+          "count": 1
+        },
+        {
+          "value": "9",
+          "count": 1
+        },
+        {
+          "value": "10",
+          "count": 1
+        }
+      ],
+      "min_length": 1,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D"
+      ]
+    },
+    "news_template|recommendations|alglabel": {
+      "table_name": "recommendations",
+      "column_name": "alglabel",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 4,
+      "min_value": "Collaborative",
+      "max_value": "Hybrid",
+      "top_k_values": [
+        {
+          "value": "Hybrid",
+          "count": 268
+        },
+        {
+          "value": "Contextual",
+          "count": 257
+        },
+        {
+          "value": "Collaborative",
+          "count": 238
+        },
+        {
+          "value": "Content-based",
+          "count": 236
+        }
+      ],
+      "min_length": 6,
+      "max_length": 13,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AAAAAAAAAA",
+        "AAAAAAAAAAAAA",
+        "AAAAAAA-AAAAA"
+      ]
+    },
+    "news_template|recommendations|stratlabel": {
+      "table_name": "recommendations",
+      "column_name": "stratlabel",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 4,
+      "min_value": "Editorial",
+      "max_value": "Trending",
+      "top_k_values": [
+        {
+          "value": "Similar",
+          "count": 272
+        },
+        {
+          "value": "Trending",
+          "count": 254
+        },
+        {
+          "value": "Editorial",
+          "count": 241
+        },
+        {
+          "value": "Personalized",
+          "count": 232
+        }
+      ],
+      "min_length": 7,
+      "max_length": 12,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAAAA",
+        "AAAAAAAAA",
+        "AAAAAAAAAAAA"
+      ]
+    },
+    "news_template|recommendations|posval": {
+      "table_name": "recommendations",
+      "column_name": "posval",
+      "column_type": "INTEGER",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 20,
+      "min_value": "1",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "8",
+          "count": 66
+        },
+        {
+          "value": "20",
+          "count": 61
+        },
+        {
+          "value": "4",
+          "count": 60
+        },
+        {
+          "value": "19",
+          "count": 58
+        },
+        {
+          "value": "16",
+          "count": 58
+        },
+        {
+          "value": "12",
+          "count": 56
+        },
+        {
+          "value": "7",
+          "count": 56
+        },
+        {
+          "value": "11",
+          "count": 55
+        },
+        {
+          "value": "5",
+          "count": 54
+        },
+        {
+          "value": "9",
+          "count": 51
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D"
+      ]
+    },
+    "news_template|recommendations|recpage": {
+      "table_name": "recommendations",
+      "column_name": "recpage",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 4,
+      "min_value": "Article",
+      "max_value": "Search",
+      "top_k_values": [
+        {
+          "value": "Category",
+          "count": 263
+        },
+        {
+          "value": "Article",
+          "count": 253
+        },
+        {
+          "value": "Search",
+          "count": 248
+        },
+        {
+          "value": "Home",
+          "count": 235
+        }
+      ],
+      "min_length": 4,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAAAAA",
+        "AAAAAA",
+        "AAAA"
+      ]
+    },
+    "news_template|recommendations|recsec": {
+      "table_name": "recommendations",
+      "column_name": "recsec",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 4,
+      "min_value": "Bottom",
+      "max_value": "Top",
+      "top_k_values": [
+        {
+          "value": "Related",
+          "count": 265
+        },
+        {
+          "value": "Sidebar",
+          "count": 255
+        },
+        {
+          "value": "Top",
+          "count": 240
+        },
+        {
+          "value": "Bottom",
+          "count": 239
+        }
+      ],
+      "min_length": 3,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAA",
+        "AAAAAA"
+      ]
+    },
+    "news_template|recommendations|recscore": {
+      "table_name": "recommendations",
+      "column_name": "recscore",
+      "column_type": "REAL",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 101,
+      "min_value": "0.0",
+      "max_value": "1.0",
+      "top_k_values": [
+        {
+          "value": "0.02",
+          "count": 21
+        },
+        {
+          "value": "0.31",
+          "count": 18
+        },
+        {
+          "value": "0.71",
+          "count": 16
+        },
+        {
+          "value": "0.19",
+          "count": 16
+        },
+        {
+          "value": "0.9",
+          "count": 15
+        },
+        {
+          "value": "0.35",
+          "count": 15
+        },
+        {
+          "value": "0.76",
+          "count": 14
+        },
+        {
+          "value": "0.68",
+          "count": 14
+        },
+        {
+          "value": "0.56",
+          "count": 14
+        },
+        {
+          "value": "0.52",
+          "count": 14
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "news_template|recommendations|confval": {
+      "table_name": "recommendations",
+      "column_name": "confval",
+      "column_type": "REAL",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 101,
+      "min_value": "0.0",
+      "max_value": "1.0",
+      "top_k_values": [
+        {
+          "value": "0.26",
+          "count": 21
+        },
+        {
+          "value": "0.55",
+          "count": 19
+        },
+        {
+          "value": "0.47",
+          "count": 18
+        },
+        {
+          "value": "0.11",
+          "count": 17
+        },
+        {
+          "value": "0.84",
+          "count": 15
+        },
+        {
+          "value": "0.57",
+          "count": 15
+        },
+        {
+          "value": "0.49",
+          "count": 15
+        },
+        {
+          "value": "0.21",
+          "count": 15
+        },
+        {
+          "value": "0.16",
+          "count": 15
+        },
+        {
+          "value": "0.95",
+          "count": 14
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "news_template|recommendations|divval": {
+      "table_name": "recommendations",
+      "column_name": "divval",
+      "column_type": "REAL",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 101,
+      "min_value": "0.0",
+      "max_value": "1.0",
+      "top_k_values": [
+        {
+          "value": "0.3",
+          "count": 19
+        },
+        {
+          "value": "0.94",
+          "count": 15
+        },
+        {
+          "value": "0.92",
+          "count": 15
+        },
+        {
+          "value": "0.82",
+          "count": 15
+        },
+        {
+          "value": "0.72",
+          "count": 15
+        },
+        {
+          "value": "0.63",
+          "count": 15
+        },
+        {
+          "value": "0.6",
+          "count": 15
+        },
+        {
+          "value": "0.02",
+          "count": 15
+        },
+        {
+          "value": "0.89",
+          "count": 14
+        },
+        {
+          "value": "0.85",
+          "count": 14
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "news_template|recommendations|novval": {
+      "table_name": "recommendations",
+      "column_name": "novval",
+      "column_type": "REAL",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 101,
+      "min_value": "0.0",
+      "max_value": "1.0",
+      "top_k_values": [
+        {
+          "value": "0.85",
+          "count": 18
+        },
+        {
+          "value": "0.7",
+          "count": 17
+        },
+        {
+          "value": "0.99",
+          "count": 16
+        },
+        {
+          "value": "0.77",
+          "count": 16
+        },
+        {
+          "value": "0.72",
+          "count": 15
+        },
+        {
+          "value": "0.6",
+          "count": 15
+        },
+        {
+          "value": "0.42",
+          "count": 15
+        },
+        {
+          "value": "0.37",
+          "count": 15
+        },
+        {
+          "value": "0.8",
+          "count": 14
+        },
+        {
+          "value": "0.66",
+          "count": 14
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "news_template|recommendations|seryval": {
+      "table_name": "recommendations",
+      "column_name": "seryval",
+      "column_type": "REAL",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 101,
+      "min_value": "0.0",
+      "max_value": "1.0",
+      "top_k_values": [
+        {
+          "value": "0.15",
+          "count": 19
+        },
+        {
+          "value": "0.31",
+          "count": 18
+        },
+        {
+          "value": "0.61",
+          "count": 16
+        },
+        {
+          "value": "0.59",
+          "count": 16
+        },
+        {
+          "value": "0.48",
+          "count": 16
+        },
+        {
+          "value": "0.19",
+          "count": 16
+        },
+        {
+          "value": "0.93",
+          "count": 15
+        },
+        {
+          "value": "0.83",
+          "count": 15
+        },
+        {
+          "value": "0.8",
+          "count": 15
+        },
+        {
+          "value": "0.05",
+          "count": 15
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "news_template|recommendations|artlink": {
+      "table_name": "recommendations",
+      "column_name": "artlink",
+      "column_type": "INTEGER",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "1",
+      "max_value": "999",
+      "top_k_values": [
+        {
+          "value": "1000",
+          "count": 1
+        },
+        {
+          "value": "999",
+          "count": 1
+        },
+        {
+          "value": "998",
+          "count": 1
+        },
+        {
+          "value": "997",
+          "count": 1
+        },
+        {
+          "value": "996",
+          "count": 1
+        },
+        {
+          "value": "995",
+          "count": 1
+        },
+        {
+          "value": "994",
+          "count": 1
+        },
+        {
+          "value": "993",
+          "count": 1
+        },
+        {
+          "value": "992",
+          "count": 1
+        },
+        {
+          "value": "991",
+          "count": 1
+        }
+      ],
+      "min_length": 1,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D",
+        "DDDD"
+      ]
+    },
+    "news_template|sessions|seshkey": {
+      "table_name": "sessions",
+      "column_name": "seshkey",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "1",
+      "max_value": "999",
+      "top_k_values": [
+        {
+          "value": "1",
+          "count": 1
+        },
+        {
+          "value": "2",
+          "count": 1
+        },
+        {
+          "value": "3",
+          "count": 1
+        },
+        {
+          "value": "4",
+          "count": 1
+        },
+        {
+          "value": "5",
+          "count": 1
+        },
+        {
+          "value": "6",
+          "count": 1
+        },
+        {
+          "value": "7",
+          "count": 1
+        },
+        {
+          "value": "8",
+          "count": 1
+        },
+        {
+          "value": "9",
+          "count": 1
+        },
+        {
+          "value": "10",
+          "count": 1
+        }
+      ],
+      "min_length": 1,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D",
+        "DDDD"
+      ]
+    },
+    "news_template|sessions|userel": {
+      "table_name": "sessions",
+      "column_name": "userel",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 994,
+      "min_value": "1",
+      "max_value": "994",
+      "top_k_values": [
+        {
+          "value": "865",
+          "count": 2
+        },
+        {
+          "value": "682",
+          "count": 2
+        },
+        {
+          "value": "572",
+          "count": 2
+        },
+        {
+          "value": "513",
+          "count": 2
+        },
+        {
+          "value": "494",
+          "count": 2
+        },
+        {
+          "value": "351",
+          "count": 2
+        },
+        {
+          "value": "994",
+          "count": 1
+        },
+        {
+          "value": "993",
+          "count": 1
+        },
+        {
+          "value": "992",
+          "count": 1
+        },
+        {
+          "value": "991",
+          "count": 1
+        }
+      ],
+      "min_length": 1,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D"
+      ]
+    },
+    "news_template|sessions|devrel": {
+      "table_name": "sessions",
+      "column_name": "devrel",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 993,
+      "min_value": "1",
+      "max_value": "993",
+      "top_k_values": [
+        {
+          "value": "821",
+          "count": 2
+        },
+        {
+          "value": "767",
+          "count": 2
+        },
+        {
+          "value": "733",
+          "count": 2
+        },
+        {
+          "value": "324",
+          "count": 2
+        },
+        {
+          "value": "238",
+          "count": 2
+        },
+        {
+          "value": "195",
+          "count": 2
+        },
+        {
+          "value": "26",
+          "count": 2
+        },
+        {
+          "value": "993",
+          "count": 1
+        },
+        {
+          "value": "992",
+          "count": 1
+        },
+        {
+          "value": "991",
+          "count": 1
+        }
+      ],
+      "min_length": 1,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D"
+      ]
+    },
+    "news_template|sessions|seshstart": {
+      "table_name": "sessions",
+      "column_name": "seshstart",
+      "column_type": "TEXT(6)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 121,
+      "min_value": "2025-02-19 06:31:16",
+      "max_value": "2025-02-19 08:31:16",
+      "top_k_values": [
+        {
+          "value": "2025-02-19 08:12:16",
+          "count": 16
+        },
+        {
+          "value": "2025-02-19 07:15:16",
+          "count": 16
+        },
+        {
+          "value": "2025-02-19 06:40:16",
+          "count": 16
+        },
+        {
+          "value": "2025-02-19 08:21:16",
+          "count": 13
+        },
+        {
+          "value": "2025-02-19 08:18:16",
+          "count": 13
+        },
+        {
+          "value": "2025-02-19 08:06:16",
+          "count": 13
+        },
+        {
+          "value": "2025-02-19 07:57:16",
+          "count": 13
+        },
+        {
+          "value": "2025-02-19 07:48:16",
+          "count": 13
+        },
+        {
+          "value": "2025-02-19 06:55:16",
+          "count": 13
+        },
+        {
+          "value": "2025-02-19 06:45:16",
+          "count": 13
+        }
+      ],
+      "min_length": 19,
+      "max_length": 19,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDD-DD-DD DD:DD:DD"
+      ]
+    },
+    "news_template|sessions|seshdur": {
+      "table_name": "sessions",
+      "column_name": "seshdur",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 870,
+      "min_value": "1008",
+      "max_value": "994",
+      "top_k_values": [
+        {
+          "value": "3442",
+          "count": 4
+        },
+        {
+          "value": "3360",
+          "count": 3
+        },
+        {
+          "value": "3071",
+          "count": 3
+        },
+        {
+          "value": "2970",
+          "count": 3
+        },
+        {
+          "value": "2933",
+          "count": 3
+        },
+        {
+          "value": "2649",
+          "count": 3
+        },
+        {
+          "value": "2230",
+          "count": 3
+        },
+        {
+          "value": "2011",
+          "count": 3
+        },
+        {
+          "value": "1531",
+          "count": 3
+        },
+        {
+          "value": "1359",
+          "count": 3
+        }
+      ],
+      "min_length": 2,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDD",
+        "DDD",
+        "DD"
+      ]
+    },
+    "news_template|sessions|seshviews": {
+      "table_name": "sessions",
+      "column_name": "seshviews",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 50,
+      "min_value": "1",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "4",
+          "count": 30
+        },
+        {
+          "value": "48",
+          "count": 28
+        },
+        {
+          "value": "1",
+          "count": 28
+        },
+        {
+          "value": "6",
+          "count": 27
+        },
+        {
+          "value": "2",
+          "count": 27
+        },
+        {
+          "value": "44",
+          "count": 25
+        },
+        {
+          "value": "30",
+          "count": 25
+        },
+        {
+          "value": "8",
+          "count": 25
+        },
+        {
+          "value": "29",
+          "count": 24
+        },
+        {
+          "value": "21",
+          "count": 24
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D"
+      ]
+    },
+    "news_template|sessions|bncrate": {
+      "table_name": "sessions",
+      "column_name": "bncrate",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 101,
+      "min_value": "0.0",
+      "max_value": "1.0",
+      "top_k_values": [
+        {
+          "value": "0.96",
+          "count": 18
+        },
+        {
+          "value": "0.76",
+          "count": 16
+        },
+        {
+          "value": "0.41",
+          "count": 16
+        },
+        {
+          "value": "0.81",
+          "count": 15
+        },
+        {
+          "value": "0.7",
+          "count": 14
+        },
+        {
+          "value": "0.46",
+          "count": 14
+        },
+        {
+          "value": "0.23",
+          "count": 14
+        },
+        {
+          "value": "0.22",
+          "count": 14
+        },
+        {
+          "value": "0.17",
+          "count": 14
+        },
+        {
+          "value": "0.09",
+          "count": 14
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "news_template|sessions|seshdepth": {
+      "table_name": "sessions",
+      "column_name": "seshdepth",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 20,
+      "min_value": "1",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "19",
+          "count": 65
+        },
+        {
+          "value": "17",
+          "count": 61
+        },
+        {
+          "value": "14",
+          "count": 60
+        },
+        {
+          "value": "8",
+          "count": 60
+        },
+        {
+          "value": "11",
+          "count": 55
+        },
+        {
+          "value": "6",
+          "count": 54
+        },
+        {
+          "value": "18",
+          "count": 53
+        },
+        {
+          "value": "13",
+          "count": 52
+        },
+        {
+          "value": "10",
+          "count": 50
+        },
+        {
+          "value": "20",
+          "count": 48
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D"
+      ]
+    },
+    "news_template|sessions|engscore": {
+      "table_name": "sessions",
+      "column_name": "engscore",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 101,
+      "min_value": "0.0",
+      "max_value": "1.0",
+      "top_k_values": [
+        {
+          "value": "0.93",
+          "count": 20
+        },
+        {
+          "value": "0.52",
+          "count": 20
+        },
+        {
+          "value": "0.69",
+          "count": 19
+        },
+        {
+          "value": "0.48",
+          "count": 17
+        },
+        {
+          "value": "0.21",
+          "count": 17
+        },
+        {
+          "value": "0.88",
+          "count": 16
+        },
+        {
+          "value": "0.45",
+          "count": 16
+        },
+        {
+          "value": "0.29",
+          "count": 16
+        },
+        {
+          "value": "0.02",
+          "count": 16
+        },
+        {
+          "value": "0.89",
+          "count": 15
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "news_template|sessions|seshrecs": {
+      "table_name": "sessions",
+      "column_name": "seshrecs",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 46,
+      "min_value": "10",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "9",
+          "count": 31
+        },
+        {
+          "value": "37",
+          "count": 29
+        },
+        {
+          "value": "6",
+          "count": 29
+        },
+        {
+          "value": "19",
+          "count": 28
+        },
+        {
+          "value": "14",
+          "count": 27
+        },
+        {
+          "value": "8",
+          "count": 27
+        },
+        {
+          "value": "22",
+          "count": 26
+        },
+        {
+          "value": "21",
+          "count": 26
+        },
+        {
+          "value": "49",
+          "count": 25
+        },
+        {
+          "value": "48",
+          "count": 25
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D"
+      ]
+    },
+    "news_template|sessions|seshclicks": {
+      "table_name": "sessions",
+      "column_name": "seshclicks",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 21,
+      "min_value": "0",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "11",
+          "count": 60
+        },
+        {
+          "value": "13",
+          "count": 56
+        },
+        {
+          "value": "1",
+          "count": 56
+        },
+        {
+          "value": "20",
+          "count": 55
+        },
+        {
+          "value": "3",
+          "count": 55
+        },
+        {
+          "value": "16",
+          "count": 54
+        },
+        {
+          "value": "6",
+          "count": 52
+        },
+        {
+          "value": "18",
+          "count": 51
+        },
+        {
+          "value": "9",
+          "count": 50
+        },
+        {
+          "value": "7",
+          "count": 48
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D"
+      ]
+    },
+    "news_template|sessions|ctrval": {
+      "table_name": "sessions",
+      "column_name": "ctrval",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 160,
+      "min_value": "0.0",
+      "max_value": "3.6",
+      "top_k_values": [
+        {
+          "value": "0.0",
+          "count": 44
+        },
+        {
+          "value": "0.33",
+          "count": 24
+        },
+        {
+          "value": "0.46",
+          "count": 19
+        },
+        {
+          "value": "1.0",
+          "count": 18
+        },
+        {
+          "value": "0.5",
+          "count": 17
+        },
+        {
+          "value": "0.26",
+          "count": 17
+        },
+        {
+          "value": "0.14",
+          "count": 17
+        },
+        {
+          "value": "0.05",
+          "count": 17
+        },
+        {
+          "value": "0.31",
+          "count": 16
+        },
+        {
+          "value": "0.27",
+          "count": 16
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "news_template|sessions|langcode": {
+      "table_name": "sessions",
+      "column_name": "langcode",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 5,
+      "min_value": "de",
+      "max_value": "zh",
+      "top_k_values": [
+        {
+          "value": "en",
+          "count": 210
+        },
+        {
+          "value": "zh",
+          "count": 203
+        },
+        {
+          "value": "es",
+          "count": 203
+        },
+        {
+          "value": "fr",
+          "count": 200
+        },
+        {
+          "value": "de",
+          "count": 184
+        }
+      ],
+      "min_length": 2,
+      "max_length": 2,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AA"
+      ]
+    },
+    "news_template|sessions|tzoffset": {
+      "table_name": "sessions",
+      "column_name": "tzoffset",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 5,
+      "min_value": "-5",
+      "max_value": "8",
+      "top_k_values": [
+        {
+          "value": "-8",
+          "count": 217
+        },
+        {
+          "value": "1",
+          "count": 204
+        },
+        {
+          "value": "8",
+          "count": 201
+        },
+        {
+          "value": "0",
+          "count": 200
+        },
+        {
+          "value": "-5",
+          "count": 178
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D",
+        "-D"
+      ]
+    },
+    "news_template|sessions|ipaddr": {
+      "table_name": "sessions",
+      "column_name": "ipaddr",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "1.154.17.13",
+      "max_value": "99.28.1.70",
+      "top_k_values": [
+        {
+          "value": "99.28.1.70",
+          "count": 1
+        },
+        {
+          "value": "99.245.135.115",
+          "count": 1
+        },
+        {
+          "value": "99.222.159.223",
+          "count": 1
+        },
+        {
+          "value": "99.196.85.227",
+          "count": 1
+        },
+        {
+          "value": "98.67.216.56",
+          "count": 1
+        },
+        {
+          "value": "98.221.0.43",
+          "count": 1
+        },
+        {
+          "value": "98.206.96.233",
+          "count": 1
+        },
+        {
+          "value": "98.156.132.139",
+          "count": 1
+        },
+        {
+          "value": "97.170.65.227",
+          "count": 1
+        },
+        {
+          "value": "97.144.15.4",
+          "count": 1
+        }
+      ],
+      "min_length": 9,
+      "max_length": 15,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD.DDD.DDD.DDD",
+        "DDD.DD.DDD.DDD",
+        "DD.DDD.DDD.DDD",
+        "DDD.DDD.DD.DDD",
+        "DDD.DDD.DDD.DD"
+      ]
+    },
+    "news_template|sessions|geoctry": {
+      "table_name": "sessions",
+      "column_name": "geoctry",
+      "column_type": "TEXT(100)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 240,
+      "min_value": "Afghanistan",
+      "max_value": "Zimbabwe",
+      "top_k_values": [
+        {
+          "value": "Qatar",
+          "count": 11
+        },
+        {
+          "value": "Belarus",
+          "count": 10
+        },
+        {
+          "value": "Wallis and Futuna",
+          "count": 9
+        },
+        {
+          "value": "Djibouti",
+          "count": 9
+        },
+        {
+          "value": "Trinidad and Tobago",
+          "count": 8
+        },
+        {
+          "value": "Tajikistan",
+          "count": 8
+        },
+        {
+          "value": "Sierra Leone",
+          "count": 8
+        },
+        {
+          "value": "Martinique",
+          "count": 8
+        },
+        {
+          "value": "Isle of Man",
+          "count": 8
+        },
+        {
+          "value": "Guam",
+          "count": 8
+        }
+      ],
+      "min_length": 4,
+      "max_length": 51,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAA",
+        "AAAAAAAA",
+        "AAAAAA",
+        "AAAAAAAAAA"
+      ]
+    },
+    "news_template|sessions|georeg": {
+      "table_name": "sessions",
+      "column_name": "georeg",
+      "column_type": "TEXT(100)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 50,
+      "min_value": "Alabama",
+      "max_value": "Wyoming",
+      "top_k_values": [
+        {
+          "value": "Nevada",
+          "count": 30
+        },
+        {
+          "value": "Arkansas",
+          "count": 29
+        },
+        {
+          "value": "Florida",
+          "count": 28
+        },
+        {
+          "value": "Utah",
+          "count": 27
+        },
+        {
+          "value": "New Mexico",
+          "count": 27
+        },
+        {
+          "value": "New Hampshire",
+          "count": 27
+        },
+        {
+          "value": "Minnesota",
+          "count": 27
+        },
+        {
+          "value": "Maryland",
+          "count": 27
+        },
+        {
+          "value": "Georgia",
+          "count": 27
+        },
+        {
+          "value": "Rhode Island",
+          "count": 26
+        }
+      ],
+      "min_length": 4,
+      "max_length": 14,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAAAAA",
+        "AAAAAA",
+        "AAAAAAAAA",
+        "AAAA"
+      ]
+    },
+    "news_template|sessions|geocity": {
+      "table_name": "sessions",
+      "column_name": "geocity",
+      "column_type": "TEXT(100)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 968,
+      "min_value": "Aaronland",
+      "max_value": "Zacharyshire",
+      "top_k_values": [
+        {
+          "value": "East Joseph",
+          "count": 4
+        },
+        {
+          "value": "Angelaside",
+          "count": 3
+        },
+        {
+          "value": "West Michael",
+          "count": 2
+        },
+        {
+          "value": "Timothymouth",
+          "count": 2
+        },
+        {
+          "value": "South Michael",
+          "count": 2
+        },
+        {
+          "value": "South John",
+          "count": 2
+        },
+        {
+          "value": "South Elizabeth",
+          "count": 2
+        },
+        {
+          "value": "South David",
+          "count": 2
+        },
+        {
+          "value": "South Christopher",
+          "count": 2
+        },
+        {
+          "value": "Sandrashire",
+          "count": 2
+        }
+      ],
+      "min_length": 7,
+      "max_length": 21,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAAA",
+        "AAAAAAAAAAA",
+        "AAAAAAAAA",
+        "AAAAAAAAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "news_template|sessions|expref": {
+      "table_name": "sessions",
+      "column_name": "expref",
+      "column_type": "TEXT(30)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 597,
+      "min_value": "EXP101",
+      "max_value": "EXP999",
+      "top_k_values": [
+        {
+          "value": "EXP966",
+          "count": 5
+        },
+        {
+          "value": "EXP304",
+          "count": 5
+        },
+        {
+          "value": "EXP977",
+          "count": 4
+        },
+        {
+          "value": "EXP932",
+          "count": 4
+        },
+        {
+          "value": "EXP916",
+          "count": 4
+        },
+        {
+          "value": "EXP866",
+          "count": 4
+        },
+        {
+          "value": "EXP853",
+          "count": 4
+        },
+        {
+          "value": "EXP840",
+          "count": 4
+        },
+        {
+          "value": "EXP802",
+          "count": 4
+        },
+        {
+          "value": "EXP758",
+          "count": 4
+        }
+      ],
+      "min_length": 6,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAADDD"
+      ]
+    },
+    "news_template|sessions|persver": {
+      "table_name": "sessions",
+      "column_name": "persver",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 5,
+      "min_value": "v1",
+      "max_value": "v5",
+      "top_k_values": [
+        {
+          "value": "v3",
+          "count": 219
+        },
+        {
+          "value": "v4",
+          "count": 210
+        },
+        {
+          "value": "v1",
+          "count": 199
+        },
+        {
+          "value": "v2",
+          "count": 189
+        },
+        {
+          "value": "v5",
+          "count": 183
+        }
+      ],
+      "min_length": 2,
+      "max_length": 2,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AD"
+      ]
+    },
+    "news_template|sessions|recset": {
+      "table_name": "sessions",
+      "column_name": "recset",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 946,
+      "min_value": "RS1005",
+      "max_value": "RS9998",
+      "top_k_values": [
+        {
+          "value": "RS3263",
+          "count": 3
+        },
+        {
+          "value": "RS9995",
+          "count": 2
+        },
+        {
+          "value": "RS9777",
+          "count": 2
+        },
+        {
+          "value": "RS9738",
+          "count": 2
+        },
+        {
+          "value": "RS9481",
+          "count": 2
+        },
+        {
+          "value": "RS9435",
+          "count": 2
+        },
+        {
+          "value": "RS9433",
+          "count": 2
+        },
+        {
+          "value": "RS9425",
+          "count": 2
+        },
+        {
+          "value": "RS9292",
+          "count": 2
+        },
+        {
+          "value": "RS9229",
+          "count": 2
+        }
+      ],
+      "min_length": 6,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDD"
+      ]
+    },
+    "news_template|sessions|relscore": {
+      "table_name": "sessions",
+      "column_name": "relscore",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 101,
+      "min_value": "0.0",
+      "max_value": "1.0",
+      "top_k_values": [
+        {
+          "value": "0.97",
+          "count": 18
+        },
+        {
+          "value": "0.29",
+          "count": 18
+        },
+        {
+          "value": "0.69",
+          "count": 16
+        },
+        {
+          "value": "0.8",
+          "count": 15
+        },
+        {
+          "value": "0.7",
+          "count": 15
+        },
+        {
+          "value": "0.49",
+          "count": 15
+        },
+        {
+          "value": "0.09",
+          "count": 15
+        },
+        {
+          "value": "0.88",
+          "count": 14
+        },
+        {
+          "value": "0.86",
+          "count": 14
+        },
+        {
+          "value": "0.72",
+          "count": 14
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "news_template|sessions|persacc": {
+      "table_name": "sessions",
+      "column_name": "persacc",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 101,
+      "min_value": "0.0",
+      "max_value": "1.0",
+      "top_k_values": [
+        {
+          "value": "0.63",
+          "count": 18
+        },
+        {
+          "value": "0.25",
+          "count": 17
+        },
+        {
+          "value": "0.69",
+          "count": 16
+        },
+        {
+          "value": "0.58",
+          "count": 16
+        },
+        {
+          "value": "0.39",
+          "count": 16
+        },
+        {
+          "value": "0.14",
+          "count": 16
+        },
+        {
+          "value": "0.36",
+          "count": 15
+        },
+        {
+          "value": "0.32",
+          "count": 15
+        },
+        {
+          "value": "0.98",
+          "count": 14
+        },
+        {
+          "value": "0.78",
+          "count": 14
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "news_template|sessions|recutil": {
+      "table_name": "sessions",
+      "column_name": "recutil",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 101,
+      "min_value": "0.0",
+      "max_value": "1.0",
+      "top_k_values": [
+        {
+          "value": "0.82",
+          "count": 16
+        },
+        {
+          "value": "0.72",
+          "count": 16
+        },
+        {
+          "value": "0.66",
+          "count": 15
+        },
+        {
+          "value": "0.59",
+          "count": 15
+        },
+        {
+          "value": "0.25",
+          "count": 15
+        },
+        {
+          "value": "0.2",
+          "count": 15
+        },
+        {
+          "value": "0.18",
+          "count": 15
+        },
+        {
+          "value": "0.11",
+          "count": 15
+        },
+        {
+          "value": "0.8",
+          "count": 14
+        },
+        {
+          "value": "0.71",
+          "count": 14
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "news_template|systemperformance|rectrace": {
+      "table_name": "systemperformance",
+      "column_name": "rectrace",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "1",
+      "max_value": "999",
+      "top_k_values": [
+        {
+          "value": "1",
+          "count": 1
+        },
+        {
+          "value": "2",
+          "count": 1
+        },
+        {
+          "value": "3",
+          "count": 1
+        },
+        {
+          "value": "4",
+          "count": 1
+        },
+        {
+          "value": "5",
+          "count": 1
+        },
+        {
+          "value": "6",
+          "count": 1
+        },
+        {
+          "value": "7",
+          "count": 1
+        },
+        {
+          "value": "8",
+          "count": 1
+        },
+        {
+          "value": "9",
+          "count": 1
+        },
+        {
+          "value": "10",
+          "count": 1
+        }
+      ],
+      "min_length": 1,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D",
+        "DDDD"
+      ]
+    },
+    "news_template|systemperformance|perfts": {
+      "table_name": "systemperformance",
+      "column_name": "perfts",
+      "column_type": "TEXT(6)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "2025-01-19 07:37:43.783057",
+      "max_value": "2025-02-19 07:58:30.827922",
+      "top_k_values": [
+        {
+          "value": "2025-02-19 07:58:30.827922",
+          "count": 1
+        },
+        {
+          "value": "2025-02-19 07:45:16.768727",
+          "count": 1
+        },
+        {
+          "value": "2025-02-19 03:51:16.806703",
+          "count": 1
+        },
+        {
+          "value": "2025-02-19 03:49:04.917421",
+          "count": 1
+        },
+        {
+          "value": "2025-02-19 03:21:48.870529",
+          "count": 1
+        },
+        {
+          "value": "2025-02-19 01:20:42.84927",
+          "count": 1
+        },
+        {
+          "value": "2025-02-19 00:39:32.941146",
+          "count": 1
+        },
+        {
+          "value": "2025-02-19 00:16:14.69467",
+          "count": 1
+        },
+        {
+          "value": "2025-02-18 23:46:14.917421",
+          "count": 1
+        },
+        {
+          "value": "2025-02-18 23:01:57.933042",
+          "count": 1
+        }
+      ],
+      "min_length": 25,
+      "max_length": 26,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDD-DD-DD DD:DD:DD.DDDDDD",
+        "DDDD-DD-DD DD:DD:DD.DDDDD"
+      ]
+    },
+    "news_template|systemperformance|resptime": {
+      "table_name": "systemperformance",
+      "column_name": "resptime",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 776,
+      "min_value": "100",
+      "max_value": "997",
+      "top_k_values": [
+        {
+          "value": "1907",
+          "count": 4
+        },
+        {
+          "value": "689",
+          "count": 4
+        },
+        {
+          "value": "537",
+          "count": 4
+        },
+        {
+          "value": "466",
+          "count": 4
+        },
+        {
+          "value": "1931",
+          "count": 3
+        },
+        {
+          "value": "1860",
+          "count": 3
+        },
+        {
+          "value": "1837",
+          "count": 3
+        },
+        {
+          "value": "1713",
+          "count": 3
+        },
+        {
+          "value": "1706",
+          "count": 3
+        },
+        {
+          "value": "1614",
+          "count": 3
+        }
+      ],
+      "min_length": 2,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDD",
+        "DDD",
+        "DD"
+      ]
+    },
+    "news_template|systemperformance|loadscore": {
+      "table_name": "systemperformance",
+      "column_name": "loadscore",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 101,
+      "min_value": "0.0",
+      "max_value": "1.0",
+      "top_k_values": [
+        {
+          "value": "0.86",
+          "count": 19
+        },
+        {
+          "value": "0.38",
+          "count": 19
+        },
+        {
+          "value": "0.99",
+          "count": 16
+        },
+        {
+          "value": "0.85",
+          "count": 16
+        },
+        {
+          "value": "0.37",
+          "count": 16
+        },
+        {
+          "value": "0.24",
+          "count": 16
+        },
+        {
+          "value": "0.03",
+          "count": 16
+        },
+        {
+          "value": "0.98",
+          "count": 15
+        },
+        {
+          "value": "0.93",
+          "count": 15
+        },
+        {
+          "value": "0.82",
+          "count": 15
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "news_template|systemperformance|errcount": {
+      "table_name": "systemperformance",
+      "column_name": "errcount",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 6,
+      "min_value": "0",
+      "max_value": "5",
+      "top_k_values": [
+        {
+          "value": "5",
+          "count": 177
+        },
+        {
+          "value": "2",
+          "count": 173
+        },
+        {
+          "value": "1",
+          "count": 173
+        },
+        {
+          "value": "3",
+          "count": 160
+        },
+        {
+          "value": "0",
+          "count": 159
+        },
+        {
+          "value": "4",
+          "count": 158
+        }
+      ],
+      "min_length": 1,
+      "max_length": 1,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D"
+      ]
+    },
+    "news_template|systemperformance|warncount": {
+      "table_name": "systemperformance",
+      "column_name": "warncount",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 11,
+      "min_value": "0",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "10",
+          "count": 114
+        },
+        {
+          "value": "4",
+          "count": 113
+        },
+        {
+          "value": "7",
+          "count": 92
+        },
+        {
+          "value": "3",
+          "count": 91
+        },
+        {
+          "value": "6",
+          "count": 90
+        },
+        {
+          "value": "0",
+          "count": 89
+        },
+        {
+          "value": "8",
+          "count": 87
+        },
+        {
+          "value": "1",
+          "count": 84
+        },
+        {
+          "value": "5",
+          "count": 82
+        },
+        {
+          "value": "2",
+          "count": 81
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D",
+        "DD"
+      ]
+    },
+    "news_template|systemperformance|perfscore": {
+      "table_name": "systemperformance",
+      "column_name": "perfscore",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 101,
+      "min_value": "0.0",
+      "max_value": "1.0",
+      "top_k_values": [
+        {
+          "value": "0.15",
+          "count": 18
+        },
+        {
+          "value": "0.8",
+          "count": 17
+        },
+        {
+          "value": "0.21",
+          "count": 17
+        },
+        {
+          "value": "0.96",
+          "count": 16
+        },
+        {
+          "value": "0.87",
+          "count": 16
+        },
+        {
+          "value": "0.19",
+          "count": 16
+        },
+        {
+          "value": "0.93",
+          "count": 14
+        },
+        {
+          "value": "0.44",
+          "count": 14
+        },
+        {
+          "value": "0.3",
+          "count": 14
+        },
+        {
+          "value": "0.88",
+          "count": 13
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "news_template|systemperformance|cachestate": {
+      "table_name": "systemperformance",
+      "column_name": "cachestate",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Expired",
+      "max_value": "Miss",
+      "top_k_values": [
+        {
+          "value": "Expired",
+          "count": 352
+        },
+        {
+          "value": "Hit",
+          "count": 348
+        },
+        {
+          "value": "Miss",
+          "count": 300
+        }
+      ],
+      "min_length": 3,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAA",
+        "AAAA"
+      ]
+    },
+    "news_template|systemperformance|apiver": {
+      "table_name": "systemperformance",
+      "column_name": "apiver",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "v1",
+      "max_value": "v3",
+      "top_k_values": [
+        {
+          "value": "v3",
+          "count": 342
+        },
+        {
+          "value": "v1",
+          "count": 339
+        },
+        {
+          "value": "v2",
+          "count": 319
+        }
+      ],
+      "min_length": 2,
+      "max_length": 2,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AD"
+      ]
+    },
+    "news_template|systemperformance|cliver": {
+      "table_name": "systemperformance",
+      "column_name": "cliver",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 50,
+      "min_value": "1.0",
+      "max_value": "5.9",
+      "top_k_values": [
+        {
+          "value": "4.8",
+          "count": 31
+        },
+        {
+          "value": "3.7",
+          "count": 30
+        },
+        {
+          "value": "5.0",
+          "count": 29
+        },
+        {
+          "value": "4.5",
+          "count": 27
+        },
+        {
+          "value": "2.4",
+          "count": 27
+        },
+        {
+          "value": "3.9",
+          "count": 26
+        },
+        {
+          "value": "4.4",
+          "count": 25
+        },
+        {
+          "value": "2.0",
+          "count": 23
+        },
+        {
+          "value": "1.3",
+          "count": 23
+        },
+        {
+          "value": "5.2",
+          "count": 22
+        }
+      ],
+      "min_length": 3,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D.D"
+      ]
+    },
+    "news_template|systemperformance|featset": {
+      "table_name": "systemperformance",
+      "column_name": "featset",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 85,
+      "min_value": "f1",
+      "max_value": "f5,f4,f3",
+      "top_k_values": [
+        {
+          "value": "f5",
+          "count": 76
+        },
+        {
+          "value": "f1",
+          "count": 75
+        },
+        {
+          "value": "f3",
+          "count": 73
+        },
+        {
+          "value": "f2",
+          "count": 66
+        },
+        {
+          "value": "f4",
+          "count": 56
+        },
+        {
+          "value": "f2,f4",
+          "count": 25
+        },
+        {
+          "value": "f2,f3",
+          "count": 23
+        },
+        {
+          "value": "f4,f5",
+          "count": 21
+        },
+        {
+          "value": "f4,f2",
+          "count": 20
+        },
+        {
+          "value": "f4,f1",
+          "count": 20
+        }
+      ],
+      "min_length": 2,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AD",
+        "AD,AD",
+        "AD,AD,AD"
+      ]
+    },
+    "news_template|systemperformance|devlink": {
+      "table_name": "systemperformance",
+      "column_name": "devlink",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 993,
+      "min_value": "1",
+      "max_value": "993",
+      "top_k_values": [
+        {
+          "value": "821",
+          "count": 2
+        },
+        {
+          "value": "767",
+          "count": 2
+        },
+        {
+          "value": "733",
+          "count": 2
+        },
+        {
+          "value": "324",
+          "count": 2
+        },
+        {
+          "value": "238",
+          "count": 2
+        },
+        {
+          "value": "195",
+          "count": 2
+        },
+        {
+          "value": "26",
+          "count": 2
+        },
+        {
+          "value": "993",
+          "count": 1
+        },
+        {
+          "value": "992",
+          "count": 1
+        },
+        {
+          "value": "991",
+          "count": 1
+        }
+      ],
+      "min_length": 1,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D"
+      ]
+    },
+    "news_template|systemperformance|seshlink": {
+      "table_name": "systemperformance",
+      "column_name": "seshlink",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "1",
+      "max_value": "999",
+      "top_k_values": [
+        {
+          "value": "1000",
+          "count": 1
+        },
+        {
+          "value": "999",
+          "count": 1
+        },
+        {
+          "value": "998",
+          "count": 1
+        },
+        {
+          "value": "997",
+          "count": 1
+        },
+        {
+          "value": "996",
+          "count": 1
+        },
+        {
+          "value": "995",
+          "count": 1
+        },
+        {
+          "value": "994",
+          "count": 1
+        },
+        {
+          "value": "993",
+          "count": 1
+        },
+        {
+          "value": "992",
+          "count": 1
+        },
+        {
+          "value": "991",
+          "count": 1
+        }
+      ],
+      "min_length": 1,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D",
+        "DDDD"
+      ]
+    },
+    "news_template|users|userkey": {
+      "table_name": "users",
+      "column_name": "userkey",
+      "column_type": "INTEGER",
+      "row_count": 994,
+      "null_count": 0,
+      "non_null_count": 994,
+      "distinct_count": 994,
+      "min_value": "1",
+      "max_value": "994",
+      "top_k_values": [
+        {
+          "value": "1",
+          "count": 1
+        },
+        {
+          "value": "2",
+          "count": 1
+        },
+        {
+          "value": "3",
+          "count": 1
+        },
+        {
+          "value": "4",
+          "count": 1
+        },
+        {
+          "value": "5",
+          "count": 1
+        },
+        {
+          "value": "6",
+          "count": 1
+        },
+        {
+          "value": "7",
+          "count": 1
+        },
+        {
+          "value": "8",
+          "count": 1
+        },
+        {
+          "value": "9",
+          "count": 1
+        },
+        {
+          "value": "10",
+          "count": 1
+        }
+      ],
+      "min_length": 1,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D"
+      ]
+    },
+    "news_template|users|regmoment": {
+      "table_name": "users",
+      "column_name": "regmoment",
+      "column_type": "TEXT",
+      "row_count": 994,
+      "null_count": 0,
+      "non_null_count": 994,
+      "distinct_count": 635,
+      "min_value": "2022-05-27",
+      "max_value": "2025-02-18",
+      "top_k_values": [
+        {
+          "value": "2024-01-24",
+          "count": 6
+        },
+        {
+          "value": "2022-10-17",
+          "count": 5
+        },
+        {
+          "value": "2024-12-14",
+          "count": 4
+        },
+        {
+          "value": "2024-10-04",
+          "count": 4
+        },
+        {
+          "value": "2024-10-03",
+          "count": 4
+        },
+        {
+          "value": "2024-01-10",
+          "count": 4
+        },
+        {
+          "value": "2023-12-18",
+          "count": 4
+        },
+        {
+          "value": "2023-10-12",
+          "count": 4
+        },
+        {
+          "value": "2023-09-27",
+          "count": 4
+        },
+        {
+          "value": "2023-08-31",
+          "count": 4
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDD-DD-DD"
+      ]
+    },
+    "news_template|users|typelabel": {
+      "table_name": "users",
+      "column_name": "typelabel",
+      "column_type": "TEXT",
+      "row_count": 994,
+      "null_count": 0,
+      "non_null_count": 994,
+      "distinct_count": 3,
+      "min_value": "Free",
+      "max_value": "Trial",
+      "top_k_values": [
+        {
+          "value": "Trial",
+          "count": 357
+        },
+        {
+          "value": "Premium",
+          "count": 335
+        },
+        {
+          "value": "Free",
+          "count": 302
+        }
+      ],
+      "min_length": 4,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAA",
+        "AAAAAAA",
+        "AAAA"
+      ]
+    },
+    "news_template|users|seglabel": {
+      "table_name": "users",
+      "column_name": "seglabel",
+      "column_type": "TEXT",
+      "row_count": 994,
+      "null_count": 0,
+      "non_null_count": 994,
+      "distinct_count": 4,
+      "min_value": "Active",
+      "max_value": "Regular",
+      "top_k_values": [
+        {
+          "value": "Regular",
+          "count": 255
+        },
+        {
+          "value": "Active",
+          "count": 255
+        },
+        {
+          "value": "New",
+          "count": 246
+        },
+        {
+          "value": "Dormant",
+          "count": 238
+        }
+      ],
+      "min_length": 3,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAA",
+        "AAA"
+      ]
+    },
+    "news_template|users|substatus": {
+      "table_name": "users",
+      "column_name": "substatus",
+      "column_type": "TEXT",
+      "row_count": 994,
+      "null_count": 0,
+      "non_null_count": 994,
+      "distinct_count": 3,
+      "min_value": "Basic",
+      "max_value": "Premium",
+      "top_k_values": [
+        {
+          "value": "Basic",
+          "count": 535
+        },
+        {
+          "value": "Enterprise",
+          "count": 238
+        },
+        {
+          "value": "Premium",
+          "count": 221
+        }
+      ],
+      "min_length": 5,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAA",
+        "AAAAAAAAAA",
+        "AAAAAAA"
+      ]
+    },
+    "news_template|users|subdays": {
+      "table_name": "users",
+      "column_name": "subdays",
+      "column_type": "INTEGER",
+      "row_count": 994,
+      "null_count": 0,
+      "non_null_count": 994,
+      "distinct_count": 339,
+      "min_value": "0",
+      "max_value": "99",
+      "top_k_values": [
+        {
+          "value": "284",
+          "count": 7
+        },
+        {
+          "value": "210",
+          "count": 7
+        },
+        {
+          "value": "190",
+          "count": 7
+        },
+        {
+          "value": "177",
+          "count": 7
+        },
+        {
+          "value": "158",
+          "count": 7
+        },
+        {
+          "value": "137",
+          "count": 7
+        },
+        {
+          "value": "110",
+          "count": 7
+        },
+        {
+          "value": "268",
+          "count": 6
+        },
+        {
+          "value": "243",
+          "count": 6
+        },
+        {
+          "value": "224",
+          "count": 6
+        }
+      ],
+      "min_length": 1,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D"
+      ]
+    },
+    "news_template|users|ageval": {
+      "table_name": "users",
+      "column_name": "ageval",
+      "column_type": "INTEGER",
+      "row_count": 994,
+      "null_count": 0,
+      "non_null_count": 994,
+      "distinct_count": 63,
+      "min_value": "18",
+      "max_value": "80",
+      "top_k_values": [
+        {
+          "value": "69",
+          "count": 24
+        },
+        {
+          "value": "27",
+          "count": 23
+        },
+        {
+          "value": "23",
+          "count": 23
+        },
+        {
+          "value": "55",
+          "count": 22
+        },
+        {
+          "value": "52",
+          "count": 22
+        },
+        {
+          "value": "31",
+          "count": 22
+        },
+        {
+          "value": "38",
+          "count": 21
+        },
+        {
+          "value": "29",
+          "count": 21
+        },
+        {
+          "value": "80",
+          "count": 20
+        },
+        {
+          "value": "76",
+          "count": 20
+        }
+      ],
+      "min_length": 2,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DD"
+      ]
+    },
+    "news_template|users|gendlbl": {
+      "table_name": "users",
+      "column_name": "gendlbl",
+      "column_type": "TEXT",
+      "row_count": 994,
+      "null_count": 0,
+      "non_null_count": 994,
+      "distinct_count": 3,
+      "min_value": "F",
+      "max_value": "Other",
+      "top_k_values": [
+        {
+          "value": "Other",
+          "count": 349
+        },
+        {
+          "value": "F",
+          "count": 326
+        },
+        {
+          "value": "M",
+          "count": 319
+        }
+      ],
+      "min_length": 1,
+      "max_length": 5,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "A",
+        "AAAAA"
+      ]
+    },
+    "news_template|users|occulbl": {
+      "table_name": "users",
+      "column_name": "occulbl",
+      "column_type": "TEXT",
+      "row_count": 994,
+      "null_count": 0,
+      "non_null_count": 994,
+      "distinct_count": 4,
+      "min_value": "Other",
+      "max_value": "Student",
+      "top_k_values": [
+        {
+          "value": "Student",
+          "count": 265
+        },
+        {
+          "value": "Retired",
+          "count": 248
+        },
+        {
+          "value": "Professional",
+          "count": 241
+        },
+        {
+          "value": "Other",
+          "count": 240
+        }
+      ],
+      "min_length": 5,
+      "max_length": 12,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAAAAAAAA",
+        "AAAAA"
+      ]
+    },
+    "news_template|users|testgrp": {
+      "table_name": "users",
+      "column_name": "testgrp",
+      "column_type": "TEXT",
+      "row_count": 994,
+      "null_count": 0,
+      "non_null_count": 994,
+      "distinct_count": 3,
+      "min_value": "Control",
+      "max_value": "Variant_B",
+      "top_k_values": [
+        {
+          "value": "Control",
+          "count": 341
+        },
+        {
+          "value": "Variant_B",
+          "count": 336
+        },
+        {
+          "value": "Variant_A",
+          "count": 317
+        }
+      ],
+      "min_length": 7,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA_A",
+        "AAAAAAA"
+      ]
+    },
+    "news_template|users|user_preferences": {
+      "table_name": "users",
+      "column_name": "user_preferences",
+      "column_type": "TEXT",
+      "row_count": 994,
+      "null_count": 0,
+      "non_null_count": 994,
+      "distinct_count": 994,
+      "min_value": "{\"feedback\": {\"type\": \"Dislike\", \"value\": \"1.0\", \"category\": \"Content\"}, \"interests\": \"Business\", \"activity_level\": \"Low\", \"preference_score\": 0.01, \"satisfaction_score\": 0.11}",
+      "max_value": "{\"feedback\": {\"type\": \"Like\", \"value\": \"5.0\", \"category\": \"Relevance\"}, \"interests\": \"Tech,Politics\", \"activity_level\": \"Low\", \"preference_score\": 0.03, \"satisfaction_score\": 0.42}",
+      "top_k_values": [
+        {
+          "value": "{\"feedback\": {\"type\": \"Like\", \"value\": \"5.0\", \"category\": \"Relevance\"}, \"interests\": \"Tech,Politics\", \"activity_level\": \"Low\", \"preference_score\": 0.03, \"satisfaction_score\": 0.42}",
+          "count": 1
+        },
+        {
+          "value": "{\"feedback\": {\"type\": \"Like\", \"value\": \"5.0\", \"category\": \"Relevance\"}, \"interests\": \"Sports,Tech,Science\", \"activity_level\": \"High\", \"preference_score\": 0.74, \"satisfaction_score\": 0.78}",
+          "count": 1
+        },
+        {
+          "value": "{\"feedback\": {\"type\": \"Like\", \"value\": \"5.0\", \"category\": \"Relevance\"}, \"interests\": \"Sports,Tech,Business,Entertainment\", \"activity_level\": \"Low\", \"preference_score\": 0.45, \"satisfaction_score\": 0.38}",
+          "count": 1
+        },
+        {
+          "value": "{\"feedback\": {\"type\": \"Like\", \"value\": \"5.0\", \"category\": \"Relevance\"}, \"interests\": \"Sports,Science,Tech,Business\", \"activity_level\": \"Medium\", \"preference_score\": 0.01, \"satisfaction_score\": 0.54}",
+          "count": 1
+        },
+        {
+          "value": "{\"feedback\": {\"type\": \"Like\", \"value\": \"5.0\", \"category\": \"Relevance\"}, \"interests\": \"Sports,Science,Politics,Entertainment\", \"activity_level\": \"Low\", \"preference_score\": 0.53, \"satisfaction_score\": 1.00}",
+          "count": 1
+        },
+        {
+          "value": "{\"feedback\": {\"type\": \"Like\", \"value\": \"5.0\", \"category\": \"Relevance\"}, \"interests\": \"Sports,Politics,Science,Tech\", \"activity_level\": \"Medium\", \"preference_score\": 0.21, \"satisfaction_score\": 0.18}",
+          "count": 1
+        },
+        {
+          "value": "{\"feedback\": {\"type\": \"Like\", \"value\": \"5.0\", \"category\": \"Relevance\"}, \"interests\": \"Sports,Entertainment\", \"activity_level\": \"Medium\", \"preference_score\": 0.62, \"satisfaction_score\": 0.66}",
+          "count": 1
+        },
+        {
+          "value": "{\"feedback\": {\"type\": \"Like\", \"value\": \"5.0\", \"category\": \"Relevance\"}, \"interests\": \"Sports\", \"activity_level\": \"Low\", \"preference_score\": 0.48, \"satisfaction_score\": 0.82}",
+          "count": 1
+        },
+        {
+          "value": "{\"feedback\": {\"type\": \"Like\", \"value\": \"5.0\", \"category\": \"Relevance\"}, \"interests\": \"Sports\", \"activity_level\": \"High\", \"preference_score\": 0.86, \"satisfaction_score\": 0.60}",
+          "count": 1
+        },
+        {
+          "value": "{\"feedback\": {\"type\": \"Like\", \"value\": \"5.0\", \"category\": \"Relevance\"}, \"interests\": \"Science,Tech,Sports\", \"activity_level\": \"Low\", \"preference_score\": 0.72, \"satisfaction_score\": 0.65}",
+          "count": 1
+        }
+      ],
+      "min_length": 169,
+      "max_length": 210,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "{\"AAAAAAAA\": {\"AAAA\": \"AAAA\", \"AAAAA\": \"D.D\", \"AAAAAAAA\": \"AAAAAAAAA\"}, \"AAAAAAAAA\": \"AAAAAAAA\", \"AAAAAAAA_AAAAA\": \"AAAA\", \"AAAAAAAAAA_AAAAA\": D.DD, \"AAAAAAAAAAAA_AAAAA\": D.DD}",
+        "{\"AAAAAAAA\": {\"AAAA\": \"AAAA\", \"AAAAA\": \"D.D\", \"AAAAAAAA\": \"AAAAAA\"}, \"AAAAAAAAA\": \"AAAAAAAA\", \"AAAAAAAA_AAAAA\": \"AAA\", \"AAAAAAAAAA_AAAAA\": D.DD, \"AAAAAAAAAAAA_AAAAA\": D.DD}",
+        "{\"AAAAAAAA\": {\"AAAA\": \"AAAA\", \"AAAAA\": \"D.D\", \"AAAAAAAA\": \"AAAAAAAAA\"}, \"AAAAAAAAA\": \"AAAAAAA\", \"AAAAAAAA_AAAAA\": \"AAA\", \"AAAAAAAAAA_AAAAA\": D.DD, \"AAAAAAAAAAAA_AAAAA\": D.DD}",
+        "{\"AAAAAAAA\": {\"AAAA\": \"AAAA\", \"AAAAA\": \"D.D\", \"AAAAAAAA\": \"AAAAAAAAA\"}, \"AAAAAAAAA\": \"AAAAAAAA\", \"AAAAAAAA_AAAAA\": \"AAAAAA\", \"AAAAAAAAAA_AAAAA\": D.DD, \"AAAAAAAAAAAA_AAAAA\": D.DD}",
+        "{\"AAAAAAAA\": {\"AAAA\": \"AAAAAAA\", \"AAAAA\": \"D.D\", \"AAAAAAAA\": \"AAAAAAAAA\"}, \"AAAAAAAAA\": \"AAAA\", \"AAAAAAAA_AAAAA\": \"AAAAAA\", \"AAAAAAAAAA_AAAAA\": D.DD, \"AAAAAAAAAAAA_AAAAA\": D.DD}"
+      ]
+    },
+    "news_template|users|user_preferences.feedback.type": {
+      "table_name": "users",
+      "column_name": "user_preferences.feedback.type",
+      "column_type": "JSON field",
+      "row_count": 994,
+      "null_count": 0,
+      "non_null_count": 994,
+      "distinct_count": 2,
+      "min_value": "Dislike",
+      "max_value": "Like",
+      "top_k_values": [
+        {
+          "value": "Like",
+          "count": 675
+        },
+        {
+          "value": "Dislike",
+          "count": 319
+        }
+      ],
+      "min_length": 4,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAAAAAA"
+      ]
+    },
+    "news_template|users|user_preferences.feedback.value": {
+      "table_name": "users",
+      "column_name": "user_preferences.feedback.value",
+      "column_type": "JSON field",
+      "row_count": 994,
+      "null_count": 0,
+      "non_null_count": 994,
+      "distinct_count": 5,
+      "min_value": "1.0",
+      "max_value": "5.0",
+      "top_k_values": [
+        {
+          "value": "3.0",
+          "count": 467
+        },
+        {
+          "value": "2.0",
+          "count": 137
+        },
+        {
+          "value": "1.0",
+          "count": 137
+        },
+        {
+          "value": "5.0",
+          "count": 130
+        },
+        {
+          "value": "4.0",
+          "count": 123
+        }
+      ],
+      "min_length": 3,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D.D"
+      ]
+    },
+    "news_template|users|user_preferences.feedback.category": {
+      "table_name": "users",
+      "column_name": "user_preferences.feedback.category",
+      "column_type": "JSON field",
+      "row_count": 994,
+      "null_count": 0,
+      "non_null_count": 994,
+      "distinct_count": 3,
+      "min_value": "Content",
+      "max_value": "Relevance",
+      "top_k_values": [
+        {
+          "value": "Relevance",
+          "count": 483
+        },
+        {
+          "value": "Format",
+          "count": 275
+        },
+        {
+          "value": "Content",
+          "count": 236
+        }
+      ],
+      "min_length": 6,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAA",
+        "AAAAAA",
+        "AAAAAAA"
+      ]
+    },
+    "news_template|users|user_preferences.interests": {
+      "table_name": "users",
+      "column_name": "user_preferences.interests",
+      "column_type": "JSON field",
+      "row_count": 994,
+      "null_count": 0,
+      "non_null_count": 994,
+      "distinct_count": 327,
+      "min_value": "Business",
+      "max_value": "Tech,Sports,Science,Entertainment",
+      "top_k_values": [
+        {
+          "value": "Politics",
+          "count": 46
+        },
+        {
+          "value": "Business",
+          "count": 44
+        },
+        {
+          "value": "Sports",
+          "count": 44
+        },
+        {
+          "value": "Science",
+          "count": 43
+        },
+        {
+          "value": "Entertainment",
+          "count": 35
+        },
+        {
+          "value": "Tech",
+          "count": 28
+        },
+        {
+          "value": "Science,Tech",
+          "count": 13
+        },
+        {
+          "value": "Politics,Sports",
+          "count": 13
+        },
+        {
+          "value": "Tech,Politics",
+          "count": 13
+        },
+        {
+          "value": "Entertainment,Tech",
+          "count": 11
+        }
+      ],
+      "min_length": 4,
+      "max_length": 39,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAAAA",
+        "AAAAAAA",
+        "AAAAAAAAAAAAA",
+        "AAAA"
+      ]
+    },
+    "news_template|users|user_preferences.activity_level": {
+      "table_name": "users",
+      "column_name": "user_preferences.activity_level",
+      "column_type": "JSON field",
+      "row_count": 994,
+      "null_count": 0,
+      "non_null_count": 994,
+      "distinct_count": 3,
+      "min_value": "High",
+      "max_value": "Medium",
+      "top_k_values": [
+        {
+          "value": "Medium",
+          "count": 348
+        },
+        {
+          "value": "High",
+          "count": 344
+        },
+        {
+          "value": "Low",
+          "count": 302
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AAAA",
+        "AAA"
+      ]
+    },
+    "news_template|users|user_preferences.preference_score": {
+      "table_name": "users",
+      "column_name": "user_preferences.preference_score",
+      "column_type": "JSON field",
+      "row_count": 994,
+      "null_count": 0,
+      "non_null_count": 994,
+      "distinct_count": 101,
+      "min_value": "0.0",
+      "max_value": "1.0",
+      "top_k_values": [
+        {
+          "value": "0.79",
+          "count": 20
+        },
+        {
+          "value": "0.06",
+          "count": 17
+        },
+        {
+          "value": "0.25",
+          "count": 17
+        },
+        {
+          "value": "0.52",
+          "count": 16
+        },
+        {
+          "value": "0.13",
+          "count": 15
+        },
+        {
+          "value": "0.68",
+          "count": 15
+        },
+        {
+          "value": "0.86",
+          "count": 14
+        },
+        {
+          "value": "0.49",
+          "count": 14
+        },
+        {
+          "value": "0.81",
+          "count": 14
+        },
+        {
+          "value": "0.61",
+          "count": 14
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "news_template|users|user_preferences.satisfaction_score": {
+      "table_name": "users",
+      "column_name": "user_preferences.satisfaction_score",
+      "column_type": "JSON field",
+      "row_count": 994,
+      "null_count": 0,
+      "non_null_count": 994,
+      "distinct_count": 101,
+      "min_value": "0.0",
+      "max_value": "1.0",
+      "top_k_values": [
+        {
+          "value": "0.15",
+          "count": 20
+        },
+        {
+          "value": "0.19",
+          "count": 19
+        },
+        {
+          "value": "0.41",
+          "count": 17
+        },
+        {
+          "value": "0.36",
+          "count": 16
+        },
+        {
+          "value": "0.02",
+          "count": 15
+        },
+        {
+          "value": "0.73",
+          "count": 14
+        },
+        {
+          "value": "0.55",
+          "count": 14
+        },
+        {
+          "value": "0.13",
+          "count": 14
+        },
+        {
+          "value": "0.92",
+          "count": 14
+        },
+        {
+          "value": "0.69",
+          "count": 14
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    }
+  },
+  "meta": {
+    "systemperformance": {
+      "profiled_at": "2026-08-30T11:43:21.040343+00:00",
+      "row_count": 1000
+    },
+    "users": {
+      "profiled_at": "2026-08-30T11:43:21.040343+00:00",
+      "row_count": 994
+    },
+    "devices": {
+      "profiled_at": "2026-08-30T11:43:21.040343+00:00",
+      "row_count": 993
+    },
+    "interactions": {
+      "profiled_at": "2026-08-30T11:43:21.040343+00:00",
+      "row_count": 1000
+    },
+    "articles": {
+      "profiled_at": "2026-08-30T11:43:21.040343+00:00",
+      "row_count": 1000
+    },
+    "sessions": {
+      "profiled_at": "2026-08-30T11:43:21.040343+00:00",
+      "row_count": 1000
+    },
+    "interactionmetrics": {
+      "profiled_at": "2026-08-30T11:43:21.040343+00:00",
+      "row_count": 1000
+    },
+    "recommendations": {
+      "profiled_at": "2026-08-30T11:43:21.040343+00:00",
+      "row_count": 999
+    }
+  }
+}

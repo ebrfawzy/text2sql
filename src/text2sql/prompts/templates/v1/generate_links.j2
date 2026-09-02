@@ -1,0 +1,28 @@
+{# version: v1, description: Knowledge-base generation — relations across tables and terms built on terms #}
+Derive {{ count }} relations that a single table cannot express
+
+{% for t in tables %}
+Table: {{ t.name }}
+
+| Column | Type | Description | Frequent values |
+| --- | --- | --- | --- |
+{% for c in t.columns %}
+| {{ c.column_name }} | {{ c.column_type }} | {{ c.description }} | {{ c.top_values }} |
+{% endfor %}
+
+{% endfor %}
+{% if joins %}
+Joins
+{{ joins }}
+{% endif %}
+
+Terms already defined
+{{ terms }}
+
+Each definition is one of
+- a cohort or metric over columns of two different tables, as they read once joined
+- a term built on the terms above, naming them and listing them in "children"
+
+Write every column name bare, spelled exactly as above, and every literal exactly as it
+appears in that column's frequent values. Restating a join above is not knowledge.
+Define no term that is already named above

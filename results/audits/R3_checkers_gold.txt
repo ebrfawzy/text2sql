@@ -1,0 +1,11 @@
+270 golds, 18 databases
+
+  11  order_by (info)
+      fake_2 insider_1 insider_2 insider_5 insider_7 insider_8 mental_2 mental_5 mental_M_5 museum_8 vaccine_1
+
+   9  null (info)
+      credit_8 mental_3 mental_4 news_7 news_9 news_M_4 polar_1 robot_1 solar_5
+
+   1  dry_run (error)
+      fake_M_4
+

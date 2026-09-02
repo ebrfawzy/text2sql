@@ -1,0 +1,20 @@
+270 predictions, 18 databases
+
+  11  as_stored (warning)
+      alien_3 FAIL alien_5 FAIL alien_7 FAIL alien_8 FAIL crypto_1 FAIL fake_4 FAIL gaming_3 FAIL museum_2 FAIL museum_8 FAIL polar_2 FAIL polar_7 pass
+
+   9  null (info)
+      alien_5 FAIL credit_8 FAIL fake_7 FAIL mental_3 pass news_4 FAIL news_8 pass polar_1 FAIL robot_9 FAIL solar_5 FAIL
+
+   5  order_by (info)
+      disaster_M_3 FAIL fake_2 pass mental_2 FAIL mental_M_5 pass museum_8 FAIL
+
+   1  question (info)
+      fake_5 FAIL
+
+   1  dry_run (error)
+      fake_M_4 pass
+
+   1  rowid_pk (error)
+      museum_M_4 FAIL
+

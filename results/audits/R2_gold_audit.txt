@@ -1,0 +1,15 @@
+         WARNING  SQL execution error: (sqlite3.IntegrityError) NOT NULL        
+                  constraint failed: artifactsecurityaccess.secrecordregistry   
+                  [SQL: INSERT INTO ArtifactSecurityAccess ( ArtRef,            
+                  InsValueUSD, LoanStatus ) VALUES ('ART64791', 1000001,        
+                  'Available'), ('ART64791', 2000000, 'On Loan'), ('ART64791',  
+                  999999, 'Available'), ('ART64791', 500000, 'Not Available');] 
+                  (Background on this error at: https://sqlalche.me/e/20/gkpj)  
+╭───────────────────────── Gold Audit (3 finding(s)) ──────────────────────────╮
+│ credit_7: all_null_column — cohort_quarter                                   │
+│ crypto_7: all_null_column — whale_activity                                   │
+│ museum_M_5: errors — (sqlite3.IntegrityError) NOT NULL constraint failed:    │
+│ artifactsecurityaccess.secrecordregistry                                     │
+│ [SQL: INSERT INTO ArtifactSecurityAccess ( ArtRef, InsValueUSD, LoanStatus ) │
+│ VALUES ('ART64791', 1000001,                                                 │
+╰──────────────────────────────────────────────────────────────────────────────╯

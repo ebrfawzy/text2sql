@@ -1,0 +1,853 @@
+{
+  "version": 1,
+  "profiled_at": "2026-08-30T13:45:14.218410+00:00",
+  "columns": {
+    "insider_template|sentimentandfundamentals|High unusual option activity": {
+      "id": 0,
+      "knowledge": "High unusual option activity",
+      "description": "Unusual option activity level is High. Selects 32% of rows.",
+      "definition": "unuoptact = 'High'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sentimentandfundamentals"
+      ],
+      "refuted": false
+    },
+    "insider_template|sentimentandfundamentals|Moderate unusual option activity": {
+      "id": 1,
+      "knowledge": "Moderate unusual option activity",
+      "description": "Unusual option activity level is Moderate. Selects 68% of rows.",
+      "definition": "unuoptact = 'Moderate'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sentimentandfundamentals"
+      ],
+      "refuted": false
+    },
+    "insider_template|sentimentandfundamentals|Earnings corporate event": {
+      "id": 2,
+      "knowledge": "Earnings corporate event",
+      "description": "Corporate event type is Earnings. Selects 50% of rows.",
+      "definition": "corpeventprx = 'Earnings'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sentimentandfundamentals"
+      ],
+      "refuted": false
+    },
+    "insider_template|sentimentandfundamentals|Restructuring corporate event": {
+      "id": 3,
+      "knowledge": "Restructuring corporate event",
+      "description": "Corporate event type is Restructuring. Selects 26% of rows.",
+      "definition": "corpeventprx = 'Restructuring'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sentimentandfundamentals"
+      ],
+      "refuted": false
+    },
+    "insider_template|sentimentandfundamentals|M&A corporate event": {
+      "id": 4,
+      "knowledge": "M&A corporate event",
+      "description": "Corporate event type is M&A. Selects 24% of rows.",
+      "definition": "corpeventprx = 'M&A'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sentimentandfundamentals"
+      ],
+      "refuted": false
+    },
+    "insider_template|sentimentandfundamentals|Pre-market event announcement": {
+      "id": 5,
+      "knowledge": "Pre-market event announcement",
+      "description": "Event announcement timing is Pre-market. Selects 34% of rows.",
+      "definition": "eventannotm = 'Pre-market'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sentimentandfundamentals"
+      ],
+      "refuted": false
+    },
+    "insider_template|sentimentandfundamentals|Post-market event announcement": {
+      "id": 6,
+      "knowledge": "Post-market event announcement",
+      "description": "Event announcement timing is Post-market. Selects 33% of rows.",
+      "definition": "eventannotm = 'Post-market'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sentimentandfundamentals"
+      ],
+      "refuted": false
+    },
+    "insider_template|sentimentandfundamentals|Intraday event announcement": {
+      "id": 7,
+      "knowledge": "Intraday event announcement",
+      "description": "Event announcement timing is Intraday. Selects 33% of rows.",
+      "definition": "eventannotm = 'Intraday'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sentimentandfundamentals"
+      ],
+      "refuted": false
+    },
+    "insider_template|transactionrecord|Order timing pattern category (ordertimepat)": {
+      "id": 8,
+      "knowledge": "Order timing pattern category (ordertimepat)",
+      "description": "Categorizes order timing as Suspicious, Regular, or Irregular. Selects 35% of rows.",
+      "definition": "ordertimepat = CASE WHEN ordervar > 1.8 THEN 'Suspicious' WHEN ordervar < 0.5 THEN 'Irregular' ELSE 'Regular' END",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "transactionrecord"
+      ],
+      "refuted": false
+    },
+    "insider_template|transactionrecord|Order type distribution category (ordertypedist)": {
+      "id": 9,
+      "knowledge": "Order type distribution category (ordertypedist)",
+      "description": "Categorizes order type distribution as Market, Limit, or Mixed. Selects 34% of rows.",
+      "definition": "ordertypedist = CASE WHEN darkusage + offmkt > 0.3 THEN 'Limit' WHEN darkusage + offmkt < 0.1 THEN 'Market' ELSE 'Mixed' END",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "transactionrecord"
+      ],
+      "refuted": false
+    },
+    "insider_template|transactionrecord|Wash trading suspicion level (washsus)": {
+      "id": 10,
+      "knowledge": "Wash trading suspicion level (washsus)",
+      "description": "Level of suspected wash trading: Low, Medium, or High. Selects 32% of rows.",
+      "definition": "json_extract(risk_indicators, '$.washsus') = CASE WHEN crossfreq > 0.08 OR darkusage > 0.3 THEN 'High' WHEN crossfreq > 0.04 OR darkusage > 0.2 THEN 'Medium' ELSE 'Low' END",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "transactionrecord"
+      ],
+      "refuted": false
+    },
+    "insider_template|transactionrecord|Layering indicator (layerind)": {
+      "id": 11,
+      "knowledge": "Layering indicator (layerind)",
+      "description": "Indicates whether layering is Suspected or Confirmed. Selects 64% of rows.",
+      "definition": "json_extract(risk_indicators, '$.layerind') = CASE WHEN modfreq > 0.4 AND cancelpct > 0.25 THEN 'Confirmed' ELSE 'Suspected' END",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "transactionrecord"
+      ],
+      "refuted": false
+    },
+    "insider_template|transactionrecord|Spoofing probability (spoofprob)": {
+      "id": 12,
+      "knowledge": "Spoofing probability (spoofprob)",
+      "description": "Probability that the transaction involves spoofing.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "transactionrecord"
+      ],
+      "refuted": false
+    },
+    "insider_template|transactionrecord|Front-running score (frontscore)": {
+      "id": 13,
+      "knowledge": "Front-running score (frontscore)",
+      "description": "Score measuring front-running risk on a 0-100 scale.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "transactionrecord"
+      ],
+      "refuted": false
+    },
+    "insider_template|transactionrecord|Momentum ignition signal (momentignit)": {
+      "id": 14,
+      "knowledge": "Momentum ignition signal (momentignit)",
+      "description": "Signal strength for momentum ignition: Weak or Strong. Selects 50% of rows.",
+      "definition": "json_extract(risk_indicators, '$.momentignit') = CASE WHEN ordervar > 1.5 OR crossfreq > 0.08 THEN 'Strong' ELSE 'Weak' END",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "transactionrecord"
+      ],
+      "refuted": false
+    },
+    "insider_template|transactionrecord|Quote stuffing index (qstuffindex)": {
+      "id": 15,
+      "knowledge": "Quote stuffing index (qstuffindex)",
+      "description": "Index measuring quote stuffing intensity from 0 to 1.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "transactionrecord"
+      ],
+      "refuted": false
+    },
+    "insider_template|transactionrecord|Market close participation pattern (markclosepat)": {
+      "id": 16,
+      "knowledge": "Market close participation pattern (markclosepat)",
+      "description": "Pattern of participation around market close: Occasional or Frequent. Selects 53% of rows.",
+      "definition": "json_extract(risk_indicators, '$.markclosepat') = CASE WHEN SUBSTR(transtime, 12, 2) >= '15' THEN 'Frequent' ELSE 'Occasional' END",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "transactionrecord"
+      ],
+      "refuted": false
+    },
+    "insider_template|advancedbehavior|advanced behavior registration (ABHVREG)": {
+      "id": 17,
+      "knowledge": "advanced behavior registration (ABHVREG)",
+      "description": "Unique 10-character ID beginning with ABHV_.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "advancedbehavior"
+      ],
+      "refuted": false
+    },
+    "insider_template|advancedbehavior|translation link (TRANSLINK)": {
+      "id": 18,
+      "knowledge": "translation link (TRANSLINK)",
+      "description": "ID beginning with IT followed by six digits.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "advancedbehavior"
+      ],
+      "refuted": false
+    },
+    "insider_template|advancedbehavior|pattern similarity (PATSIM)": {
+      "id": 19,
+      "knowledge": "pattern similarity (PATSIM)",
+      "description": "Similarity score between 0.005 and 0.997.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "advancedbehavior"
+      ],
+      "refuted": false
+    },
+    "insider_template|advancedbehavior|peer correlation (PEERCORR)": {
+      "id": 20,
+      "knowledge": "peer correlation (PEERCORR)",
+      "description": "Correlation number bounded between -1 and 1.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "advancedbehavior"
+      ],
+      "refuted": false
+    },
+    "insider_template|advancedbehavior|market correlation (MKTCORR)": {
+      "id": 21,
+      "knowledge": "market correlation (MKTCORR)",
+      "description": "Correlation number bounded between -1 and 1.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "advancedbehavior"
+      ],
+      "refuted": false
+    },
+    "insider_template|enforcementactions|Warning action": {
+      "id": 22,
+      "knowledge": "Warning action",
+      "description": "Enforcement action taken is a warning. Selects 51% of rows.",
+      "definition": "TRIM(acttake) = 'Warning'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "enforcementactions"
+      ],
+      "refuted": false
+    },
+    "insider_template|enforcementactions|Legal escalation": {
+      "id": 23,
+      "knowledge": "Legal escalation",
+      "description": "Escalation level is Legal. Selects 26% of rows.",
+      "definition": "TRIM(esclvl) = 'Legal'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "enforcementactions"
+      ],
+      "refuted": false
+    },
+    "insider_template|enforcementactions|Resolved resolution": {
+      "id": 24,
+      "knowledge": "Resolved resolution",
+      "description": "Resolution status is Resolved. Selects 32% of rows.",
+      "definition": "TRIM(resstat) = 'Resolved'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "enforcementactions"
+      ],
+      "refuted": false
+    },
+    "insider_template|enforcementactions|Fine penalty": {
+      "id": 25,
+      "knowledge": "Fine penalty",
+      "description": "Penalty imposed is a fine. Selects 25% of rows.",
+      "definition": "TRIM(penimp) = 'Fine'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "enforcementactions"
+      ],
+      "refuted": false
+    },
+    "insider_template|enforcementactions|Active legal action": {
+      "id": 26,
+      "knowledge": "Active legal action",
+      "description": "Legal action status is Active. Selects 33% of rows.",
+      "definition": "TRIM(legactstat) = 'Active'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "enforcementactions"
+      ],
+      "refuted": false
+    },
+    "insider_template|enforcementactions|Settled settlement": {
+      "id": 27,
+      "knowledge": "Settled settlement",
+      "description": "Settlement status is Settled. Selects 32% of rows.",
+      "definition": "TRIM(settlestat) = 'Settled'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "enforcementactions"
+      ],
+      "refuted": false
+    },
+    "insider_template|enforcementactions|Severe reputational impact": {
+      "id": 28,
+      "knowledge": "Severe reputational impact",
+      "description": "Reputational impact level is Severe. Selects 33% of rows.",
+      "definition": "TRIM(repimp) = 'Severe'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "enforcementactions"
+      ],
+      "refuted": false
+    },
+    "insider_template|enforcementactions|Full business restriction": {
+      "id": 29,
+      "knowledge": "Full business restriction",
+      "description": "Business restriction scope is Full. Selects 32% of rows.",
+      "definition": "TRIM(busrestr) = 'Full'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "enforcementactions"
+      ],
+      "refuted": false
+    },
+    "insider_template|enforcementactions|Completed remediation": {
+      "id": 30,
+      "knowledge": "Completed remediation",
+      "description": "Remediation status is Completed. Selects 32% of rows.",
+      "definition": "TRIM(remedstat) = 'Completed'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "enforcementactions"
+      ],
+      "refuted": false
+    },
+    "insider_template|enforcementactions|Blackout trading restriction": {
+      "id": 31,
+      "knowledge": "Blackout trading restriction",
+      "description": "Trading restriction type is Blackout. Selects 33% of rows.",
+      "definition": "TRIM(traderestr) = 'Blackout'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "enforcementactions"
+      ],
+      "refuted": false
+    },
+    "insider_template|enforcementactions|Urgent policy update need": {
+      "id": 32,
+      "knowledge": "Urgent policy update need",
+      "description": "Policy update need is Urgent. Selects 31% of rows.",
+      "definition": "TRIM(polupdneed) = 'Urgent'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "enforcementactions"
+      ],
+      "refuted": false
+    },
+    "insider_template|trader|Win percentage": {
+      "id": 35,
+      "knowledge": "Win percentage",
+      "description": "Win percentage stored in the trading_performance JSON object.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "trader"
+      ],
+      "refuted": false
+    },
+    "insider_template|trader|Profit/loss ratio": {
+      "id": 36,
+      "knowledge": "Profit/loss ratio",
+      "description": "Profit/loss ratio stored in the trading_performance JSON object.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "trader"
+      ],
+      "refuted": false
+    },
+    "insider_template|trader|Risk level": {
+      "id": 37,
+      "knowledge": "Risk level",
+      "description": "Risk category stored in the risklevel object inside trading_performance.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "trader"
+      ],
+      "refuted": false
+    },
+    "insider_template|trader|Market Maker": {
+      "id": 38,
+      "knowledge": "Market Maker",
+      "description": "A trader categorized as a market maker. Selects 27% of rows.",
+      "definition": "TRIM(tradekind) = 'Market Maker'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "trader"
+      ],
+      "refuted": false
+    },
+    "insider_template|trader|High frequency trader": {
+      "id": 39,
+      "knowledge": "High frequency trader",
+      "description": "A trader whose frequency scope is High. Selects 35% of rows.",
+      "definition": "TRIM(freqscope) = 'High'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "trader"
+      ],
+      "refuted": false
+    },
+    "insider_template|compliancecase|Review frequency (REVFREQ)": {
+      "id": 40,
+      "knowledge": "Review frequency (REVFREQ)",
+      "description": "Cadence between the last and next review dates. Selects 36% of rows.",
+      "definition": "REVFREQ = CASE WHEN CAST(JULIANDAY(NEXTREVDT) - JULIANDAY(LASTREVDT) AS INTEGER) <= 1 THEN 'Daily' WHEN CAST(JULIANDAY(NEXTREVDT) - JULIANDAY(LASTREVDT) AS INTEGER) <= 7 THEN 'Weekly' ELSE 'Monthly' END",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "compliancecase"
+      ],
+      "refuted": false
+    },
+    "insider_template|compliancecase|Review schedule": {
+      "id": 41,
+      "knowledge": "Review schedule",
+      "description": "Next review date must be after last review date.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "compliancecase"
+      ],
+      "refuted": false
+    },
+    "insider_template|compliancecase|Compliance rating grade (COMPRATE)": {
+      "id": 42,
+      "knowledge": "Compliance rating grade (COMPRATE)",
+      "description": "Letter grade based on previous violation count. Selects 25% of rows.",
+      "definition": "COMPRATE = CASE WHEN PREVVIOL = 0 THEN 'A' WHEN PREVVIOL BETWEEN 1 AND 2 THEN 'B' WHEN PREVVIOL BETWEEN 3 AND 4 THEN 'C' WHEN PREVVIOL >= 5 THEN 'D' END",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "compliancecase"
+      ],
+      "refuted": false
+    },
+    "insider_template|compliancecase|Alert level (ALERTLVL)": {
+      "id": 43,
+      "knowledge": "Alert level (ALERTLVL)",
+      "description": "Alert level mapped from compliance rating grade. Selects 27% of rows.",
+      "definition": "ALERTLVL = CASE WHEN TRIM(COMPRATE) = 'D' THEN 'Critical' WHEN TRIM(COMPRATE) = 'C' THEN 'High' WHEN TRIM(COMPRATE) = 'B' THEN 'Medium' WHEN TRIM(COMPRATE) = 'A' THEN 'Low' END",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        42
+      ],
+      "tables": [
+        "compliancecase"
+      ],
+      "refuted": false
+    },
+    "insider_template|compliancecase|Monitoring intensity (MONITINT)": {
+      "id": 44,
+      "knowledge": "Monitoring intensity (MONITINT)",
+      "description": "Intensity level assigned from alert level. Selects 32% of rows.",
+      "definition": "MONITINT = CASE WHEN TRIM(ALERTLVL) = 'Critical' THEN 'Intensive' WHEN TRIM(ALERTLVL) = 'High' THEN 'Enhanced' ELSE 'Standard' END",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        43
+      ],
+      "tables": [
+        "compliancecase"
+      ],
+      "refuted": false
+    },
+    "insider_template|compliancecase|Investigation priority (INVSTPRIOR)": {
+      "id": 45,
+      "knowledge": "Investigation priority (INVSTPRIOR)",
+      "description": "Priority computed from alert level and case status. Selects 34% of rows.",
+      "definition": "INVSTPRIOR = CASE WHEN TRIM(ALERTLVL) = 'Critical' OR TRIM(CASESTAT) = 'Investigation' THEN 'High' WHEN TRIM(ALERTLVL) = 'High' OR TRIM(CASESTAT) = 'Monitoring' THEN 'Medium' ELSE 'Low' END",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        43
+      ],
+      "tables": [
+        "compliancecase"
+      ],
+      "refuted": false
+    },
+    "insider_template|compliancecase|Detection method (DETECTMTH)": {
+      "id": 46,
+      "knowledge": "Detection method (DETECTMTH)",
+      "description": "Detection method corresponding to the active surveillance system. Selects 33% of rows.",
+      "definition": "DETECTMTH = CASE WHEN TRIM(SURVSYS) = 'Primary' THEN 'Automated' WHEN TRIM(SURVSYS) = 'Secondary' THEN 'Manual' WHEN TRIM(SURVSYS) = 'Multiple' THEN 'Hybrid' END",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "compliancecase"
+      ],
+      "refuted": false
+    },
+    "insider_template|compliancecase|Delayed filing": {
+      "id": 47,
+      "knowledge": "Delayed filing",
+      "description": "Cases with delayed regulatory filing and late broker report. Selects 12% of rows.",
+      "definition": "TRIM(REGFILESTAT) = 'Delayed' AND TRIM(BROKREPSTAT) = 'Late'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "compliancecase"
+      ],
+      "refuted": false
+    },
+    "insider_template|compliancecase|Non-compliant disclosure": {
+      "id": 48,
+      "knowledge": "Non-compliant disclosure",
+      "description": "Cases with non-compliant disclosure and incomplete or late broker report. Selects 20% of rows.",
+      "definition": "TRIM(DISCLOSECMP) = 'Non-compliant' AND TRIM(BROKREPSTAT) IN ('Incomplete', 'Late')",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "compliancecase"
+      ],
+      "refuted": false
+    },
+    "insider_template|compliancecase|Exchange warning": {
+      "id": 49,
+      "knowledge": "Exchange warning",
+      "description": "Warning exchange notification triggered by non-compliant disclosure or delayed filing. Selects 36% of rows.",
+      "definition": "TRIM(EXCHNOTIF) = 'Warning' AND (TRIM(DISCLOSECMP) = 'Non-compliant' OR TRIM(REGFILESTAT) = 'Delayed')",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        47,
+        48
+      ],
+      "tables": [
+        "compliancecase"
+      ],
+      "refuted": false
+    },
+    "insider_template|investigationdetails|Total circle size (TCIRCLESZ)": {
+      "id": 50,
+      "knowledge": "Total circle size (TCIRCLESZ)",
+      "description": "Total number of connected entities plus communication addresses in the investigation circle. Selects 2% of rows.",
+      "definition": "TCIRCLESZ = CAST(CONNENT AS INTEGER) + COMMADDR",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "investigationdetails"
+      ],
+      "refuted": false
+    },
+    "insider_template|investigationdetails|Network analysis score (NETANSC)": {
+      "id": 51,
+      "knowledge": "Network analysis score (NETANSC)",
+      "description": "Percentage of the total circle made up of connected entities.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        50
+      ],
+      "tables": [
+        "investigationdetails"
+      ],
+      "refuted": false
+    },
+    "insider_template|investigationdetails|Group behavior score (GRPBEHSC)": {
+      "id": 52,
+      "knowledge": "Group behavior score (GRPBEHSC)",
+      "description": "Average of the pattern recognition, behavior, and network analysis scores.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        51
+      ],
+      "tables": [
+        "investigationdetails"
+      ],
+      "refuted": false
+    },
+    "insider_template|investigationdetails|Market abuse probability (MKTABPROB)": {
+      "id": 53,
+      "knowledge": "Market abuse probability (MKTABPROB)",
+      "description": "Probability of market abuse calculated as the average of the four analysis scores scaled to a 0-1 range.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        51,
+        52
+      ],
+      "tables": [
+        "investigationdetails"
+      ],
+      "refuted": false
+    },
+    "insider_template|investigationdetails|Shared contact method (SHARECTC)": {
+      "id": 54,
+      "knowledge": "Shared contact method (SHARECTC)",
+      "description": "Shared contact method is Multiple when there is more than one communication address. Selects 31% of rows.",
+      "definition": "COMMADDR > 1 AND TRIM(SHARECTC) = 'Multiple'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "investigationdetails"
+      ],
+      "refuted": false
+    },
+    "insider_template|investigationdetails|Relationship map status (RELMAPSTAT)": {
+      "id": 55,
+      "knowledge": "Relationship map status (RELMAPSTAT)",
+      "description": "Relationship map is Complete when both connected entities and addresses exist, Pending when neither exists, otherwise Partial. Selects 32% of rows.",
+      "definition": "CASE WHEN CAST(CONNENT AS INTEGER) > 0 AND COMMADDR > 0 THEN 'Complete' WHEN CAST(CONNENT AS INTEGER) = 0 AND COMMADDR = 0 THEN 'Pending' ELSE 'Partial' END = TRIM(RELMAPSTAT)",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "investigationdetails"
+      ],
+      "refuted": false
+    },
+    "insider_template|investigationdetails|Documentation status (DOCUSTAT)": {
+      "id": 56,
+      "knowledge": "Documentation status (DOCUSTAT)",
+      "description": "Documentation status mirrors relationship map status: Complete, Partial, or Incomplete. Selects 31% of rows.",
+      "definition": "CASE WHEN TRIM(RELMAPSTAT) = 'Complete' THEN 'Complete' WHEN TRIM(RELMAPSTAT) = 'Partial' THEN 'Partial' ELSE 'Incomplete' END = TRIM(DOCUSTAT)",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        55
+      ],
+      "tables": [
+        "investigationdetails"
+      ],
+      "refuted": false
+    },
+    "insider_template|investigationdetails|Investigation registration status (REGINV)": {
+      "id": 57,
+      "knowledge": "Investigation registration status (REGINV)",
+      "description": "Investigation registration is Active when documentation is Complete, otherwise Preliminary. Selects 58% of rows.",
+      "definition": "CASE WHEN TRIM(DOCUSTAT) = 'Complete' THEN 'Active' ELSE 'Preliminary' END = TRIM(REGINV)",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        56
+      ],
+      "tables": [
+        "investigationdetails"
+      ],
+      "refuted": false
+    },
+    "insider_template|investigationdetails|Evidence strength (EVIDSTR)": {
+      "id": 58,
+      "knowledge": "Evidence strength (EVIDSTR)",
+      "description": "Evidence strength is Strong at or above 0.75 market abuse probability, Moderate at or above 0.4, and Weak below 0.4. Selects 35% of rows.",
+      "definition": "CASE WHEN MKTABPROB >= 0.75 THEN 'Strong' WHEN MKTABPROB >= 0.4 THEN 'Moderate' ELSE 'Weak' END = TRIM(EVIDSTR)",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        53
+      ],
+      "tables": [
+        "investigationdetails"
+      ],
+      "refuted": false
+    },
+    "insider_template|compliancecase,enforcementactions|Penalty per risk point": {
+      "id": 59,
+      "knowledge": "Penalty per risk point",
+      "description": "Penalty amount divided by the linked compliance risk score.",
+      "definition": "penamt / risksc",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "compliancecase",
+        "enforcementactions"
+      ],
+      "refuted": false
+    },
+    "insider_template|enforcementactions,investigationdetails|Legally escalated strong-evidence case": {
+      "id": 60,
+      "knowledge": "Legally escalated strong-evidence case",
+      "description": "Enforcement case escalated to Legal and linked investigation evidence is Strong.",
+      "definition": "TRIM(esclvl) = 'Legal' AND TRIM(evidstr) = 'Strong'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        23,
+        58
+      ],
+      "tables": [
+        "enforcementactions",
+        "investigationdetails"
+      ],
+      "refuted": false
+    },
+    "insider_template|compliancecase,investigationdetails|Model-pattern consensus score": {
+      "id": 61,
+      "knowledge": "Model-pattern consensus score",
+      "description": "Average of compliance model confidence and normalized investigation pattern-recognition score.",
+      "definition": "(modelconf + patrecsc / 100) / 2",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "compliancecase",
+        "investigationdetails"
+      ],
+      "refuted": false
+    },
+    "insider_template|advancedbehavior,compliancecase|Intensive monitoring anomaly flag": {
+      "id": 62,
+      "knowledge": "Intensive monitoring anomaly flag",
+      "description": "Case under intensive monitoring with linked behavior pattern similarity below 0.5.",
+      "definition": "TRIM(monitint) = 'Intensive' AND patsim < 0.5",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        19,
+        44
+      ],
+      "tables": [
+        "advancedbehavior",
+        "compliancecase"
+      ],
+      "refuted": false
+    },
+    "insider_template|sentimentandfundamentals,transactionrecord|Leak-adjusted order variability": {
+      "id": 63,
+      "knowledge": "Leak-adjusted order variability",
+      "description": "Order variability scaled by the information leak score of the related sentiment record.",
+      "definition": "infoleaksc * ordervar / 100",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sentimentandfundamentals",
+        "transactionrecord"
+      ],
+      "refuted": false
+    },
+    "insider_template|investigationdetails,sentimentandfundamentals|News-behavior divergence": {
+      "id": 64,
+      "knowledge": "News-behavior divergence",
+      "description": "Difference between average news/social sentiment and normalized investigation behavior score.",
+      "definition": "(newsscore + socscore) / 2 - behansc / 100",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "investigationdetails",
+        "sentimentandfundamentals"
+      ],
+      "refuted": false
+    },
+    "insider_template|trader,transactionrecord|Position-adjusted order variability": {
+      "id": 65,
+      "knowledge": "Position-adjusted order variability",
+      "description": "Order variability scaled by trader average position as a share of account balance.",
+      "definition": "ordervar * posavg / acctbal",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "trader",
+        "transactionrecord"
+      ],
+      "refuted": false
+    }
+  },
+  "meta": {
+    "advancedbehavior": {
+      "profiled_at": "2026-08-30T13:45:14.218410+00:00"
+    },
+    "enforcementactions": {
+      "profiled_at": "2026-08-30T13:45:14.218410+00:00"
+    },
+    "trader": {
+      "profiled_at": "2026-08-30T13:45:14.218410+00:00"
+    },
+    "compliancecase,enforcementactions": {
+      "profiled_at": "2026-08-30T13:45:14.218410+00:00"
+    },
+    "compliancecase,investigationdetails": {
+      "profiled_at": "2026-08-30T13:45:14.218410+00:00"
+    },
+    "trader,transactionrecord": {
+      "profiled_at": "2026-08-30T13:45:14.218410+00:00"
+    },
+    "sentimentandfundamentals,transactionrecord": {
+      "profiled_at": "2026-08-30T13:45:14.218410+00:00"
+    },
+    "investigationdetails,sentimentandfundamentals": {
+      "profiled_at": "2026-08-30T13:45:14.218410+00:00"
+    },
+    "sentimentandfundamentals": {
+      "profiled_at": "2026-08-30T13:45:14.218410+00:00"
+    },
+    "transactionrecord": {
+      "profiled_at": "2026-08-30T13:45:14.218410+00:00"
+    },
+    "advancedbehavior,compliancecase": {
+      "profiled_at": "2026-08-30T13:45:14.218410+00:00"
+    },
+    "compliancecase": {
+      "profiled_at": "2026-08-30T13:45:14.218410+00:00"
+    },
+    "investigationdetails": {
+      "profiled_at": "2026-08-30T13:45:14.218410+00:00"
+    },
+    "enforcementactions,investigationdetails": {
+      "profiled_at": "2026-08-30T13:45:14.218410+00:00"
+    }
+  }
+}

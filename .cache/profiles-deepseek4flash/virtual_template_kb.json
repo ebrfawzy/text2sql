@@ -1,0 +1,1373 @@
+{
+  "version": 1,
+  "profiled_at": "2026-08-30T12:52:01.175311+00:00",
+  "columns": {
+    "virtual_template|virtualidols|AI-generated virtual idol (AI)": {
+      "id": 0,
+      "knowledge": "AI-generated virtual idol (AI)",
+      "description": "Virtual idol whose type is AI Generated. Selects 26% of rows.",
+      "definition": "TRIM(kindtag) = 'AI Generated'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "virtualidols"
+      ],
+      "refuted": false
+    },
+    "virtual_template|virtualidols|Pop virtual idol": {
+      "id": 1,
+      "knowledge": "Pop virtual idol",
+      "description": "Virtual idol whose music genre is Pop. Selects 21% of rows.",
+      "definition": "TRIM(genretag) = 'Pop'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "virtualidols"
+      ],
+      "refuted": false
+    },
+    "virtual_template|virtualidols|English-language virtual idol": {
+      "id": 2,
+      "knowledge": "English-language virtual idol",
+      "description": "Virtual idol whose primary language is English. Selects 27% of rows.",
+      "definition": "TRIM(primlang) = 'English'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "virtualidols"
+      ],
+      "refuted": false
+    },
+    "virtual_template|virtualidols|Martinez Ltd virtual idol": {
+      "id": 3,
+      "knowledge": "Martinez Ltd virtual idol",
+      "description": "Virtual idol associated with Martinez Ltd.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "virtualidols"
+      ],
+      "refuted": false
+    },
+    "virtual_template|virtualidols|2020 debut virtual idol": {
+      "id": 4,
+      "knowledge": "2020 debut virtual idol",
+      "description": "Virtual idol that debuted in calendar year 2020. Selects 17% of rows.",
+      "definition": "debdate >= '2020-01-01' AND debdate < '2021-01-01'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "virtualidols"
+      ],
+      "refuted": false
+    },
+    "virtual_template|interactions|Average Gift Value": {
+      "id": 5,
+      "knowledge": "Average Gift Value",
+      "description": "Gift value in US dollars divided by total gift count.",
+      "definition": "giftvalusd / gifttot",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "interactions"
+      ],
+      "refuted": false
+    },
+    "virtual_template|interactions|Total Chat Activity": {
+      "id": 6,
+      "knowledge": "Total Chat Activity",
+      "description": "Total chat messages, stickers, and emojis in a session.",
+      "definition": "json_extract(engagement_metrics, '$.chat_activity.chatmsg') + json_extract(engagement_metrics, '$.chat_activity.stkcount') + json_extract(engagement_metrics, '$.chat_activity.emojicount')",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "interactions"
+      ],
+      "refuted": false
+    },
+    "virtual_template|interactions|Watch Hours per Live Attendee": {
+      "id": 7,
+      "knowledge": "Watch Hours per Live Attendee",
+      "description": "Average watch hours per live attendee.",
+      "definition": "json_extract(engagement_metrics, '$.session.watchhrs') / json_extract(engagement_metrics, '$.session.liveatt')",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "interactions"
+      ],
+      "refuted": false
+    },
+    "virtual_template|interactions|Session Minutes per Live Attendee": {
+      "id": 8,
+      "knowledge": "Session Minutes per Live Attendee",
+      "description": "Average session minutes per live attendee.",
+      "definition": "json_extract(engagement_metrics, '$.session.sessdurmin') / json_extract(engagement_metrics, '$.session.liveatt')",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "interactions"
+      ],
+      "refuted": false
+    },
+    "virtual_template|interactions|Chat Message Rate": {
+      "id": 9,
+      "knowledge": "Chat Message Rate",
+      "description": "Chat messages sent per session minute.",
+      "definition": "json_extract(engagement_metrics, '$.chat_activity.chatmsg') / json_extract(engagement_metrics, '$.session.sessdurmin')",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "interactions"
+      ],
+      "refuted": false
+    },
+    "virtual_template|interactions|Emoji Count per Chat Message": {
+      "id": 10,
+      "knowledge": "Emoji Count per Chat Message",
+      "description": "Average number of emojis per chat message.",
+      "definition": "json_extract(engagement_metrics, '$.chat_activity.emojicount') / json_extract(engagement_metrics, '$.chat_activity.chatmsg')",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "interactions"
+      ],
+      "refuted": false
+    },
+    "virtual_template|interactions|Sticker Count per Chat Message": {
+      "id": 11,
+      "knowledge": "Sticker Count per Chat Message",
+      "description": "Average number of stickers per chat message.",
+      "definition": "json_extract(engagement_metrics, '$.chat_activity.stkcount') / json_extract(engagement_metrics, '$.chat_activity.chatmsg')",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "interactions"
+      ],
+      "refuted": false
+    },
+    "virtual_template|interactions|Gift Count per Live Attendee": {
+      "id": 12,
+      "knowledge": "Gift Count per Live Attendee",
+      "description": "Total gifts divided by live attendance count.",
+      "definition": "gifttot / json_extract(engagement_metrics, '$.session.liveatt')",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "interactions"
+      ],
+      "refuted": false
+    },
+    "virtual_template|interactions|Live Stream Interaction": {
+      "id": 13,
+      "knowledge": "Live Stream Interaction",
+      "description": "An interaction whose action kind is Live Stream. Selects 20% of rows.",
+      "definition": "TRIM(actkind) = 'Live Stream'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "interactions"
+      ],
+      "refuted": false
+    },
+    "virtual_template|interactions|Mobile Interaction": {
+      "id": 14,
+      "knowledge": "Mobile Interaction",
+      "description": "An interaction whose device type is Mobile. Selects 27% of rows.",
+      "definition": "TRIM(platused) = 'Mobile'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "interactions"
+      ],
+      "refuted": false
+    },
+    "virtual_template|interactions|Premium Favorite Gift Tag": {
+      "id": 15,
+      "knowledge": "Premium Favorite Gift Tag",
+      "description": "An interaction associated with a favorite gift tag of Premium. Selects 25% of rows.",
+      "definition": "TRIM(favgifttag) = 'Premium'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "interactions"
+      ],
+      "refuted": false
+    },
+    "virtual_template|preferencesandsettings|Private privacy setting": {
+      "id": 16,
+      "knowledge": "Private privacy setting",
+      "description": "Privacy setting is set to Private. Selects 35% of rows.",
+      "definition": "TRIM(privset) = 'Private'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "preferencesandsettings"
+      ],
+      "refuted": false
+    },
+    "virtual_template|preferencesandsettings|Full data sharing consent": {
+      "id": 17,
+      "knowledge": "Full data sharing consent",
+      "description": "Data sharing consent level is Full. Selects 33% of rows.",
+      "definition": "TRIM(dsconsent) = 'Full'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "preferencesandsettings"
+      ],
+      "refuted": false
+    },
+    "virtual_template|preferencesandsettings|Important notification preference": {
+      "id": 18,
+      "knowledge": "Important notification preference",
+      "description": "Notification preference is Important. Selects 68% of rows.",
+      "definition": "TRIM(notifpref) = 'Important'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "preferencesandsettings"
+      ],
+      "refuted": false
+    },
+    "virtual_template|preferencesandsettings|SMS communication preference": {
+      "id": 19,
+      "knowledge": "SMS communication preference",
+      "description": "Communication preference is SMS. Selects 51% of rows.",
+      "definition": "TRIM(commpref) = 'SMS'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "preferencesandsettings"
+      ],
+      "refuted": false
+    },
+    "virtual_template|preferencesandsettings|Opted-out marketing preference": {
+      "id": 20,
+      "knowledge": "Opted-out marketing preference",
+      "description": "Marketing preference is Opted Out. Selects 35% of rows.",
+      "definition": "TRIM(markpref) = 'Opted Out'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "preferencesandsettings"
+      ],
+      "refuted": false
+    },
+    "virtual_template|preferencesandsettings|Translated language setting": {
+      "id": 21,
+      "knowledge": "Translated language setting",
+      "description": "Language setting is Translated. Selects 35% of rows.",
+      "definition": "TRIM(langset) = 'Translated'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "preferencesandsettings"
+      ],
+      "refuted": false
+    },
+    "virtual_template|preferencesandsettings|Enhanced accessibility setting": {
+      "id": 22,
+      "knowledge": "Enhanced accessibility setting",
+      "description": "Accessibility setting is Enhanced. Selects 32% of rows.",
+      "definition": "TRIM(accessset) = 'Enhanced'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "preferencesandsettings"
+      ],
+      "refuted": false
+    },
+    "virtual_template|preferencesandsettings|Daily login frequency": {
+      "id": 23,
+      "knowledge": "Daily login frequency",
+      "description": "Login frequency is Daily. Selects 23% of rows.",
+      "definition": "TRIM(logfreq) = 'Daily'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "preferencesandsettings"
+      ],
+      "refuted": false
+    },
+    "virtual_template|preferencesandsettings|Excellent connection quality": {
+      "id": 24,
+      "knowledge": "Excellent connection quality",
+      "description": "Connection quality is Excellent. Selects 22% of rows.",
+      "definition": "TRIM(connqual) = 'Excellent'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "preferencesandsettings"
+      ],
+      "refuted": false
+    },
+    "virtual_template|preferencesandsettings|Recent last login date": {
+      "id": 25,
+      "knowledge": "Recent last login date",
+      "description": "Last login date is on or after 2025-02-10. Selects 36% of rows.",
+      "definition": "TRIM(lastlogdt) >= '2025-02-10'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "preferencesandsettings"
+      ],
+      "refuted": false
+    },
+    "virtual_template|commerceandcollection|Total owned items": {
+      "id": 26,
+      "knowledge": "Total owned items",
+      "description": "Total number of digital and physical items owned.",
+      "definition": "digown + physown",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "commerceandcollection"
+      ],
+      "refuted": false
+    },
+    "virtual_template|commerceandcollection|Average merchandise spend per purchase": {
+      "id": 27,
+      "knowledge": "Average merchandise spend per purchase",
+      "description": "Average merchandise spend in U.S. dollars per purchase.",
+      "definition": "merchspendusd / merchbuy",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "commerceandcollection"
+      ],
+      "refuted": false
+    },
+    "virtual_template|commerceandcollection|Digital item share": {
+      "id": 28,
+      "knowledge": "Digital item share",
+      "description": "Percentage of owned items that are digital.",
+      "definition": "digown / (digown + physown) * 100",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        26
+      ],
+      "tables": [
+        "commerceandcollection"
+      ],
+      "refuted": false
+    },
+    "virtual_template|commerceandcollection|Physical item share": {
+      "id": 29,
+      "knowledge": "Physical item share",
+      "description": "Percentage of owned items that are physical.",
+      "definition": "physown / (digown + physown) * 100",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        26
+      ],
+      "tables": [
+        "commerceandcollection"
+      ],
+      "refuted": false
+    },
+    "virtual_template|commerceandcollection|High trading level": {
+      "id": 30,
+      "knowledge": "High trading level",
+      "description": "Cohort of records whose trading level is High. Selects 25% of rows.",
+      "definition": "TRIM(tradelevel) = 'High'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "commerceandcollection"
+      ],
+      "refuted": false
+    },
+    "virtual_template|additionalnotes|note registration code format": {
+      "id": 31,
+      "knowledge": "note registration code format",
+      "description": "A note registration code is stored as NOTE_ followed by a 4-character suffix, for a total of 9 characters.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "additionalnotes"
+      ],
+      "refuted": false
+    },
+    "virtual_template|additionalnotes|note retain pivot code format": {
+      "id": 32,
+      "knowledge": "note retain pivot code format",
+      "description": "A note retain pivot code is stored as RET_ followed by a 5-character suffix, for a total of 9 characters.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "additionalnotes"
+      ],
+      "refuted": false
+    },
+    "virtual_template|additionalnotes|unique note registration code": {
+      "id": 33,
+      "knowledge": "unique note registration code",
+      "description": "Every note registration code appears in at most one row.",
+      "definition": "COUNT(TRIM(notesreg)) = COUNT(DISTINCT TRIM(notesreg))",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "additionalnotes"
+      ],
+      "refuted": false
+    },
+    "virtual_template|additionalnotes|unique note retain pivot code": {
+      "id": 34,
+      "knowledge": "unique note retain pivot code",
+      "description": "Every note retain pivot code appears in at most one row.",
+      "definition": "COUNT(TRIM(notesretainpivot)) = COUNT(DISTINCT TRIM(notesretainpivot))",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "additionalnotes"
+      ],
+      "refuted": false
+    },
+    "virtual_template|additionalnotes|empty note information": {
+      "id": 35,
+      "knowledge": "empty note information",
+      "description": "A note information cell has no content when it contains an empty or blank string. Selects 50% of rows.",
+      "definition": "COALESCE(TRIM(noteinfo), '') = ''",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "additionalnotes"
+      ],
+      "refuted": false
+    },
+    "virtual_template|supportandfeedback|support tickets (SUPPTIX)": {
+      "id": 36,
+      "knowledge": "support tickets (SUPPTIX)",
+      "description": "Total support tickets as the sum of technical issue reports, feature request subscriptions, and bug subscriptions.",
+      "definition": "supptix != techissuerpt + featreqsubs + bugsubs",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "supportandfeedback"
+      ],
+      "refuted": true
+    },
+    "virtual_template|supportandfeedback|active survey participant": {
+      "id": 37,
+      "knowledge": "active survey participant",
+      "description": "A customer whose survey participation status is Active. Selects 32% of rows.",
+      "definition": "TRIM(survpart) = 'Active'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "supportandfeedback"
+      ],
+      "refuted": false
+    },
+    "virtual_template|supportandfeedback|beta program participant": {
+      "id": 38,
+      "knowledge": "beta program participant",
+      "description": "A customer whose beta program participation status is Yes. Selects 32% of rows.",
+      "definition": "TRIM(betapart) = 'Yes'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "supportandfeedback"
+      ],
+      "refuted": false
+    },
+    "virtual_template|supportandfeedback|promoter (NPS)": {
+      "id": 39,
+      "knowledge": "promoter (NPS)",
+      "description": "A customer whose Net Promoter Score is 9 or higher. Selects 17% of rows.",
+      "definition": "npsval >= 9",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "supportandfeedback"
+      ],
+      "refuted": false
+    },
+    "virtual_template|supportandfeedback|passive (NPS)": {
+      "id": 40,
+      "knowledge": "passive (NPS)",
+      "description": "A customer whose Net Promoter Score is 7 or 8. Selects 18% of rows.",
+      "definition": "npsval >= 7 AND npsval <= 8",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        39
+      ],
+      "tables": [
+        "supportandfeedback"
+      ],
+      "refuted": false
+    },
+    "virtual_template|supportandfeedback|detractor (NPS)": {
+      "id": 41,
+      "knowledge": "detractor (NPS)",
+      "description": "A customer whose Net Promoter Score is 6 or lower. Selects 66% of rows.",
+      "definition": "npsval <= 6",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        39
+      ],
+      "tables": [
+        "supportandfeedback"
+      ],
+      "refuted": false
+    },
+    "virtual_template|membershipandspending|Average daily spend": {
+      "id": 42,
+      "knowledge": "Average daily spend",
+      "description": "Total spend in USD divided by membership days",
+      "definition": "spendusd / membdays",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "membershipandspending"
+      ],
+      "refuted": false
+    },
+    "virtual_template|membershipandspending|Membership duration in years": {
+      "id": 43,
+      "knowledge": "Membership duration in years",
+      "description": "Membership days converted to years",
+      "definition": "membdays / 365.0",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "membershipandspending"
+      ],
+      "refuted": false
+    },
+    "virtual_template|membershipandspending|Premium membership": {
+      "id": 44,
+      "knowledge": "Premium membership",
+      "description": "Member whose membership kind is Premium Selects 26% of rows.",
+      "definition": "TRIM(membkind) = 'Premium'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "membershipandspending"
+      ],
+      "refuted": false
+    },
+    "virtual_template|membershipandspending|Monthly spending frequency": {
+      "id": 45,
+      "knowledge": "Monthly spending frequency",
+      "description": "Member whose spending frequency is Monthly Selects 25% of rows.",
+      "definition": "TRIM(spendfreq) = 'Monthly'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "membershipandspending"
+      ],
+      "refuted": false
+    },
+    "virtual_template|membershipandspending|Credit Card payment": {
+      "id": 46,
+      "knowledge": "Credit Card payment",
+      "description": "Member whose payment method is Credit Card Selects 28% of rows.",
+      "definition": "TRIM(paymethod) = 'Credit Card'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "membershipandspending"
+      ],
+      "refuted": false
+    },
+    "virtual_template|socialcommunity|High community contribution": {
+      "id": 48,
+      "knowledge": "High community contribution",
+      "description": "Members whose community contribution is High. Selects 26% of rows.",
+      "definition": "TRIM(json_extract(community_engagement, '$.content_creation.commcontrib')) = 'High'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "socialcommunity"
+      ],
+      "refuted": false
+    },
+    "virtual_template|socialcommunity|Medium community contribution": {
+      "id": 49,
+      "knowledge": "Medium community contribution",
+      "description": "Members whose community contribution is Medium. Selects 26% of rows.",
+      "definition": "TRIM(json_extract(community_engagement, '$.content_creation.commcontrib')) = 'Medium'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "socialcommunity"
+      ],
+      "refuted": false
+    },
+    "virtual_template|socialcommunity|Low community contribution": {
+      "id": 50,
+      "knowledge": "Low community contribution",
+      "description": "Members whose community contribution is Low. Selects 49% of rows.",
+      "definition": "TRIM(json_extract(community_engagement, '$.content_creation.commcontrib')) = 'Low'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "socialcommunity"
+      ],
+      "refuted": false
+    },
+    "virtual_template|socialcommunity|Active content creator": {
+      "id": 51,
+      "knowledge": "Active content creator",
+      "description": "Members whose content creation status is Active. Selects 68% of rows.",
+      "definition": "TRIM(json_extract(community_engagement, '$.content_creation.contcreatestat')) = 'Active'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "socialcommunity"
+      ],
+      "refuted": false
+    },
+    "virtual_template|socialcommunity|Occasional content creator": {
+      "id": 52,
+      "knowledge": "Occasional content creator",
+      "description": "Members whose content creation status is Occasional. Selects 32% of rows.",
+      "definition": "TRIM(json_extract(community_engagement, '$.content_creation.contcreatestat')) = 'Occasional'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "socialcommunity"
+      ],
+      "refuted": false
+    },
+    "virtual_template|socialcommunity|Group role Member": {
+      "id": 53,
+      "knowledge": "Group role Member",
+      "description": "Members whose group involvement role is Member. Selects 49% of rows.",
+      "definition": "TRIM(json_extract(community_engagement, '$.group_involvement.grprole')) = 'Member'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "socialcommunity"
+      ],
+      "refuted": false
+    },
+    "virtual_template|socialcommunity|Group role Leader": {
+      "id": 54,
+      "knowledge": "Group role Leader",
+      "description": "Members whose group involvement role is Leader. Selects 26% of rows.",
+      "definition": "TRIM(json_extract(community_engagement, '$.group_involvement.grprole')) = 'Leader'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "socialcommunity"
+      ],
+      "refuted": false
+    },
+    "virtual_template|socialcommunity|Group role Moderator": {
+      "id": 55,
+      "knowledge": "Group role Moderator",
+      "description": "Members whose group involvement role is Moderator. Selects 25% of rows.",
+      "definition": "TRIM(json_extract(community_engagement, '$.group_involvement.grprole')) = 'Moderator'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "socialcommunity"
+      ],
+      "refuted": false
+    },
+    "virtual_template|retentionandinfluence|high churn risk": {
+      "id": 56,
+      "knowledge": "high churn risk",
+      "description": "Retention registration with fewer than 5 referrals or references. Selects 24% of rows.",
+      "definition": "refcount < 5",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "retentionandinfluence"
+      ],
+      "refuted": false
+    },
+    "virtual_template|retentionandinfluence|medium churn risk": {
+      "id": 57,
+      "knowledge": "medium churn risk",
+      "description": "Retention registration with 5 to 9 referrals or references. Selects 26% of rows.",
+      "definition": "refcount >= 5 AND refcount < 10",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "retentionandinfluence"
+      ],
+      "refuted": false
+    },
+    "virtual_template|retentionandinfluence|low churn risk": {
+      "id": 58,
+      "knowledge": "low churn risk",
+      "description": "Retention registration with 10 or more referrals or references. Selects 50% of rows.",
+      "definition": "refcount >= 10",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "retentionandinfluence"
+      ],
+      "refuted": false
+    },
+    "virtual_template|retentionandinfluence|viral content ratio": {
+      "id": 59,
+      "knowledge": "viral content ratio",
+      "description": "Viral content items as a percentage of content reach.",
+      "definition": "viralcont * 100.0 / contreach",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "retentionandinfluence"
+      ],
+      "refuted": false
+    },
+    "virtual_template|retentionandinfluence|hashtag intensity": {
+      "id": 60,
+      "knowledge": "hashtag intensity",
+      "description": "Hashtag usage per trend participation point.",
+      "definition": "hashuse * 1.0 / trendpart",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "retentionandinfluence"
+      ],
+      "refuted": false
+    },
+    "virtual_template|engagement|Engagement rate (engrate)": {
+      "id": 61,
+      "knowledge": "Engagement rate (engrate)",
+      "description": "Rate of engagement, equal to the social interaction score expressed as a percentage.",
+      "definition": "engrate != socintscore / 100",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "engagement"
+      ],
+      "refuted": true
+    },
+    "virtual_template|engagement|Average sessions per active day": {
+      "id": 62,
+      "knowledge": "Average sessions per active day",
+      "description": "Mean number of sessions on days a member is active.",
+      "definition": "avgsesscount / NULLIF(actdayswk, 0)",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "engagement"
+      ],
+      "refuted": false
+    },
+    "virtual_template|engagement|Daily active members": {
+      "id": 63,
+      "knowledge": "Daily active members",
+      "description": "Members whose activity frequency category is Daily. Selects 25% of rows.",
+      "definition": "actfreq = 'Daily'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "engagement"
+      ],
+      "refuted": false
+    },
+    "virtual_template|engagement|Original language audience": {
+      "id": 64,
+      "knowledge": "Original language audience",
+      "description": "Members who prefer original language and never use translation. Selects 11% of rows.",
+      "definition": "langpref = 'Original' AND transuse = 'Never'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "engagement"
+      ],
+      "refuted": false
+    },
+    "virtual_template|engagement|Translated language audience": {
+      "id": 65,
+      "knowledge": "Translated language audience",
+      "description": "Members who prefer translated language and always use translation. Selects 11% of rows.",
+      "definition": "langpref = 'Translated' AND transuse = 'Always'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "engagement"
+      ],
+      "refuted": false
+    },
+    "virtual_template|engagement|Bilingual language audience": {
+      "id": 66,
+      "knowledge": "Bilingual language audience",
+      "description": "Members who prefer both original and translated language and use translation at least sometimes. Selects 22% of rows.",
+      "definition": "langpref = 'Both' AND transuse <> 'Never'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "engagement"
+      ],
+      "refuted": false
+    },
+    "virtual_template|fans|Preferred language (langpref)": {
+      "id": 67,
+      "knowledge": "Preferred language (langpref)",
+      "description": "Preferred language value extracted from the personal_attributes JSON object.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "fans"
+      ],
+      "refuted": false
+    },
+    "virtual_template|fans|Occupation path (occupath)": {
+      "id": 68,
+      "knowledge": "Occupation path (occupath)",
+      "description": "Occupation path value extracted from the personal_attributes JSON object.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "fans"
+      ],
+      "refuted": false
+    },
+    "virtual_template|fans|Interest set (interestset)": {
+      "id": 69,
+      "knowledge": "Interest set (interestset)",
+      "description": "Interest set value extracted from the personal_attributes JSON object.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "fans"
+      ],
+      "refuted": false
+    },
+    "virtual_template|fans|Town or city (loctown)": {
+      "id": 70,
+      "knowledge": "Town or city (loctown)",
+      "description": "Town or city name extracted from the personal_attributes JSON object.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "fans"
+      ],
+      "refuted": false
+    },
+    "virtual_template|fans|Age in years (agecount)": {
+      "id": 71,
+      "knowledge": "Age in years (agecount)",
+      "description": "Age in years value extracted from the personal_attributes JSON object.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "fans"
+      ],
+      "refuted": false
+    },
+    "virtual_template|fans|Nation or territory (locnation)": {
+      "id": 72,
+      "knowledge": "Nation or territory (locnation)",
+      "description": "Nation or territory name extracted from the personal_attributes JSON object.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "fans"
+      ],
+      "refuted": false
+    },
+    "virtual_template|fans|Gender type (gendertype)": {
+      "id": 73,
+      "knowledge": "Gender type (gendertype)",
+      "description": "Gender type value extracted from the personal_attributes JSON object.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "fans"
+      ],
+      "refuted": false
+    },
+    "virtual_template|loyaltyandachievements|rank position (rankpos)": {
+      "id": 74,
+      "knowledge": "rank position (rankpos)",
+      "description": "rankpos is the rank position computed from influence score descending, with trust value as tie-breaker.",
+      "definition": "rankpos = RANK() OVER (ORDER BY inflscore DESC, trustval DESC)",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "loyaltyandachievements"
+      ],
+      "refuted": false
+    },
+    "virtual_template|loyaltyandachievements|reputation level (reputelv)": {
+      "id": 75,
+      "knowledge": "reputation level (reputelv)",
+      "description": "reputelv is the reputation level category assigned from trust value thresholds. Selects 24% of rows.",
+      "definition": "reputelv = CASE WHEN trustval >= 90 THEN 'Elite' WHEN trustval >= 70 THEN 'Respected' WHEN trustval >= 40 THEN 'Established' ELSE 'New' END",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "loyaltyandachievements"
+      ],
+      "refuted": false
+    },
+    "virtual_template|loyaltyandachievements|reward tier (rewtier)": {
+      "id": 76,
+      "knowledge": "reward tier (rewtier)",
+      "description": "rewtier is the reward tier category assigned from loyalty points thresholds. Selects 26% of rows.",
+      "definition": "json_extract(reward_progress, '$.loyalty.rewtier') = CASE WHEN json_extract(reward_progress, '$.loyalty.loypts') >= 40000 THEN 'Platinum' WHEN json_extract(reward_progress, '$.loyalty.loypts') >= 30000 THEN 'Gold' WHEN json_extract(reward_progress, '$.loyalty.loypts') >= 20000 THEN 'Silver' ELSE 'Bronze' END",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "loyaltyandachievements"
+      ],
+      "refuted": false
+    },
+    "virtual_template|loyaltyandachievements|loyalty points (loypts)": {
+      "id": 78,
+      "knowledge": "loyalty points (loypts)",
+      "description": "loypts is the loyalty points value extracted from the reward_progress JSON.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "loyaltyandachievements"
+      ],
+      "refuted": false
+    },
+    "virtual_template|loyaltyandachievements|achievement count (achcount)": {
+      "id": 79,
+      "knowledge": "achievement count (achcount)",
+      "description": "achcount is the achievement count extracted from the reward_progress JSON.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "loyaltyandachievements"
+      ],
+      "refuted": false
+    },
+    "virtual_template|moderationandcompliance|Good Standing (modstat)": {
+      "id": 80,
+      "knowledge": "Good Standing (modstat)",
+      "description": "Moderation status assigned when content compliance is compliant and violation history is minor. Selects 22% of rows.",
+      "definition": "contcomp = 'Compliant' AND violhist = 'Minor'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "moderationandcompliance"
+      ],
+      "refuted": false
+    },
+    "virtual_template|moderationandcompliance|Warning (modstat)": {
+      "id": 81,
+      "knowledge": "Warning (modstat)",
+      "description": "Moderation status assigned when content compliance is warning and violation history is minor. Selects 24% of rows.",
+      "definition": "contcomp = 'Warning' AND violhist = 'Minor'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "moderationandcompliance"
+      ],
+      "refuted": false
+    },
+    "virtual_template|moderationandcompliance|Restricted (modstat)": {
+      "id": 82,
+      "knowledge": "Restricted (modstat)",
+      "description": "Moderation status assigned when content compliance is violation or violation history is major. Selects 54% of rows.",
+      "definition": "(contcomp = 'Violation' OR violhist = 'Major')",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "moderationandcompliance"
+      ],
+      "refuted": false
+    },
+    "virtual_template|moderationandcompliance|Verified Identity (idverif)": {
+      "id": 83,
+      "knowledge": "Verified Identity (idverif)",
+      "description": "Identity verification status is verified when age verification and payment verification are verified. Selects 11% of rows.",
+      "definition": "ageverif = 'Verified' AND payverif = 'Verified'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "moderationandcompliance"
+      ],
+      "refuted": false
+    },
+    "virtual_template|moderationandcompliance|Pending Verification": {
+      "id": 84,
+      "knowledge": "Pending Verification",
+      "description": "Any age, payment, or identity verification status still pending. Selects 88% of rows.",
+      "definition": "ageverif = 'Pending' OR payverif = 'Pending' OR idverif = 'Pending'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "moderationandcompliance"
+      ],
+      "refuted": false
+    },
+    "virtual_template|eventsandclub|Premium club member": {
+      "id": 85,
+      "knowledge": "Premium club member",
+      "description": "Club membership status is Premium. Selects 25% of rows.",
+      "definition": "json_extract(participation_summary, '$.club.clubstat') = 'Premium'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "eventsandclub"
+      ],
+      "refuted": false
+    },
+    "virtual_template|eventsandclub|Outstanding club contributor": {
+      "id": 86,
+      "knowledge": "Outstanding club contributor",
+      "description": "Club contribution level is Outstanding. Selects 24% of rows.",
+      "definition": "json_extract(participation_summary, '$.club.clubcontrib') = 'Outstanding'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "eventsandclub"
+      ],
+      "refuted": false
+    },
+    "virtual_template|eventsandclub|Selective camp participant": {
+      "id": 87,
+      "knowledge": "Selective camp participant",
+      "description": "Camp participation category is Selective. Selects 51% of rows.",
+      "definition": "json_extract(participation_summary, '$.engagement.camppart') = 'Selective'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "eventsandclub"
+      ],
+      "refuted": false
+    },
+    "virtual_template|eventsandclub|Always event participant": {
+      "id": 88,
+      "knowledge": "Always event participant",
+      "description": "Event participation level is Always. Selects 23% of rows.",
+      "definition": "json_extract(participation_summary, '$.event_attendance.evtpart') = 'Always'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "eventsandclub"
+      ],
+      "refuted": false
+    },
+    "virtual_template|eventsandclub|Regular event participant": {
+      "id": 89,
+      "knowledge": "Regular event participant",
+      "description": "Event participation level is Regular. Selects 26% of rows.",
+      "definition": "json_extract(participation_summary, '$.event_attendance.evtpart') = 'Regular'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "eventsandclub"
+      ],
+      "refuted": false
+    },
+    "virtual_template|eventsandclub|Rare event participant": {
+      "id": 90,
+      "knowledge": "Rare event participant",
+      "description": "Event participation level is Rare. Selects 26% of rows.",
+      "definition": "json_extract(participation_summary, '$.event_attendance.evtpart') = 'Rare'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "eventsandclub"
+      ],
+      "refuted": false
+    },
+    "virtual_template|eventsandclub|Never event participant": {
+      "id": 91,
+      "knowledge": "Never event participant",
+      "description": "Event participation level is Never. Selects 25% of rows.",
+      "definition": "json_extract(participation_summary, '$.event_attendance.evtpart') = 'Never'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "eventsandclub"
+      ],
+      "refuted": false
+    },
+    "virtual_template|commerceandcollection,engagement|Merchandise spend per engagement rate (MSPER)": {
+      "id": 92,
+      "knowledge": "Merchandise spend per engagement rate (MSPER)",
+      "description": "Merchandise dollars spent divided by the engagement rate in the linked engagement record.",
+      "definition": "merchspendusd / engrate",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        61
+      ],
+      "tables": [
+        "commerceandcollection",
+        "engagement"
+      ],
+      "refuted": false
+    },
+    "virtual_template|fans,membershipandspending|Fan points per spend (FPPS)": {
+      "id": 93,
+      "knowledge": "Fan points per spend (FPPS)",
+      "description": "Fan points value divided by member spend in US dollars.",
+      "definition": "ptsval / spendusd",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "fans",
+        "membershipandspending"
+      ],
+      "refuted": false
+    },
+    "virtual_template|interactions,supportandfeedback|Support tickets per gift count (STPGC)": {
+      "id": 94,
+      "knowledge": "Support tickets per gift count (STPGC)",
+      "description": "Count of support tickets divided by total gift count in the linked interaction.",
+      "definition": "supptix * 1.0 / gifttot",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        36
+      ],
+      "tables": [
+        "interactions",
+        "supportandfeedback"
+      ],
+      "refuted": false
+    },
+    "virtual_template|interactions,supportandfeedback|Technical issue reports per watch hour (TIRPWH)": {
+      "id": 95,
+      "knowledge": "Technical issue reports per watch hour (TIRPWH)",
+      "description": "Technical issue reports divided by watch hours in the linked interaction session.",
+      "definition": "techissuerpt / json_extract(engagement_metrics, '$.session.watchhrs')",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "interactions",
+        "supportandfeedback"
+      ],
+      "refuted": false
+    },
+    "virtual_template|moderationandcompliance,socialcommunity|Moderation reports per social network size (MRPSNS)": {
+      "id": 96,
+      "knowledge": "Moderation reports per social network size (MRPSNS)",
+      "description": "Moderation report count divided by the member's social network size.",
+      "definition": "rptcount * 1.0 / json_extract(community_engagement, '$.network.socnetsz')",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "moderationandcompliance",
+        "socialcommunity"
+      ],
+      "refuted": false
+    },
+    "virtual_template|commerceandcollection,membershipandspending|Merchandise spend per membership day (MSPMD)": {
+      "id": 97,
+      "knowledge": "Merchandise spend per membership day (MSPMD)",
+      "description": "Merchandise spend in US dollars divided by membership days.",
+      "definition": "merchspendusd / membdays",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "commerceandcollection",
+        "membershipandspending"
+      ],
+      "refuted": false
+    },
+    "virtual_template|commerceandcollection,retentionandinfluence|Content reach per merchandise purchase (CRPMP)": {
+      "id": 98,
+      "knowledge": "Content reach per merchandise purchase (CRPMP)",
+      "description": "Content reach metric divided by merchandise purchase count.",
+      "definition": "contreach * 1.0 / merchbuy",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "commerceandcollection",
+        "retentionandinfluence"
+      ],
+      "refuted": false
+    },
+    "virtual_template|engagement,loyaltyandachievements|Influence score per engagement rate (ISPER)": {
+      "id": 99,
+      "knowledge": "Influence score per engagement rate (ISPER)",
+      "description": "Loyalty influence score divided by engagement rate.",
+      "definition": "inflscore / engrate",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        61
+      ],
+      "tables": [
+        "engagement",
+        "loyaltyandachievements"
+      ],
+      "refuted": false
+    },
+    "virtual_template|engagement,membershipandspending|Sessions per membership year (SPMY)": {
+      "id": 100,
+      "knowledge": "Sessions per membership year (SPMY)",
+      "description": "Average session count normalized to a 365-day membership year.",
+      "definition": "avgsesscount * 365.0 / membdays",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        43
+      ],
+      "tables": [
+        "engagement",
+        "membershipandspending"
+      ],
+      "refuted": false
+    },
+    "virtual_template|eventsandclub,membershipandspending|Vote participation per membership year (VPPY)": {
+      "id": 101,
+      "knowledge": "Vote participation per membership year (VPPY)",
+      "description": "Vote participation rate normalized to a 365-day membership year.",
+      "definition": "json_extract(participation_summary, '$.engagement.votepartrate') * 365.0 / membdays",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        43
+      ],
+      "tables": [
+        "eventsandclub",
+        "membershipandspending"
+      ],
+      "refuted": false
+    },
+    "virtual_template|eventsandclub,socialcommunity|Club event attendance per collaboration (CEAPC)": {
+      "id": 102,
+      "knowledge": "Club event attendance per collaboration (CEAPC)",
+      "description": "Total event attendance across all event types divided by collaboration count.",
+      "definition": "(json_extract(participation_summary, '$.event_attendance.concatt') + json_extract(participation_summary, '$.event_attendance.meetatt') + json_extract(participation_summary, '$.event_attendance.onevtatt') + json_extract(participation_summary, '$.event_attendance.offevtatt')) * 1.0 / collabcount",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "eventsandclub",
+        "socialcommunity"
+      ],
+      "refuted": false
+    },
+    "virtual_template|interactions,virtualidols|3D virtual idol gift interaction": {
+      "id": 103,
+      "knowledge": "3D virtual idol gift interaction",
+      "description": "An interaction classified as a gift made with a 3D virtual idol.",
+      "definition": "kindtag = '3D' AND actkind = 'Gift'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "interactions",
+        "virtualidols"
+      ],
+      "refuted": false
+    },
+    "virtual_template|engagement,preferencesandsettings|Daily active friends-only member": {
+      "id": 104,
+      "knowledge": "Daily active friends-only member",
+      "description": "A member whose privacy setting is Friends Only and whose engagement activity frequency is Daily.",
+      "definition": "privset = 'Friends Only' AND actfreq = 'Daily'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        63
+      ],
+      "tables": [
+        "engagement",
+        "preferencesandsettings"
+      ],
+      "refuted": false
+    },
+    "virtual_template|loyaltyandachievements,membershipandspending|Crypto spender with high loyalty points": {
+      "id": 105,
+      "knowledge": "Crypto spender with high loyalty points",
+      "description": "A member who pays by Crypto and has loyalty points greater than 5000.",
+      "definition": "paymethod = 'Crypto' AND json_extract(reward_progress, '$.loyalty.loypts') > 5000",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        78
+      ],
+      "tables": [
+        "loyaltyandachievements",
+        "membershipandspending"
+      ],
+      "refuted": false
+    }
+  },
+  "meta": {
+    "engagement,loyaltyandachievements": {
+      "profiled_at": "2026-08-30T12:52:01.175311+00:00"
+    },
+    "commerceandcollection,retentionandinfluence": {
+      "profiled_at": "2026-08-30T12:52:01.175311+00:00"
+    },
+    "supportandfeedback": {
+      "profiled_at": "2026-08-30T12:52:01.175311+00:00"
+    },
+    "membershipandspending": {
+      "profiled_at": "2026-08-30T12:52:01.175311+00:00"
+    },
+    "retentionandinfluence": {
+      "profiled_at": "2026-08-30T12:52:01.175311+00:00"
+    },
+    "loyaltyandachievements": {
+      "profiled_at": "2026-08-30T12:52:01.175311+00:00"
+    },
+    "fans,membershipandspending": {
+      "profiled_at": "2026-08-30T12:52:01.175311+00:00"
+    },
+    "interactions,supportandfeedback": {
+      "profiled_at": "2026-08-30T12:52:01.175311+00:00"
+    },
+    "commerceandcollection,membershipandspending": {
+      "profiled_at": "2026-08-30T12:52:01.175311+00:00"
+    },
+    "eventsandclub,socialcommunity": {
+      "profiled_at": "2026-08-30T12:52:01.175311+00:00"
+    },
+    "eventsandclub": {
+      "profiled_at": "2026-08-30T12:52:01.175311+00:00"
+    },
+    "commerceandcollection,engagement": {
+      "profiled_at": "2026-08-30T12:52:01.175311+00:00"
+    },
+    "virtualidols": {
+      "profiled_at": "2026-08-30T12:52:01.175311+00:00"
+    },
+    "moderationandcompliance,socialcommunity": {
+      "profiled_at": "2026-08-30T12:52:01.175311+00:00"
+    },
+    "eventsandclub,membershipandspending": {
+      "profiled_at": "2026-08-30T12:52:01.175311+00:00"
+    },
+    "engagement,preferencesandsettings": {
+      "profiled_at": "2026-08-30T12:52:01.175311+00:00"
+    },
+    "interactions": {
+      "profiled_at": "2026-08-30T12:52:01.175311+00:00"
+    },
+    "preferencesandsettings": {
+      "profiled_at": "2026-08-30T12:52:01.175311+00:00"
+    },
+    "commerceandcollection": {
+      "profiled_at": "2026-08-30T12:52:01.175311+00:00"
+    },
+    "additionalnotes": {
+      "profiled_at": "2026-08-30T12:52:01.175311+00:00"
+    },
+    "loyaltyandachievements,membershipandspending": {
+      "profiled_at": "2026-08-30T12:52:01.175311+00:00"
+    },
+    "socialcommunity": {
+      "profiled_at": "2026-08-30T12:52:01.175311+00:00"
+    },
+    "engagement": {
+      "profiled_at": "2026-08-30T12:52:01.175311+00:00"
+    },
+    "fans": {
+      "profiled_at": "2026-08-30T12:52:01.175311+00:00"
+    },
+    "interactions,virtualidols": {
+      "profiled_at": "2026-08-30T12:52:01.175311+00:00"
+    },
+    "engagement,membershipandspending": {
+      "profiled_at": "2026-08-30T12:52:01.175311+00:00"
+    },
+    "moderationandcompliance": {
+      "profiled_at": "2026-08-30T12:52:01.175311+00:00"
+    }
+  }
+}

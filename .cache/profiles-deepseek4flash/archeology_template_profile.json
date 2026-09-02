@@ -1,0 +1,7882 @@
+{
+  "version": 1,
+  "profiled_at": "2026-08-30T10:49:59.798028+00:00",
+  "columns": {
+    "archeology_template|equipment|equipregistry": {
+      "table_name": "equipment",
+      "column_name": "equipregistry",
+      "column_type": "TEXT(50)",
+      "row_count": 993,
+      "null_count": 0,
+      "non_null_count": 993,
+      "distinct_count": 993,
+      "min_value": "SN10024                                           ",
+      "max_value": "SN99937                                           ",
+      "top_k_values": [
+        {
+          "value": "SN10024                                           ",
+          "count": 1
+        },
+        {
+          "value": "SN10100                                           ",
+          "count": 1
+        },
+        {
+          "value": "SN10271                                           ",
+          "count": 1
+        },
+        {
+          "value": "SN10282                                           ",
+          "count": 1
+        },
+        {
+          "value": "SN10345                                           ",
+          "count": 1
+        },
+        {
+          "value": "SN10368                                           ",
+          "count": 1
+        },
+        {
+          "value": "SN10578                                           ",
+          "count": 1
+        },
+        {
+          "value": "SN10636                                           ",
+          "count": 1
+        },
+        {
+          "value": "SN10721                                           ",
+          "count": 1
+        },
+        {
+          "value": "SN10779                                           ",
+          "count": 1
+        }
+      ],
+      "min_length": 50,
+      "max_length": 50,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDDD                                           "
+      ]
+    },
+    "archeology_template|equipment|equipform": {
+      "table_name": "equipment",
+      "column_name": "equipform",
+      "column_type": "TEXT(28)",
+      "row_count": 993,
+      "null_count": 0,
+      "non_null_count": 993,
+      "distinct_count": 4,
+      "min_value": "Laser",
+      "max_value": "Structured Light",
+      "top_k_values": [
+        {
+          "value": "Photogrammetry",
+          "count": 267
+        },
+        {
+          "value": "Laser",
+          "count": 258
+        },
+        {
+          "value": "Structured Light",
+          "count": 250
+        },
+        {
+          "value": "LiDAR",
+          "count": 218
+        }
+      ],
+      "min_length": 5,
+      "max_length": 16,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAA",
+        "AAAAAAAAAAAAAA",
+        "AAAAAAAAAA AAAAA"
+      ]
+    },
+    "archeology_template|equipment|equipdesign": {
+      "table_name": "equipment",
+      "column_name": "equipdesign",
+      "column_type": "TEXT(14)",
+      "row_count": 993,
+      "null_count": 0,
+      "non_null_count": 993,
+      "distinct_count": 632,
+      "min_value": "Model-101",
+      "max_value": "Model-999",
+      "top_k_values": [
+        {
+          "value": "Model-489",
+          "count": 6
+        },
+        {
+          "value": "Model-748",
+          "count": 5
+        },
+        {
+          "value": "Model-566",
+          "count": 5
+        },
+        {
+          "value": "Model-253",
+          "count": 5
+        },
+        {
+          "value": "Model-247",
+          "count": 5
+        },
+        {
+          "value": "Model-964",
+          "count": 4
+        },
+        {
+          "value": "Model-895",
+          "count": 4
+        },
+        {
+          "value": "Model-774",
+          "count": 4
+        },
+        {
+          "value": "Model-766",
+          "count": 4
+        },
+        {
+          "value": "Model-639",
+          "count": 4
+        }
+      ],
+      "min_length": 9,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAAA-DDD"
+      ]
+    },
+    "archeology_template|equipment|equiptune": {
+      "table_name": "equipment",
+      "column_name": "equiptune",
+      "column_type": "TEXT",
+      "row_count": 993,
+      "null_count": 0,
+      "non_null_count": 993,
+      "distinct_count": 180,
+      "min_value": "2024-08-23",
+      "max_value": "2025-02-19",
+      "top_k_values": [
+        {
+          "value": "2025-02-18",
+          "count": 12
+        },
+        {
+          "value": "2024-12-11",
+          "count": 12
+        },
+        {
+          "value": "2024-11-03",
+          "count": 12
+        },
+        {
+          "value": "2025-02-02",
+          "count": 11
+        },
+        {
+          "value": "2024-11-08",
+          "count": 11
+        },
+        {
+          "value": "2025-02-17",
+          "count": 10
+        },
+        {
+          "value": "2025-02-08",
+          "count": 10
+        },
+        {
+          "value": "2025-01-21",
+          "count": 10
+        },
+        {
+          "value": "2025-01-16",
+          "count": 10
+        },
+        {
+          "value": "2024-12-21",
+          "count": 10
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDD-DD-DD"
+      ]
+    },
+    "archeology_template|equipment|equipstatus": {
+      "table_name": "equipment",
+      "column_name": "equipstatus",
+      "column_type": "TEXT(16)",
+      "row_count": 993,
+      "null_count": 0,
+      "non_null_count": 993,
+      "distinct_count": 4,
+      "min_value": "Excellent",
+      "max_value": "Poor",
+      "top_k_values": [
+        {
+          "value": "Good",
+          "count": 257
+        },
+        {
+          "value": "Excellent",
+          "count": 254
+        },
+        {
+          "value": "Fair",
+          "count": 247
+        },
+        {
+          "value": "Poor",
+          "count": 235
+        }
+      ],
+      "min_length": 4,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAAAAAAAA"
+      ]
+    },
+    "archeology_template|equipment|powerlevel": {
+      "table_name": "equipment",
+      "column_name": "powerlevel",
+      "column_type": "INTEGER",
+      "row_count": 993,
+      "null_count": 0,
+      "non_null_count": 993,
+      "distinct_count": 101,
+      "min_value": "0",
+      "max_value": "99",
+      "top_k_values": [
+        {
+          "value": "94",
+          "count": 19
+        },
+        {
+          "value": "8",
+          "count": 17
+        },
+        {
+          "value": "47",
+          "count": 16
+        },
+        {
+          "value": "91",
+          "count": 15
+        },
+        {
+          "value": "45",
+          "count": 15
+        },
+        {
+          "value": "39",
+          "count": 15
+        },
+        {
+          "value": "23",
+          "count": 15
+        },
+        {
+          "value": "22",
+          "count": 15
+        },
+        {
+          "value": "80",
+          "count": 14
+        },
+        {
+          "value": "49",
+          "count": 14
+        }
+      ],
+      "min_length": 1,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D",
+        "DDD"
+      ]
+    },
+    "archeology_template|personnel|crewregistry": {
+      "table_name": "personnel",
+      "column_name": "crewregistry",
+      "column_type": "TEXT(50)",
+      "row_count": 940,
+      "null_count": 0,
+      "non_null_count": 940,
+      "distinct_count": 940,
+      "min_value": "OP1005                                            ",
+      "max_value": "OP9971                                            ",
+      "top_k_values": [
+        {
+          "value": "OP1005                                            ",
+          "count": 1
+        },
+        {
+          "value": "OP1008                                            ",
+          "count": 1
+        },
+        {
+          "value": "OP1014                                            ",
+          "count": 1
+        },
+        {
+          "value": "OP1022                                            ",
+          "count": 1
+        },
+        {
+          "value": "OP1030                                            ",
+          "count": 1
+        },
+        {
+          "value": "OP1033                                            ",
+          "count": 1
+        },
+        {
+          "value": "OP1042                                            ",
+          "count": 1
+        },
+        {
+          "value": "OP1052                                            ",
+          "count": 1
+        },
+        {
+          "value": "OP1053                                            ",
+          "count": 1
+        },
+        {
+          "value": "OP1064                                            ",
+          "count": 1
+        }
+      ],
+      "min_length": 50,
+      "max_length": 50,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDD                                            "
+      ]
+    },
+    "archeology_template|personnel|crewlabel": {
+      "table_name": "personnel",
+      "column_name": "crewlabel",
+      "column_type": "TEXT(50)",
+      "row_count": 940,
+      "null_count": 0,
+      "non_null_count": 940,
+      "distinct_count": 937,
+      "min_value": "Aaron Davis",
+      "max_value": "Zachary Johnson",
+      "top_k_values": [
+        {
+          "value": "Nicole Rivera",
+          "count": 2
+        },
+        {
+          "value": "Kimberly Brown",
+          "count": 2
+        },
+        {
+          "value": "James Watson",
+          "count": 2
+        },
+        {
+          "value": "Zachary Johnson",
+          "count": 1
+        },
+        {
+          "value": "Zachary Drake",
+          "count": 1
+        },
+        {
+          "value": "Willie Bolton",
+          "count": 1
+        },
+        {
+          "value": "William Williams",
+          "count": 1
+        },
+        {
+          "value": "William Thomas",
+          "count": 1
+        },
+        {
+          "value": "William Snyder",
+          "count": 1
+        },
+        {
+          "value": "William Sanders",
+          "count": 1
+        }
+      ],
+      "min_length": 6,
+      "max_length": 24,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAA AAAAA",
+        "AAAAAAA AAAAAA",
+        "AAAAA AAAAAA",
+        "AAAAAA AAAAAA",
+        "AAAAAA AAAAA"
+      ]
+    },
+    "archeology_template|personnel|leadregistry": {
+      "table_name": "personnel",
+      "column_name": "leadregistry",
+      "column_type": "TEXT(50)",
+      "row_count": 940,
+      "null_count": 0,
+      "non_null_count": 940,
+      "distinct_count": 898,
+      "min_value": "SV1016                                            ",
+      "max_value": "SV9990                                            ",
+      "top_k_values": [
+        {
+          "value": "SV8822                                            ",
+          "count": 3
+        },
+        {
+          "value": "SV6607                                            ",
+          "count": 3
+        },
+        {
+          "value": "SV9728                                            ",
+          "count": 2
+        },
+        {
+          "value": "SV9632                                            ",
+          "count": 2
+        },
+        {
+          "value": "SV9480                                            ",
+          "count": 2
+        },
+        {
+          "value": "SV9205                                            ",
+          "count": 2
+        },
+        {
+          "value": "SV9143                                            ",
+          "count": 2
+        },
+        {
+          "value": "SV8377                                            ",
+          "count": 2
+        },
+        {
+          "value": "SV7943                                            ",
+          "count": 2
+        },
+        {
+          "value": "SV7643                                            ",
+          "count": 2
+        }
+      ],
+      "min_length": 50,
+      "max_length": 50,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDD                                            "
+      ]
+    },
+    "archeology_template|personnel|leadlabel": {
+      "table_name": "personnel",
+      "column_name": "leadlabel",
+      "column_type": "TEXT(40)",
+      "row_count": 940,
+      "null_count": 0,
+      "non_null_count": 940,
+      "distinct_count": 933,
+      "min_value": "Aaron Trujillo",
+      "max_value": "Zachary Stevens",
+      "top_k_values": [
+        {
+          "value": "Paul Johnson",
+          "count": 2
+        },
+        {
+          "value": "Nathan Taylor",
+          "count": 2
+        },
+        {
+          "value": "Maria Smith",
+          "count": 2
+        },
+        {
+          "value": "Joseph Patel",
+          "count": 2
+        },
+        {
+          "value": "Ashley Murphy",
+          "count": 2
+        },
+        {
+          "value": "Amanda White",
+          "count": 2
+        },
+        {
+          "value": "Adam Anderson",
+          "count": 2
+        },
+        {
+          "value": "Zachary Stevens",
+          "count": 1
+        },
+        {
+          "value": "Zachary Porter",
+          "count": 1
+        },
+        {
+          "value": "Zachary Hernandez",
+          "count": 1
+        }
+      ],
+      "min_length": 8,
+      "max_length": 24,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAA AAAAAA",
+        "AAAAA AAAAA",
+        "AAAAAA AAAAA",
+        "AAAAAA AAAAAA",
+        "AAAAAAA AAAAAAA"
+      ]
+    },
+    "archeology_template|projects|arcregistry": {
+      "table_name": "projects",
+      "column_name": "arcregistry",
+      "column_type": "TEXT(50)",
+      "row_count": 947,
+      "null_count": 0,
+      "non_null_count": 947,
+      "distinct_count": 947,
+      "min_value": "PR1003",
+      "max_value": "PR9973",
+      "top_k_values": [
+        {
+          "value": "PR1003",
+          "count": 1
+        },
+        {
+          "value": "PR1007",
+          "count": 1
+        },
+        {
+          "value": "PR1013",
+          "count": 1
+        },
+        {
+          "value": "PR1021",
+          "count": 1
+        },
+        {
+          "value": "PR1024",
+          "count": 1
+        },
+        {
+          "value": "PR1026",
+          "count": 1
+        },
+        {
+          "value": "PR1036",
+          "count": 1
+        },
+        {
+          "value": "PR1040",
+          "count": 1
+        },
+        {
+          "value": "PR1047",
+          "count": 1
+        },
+        {
+          "value": "PR1054",
+          "count": 1
+        }
+      ],
+      "min_length": 6,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDD"
+      ]
+    },
+    "archeology_template|projects|vesseltag": {
+      "table_name": "projects",
+      "column_name": "vesseltag",
+      "column_type": "TEXT(60)",
+      "row_count": 947,
+      "null_count": 0,
+      "non_null_count": 947,
+      "distinct_count": 609,
+      "min_value": "Project A",
+      "max_value": "Project Yourself",
+      "top_k_values": [
+        {
+          "value": "Project Turn",
+          "count": 5
+        },
+        {
+          "value": "Project So",
+          "count": 5
+        },
+        {
+          "value": "Project Positive",
+          "count": 5
+        },
+        {
+          "value": "Project Model",
+          "count": 5
+        },
+        {
+          "value": "Project Cold",
+          "count": 5
+        },
+        {
+          "value": "Project War",
+          "count": 4
+        },
+        {
+          "value": "Project Usually",
+          "count": 4
+        },
+        {
+          "value": "Project Throughout",
+          "count": 4
+        },
+        {
+          "value": "Project Sure",
+          "count": 4
+        },
+        {
+          "value": "Project Spring",
+          "count": 4
+        }
+      ],
+      "min_length": 9,
+      "max_length": 22,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA AAAA",
+        "AAAAAAA AAAAA",
+        "AAAAAAA AAAAAA",
+        "AAAAAAA AAAAAAA",
+        "AAAAAAA AAA"
+      ]
+    },
+    "archeology_template|projects|fundflux": {
+      "table_name": "projects",
+      "column_name": "fundflux",
+      "column_type": "TEXT",
+      "row_count": 947,
+      "null_count": 0,
+      "non_null_count": 947,
+      "distinct_count": 4,
+      "min_value": "Government",
+      "max_value": "University",
+      "top_k_values": [
+        {
+          "value": "Government",
+          "count": 250
+        },
+        {
+          "value": "University",
+          "count": 243
+        },
+        {
+          "value": "Private",
+          "count": 232
+        },
+        {
+          "value": "Grant",
+          "count": 222
+        }
+      ],
+      "min_length": 5,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAAA",
+        "AAAAAAA",
+        "AAAAA"
+      ]
+    },
+    "archeology_template|projects|authpin": {
+      "table_name": "projects",
+      "column_name": "authpin",
+      "column_type": "TEXT(50)",
+      "row_count": 947,
+      "null_count": 0,
+      "non_null_count": 947,
+      "distinct_count": 910,
+      "min_value": "PMT1029                                           ",
+      "max_value": "PMT9974                                           ",
+      "top_k_values": [
+        {
+          "value": "PMT9971                                           ",
+          "count": 2
+        },
+        {
+          "value": "PMT9865                                           ",
+          "count": 2
+        },
+        {
+          "value": "PMT9812                                           ",
+          "count": 2
+        },
+        {
+          "value": "PMT9393                                           ",
+          "count": 2
+        },
+        {
+          "value": "PMT9238                                           ",
+          "count": 2
+        },
+        {
+          "value": "PMT8937                                           ",
+          "count": 2
+        },
+        {
+          "value": "PMT8907                                           ",
+          "count": 2
+        },
+        {
+          "value": "PMT8577                                           ",
+          "count": 2
+        },
+        {
+          "value": "PMT8344                                           ",
+          "count": 2
+        },
+        {
+          "value": "PMT8324                                           ",
+          "count": 2
+        }
+      ],
+      "min_length": 50,
+      "max_length": 50,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAADDDD                                           "
+      ]
+    },
+    "archeology_template|projects|authhalt": {
+      "table_name": "projects",
+      "column_name": "authhalt",
+      "column_type": "TEXT",
+      "row_count": 947,
+      "null_count": 0,
+      "non_null_count": 947,
+      "distinct_count": 338,
+      "min_value": "2025-02-20",
+      "max_value": "2026-02-19",
+      "top_k_values": [
+        {
+          "value": "2025-06-25",
+          "count": 9
+        },
+        {
+          "value": "2025-02-24",
+          "count": 9
+        },
+        {
+          "value": "2025-12-02",
+          "count": 8
+        },
+        {
+          "value": "2025-09-27",
+          "count": 8
+        },
+        {
+          "value": "2025-03-16",
+          "count": 8
+        },
+        {
+          "value": "2026-01-09",
+          "count": 7
+        },
+        {
+          "value": "2025-12-07",
+          "count": 7
+        },
+        {
+          "value": "2025-11-18",
+          "count": 7
+        },
+        {
+          "value": "2025-08-31",
+          "count": 7
+        },
+        {
+          "value": "2025-07-14",
+          "count": 7
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDD-DD-DD"
+      ]
+    },
+    "archeology_template|scanconservation|cureregistry": {
+      "table_name": "scanconservation",
+      "column_name": "cureregistry",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "1",
+      "max_value": "999",
+      "top_k_values": [
+        {
+          "value": "1",
+          "count": 1
+        },
+        {
+          "value": "2",
+          "count": 1
+        },
+        {
+          "value": "3",
+          "count": 1
+        },
+        {
+          "value": "4",
+          "count": 1
+        },
+        {
+          "value": "5",
+          "count": 1
+        },
+        {
+          "value": "6",
+          "count": 1
+        },
+        {
+          "value": "7",
+          "count": 1
+        },
+        {
+          "value": "8",
+          "count": 1
+        },
+        {
+          "value": "9",
+          "count": 1
+        },
+        {
+          "value": "10",
+          "count": 1
+        }
+      ],
+      "min_length": 1,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D",
+        "DDDD"
+      ]
+    },
+    "archeology_template|scanconservation|arcref": {
+      "table_name": "scanconservation",
+      "column_name": "arcref",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 947,
+      "min_value": "PR1003",
+      "max_value": "PR9973",
+      "top_k_values": [
+        {
+          "value": "PR8078",
+          "count": 3
+        },
+        {
+          "value": "PR7110",
+          "count": 3
+        },
+        {
+          "value": "PR9689",
+          "count": 2
+        },
+        {
+          "value": "PR9550",
+          "count": 2
+        },
+        {
+          "value": "PR9481",
+          "count": 2
+        },
+        {
+          "value": "PR9376",
+          "count": 2
+        },
+        {
+          "value": "PR9356",
+          "count": 2
+        },
+        {
+          "value": "PR9353",
+          "count": 2
+        },
+        {
+          "value": "PR9311",
+          "count": 2
+        },
+        {
+          "value": "PR8940",
+          "count": 2
+        }
+      ],
+      "min_length": 6,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDD"
+      ]
+    },
+    "archeology_template|scanconservation|zoneref": {
+      "table_name": "scanconservation",
+      "column_name": "zoneref",
+      "column_type": "TEXT(12)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 942,
+      "min_value": "SC1017",
+      "max_value": "SC9995",
+      "top_k_values": [
+        {
+          "value": "SC8933",
+          "count": 3
+        },
+        {
+          "value": "SC5031",
+          "count": 3
+        },
+        {
+          "value": "SC4971",
+          "count": 3
+        },
+        {
+          "value": "SC4589",
+          "count": 3
+        },
+        {
+          "value": "SC2971",
+          "count": 3
+        },
+        {
+          "value": "SC9995",
+          "count": 2
+        },
+        {
+          "value": "SC9870",
+          "count": 2
+        },
+        {
+          "value": "SC9489",
+          "count": 2
+        },
+        {
+          "value": "SC9081",
+          "count": 2
+        },
+        {
+          "value": "SC8942",
+          "count": 2
+        }
+      ],
+      "min_length": 6,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDD"
+      ]
+    },
+    "archeology_template|scanconservation|harmassess": {
+      "table_name": "scanconservation",
+      "column_name": "harmassess",
+      "column_type": "TEXT(15)",
+      "row_count": 1000,
+      "null_count": 251,
+      "non_null_count": 749,
+      "distinct_count": 3,
+      "min_value": "Minor",
+      "max_value": "Severe",
+      "top_k_values": [
+        {
+          "value": "Severe",
+          "count": 256
+        },
+        {
+          "value": "Moderate",
+          "count": 247
+        },
+        {
+          "value": "Minor",
+          "count": 246
+        }
+      ],
+      "min_length": 5,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AAAAAAAA",
+        "AAAAA"
+      ]
+    },
+    "archeology_template|scanconservation|curerank": {
+      "table_name": "scanconservation",
+      "column_name": "curerank",
+      "column_type": "TEXT(15)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "Critical",
+      "max_value": "Medium",
+      "top_k_values": [
+        {
+          "value": "Low",
+          "count": 264
+        },
+        {
+          "value": "Medium",
+          "count": 256
+        },
+        {
+          "value": "High",
+          "count": 244
+        },
+        {
+          "value": "Critical",
+          "count": 236
+        }
+      ],
+      "min_length": 3,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAA",
+        "AAAAAA",
+        "AAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "archeology_template|scanconservation|structstate": {
+      "table_name": "scanconservation",
+      "column_name": "structstate",
+      "column_type": "TEXT(15)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Moderate",
+      "max_value": "Unstable",
+      "top_k_values": [
+        {
+          "value": "Unstable",
+          "count": 342
+        },
+        {
+          "value": "Moderate",
+          "count": 333
+        },
+        {
+          "value": "Stable",
+          "count": 325
+        }
+      ],
+      "min_length": 6,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAAAA"
+      ]
+    },
+    "archeology_template|scanconservation|intervhistory": {
+      "table_name": "scanconservation",
+      "column_name": "intervhistory",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 318,
+      "non_null_count": 682,
+      "distinct_count": 2,
+      "min_value": "Major",
+      "max_value": "Minor",
+      "top_k_values": [
+        {
+          "value": "Major",
+          "count": 350
+        },
+        {
+          "value": "Minor",
+          "count": 332
+        }
+      ],
+      "min_length": 5,
+      "max_length": 5,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAAA"
+      ]
+    },
+    "archeology_template|scanconservation|priordocs": {
+      "table_name": "scanconservation",
+      "column_name": "priordocs",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 327,
+      "non_null_count": 673,
+      "distinct_count": 2,
+      "min_value": "Complete",
+      "max_value": "Partial",
+      "top_k_values": [
+        {
+          "value": "Partial",
+          "count": 337
+        },
+        {
+          "value": "Complete",
+          "count": 336
+        }
+      ],
+      "min_length": 7,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "archeology_template|scanenvironment|airregistry": {
+      "table_name": "scanenvironment",
+      "column_name": "airregistry",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "1",
+      "max_value": "999",
+      "top_k_values": [
+        {
+          "value": "1",
+          "count": 1
+        },
+        {
+          "value": "2",
+          "count": 1
+        },
+        {
+          "value": "3",
+          "count": 1
+        },
+        {
+          "value": "4",
+          "count": 1
+        },
+        {
+          "value": "5",
+          "count": 1
+        },
+        {
+          "value": "6",
+          "count": 1
+        },
+        {
+          "value": "7",
+          "count": 1
+        },
+        {
+          "value": "8",
+          "count": 1
+        },
+        {
+          "value": "9",
+          "count": 1
+        },
+        {
+          "value": "10",
+          "count": 1
+        }
+      ],
+      "min_length": 1,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D",
+        "DDDD"
+      ]
+    },
+    "archeology_template|scanenvironment|zoneref": {
+      "table_name": "scanenvironment",
+      "column_name": "zoneref",
+      "column_type": "TEXT(12)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 942,
+      "min_value": "SC1017",
+      "max_value": "SC9995",
+      "top_k_values": [
+        {
+          "value": "SC8933",
+          "count": 3
+        },
+        {
+          "value": "SC5031",
+          "count": 3
+        },
+        {
+          "value": "SC4971",
+          "count": 3
+        },
+        {
+          "value": "SC4589",
+          "count": 3
+        },
+        {
+          "value": "SC2971",
+          "count": 3
+        },
+        {
+          "value": "SC9995",
+          "count": 2
+        },
+        {
+          "value": "SC9870",
+          "count": 2
+        },
+        {
+          "value": "SC9489",
+          "count": 2
+        },
+        {
+          "value": "SC9081",
+          "count": 2
+        },
+        {
+          "value": "SC8942",
+          "count": 2
+        }
+      ],
+      "min_length": 6,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDD"
+      ]
+    },
+    "archeology_template|scanenvironment|equipref": {
+      "table_name": "scanenvironment",
+      "column_name": "equipref",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 993,
+      "min_value": "SN10024                                           ",
+      "max_value": "SN99937                                           ",
+      "top_k_values": [
+        {
+          "value": "SN74231                                           ",
+          "count": 2
+        },
+        {
+          "value": "SN70685                                           ",
+          "count": 2
+        },
+        {
+          "value": "SN54763                                           ",
+          "count": 2
+        },
+        {
+          "value": "SN47173                                           ",
+          "count": 2
+        },
+        {
+          "value": "SN42769                                           ",
+          "count": 2
+        },
+        {
+          "value": "SN35988                                           ",
+          "count": 2
+        },
+        {
+          "value": "SN29560                                           ",
+          "count": 2
+        },
+        {
+          "value": "SN99937                                           ",
+          "count": 1
+        },
+        {
+          "value": "SN99896                                           ",
+          "count": 1
+        },
+        {
+          "value": "SN99785                                           ",
+          "count": 1
+        }
+      ],
+      "min_length": 50,
+      "max_length": 50,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDDD                                           "
+      ]
+    },
+    "archeology_template|scanenvironment|ambictemp": {
+      "table_name": "scanenvironment",
+      "column_name": "ambictemp",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 437,
+      "min_value": "-0.2",
+      "max_value": "9.9",
+      "top_k_values": [
+        {
+          "value": "21.0",
+          "count": 7
+        },
+        {
+          "value": "9.6",
+          "count": 7
+        },
+        {
+          "value": "8.1",
+          "count": 7
+        },
+        {
+          "value": "38.7",
+          "count": 6
+        },
+        {
+          "value": "24.0",
+          "count": 6
+        },
+        {
+          "value": "7.3",
+          "count": 6
+        },
+        {
+          "value": "-8.9",
+          "count": 6
+        },
+        {
+          "value": "38.6",
+          "count": 5
+        },
+        {
+          "value": "38.1",
+          "count": 5
+        },
+        {
+          "value": "37.7",
+          "count": 5
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.D",
+        "D.D",
+        "-D.D",
+        "-DD.D"
+      ]
+    },
+    "archeology_template|scanenvironment|humepct": {
+      "table_name": "scanenvironment",
+      "column_name": "humepct",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 534,
+      "min_value": "20.0",
+      "max_value": "89.9",
+      "top_k_values": [
+        {
+          "value": "60.4",
+          "count": 6
+        },
+        {
+          "value": "77.7",
+          "count": 5
+        },
+        {
+          "value": "69.4",
+          "count": 5
+        },
+        {
+          "value": "68.7",
+          "count": 5
+        },
+        {
+          "value": "60.6",
+          "count": 5
+        },
+        {
+          "value": "46.3",
+          "count": 5
+        },
+        {
+          "value": "40.2",
+          "count": 5
+        },
+        {
+          "value": "27.1",
+          "count": 5
+        },
+        {
+          "value": "20.2",
+          "count": 5
+        },
+        {
+          "value": "82.9",
+          "count": 4
+        }
+      ],
+      "min_length": 4,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DD.D"
+      ]
+    },
+    "archeology_template|scanenvironment|illumelux": {
+      "table_name": "scanenvironment",
+      "column_name": "illumelux",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 995,
+      "min_value": "10046",
+      "max_value": "99850",
+      "top_k_values": [
+        {
+          "value": "91882",
+          "count": 2
+        },
+        {
+          "value": "51913",
+          "count": 2
+        },
+        {
+          "value": "13890",
+          "count": 2
+        },
+        {
+          "value": "5945",
+          "count": 2
+        },
+        {
+          "value": "5932",
+          "count": 2
+        },
+        {
+          "value": "99850",
+          "count": 1
+        },
+        {
+          "value": "99783",
+          "count": 1
+        },
+        {
+          "value": "99544",
+          "count": 1
+        },
+        {
+          "value": "99513",
+          "count": 1
+        },
+        {
+          "value": "99474",
+          "count": 1
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDD",
+        "DDDD",
+        "DDD"
+      ]
+    },
+    "archeology_template|scanenvironment|geosignal": {
+      "table_name": "scanenvironment",
+      "column_name": "geosignal",
+      "column_type": "TEXT(15)",
+      "row_count": 1000,
+      "null_count": 249,
+      "non_null_count": 751,
+      "distinct_count": 3,
+      "min_value": "Excellent",
+      "max_value": "Poor",
+      "top_k_values": [
+        {
+          "value": "Excellent",
+          "count": 277
+        },
+        {
+          "value": "Good",
+          "count": 239
+        },
+        {
+          "value": "Poor",
+          "count": 235
+        }
+      ],
+      "min_length": 4,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAAAAAAAA"
+      ]
+    },
+    "archeology_template|scanenvironment|trackstatus": {
+      "table_name": "scanenvironment",
+      "column_name": "trackstatus",
+      "column_type": "TEXT(12)",
+      "row_count": 1000,
+      "null_count": 332,
+      "non_null_count": 668,
+      "distinct_count": 2,
+      "min_value": "Fixed",
+      "max_value": "Float",
+      "top_k_values": [
+        {
+          "value": "Fixed",
+          "count": 366
+        },
+        {
+          "value": "Float",
+          "count": 302
+        }
+      ],
+      "min_length": 5,
+      "max_length": 5,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAAA"
+      ]
+    },
+    "archeology_template|scanenvironment|linkstatus": {
+      "table_name": "scanenvironment",
+      "column_name": "linkstatus",
+      "column_type": "TEXT(12)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Connected",
+      "max_value": "Limited",
+      "top_k_values": [
+        {
+          "value": "Connected",
+          "count": 360
+        },
+        {
+          "value": "Limited",
+          "count": 323
+        },
+        {
+          "value": "Disconnected",
+          "count": 317
+        }
+      ],
+      "min_length": 7,
+      "max_length": 12,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAA",
+        "AAAAAAA",
+        "AAAAAAAAAAAA"
+      ]
+    },
+    "archeology_template|scanenvironment|photomap": {
+      "table_name": "scanenvironment",
+      "column_name": "photomap",
+      "column_type": "TEXT(4)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "60% ",
+      "max_value": "90% ",
+      "top_k_values": [
+        {
+          "value": "90% ",
+          "count": 260
+        },
+        {
+          "value": "60% ",
+          "count": 258
+        },
+        {
+          "value": "70% ",
+          "count": 252
+        },
+        {
+          "value": "80% ",
+          "count": 230
+        }
+      ],
+      "min_length": 4,
+      "max_length": 4,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DD% "
+      ]
+    },
+    "archeology_template|scanenvironment|imgcount": {
+      "table_name": "scanenvironment",
+      "column_name": "imgcount",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 611,
+      "min_value": "100",
+      "max_value": "997",
+      "top_k_values": [
+        {
+          "value": "779",
+          "count": 5
+        },
+        {
+          "value": "350",
+          "count": 5
+        },
+        {
+          "value": "218",
+          "count": 5
+        },
+        {
+          "value": "970",
+          "count": 4
+        },
+        {
+          "value": "940",
+          "count": 4
+        },
+        {
+          "value": "927",
+          "count": 4
+        },
+        {
+          "value": "895",
+          "count": 4
+        },
+        {
+          "value": "876",
+          "count": 4
+        },
+        {
+          "value": "855",
+          "count": 4
+        },
+        {
+          "value": "844",
+          "count": 4
+        }
+      ],
+      "min_length": 2,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD"
+      ]
+    },
+    "archeology_template|scanfeatures|traitregistry": {
+      "table_name": "scanfeatures",
+      "column_name": "traitregistry",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "1",
+      "max_value": "999",
+      "top_k_values": [
+        {
+          "value": "1",
+          "count": 1
+        },
+        {
+          "value": "2",
+          "count": 1
+        },
+        {
+          "value": "3",
+          "count": 1
+        },
+        {
+          "value": "4",
+          "count": 1
+        },
+        {
+          "value": "5",
+          "count": 1
+        },
+        {
+          "value": "6",
+          "count": 1
+        },
+        {
+          "value": "7",
+          "count": 1
+        },
+        {
+          "value": "8",
+          "count": 1
+        },
+        {
+          "value": "9",
+          "count": 1
+        },
+        {
+          "value": "10",
+          "count": 1
+        }
+      ],
+      "min_length": 1,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D",
+        "DDDD"
+      ]
+    },
+    "archeology_template|scanfeatures|zoneref": {
+      "table_name": "scanfeatures",
+      "column_name": "zoneref",
+      "column_type": "TEXT(12)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 942,
+      "min_value": "SC1017",
+      "max_value": "SC9995",
+      "top_k_values": [
+        {
+          "value": "SC8933",
+          "count": 3
+        },
+        {
+          "value": "SC5031",
+          "count": 3
+        },
+        {
+          "value": "SC4971",
+          "count": 3
+        },
+        {
+          "value": "SC4589",
+          "count": 3
+        },
+        {
+          "value": "SC2971",
+          "count": 3
+        },
+        {
+          "value": "SC9995",
+          "count": 2
+        },
+        {
+          "value": "SC9870",
+          "count": 2
+        },
+        {
+          "value": "SC9489",
+          "count": 2
+        },
+        {
+          "value": "SC9081",
+          "count": 2
+        },
+        {
+          "value": "SC8942",
+          "count": 2
+        }
+      ],
+      "min_length": 6,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDD"
+      ]
+    },
+    "archeology_template|scanfeatures|equipref": {
+      "table_name": "scanfeatures",
+      "column_name": "equipref",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 993,
+      "min_value": "SN10024                                           ",
+      "max_value": "SN99937                                           ",
+      "top_k_values": [
+        {
+          "value": "SN74231                                           ",
+          "count": 2
+        },
+        {
+          "value": "SN70685                                           ",
+          "count": 2
+        },
+        {
+          "value": "SN54763                                           ",
+          "count": 2
+        },
+        {
+          "value": "SN47173                                           ",
+          "count": 2
+        },
+        {
+          "value": "SN42769                                           ",
+          "count": 2
+        },
+        {
+          "value": "SN35988                                           ",
+          "count": 2
+        },
+        {
+          "value": "SN29560                                           ",
+          "count": 2
+        },
+        {
+          "value": "SN99937                                           ",
+          "count": 1
+        },
+        {
+          "value": "SN99896                                           ",
+          "count": 1
+        },
+        {
+          "value": "SN99785                                           ",
+          "count": 1
+        }
+      ],
+      "min_length": 50,
+      "max_length": 50,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDDD                                           "
+      ]
+    },
+    "archeology_template|scanfeatures|traitextract": {
+      "table_name": "scanfeatures",
+      "column_name": "traitextract",
+      "column_type": "TEXT(25)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Automatic",
+      "max_value": "Semi-automatic",
+      "top_k_values": [
+        {
+          "value": "Semi-automatic",
+          "count": 336
+        },
+        {
+          "value": "Manual",
+          "count": 334
+        },
+        {
+          "value": "Automatic",
+          "count": 330
+        }
+      ],
+      "min_length": 6,
+      "max_length": 14,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA-AAAAAAAAA",
+        "AAAAAA",
+        "AAAAAAAAA"
+      ]
+    },
+    "archeology_template|scanfeatures|traitcount": {
+      "table_name": "scanfeatures",
+      "column_name": "traitcount",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 633,
+      "min_value": "10",
+      "max_value": "999",
+      "top_k_values": [
+        {
+          "value": "304",
+          "count": 6
+        },
+        {
+          "value": "489",
+          "count": 5
+        },
+        {
+          "value": "388",
+          "count": 5
+        },
+        {
+          "value": "258",
+          "count": 5
+        },
+        {
+          "value": "255",
+          "count": 5
+        },
+        {
+          "value": "168",
+          "count": 5
+        },
+        {
+          "value": "61",
+          "count": 5
+        },
+        {
+          "value": "863",
+          "count": 4
+        },
+        {
+          "value": "840",
+          "count": 4
+        },
+        {
+          "value": "693",
+          "count": 4
+        }
+      ],
+      "min_length": 2,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "DDDD"
+      ]
+    },
+    "archeology_template|scanfeatures|articount": {
+      "table_name": "scanfeatures",
+      "column_name": "articount",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 101,
+      "min_value": "0",
+      "max_value": "99",
+      "top_k_values": [
+        {
+          "value": "80",
+          "count": 17
+        },
+        {
+          "value": "44",
+          "count": 17
+        },
+        {
+          "value": "14",
+          "count": 16
+        },
+        {
+          "value": "8",
+          "count": 16
+        },
+        {
+          "value": "86",
+          "count": 15
+        },
+        {
+          "value": "43",
+          "count": 15
+        },
+        {
+          "value": "38",
+          "count": 15
+        },
+        {
+          "value": "35",
+          "count": 15
+        },
+        {
+          "value": "34",
+          "count": 15
+        },
+        {
+          "value": "22",
+          "count": 15
+        }
+      ],
+      "min_length": 1,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D",
+        "DDD"
+      ]
+    },
+    "archeology_template|scanfeatures|structkind": {
+      "table_name": "scanfeatures",
+      "column_name": "structkind",
+      "column_type": "TEXT(15)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 5,
+      "min_value": "Artifact",
+      "max_value": "Wall",
+      "top_k_values": [
+        {
+          "value": "Foundation",
+          "count": 214
+        },
+        {
+          "value": "Complex",
+          "count": 209
+        },
+        {
+          "value": "Wall",
+          "count": 203
+        },
+        {
+          "value": "Floor",
+          "count": 200
+        },
+        {
+          "value": "Artifact",
+          "count": 174
+        }
+      ],
+      "min_length": 4,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAAA",
+        "AAAAAAA",
+        "AAAA",
+        "AAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "archeology_template|scanfeatures|matkind": {
+      "table_name": "scanfeatures",
+      "column_name": "matkind",
+      "column_type": "TEXT(15)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 5,
+      "min_value": "Ceramic",
+      "max_value": "Stone",
+      "top_k_values": [
+        {
+          "value": "Mixed",
+          "count": 212
+        },
+        {
+          "value": "Metal",
+          "count": 207
+        },
+        {
+          "value": "Stone",
+          "count": 200
+        },
+        {
+          "value": "Ceramic",
+          "count": 191
+        },
+        {
+          "value": "Organic",
+          "count": 190
+        }
+      ],
+      "min_length": 5,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAA",
+        "AAAAAAA"
+      ]
+    },
+    "archeology_template|scanfeatures|huestudy": {
+      "table_name": "scanfeatures",
+      "column_name": "huestudy",
+      "column_type": "TEXT(15)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Completed",
+      "max_value": "Partial",
+      "top_k_values": [
+        {
+          "value": "Completed",
+          "count": 340
+        },
+        {
+          "value": "Not Required",
+          "count": 338
+        },
+        {
+          "value": "Partial",
+          "count": 322
+        }
+      ],
+      "min_length": 7,
+      "max_length": 12,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAA",
+        "AAA AAAAAAAA",
+        "AAAAAAA"
+      ]
+    },
+    "archeology_template|scanfeatures|texturestudy": {
+      "table_name": "scanfeatures",
+      "column_name": "texturestudy",
+      "column_type": "TEXT(15)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Completed",
+      "max_value": "Partial",
+      "top_k_values": [
+        {
+          "value": "Completed",
+          "count": 343
+        },
+        {
+          "value": "Not Required",
+          "count": 334
+        },
+        {
+          "value": "Partial",
+          "count": 323
+        }
+      ],
+      "min_length": 7,
+      "max_length": 12,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAA",
+        "AAA AAAAAAAA",
+        "AAAAAAA"
+      ]
+    },
+    "archeology_template|scanfeatures|patternnote": {
+      "table_name": "scanfeatures",
+      "column_name": "patternnote",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Completed",
+      "max_value": "Partial",
+      "top_k_values": [
+        {
+          "value": "Not Required",
+          "count": 334
+        },
+        {
+          "value": "Partial",
+          "count": 333
+        },
+        {
+          "value": "Completed",
+          "count": 333
+        }
+      ],
+      "min_length": 7,
+      "max_length": 12,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAA AAAAAAAA",
+        "AAAAAAA",
+        "AAAAAAAAA"
+      ]
+    },
+    "archeology_template|scanmesh|facetregistry": {
+      "table_name": "scanmesh",
+      "column_name": "facetregistry",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "1",
+      "max_value": "999",
+      "top_k_values": [
+        {
+          "value": "1",
+          "count": 1
+        },
+        {
+          "value": "2",
+          "count": 1
+        },
+        {
+          "value": "3",
+          "count": 1
+        },
+        {
+          "value": "4",
+          "count": 1
+        },
+        {
+          "value": "5",
+          "count": 1
+        },
+        {
+          "value": "6",
+          "count": 1
+        },
+        {
+          "value": "7",
+          "count": 1
+        },
+        {
+          "value": "8",
+          "count": 1
+        },
+        {
+          "value": "9",
+          "count": 1
+        },
+        {
+          "value": "10",
+          "count": 1
+        }
+      ],
+      "min_length": 1,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D",
+        "DDDD"
+      ]
+    },
+    "archeology_template|scanmesh|zoneref": {
+      "table_name": "scanmesh",
+      "column_name": "zoneref",
+      "column_type": "TEXT(12)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 942,
+      "min_value": "SC1017",
+      "max_value": "SC9995",
+      "top_k_values": [
+        {
+          "value": "SC8933",
+          "count": 3
+        },
+        {
+          "value": "SC5031",
+          "count": 3
+        },
+        {
+          "value": "SC4971",
+          "count": 3
+        },
+        {
+          "value": "SC4589",
+          "count": 3
+        },
+        {
+          "value": "SC2971",
+          "count": 3
+        },
+        {
+          "value": "SC9995",
+          "count": 2
+        },
+        {
+          "value": "SC9870",
+          "count": 2
+        },
+        {
+          "value": "SC9489",
+          "count": 2
+        },
+        {
+          "value": "SC9081",
+          "count": 2
+        },
+        {
+          "value": "SC8942",
+          "count": 2
+        }
+      ],
+      "min_length": 6,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDD"
+      ]
+    },
+    "archeology_template|scanmesh|equipref": {
+      "table_name": "scanmesh",
+      "column_name": "equipref",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 993,
+      "min_value": "SN10024                                           ",
+      "max_value": "SN99937                                           ",
+      "top_k_values": [
+        {
+          "value": "SN74231                                           ",
+          "count": 2
+        },
+        {
+          "value": "SN70685                                           ",
+          "count": 2
+        },
+        {
+          "value": "SN54763                                           ",
+          "count": 2
+        },
+        {
+          "value": "SN47173                                           ",
+          "count": 2
+        },
+        {
+          "value": "SN42769                                           ",
+          "count": 2
+        },
+        {
+          "value": "SN35988                                           ",
+          "count": 2
+        },
+        {
+          "value": "SN29560                                           ",
+          "count": 2
+        },
+        {
+          "value": "SN99937                                           ",
+          "count": 1
+        },
+        {
+          "value": "SN99896                                           ",
+          "count": 1
+        },
+        {
+          "value": "SN99785                                           ",
+          "count": 1
+        }
+      ],
+      "min_length": 50,
+      "max_length": 50,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDDD                                           "
+      ]
+    },
+    "archeology_template|scanmesh|facetverts": {
+      "table_name": "scanmesh",
+      "column_name": "facetverts",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "1011255",
+      "max_value": "9996592",
+      "top_k_values": [
+        {
+          "value": "9996592",
+          "count": 1
+        },
+        {
+          "value": "9991038",
+          "count": 1
+        },
+        {
+          "value": "9980078",
+          "count": 1
+        },
+        {
+          "value": "9961870",
+          "count": 1
+        },
+        {
+          "value": "9943755",
+          "count": 1
+        },
+        {
+          "value": "9932112",
+          "count": 1
+        },
+        {
+          "value": "9912722",
+          "count": 1
+        },
+        {
+          "value": "9902959",
+          "count": 1
+        },
+        {
+          "value": "9900104",
+          "count": 1
+        },
+        {
+          "value": "9891319",
+          "count": 1
+        }
+      ],
+      "min_length": 6,
+      "max_length": 7,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDDDD",
+        "DDDDDD"
+      ]
+    },
+    "archeology_template|scanmesh|facetfaces": {
+      "table_name": "scanmesh",
+      "column_name": "facetfaces",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 999,
+      "min_value": "1006304",
+      "max_value": "9988259",
+      "top_k_values": [
+        {
+          "value": "7324316",
+          "count": 2
+        },
+        {
+          "value": "9988259",
+          "count": 1
+        },
+        {
+          "value": "9981776",
+          "count": 1
+        },
+        {
+          "value": "9980730",
+          "count": 1
+        },
+        {
+          "value": "9976237",
+          "count": 1
+        },
+        {
+          "value": "9968041",
+          "count": 1
+        },
+        {
+          "value": "9966692",
+          "count": 1
+        },
+        {
+          "value": "9966691",
+          "count": 1
+        },
+        {
+          "value": "9954949",
+          "count": 1
+        },
+        {
+          "value": "9950372",
+          "count": 1
+        }
+      ],
+      "min_length": 6,
+      "max_length": 7,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDDDD",
+        "DDDDDD"
+      ]
+    },
+    "archeology_template|scanmesh|facetresmm": {
+      "table_name": "scanmesh",
+      "column_name": "facetresmm",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 625,
+      "min_value": "0.12",
+      "max_value": "9.99",
+      "top_k_values": [
+        {
+          "value": "8.61",
+          "count": 6
+        },
+        {
+          "value": "8.63",
+          "count": 5
+        },
+        {
+          "value": "5.8",
+          "count": 5
+        },
+        {
+          "value": "1.73",
+          "count": 5
+        },
+        {
+          "value": "8.5",
+          "count": 4
+        },
+        {
+          "value": "8.17",
+          "count": 4
+        },
+        {
+          "value": "7.98",
+          "count": 4
+        },
+        {
+          "value": "6.75",
+          "count": 4
+        },
+        {
+          "value": "6.22",
+          "count": 4
+        },
+        {
+          "value": "5.29",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "archeology_template|scanmesh|texdist": {
+      "table_name": "scanmesh",
+      "column_name": "texdist",
+      "column_type": "TEXT(5)",
+      "row_count": 1000,
+      "null_count": 246,
+      "non_null_count": 754,
+      "distinct_count": 3,
+      "min_value": "1K",
+      "max_value": "4K",
+      "top_k_values": [
+        {
+          "value": "1K",
+          "count": 257
+        },
+        {
+          "value": "4K",
+          "count": 253
+        },
+        {
+          "value": "2K",
+          "count": 244
+        }
+      ],
+      "min_length": 2,
+      "max_length": 2,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DA"
+      ]
+    },
+    "archeology_template|scanmesh|texpix": {
+      "table_name": "scanmesh",
+      "column_name": "texpix",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "1024",
+      "max_value": "8192",
+      "top_k_values": [
+        {
+          "value": "4096",
+          "count": 266
+        },
+        {
+          "value": "8192",
+          "count": 264
+        },
+        {
+          "value": "2048",
+          "count": 242
+        },
+        {
+          "value": "1024",
+          "count": 228
+        }
+      ],
+      "min_length": 4,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDD"
+      ]
+    },
+    "archeology_template|scanmesh|uvmapqual": {
+      "table_name": "scanmesh",
+      "column_name": "uvmapqual",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "High",
+      "max_value": "Medium",
+      "top_k_values": [
+        {
+          "value": "High",
+          "count": 364
+        },
+        {
+          "value": "Medium",
+          "count": 321
+        },
+        {
+          "value": "Low",
+          "count": 315
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAAAAA",
+        "AAA"
+      ]
+    },
+    "archeology_template|scanmesh|geomdeltamm": {
+      "table_name": "scanmesh",
+      "column_name": "geomdeltamm",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 435,
+      "min_value": "0.1",
+      "max_value": "5.0",
+      "top_k_values": [
+        {
+          "value": "3.12",
+          "count": 7
+        },
+        {
+          "value": "1.19",
+          "count": 7
+        },
+        {
+          "value": "3.16",
+          "count": 6
+        },
+        {
+          "value": "3.11",
+          "count": 6
+        },
+        {
+          "value": "1.61",
+          "count": 6
+        },
+        {
+          "value": "0.97",
+          "count": 6
+        },
+        {
+          "value": "0.81",
+          "count": 6
+        },
+        {
+          "value": "0.6",
+          "count": 6
+        },
+        {
+          "value": "0.25",
+          "count": 6
+        },
+        {
+          "value": "0.19",
+          "count": 6
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "archeology_template|scanpointcloud|cloudregistry": {
+      "table_name": "scanpointcloud",
+      "column_name": "cloudregistry",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "1",
+      "max_value": "999",
+      "top_k_values": [
+        {
+          "value": "1",
+          "count": 1
+        },
+        {
+          "value": "2",
+          "count": 1
+        },
+        {
+          "value": "3",
+          "count": 1
+        },
+        {
+          "value": "4",
+          "count": 1
+        },
+        {
+          "value": "5",
+          "count": 1
+        },
+        {
+          "value": "6",
+          "count": 1
+        },
+        {
+          "value": "7",
+          "count": 1
+        },
+        {
+          "value": "8",
+          "count": 1
+        },
+        {
+          "value": "9",
+          "count": 1
+        },
+        {
+          "value": "10",
+          "count": 1
+        }
+      ],
+      "min_length": 1,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D",
+        "DDDD"
+      ]
+    },
+    "archeology_template|scanpointcloud|crewref": {
+      "table_name": "scanpointcloud",
+      "column_name": "crewref",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 940,
+      "min_value": "OP1005                                            ",
+      "max_value": "OP9971                                            ",
+      "top_k_values": [
+        {
+          "value": "OP7806                                            ",
+          "count": 3
+        },
+        {
+          "value": "OP2782                                            ",
+          "count": 3
+        },
+        {
+          "value": "OP9503                                            ",
+          "count": 2
+        },
+        {
+          "value": "OP9463                                            ",
+          "count": 2
+        },
+        {
+          "value": "OP8901                                            ",
+          "count": 2
+        },
+        {
+          "value": "OP8722                                            ",
+          "count": 2
+        },
+        {
+          "value": "OP8193                                            ",
+          "count": 2
+        },
+        {
+          "value": "OP7945                                            ",
+          "count": 2
+        },
+        {
+          "value": "OP7649                                            ",
+          "count": 2
+        },
+        {
+          "value": "OP7475                                            ",
+          "count": 2
+        }
+      ],
+      "min_length": 50,
+      "max_length": 50,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDD                                            "
+      ]
+    },
+    "archeology_template|scanpointcloud|arcref": {
+      "table_name": "scanpointcloud",
+      "column_name": "arcref",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 947,
+      "min_value": "PR1003",
+      "max_value": "PR9973",
+      "top_k_values": [
+        {
+          "value": "PR8078",
+          "count": 3
+        },
+        {
+          "value": "PR7110",
+          "count": 3
+        },
+        {
+          "value": "PR9689",
+          "count": 2
+        },
+        {
+          "value": "PR9550",
+          "count": 2
+        },
+        {
+          "value": "PR9481",
+          "count": 2
+        },
+        {
+          "value": "PR9376",
+          "count": 2
+        },
+        {
+          "value": "PR9356",
+          "count": 2
+        },
+        {
+          "value": "PR9353",
+          "count": 2
+        },
+        {
+          "value": "PR9311",
+          "count": 2
+        },
+        {
+          "value": "PR8940",
+          "count": 2
+        }
+      ],
+      "min_length": 6,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDD"
+      ]
+    },
+    "archeology_template|scanpointcloud|scanresolmm": {
+      "table_name": "scanpointcloud",
+      "column_name": "scanresolmm",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 437,
+      "min_value": "0.12",
+      "max_value": "4.99",
+      "top_k_values": [
+        {
+          "value": "2.18",
+          "count": 8
+        },
+        {
+          "value": "3.95",
+          "count": 7
+        },
+        {
+          "value": "2.73",
+          "count": 7
+        },
+        {
+          "value": "4.81",
+          "count": 6
+        },
+        {
+          "value": "4.72",
+          "count": 6
+        },
+        {
+          "value": "3.02",
+          "count": 6
+        },
+        {
+          "value": "1.98",
+          "count": 6
+        },
+        {
+          "value": "1.06",
+          "count": 6
+        },
+        {
+          "value": "1.04",
+          "count": 6
+        },
+        {
+          "value": "0.77",
+          "count": 6
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "archeology_template|scanpointcloud|pointdense": {
+      "table_name": "scanpointcloud",
+      "column_name": "pointdense",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "101565",
+      "max_value": "999837",
+      "top_k_values": [
+        {
+          "value": "999837",
+          "count": 1
+        },
+        {
+          "value": "999594",
+          "count": 1
+        },
+        {
+          "value": "996906",
+          "count": 1
+        },
+        {
+          "value": "996083",
+          "count": 1
+        },
+        {
+          "value": "995982",
+          "count": 1
+        },
+        {
+          "value": "995522",
+          "count": 1
+        },
+        {
+          "value": "995072",
+          "count": 1
+        },
+        {
+          "value": "994947",
+          "count": 1
+        },
+        {
+          "value": "993200",
+          "count": 1
+        },
+        {
+          "value": "990915",
+          "count": 1
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDDD",
+        "DDDDD",
+        "DDDD",
+        "DDD"
+      ]
+    },
+    "archeology_template|scanpointcloud|coverpct": {
+      "table_name": "scanpointcloud",
+      "column_name": "coverpct",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 200,
+      "min_value": "100.0",
+      "max_value": "99.9",
+      "top_k_values": [
+        {
+          "value": "95.8",
+          "count": 11
+        },
+        {
+          "value": "87.1",
+          "count": 11
+        },
+        {
+          "value": "86.6",
+          "count": 11
+        },
+        {
+          "value": "86.5",
+          "count": 11
+        },
+        {
+          "value": "94.6",
+          "count": 10
+        },
+        {
+          "value": "93.9",
+          "count": 10
+        },
+        {
+          "value": "91.5",
+          "count": 10
+        },
+        {
+          "value": "89.6",
+          "count": 10
+        },
+        {
+          "value": "86.2",
+          "count": 10
+        },
+        {
+          "value": "91.6",
+          "count": 9
+        }
+      ],
+      "min_length": 4,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.D",
+        "DDD.D"
+      ]
+    },
+    "archeology_template|scanpointcloud|totalpts": {
+      "table_name": "scanpointcloud",
+      "column_name": "totalpts",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "10004924",
+      "max_value": "99911816",
+      "top_k_values": [
+        {
+          "value": "99911816",
+          "count": 1
+        },
+        {
+          "value": "99884602",
+          "count": 1
+        },
+        {
+          "value": "99742678",
+          "count": 1
+        },
+        {
+          "value": "99669125",
+          "count": 1
+        },
+        {
+          "value": "99563292",
+          "count": 1
+        },
+        {
+          "value": "99504808",
+          "count": 1
+        },
+        {
+          "value": "99482839",
+          "count": 1
+        },
+        {
+          "value": "99228923",
+          "count": 1
+        },
+        {
+          "value": "99001848",
+          "count": 1
+        },
+        {
+          "value": "98913930",
+          "count": 1
+        }
+      ],
+      "min_length": 7,
+      "max_length": 8,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDDDDD",
+        "DDDDDDD"
+      ]
+    },
+    "archeology_template|scanpointcloud|clouddense": {
+      "table_name": "scanpointcloud",
+      "column_name": "clouddense",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 947,
+      "min_value": "1004",
+      "max_value": "9988",
+      "top_k_values": [
+        {
+          "value": "6571",
+          "count": 3
+        },
+        {
+          "value": "9853",
+          "count": 2
+        },
+        {
+          "value": "9788",
+          "count": 2
+        },
+        {
+          "value": "9724",
+          "count": 2
+        },
+        {
+          "value": "9449",
+          "count": 2
+        },
+        {
+          "value": "9428",
+          "count": 2
+        },
+        {
+          "value": "9190",
+          "count": 2
+        },
+        {
+          "value": "9185",
+          "count": 2
+        },
+        {
+          "value": "9128",
+          "count": 2
+        },
+        {
+          "value": "9061",
+          "count": 2
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDD",
+        "DDD"
+      ]
+    },
+    "archeology_template|scanpointcloud|lappct": {
+      "table_name": "scanpointcloud",
+      "column_name": "lappct",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 366,
+      "min_value": "30.0",
+      "max_value": "70.0",
+      "top_k_values": [
+        {
+          "value": "65.4",
+          "count": 8
+        },
+        {
+          "value": "69.8",
+          "count": 7
+        },
+        {
+          "value": "65.9",
+          "count": 7
+        },
+        {
+          "value": "34.6",
+          "count": 7
+        },
+        {
+          "value": "66.9",
+          "count": 6
+        },
+        {
+          "value": "61.3",
+          "count": 6
+        },
+        {
+          "value": "57.9",
+          "count": 6
+        },
+        {
+          "value": "57.0",
+          "count": 6
+        },
+        {
+          "value": "54.1",
+          "count": 6
+        },
+        {
+          "value": "52.7",
+          "count": 6
+        }
+      ],
+      "min_length": 4,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DD.D"
+      ]
+    },
+    "archeology_template|scanpointcloud|noisedb": {
+      "table_name": "scanpointcloud",
+      "column_name": "noisedb",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 801,
+      "min_value": "0.004",
+      "max_value": "1.999",
+      "top_k_values": [
+        {
+          "value": "1.809",
+          "count": 4
+        },
+        {
+          "value": "1.316",
+          "count": 4
+        },
+        {
+          "value": "0.412",
+          "count": 4
+        },
+        {
+          "value": "0.236",
+          "count": 4
+        },
+        {
+          "value": "1.973",
+          "count": 3
+        },
+        {
+          "value": "1.934",
+          "count": 3
+        },
+        {
+          "value": "1.927",
+          "count": 3
+        },
+        {
+          "value": "1.922",
+          "count": 3
+        },
+        {
+          "value": "1.845",
+          "count": 3
+        },
+        {
+          "value": "1.788",
+          "count": 3
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "archeology_template|scanpointcloud|refpct": {
+      "table_name": "scanpointcloud",
+      "column_name": "refpct",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 638,
+      "min_value": "0.1",
+      "max_value": "99.9",
+      "top_k_values": [
+        {
+          "value": "96.9",
+          "count": 5
+        },
+        {
+          "value": "52.7",
+          "count": 5
+        },
+        {
+          "value": "29.0",
+          "count": 5
+        },
+        {
+          "value": "21.1",
+          "count": 5
+        },
+        {
+          "value": "93.1",
+          "count": 4
+        },
+        {
+          "value": "90.6",
+          "count": 4
+        },
+        {
+          "value": "88.7",
+          "count": 4
+        },
+        {
+          "value": "88.1",
+          "count": 4
+        },
+        {
+          "value": "85.6",
+          "count": 4
+        },
+        {
+          "value": "83.1",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.D",
+        "D.D"
+      ]
+    },
+    "archeology_template|scanprocessing|flowregistry": {
+      "table_name": "scanprocessing",
+      "column_name": "flowregistry",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "1",
+      "max_value": "999",
+      "top_k_values": [
+        {
+          "value": "1",
+          "count": 1
+        },
+        {
+          "value": "2",
+          "count": 1
+        },
+        {
+          "value": "3",
+          "count": 1
+        },
+        {
+          "value": "4",
+          "count": 1
+        },
+        {
+          "value": "5",
+          "count": 1
+        },
+        {
+          "value": "6",
+          "count": 1
+        },
+        {
+          "value": "7",
+          "count": 1
+        },
+        {
+          "value": "8",
+          "count": 1
+        },
+        {
+          "value": "9",
+          "count": 1
+        },
+        {
+          "value": "10",
+          "count": 1
+        }
+      ],
+      "min_length": 1,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D",
+        "DDDD"
+      ]
+    },
+    "archeology_template|scanprocessing|equipref": {
+      "table_name": "scanprocessing",
+      "column_name": "equipref",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 993,
+      "min_value": "SN10024                                           ",
+      "max_value": "SN99937                                           ",
+      "top_k_values": [
+        {
+          "value": "SN74231                                           ",
+          "count": 2
+        },
+        {
+          "value": "SN70685                                           ",
+          "count": 2
+        },
+        {
+          "value": "SN54763                                           ",
+          "count": 2
+        },
+        {
+          "value": "SN47173                                           ",
+          "count": 2
+        },
+        {
+          "value": "SN42769                                           ",
+          "count": 2
+        },
+        {
+          "value": "SN35988                                           ",
+          "count": 2
+        },
+        {
+          "value": "SN29560                                           ",
+          "count": 2
+        },
+        {
+          "value": "SN99937                                           ",
+          "count": 1
+        },
+        {
+          "value": "SN99896                                           ",
+          "count": 1
+        },
+        {
+          "value": "SN99785                                           ",
+          "count": 1
+        }
+      ],
+      "min_length": 50,
+      "max_length": 50,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDDD                                           "
+      ]
+    },
+    "archeology_template|scanprocessing|zoneref": {
+      "table_name": "scanprocessing",
+      "column_name": "zoneref",
+      "column_type": "TEXT(12)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 942,
+      "min_value": "SC1017",
+      "max_value": "SC9995",
+      "top_k_values": [
+        {
+          "value": "SC8933",
+          "count": 3
+        },
+        {
+          "value": "SC5031",
+          "count": 3
+        },
+        {
+          "value": "SC4971",
+          "count": 3
+        },
+        {
+          "value": "SC4589",
+          "count": 3
+        },
+        {
+          "value": "SC2971",
+          "count": 3
+        },
+        {
+          "value": "SC9995",
+          "count": 2
+        },
+        {
+          "value": "SC9870",
+          "count": 2
+        },
+        {
+          "value": "SC9489",
+          "count": 2
+        },
+        {
+          "value": "SC9081",
+          "count": 2
+        },
+        {
+          "value": "SC8942",
+          "count": 2
+        }
+      ],
+      "min_length": 6,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDD"
+      ]
+    },
+    "archeology_template|scanprocessing|flowsoft": {
+      "table_name": "scanprocessing",
+      "column_name": "flowsoft",
+      "column_type": "TEXT(25)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "Agisoft",
+      "max_value": "RealityCapture",
+      "top_k_values": [
+        {
+          "value": "RealityCapture",
+          "count": 280
+        },
+        {
+          "value": "Agisoft",
+          "count": 251
+        },
+        {
+          "value": "Geomagic",
+          "count": 242
+        },
+        {
+          "value": "CloudCompare",
+          "count": 227
+        }
+      ],
+      "min_length": 7,
+      "max_length": 14,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAAAAAAA",
+        "AAAAAAA",
+        "AAAAAAAA",
+        "AAAAAAAAAAAA"
+      ]
+    },
+    "archeology_template|scanprocessing|flowhrs": {
+      "table_name": "scanprocessing",
+      "column_name": "flowhrs",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 415,
+      "min_value": "0.5",
+      "max_value": "9.9",
+      "top_k_values": [
+        {
+          "value": "38.9",
+          "count": 7
+        },
+        {
+          "value": "43.5",
+          "count": 6
+        },
+        {
+          "value": "39.4",
+          "count": 6
+        },
+        {
+          "value": "32.8",
+          "count": 6
+        },
+        {
+          "value": "29.6",
+          "count": 6
+        },
+        {
+          "value": "19.7",
+          "count": 6
+        },
+        {
+          "value": "16.5",
+          "count": 6
+        },
+        {
+          "value": "12.7",
+          "count": 6
+        },
+        {
+          "value": "46.6",
+          "count": 5
+        },
+        {
+          "value": "43.9",
+          "count": 5
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.D",
+        "D.D"
+      ]
+    },
+    "archeology_template|scanprocessing|proccpu": {
+      "table_name": "scanprocessing",
+      "column_name": "proccpu",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 51,
+      "min_value": "100",
+      "max_value": "99",
+      "top_k_values": [
+        {
+          "value": "90",
+          "count": 29
+        },
+        {
+          "value": "81",
+          "count": 28
+        },
+        {
+          "value": "76",
+          "count": 28
+        },
+        {
+          "value": "84",
+          "count": 26
+        },
+        {
+          "value": "71",
+          "count": 25
+        },
+        {
+          "value": "70",
+          "count": 25
+        },
+        {
+          "value": "91",
+          "count": 24
+        },
+        {
+          "value": "82",
+          "count": 24
+        },
+        {
+          "value": "53",
+          "count": 24
+        },
+        {
+          "value": "86",
+          "count": 23
+        }
+      ],
+      "min_length": 2,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "DDD"
+      ]
+    },
+    "archeology_template|scanprocessing|memusagegb": {
+      "table_name": "scanprocessing",
+      "column_name": "memusagegb",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 699,
+      "min_value": "1.0",
+      "max_value": "99.9",
+      "top_k_values": [
+        {
+          "value": "118.6",
+          "count": 4
+        },
+        {
+          "value": "117.0",
+          "count": 4
+        },
+        {
+          "value": "79.0",
+          "count": 4
+        },
+        {
+          "value": "72.5",
+          "count": 4
+        },
+        {
+          "value": "60.8",
+          "count": 4
+        },
+        {
+          "value": "36.4",
+          "count": 4
+        },
+        {
+          "value": "25.2",
+          "count": 4
+        },
+        {
+          "value": "15.3",
+          "count": 4
+        },
+        {
+          "value": "6.9",
+          "count": 4
+        },
+        {
+          "value": "120.0",
+          "count": 3
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.D",
+        "DDD.D",
+        "D.D"
+      ]
+    },
+    "archeology_template|scanprocessing|procgpu": {
+      "table_name": "scanprocessing",
+      "column_name": "procgpu",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 51,
+      "min_value": "100",
+      "max_value": "99",
+      "top_k_values": [
+        {
+          "value": "99",
+          "count": 30
+        },
+        {
+          "value": "96",
+          "count": 28
+        },
+        {
+          "value": "84",
+          "count": 28
+        },
+        {
+          "value": "61",
+          "count": 27
+        },
+        {
+          "value": "75",
+          "count": 26
+        },
+        {
+          "value": "74",
+          "count": 26
+        },
+        {
+          "value": "67",
+          "count": 26
+        },
+        {
+          "value": "71",
+          "count": 24
+        },
+        {
+          "value": "64",
+          "count": 24
+        },
+        {
+          "value": "56",
+          "count": 24
+        }
+      ],
+      "min_length": 2,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "DDD"
+      ]
+    },
+    "archeology_template|scanprocessing|stashloc": {
+      "table_name": "scanprocessing",
+      "column_name": "stashloc",
+      "column_type": "TEXT(12)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Cloud",
+      "max_value": "Network",
+      "top_k_values": [
+        {
+          "value": "Cloud",
+          "count": 357
+        },
+        {
+          "value": "Network",
+          "count": 323
+        },
+        {
+          "value": "Local",
+          "count": 320
+        }
+      ],
+      "min_length": 5,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAA",
+        "AAAAAAA"
+      ]
+    },
+    "archeology_template|scanprocessing|safebak": {
+      "table_name": "scanprocessing",
+      "column_name": "safebak",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Completed                                         ",
+      "max_value": "Pending                                           ",
+      "top_k_values": [
+        {
+          "value": "Completed                                         ",
+          "count": 355
+        },
+        {
+          "value": "Pending                                           ",
+          "count": 326
+        },
+        {
+          "value": "In Progress                                       ",
+          "count": 319
+        }
+      ],
+      "min_length": 50,
+      "max_length": 50,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAAAAAAA                                         ",
+        "AAAAAAA                                           ",
+        "AA AAAAAAAA                                       "
+      ]
+    },
+    "archeology_template|scanprocessing|datalevel": {
+      "table_name": "scanprocessing",
+      "column_name": "datalevel",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Confidential",
+      "max_value": "Restricted",
+      "top_k_values": [
+        {
+          "value": "Restricted",
+          "count": 342
+        },
+        {
+          "value": "Public",
+          "count": 329
+        },
+        {
+          "value": "Confidential",
+          "count": 329
+        }
+      ],
+      "min_length": 6,
+      "max_length": 12,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAAA",
+        "AAAAAAAAAAAA",
+        "AAAAAA"
+      ]
+    },
+    "archeology_template|scanprocessing|metabench": {
+      "table_name": "scanprocessing",
+      "column_name": "metabench",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "CIDOC CRM",
+      "max_value": "Dublin Core",
+      "top_k_values": [
+        {
+          "value": "Dublin Core",
+          "count": 354
+        },
+        {
+          "value": "CIDOC CRM",
+          "count": 336
+        },
+        {
+          "value": "Custom",
+          "count": 310
+        }
+      ],
+      "min_length": 6,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA AAAA",
+        "AAAAA AAA",
+        "AAAAAA"
+      ]
+    },
+    "archeology_template|scanprocessing|coordframe": {
+      "table_name": "scanprocessing",
+      "column_name": "coordframe",
+      "column_type": "TEXT(12)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Custom",
+      "max_value": "WGS84",
+      "top_k_values": [
+        {
+          "value": "Local",
+          "count": 345
+        },
+        {
+          "value": "WGS84",
+          "count": 341
+        },
+        {
+          "value": "Custom",
+          "count": 314
+        }
+      ],
+      "min_length": 5,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAA",
+        "AAADD",
+        "AAAAAA"
+      ]
+    },
+    "archeology_template|scanprocessing|elevref": {
+      "table_name": "scanprocessing",
+      "column_name": "elevref",
+      "column_type": "TEXT(16)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Arbitrary",
+      "max_value": "Sea Level",
+      "top_k_values": [
+        {
+          "value": "Local",
+          "count": 352
+        },
+        {
+          "value": "Arbitrary",
+          "count": 330
+        },
+        {
+          "value": "Sea Level",
+          "count": 318
+        }
+      ],
+      "min_length": 5,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAA",
+        "AAAAAAAAA",
+        "AAA AAAAA"
+      ]
+    },
+    "archeology_template|scanprocessing|remaingb": {
+      "table_name": "scanprocessing",
+      "column_name": "remaingb",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 955,
+      "min_value": "0.6",
+      "max_value": "999.8",
+      "top_k_values": [
+        {
+          "value": "854.1",
+          "count": 3
+        },
+        {
+          "value": "996.0",
+          "count": 2
+        },
+        {
+          "value": "916.1",
+          "count": 2
+        },
+        {
+          "value": "876.7",
+          "count": 2
+        },
+        {
+          "value": "856.3",
+          "count": 2
+        },
+        {
+          "value": "800.1",
+          "count": 2
+        },
+        {
+          "value": "790.6",
+          "count": 2
+        },
+        {
+          "value": "779.2",
+          "count": 2
+        },
+        {
+          "value": "778.8",
+          "count": 2
+        },
+        {
+          "value": "746.2",
+          "count": 2
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD.D",
+        "DD.D",
+        "D.D"
+      ]
+    },
+    "archeology_template|scanprocessing|stationlink": {
+      "table_name": "scanprocessing",
+      "column_name": "stationlink",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "No                                                ",
+      "max_value": "Yes                                               ",
+      "top_k_values": [
+        {
+          "value": "Yes                                               ",
+          "count": 347
+        },
+        {
+          "value": "No                                                ",
+          "count": 328
+        },
+        {
+          "value": "Partial                                           ",
+          "count": 325
+        }
+      ],
+      "min_length": 50,
+      "max_length": 50,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAA                                               ",
+        "AA                                                ",
+        "AAAAAAA                                           "
+      ]
+    },
+    "archeology_template|scanprocessing|camcal": {
+      "table_name": "scanprocessing",
+      "column_name": "camcal",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Calibrated",
+      "max_value": "Required",
+      "top_k_values": [
+        {
+          "value": "Calibrated",
+          "count": 338
+        },
+        {
+          "value": "Invalid",
+          "count": 336
+        },
+        {
+          "value": "Required",
+          "count": 326
+        }
+      ],
+      "min_length": 7,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAAA",
+        "AAAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "archeology_template|scanprocessing|lensdist": {
+      "table_name": "scanprocessing",
+      "column_name": "lensdist",
+      "column_type": "TEXT(14)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Corrected",
+      "max_value": "Unknown",
+      "top_k_values": [
+        {
+          "value": "Corrected",
+          "count": 342
+        },
+        {
+          "value": "Unknown",
+          "count": 334
+        },
+        {
+          "value": "Uncorrected",
+          "count": 324
+        }
+      ],
+      "min_length": 7,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAA",
+        "AAAAAAA",
+        "AAAAAAAAAAA"
+      ]
+    },
+    "archeology_template|scanprocessing|colortune": {
+      "table_name": "scanprocessing",
+      "column_name": "colortune",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 351,
+      "non_null_count": 649,
+      "distinct_count": 2,
+      "min_value": "Adjusted                                          ",
+      "max_value": "Required                                          ",
+      "top_k_values": [
+        {
+          "value": "Required                                          ",
+          "count": 336
+        },
+        {
+          "value": "Adjusted                                          ",
+          "count": 313
+        }
+      ],
+      "min_length": 50,
+      "max_length": 50,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAAAAAA                                          "
+      ]
+    },
+    "archeology_template|scanprocessing|flowstage": {
+      "table_name": "scanprocessing",
+      "column_name": "flowstage",
+      "column_type": "TEXT(18)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 5,
+      "min_value": "Aligned",
+      "max_value": "Textured",
+      "top_k_values": [
+        {
+          "value": "Aligned",
+          "count": 220
+        },
+        {
+          "value": "Final",
+          "count": 211
+        },
+        {
+          "value": "Textured",
+          "count": 206
+        },
+        {
+          "value": "Raw",
+          "count": 189
+        },
+        {
+          "value": "Meshed",
+          "count": 174
+        }
+      ],
+      "min_length": 3,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAA",
+        "AAAAAAAA",
+        "AAA",
+        "AAAAAA"
+      ]
+    },
+    "archeology_template|scanprocessing|fmtver": {
+      "table_name": "scanprocessing",
+      "column_name": "fmtver",
+      "column_type": "TEXT(3)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 50,
+      "min_value": "1.0",
+      "max_value": "5.9",
+      "top_k_values": [
+        {
+          "value": "1.9",
+          "count": 32
+        },
+        {
+          "value": "2.3",
+          "count": 30
+        },
+        {
+          "value": "5.9",
+          "count": 28
+        },
+        {
+          "value": "1.4",
+          "count": 28
+        },
+        {
+          "value": "3.1",
+          "count": 25
+        },
+        {
+          "value": "2.9",
+          "count": 25
+        },
+        {
+          "value": "2.2",
+          "count": 25
+        },
+        {
+          "value": "3.7",
+          "count": 24
+        },
+        {
+          "value": "4.5",
+          "count": 23
+        },
+        {
+          "value": "3.0",
+          "count": 23
+        }
+      ],
+      "min_length": 3,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D.D"
+      ]
+    },
+    "archeology_template|scanqc|qualregistry": {
+      "table_name": "scanqc",
+      "column_name": "qualregistry",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "1",
+      "max_value": "999",
+      "top_k_values": [
+        {
+          "value": "1",
+          "count": 1
+        },
+        {
+          "value": "2",
+          "count": 1
+        },
+        {
+          "value": "3",
+          "count": 1
+        },
+        {
+          "value": "4",
+          "count": 1
+        },
+        {
+          "value": "5",
+          "count": 1
+        },
+        {
+          "value": "6",
+          "count": 1
+        },
+        {
+          "value": "7",
+          "count": 1
+        },
+        {
+          "value": "8",
+          "count": 1
+        },
+        {
+          "value": "9",
+          "count": 1
+        },
+        {
+          "value": "10",
+          "count": 1
+        }
+      ],
+      "min_length": 1,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D",
+        "DDDD"
+      ]
+    },
+    "archeology_template|scanqc|arcref": {
+      "table_name": "scanqc",
+      "column_name": "arcref",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 947,
+      "min_value": "PR1003",
+      "max_value": "PR9973",
+      "top_k_values": [
+        {
+          "value": "PR8078",
+          "count": 3
+        },
+        {
+          "value": "PR7110",
+          "count": 3
+        },
+        {
+          "value": "PR9689",
+          "count": 2
+        },
+        {
+          "value": "PR9550",
+          "count": 2
+        },
+        {
+          "value": "PR9481",
+          "count": 2
+        },
+        {
+          "value": "PR9376",
+          "count": 2
+        },
+        {
+          "value": "PR9356",
+          "count": 2
+        },
+        {
+          "value": "PR9353",
+          "count": 2
+        },
+        {
+          "value": "PR9311",
+          "count": 2
+        },
+        {
+          "value": "PR8940",
+          "count": 2
+        }
+      ],
+      "min_length": 6,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDD"
+      ]
+    },
+    "archeology_template|scanqc|crewref": {
+      "table_name": "scanqc",
+      "column_name": "crewref",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 940,
+      "min_value": "OP1005                                            ",
+      "max_value": "OP9971                                            ",
+      "top_k_values": [
+        {
+          "value": "OP7806                                            ",
+          "count": 3
+        },
+        {
+          "value": "OP2782                                            ",
+          "count": 3
+        },
+        {
+          "value": "OP9503                                            ",
+          "count": 2
+        },
+        {
+          "value": "OP9463                                            ",
+          "count": 2
+        },
+        {
+          "value": "OP8901                                            ",
+          "count": 2
+        },
+        {
+          "value": "OP8722                                            ",
+          "count": 2
+        },
+        {
+          "value": "OP8193                                            ",
+          "count": 2
+        },
+        {
+          "value": "OP7945                                            ",
+          "count": 2
+        },
+        {
+          "value": "OP7649                                            ",
+          "count": 2
+        },
+        {
+          "value": "OP7475                                            ",
+          "count": 2
+        }
+      ],
+      "min_length": 50,
+      "max_length": 50,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDD                                            "
+      ]
+    },
+    "archeology_template|scanqc|accucheck": {
+      "table_name": "scanqc",
+      "column_name": "accucheck",
+      "column_type": "TEXT(22)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Completed",
+      "max_value": "Pending",
+      "top_k_values": [
+        {
+          "value": "Completed",
+          "count": 366
+        },
+        {
+          "value": "Pending",
+          "count": 322
+        },
+        {
+          "value": "Not Required",
+          "count": 312
+        }
+      ],
+      "min_length": 7,
+      "max_length": 12,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAA",
+        "AAAAAAA",
+        "AAA AAAAAAAA"
+      ]
+    },
+    "archeology_template|scanqc|ctrlstate": {
+      "table_name": "scanqc",
+      "column_name": "ctrlstate",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Failed                                            ",
+      "max_value": "Pending                                           ",
+      "top_k_values": [
+        {
+          "value": "Failed                                            ",
+          "count": 368
+        },
+        {
+          "value": "Pending                                           ",
+          "count": 327
+        },
+        {
+          "value": "Passed                                            ",
+          "count": 305
+        }
+      ],
+      "min_length": 50,
+      "max_length": 50,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAAAA                                            ",
+        "AAAAAAA                                           "
+      ]
+    },
+    "archeology_template|scanqc|valimeth": {
+      "table_name": "scanqc",
+      "column_name": "valimeth",
+      "column_type": "TEXT(18)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Automated",
+      "max_value": "Visual",
+      "top_k_values": [
+        {
+          "value": "Automated",
+          "count": 369
+        },
+        {
+          "value": "Hybrid",
+          "count": 319
+        },
+        {
+          "value": "Visual",
+          "count": 312
+        }
+      ],
+      "min_length": 6,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AAAAAAAAA"
+      ]
+    },
+    "archeology_template|scanqc|valistate": {
+      "table_name": "scanqc",
+      "column_name": "valistate",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Approved",
+      "max_value": "Rejected",
+      "top_k_values": [
+        {
+          "value": "Pending",
+          "count": 339
+        },
+        {
+          "value": "Approved",
+          "count": 333
+        },
+        {
+          "value": "Rejected",
+          "count": 328
+        }
+      ],
+      "min_length": 7,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAAAAA"
+      ]
+    },
+    "archeology_template|scanqc|archstat": {
+      "table_name": "scanqc",
+      "column_name": "archstat",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Completed",
+      "max_value": "Verified",
+      "top_k_values": [
+        {
+          "value": "Pending",
+          "count": 338
+        },
+        {
+          "value": "Verified",
+          "count": 335
+        },
+        {
+          "value": "Completed",
+          "count": 327
+        }
+      ],
+      "min_length": 7,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAAAA",
+        "AAAAAAAAA"
+      ]
+    },
+    "archeology_template|scanqc|pubstat": {
+      "table_name": "scanqc",
+      "column_name": "pubstat",
+      "column_type": "TEXT(24)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Draft",
+      "max_value": "Submitted",
+      "top_k_values": [
+        {
+          "value": "Submitted",
+          "count": 343
+        },
+        {
+          "value": "Draft",
+          "count": 336
+        },
+        {
+          "value": "Published",
+          "count": 321
+        }
+      ],
+      "min_length": 5,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAA",
+        "AAAAA"
+      ]
+    },
+    "archeology_template|scanqc|copystat": {
+      "table_name": "scanqc",
+      "column_name": "copystat",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Open Access                                       ",
+      "max_value": "Restricted                                        ",
+      "top_k_values": [
+        {
+          "value": "Reserved                                          ",
+          "count": 341
+        },
+        {
+          "value": "Restricted                                        ",
+          "count": 338
+        },
+        {
+          "value": "Open Access                                       ",
+          "count": 321
+        }
+      ],
+      "min_length": 50,
+      "max_length": 50,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAAAAAA                                          ",
+        "AAAAAAAAAA                                        ",
+        "AAAA AAAAAA                                       "
+      ]
+    },
+    "archeology_template|scanqc|refmention": {
+      "table_name": "scanqc",
+      "column_name": "refmention",
+      "column_type": "TEXT(60)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 929,
+      "min_value": "Citation-1000",
+      "max_value": "Citation-9994",
+      "top_k_values": [
+        {
+          "value": "Citation-6876",
+          "count": 3
+        },
+        {
+          "value": "Citation-6641",
+          "count": 3
+        },
+        {
+          "value": "Citation-5501",
+          "count": 3
+        },
+        {
+          "value": "Citation-3162",
+          "count": 3
+        },
+        {
+          "value": "Citation-2901",
+          "count": 3
+        },
+        {
+          "value": "Citation-9992",
+          "count": 2
+        },
+        {
+          "value": "Citation-9969",
+          "count": 2
+        },
+        {
+          "value": "Citation-9963",
+          "count": 2
+        },
+        {
+          "value": "Citation-9878",
+          "count": 2
+        },
+        {
+          "value": "Citation-9691",
+          "count": 2
+        }
+      ],
+      "min_length": 13,
+      "max_length": 13,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAAAAAA-DDDD"
+      ]
+    },
+    "archeology_template|scanqc|remark": {
+      "table_name": "scanqc",
+      "column_name": "remark",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 513,
+      "non_null_count": 487,
+      "distinct_count": 487,
+      "min_value": "A value writer language while level mean.",
+      "max_value": "Your buy than movement see media line feeling.",
+      "top_k_values": [
+        {
+          "value": "Your buy than movement see media line feeling.",
+          "count": 1
+        },
+        {
+          "value": "Young structure beyond glass price.",
+          "count": 1
+        },
+        {
+          "value": "Yes beautiful green tend ball order take.",
+          "count": 1
+        },
+        {
+          "value": "Yeah far glass kid man.",
+          "count": 1
+        },
+        {
+          "value": "Yeah decision travel fine administration.",
+          "count": 1
+        },
+        {
+          "value": "Yeah cost church open.",
+          "count": 1
+        },
+        {
+          "value": "Yard report girl father.",
+          "count": 1
+        },
+        {
+          "value": "Wrong wide rather southern great never amount reveal.",
+          "count": 1
+        },
+        {
+          "value": "Wrong rule fear result place.",
+          "count": 1
+        },
+        {
+          "value": "Would field deal during yeah.",
+          "count": 1
+        }
+      ],
+      "min_length": 14,
+      "max_length": 67,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA AAAA AAAA AAAA AAAA.",
+        "AAAAA AAAAA AAAAA AAAA.",
+        "AAA AAAAA AAAAAAAA.",
+        "AAAAAA AAAAA AAAAAA AAAAAA.",
+        "AAAAAA AAAA AAAAA."
+      ]
+    },
+    "archeology_template|scanregistration|logregistry": {
+      "table_name": "scanregistration",
+      "column_name": "logregistry",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "1",
+      "max_value": "999",
+      "top_k_values": [
+        {
+          "value": "1",
+          "count": 1
+        },
+        {
+          "value": "2",
+          "count": 1
+        },
+        {
+          "value": "3",
+          "count": 1
+        },
+        {
+          "value": "4",
+          "count": 1
+        },
+        {
+          "value": "5",
+          "count": 1
+        },
+        {
+          "value": "6",
+          "count": 1
+        },
+        {
+          "value": "7",
+          "count": 1
+        },
+        {
+          "value": "8",
+          "count": 1
+        },
+        {
+          "value": "9",
+          "count": 1
+        },
+        {
+          "value": "10",
+          "count": 1
+        }
+      ],
+      "min_length": 1,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D",
+        "DDDD"
+      ]
+    },
+    "archeology_template|scanregistration|crewref": {
+      "table_name": "scanregistration",
+      "column_name": "crewref",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 940,
+      "min_value": "OP1005                                            ",
+      "max_value": "OP9971                                            ",
+      "top_k_values": [
+        {
+          "value": "OP7806                                            ",
+          "count": 3
+        },
+        {
+          "value": "OP2782                                            ",
+          "count": 3
+        },
+        {
+          "value": "OP9503                                            ",
+          "count": 2
+        },
+        {
+          "value": "OP9463                                            ",
+          "count": 2
+        },
+        {
+          "value": "OP8901                                            ",
+          "count": 2
+        },
+        {
+          "value": "OP8722                                            ",
+          "count": 2
+        },
+        {
+          "value": "OP8193                                            ",
+          "count": 2
+        },
+        {
+          "value": "OP7945                                            ",
+          "count": 2
+        },
+        {
+          "value": "OP7649                                            ",
+          "count": 2
+        },
+        {
+          "value": "OP7475                                            ",
+          "count": 2
+        }
+      ],
+      "min_length": 50,
+      "max_length": 50,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDD                                            "
+      ]
+    },
+    "archeology_template|scanregistration|arcref": {
+      "table_name": "scanregistration",
+      "column_name": "arcref",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 947,
+      "min_value": "PR1003",
+      "max_value": "PR9973",
+      "top_k_values": [
+        {
+          "value": "PR8078",
+          "count": 3
+        },
+        {
+          "value": "PR7110",
+          "count": 3
+        },
+        {
+          "value": "PR9689",
+          "count": 2
+        },
+        {
+          "value": "PR9550",
+          "count": 2
+        },
+        {
+          "value": "PR9481",
+          "count": 2
+        },
+        {
+          "value": "PR9376",
+          "count": 2
+        },
+        {
+          "value": "PR9356",
+          "count": 2
+        },
+        {
+          "value": "PR9353",
+          "count": 2
+        },
+        {
+          "value": "PR9311",
+          "count": 2
+        },
+        {
+          "value": "PR8940",
+          "count": 2
+        }
+      ],
+      "min_length": 6,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDD"
+      ]
+    },
+    "archeology_template|scanregistration|logaccumm": {
+      "table_name": "scanregistration",
+      "column_name": "logaccumm",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 422,
+      "min_value": "0.11",
+      "max_value": "5.0",
+      "top_k_values": [
+        {
+          "value": "2.61",
+          "count": 7
+        },
+        {
+          "value": "3.86",
+          "count": 6
+        },
+        {
+          "value": "3.8",
+          "count": 6
+        },
+        {
+          "value": "2.6",
+          "count": 6
+        },
+        {
+          "value": "1.76",
+          "count": 6
+        },
+        {
+          "value": "1.16",
+          "count": 6
+        },
+        {
+          "value": "4.61",
+          "count": 5
+        },
+        {
+          "value": "4.57",
+          "count": 5
+        },
+        {
+          "value": "4.44",
+          "count": 5
+        },
+        {
+          "value": "4.14",
+          "count": 5
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "archeology_template|scanregistration|refmark": {
+      "table_name": "scanregistration",
+      "column_name": "refmark",
+      "column_type": "TEXT(6)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 48,
+      "min_value": "10",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "40",
+          "count": 35
+        },
+        {
+          "value": "21",
+          "count": 28
+        },
+        {
+          "value": "41",
+          "count": 27
+        },
+        {
+          "value": "13",
+          "count": 27
+        },
+        {
+          "value": "46",
+          "count": 26
+        },
+        {
+          "value": "31",
+          "count": 26
+        },
+        {
+          "value": "3",
+          "count": 26
+        },
+        {
+          "value": "26",
+          "count": 26
+        },
+        {
+          "value": "25",
+          "count": 26
+        },
+        {
+          "value": "49",
+          "count": 25
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D"
+      ]
+    },
+    "archeology_template|scanregistration|ctrlpts": {
+      "table_name": "scanregistration",
+      "column_name": "ctrlpts",
+      "column_type": "TEXT(6)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 96,
+      "min_value": "10",
+      "max_value": "99",
+      "top_k_values": [
+        {
+          "value": "75",
+          "count": 17
+        },
+        {
+          "value": "51",
+          "count": 17
+        },
+        {
+          "value": "100",
+          "count": 17
+        },
+        {
+          "value": "62",
+          "count": 16
+        },
+        {
+          "value": "31",
+          "count": 16
+        },
+        {
+          "value": "11",
+          "count": 16
+        },
+        {
+          "value": "97",
+          "count": 15
+        },
+        {
+          "value": "52",
+          "count": 15
+        },
+        {
+          "value": "98",
+          "count": 14
+        },
+        {
+          "value": "76",
+          "count": 14
+        }
+      ],
+      "min_length": 1,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D",
+        "DDD"
+      ]
+    },
+    "archeology_template|scanregistration|logmethod": {
+      "table_name": "scanregistration",
+      "column_name": "logmethod",
+      "column_type": "TEXT(15)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Feature-based",
+      "max_value": "Target-based",
+      "top_k_values": [
+        {
+          "value": "Feature-based",
+          "count": 347
+        },
+        {
+          "value": "Target-based",
+          "count": 328
+        },
+        {
+          "value": "Hybrid",
+          "count": 325
+        }
+      ],
+      "min_length": 6,
+      "max_length": 13,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA-AAAAA",
+        "AAAAAA-AAAAA",
+        "AAAAAA"
+      ]
+    },
+    "archeology_template|scanregistration|transform": {
+      "table_name": "scanregistration",
+      "column_name": "transform",
+      "column_type": "TEXT(15)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 624,
+      "min_value": "Matrix-1",
+      "max_value": "Matrix-998",
+      "top_k_values": [
+        {
+          "value": "Matrix-980",
+          "count": 7
+        },
+        {
+          "value": "Matrix-92",
+          "count": 5
+        },
+        {
+          "value": "Matrix-914",
+          "count": 5
+        },
+        {
+          "value": "Matrix-668",
+          "count": 5
+        },
+        {
+          "value": "Matrix-266",
+          "count": 5
+        },
+        {
+          "value": "Matrix-917",
+          "count": 4
+        },
+        {
+          "value": "Matrix-909",
+          "count": 4
+        },
+        {
+          "value": "Matrix-832",
+          "count": 4
+        },
+        {
+          "value": "Matrix-763",
+          "count": 4
+        },
+        {
+          "value": "Matrix-687",
+          "count": 4
+        }
+      ],
+      "min_length": 8,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA-DDD",
+        "AAAAAA-DD",
+        "AAAAAA-D"
+      ]
+    },
+    "archeology_template|scanregistration|errscale": {
+      "table_name": "scanregistration",
+      "column_name": "errscale",
+      "column_type": "TEXT(20)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Cloud-to-Cloud",
+      "max_value": "RMSE",
+      "top_k_values": [
+        {
+          "value": "RMSE",
+          "count": 356
+        },
+        {
+          "value": "Cloud-to-Mesh",
+          "count": 328
+        },
+        {
+          "value": "Cloud-to-Cloud",
+          "count": 316
+        }
+      ],
+      "min_length": 4,
+      "max_length": 14,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAAAA-AA-AAAA",
+        "AAAAA-AA-AAAAA"
+      ]
+    },
+    "archeology_template|scanregistration|errvalmm": {
+      "table_name": "scanregistration",
+      "column_name": "errvalmm",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 946,
+      "min_value": "0.006",
+      "max_value": "9.996",
+      "top_k_values": [
+        {
+          "value": "9.152",
+          "count": 3
+        },
+        {
+          "value": "6.727",
+          "count": 3
+        },
+        {
+          "value": "9.912",
+          "count": 2
+        },
+        {
+          "value": "9.792",
+          "count": 2
+        },
+        {
+          "value": "9.647",
+          "count": 2
+        },
+        {
+          "value": "9.565",
+          "count": 2
+        },
+        {
+          "value": "9.346",
+          "count": 2
+        },
+        {
+          "value": "9.258",
+          "count": 2
+        },
+        {
+          "value": "9.096",
+          "count": 2
+        },
+        {
+          "value": "8.638",
+          "count": 2
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "archeology_template|scans|questregistry": {
+      "table_name": "scans",
+      "column_name": "questregistry",
+      "column_type": "TEXT(16)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "ASD100419",
+      "max_value": "ASD999954",
+      "top_k_values": [
+        {
+          "value": "ASD100419",
+          "count": 1
+        },
+        {
+          "value": "ASD101098",
+          "count": 1
+        },
+        {
+          "value": "ASD102149",
+          "count": 1
+        },
+        {
+          "value": "ASD102430",
+          "count": 1
+        },
+        {
+          "value": "ASD103243",
+          "count": 1
+        },
+        {
+          "value": "ASD103303",
+          "count": 1
+        },
+        {
+          "value": "ASD104164",
+          "count": 1
+        },
+        {
+          "value": "ASD104858",
+          "count": 1
+        },
+        {
+          "value": "ASD105098",
+          "count": 1
+        },
+        {
+          "value": "ASD106497",
+          "count": 1
+        }
+      ],
+      "min_length": 9,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAADDDDDD"
+      ]
+    },
+    "archeology_template|scans|chronotag": {
+      "table_name": "scans",
+      "column_name": "chronotag",
+      "column_type": "TEXT(6)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "2024-02-19 18:48:49.504735",
+      "max_value": "2025-02-18 05:34:03.660535",
+      "top_k_values": [
+        {
+          "value": "2025-02-18 05:34:03.660535",
+          "count": 1
+        },
+        {
+          "value": "2025-02-18 01:47:04.598741",
+          "count": 1
+        },
+        {
+          "value": "2025-02-17 22:14:59.686113",
+          "count": 1
+        },
+        {
+          "value": "2025-02-17 16:26:42.511387",
+          "count": 1
+        },
+        {
+          "value": "2025-02-17 14:00:27.572412",
+          "count": 1
+        },
+        {
+          "value": "2025-02-17 13:16:24.662646",
+          "count": 1
+        },
+        {
+          "value": "2025-02-17 03:28:55.578315",
+          "count": 1
+        },
+        {
+          "value": "2025-02-16 06:39:01.61565",
+          "count": 1
+        },
+        {
+          "value": "2025-02-16 01:25:22.510273",
+          "count": 1
+        },
+        {
+          "value": "2025-02-15 20:35:32.503612",
+          "count": 1
+        }
+      ],
+      "min_length": 24,
+      "max_length": 26,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDD-DD-DD DD:DD:DD.DDDDDD",
+        "DDDD-DD-DD DD:DD:DD.DDDDD",
+        "DDDD-DD-DD DD:DD:DD.DDDD"
+      ]
+    },
+    "archeology_template|scans|arcref": {
+      "table_name": "scans",
+      "column_name": "arcref",
+      "column_type": "TEXT(50)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 946,
+      "min_value": "PR1003",
+      "max_value": "PR9973",
+      "top_k_values": [
+        {
+          "value": "PR8078",
+          "count": 3
+        },
+        {
+          "value": "PR7110",
+          "count": 3
+        },
+        {
+          "value": "PR9689",
+          "count": 2
+        },
+        {
+          "value": "PR9550",
+          "count": 2
+        },
+        {
+          "value": "PR9481",
+          "count": 2
+        },
+        {
+          "value": "PR9376",
+          "count": 2
+        },
+        {
+          "value": "PR9356",
+          "count": 2
+        },
+        {
+          "value": "PR9353",
+          "count": 2
+        },
+        {
+          "value": "PR9311",
+          "count": 2
+        },
+        {
+          "value": "PR8940",
+          "count": 2
+        }
+      ],
+      "min_length": 6,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDD"
+      ]
+    },
+    "archeology_template|scans|crewref": {
+      "table_name": "scans",
+      "column_name": "crewref",
+      "column_type": "TEXT(50)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 940,
+      "min_value": "OP1005                                            ",
+      "max_value": "OP9971                                            ",
+      "top_k_values": [
+        {
+          "value": "OP7806                                            ",
+          "count": 3
+        },
+        {
+          "value": "OP2782                                            ",
+          "count": 3
+        },
+        {
+          "value": "OP9503                                            ",
+          "count": 2
+        },
+        {
+          "value": "OP9463                                            ",
+          "count": 2
+        },
+        {
+          "value": "OP8901                                            ",
+          "count": 2
+        },
+        {
+          "value": "OP8722                                            ",
+          "count": 2
+        },
+        {
+          "value": "OP8193                                            ",
+          "count": 2
+        },
+        {
+          "value": "OP7945                                            ",
+          "count": 2
+        },
+        {
+          "value": "OP7649                                            ",
+          "count": 2
+        },
+        {
+          "value": "OP7475                                            ",
+          "count": 2
+        }
+      ],
+      "min_length": 50,
+      "max_length": 50,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDD                                            "
+      ]
+    },
+    "archeology_template|scans|zoneref": {
+      "table_name": "scans",
+      "column_name": "zoneref",
+      "column_type": "TEXT(12)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 941,
+      "min_value": "SC1017",
+      "max_value": "SC9995",
+      "top_k_values": [
+        {
+          "value": "SC8933",
+          "count": 3
+        },
+        {
+          "value": "SC5031",
+          "count": 3
+        },
+        {
+          "value": "SC4971",
+          "count": 3
+        },
+        {
+          "value": "SC4589",
+          "count": 3
+        },
+        {
+          "value": "SC2971",
+          "count": 3
+        },
+        {
+          "value": "SC9995",
+          "count": 2
+        },
+        {
+          "value": "SC9870",
+          "count": 2
+        },
+        {
+          "value": "SC9489",
+          "count": 2
+        },
+        {
+          "value": "SC9081",
+          "count": 2
+        },
+        {
+          "value": "SC8942",
+          "count": 2
+        }
+      ],
+      "min_length": 6,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDD"
+      ]
+    },
+    "archeology_template|scans|scancount": {
+      "table_name": "scans",
+      "column_name": "scancount",
+      "column_type": "INTEGER",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 20,
+      "min_value": "1",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "9",
+          "count": 71
+        },
+        {
+          "value": "17",
+          "count": 61
+        },
+        {
+          "value": "12",
+          "count": 61
+        },
+        {
+          "value": "4",
+          "count": 59
+        },
+        {
+          "value": "3",
+          "count": 58
+        },
+        {
+          "value": "20",
+          "count": 52
+        },
+        {
+          "value": "16",
+          "count": 51
+        },
+        {
+          "value": "10",
+          "count": 51
+        },
+        {
+          "value": "11",
+          "count": 50
+        },
+        {
+          "value": "5",
+          "count": 49
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D"
+      ]
+    },
+    "archeology_template|scans|climtune": {
+      "table_name": "scans",
+      "column_name": "climtune",
+      "column_type": "TEXT(22)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 4,
+      "min_value": "Clear",
+      "max_value": "Windy",
+      "top_k_values": [
+        {
+          "value": "Windy",
+          "count": 277
+        },
+        {
+          "value": "Cloudy",
+          "count": 252
+        },
+        {
+          "value": "Clear",
+          "count": 241
+        },
+        {
+          "value": "Rainy",
+          "count": 229
+        }
+      ],
+      "min_length": 5,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAA",
+        "AAAAAA"
+      ]
+    },
+    "archeology_template|scans|huecatch": {
+      "table_name": "scans",
+      "column_name": "huecatch",
+      "column_type": "TEXT(50)",
+      "row_count": 999,
+      "null_count": 329,
+      "non_null_count": 670,
+      "distinct_count": 2,
+      "min_value": "Grayscale",
+      "max_value": "RGB",
+      "top_k_values": [
+        {
+          "value": "RGB",
+          "count": 359
+        },
+        {
+          "value": "Grayscale",
+          "count": 311
+        }
+      ],
+      "min_length": 3,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAA",
+        "AAAAAAAAA"
+      ]
+    },
+    "archeology_template|scans|fmtfile": {
+      "table_name": "scans",
+      "column_name": "fmtfile",
+      "column_type": "TEXT(4)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 5,
+      "min_value": "E57 ",
+      "max_value": "PTS ",
+      "top_k_values": [
+        {
+          "value": "OBJ ",
+          "count": 219
+        },
+        {
+          "value": "LAS ",
+          "count": 212
+        },
+        {
+          "value": "PTS ",
+          "count": 207
+        },
+        {
+          "value": "PLY ",
+          "count": 181
+        },
+        {
+          "value": "E57 ",
+          "count": 180
+        }
+      ],
+      "min_length": 4,
+      "max_length": 4,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAA ",
+        "ADD "
+      ]
+    },
+    "archeology_template|scans|gbsize": {
+      "table_name": "scans",
+      "column_name": "gbsize",
+      "column_type": "REAL",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 902,
+      "min_value": "0.14",
+      "max_value": "9.99",
+      "top_k_values": [
+        {
+          "value": "36.67",
+          "count": 4
+        },
+        {
+          "value": "48.88",
+          "count": 3
+        },
+        {
+          "value": "30.3",
+          "count": 3
+        },
+        {
+          "value": "28.22",
+          "count": 3
+        },
+        {
+          "value": "18.82",
+          "count": 3
+        },
+        {
+          "value": "5.98",
+          "count": 3
+        },
+        {
+          "value": "49.49",
+          "count": 2
+        },
+        {
+          "value": "49.2",
+          "count": 2
+        },
+        {
+          "value": "48.02",
+          "count": 2
+        },
+        {
+          "value": "48.01",
+          "count": 2
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.DD",
+        "D.DD",
+        "DD.D",
+        "D.D"
+      ]
+    },
+    "archeology_template|scans|pressratio": {
+      "table_name": "scans",
+      "column_name": "pressratio",
+      "column_type": "REAL",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 605,
+      "min_value": "1.0",
+      "max_value": "9.99",
+      "top_k_values": [
+        {
+          "value": "4.07",
+          "count": 6
+        },
+        {
+          "value": "9.24",
+          "count": 5
+        },
+        {
+          "value": "8.92",
+          "count": 5
+        },
+        {
+          "value": "7.66",
+          "count": 5
+        },
+        {
+          "value": "1.48",
+          "count": 5
+        },
+        {
+          "value": "9.91",
+          "count": 4
+        },
+        {
+          "value": "7.56",
+          "count": 4
+        },
+        {
+          "value": "7.53",
+          "count": 4
+        },
+        {
+          "value": "7.52",
+          "count": 4
+        },
+        {
+          "value": "6.55",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "archeology_template|scans|spanmin": {
+      "table_name": "scans",
+      "column_name": "spanmin",
+      "column_type": "REAL",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 235,
+      "min_value": "10.0",
+      "max_value": "99.0",
+      "top_k_values": [
+        {
+          "value": "35.0",
+          "count": 12
+        },
+        {
+          "value": "123.0",
+          "count": 11
+        },
+        {
+          "value": "190.0",
+          "count": 10
+        },
+        {
+          "value": "105.0",
+          "count": 9
+        },
+        {
+          "value": "83.0",
+          "count": 9
+        },
+        {
+          "value": "191.0",
+          "count": 8
+        },
+        {
+          "value": "184.0",
+          "count": 8
+        },
+        {
+          "value": "177.0",
+          "count": 8
+        },
+        {
+          "value": "156.0",
+          "count": 8
+        },
+        {
+          "value": "149.0",
+          "count": 8
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD.D",
+        "DD.D",
+        "D.D"
+      ]
+    },
+    "archeology_template|scanspatial|domainregistry": {
+      "table_name": "scanspatial",
+      "column_name": "domainregistry",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "1",
+      "max_value": "999",
+      "top_k_values": [
+        {
+          "value": "1",
+          "count": 1
+        },
+        {
+          "value": "2",
+          "count": 1
+        },
+        {
+          "value": "3",
+          "count": 1
+        },
+        {
+          "value": "4",
+          "count": 1
+        },
+        {
+          "value": "5",
+          "count": 1
+        },
+        {
+          "value": "6",
+          "count": 1
+        },
+        {
+          "value": "7",
+          "count": 1
+        },
+        {
+          "value": "8",
+          "count": 1
+        },
+        {
+          "value": "9",
+          "count": 1
+        },
+        {
+          "value": "10",
+          "count": 1
+        }
+      ],
+      "min_length": 1,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D",
+        "DDDD"
+      ]
+    },
+    "archeology_template|scanspatial|arcref": {
+      "table_name": "scanspatial",
+      "column_name": "arcref",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 947,
+      "min_value": "PR1003",
+      "max_value": "PR9973",
+      "top_k_values": [
+        {
+          "value": "PR8078",
+          "count": 3
+        },
+        {
+          "value": "PR7110",
+          "count": 3
+        },
+        {
+          "value": "PR9689",
+          "count": 2
+        },
+        {
+          "value": "PR9550",
+          "count": 2
+        },
+        {
+          "value": "PR9481",
+          "count": 2
+        },
+        {
+          "value": "PR9376",
+          "count": 2
+        },
+        {
+          "value": "PR9356",
+          "count": 2
+        },
+        {
+          "value": "PR9353",
+          "count": 2
+        },
+        {
+          "value": "PR9311",
+          "count": 2
+        },
+        {
+          "value": "PR8940",
+          "count": 2
+        }
+      ],
+      "min_length": 6,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDD"
+      ]
+    },
+    "archeology_template|scanspatial|crewref": {
+      "table_name": "scanspatial",
+      "column_name": "crewref",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 940,
+      "min_value": "OP1005                                            ",
+      "max_value": "OP9971                                            ",
+      "top_k_values": [
+        {
+          "value": "OP7806                                            ",
+          "count": 3
+        },
+        {
+          "value": "OP2782                                            ",
+          "count": 3
+        },
+        {
+          "value": "OP9503                                            ",
+          "count": 2
+        },
+        {
+          "value": "OP9463                                            ",
+          "count": 2
+        },
+        {
+          "value": "OP8901                                            ",
+          "count": 2
+        },
+        {
+          "value": "OP8722                                            ",
+          "count": 2
+        },
+        {
+          "value": "OP8193                                            ",
+          "count": 2
+        },
+        {
+          "value": "OP7945                                            ",
+          "count": 2
+        },
+        {
+          "value": "OP7649                                            ",
+          "count": 2
+        },
+        {
+          "value": "OP7475                                            ",
+          "count": 2
+        }
+      ],
+      "min_length": 50,
+      "max_length": 50,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDD                                            "
+      ]
+    },
+    "archeology_template|scanspatial|aream2": {
+      "table_name": "scanspatial",
+      "column_name": "aream2",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 998,
+      "min_value": "1.2",
+      "max_value": "999.5",
+      "top_k_values": [
+        {
+          "value": "49.97",
+          "count": 2
+        },
+        {
+          "value": "4.78",
+          "count": 2
+        },
+        {
+          "value": "999.5",
+          "count": 1
+        },
+        {
+          "value": "999.43",
+          "count": 1
+        },
+        {
+          "value": "999.26",
+          "count": 1
+        },
+        {
+          "value": "999.12",
+          "count": 1
+        },
+        {
+          "value": "997.78",
+          "count": 1
+        },
+        {
+          "value": "997.56",
+          "count": 1
+        },
+        {
+          "value": "997.33",
+          "count": 1
+        },
+        {
+          "value": "996.85",
+          "count": 1
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD.DD",
+        "DD.DD",
+        "DDD.D",
+        "DD.D",
+        "D.DD"
+      ]
+    },
+    "archeology_template|scanspatial|volm3": {
+      "table_name": "scanspatial",
+      "column_name": "volm3",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 949,
+      "min_value": "0.38",
+      "max_value": "99.9",
+      "top_k_values": [
+        {
+          "value": "60.87",
+          "count": 3
+        },
+        {
+          "value": "56.98",
+          "count": 3
+        },
+        {
+          "value": "98.26",
+          "count": 2
+        },
+        {
+          "value": "98.18",
+          "count": 2
+        },
+        {
+          "value": "98.12",
+          "count": 2
+        },
+        {
+          "value": "97.75",
+          "count": 2
+        },
+        {
+          "value": "94.78",
+          "count": 2
+        },
+        {
+          "value": "94.75",
+          "count": 2
+        },
+        {
+          "value": "94.13",
+          "count": 2
+        },
+        {
+          "value": "92.28",
+          "count": 2
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.DD",
+        "DD.D",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "archeology_template|scanspatial|boxx": {
+      "table_name": "scanspatial",
+      "column_name": "boxx",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 906,
+      "min_value": "0.11",
+      "max_value": "9.85",
+      "top_k_values": [
+        {
+          "value": "44.02",
+          "count": 3
+        },
+        {
+          "value": "24.86",
+          "count": 3
+        },
+        {
+          "value": "18.54",
+          "count": 3
+        },
+        {
+          "value": "48.66",
+          "count": 2
+        },
+        {
+          "value": "48.05",
+          "count": 2
+        },
+        {
+          "value": "47.94",
+          "count": 2
+        },
+        {
+          "value": "47.92",
+          "count": 2
+        },
+        {
+          "value": "47.81",
+          "count": 2
+        },
+        {
+          "value": "47.65",
+          "count": 2
+        },
+        {
+          "value": "46.51",
+          "count": 2
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.DD",
+        "D.DD",
+        "DD.D",
+        "D.D"
+      ]
+    },
+    "archeology_template|scanspatial|boxy": {
+      "table_name": "scanspatial",
+      "column_name": "boxy",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 900,
+      "min_value": "0.17",
+      "max_value": "9.91",
+      "top_k_values": [
+        {
+          "value": "49.13",
+          "count": 3
+        },
+        {
+          "value": "47.65",
+          "count": 3
+        },
+        {
+          "value": "30.91",
+          "count": 3
+        },
+        {
+          "value": "18.04",
+          "count": 3
+        },
+        {
+          "value": "2.19",
+          "count": 3
+        },
+        {
+          "value": "49.63",
+          "count": 2
+        },
+        {
+          "value": "48.9",
+          "count": 2
+        },
+        {
+          "value": "48.57",
+          "count": 2
+        },
+        {
+          "value": "48.52",
+          "count": 2
+        },
+        {
+          "value": "47.7",
+          "count": 2
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.DD",
+        "D.DD",
+        "DD.D",
+        "D.D"
+      ]
+    },
+    "archeology_template|scanspatial|boxz": {
+      "table_name": "scanspatial",
+      "column_name": "boxz",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 895,
+      "min_value": "0.14",
+      "max_value": "9.89",
+      "top_k_values": [
+        {
+          "value": "35.3",
+          "count": 3
+        },
+        {
+          "value": "24.04",
+          "count": 3
+        },
+        {
+          "value": "22.9",
+          "count": 3
+        },
+        {
+          "value": "21.78",
+          "count": 3
+        },
+        {
+          "value": "20.15",
+          "count": 3
+        },
+        {
+          "value": "3.96",
+          "count": 3
+        },
+        {
+          "value": "48.76",
+          "count": 2
+        },
+        {
+          "value": "47.94",
+          "count": 2
+        },
+        {
+          "value": "47.76",
+          "count": 2
+        },
+        {
+          "value": "46.23",
+          "count": 2
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.DD",
+        "D.DD",
+        "DD.D",
+        "D.D"
+      ]
+    },
+    "archeology_template|scanspatial|angleaz": {
+      "table_name": "scanspatial",
+      "column_name": "angleaz",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 875,
+      "min_value": "0.1",
+      "max_value": "99.5",
+      "top_k_values": [
+        {
+          "value": "303.7",
+          "count": 4
+        },
+        {
+          "value": "338.8",
+          "count": 3
+        },
+        {
+          "value": "313.8",
+          "count": 3
+        },
+        {
+          "value": "313.2",
+          "count": 3
+        },
+        {
+          "value": "297.3",
+          "count": 3
+        },
+        {
+          "value": "214",
+          "count": 3
+        },
+        {
+          "value": "146.6",
+          "count": 3
+        },
+        {
+          "value": "88.1",
+          "count": 3
+        },
+        {
+          "value": "64.2",
+          "count": 3
+        },
+        {
+          "value": "55.7",
+          "count": 3
+        }
+      ],
+      "min_length": 1,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD.D",
+        "DD.D",
+        "DDD",
+        "D.D",
+        "DD"
+      ]
+    },
+    "archeology_template|scanspatial|angletilt": {
+      "table_name": "scanspatial",
+      "column_name": "angletilt",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 597,
+      "min_value": "-0.1",
+      "max_value": "9.8",
+      "top_k_values": [
+        {
+          "value": "-12.3",
+          "count": 7
+        },
+        {
+          "value": "14.3",
+          "count": 6
+        },
+        {
+          "value": "-0.7",
+          "count": 6
+        },
+        {
+          "value": "-15",
+          "count": 6
+        },
+        {
+          "value": "21.3",
+          "count": 5
+        },
+        {
+          "value": "-7.1",
+          "count": 5
+        },
+        {
+          "value": "-28.9",
+          "count": 5
+        },
+        {
+          "value": "-31",
+          "count": 5
+        },
+        {
+          "value": "39.4",
+          "count": 4
+        },
+        {
+          "value": "32.4",
+          "count": 4
+        }
+      ],
+      "min_length": 1,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "-DD.D",
+        "DD.D",
+        "-D.D",
+        "D.D",
+        "-DD"
+      ]
+    },
+    "archeology_template|scanspatial|groundspan": {
+      "table_name": "scanspatial",
+      "column_name": "groundspan",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 631,
+      "min_value": "0.11",
+      "max_value": "9.97",
+      "top_k_values": [
+        {
+          "value": "6.66",
+          "count": 6
+        },
+        {
+          "value": "9.56",
+          "count": 5
+        },
+        {
+          "value": "4.13",
+          "count": 5
+        },
+        {
+          "value": "3.56",
+          "count": 5
+        },
+        {
+          "value": "2.4",
+          "count": 5
+        },
+        {
+          "value": "0.9",
+          "count": 5
+        },
+        {
+          "value": "8.34",
+          "count": 4
+        },
+        {
+          "value": "7.92",
+          "count": 4
+        },
+        {
+          "value": "7.88",
+          "count": 4
+        },
+        {
+          "value": "7.35",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D",
+        "DD.D"
+      ]
+    },
+    "archeology_template|sites|zoneregistry": {
+      "table_name": "sites",
+      "column_name": "zoneregistry",
+      "column_type": "TEXT(12)",
+      "row_count": 942,
+      "null_count": 0,
+      "non_null_count": 942,
+      "distinct_count": 942,
+      "min_value": "SC1017",
+      "max_value": "SC9995",
+      "top_k_values": [
+        {
+          "value": "SC1017",
+          "count": 1
+        },
+        {
+          "value": "SC1024",
+          "count": 1
+        },
+        {
+          "value": "SC1025",
+          "count": 1
+        },
+        {
+          "value": "SC1028",
+          "count": 1
+        },
+        {
+          "value": "SC1031",
+          "count": 1
+        },
+        {
+          "value": "SC1048",
+          "count": 1
+        },
+        {
+          "value": "SC1092",
+          "count": 1
+        },
+        {
+          "value": "SC1107",
+          "count": 1
+        },
+        {
+          "value": "SC1130",
+          "count": 1
+        },
+        {
+          "value": "SC1145",
+          "count": 1
+        }
+      ],
+      "min_length": 6,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDD"
+      ]
+    },
+    "archeology_template|sites|zonelabel": {
+      "table_name": "sites",
+      "column_name": "zonelabel",
+      "column_type": "TEXT",
+      "row_count": 942,
+      "null_count": 0,
+      "non_null_count": 942,
+      "distinct_count": 915,
+      "min_value": "Site-Alexisborough",
+      "max_value": "Site-Zamorahaven",
+      "top_k_values": [
+        {
+          "value": "Site-Zamorahaven",
+          "count": 2
+        },
+        {
+          "value": "Site-West Paul",
+          "count": 2
+        },
+        {
+          "value": "Site-West Johnburgh",
+          "count": 2
+        },
+        {
+          "value": "Site-Thomasstad",
+          "count": 2
+        },
+        {
+          "value": "Site-South Michael",
+          "count": 2
+        },
+        {
+          "value": "Site-South Joshua",
+          "count": 2
+        },
+        {
+          "value": "Site-South Jamesstad",
+          "count": 2
+        },
+        {
+          "value": "Site-South James",
+          "count": 2
+        },
+        {
+          "value": "Site-Robertmouth",
+          "count": 2
+        },
+        {
+          "value": "Site-Rebeccaton",
+          "count": 2
+        }
+      ],
+      "min_length": 12,
+      "max_length": 28,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA-AAAAAAAAAAA",
+        "AAAA-AAAAAAAAAA",
+        "AAAA-AAAAAAAAA",
+        "AAAA-AAAAAAAAAAAA",
+        "AAAA-AAAA AAAAAAAAA"
+      ]
+    },
+    "archeology_template|sites|digunit": {
+      "table_name": "sites",
+      "column_name": "digunit",
+      "column_type": "TEXT(50)",
+      "row_count": 942,
+      "null_count": 0,
+      "non_null_count": 942,
+      "distinct_count": 80,
+      "min_value": "Unit-A1",
+      "max_value": "Unit-D9",
+      "top_k_values": [
+        {
+          "value": "Unit-B11",
+          "count": 19
+        },
+        {
+          "value": "Unit-D5",
+          "count": 18
+        },
+        {
+          "value": "Unit-D13",
+          "count": 18
+        },
+        {
+          "value": "Unit-B8",
+          "count": 18
+        },
+        {
+          "value": "Unit-B13",
+          "count": 18
+        },
+        {
+          "value": "Unit-A20",
+          "count": 18
+        },
+        {
+          "value": "Unit-C7",
+          "count": 17
+        },
+        {
+          "value": "Unit-C14",
+          "count": 17
+        },
+        {
+          "value": "Unit-A6",
+          "count": 17
+        },
+        {
+          "value": "Unit-D14",
+          "count": 16
+        }
+      ],
+      "min_length": 7,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA-ADD",
+        "AAAA-AD"
+      ]
+    },
+    "archeology_template|sites|gridtrace": {
+      "table_name": "sites",
+      "column_name": "gridtrace",
+      "column_type": "TEXT(12)",
+      "row_count": 942,
+      "null_count": 0,
+      "non_null_count": 942,
+      "distinct_count": 896,
+      "min_value": "N1-E10",
+      "max_value": "S9-W44",
+      "top_k_values": [
+        {
+          "value": "S7-E18",
+          "count": 2
+        },
+        {
+          "value": "S49-E38",
+          "count": 2
+        },
+        {
+          "value": "S47-W3",
+          "count": 2
+        },
+        {
+          "value": "S46-W17",
+          "count": 2
+        },
+        {
+          "value": "S44-W23",
+          "count": 2
+        },
+        {
+          "value": "S44-E41",
+          "count": 2
+        },
+        {
+          "value": "S42-W9",
+          "count": 2
+        },
+        {
+          "value": "S41-W6",
+          "count": 2
+        },
+        {
+          "value": "S39-W39",
+          "count": 2
+        },
+        {
+          "value": "S39-E15",
+          "count": 2
+        }
+      ],
+      "min_length": 5,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "ADD-ADD",
+        "ADD-AD",
+        "AD-ADD",
+        "AD-AD"
+      ]
+    },
+    "archeology_template|sites|geox": {
+      "table_name": "sites",
+      "column_name": "geox",
+      "column_type": "REAL",
+      "row_count": 942,
+      "null_count": 0,
+      "non_null_count": 942,
+      "distinct_count": 942,
+      "min_value": "-0.01005",
+      "max_value": "9.65329",
+      "top_k_values": [
+        {
+          "value": "89.87311",
+          "count": 1
+        },
+        {
+          "value": "89.82485",
+          "count": 1
+        },
+        {
+          "value": "89.65889",
+          "count": 1
+        },
+        {
+          "value": "89.18578",
+          "count": 1
+        },
+        {
+          "value": "89.13891",
+          "count": 1
+        },
+        {
+          "value": "89.043",
+          "count": 1
+        },
+        {
+          "value": "88.99112",
+          "count": 1
+        },
+        {
+          "value": "88.98638",
+          "count": 1
+        },
+        {
+          "value": "88.87983",
+          "count": 1
+        },
+        {
+          "value": "88.71737",
+          "count": 1
+        }
+      ],
+      "min_length": 6,
+      "max_length": 9,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.DDDDD",
+        "-DD.DDDDD",
+        "D.DDDDD",
+        "-D.DDDDD",
+        "DD.DDDD"
+      ]
+    },
+    "archeology_template|sites|geoy": {
+      "table_name": "sites",
+      "column_name": "geoy",
+      "column_type": "REAL",
+      "row_count": 942,
+      "null_count": 0,
+      "non_null_count": 942,
+      "distinct_count": 942,
+      "min_value": "-0.15548",
+      "max_value": "98.34728",
+      "top_k_values": [
+        {
+          "value": "179.9532",
+          "count": 1
+        },
+        {
+          "value": "179.90207",
+          "count": 1
+        },
+        {
+          "value": "179.73384",
+          "count": 1
+        },
+        {
+          "value": "179.7271",
+          "count": 1
+        },
+        {
+          "value": "178.81126",
+          "count": 1
+        },
+        {
+          "value": "177.08001",
+          "count": 1
+        },
+        {
+          "value": "176.16912",
+          "count": 1
+        },
+        {
+          "value": "175.6921",
+          "count": 1
+        },
+        {
+          "value": "175.47926",
+          "count": 1
+        },
+        {
+          "value": "175.30932",
+          "count": 1
+        }
+      ],
+      "min_length": 6,
+      "max_length": 10,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.DDDDD",
+        "-DD.DDDDD",
+        "DDD.DDDDD",
+        "-DDD.DDDDD",
+        "DDD.DDDD"
+      ]
+    },
+    "archeology_template|sites|heightm": {
+      "table_name": "sites",
+      "column_name": "heightm",
+      "column_type": "REAL",
+      "row_count": 942,
+      "null_count": 0,
+      "non_null_count": 942,
+      "distinct_count": 932,
+      "min_value": "1014.0",
+      "max_value": "992.0",
+      "top_k_values": [
+        {
+          "value": "4251.7",
+          "count": 2
+        },
+        {
+          "value": "3870.0",
+          "count": 2
+        },
+        {
+          "value": "3859.8",
+          "count": 2
+        },
+        {
+          "value": "3673.4",
+          "count": 2
+        },
+        {
+          "value": "3424.8",
+          "count": 2
+        },
+        {
+          "value": "3092.4",
+          "count": 2
+        },
+        {
+          "value": "2612.1",
+          "count": 2
+        },
+        {
+          "value": "2209.5",
+          "count": 2
+        },
+        {
+          "value": "2012.1",
+          "count": 2
+        },
+        {
+          "value": "200.9",
+          "count": 2
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDD.D",
+        "DDD.D",
+        "DD.D",
+        "D.D"
+      ]
+    },
+    "archeology_template|sites|depthc": {
+      "table_name": "sites",
+      "column_name": "depthc",
+      "column_type": "REAL",
+      "row_count": 942,
+      "null_count": 0,
+      "non_null_count": 942,
+      "distinct_count": 861,
+      "min_value": "0.4",
+      "max_value": "99.9",
+      "top_k_values": [
+        {
+          "value": "294.3",
+          "count": 3
+        },
+        {
+          "value": "268.3",
+          "count": 3
+        },
+        {
+          "value": "245.8",
+          "count": 3
+        },
+        {
+          "value": "146.1",
+          "count": 3
+        },
+        {
+          "value": "46.9",
+          "count": 3
+        },
+        {
+          "value": "498.4",
+          "count": 2
+        },
+        {
+          "value": "493.1",
+          "count": 2
+        },
+        {
+          "value": "489.8",
+          "count": 2
+        },
+        {
+          "value": "487.2",
+          "count": 2
+        },
+        {
+          "value": "476.2",
+          "count": 2
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD.D",
+        "DD.D",
+        "D.D"
+      ]
+    },
+    "archeology_template|sites|phasefactor": {
+      "table_name": "sites",
+      "column_name": "phasefactor",
+      "column_type": "TEXT(25)",
+      "row_count": 942,
+      "null_count": 0,
+      "non_null_count": 942,
+      "distinct_count": 5,
+      "min_value": "Bronze Age",
+      "max_value": "Neolithic",
+      "top_k_values": [
+        {
+          "value": "Bronze Age",
+          "count": 198
+        },
+        {
+          "value": "Medieval",
+          "count": 197
+        },
+        {
+          "value": "Classical",
+          "count": 195
+        },
+        {
+          "value": "Iron Age",
+          "count": 182
+        },
+        {
+          "value": "Neolithic",
+          "count": 170
+        }
+      ],
+      "min_length": 8,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAA",
+        "AAAAAA AAA",
+        "AAAAAAAA",
+        "AAAA AAA"
+      ]
+    },
+    "archeology_template|sites|guessdate": {
+      "table_name": "sites",
+      "column_name": "guessdate",
+      "column_type": "TEXT(20)",
+      "row_count": 942,
+      "null_count": 0,
+      "non_null_count": 942,
+      "distinct_count": 886,
+      "min_value": "-1000 BCE",
+      "max_value": "999 CE",
+      "top_k_values": [
+        {
+          "value": "935 CE",
+          "count": 3
+        },
+        {
+          "value": "140 BCE",
+          "count": 3
+        },
+        {
+          "value": "125 CE",
+          "count": 3
+        },
+        {
+          "value": "780 CE",
+          "count": 2
+        },
+        {
+          "value": "648 CE",
+          "count": 2
+        },
+        {
+          "value": "558 CE",
+          "count": 2
+        },
+        {
+          "value": "552 CE",
+          "count": 2
+        },
+        {
+          "value": "489 CE",
+          "count": 2
+        },
+        {
+          "value": "348 CE",
+          "count": 2
+        },
+        {
+          "value": "327 CE",
+          "count": 2
+        }
+      ],
+      "min_length": 5,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "-DDDD AAA",
+        "DDD AA",
+        "-DDD AAA",
+        "DDDD AA",
+        "DDD AAA"
+      ]
+    },
+    "archeology_template|sites|typesite": {
+      "table_name": "sites",
+      "column_name": "typesite",
+      "column_type": "TEXT(25)",
+      "row_count": 942,
+      "null_count": 0,
+      "non_null_count": 942,
+      "distinct_count": 5,
+      "min_value": "Burial",
+      "max_value": "Settlement",
+      "top_k_values": [
+        {
+          "value": "Industrial",
+          "count": 206
+        },
+        {
+          "value": "Religious",
+          "count": 193
+        },
+        {
+          "value": "Settlement",
+          "count": 187
+        },
+        {
+          "value": "Burial",
+          "count": 181
+        },
+        {
+          "value": "Military",
+          "count": 175
+        }
+      ],
+      "min_length": 6,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAAA",
+        "AAAAAAAAA",
+        "AAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "archeology_template|sites|presstat": {
+      "table_name": "sites",
+      "column_name": "presstat",
+      "column_type": "TEXT(25)",
+      "row_count": 942,
+      "null_count": 0,
+      "non_null_count": 942,
+      "distinct_count": 5,
+      "min_value": "Critical",
+      "max_value": "Poor",
+      "top_k_values": [
+        {
+          "value": "Poor",
+          "count": 207
+        },
+        {
+          "value": "Excellent",
+          "count": 191
+        },
+        {
+          "value": "Good",
+          "count": 184
+        },
+        {
+          "value": "Fair",
+          "count": 181
+        },
+        {
+          "value": "Critical",
+          "count": 179
+        }
+      ],
+      "min_length": 4,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAAAAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "archeology_template|sites|guardhint": {
+      "table_name": "sites",
+      "column_name": "guardhint",
+      "column_type": "TEXT(50)",
+      "row_count": 942,
+      "null_count": 292,
+      "non_null_count": 650,
+      "distinct_count": 2,
+      "min_value": "Permanent                                         ",
+      "max_value": "Temporary                                         ",
+      "top_k_values": [
+        {
+          "value": "Permanent                                         ",
+          "count": 326
+        },
+        {
+          "value": "Temporary                                         ",
+          "count": 324
+        }
+      ],
+      "min_length": 50,
+      "max_length": 50,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAAAAAAA                                         "
+      ]
+    },
+    "archeology_template|sites|entrystat": {
+      "table_name": "sites",
+      "column_name": "entrystat",
+      "column_type": "TEXT(50)",
+      "row_count": 942,
+      "null_count": 0,
+      "non_null_count": 942,
+      "distinct_count": 3,
+      "min_value": "Closed",
+      "max_value": "Restricted",
+      "top_k_values": [
+        {
+          "value": "Open",
+          "count": 328
+        },
+        {
+          "value": "Closed",
+          "count": 319
+        },
+        {
+          "value": "Restricted",
+          "count": 295
+        }
+      ],
+      "min_length": 4,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAAAAA",
+        "AAAAAAAAAA"
+      ]
+    },
+    "archeology_template|sites|saferank": {
+      "table_name": "sites",
+      "column_name": "saferank",
+      "column_type": "TEXT(15)",
+      "row_count": 942,
+      "null_count": 0,
+      "non_null_count": 942,
+      "distinct_count": 3,
+      "min_value": "High",
+      "max_value": "Standard",
+      "top_k_values": [
+        {
+          "value": "High",
+          "count": 349
+        },
+        {
+          "value": "Minimal",
+          "count": 310
+        },
+        {
+          "value": "Standard",
+          "count": 283
+        }
+      ],
+      "min_length": 4,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "archeology_template|sites|insurstat": {
+      "table_name": "sites",
+      "column_name": "insurstat",
+      "column_type": "TEXT(15)",
+      "row_count": 942,
+      "null_count": 0,
+      "non_null_count": 942,
+      "distinct_count": 3,
+      "min_value": "Active",
+      "max_value": "Pending",
+      "top_k_values": [
+        {
+          "value": "Pending",
+          "count": 344
+        },
+        {
+          "value": "Expired",
+          "count": 299
+        },
+        {
+          "value": "Active",
+          "count": 299
+        }
+      ],
+      "min_length": 6,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAA"
+      ]
+    },
+    "archeology_template|sites|riskeval": {
+      "table_name": "sites",
+      "column_name": "riskeval",
+      "column_type": "TEXT",
+      "row_count": 942,
+      "null_count": 0,
+      "non_null_count": 942,
+      "distinct_count": 3,
+      "min_value": "Completed",
+      "max_value": "Required",
+      "top_k_values": [
+        {
+          "value": "Pending",
+          "count": 329
+        },
+        {
+          "value": "Required",
+          "count": 320
+        },
+        {
+          "value": "Completed",
+          "count": 293
+        }
+      ],
+      "min_length": 7,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAAAA",
+        "AAAAAAAAA"
+      ]
+    },
+    "archeology_template|sites|healtheval": {
+      "table_name": "sites",
+      "column_name": "healtheval",
+      "column_type": "TEXT(12)",
+      "row_count": 942,
+      "null_count": 0,
+      "non_null_count": 942,
+      "distinct_count": 3,
+      "min_value": "Approved",
+      "max_value": "Review",
+      "top_k_values": [
+        {
+          "value": "Review",
+          "count": 330
+        },
+        {
+          "value": "Pending",
+          "count": 320
+        },
+        {
+          "value": "Approved",
+          "count": 292
+        }
+      ],
+      "min_length": 6,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AAAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "archeology_template|sites|envhaz": {
+      "table_name": "sites",
+      "column_name": "envhaz",
+      "column_type": "TEXT(50)",
+      "row_count": 942,
+      "null_count": 0,
+      "non_null_count": 942,
+      "distinct_count": 3,
+      "min_value": "High                                              ",
+      "max_value": "Medium                                            ",
+      "top_k_values": [
+        {
+          "value": "High                                              ",
+          "count": 328
+        },
+        {
+          "value": "Medium                                            ",
+          "count": 315
+        },
+        {
+          "value": "Low                                               ",
+          "count": 299
+        }
+      ],
+      "min_length": 50,
+      "max_length": 50,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAA                                              ",
+        "AAAAAA                                            ",
+        "AAA                                               "
+      ]
+    }
+  },
+  "meta": {
+    "personnel": {
+      "profiled_at": "2026-08-30T10:49:59.798028+00:00",
+      "row_count": 940
+    },
+    "scans": {
+      "profiled_at": "2026-08-30T10:49:59.798028+00:00",
+      "row_count": 999
+    },
+    "scanenvironment": {
+      "profiled_at": "2026-08-30T10:49:59.798028+00:00",
+      "row_count": 1000
+    },
+    "scanfeatures": {
+      "profiled_at": "2026-08-30T10:49:59.798028+00:00",
+      "row_count": 1000
+    },
+    "sites": {
+      "profiled_at": "2026-08-30T10:49:59.798028+00:00",
+      "row_count": 942
+    },
+    "scanpointcloud": {
+      "profiled_at": "2026-08-30T10:49:59.798028+00:00",
+      "row_count": 1000
+    },
+    "scanregistration": {
+      "profiled_at": "2026-08-30T10:49:59.798028+00:00",
+      "row_count": 1000
+    },
+    "projects": {
+      "profiled_at": "2026-08-30T10:49:59.798028+00:00",
+      "row_count": 947
+    },
+    "scanconservation": {
+      "profiled_at": "2026-08-30T10:49:59.798028+00:00",
+      "row_count": 1000
+    },
+    "equipment": {
+      "profiled_at": "2026-08-30T10:49:59.798028+00:00",
+      "row_count": 993
+    },
+    "scanqc": {
+      "profiled_at": "2026-08-30T10:49:59.798028+00:00",
+      "row_count": 1000
+    },
+    "scanspatial": {
+      "profiled_at": "2026-08-30T10:49:59.798028+00:00",
+      "row_count": 1000
+    },
+    "scanmesh": {
+      "profiled_at": "2026-08-30T10:49:59.798028+00:00",
+      "row_count": 1000
+    },
+    "scanprocessing": {
+      "profiled_at": "2026-08-30T10:49:59.798028+00:00",
+      "row_count": 1000
+    }
+  }
+}

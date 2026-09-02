@@ -1,0 +1,221 @@
+{
+  "version": 1,
+  "profiled_at": "2026-08-30T12:49:13.598178+00:00",
+  "columns": {
+    "solar_template|electrical|Initial fill factor (FFinit)": {
+      "id": 0,
+      "knowledge": "Initial fill factor (FFinit)",
+      "description": "Initial fill factor computed from initial I-V measurements.",
+      "definition": "ffactorinit != impinita * vmpinitv / (iscinita * vocinitv)",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "electrical"
+      ],
+      "refuted": true
+    },
+    "solar_template|electrical|Current fill factor (FFcurr)": {
+      "id": 1,
+      "knowledge": "Current fill factor (FFcurr)",
+      "description": "Current fill factor computed from current I-V measurements.",
+      "definition": "ffactorcurr != impcurra * vmpcurrv / (isccurra * voccurrv)",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "electrical"
+      ],
+      "refuted": true
+    },
+    "solar_template|electrical|Isc degradation (Iscdeg)": {
+      "id": 2,
+      "knowledge": "Isc degradation (Iscdeg)",
+      "description": "Percent loss in short-circuit current from initial to current state.",
+      "definition": "(iscinita - isccurra) / iscinita * 100",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "electrical"
+      ],
+      "refuted": false
+    },
+    "solar_template|electrical|Voc degradation (Vocdeg)": {
+      "id": 3,
+      "knowledge": "Voc degradation (Vocdeg)",
+      "description": "Percent loss in open-circuit voltage from initial to current state.",
+      "definition": "(vocinitv - voccurrv) / vocinitv * 100",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "electrical"
+      ],
+      "refuted": false
+    },
+    "solar_template|electrical|Imp degradation (Impdeg)": {
+      "id": 4,
+      "knowledge": "Imp degradation (Impdeg)",
+      "description": "Percent loss in current at maximum power from initial to current state.",
+      "definition": "(impinita - impcurra) / impinita * 100",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "electrical"
+      ],
+      "refuted": false
+    },
+    "solar_template|electrical|Vmp degradation (Vmpdeg)": {
+      "id": 5,
+      "knowledge": "Vmp degradation (Vmpdeg)",
+      "description": "Percent loss in voltage at maximum power from initial to current state.",
+      "definition": "(vmpinitv - vmpcurrv) / vmpinitv * 100",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "electrical"
+      ],
+      "refuted": false
+    },
+    "solar_template|electrical|Maximum power degradation (Pdeg)": {
+      "id": 6,
+      "knowledge": "Maximum power degradation (Pdeg)",
+      "description": "Percent loss in maximum power from initial to current state.",
+      "definition": "(impinita * vmpinitv - impcurra * vmpcurrv) / (impinita * vmpinitv) * 100",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "electrical"
+      ],
+      "refuted": false
+    },
+    "solar_template|maintenance,panel|Specific maintenance cost (SMC)": {
+      "id": 7,
+      "knowledge": "Specific maintenance cost (SMC)",
+      "description": "Maintenance cost per rated watt of the associated panel.",
+      "definition": "maintcostusd / powratew",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "maintenance",
+        "panel"
+      ],
+      "refuted": false
+    },
+    "solar_template|maintenance,performance|Maintenance cost per watt of power loss (MCWPL)": {
+      "id": 8,
+      "knowledge": "Maintenance cost per watt of power loss (MCWPL)",
+      "description": "Maintenance dollars spent for each watt of measured power loss in the linked performance record.",
+      "definition": "maintcostusd / powlossw",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "maintenance",
+        "performance"
+      ],
+      "refuted": false
+    },
+    "solar_template|environment,plant|Soiling-related capacity loss (SRCL)": {
+      "id": 9,
+      "knowledge": "Soiling-related capacity loss (SRCL)",
+      "description": "Plant capacity in megawatts effectively lost to the measured soil loss percentage.",
+      "definition": "gencapmw * soillosspct / 100",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "environment",
+        "plant"
+      ],
+      "refuted": false
+    },
+    "solar_template|performance,plant|Power loss ratio (PLR)": {
+      "id": 10,
+      "knowledge": "Power loss ratio (PLR)",
+      "description": "Measured power loss expressed as a percentage of total plant capacity.",
+      "definition": "powlossw / (gencapmw * 1000000) * 100",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "performance",
+        "plant"
+      ],
+      "refuted": false
+    },
+    "solar_template|inverter,plant|Inverter reactive loading (IRL)": {
+      "id": 11,
+      "knowledge": "Inverter reactive loading (IRL)",
+      "description": "Reactive power produced by the inverter per megawatt of plant capacity.",
+      "definition": "json_extract(power_metrics, '$.reacpwrkvar') / gencapmw",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "inverter",
+        "plant"
+      ],
+      "refuted": false
+    },
+    "solar_template|plant|Degradation-adjusted capacity (DAC)": {
+      "id": 12,
+      "knowledge": "Degradation-adjusted capacity (DAC)",
+      "description": "Remaining plant capacity after maximum-power degradation is applied.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "plant"
+      ],
+      "refuted": false
+    },
+    "solar_template|alerts,performance|Critical high-loss alert (CHLA)": {
+      "id": 13,
+      "knowledge": "Critical high-loss alert (CHLA)",
+      "description": "Critical alert linked to a performance record with more than 50 watts of measured power loss.",
+      "definition": "alertstat = 'Critical' AND powlossw > 50",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "alerts",
+        "performance"
+      ],
+      "refuted": false
+    },
+    "solar_template|alerts|High-priority maintenance alert on degraded module (HPMD)": {
+      "id": 14,
+      "knowledge": "High-priority maintenance alert on degraded module (HPMD)",
+      "description": "High-priority maintenance alert for a module whose maximum-power degradation exceeds five percent.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "alerts"
+      ],
+      "refuted": false
+    }
+  },
+  "meta": {
+    "alerts,performance": {
+      "profiled_at": "2026-08-30T12:49:13.598178+00:00"
+    },
+    "electrical": {
+      "profiled_at": "2026-08-30T12:49:13.598178+00:00"
+    },
+    "maintenance,performance": {
+      "profiled_at": "2026-08-30T12:49:13.598178+00:00"
+    },
+    "plant": {
+      "profiled_at": "2026-08-30T12:49:13.598178+00:00"
+    },
+    "alerts": {
+      "profiled_at": "2026-08-30T12:49:13.598178+00:00"
+    },
+    "inverter,plant": {
+      "profiled_at": "2026-08-30T12:49:13.598178+00:00"
+    },
+    "maintenance,panel": {
+      "profiled_at": "2026-08-30T12:49:13.598178+00:00"
+    },
+    "environment,plant": {
+      "profiled_at": "2026-08-30T12:49:13.598178+00:00"
+    },
+    "performance,plant": {
+      "profiled_at": "2026-08-30T12:49:13.598178+00:00"
+    }
+  }
+}

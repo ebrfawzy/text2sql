@@ -1,0 +1,325 @@
+CREATE TABLE "cabinenvironment" (
+cabinregistry integer(32) NOT NULL,
+cabineqref text(70) NOT NULL,
+cabinlocref integer(32) NULL,
+emergencybeaconstatus TEXT NULL,
+ventilationstatus TEXT NULL,
+ventilationspeedpercent real(5,2) NULL,
+heaterstatus TEXT NULL,
+heatertemperaturec integer(53) NULL,
+defrosterstatus TEXT NULL,
+windowstatus TEXT NULL,
+doorstatus TEXT NULL,
+hatchstatus TEXT NULL,
+cabincommref integer(32) NULL,
+cabinclimate TEXT NULL,
+    PRIMARY KEY (cabinregistry),
+    FOREIGN KEY (cabinlocref) REFERENCES location(locationregistry),
+    FOREIGN KEY (cabineqref) REFERENCES equipment(equipmentcode),
+    FOREIGN KEY (cabincommref) REFERENCES communication(commregistry)
+);
+First 3 rows:
+  cabinregistry  cabineqref      cabinlocref  emergencybeaconstatus    ventilationstatus      ventilationspeedpercent  heaterstatus      heatertemperaturec  defrosterstatus    windowstatus    doorstatus    hatchstatus      cabincommref  cabinclimate
+              7  PE218333                  7  Active                   On                                       71.43  Auto                           22.91  On                 Closed          Open          Closed                      7  {"co2_ppm": 1613.6, "o2_percent": 14.95, "pressure_kpa": 963, "temperature_c": 12.9, "humidity_percent": 49.4, "air_quality_index": 258.66}
+              8  PE679897                  8  Testing                  Off                                      94.15  Off                            11.08  Off                Closed          Locked        Locked                      8  {"co2_ppm": 4991.1, "o2_percent": 18.92, "pressure_kpa": 1008, "temperature_c": -22.24, "humidity_percent": 70.4, "air_quality_index": 335.4}
+              9  PE752240                  9  Standby                  Auto                                      0.6   Auto                            7.86  On                 Partial         Open          Closed                      9  {"co2_ppm": 340.6, "o2_percent": 14.72, "pressure_kpa": 1014, "temperature_c": 25.4, "humidity_percent": 35.8, "air_quality_index": 188.17}
+...
+
+CREATE TABLE "chassisandvehicle" (
+chassisregistry integer(32) NOT NULL,
+chassiseqref text(70) NOT NULL,
+chassistransref integer(32) NULL,
+brakepadwearpercent integer(24) NULL,
+brakefluidlevelpercent real(5,2) NULL,
+brakepressurekpa integer(32) NULL,
+tracktensionkn real(7,3) NULL,
+trackwearpercent integer(53) NULL,
+suspensionheightmm real(6,1) NULL,
+vehiclespeedkmh integer(24) NULL,
+vehicleloadkg real(9,2) NULL,
+vehicleangledegrees real(6,2) NULL,
+vehicleheadingdegrees real(5,1) NULL,
+chassisengref integer(32) NULL,
+tiremetrics TEXT NULL,
+    PRIMARY KEY (chassisregistry),
+    FOREIGN KEY (chassistransref) REFERENCES transmission(transregistry),
+    FOREIGN KEY (chassiseqref) REFERENCES equipment(equipmentcode),
+    FOREIGN KEY (chassisengref) REFERENCES engineandfluids(engineregistry)
+);
+First 3 rows:
+  chassisregistry  chassiseqref      chassistransref    brakepadwearpercent    brakefluidlevelpercent    brakepressurekpa    tracktensionkn    trackwearpercent    suspensionheightmm    vehiclespeedkmh    vehicleloadkg    vehicleangledegrees    vehicleheadingdegrees    chassisengref  tiremetrics
+                9  PE752240                        9                   16.8                     28.17                1193            31.698               45.98                 294.1              61.04          1785.82                  74.65                    278.6                9  {"pressure_kpa": 227, "temperature_c": 26.97, "tread_depth_mm": 0.15}
+               10  PE665932                       10                   64                       90.34                2092            39.313               40.22                 782                61.19          4852.3                  171.85                     67.5               10  {"pressure_kpa": 299, "temperature_c": 84.33, "tread_depth_mm": 2.08}
+               11  PE408827                       11                   84.7                     49.24                1447            11.605               57.54                 872.5              92.23          3844.6                   72.25                     88.8               11  {"pressure_kpa": 233, "temperature_c": 6.59, "tread_depth_mm": 5.82}
+...
+
+CREATE TABLE "communication" (
+commregistry integer(32) NOT NULL,
+commeqref text(70) NOT NULL,
+commlocref integer(32) NULL,
+radiofrequencymhz integer(24) NULL,
+antennastatus TEXT NULL,
+bluetoothstatus TEXT NULL,
+commopmaintref integer(32) NULL,
+signalmetrics TEXT NULL,
+    PRIMARY KEY (commregistry),
+    FOREIGN KEY (commlocref) REFERENCES location(locationregistry),
+    FOREIGN KEY (commeqref) REFERENCES equipment(equipmentcode)
+);
+First 3 rows:
+  commregistry  commeqref      commlocref    radiofrequencymhz  antennastatus    bluetoothstatus    commopmaintref    signalmetrics
+             8  PE679897                8                837.3  Warning          Off                                  {"latency_ms": 1623.30, "gps_strength": "Strong", "data_rate_kbps": 982.1, "satellite_status": "Disconnected", "wifi_strength_dbm": -43.8, "radio_strength_dbm": -87.500}
+             9  PE752240                9                813.1  Normal           Pairing                              {"latency_ms": 244.70, "gps_strength": "None", "data_rate_kbps": 909.2, "satellite_status": "Limited", "wifi_strength_dbm": -70.9, "radio_strength_dbm": -95.000}
+            10  PE665932               10                618.8  Warning          Pairing                              {"latency_ms": 1700.00, "gps_strength": "Medium", "data_rate_kbps": 604.3, "satellite_status": "Connected", "wifi_strength_dbm": -62.6, "radio_strength_dbm": -62.800}
+...
+
+CREATE TABLE "engineandfluids" (
+engineregistry integer(32) NOT NULL,
+engfluidseqref text(60) NOT NULL,
+engfluidspbref integer(32) NULL,
+enginespeedrpm integer(32) NULL,
+engineloadpercent integer(24) NULL,
+enginetemperaturec integer(53) NULL,
+enginehours real(8,1) NULL,
+engfluidsopmaintref integer(32) NULL,
+fluidmetrics TEXT NULL,
+    PRIMARY KEY (engineregistry),
+    FOREIGN KEY (engfluidspbref) REFERENCES powerbattery(powerbattregistry),
+    FOREIGN KEY (engfluidseqref) REFERENCES equipment(equipmentcode)
+);
+First 3 rows:
+  engineregistry  engfluidseqref      engfluidspbref    enginespeedrpm    engineloadpercent    enginetemperaturec    enginehours    engfluidsopmaintref  fluidmetrics
+               6  PE615899                         6              3727                 0.22                 73.27         2754.2                      6  {"oil": {"pressure_kpa": 1846, "level_percent": 66.46, "temperature_c": 4.05}, "fuel": {"pressure_kpa": 489, "level_percent": 43, "temperature_c": 27.76, "consumption_lh": 29.63}, "coolant": {"pressure_kpa": 1417, "level_percent": 86.03, "temperature_c": 40.85}, "hydraulic": {"pressure_kpa": 998.249, "level_percent": 33.58, "temperature_c": 7.68}}
+               7  PE218333                         7              4165                35.17                 23.04         1326.8                      7  {"oil": {"pressure_kpa": 814, "level_percent": 84.02, "temperature_c": 118.6}, "fuel": {"pressure_kpa": 693, "level_percent": 25, "temperature_c": 41.17, "consumption_lh": 33.54}, "coolant": {"pressure_kpa": 1630, "level_percent": 80.73, "temperature_c": -1.44}, "hydraulic": {"pressure_kpa": 912.930, "level_percent": 13.85, "temperature_c": 72.33}}
+               8  PE679897                         8              5881                14.15                142.02         2523.8                      8  {"oil": {"pressure_kpa": 2209, "level_percent": 14.9, "temperature_c": 72.39}, "fuel": {"pressure_kpa": 808, "level_percent": 34, "temperature_c": 21.33, "consumption_lh": 25.80}, "coolant": {"pressure_kpa": 1882, "level_percent": 51.73, "temperature_c": 81.27}, "hydraulic": {"pressure_kpa": 1918.400, "level_percent": 15.29, "temperature_c": 80.77}}
+...
+
+CREATE TABLE "equipment" (
+equipmentcode text(50) NOT NULL,
+equipmenttype TEXT NULL,
+equipmentmodel text(80) NULL,
+manufacturer text(120) NULL,
+servicelifeyears integer(16) NULL,
+equipmentutilizationpercent real(5,2) NULL,
+reliabilityindex real(6,3) NULL,
+performanceindex real(7,2) NULL,
+efficiencyindex integer(24) NULL,
+safetyindex real(5,3) NULL,
+environmentalimpactindex integer(53) NULL,
+    PRIMARY KEY (equipmentcode)
+);
+First 3 rows:
+equipmentcode    equipmenttype    equipmentmodel    manufacturer                servicelifeyears    equipmentutilizationpercent    reliabilityindex    performanceindex    efficiencyindex    safetyindex    environmentalimpactindex
+PE593707         Shelter          Model-925         Lee, Meyers and Hamilton                   4                             53                97.8                72.8               47.1           75.9                        36.7
+PE292528         Scientific       Model-454         Wiggins Inc                                6                             60                97.7                48.8               72.2           35.9                        74.7
+PE617633         Safety           Model-456         Graves-Cox                                10                             81                97                  93                 36.8           34.6                        87.3
+...
+
+CREATE TABLE "lightingandsafety" (
+lightregistry integer(32) NOT NULL,
+lighteqref text(70) NOT NULL,
+lightingstatus TEXT NULL,
+lightingintensitypercent real(5,2) NULL,
+externallightstatus TEXT NULL,
+emergencylightstatus TEXT NULL,
+emergencystopstatus TEXT NULL,
+alarmstatus TEXT NULL,
+safetysystemstatus TEXT NULL,
+lifesupportstatus TEXT NULL,
+oxygensupplystatus TEXT NULL,
+medicalequipmentstatus TEXT NULL,
+wastemanagementstatus TEXT NULL,
+watersupplystatus TEXT NULL,
+safetysensors TEXT NULL,
+    PRIMARY KEY (lightregistry),
+    FOREIGN KEY (lighteqref) REFERENCES equipment(equipmentcode)
+);
+First 3 rows:
+  lightregistry  lighteqref    lightingstatus      lightingintensitypercent  externallightstatus    emergencylightstatus    emergencystopstatus    alarmstatus    safetysystemstatus    lifesupportstatus    oxygensupplystatus    medicalequipmentstatus    wastemanagementstatus    watersupplystatus    safetysensors
+             11  PE408827      On                                     12.66  Auto                   On                      Ready                  Critical       Active                Critical             Critical              Critical                  Critical                 Warning              {"co_detection": "Alert", "gas_detection": "Fault", "fire_detection": "Normal", "smoke_detection": "Normal"}
+             12  PE857355      Auto                                   57.96  On                     Testing                 Reset                  Warning        Standby               Warning              Warning               Critical                  Warning                  Critical             {"co_detection": "Normal", "gas_detection": "Alert", "fire_detection": "Normal", "smoke_detection": "Normal"}
+             13  PE527247      Auto                                   69.75  Off                    Testing                 Activated              Warning        Active                Normal               Critical              Critical                  Warning                  Warning              {"co_detection": "Fault", "gas_detection": "Normal", "fire_detection": "Alert", "smoke_detection": "Normal"}
+...
+
+CREATE TABLE "location" (
+locationregistry integer(32) NOT NULL,
+loceqref text(70) NOT NULL,
+Timestamp text(6) NULL,
+stationname TEXT NULL,
+locationtype TEXT NULL,
+latitude real(9,6) NULL,
+longitude real(9,6) NULL,
+altitudem real(7,2) NULL,
+    PRIMARY KEY (locationregistry),
+    FOREIGN KEY (loceqref) REFERENCES equipment(equipmentcode)
+);
+First 3 rows:
+  locationregistry  loceqref    Timestamp                   stationname    locationtype      latitude    longitude    altitudem
+                 1  PE593707    2024-10-29 17:30:55.954446  Station-14     Arctic             80.2552    -146.258        2054.5
+                 2  PE292528    2024-03-28 10:51:42.955464  Station-8      Antarctic         -61.9982    -153.401        1343.9
+                 3  PE617633    2024-02-23 01:26:41.955464  Station-19     Arctic             76.0172     -10.7953        479.1
+...
+
+CREATE TABLE "operationmaintenance" (
+opmaintregistry integer(32) NOT NULL,
+opmainteqref text(60) NOT NULL,
+opmaintlocref integer(32) NULL,
+operationhours real(8,3) NULL,
+maintenancecyclehours real(7,2) NULL,
+lastmaintenancedate TEXT NULL,
+nextmaintenancedue TEXT NULL,
+operationalstatus TEXT NULL,
+crewcertificationstatus TEXT NULL,
+inspectionstatus TEXT NULL,
+compliancestatus TEXT NULL,
+documentationstatus TEXT NULL,
+opmaintcommref integer(32) NULL,
+costmetrics TEXT NULL,
+    PRIMARY KEY (opmaintregistry),
+    FOREIGN KEY (opmaintlocref) REFERENCES location(locationregistry),
+    FOREIGN KEY (opmainteqref) REFERENCES equipment(equipmentcode)
+);
+First 3 rows:
+  opmaintregistry  opmainteqref      opmaintlocref    operationhours    maintenancecyclehours  lastmaintenancedate    nextmaintenancedue    operationalstatus    crewcertificationstatus    inspectionstatus    compliancestatus    documentationstatus      opmaintcommref  costmetrics
+               11  PE408827                     11             40995                     2464  2024-10-20             2025-06-15            Storage              Pending                    Passed              Review              Updated                              11  {"repair_usd": 6.280, "operating_usd": 555.1800, "maintenance_usd": 1280.47}
+               12  PE857355                     12             37690                     3498  2024-08-06             2025-08-07            Standby              Pending                    Failed              Compliant           Incomplete                           12  {"repair_usd": 4076.160, "operating_usd": 966.7500, "maintenance_usd": 7214.73}
+               13  PE527247                     13             41658                     2567  2024-04-19             2025-09-19            Active               Expired                    Passed              Review              Updated                              13  {"repair_usd": 1148.470, "operating_usd": 454.0600, "maintenance_usd": 9523.28}
+...
+
+CREATE TABLE "powerbattery" (
+powerbattregistry integer(32) NOT NULL,
+pwrbatteqref text(70) NOT NULL,
+powerstatus TEXT NULL,
+powersource TEXT NULL,
+chargingstatus TEXT NULL,
+powerconsumptionw real(10,4) NULL,
+energyefficiencypercent real(6,3) NULL,
+batterystatus TEXT NULL,
+    PRIMARY KEY (powerbattregistry),
+    FOREIGN KEY (pwrbatteqref) REFERENCES equipment(equipmentcode)
+);
+First 3 rows:
+  powerbattregistry  pwrbatteqref    powerstatus    powersource    chargingstatus      powerconsumptionw    energyefficiencypercent  batterystatus
+                 11  PE408827        Sleep          Wind           Error                          4417.7                       89    {"cycles": 270, "current_a": 16.230, "voltage_v": 27.00, "level_percent": 78.00, "temperature_c": 8.6, "health_percent": 64.0}
+                 12  PE857355        On             Solar          Not Charging                   1211                         83.6  {"cycles": 240, "current_a": 4.300, "voltage_v": 20.70, "level_percent": 58.00, "temperature_c": -38.3, "health_percent": 95.0}
+                 13  PE527247        Sleep          Battery        Full                           4060.3                       83.7  {"cycles": 681, "current_a": 26.460, "voltage_v": 45.80, "level_percent": 45.00, "temperature_c": 8.9, "health_percent": 73.0}
+...
+
+CREATE TABLE "scientific" (
+sciregistry integer(32) NOT NULL,
+scieqref text(70) NOT NULL,
+scientificequipmentstatus TEXT NULL,
+dataloggingstatus TEXT NULL,
+sensorstatus TEXT NULL,
+calibrationstatus TEXT NULL,
+measurementaccuracypercent integer(24) NULL,
+    PRIMARY KEY (sciregistry),
+    FOREIGN KEY (scieqref) REFERENCES equipment(equipmentcode)
+);
+First 3 rows:
+  sciregistry  scieqref    scientificequipmentstatus    dataloggingstatus    sensorstatus    calibrationstatus      measurementaccuracypercent
+            1  PE593707    Standby                      Active               Error           Valid                                       99.55
+            2  PE292528    Operating                    Active               Error           Due                                         69.64
+            3  PE617633    Fault                        Paused               Error           Due                                         89.82
+...
+
+CREATE TABLE "thermalsolarwindandgrid" (
+thermalregistry integer(32) NOT NULL,
+thermaleqref text(70) NOT NULL,
+thermalcommref integer(32) NULL,
+thermalimagingstatus TEXT NULL,
+insulationstatus TEXT NULL,
+heatlossratekwh real(8,3) NULL,
+solarpanelstatus TEXT NULL,
+windturbinestatus TEXT NULL,
+powergridstatus TEXT NULL,
+powerqualityindex real(5,2) NULL,
+backuppowerstatus TEXT NULL,
+fuelcellstatus TEXT NULL,
+fuelcelloutputw integer(53) NULL,
+fuelcellefficiencypercent real(4,1) NULL,
+hydrogenlevelpercent real(5,2) NULL,
+oxygenlevelpercent real(5,2) NULL,
+thermalpowerref integer(32) NULL,
+renewablemetrics TEXT NULL,
+    PRIMARY KEY (thermalregistry),
+    FOREIGN KEY (thermalpowerref) REFERENCES powerbattery(powerbattregistry),
+    FOREIGN KEY (thermaleqref) REFERENCES equipment(equipmentcode),
+    FOREIGN KEY (thermalcommref) REFERENCES communication(commregistry)
+);
+First 3 rows:
+  thermalregistry  thermaleqref      thermalcommref  thermalimagingstatus    insulationstatus      heatlossratekwh  solarpanelstatus    windturbinestatus    powergridstatus      powerqualityindex  backuppowerstatus    fuelcellstatus      fuelcelloutputw    fuelcellefficiencypercent    hydrogenlevelpercent    oxygenlevelpercent    thermalpowerref  renewablemetrics
+                1  PE593707                       1  Warning                 Fair                          217.463  Fault               Fault                Island Mode                      40.52  Standby              Operating                   1955.39                         37.1                   75.78                 71.61                  1  {"wind": {"rpm": 1003, "output_w": 2248.84}, "solar": {"output_w": 1242.15, "temperature_c": 18.4, "efficiency_percent": 92.49}}
+                2  PE292528                       2  Critical                Fair                           85.729  Inactive            Fault                Disconnected                     24.28  Fault                Standby                     2000.46                         17.7                   73.37                 12.81                  2  {"wind": {"rpm": 138, "output_w": 479.67}, "solar": {"output_w": 1871.41, "temperature_c": 28.59, "efficiency_percent": 18.84}}
+                3  PE617633                       3  Warning                 Fair                          389.506  Inactive            Fault                Connected                        73.26  Active               Fault                       1364.44                         79.6                   42.42                 96.97                  3  {"wind": {"rpm": 1657, "output_w": 1840.21}, "solar": {"output_w": 1879.54, "temperature_c": 7.89, "efficiency_percent": 77.20}}
+...
+
+CREATE TABLE "transmission" (
+transregistry integer(32) NOT NULL,
+transeqref text(70) NOT NULL,
+transengfluidsref integer(32) NULL,
+transmissiontemperaturec integer(24) NULL,
+transmissionpressurekpa real(8,2) NULL,
+transmissiongear integer(16) NULL,
+differentialtemperaturec integer(53) NULL,
+axletemperaturec integer(53) NULL,
+transopmaintref integer(32) NULL,
+    PRIMARY KEY (transregistry),
+    FOREIGN KEY (transeqref) REFERENCES equipment(equipmentcode),
+    FOREIGN KEY (transengfluidsref) REFERENCES engineandfluids(engineregistry)
+);
+First 3 rows:
+  transregistry  transeqref      transengfluidsref    transmissiontemperaturec    transmissionpressurekpa    transmissiongear    differentialtemperaturec    axletemperaturec    transopmaintref
+              1  PE593707                        1                       92.72                    1894.1                    2                       75.48               80.12                  1
+              2  PE292528                        2                       -4.57                     199.45                   5                       80.86               14.15                  2
+              3  PE617633                        3                       15.63                    1960.08                   5                       53.04               27.9                   3
+...
+
+CREATE TABLE "waterandwaste" (
+waterregistry integer(32) NOT NULL,
+watereqref text(70) NOT NULL,
+waterlevelpercent integer(24) NULL,
+waterpressurekpa real(7,2) NULL,
+watertemperaturec integer(53) NULL,
+waterflowlpm real(8,3) NULL,
+waterqualityindex integer(32) NULL,
+wastetanklevelpercent real(5,2) NULL,
+    PRIMARY KEY (waterregistry),
+    FOREIGN KEY (watereqref) REFERENCES equipment(equipmentcode)
+);
+First 3 rows:
+  waterregistry  watereqref      waterlevelpercent    waterpressurekpa    watertemperaturec    waterflowlpm    waterqualityindex    wastetanklevelpercent
+              1  PE593707                    90.6               770.75                58.91         545.036                  515                    41.95
+              2  PE292528                    86.42              445.38                55.67         246.775                  536                    91.48
+              3  PE617633                    18.27              311.86                45.63         103.735                  358                    57.47
+...
+
+CREATE TABLE "weatherandstructure" (
+weatherregistry integer(32) NOT NULL,
+weatherlocref integer(32) NOT NULL,
+externaltemperaturec integer(24) NULL,
+windspeedms integer(53) NULL,
+winddirectiondegrees real(5,1) NULL,
+barometricpressurehpa real(7,2) NULL,
+solarradiationwm2 real(8,3) NULL,
+snowdepthcm integer(16) NULL,
+icethicknesscm real(5,2) NULL,
+visibilitykm integer(24) NULL,
+precipitationtype TEXT NULL,
+precipitationratemmh real(7,3) NULL,
+snowloadkgm2 integer(32) NULL,
+structuralloadpercent integer(24) NULL,
+structuralintegritystatus TEXT NULL,
+vibrationlevelmms2 integer(53) NULL,
+noiseleveldb real(7,2) NULL,
+weatheropmaintref integer(32) NULL,
+    PRIMARY KEY (weatherregistry),
+    FOREIGN KEY (weatheropmaintref) REFERENCES operationmaintenance(opmaintregistry),
+    FOREIGN KEY (weatherlocref) REFERENCES location(locationregistry)
+);
+First 3 rows:
+  weatherregistry    weatherlocref    externaltemperaturec    windspeedms    winddirectiondegrees    barometricpressurehpa    solarradiationwm2    snowdepthcm    icethicknesscm    visibilitykm  precipitationtype      precipitationratemmh    snowloadkgm2    structuralloadpercent  structuralintegritystatus      vibrationlevelmms2    noiseleveldb    weatheropmaintref
+                1                1                   29.3           17.79                   283.6                  1010.05              1042.88             39             66.7            26.05  Blowing Snow                         19.019             982                    87.62  Normal                                       1.3           143.46                    1
+                2                2                  -20.46           3.45                   345.6                   874.25               473.6               0             82.66           28.1   Ice                                  36.991             812                    25.94  Normal                                       5.47           67.66                    2
+                3                3                   48.98          26.83                   303.4                  1089.8               1468.84             39             13.51           17.6   Blowing Snow                         63.237             644                    18.24  Critical                                    45.38           71.17                    3
+...

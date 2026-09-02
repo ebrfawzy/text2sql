@@ -1,0 +1,19 @@
+{# version: v1, description: reversed schema linking — question + schema → SQL, whose entities are the link #}
+Write a {{ dialect }} query for the question using this schema
+
+Schema
+{{ schema }}
+{% if knowledge %}
+
+Domain terms used in this database
+{% for e in knowledge %}
+- {{ e.knowledge }}: {{ e.description }}
+{% if knowledge_full %}
+  Definition: {{ e.definition }}
+{% endif %}
+{% endfor %}
+{% endif %}
+
+Question: {{ question }}
+
+Return ONLY the SQL query

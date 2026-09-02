@@ -1,0 +1,5516 @@
+{
+  "version": 1,
+  "profiled_at": "2026-08-30T12:03:59.173618+00:00",
+  "columns": {
+    "mental_template|assessmentbasics|abkey": {
+      "table_name": "assessmentbasics",
+      "column_name": "abkey",
+      "column_type": "TEXT(30)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "A100162",
+      "max_value": "A999743",
+      "top_k_values": [
+        {
+          "value": "A100162",
+          "count": 1
+        },
+        {
+          "value": "A100700",
+          "count": 1
+        },
+        {
+          "value": "A101440",
+          "count": 1
+        },
+        {
+          "value": "A101789",
+          "count": 1
+        },
+        {
+          "value": "A101817",
+          "count": 1
+        },
+        {
+          "value": "A102174",
+          "count": 1
+        },
+        {
+          "value": "A103555",
+          "count": 1
+        },
+        {
+          "value": "A103737",
+          "count": 1
+        },
+        {
+          "value": "A106187",
+          "count": 1
+        },
+        {
+          "value": "A107023",
+          "count": 1
+        }
+      ],
+      "min_length": 7,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "ADDDDDD"
+      ]
+    },
+    "mental_template|assessmentbasics|atype": {
+      "table_name": "assessmentbasics",
+      "column_name": "atype",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 4,
+      "min_value": "Emergency",
+      "max_value": "Routine",
+      "top_k_values": [
+        {
+          "value": "Routine",
+          "count": 256
+        },
+        {
+          "value": "Follow-up",
+          "count": 255
+        },
+        {
+          "value": "Emergency",
+          "count": 249
+        },
+        {
+          "value": "Initial",
+          "count": 239
+        }
+      ],
+      "min_length": 7,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAA-AA",
+        "AAAAAAAAA"
+      ]
+    },
+    "mental_template|assessmentbasics|amethod": {
+      "table_name": "assessmentbasics",
+      "column_name": "amethod",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 4,
+      "min_value": "In-person",
+      "max_value": "Telehealth",
+      "top_k_values": [
+        {
+          "value": "Telehealth",
+          "count": 277
+        },
+        {
+          "value": "Self-report",
+          "count": 255
+        },
+        {
+          "value": "Phone",
+          "count": 241
+        },
+        {
+          "value": "In-person",
+          "count": 226
+        }
+      ],
+      "min_length": 5,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAAA",
+        "AAAA-AAAAAA",
+        "AAAAA",
+        "AA-AAAAAA"
+      ]
+    },
+    "mental_template|assessmentbasics|adurmin": {
+      "table_name": "assessmentbasics",
+      "column_name": "adurmin",
+      "column_type": "INTEGER",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 106,
+      "min_value": "100",
+      "max_value": "99",
+      "top_k_values": [
+        {
+          "value": "24",
+          "count": 18
+        },
+        {
+          "value": "108",
+          "count": 17
+        },
+        {
+          "value": "66",
+          "count": 16
+        },
+        {
+          "value": "119",
+          "count": 15
+        },
+        {
+          "value": "89",
+          "count": 15
+        },
+        {
+          "value": "70",
+          "count": 15
+        },
+        {
+          "value": "43",
+          "count": 15
+        },
+        {
+          "value": "97",
+          "count": 14
+        },
+        {
+          "value": "65",
+          "count": 14
+        },
+        {
+          "value": "53",
+          "count": 14
+        }
+      ],
+      "min_length": 2,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "DDD"
+      ]
+    },
+    "mental_template|assessmentbasics|alang": {
+      "table_name": "assessmentbasics",
+      "column_name": "alang",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 5,
+      "min_value": "Chinese",
+      "max_value": "Spanish",
+      "top_k_values": [
+        {
+          "value": "Other",
+          "count": 218
+        },
+        {
+          "value": "French",
+          "count": 205
+        },
+        {
+          "value": "English",
+          "count": 202
+        },
+        {
+          "value": "Spanish",
+          "count": 190
+        },
+        {
+          "value": "Chinese",
+          "count": 184
+        }
+      ],
+      "min_length": 5,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAA",
+        "AAAAAA"
+      ]
+    },
+    "mental_template|assessmentbasics|avalid": {
+      "table_name": "assessmentbasics",
+      "column_name": "avalid",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 3,
+      "min_value": "Invalid",
+      "max_value": "Valid",
+      "top_k_values": [
+        {
+          "value": "Questionable",
+          "count": 358
+        },
+        {
+          "value": "Valid",
+          "count": 322
+        },
+        {
+          "value": "Invalid",
+          "count": 319
+        }
+      ],
+      "min_length": 5,
+      "max_length": 12,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAAAAA",
+        "AAAAA",
+        "AAAAAAA"
+      ]
+    },
+    "mental_template|assessmentbasics|respconsist": {
+      "table_name": "assessmentbasics",
+      "column_name": "respconsist",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 3,
+      "min_value": "High",
+      "max_value": "Medium",
+      "top_k_values": [
+        {
+          "value": "High",
+          "count": 348
+        },
+        {
+          "value": "Low",
+          "count": 342
+        },
+        {
+          "value": "Medium",
+          "count": 309
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAA",
+        "AAAAAA"
+      ]
+    },
+    "mental_template|assessmentbasics|symptvalid": {
+      "table_name": "assessmentbasics",
+      "column_name": "symptvalid",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 3,
+      "min_value": "Invalid",
+      "max_value": "Valid",
+      "top_k_values": [
+        {
+          "value": "Invalid",
+          "count": 340
+        },
+        {
+          "value": "Questionable",
+          "count": 339
+        },
+        {
+          "value": "Valid",
+          "count": 320
+        }
+      ],
+      "min_length": 5,
+      "max_length": 12,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAAAAAAAA",
+        "AAAAA"
+      ]
+    },
+    "mental_template|assessmentbasics|patownerref": {
+      "table_name": "assessmentbasics",
+      "column_name": "patownerref",
+      "column_type": "TEXT(20)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "P100972",
+      "max_value": "P999958",
+      "top_k_values": [
+        {
+          "value": "P999958",
+          "count": 1
+        },
+        {
+          "value": "P999366",
+          "count": 1
+        },
+        {
+          "value": "P998939",
+          "count": 1
+        },
+        {
+          "value": "P998903",
+          "count": 1
+        },
+        {
+          "value": "P998668",
+          "count": 1
+        },
+        {
+          "value": "P998398",
+          "count": 1
+        },
+        {
+          "value": "P996826",
+          "count": 1
+        },
+        {
+          "value": "P996588",
+          "count": 1
+        },
+        {
+          "value": "P996262",
+          "count": 1
+        },
+        {
+          "value": "P996149",
+          "count": 1
+        }
+      ],
+      "min_length": 7,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "ADDDDDD"
+      ]
+    },
+    "mental_template|assessmentsocialanddiagnosis|asdkey": {
+      "table_name": "assessmentsocialanddiagnosis",
+      "column_name": "asdkey",
+      "column_type": "TEXT(30)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "A100162",
+      "max_value": "A999743",
+      "top_k_values": [
+        {
+          "value": "A100162",
+          "count": 1
+        },
+        {
+          "value": "A100700",
+          "count": 1
+        },
+        {
+          "value": "A101440",
+          "count": 1
+        },
+        {
+          "value": "A101789",
+          "count": 1
+        },
+        {
+          "value": "A101817",
+          "count": 1
+        },
+        {
+          "value": "A102174",
+          "count": 1
+        },
+        {
+          "value": "A103555",
+          "count": 1
+        },
+        {
+          "value": "A103737",
+          "count": 1
+        },
+        {
+          "value": "A106187",
+          "count": 1
+        },
+        {
+          "value": "A107023",
+          "count": 1
+        }
+      ],
+      "min_length": 7,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "ADDDDDD"
+      ]
+    },
+    "mental_template|assessmentsocialanddiagnosis|recstatus": {
+      "table_name": "assessmentsocialanddiagnosis",
+      "column_name": "recstatus",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 4,
+      "min_value": "Advanced",
+      "max_value": "Stable",
+      "top_k_values": [
+        {
+          "value": "Stable",
+          "count": 265
+        },
+        {
+          "value": "Relapse",
+          "count": 251
+        },
+        {
+          "value": "Early",
+          "count": 250
+        },
+        {
+          "value": "Advanced",
+          "count": 233
+        }
+      ],
+      "min_length": 5,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AAAAAAA",
+        "AAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "mental_template|assessmentsocialanddiagnosis|socsup": {
+      "table_name": "assessmentsocialanddiagnosis",
+      "column_name": "socsup",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 3,
+      "min_value": "Limited",
+      "max_value": "Strong",
+      "top_k_values": [
+        {
+          "value": "Limited",
+          "count": 499
+        },
+        {
+          "value": "Moderate",
+          "count": 261
+        },
+        {
+          "value": "Strong",
+          "count": 239
+        }
+      ],
+      "min_length": 6,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAAAA",
+        "AAAAAA"
+      ]
+    },
+    "mental_template|assessmentsocialanddiagnosis|faminv": {
+      "table_name": "assessmentsocialanddiagnosis",
+      "column_name": "faminv",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 3,
+      "min_value": "High",
+      "max_value": "Medium",
+      "top_k_values": [
+        {
+          "value": "Low",
+          "count": 500
+        },
+        {
+          "value": "Medium",
+          "count": 250
+        },
+        {
+          "value": "High",
+          "count": 249
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAA",
+        "AAAAAA",
+        "AAAA"
+      ]
+    },
+    "mental_template|assessmentsocialanddiagnosis|relqual": {
+      "table_name": "assessmentsocialanddiagnosis",
+      "column_name": "relqual",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 4,
+      "min_value": "Conflicted",
+      "max_value": "Poor",
+      "top_k_values": [
+        {
+          "value": "Poor",
+          "count": 264
+        },
+        {
+          "value": "Fair",
+          "count": 257
+        },
+        {
+          "value": "Conflicted",
+          "count": 240
+        },
+        {
+          "value": "Good",
+          "count": 238
+        }
+      ],
+      "min_length": 4,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAAAAAAAAA"
+      ]
+    },
+    "mental_template|assessmentsocialanddiagnosis|workfunc": {
+      "table_name": "assessmentsocialanddiagnosis",
+      "column_name": "workfunc",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 4,
+      "min_value": "Disabled",
+      "max_value": "Poor",
+      "top_k_values": [
+        {
+          "value": "Poor",
+          "count": 266
+        },
+        {
+          "value": "Good",
+          "count": 255
+        },
+        {
+          "value": "Disabled",
+          "count": 246
+        },
+        {
+          "value": "Fair",
+          "count": 232
+        }
+      ],
+      "min_length": 4,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "mental_template|assessmentsocialanddiagnosis|socfunc": {
+      "table_name": "assessmentsocialanddiagnosis",
+      "column_name": "socfunc",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 4,
+      "min_value": "Fair",
+      "max_value": "Poor",
+      "top_k_values": [
+        {
+          "value": "Fair",
+          "count": 252
+        },
+        {
+          "value": "Good",
+          "count": 250
+        },
+        {
+          "value": "Poor",
+          "count": 249
+        },
+        {
+          "value": "Isolated",
+          "count": 248
+        }
+      ],
+      "min_length": 4,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "mental_template|assessmentsocialanddiagnosis|adlfunc": {
+      "table_name": "assessmentsocialanddiagnosis",
+      "column_name": "adlfunc",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 4,
+      "min_value": "Dependent",
+      "max_value": "Moderate Help",
+      "top_k_values": [
+        {
+          "value": "Moderate Help",
+          "count": 259
+        },
+        {
+          "value": "Minimal Help",
+          "count": 255
+        },
+        {
+          "value": "Dependent",
+          "count": 244
+        },
+        {
+          "value": "Independent",
+          "count": 241
+        }
+      ],
+      "min_length": 9,
+      "max_length": 13,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA AAAA",
+        "AAAAAAA AAAA",
+        "AAAAAAAAA",
+        "AAAAAAAAAAA"
+      ]
+    },
+    "mental_template|assessmentsocialanddiagnosis|strslvl": {
+      "table_name": "assessmentsocialanddiagnosis",
+      "column_name": "strslvl",
+      "column_type": "REAL",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 10,
+      "min_value": "1.0",
+      "max_value": "9.0",
+      "top_k_values": [
+        {
+          "value": "3.0",
+          "count": 107
+        },
+        {
+          "value": "4.0",
+          "count": 103
+        },
+        {
+          "value": "1.0",
+          "count": 103
+        },
+        {
+          "value": "9.0",
+          "count": 102
+        },
+        {
+          "value": "8.0",
+          "count": 102
+        },
+        {
+          "value": "2.0",
+          "count": 101
+        },
+        {
+          "value": "6.0",
+          "count": 98
+        },
+        {
+          "value": "10.0",
+          "count": 97
+        },
+        {
+          "value": "7.0",
+          "count": 95
+        },
+        {
+          "value": "5.0",
+          "count": 91
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.D",
+        "DD.D"
+      ]
+    },
+    "mental_template|assessmentsocialanddiagnosis|copskill": {
+      "table_name": "assessmentsocialanddiagnosis",
+      "column_name": "copskill",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 4,
+      "min_value": "Fair",
+      "max_value": "Poor",
+      "top_k_values": [
+        {
+          "value": "Fair",
+          "count": 261
+        },
+        {
+          "value": "Good",
+          "count": 256
+        },
+        {
+          "value": "Poor",
+          "count": 248
+        },
+        {
+          "value": "Limited",
+          "count": 234
+        }
+      ],
+      "min_length": 4,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAAAAAA"
+      ]
+    },
+    "mental_template|assessmentsocialanddiagnosis|resscr": {
+      "table_name": "assessmentsocialanddiagnosis",
+      "column_name": "resscr",
+      "column_type": "REAL",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 10,
+      "min_value": "1.0",
+      "max_value": "9.0",
+      "top_k_values": [
+        {
+          "value": "10.0",
+          "count": 123
+        },
+        {
+          "value": "2.0",
+          "count": 114
+        },
+        {
+          "value": "9.0",
+          "count": 110
+        },
+        {
+          "value": "7.0",
+          "count": 105
+        },
+        {
+          "value": "6.0",
+          "count": 99
+        },
+        {
+          "value": "4.0",
+          "count": 98
+        },
+        {
+          "value": "3.0",
+          "count": 94
+        },
+        {
+          "value": "5.0",
+          "count": 92
+        },
+        {
+          "value": "1.0",
+          "count": 87
+        },
+        {
+          "value": "8.0",
+          "count": 77
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.D",
+        "DD.D"
+      ]
+    },
+    "mental_template|assessmentsocialanddiagnosis|inlevel": {
+      "table_name": "assessmentsocialanddiagnosis",
+      "column_name": "inlevel",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 3,
+      "min_value": "Fair",
+      "max_value": "Poor",
+      "top_k_values": [
+        {
+          "value": "Fair",
+          "count": 488
+        },
+        {
+          "value": "Good",
+          "count": 269
+        },
+        {
+          "value": "Poor",
+          "count": 242
+        }
+      ],
+      "min_length": 4,
+      "max_length": 4,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAA"
+      ]
+    },
+    "mental_template|assessmentsocialanddiagnosis|motivlevel": {
+      "table_name": "assessmentsocialanddiagnosis",
+      "column_name": "motivlevel",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 3,
+      "min_value": "High",
+      "max_value": "Medium",
+      "top_k_values": [
+        {
+          "value": "Medium",
+          "count": 486
+        },
+        {
+          "value": "Low",
+          "count": 264
+        },
+        {
+          "value": "High",
+          "count": 249
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AAA",
+        "AAAA"
+      ]
+    },
+    "mental_template|assessmentsocialanddiagnosis|primdx": {
+      "table_name": "assessmentsocialanddiagnosis",
+      "column_name": "primdx",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 5,
+      "min_value": "Anxiety",
+      "max_value": "Schizophrenia",
+      "top_k_values": [
+        {
+          "value": "PTSD",
+          "count": 220
+        },
+        {
+          "value": "Schizophrenia",
+          "count": 201
+        },
+        {
+          "value": "Bipolar",
+          "count": 199
+        },
+        {
+          "value": "Anxiety",
+          "count": 198
+        },
+        {
+          "value": "Depression",
+          "count": 181
+        }
+      ],
+      "min_length": 4,
+      "max_length": 13,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAA",
+        "AAAAAAAAAAAAA",
+        "AAAAAAAAAA"
+      ]
+    },
+    "mental_template|assessmentsocialanddiagnosis|secdx": {
+      "table_name": "assessmentsocialanddiagnosis",
+      "column_name": "secdx",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 4,
+      "min_value": "Eating Disorder",
+      "max_value": "Substance Use",
+      "top_k_values": [
+        {
+          "value": "OCD",
+          "count": 399
+        },
+        {
+          "value": "Personality Disorder",
+          "count": 211
+        },
+        {
+          "value": "Eating Disorder",
+          "count": 199
+        },
+        {
+          "value": "Substance Use",
+          "count": 190
+        }
+      ],
+      "min_length": 3,
+      "max_length": 20,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAA",
+        "AAAAAAAAAAA AAAAAAAA",
+        "AAAAAA AAAAAAAA",
+        "AAAAAAAAA AAA"
+      ]
+    },
+    "mental_template|assessmentsocialanddiagnosis|dxdurm": {
+      "table_name": "assessmentsocialanddiagnosis",
+      "column_name": "dxdurm",
+      "column_type": "INTEGER",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 239,
+      "min_value": "0",
+      "max_value": "99",
+      "top_k_values": [
+        {
+          "value": "45",
+          "count": 12
+        },
+        {
+          "value": "120",
+          "count": 10
+        },
+        {
+          "value": "118",
+          "count": 10
+        },
+        {
+          "value": "63",
+          "count": 9
+        },
+        {
+          "value": "46",
+          "count": 9
+        },
+        {
+          "value": "233",
+          "count": 8
+        },
+        {
+          "value": "188",
+          "count": 8
+        },
+        {
+          "value": "166",
+          "count": 8
+        },
+        {
+          "value": "68",
+          "count": 8
+        },
+        {
+          "value": "225",
+          "count": 7
+        }
+      ],
+      "min_length": 1,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D"
+      ]
+    },
+    "mental_template|assessmentsocialanddiagnosis|prevhosp": {
+      "table_name": "assessmentsocialanddiagnosis",
+      "column_name": "prevhosp",
+      "column_type": "INTEGER",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 11,
+      "min_value": "0",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "7",
+          "count": 102
+        },
+        {
+          "value": "10",
+          "count": 101
+        },
+        {
+          "value": "9",
+          "count": 93
+        },
+        {
+          "value": "3",
+          "count": 93
+        },
+        {
+          "value": "1",
+          "count": 91
+        },
+        {
+          "value": "5",
+          "count": 90
+        },
+        {
+          "value": "4",
+          "count": 90
+        },
+        {
+          "value": "0",
+          "count": 90
+        },
+        {
+          "value": "2",
+          "count": 86
+        },
+        {
+          "value": "8",
+          "count": 85
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D",
+        "DD"
+      ]
+    },
+    "mental_template|assessmentsocialanddiagnosis|lasthospdt": {
+      "table_name": "assessmentsocialanddiagnosis",
+      "column_name": "lasthospdt",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 532,
+      "min_value": "2023-02-20",
+      "max_value": "2025-02-19",
+      "top_k_values": [
+        {
+          "value": "2024-08-24",
+          "count": 6
+        },
+        {
+          "value": "2024-07-16",
+          "count": 6
+        },
+        {
+          "value": "2024-05-31",
+          "count": 6
+        },
+        {
+          "value": "2023-05-28",
+          "count": 6
+        },
+        {
+          "value": "2024-09-12",
+          "count": 5
+        },
+        {
+          "value": "2024-01-04",
+          "count": 5
+        },
+        {
+          "value": "2023-04-08",
+          "count": 5
+        },
+        {
+          "value": "2025-02-13",
+          "count": 4
+        },
+        {
+          "value": "2025-01-19",
+          "count": 4
+        },
+        {
+          "value": "2024-12-13",
+          "count": 4
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDD-DD-DD"
+      ]
+    },
+    "mental_template|assessmentsocialanddiagnosis|qolscr": {
+      "table_name": "assessmentsocialanddiagnosis",
+      "column_name": "qolscr",
+      "column_type": "INTEGER",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 100,
+      "min_value": "1",
+      "max_value": "99",
+      "top_k_values": [
+        {
+          "value": "59",
+          "count": 17
+        },
+        {
+          "value": "58",
+          "count": 17
+        },
+        {
+          "value": "20",
+          "count": 17
+        },
+        {
+          "value": "49",
+          "count": 16
+        },
+        {
+          "value": "91",
+          "count": 14
+        },
+        {
+          "value": "82",
+          "count": 14
+        },
+        {
+          "value": "78",
+          "count": 14
+        },
+        {
+          "value": "66",
+          "count": 14
+        },
+        {
+          "value": "63",
+          "count": 14
+        },
+        {
+          "value": "2",
+          "count": 14
+        }
+      ],
+      "min_length": 1,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D",
+        "DDD"
+      ]
+    },
+    "mental_template|assessmentsocialanddiagnosis|funcimp": {
+      "table_name": "assessmentsocialanddiagnosis",
+      "column_name": "funcimp",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 3,
+      "min_value": "Mild",
+      "max_value": "Severe",
+      "top_k_values": [
+        {
+          "value": "Mild",
+          "count": 495
+        },
+        {
+          "value": "Severe",
+          "count": 252
+        },
+        {
+          "value": "Moderate",
+          "count": 252
+        }
+      ],
+      "min_length": 4,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "mental_template|assessmentsymptomsandrisk|asrkey": {
+      "table_name": "assessmentsymptomsandrisk",
+      "column_name": "asrkey",
+      "column_type": "TEXT(30)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "A100162",
+      "max_value": "A999743",
+      "top_k_values": [
+        {
+          "value": "A100162",
+          "count": 1
+        },
+        {
+          "value": "A100700",
+          "count": 1
+        },
+        {
+          "value": "A101440",
+          "count": 1
+        },
+        {
+          "value": "A101789",
+          "count": 1
+        },
+        {
+          "value": "A101817",
+          "count": 1
+        },
+        {
+          "value": "A102174",
+          "count": 1
+        },
+        {
+          "value": "A103555",
+          "count": 1
+        },
+        {
+          "value": "A103737",
+          "count": 1
+        },
+        {
+          "value": "A106187",
+          "count": 1
+        },
+        {
+          "value": "A107023",
+          "count": 1
+        }
+      ],
+      "min_length": 7,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "ADDDDDD"
+      ]
+    },
+    "mental_template|assessmentsymptomsandrisk|suicideation": {
+      "table_name": "assessmentsymptomsandrisk",
+      "column_name": "suicideation",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 4,
+      "min_value": "Active",
+      "max_value": "Plan",
+      "top_k_values": [
+        {
+          "value": "Passive",
+          "count": 375
+        },
+        {
+          "value": "Active",
+          "count": 216
+        },
+        {
+          "value": "Plan",
+          "count": 215
+        },
+        {
+          "value": "Intent",
+          "count": 193
+        }
+      ],
+      "min_length": 4,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AAAAAAA",
+        "AAAA"
+      ]
+    },
+    "mental_template|assessmentsymptomsandrisk|suicrisk": {
+      "table_name": "assessmentsymptomsandrisk",
+      "column_name": "suicrisk",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 4,
+      "min_value": "High",
+      "max_value": "Severe",
+      "top_k_values": [
+        {
+          "value": "High",
+          "count": 255
+        },
+        {
+          "value": "Low",
+          "count": 251
+        },
+        {
+          "value": "Medium",
+          "count": 248
+        },
+        {
+          "value": "Severe",
+          "count": 245
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AAAA",
+        "AAA"
+      ]
+    },
+    "mental_template|assessmentsymptomsandrisk|selfharm": {
+      "table_name": "assessmentsymptomsandrisk",
+      "column_name": "selfharm",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 3,
+      "min_value": "Current",
+      "max_value": "Recent",
+      "top_k_values": [
+        {
+          "value": "Past",
+          "count": 509
+        },
+        {
+          "value": "Current",
+          "count": 253
+        },
+        {
+          "value": "Recent",
+          "count": 237
+        }
+      ],
+      "min_length": 4,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAAAAAA",
+        "AAAAAA"
+      ]
+    },
+    "mental_template|assessmentsymptomsandrisk|violrisk": {
+      "table_name": "assessmentsymptomsandrisk",
+      "column_name": "violrisk",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 3,
+      "min_value": "High",
+      "max_value": "Medium",
+      "top_k_values": [
+        {
+          "value": "Medium",
+          "count": 343
+        },
+        {
+          "value": "Low",
+          "count": 339
+        },
+        {
+          "value": "High",
+          "count": 317
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AAA",
+        "AAAA"
+      ]
+    },
+    "mental_template|assessmentsymptomsandrisk|subuse": {
+      "table_name": "assessmentsymptomsandrisk",
+      "column_name": "subuse",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 4,
+      "min_value": "Alcohol",
+      "max_value": "Opioids",
+      "top_k_values": [
+        {
+          "value": "Alcohol",
+          "count": 404
+        },
+        {
+          "value": "Cannabis",
+          "count": 205
+        },
+        {
+          "value": "Opioids",
+          "count": 201
+        },
+        {
+          "value": "Multiple",
+          "count": 189
+        }
+      ],
+      "min_length": 7,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "mental_template|assessmentsymptomsandrisk|subusefreq": {
+      "table_name": "assessmentsymptomsandrisk",
+      "column_name": "subusefreq",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 4,
+      "min_value": "Daily",
+      "max_value": "Regular",
+      "top_k_values": [
+        {
+          "value": "Daily",
+          "count": 265
+        },
+        {
+          "value": "Never",
+          "count": 254
+        },
+        {
+          "value": "Regular",
+          "count": 250
+        },
+        {
+          "value": "Occasional",
+          "count": 230
+        }
+      ],
+      "min_length": 5,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAA",
+        "AAAAAAA",
+        "AAAAAAAAAA"
+      ]
+    },
+    "mental_template|assessmentsymptomsandrisk|subusesev": {
+      "table_name": "assessmentsymptomsandrisk",
+      "column_name": "subusesev",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 3,
+      "min_value": "Mild",
+      "max_value": "Severe",
+      "top_k_values": [
+        {
+          "value": "Mild",
+          "count": 491
+        },
+        {
+          "value": "Severe",
+          "count": 262
+        },
+        {
+          "value": "Moderate",
+          "count": 246
+        }
+      ],
+      "min_length": 4,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "mental_template|assessmentsymptomsandrisk|mental_health_scores": {
+      "table_name": "assessmentsymptomsandrisk",
+      "column_name": "mental_health_scores",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "{\"anxiety\": {\"gad7_score\": 0, \"gad7_severity\": \"Mild\"}, \"depression\": {\"phq9_score\": 0, \"phq9_severity\": \"Severe\"}, \"symptom_scores\": [3.0, 1.0, 4.0, 3.0, 10.0, 6.0, 10.0, 1.0]}",
+      "max_value": "{\"anxiety\": {\"gad7_score\": 9, \"gad7_severity\": \"Severe\"}, \"depression\": {\"phq9_score\": 9, \"phq9_severity\": \"Mild\"}, \"symptom_scores\": [1.0, 10.0, 2.0, 2.0, 8.0, 5.0, 8.0, 5.0]}",
+      "top_k_values": [
+        {
+          "value": "{\"anxiety\": {\"gad7_score\": 9, \"gad7_severity\": \"Severe\"}, \"depression\": {\"phq9_score\": 9, \"phq9_severity\": \"Mild\"}, \"symptom_scores\": [1.0, 10.0, 2.0, 2.0, 8.0, 5.0, 8.0, 5.0]}",
+          "count": 1
+        },
+        {
+          "value": "{\"anxiety\": {\"gad7_score\": 9, \"gad7_severity\": \"Severe\"}, \"depression\": {\"phq9_score\": 8, \"phq9_severity\": \"Moderate\"}, \"symptom_scores\": [6.0, 4.0, 5.0, 10.0, 5.0, 3.0, 9.0, 5.0]}",
+          "count": 1
+        },
+        {
+          "value": "{\"anxiety\": {\"gad7_score\": 9, \"gad7_severity\": \"Severe\"}, \"depression\": {\"phq9_score\": 6, \"phq9_severity\": \"Mild\"}, \"symptom_scores\": [2.0, 2.0, 4.0, 8.0, 6.0, 9.0, 5.0, 5.0]}",
+          "count": 1
+        },
+        {
+          "value": "{\"anxiety\": {\"gad7_score\": 9, \"gad7_severity\": \"Severe\"}, \"depression\": {\"phq9_score\": 3, \"phq9_severity\": \"Mild\"}, \"symptom_scores\": [5.0, 10.0, 2.0, 5.0, 9.0, 5.0, 6.0, 5.0]}",
+          "count": 1
+        },
+        {
+          "value": "{\"anxiety\": {\"gad7_score\": 9, \"gad7_severity\": \"Severe\"}, \"depression\": {\"phq9_score\": 27, \"phq9_severity\": \"Moderate\"}, \"symptom_scores\": [4.0, 8.0, 5.0, 6.0, 5.0, 1.0, 8.0, 8.0]}",
+          "count": 1
+        },
+        {
+          "value": "{\"anxiety\": {\"gad7_score\": 9, \"gad7_severity\": \"Severe\"}, \"depression\": {\"phq9_score\": 24, \"phq9_severity\": \"Moderate\"}, \"symptom_scores\": [7.0, 3.0, 3.0, 5.0, 9.0, 5.0, 3.0, 10.0]}",
+          "count": 1
+        },
+        {
+          "value": "{\"anxiety\": {\"gad7_score\": 9, \"gad7_severity\": \"Severe\"}, \"depression\": {\"phq9_score\": 24, \"phq9_severity\": \"Mild\"}, \"symptom_scores\": [1.0, 9.0, 4.0, 2.0, 3.0, 1.0, 7.0, 10.0]}",
+          "count": 1
+        },
+        {
+          "value": "{\"anxiety\": {\"gad7_score\": 9, \"gad7_severity\": \"Severe\"}, \"depression\": {\"phq9_score\": 22, \"phq9_severity\": \"Mild\"}, \"symptom_scores\": [3.0, 3.0, 9.0, 8.0, 9.0, 10.0, 4.0, 7.0]}",
+          "count": 1
+        },
+        {
+          "value": "{\"anxiety\": {\"gad7_score\": 9, \"gad7_severity\": \"Severe\"}, \"depression\": {\"phq9_score\": 19, \"phq9_severity\": \"Mild\"}, \"symptom_scores\": [7.0, 5.0, 8.0, 4.0, 10.0, 8.0, 7.0, 9.0]}",
+          "count": 1
+        },
+        {
+          "value": "{\"anxiety\": {\"gad7_score\": 9, \"gad7_severity\": \"Severe\"}, \"depression\": {\"phq9_score\": 17, \"phq9_severity\": \"Moderate\"}, \"symptom_scores\": [5.0, 9.0, 6.0, 2.0, 5.0, 10.0, 3.0, 6.0]}",
+          "count": 1
+        }
+      ],
+      "min_length": 173,
+      "max_length": 194,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "{\"AAAAAAA\": {\"AAAD_AAAAA\": DD, \"AAAD_AAAAAAAA\": \"AAAA\"}, \"AAAAAAAAAA\": {\"AAAD_AAAAA\": DD, \"AAAD_AAAAAAAA\": \"AAAA\"}, \"AAAAAAA_AAAAAA\": [D.D, D.D, D.D, D.D, D.D, D.D, D.D, D.D]}",
+        "{\"AAAAAAA\": {\"AAAD_AAAAA\": D, \"AAAD_AAAAAAAA\": \"AAAA\"}, \"AAAAAAAAAA\": {\"AAAD_AAAAA\": DD, \"AAAD_AAAAAAAA\": \"AAAA\"}, \"AAAAAAA_AAAAAA\": [D.D, D.D, D.D, D.D, D.D, D.D, D.D, D.D]}",
+        "{\"AAAAAAA\": {\"AAAD_AAAAA\": DD, \"AAAD_AAAAAAAA\": \"AAAAAAAA\"}, \"AAAAAAAAAA\": {\"AAAD_AAAAA\": DD, \"AAAD_AAAAAAAA\": \"AAAA\"}, \"AAAAAAA_AAAAAA\": [D.D, D.D, D.D, D.D, D.D, D.D, D.D, D.D]}",
+        "{\"AAAAAAA\": {\"AAAD_AAAAA\": DD, \"AAAD_AAAAAAAA\": \"AAAA\"}, \"AAAAAAAAAA\": {\"AAAD_AAAAA\": D, \"AAAD_AAAAAAAA\": \"AAAA\"}, \"AAAAAAA_AAAAAA\": [D.D, D.D, D.D, D.D, D.D, D.D, D.D, D.D]}",
+        "{\"AAAAAAA\": {\"AAAD_AAAAA\": DD, \"AAAD_AAAAAAAA\": \"AAAAAA\"}, \"AAAAAAAAAA\": {\"AAAD_AAAAA\": DD, \"AAAD_AAAAAAAA\": \"AAAA\"}, \"AAAAAAA_AAAAAA\": [D.D, D.D, D.D, D.D, D.D, D.D, D.D, D.D]}"
+      ]
+    },
+    "mental_template|assessmentsymptomsandrisk|mental_health_scores.anxiety.gad7_score": {
+      "table_name": "assessmentsymptomsandrisk",
+      "column_name": "mental_health_scores.anxiety.gad7_score",
+      "column_type": "JSON field",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 22,
+      "min_value": "0",
+      "max_value": "21",
+      "top_k_values": [
+        {
+          "value": "7",
+          "count": 65
+        },
+        {
+          "value": "15",
+          "count": 57
+        },
+        {
+          "value": "13",
+          "count": 54
+        },
+        {
+          "value": "12",
+          "count": 53
+        },
+        {
+          "value": "5",
+          "count": 52
+        },
+        {
+          "value": "21",
+          "count": 51
+        },
+        {
+          "value": "10",
+          "count": 51
+        },
+        {
+          "value": "8",
+          "count": 51
+        },
+        {
+          "value": "9",
+          "count": 50
+        },
+        {
+          "value": "17",
+          "count": 46
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D"
+      ]
+    },
+    "mental_template|assessmentsymptomsandrisk|mental_health_scores.anxiety.gad7_severity": {
+      "table_name": "assessmentsymptomsandrisk",
+      "column_name": "mental_health_scores.anxiety.gad7_severity",
+      "column_type": "JSON field",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 3,
+      "min_value": "Mild",
+      "max_value": "Severe",
+      "top_k_values": [
+        {
+          "value": "Mild",
+          "count": 489
+        },
+        {
+          "value": "Moderate",
+          "count": 271
+        },
+        {
+          "value": "Severe",
+          "count": 239
+        }
+      ],
+      "min_length": 4,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAAAAAAA",
+        "AAAAAA"
+      ]
+    },
+    "mental_template|assessmentsymptomsandrisk|mental_health_scores.depression.phq9_score": {
+      "table_name": "assessmentsymptomsandrisk",
+      "column_name": "mental_health_scores.depression.phq9_score",
+      "column_type": "JSON field",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 28,
+      "min_value": "0",
+      "max_value": "27",
+      "top_k_values": [
+        {
+          "value": "2",
+          "count": 55
+        },
+        {
+          "value": "10",
+          "count": 46
+        },
+        {
+          "value": "24",
+          "count": 43
+        },
+        {
+          "value": "22",
+          "count": 41
+        },
+        {
+          "value": "7",
+          "count": 41
+        },
+        {
+          "value": "4",
+          "count": 39
+        },
+        {
+          "value": "8",
+          "count": 39
+        },
+        {
+          "value": "14",
+          "count": 38
+        },
+        {
+          "value": "12",
+          "count": 36
+        },
+        {
+          "value": "19",
+          "count": 36
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D"
+      ]
+    },
+    "mental_template|assessmentsymptomsandrisk|mental_health_scores.depression.phq9_severity": {
+      "table_name": "assessmentsymptomsandrisk",
+      "column_name": "mental_health_scores.depression.phq9_severity",
+      "column_type": "JSON field",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 4,
+      "min_value": "Mild",
+      "max_value": "Severe",
+      "top_k_values": [
+        {
+          "value": "Mild",
+          "count": 422
+        },
+        {
+          "value": "Severe",
+          "count": 203
+        },
+        {
+          "value": "Moderate",
+          "count": 192
+        },
+        {
+          "value": "Moderately Severe",
+          "count": 182
+        }
+      ],
+      "min_length": 4,
+      "max_length": 17,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAAAAA",
+        "AAAAAAAA",
+        "AAAAAAAAAA AAAAAA"
+      ]
+    },
+    "mental_template|assessmentsymptomsandrisk|mental_health_scores.symptom_scores": {
+      "table_name": "assessmentsymptomsandrisk",
+      "column_name": "mental_health_scores.symptom_scores",
+      "column_type": "JSON field",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "[1.0, 1.0, 1.0, 2.0, 4.0, 8.0, 8.0, 4.0]",
+      "max_value": "[9.0, 9.0, 9.0, 1.0, 2.0, 5.0, 9.0, 3.0]",
+      "top_k_values": [
+        {
+          "value": "[3.0, 1.0, 6.0, 6.0, 7.0, 6.0, 1.0, 9.0]",
+          "count": 1
+        },
+        {
+          "value": "[8.0, 8.0, 3.0, 10.0, 6.0, 7.0, 1.0, 9.0]",
+          "count": 1
+        },
+        {
+          "value": "[6.0, 3.0, 5.0, 2.0, 2.0, 2.0, 10.0, 7.0]",
+          "count": 1
+        },
+        {
+          "value": "[10.0, 8.0, 10.0, 9.0, 10.0, 1.0, 5.0, 4.0]",
+          "count": 1
+        },
+        {
+          "value": "[7.0, 8.0, 3.0, 5.0, 3.0, 8.0, 8.0, 9.0]",
+          "count": 1
+        },
+        {
+          "value": "[5.0, 10.0, 9.0, 1.0, 9.0, 5.0, 10.0, 7.0]",
+          "count": 1
+        },
+        {
+          "value": "[8.0, 2.0, 4.0, 1.0, 2.0, 3.0, 10.0, 9.0]",
+          "count": 1
+        },
+        {
+          "value": "[8.0, 9.0, 1.0, 6.0, 3.0, 5.0, 8.0, 8.0]",
+          "count": 1
+        },
+        {
+          "value": "[4.0, 3.0, 10.0, 6.0, 7.0, 3.0, 9.0, 4.0]",
+          "count": 1
+        },
+        {
+          "value": "[1.0, 7.0, 8.0, 4.0, 8.0, 2.0, 2.0, 9.0]",
+          "count": 1
+        }
+      ],
+      "min_length": 40,
+      "max_length": 44,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "[D.D, D.D, D.D, D.D, D.D, D.D, D.D, D.D]",
+        "[D.D, D.D, D.D, DD.D, D.D, D.D, D.D, D.D]",
+        "[D.D, D.D, D.D, D.D, DD.D, D.D, D.D, D.D]",
+        "[D.D, D.D, D.D, D.D, D.D, D.D, D.D, DD.D]",
+        "[D.D, D.D, DD.D, D.D, D.D, D.D, D.D, D.D]"
+      ]
+    },
+    "mental_template|clinicians|clinkey": {
+      "table_name": "clinicians",
+      "column_name": "clinkey",
+      "column_type": "TEXT(20)",
+      "row_count": 941,
+      "null_count": 0,
+      "non_null_count": 941,
+      "distinct_count": 941,
+      "min_value": "C1014",
+      "max_value": "C9995",
+      "top_k_values": [
+        {
+          "value": "C1014",
+          "count": 1
+        },
+        {
+          "value": "C1050",
+          "count": 1
+        },
+        {
+          "value": "C1080",
+          "count": 1
+        },
+        {
+          "value": "C1094",
+          "count": 1
+        },
+        {
+          "value": "C1099",
+          "count": 1
+        },
+        {
+          "value": "C1100",
+          "count": 1
+        },
+        {
+          "value": "C1109",
+          "count": 1
+        },
+        {
+          "value": "C1116",
+          "count": 1
+        },
+        {
+          "value": "C1123",
+          "count": 1
+        },
+        {
+          "value": "C1138",
+          "count": 1
+        }
+      ],
+      "min_length": 5,
+      "max_length": 5,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "ADDDD"
+      ]
+    },
+    "mental_template|clinicians|clinconf": {
+      "table_name": "clinicians",
+      "column_name": "clinconf",
+      "column_type": "TEXT",
+      "row_count": 941,
+      "null_count": 0,
+      "non_null_count": 941,
+      "distinct_count": 3,
+      "min_value": "High",
+      "max_value": "Medium",
+      "top_k_values": [
+        {
+          "value": "Low",
+          "count": 325
+        },
+        {
+          "value": "High",
+          "count": 318
+        },
+        {
+          "value": "Medium",
+          "count": 298
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAA",
+        "AAAA",
+        "AAAAAA"
+      ]
+    },
+    "mental_template|clinicians|assesslim": {
+      "table_name": "clinicians",
+      "column_name": "assesslim",
+      "column_type": "TEXT",
+      "row_count": 941,
+      "null_count": 0,
+      "non_null_count": 941,
+      "distinct_count": 3,
+      "min_value": "Cognitive",
+      "max_value": "Language",
+      "top_k_values": [
+        {
+          "value": "Language",
+          "count": 476
+        },
+        {
+          "value": "Cognitive",
+          "count": 268
+        },
+        {
+          "value": "Engagement",
+          "count": 197
+        }
+      ],
+      "min_length": 8,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAAAAAAA",
+        "AAAAAAAAAA"
+      ]
+    },
+    "mental_template|clinicians|docustat": {
+      "table_name": "clinicians",
+      "column_name": "docustat",
+      "column_type": "TEXT",
+      "row_count": 941,
+      "null_count": 0,
+      "non_null_count": 941,
+      "distinct_count": 3,
+      "min_value": "Complete",
+      "max_value": "Pending",
+      "top_k_values": [
+        {
+          "value": "Pending",
+          "count": 337
+        },
+        {
+          "value": "Incomplete",
+          "count": 316
+        },
+        {
+          "value": "Complete",
+          "count": 288
+        }
+      ],
+      "min_length": 7,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "mental_template|clinicians|billcode": {
+      "table_name": "clinicians",
+      "column_name": "billcode",
+      "column_type": "TEXT(15)",
+      "row_count": 941,
+      "null_count": 0,
+      "non_null_count": 941,
+      "distinct_count": 619,
+      "min_value": "CPT90000",
+      "max_value": "CPT90999",
+      "top_k_values": [
+        {
+          "value": "CPT90895",
+          "count": 6
+        },
+        {
+          "value": "CPT90879",
+          "count": 4
+        },
+        {
+          "value": "CPT90752",
+          "count": 4
+        },
+        {
+          "value": "CPT90515",
+          "count": 4
+        },
+        {
+          "value": "CPT90511",
+          "count": 4
+        },
+        {
+          "value": "CPT90325",
+          "count": 4
+        },
+        {
+          "value": "CPT90261",
+          "count": 4
+        },
+        {
+          "value": "CPT90210",
+          "count": 4
+        },
+        {
+          "value": "CPT90206",
+          "count": 4
+        },
+        {
+          "value": "CPT90140",
+          "count": 4
+        }
+      ],
+      "min_length": 8,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAADDDDD"
+      ]
+    },
+    "mental_template|clinicians|nxtrevdt": {
+      "table_name": "clinicians",
+      "column_name": "nxtrevdt",
+      "column_type": "TEXT",
+      "row_count": 941,
+      "null_count": 0,
+      "non_null_count": 941,
+      "distinct_count": 151,
+      "min_value": "2025-03-21",
+      "max_value": "2025-08-18",
+      "top_k_values": [
+        {
+          "value": "2025-07-31",
+          "count": 12
+        },
+        {
+          "value": "2025-04-29",
+          "count": 12
+        },
+        {
+          "value": "2025-04-28",
+          "count": 12
+        },
+        {
+          "value": "2025-07-21",
+          "count": 11
+        },
+        {
+          "value": "2025-07-12",
+          "count": 11
+        },
+        {
+          "value": "2025-06-27",
+          "count": 11
+        },
+        {
+          "value": "2025-08-17",
+          "count": 10
+        },
+        {
+          "value": "2025-08-16",
+          "count": 10
+        },
+        {
+          "value": "2025-08-11",
+          "count": 10
+        },
+        {
+          "value": "2025-06-28",
+          "count": 10
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDD-DD-DD"
+      ]
+    },
+    "mental_template|clinicians|carecoord": {
+      "table_name": "clinicians",
+      "column_name": "carecoord",
+      "column_type": "TEXT",
+      "row_count": 941,
+      "null_count": 0,
+      "non_null_count": 941,
+      "distinct_count": 3,
+      "min_value": "Intensive",
+      "max_value": "Regular",
+      "top_k_values": [
+        {
+          "value": "Regular",
+          "count": 491
+        },
+        {
+          "value": "Limited",
+          "count": 233
+        },
+        {
+          "value": "Intensive",
+          "count": 217
+        }
+      ],
+      "min_length": 7,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAAAAA"
+      ]
+    },
+    "mental_template|clinicians|refneed": {
+      "table_name": "clinicians",
+      "column_name": "refneed",
+      "column_type": "TEXT",
+      "row_count": 941,
+      "null_count": 0,
+      "non_null_count": 941,
+      "distinct_count": 3,
+      "min_value": "Services",
+      "max_value": "Testing",
+      "top_k_values": [
+        {
+          "value": "Services",
+          "count": 463
+        },
+        {
+          "value": "Testing",
+          "count": 239
+        },
+        {
+          "value": "Specialist",
+          "count": 239
+        }
+      ],
+      "min_length": 7,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAAAAA",
+        "AAAAAAAAAA"
+      ]
+    },
+    "mental_template|clinicians|fuptype": {
+      "table_name": "clinicians",
+      "column_name": "fuptype",
+      "column_type": "TEXT",
+      "row_count": 941,
+      "null_count": 0,
+      "non_null_count": 941,
+      "distinct_count": 4,
+      "min_value": "Medication Check",
+      "max_value": "Urgent",
+      "top_k_values": [
+        {
+          "value": "Routine",
+          "count": 253
+        },
+        {
+          "value": "Therapy",
+          "count": 249
+        },
+        {
+          "value": "Urgent",
+          "count": 229
+        },
+        {
+          "value": "Medication Check",
+          "count": 210
+        }
+      ],
+      "min_length": 6,
+      "max_length": 16,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAA",
+        "AAAAAAAAAA AAAAA"
+      ]
+    },
+    "mental_template|clinicians|fupfreq": {
+      "table_name": "clinicians",
+      "column_name": "fupfreq",
+      "column_type": "TEXT",
+      "row_count": 941,
+      "null_count": 0,
+      "non_null_count": 941,
+      "distinct_count": 4,
+      "min_value": "Biweekly",
+      "max_value": "Weekly",
+      "top_k_values": [
+        {
+          "value": "Weekly",
+          "count": 254
+        },
+        {
+          "value": "Biweekly",
+          "count": 247
+        },
+        {
+          "value": "Quarterly",
+          "count": 220
+        },
+        {
+          "value": "Monthly",
+          "count": 220
+        }
+      ],
+      "min_length": 6,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AAAAAAAA",
+        "AAAAAAAAA",
+        "AAAAAAA"
+      ]
+    },
+    "mental_template|clinicians|facconnect": {
+      "table_name": "clinicians",
+      "column_name": "facconnect",
+      "column_type": "TEXT(20)",
+      "row_count": 941,
+      "null_count": 0,
+      "non_null_count": 941,
+      "distinct_count": 576,
+      "min_value": "F100",
+      "max_value": "F999",
+      "top_k_values": [
+        {
+          "value": "F877",
+          "count": 6
+        },
+        {
+          "value": "F716",
+          "count": 6
+        },
+        {
+          "value": "F600",
+          "count": 5
+        },
+        {
+          "value": "F264",
+          "count": 5
+        },
+        {
+          "value": "F980",
+          "count": 4
+        },
+        {
+          "value": "F979",
+          "count": 4
+        },
+        {
+          "value": "F960",
+          "count": 4
+        },
+        {
+          "value": "F939",
+          "count": 4
+        },
+        {
+          "value": "F754",
+          "count": 4
+        },
+        {
+          "value": "F672",
+          "count": 4
+        }
+      ],
+      "min_length": 4,
+      "max_length": 4,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "ADDD"
+      ]
+    },
+    "mental_template|encounters|enckey": {
+      "table_name": "encounters",
+      "column_name": "enckey",
+      "column_type": "TEXT(30)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "MH100725",
+      "max_value": "MH999865",
+      "top_k_values": [
+        {
+          "value": "MH100725",
+          "count": 1
+        },
+        {
+          "value": "MH104257",
+          "count": 1
+        },
+        {
+          "value": "MH105640",
+          "count": 1
+        },
+        {
+          "value": "MH105643",
+          "count": 1
+        },
+        {
+          "value": "MH105659",
+          "count": 1
+        },
+        {
+          "value": "MH108395",
+          "count": 1
+        },
+        {
+          "value": "MH110405",
+          "count": 1
+        },
+        {
+          "value": "MH110938",
+          "count": 1
+        },
+        {
+          "value": "MH112193",
+          "count": 1
+        },
+        {
+          "value": "MH112294",
+          "count": 1
+        }
+      ],
+      "min_length": 8,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDDDD"
+      ]
+    },
+    "mental_template|encounters|timemark": {
+      "table_name": "encounters",
+      "column_name": "timemark",
+      "column_type": "TEXT(6)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 71,
+      "min_value": "2025-02-19 08:30:58.912609",
+      "max_value": "2025-02-19 08:30:58.967426",
+      "top_k_values": [
+        {
+          "value": "2025-02-19 08:30:58.92391",
+          "count": 77
+        },
+        {
+          "value": "2025-02-19 08:30:58.91782",
+          "count": 77
+        },
+        {
+          "value": "2025-02-19 08:30:58.913983",
+          "count": 35
+        },
+        {
+          "value": "2025-02-19 08:30:58.932743",
+          "count": 25
+        },
+        {
+          "value": "2025-02-19 08:30:58.949446",
+          "count": 20
+        },
+        {
+          "value": "2025-02-19 08:30:58.948353",
+          "count": 20
+        },
+        {
+          "value": "2025-02-19 08:30:58.938066",
+          "count": 20
+        },
+        {
+          "value": "2025-02-19 08:30:58.937066",
+          "count": 20
+        },
+        {
+          "value": "2025-02-19 08:30:58.935066",
+          "count": 20
+        },
+        {
+          "value": "2025-02-19 08:30:58.934059",
+          "count": 20
+        }
+      ],
+      "min_length": 24,
+      "max_length": 26,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDD-DD-DD DD:DD:DD.DDDDDD",
+        "DDDD-DD-DD DD:DD:DD.DDDDD",
+        "DDDD-DD-DD DD:DD:DD.DDDD"
+      ]
+    },
+    "mental_template|encounters|abref": {
+      "table_name": "encounters",
+      "column_name": "abref",
+      "column_type": "TEXT(30)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 998,
+      "min_value": "A100162",
+      "max_value": "A999743",
+      "top_k_values": [
+        {
+          "value": "A757687",
+          "count": 2
+        },
+        {
+          "value": "A999743",
+          "count": 1
+        },
+        {
+          "value": "A998215",
+          "count": 1
+        },
+        {
+          "value": "A997481",
+          "count": 1
+        },
+        {
+          "value": "A996170",
+          "count": 1
+        },
+        {
+          "value": "A996142",
+          "count": 1
+        },
+        {
+          "value": "A995000",
+          "count": 1
+        },
+        {
+          "value": "A993171",
+          "count": 1
+        },
+        {
+          "value": "A991827",
+          "count": 1
+        },
+        {
+          "value": "A990886",
+          "count": 1
+        }
+      ],
+      "min_length": 7,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "ADDDDDD"
+      ]
+    },
+    "mental_template|encounters|patref": {
+      "table_name": "encounters",
+      "column_name": "patref",
+      "column_type": "TEXT(20)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "P100972",
+      "max_value": "P999958",
+      "top_k_values": [
+        {
+          "value": "P999958",
+          "count": 1
+        },
+        {
+          "value": "P999366",
+          "count": 1
+        },
+        {
+          "value": "P998939",
+          "count": 1
+        },
+        {
+          "value": "P998903",
+          "count": 1
+        },
+        {
+          "value": "P998668",
+          "count": 1
+        },
+        {
+          "value": "P998398",
+          "count": 1
+        },
+        {
+          "value": "P996826",
+          "count": 1
+        },
+        {
+          "value": "P996588",
+          "count": 1
+        },
+        {
+          "value": "P996262",
+          "count": 1
+        },
+        {
+          "value": "P996149",
+          "count": 1
+        }
+      ],
+      "min_length": 7,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "ADDDDDD"
+      ]
+    },
+    "mental_template|encounters|clinid": {
+      "table_name": "encounters",
+      "column_name": "clinid",
+      "column_type": "TEXT(20)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 940,
+      "min_value": "C1014",
+      "max_value": "C9995",
+      "top_k_values": [
+        {
+          "value": "C7119",
+          "count": 3
+        },
+        {
+          "value": "C2875",
+          "count": 3
+        },
+        {
+          "value": "C2695",
+          "count": 3
+        },
+        {
+          "value": "C9966",
+          "count": 2
+        },
+        {
+          "value": "C9879",
+          "count": 2
+        },
+        {
+          "value": "C9723",
+          "count": 2
+        },
+        {
+          "value": "C9525",
+          "count": 2
+        },
+        {
+          "value": "C8941",
+          "count": 2
+        },
+        {
+          "value": "C8933",
+          "count": 2
+        },
+        {
+          "value": "C8706",
+          "count": 2
+        }
+      ],
+      "min_length": 5,
+      "max_length": 5,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "ADDDD"
+      ]
+    },
+    "mental_template|encounters|facid": {
+      "table_name": "encounters",
+      "column_name": "facid",
+      "column_type": "TEXT(20)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 595,
+      "min_value": "F100",
+      "max_value": "F999",
+      "top_k_values": [
+        {
+          "value": "F877",
+          "count": 6
+        },
+        {
+          "value": "F716",
+          "count": 6
+        },
+        {
+          "value": "F938",
+          "count": 5
+        },
+        {
+          "value": "F672",
+          "count": 5
+        },
+        {
+          "value": "F600",
+          "count": 5
+        },
+        {
+          "value": "F264",
+          "count": 5
+        },
+        {
+          "value": "F980",
+          "count": 4
+        },
+        {
+          "value": "F979",
+          "count": 4
+        },
+        {
+          "value": "F960",
+          "count": 4
+        },
+        {
+          "value": "F939",
+          "count": 4
+        }
+      ],
+      "min_length": 4,
+      "max_length": 4,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "ADDD"
+      ]
+    },
+    "mental_template|encounters|missappt": {
+      "table_name": "encounters",
+      "column_name": "missappt",
+      "column_type": "REAL",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 6,
+      "min_value": "0.0",
+      "max_value": "5.0",
+      "top_k_values": [
+        {
+          "value": "4.0",
+          "count": 178
+        },
+        {
+          "value": "0.0",
+          "count": 176
+        },
+        {
+          "value": "3.0",
+          "count": 168
+        },
+        {
+          "value": "1.0",
+          "count": 165
+        },
+        {
+          "value": "2.0",
+          "count": 163
+        },
+        {
+          "value": "5.0",
+          "count": 149
+        }
+      ],
+      "min_length": 3,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D.D"
+      ]
+    },
+    "mental_template|encounters|txbarrier": {
+      "table_name": "encounters",
+      "column_name": "txbarrier",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 4,
+      "min_value": "Financial",
+      "max_value": "Transportation",
+      "top_k_values": [
+        {
+          "value": "Time",
+          "count": 429
+        },
+        {
+          "value": "Financial",
+          "count": 203
+        },
+        {
+          "value": "Multiple",
+          "count": 190
+        },
+        {
+          "value": "Transportation",
+          "count": 177
+        }
+      ],
+      "min_length": 4,
+      "max_length": 14,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAAAAAAAA",
+        "AAAAAAAA",
+        "AAAAAAAAAAAAAA"
+      ]
+    },
+    "mental_template|encounters|nxapptdt": {
+      "table_name": "encounters",
+      "column_name": "nxapptdt",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 90,
+      "min_value": "2025-02-20",
+      "max_value": "2025-05-20",
+      "top_k_values": [
+        {
+          "value": "2025-05-18",
+          "count": 20
+        },
+        {
+          "value": "2025-03-30",
+          "count": 19
+        },
+        {
+          "value": "2025-04-12",
+          "count": 17
+        },
+        {
+          "value": "2025-05-02",
+          "count": 16
+        },
+        {
+          "value": "2025-03-23",
+          "count": 16
+        },
+        {
+          "value": "2025-05-13",
+          "count": 15
+        },
+        {
+          "value": "2025-05-12",
+          "count": 15
+        },
+        {
+          "value": "2025-04-23",
+          "count": 15
+        },
+        {
+          "value": "2025-03-29",
+          "count": 15
+        },
+        {
+          "value": "2025-03-18",
+          "count": 15
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDD-DD-DD"
+      ]
+    },
+    "mental_template|encounters|dqscore": {
+      "table_name": "encounters",
+      "column_name": "dqscore",
+      "column_type": "INTEGER",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 1,
+      "min_value": "0",
+      "max_value": "0",
+      "top_k_values": [
+        {
+          "value": "0",
+          "count": 999
+        }
+      ],
+      "min_length": 1,
+      "max_length": 1,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D"
+      ]
+    },
+    "mental_template|encounters|assesscomplete": {
+      "table_name": "encounters",
+      "column_name": "assesscomplete",
+      "column_type": "TEXT(250)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 647,
+      "min_value": "0.001",
+      "max_value": "1.0",
+      "top_k_values": [
+        {
+          "value": "0.939",
+          "count": 5
+        },
+        {
+          "value": "0.87",
+          "count": 5
+        },
+        {
+          "value": "0.427",
+          "count": 5
+        },
+        {
+          "value": "0.303",
+          "count": 5
+        },
+        {
+          "value": "0.232",
+          "count": 5
+        },
+        {
+          "value": "0.978",
+          "count": 4
+        },
+        {
+          "value": "0.954",
+          "count": 4
+        },
+        {
+          "value": "0.946",
+          "count": 4
+        },
+        {
+          "value": "0.923",
+          "count": 4
+        },
+        {
+          "value": "0.714",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "mental_template|facilities|fackey": {
+      "table_name": "facilities",
+      "column_name": "fackey",
+      "column_type": "TEXT(20)",
+      "row_count": 595,
+      "null_count": 0,
+      "non_null_count": 595,
+      "distinct_count": 595,
+      "min_value": "F100",
+      "max_value": "F999",
+      "top_k_values": [
+        {
+          "value": "F100",
+          "count": 1
+        },
+        {
+          "value": "F101",
+          "count": 1
+        },
+        {
+          "value": "F104",
+          "count": 1
+        },
+        {
+          "value": "F105",
+          "count": 1
+        },
+        {
+          "value": "F107",
+          "count": 1
+        },
+        {
+          "value": "F108",
+          "count": 1
+        },
+        {
+          "value": "F109",
+          "count": 1
+        },
+        {
+          "value": "F111",
+          "count": 1
+        },
+        {
+          "value": "F112",
+          "count": 1
+        },
+        {
+          "value": "F115",
+          "count": 1
+        }
+      ],
+      "min_length": 4,
+      "max_length": 4,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "ADDD"
+      ]
+    },
+    "mental_template|facilities|rsource": {
+      "table_name": "facilities",
+      "column_name": "rsource",
+      "column_type": "TEXT",
+      "row_count": 595,
+      "null_count": 0,
+      "non_null_count": 595,
+      "distinct_count": 5,
+      "min_value": "Court",
+      "max_value": "Self",
+      "top_k_values": [
+        {
+          "value": "Emergency",
+          "count": 129
+        },
+        {
+          "value": "Court",
+          "count": 120
+        },
+        {
+          "value": "Physician",
+          "count": 119
+        },
+        {
+          "value": "Family",
+          "count": 117
+        },
+        {
+          "value": "Self",
+          "count": 110
+        }
+      ],
+      "min_length": 4,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAA",
+        "AAAAA",
+        "AAAAAA",
+        "AAAA"
+      ]
+    },
+    "mental_template|facilities|envstress": {
+      "table_name": "facilities",
+      "column_name": "envstress",
+      "column_type": "TEXT",
+      "row_count": 595,
+      "null_count": 0,
+      "non_null_count": 595,
+      "distinct_count": 3,
+      "min_value": "Mild",
+      "max_value": "Severe",
+      "top_k_values": [
+        {
+          "value": "Mild",
+          "count": 314
+        },
+        {
+          "value": "Severe",
+          "count": 145
+        },
+        {
+          "value": "Moderate",
+          "count": 136
+        }
+      ],
+      "min_length": 4,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "mental_template|facilities|lifeimpact": {
+      "table_name": "facilities",
+      "column_name": "lifeimpact",
+      "column_type": "TEXT",
+      "row_count": 595,
+      "null_count": 0,
+      "non_null_count": 595,
+      "distinct_count": 3,
+      "min_value": "Mild",
+      "max_value": "Severe",
+      "top_k_values": [
+        {
+          "value": "Mild",
+          "count": 284
+        },
+        {
+          "value": "Severe",
+          "count": 158
+        },
+        {
+          "value": "Moderate",
+          "count": 153
+        }
+      ],
+      "min_length": 4,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "mental_template|facilities|seasonpat": {
+      "table_name": "facilities",
+      "column_name": "seasonpat",
+      "column_type": "TEXT",
+      "row_count": 595,
+      "null_count": 0,
+      "non_null_count": 595,
+      "distinct_count": 3,
+      "min_value": "Summer",
+      "max_value": "Winter",
+      "top_k_values": [
+        {
+          "value": "Variable",
+          "count": 307
+        },
+        {
+          "value": "Winter",
+          "count": 149
+        },
+        {
+          "value": "Summer",
+          "count": 139
+        }
+      ],
+      "min_length": 6,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAAAA"
+      ]
+    },
+    "mental_template|facilities|leglissue": {
+      "table_name": "facilities",
+      "column_name": "leglissue",
+      "column_type": "TEXT",
+      "row_count": 595,
+      "null_count": 0,
+      "non_null_count": 595,
+      "distinct_count": 3,
+      "min_value": "Ongoing",
+      "max_value": "Resolved",
+      "top_k_values": [
+        {
+          "value": "Resolved",
+          "count": 301
+        },
+        {
+          "value": "Ongoing",
+          "count": 159
+        },
+        {
+          "value": "Pending",
+          "count": 135
+        }
+      ],
+      "min_length": 7,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAAAAA"
+      ]
+    },
+    "mental_template|facilities|ssystemchg": {
+      "table_name": "facilities",
+      "column_name": "ssystemchg",
+      "column_type": "TEXT",
+      "row_count": 595,
+      "null_count": 0,
+      "non_null_count": 595,
+      "distinct_count": 3,
+      "min_value": "Declined",
+      "max_value": "Variable",
+      "top_k_values": [
+        {
+          "value": "Variable",
+          "count": 317
+        },
+        {
+          "value": "Improved",
+          "count": 144
+        },
+        {
+          "value": "Declined",
+          "count": 134
+        }
+      ],
+      "min_length": 8,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAAAAAA"
+      ]
+    },
+    "mental_template|facilities|support_and_resources": {
+      "table_name": "facilities",
+      "column_name": "support_and_resources",
+      "column_type": "TEXT",
+      "row_count": 595,
+      "null_count": 0,
+      "non_null_count": 595,
+      "distinct_count": 515,
+      "min_value": "{\"plans\": {\"crisis_plan_status\": \"In Place\", \"safety_plan_status\": \"In Place\"}, \"support_services\": \"\", \"emergency_contact\": \"1\", \"community_resources\": \"Adequate\"}",
+      "max_value": "{\"plans\": {\"crisis_plan_status\": \"Not Needed\", \"safety_plan_status\": \"Not Needed\"}, \"support_services\": \"None,Legal,Employment\", \"emergency_contact\": \"5\", \"community_resources\": \"Comprehensive\"}",
+      "top_k_values": [
+        {
+          "value": "{\"plans\": {\"crisis_plan_status\": \"Not Needed\", \"safety_plan_status\": \"Not Needed\"}, \"support_services\": \"\", \"emergency_contact\": \"7\", \"community_resources\": \"Limited\"}",
+          "count": 6
+        },
+        {
+          "value": "{\"plans\": {\"crisis_plan_status\": \"In Place\", \"safety_plan_status\": \"Not Needed\"}, \"support_services\": \"\", \"emergency_contact\": \"2\", \"community_resources\": \"Comprehensive\"}",
+          "count": 5
+        },
+        {
+          "value": "{\"plans\": {\"crisis_plan_status\": \"Not Needed\", \"safety_plan_status\": \"Not Needed\"}, \"support_services\": \"\", \"emergency_contact\": \"9\", \"community_resources\": \"Limited\"}",
+          "count": 4
+        },
+        {
+          "value": "{\"plans\": {\"crisis_plan_status\": \"Not Needed\", \"safety_plan_status\": \"Not Needed\"}, \"support_services\": \"\", \"emergency_contact\": \"10\", \"community_resources\": \"Limited\"}",
+          "count": 4
+        },
+        {
+          "value": "{\"plans\": {\"crisis_plan_status\": \"Not Needed\", \"safety_plan_status\": \"Not Needed\"}, \"support_services\": \"Legal\", \"emergency_contact\": \"3\", \"community_resources\": \"Limited\"}",
+          "count": 3
+        },
+        {
+          "value": "{\"plans\": {\"crisis_plan_status\": \"Not Needed\", \"safety_plan_status\": \"Not Needed\"}, \"support_services\": \"\", \"emergency_contact\": \"9\", \"community_resources\": \"Comprehensive\"}",
+          "count": 3
+        },
+        {
+          "value": "{\"plans\": {\"crisis_plan_status\": \"Not Needed\", \"safety_plan_status\": \"Not Needed\"}, \"support_services\": \"\", \"emergency_contact\": \"5\", \"community_resources\": \"Limited\"}",
+          "count": 3
+        },
+        {
+          "value": "{\"plans\": {\"crisis_plan_status\": \"Not Needed\", \"safety_plan_status\": \"Not Needed\"}, \"support_services\": \"\", \"emergency_contact\": \"5\", \"community_resources\": \"Comprehensive\"}",
+          "count": 3
+        },
+        {
+          "value": "{\"plans\": {\"crisis_plan_status\": \"Not Needed\", \"safety_plan_status\": \"Not Needed\"}, \"support_services\": \"\", \"emergency_contact\": \"4\", \"community_resources\": \"Limited\"}",
+          "count": 3
+        },
+        {
+          "value": "{\"plans\": {\"crisis_plan_status\": \"Not Needed\", \"safety_plan_status\": \"Not Needed\"}, \"support_services\": \"\", \"emergency_contact\": \"0\", \"community_resources\": \"Limited\"}",
+          "count": 3
+        }
+      ],
+      "min_length": 163,
+      "max_length": 211,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "{\"AAAAA\": {\"AAAAAA_AAAA_AAAAAA\": \"AAA AAAAAA\", \"AAAAAA_AAAA_AAAAAA\": \"AAA AAAAAA\"}, \"AAAAAAA_AAAAAAAA\": \"\", \"AAAAAAAAA_AAAAAAA\": \"D\", \"AAAAAAAAA_AAAAAAAAA\": \"AAAAAAA\"}",
+        "{\"AAAAA\": {\"AAAAAA_AAAA_AAAAAA\": \"AAAAA AAAAAA\", \"AAAAAA_AAAA_AAAAAA\": \"AAA AAAAAA\"}, \"AAAAAAA_AAAAAAAA\": \"\", \"AAAAAAAAA_AAAAAAA\": \"D\", \"AAAAAAAAA_AAAAAAAAA\": \"AAAAAAA\"}",
+        "{\"AAAAA\": {\"AAAAAA_AAAA_AAAAAA\": \"AA AAAAA\", \"AAAAAA_AAAA_AAAAAA\": \"AAA AAAAAA\"}, \"AAAAAAA_AAAAAAAA\": \"\", \"AAAAAAAAA_AAAAAAA\": \"D\", \"AAAAAAAAA_AAAAAAAAA\": \"AAAAAAAAAAAAA\"}",
+        "{\"AAAAA\": {\"AAAAAA_AAAA_AAAAAA\": \"AAA AAAAAA\", \"AAAAAA_AAAA_AAAAAA\": \"AA AAAAA\"}, \"AAAAAAA_AAAAAAAA\": \"\", \"AAAAAAAAA_AAAAAAA\": \"D\", \"AAAAAAAAA_AAAAAAAAA\": \"AAAAAAA\"}",
+        "{\"AAAAA\": {\"AAAAAA_AAAA_AAAAAA\": \"AA AAAAA\", \"AAAAAA_AAAA_AAAAAA\": \"AAA AAAAAA\"}, \"AAAAAAA_AAAAAAAA\": \"\", \"AAAAAAAAA_AAAAAAA\": \"D\", \"AAAAAAAAA_AAAAAAAAA\": \"AAAAAAA\"}"
+      ]
+    },
+    "mental_template|facilities|support_and_resources.plans.crisis_plan_status": {
+      "table_name": "facilities",
+      "column_name": "support_and_resources.plans.crisis_plan_status",
+      "column_type": "JSON field",
+      "row_count": 595,
+      "null_count": 0,
+      "non_null_count": 595,
+      "distinct_count": 3,
+      "min_value": "In Place",
+      "max_value": "Not Needed",
+      "top_k_values": [
+        {
+          "value": "Not Needed",
+          "count": 292
+        },
+        {
+          "value": "Needs Update",
+          "count": 162
+        },
+        {
+          "value": "In Place",
+          "count": 141
+        }
+      ],
+      "min_length": 8,
+      "max_length": 12,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAA AAAAAA",
+        "AAAAA AAAAAA",
+        "AA AAAAA"
+      ]
+    },
+    "mental_template|facilities|support_and_resources.plans.safety_plan_status": {
+      "table_name": "facilities",
+      "column_name": "support_and_resources.plans.safety_plan_status",
+      "column_type": "JSON field",
+      "row_count": 595,
+      "null_count": 0,
+      "non_null_count": 595,
+      "distinct_count": 3,
+      "min_value": "In Place",
+      "max_value": "Not Needed",
+      "top_k_values": [
+        {
+          "value": "Not Needed",
+          "count": 297
+        },
+        {
+          "value": "Needs Update",
+          "count": 159
+        },
+        {
+          "value": "In Place",
+          "count": 139
+        }
+      ],
+      "min_length": 8,
+      "max_length": 12,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAA AAAAAA",
+        "AAAAA AAAAAA",
+        "AA AAAAA"
+      ]
+    },
+    "mental_template|facilities|support_and_resources.support_services": {
+      "table_name": "facilities",
+      "column_name": "support_and_resources.support_services",
+      "column_type": "JSON field",
+      "row_count": 595,
+      "null_count": 0,
+      "non_null_count": 595,
+      "distinct_count": 79,
+      "min_value": "",
+      "max_value": "None,Legal,Housing",
+      "top_k_values": [
+        {
+          "value": "",
+          "count": 213
+        },
+        {
+          "value": "Employment",
+          "count": 35
+        },
+        {
+          "value": "Housing",
+          "count": 30
+        },
+        {
+          "value": "Legal",
+          "count": 28
+        },
+        {
+          "value": "Case Management",
+          "count": 26
+        },
+        {
+          "value": "Housing,Case Management",
+          "count": 11
+        },
+        {
+          "value": "Employment,None",
+          "count": 10
+        },
+        {
+          "value": "Legal,Case Management",
+          "count": 10
+        },
+        {
+          "value": "Legal,None",
+          "count": 9
+        },
+        {
+          "value": "Legal,Employment",
+          "count": 8
+        }
+      ],
+      "min_length": 0,
+      "max_length": 34,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "",
+        "AAAAAAAAAA",
+        "AAAAAAA",
+        "AAAAA",
+        "AAAA AAAAAAAAAA"
+      ]
+    },
+    "mental_template|facilities|support_and_resources.emergency_contact": {
+      "table_name": "facilities",
+      "column_name": "support_and_resources.emergency_contact",
+      "column_type": "JSON field",
+      "row_count": 595,
+      "null_count": 0,
+      "non_null_count": 595,
+      "distinct_count": 11,
+      "min_value": "0",
+      "max_value": "10",
+      "top_k_values": [
+        {
+          "value": "9",
+          "count": 65
+        },
+        {
+          "value": "2",
+          "count": 65
+        },
+        {
+          "value": "3",
+          "count": 63
+        },
+        {
+          "value": "7",
+          "count": 62
+        },
+        {
+          "value": "1",
+          "count": 56
+        },
+        {
+          "value": "4",
+          "count": 56
+        },
+        {
+          "value": "0",
+          "count": 53
+        },
+        {
+          "value": "5",
+          "count": 49
+        },
+        {
+          "value": "6",
+          "count": 46
+        },
+        {
+          "value": "10",
+          "count": 45
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D",
+        "DD"
+      ]
+    },
+    "mental_template|facilities|support_and_resources.community_resources": {
+      "table_name": "facilities",
+      "column_name": "support_and_resources.community_resources",
+      "column_type": "JSON field",
+      "row_count": 595,
+      "null_count": 0,
+      "non_null_count": 595,
+      "distinct_count": 3,
+      "min_value": "Adequate",
+      "max_value": "Limited",
+      "top_k_values": [
+        {
+          "value": "Limited",
+          "count": 308
+        },
+        {
+          "value": "Comprehensive",
+          "count": 159
+        },
+        {
+          "value": "Adequate",
+          "count": 128
+        }
+      ],
+      "min_length": 7,
+      "max_length": 13,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAAAAAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "mental_template|patients|patkey": {
+      "table_name": "patients",
+      "column_name": "patkey",
+      "column_type": "TEXT(20)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "P100972",
+      "max_value": "P999958",
+      "top_k_values": [
+        {
+          "value": "P100972",
+          "count": 1
+        },
+        {
+          "value": "P102016",
+          "count": 1
+        },
+        {
+          "value": "P102311",
+          "count": 1
+        },
+        {
+          "value": "P103814",
+          "count": 1
+        },
+        {
+          "value": "P105181",
+          "count": 1
+        },
+        {
+          "value": "P106395",
+          "count": 1
+        },
+        {
+          "value": "P106566",
+          "count": 1
+        },
+        {
+          "value": "P106954",
+          "count": 1
+        },
+        {
+          "value": "P107640",
+          "count": 1
+        },
+        {
+          "value": "P109422",
+          "count": 1
+        }
+      ],
+      "min_length": 7,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "ADDDDDD"
+      ]
+    },
+    "mental_template|patients|patage": {
+      "table_name": "patients",
+      "column_name": "patage",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 68,
+      "min_value": "18",
+      "max_value": "85",
+      "top_k_values": [
+        {
+          "value": "32",
+          "count": 26
+        },
+        {
+          "value": "85",
+          "count": 22
+        },
+        {
+          "value": "37",
+          "count": 22
+        },
+        {
+          "value": "60",
+          "count": 21
+        },
+        {
+          "value": "53",
+          "count": 20
+        },
+        {
+          "value": "49",
+          "count": 20
+        },
+        {
+          "value": "25",
+          "count": 20
+        },
+        {
+          "value": "23",
+          "count": 20
+        },
+        {
+          "value": "73",
+          "count": 19
+        },
+        {
+          "value": "84",
+          "count": 18
+        }
+      ],
+      "min_length": 2,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DD"
+      ]
+    },
+    "mental_template|patients|patgender": {
+      "table_name": "patients",
+      "column_name": "patgender",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "F",
+      "max_value": "Other",
+      "top_k_values": [
+        {
+          "value": "Other",
+          "count": 339
+        },
+        {
+          "value": "M",
+          "count": 336
+        },
+        {
+          "value": "F",
+          "count": 325
+        }
+      ],
+      "min_length": 1,
+      "max_length": 5,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "A",
+        "AAAAA"
+      ]
+    },
+    "mental_template|patients|pateth": {
+      "table_name": "patients",
+      "column_name": "pateth",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 5,
+      "min_value": "African",
+      "max_value": "Other",
+      "top_k_values": [
+        {
+          "value": "Asian",
+          "count": 211
+        },
+        {
+          "value": "Other",
+          "count": 202
+        },
+        {
+          "value": "Hispanic",
+          "count": 201
+        },
+        {
+          "value": "Caucasian",
+          "count": 193
+        },
+        {
+          "value": "African",
+          "count": 193
+        }
+      ],
+      "min_length": 5,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAA",
+        "AAAAAAAA",
+        "AAAAAAA",
+        "AAAAAAAAA"
+      ]
+    },
+    "mental_template|patients|edulevel": {
+      "table_name": "patients",
+      "column_name": "edulevel",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 5,
+      "min_value": "Bachelor",
+      "max_value": "Other",
+      "top_k_values": [
+        {
+          "value": "Bachelor",
+          "count": 210
+        },
+        {
+          "value": "Doctorate",
+          "count": 208
+        },
+        {
+          "value": "Master",
+          "count": 200
+        },
+        {
+          "value": "Other",
+          "count": 192
+        },
+        {
+          "value": "High School",
+          "count": 190
+        }
+      ],
+      "min_length": 5,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAAAAAAA",
+        "AAAAAA",
+        "AAAAA",
+        "AAAA AAAAAA"
+      ]
+    },
+    "mental_template|patients|empstat": {
+      "table_name": "patients",
+      "column_name": "empstat",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 5,
+      "min_value": "Disabled",
+      "max_value": "Unemployed",
+      "top_k_values": [
+        {
+          "value": "Employed",
+          "count": 212
+        },
+        {
+          "value": "Disabled",
+          "count": 210
+        },
+        {
+          "value": "Unemployed",
+          "count": 200
+        },
+        {
+          "value": "Retired",
+          "count": 192
+        },
+        {
+          "value": "Student",
+          "count": 186
+        }
+      ],
+      "min_length": 7,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAAAAA",
+        "AAAAAAAAAA"
+      ]
+    },
+    "mental_template|patients|maristat": {
+      "table_name": "patients",
+      "column_name": "maristat",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "Divorced",
+      "max_value": "Widowed",
+      "top_k_values": [
+        {
+          "value": "Widowed",
+          "count": 267
+        },
+        {
+          "value": "Married",
+          "count": 248
+        },
+        {
+          "value": "Single",
+          "count": 247
+        },
+        {
+          "value": "Divorced",
+          "count": 238
+        }
+      ],
+      "min_length": 6,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "mental_template|patients|livingarr": {
+      "table_name": "patients",
+      "column_name": "livingarr",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 5,
+      "min_value": "Alone",
+      "max_value": "Partner",
+      "top_k_values": [
+        {
+          "value": "Alone",
+          "count": 230
+        },
+        {
+          "value": "Group Home",
+          "count": 219
+        },
+        {
+          "value": "Homeless",
+          "count": 199
+        },
+        {
+          "value": "Partner",
+          "count": 179
+        },
+        {
+          "value": "Family",
+          "count": 173
+        }
+      ],
+      "min_length": 5,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAA",
+        "AAAAA AAAA",
+        "AAAAAAAA",
+        "AAAAAAA",
+        "AAAAAA"
+      ]
+    },
+    "mental_template|patients|insurtype": {
+      "table_name": "patients",
+      "column_name": "insurtype",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Medicaid",
+      "max_value": "Private",
+      "top_k_values": [
+        {
+          "value": "Private",
+          "count": 495
+        },
+        {
+          "value": "Medicare",
+          "count": 257
+        },
+        {
+          "value": "Medicaid",
+          "count": 248
+        }
+      ],
+      "min_length": 7,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAAAAA"
+      ]
+    },
+    "mental_template|patients|insurstat": {
+      "table_name": "patients",
+      "column_name": "insurstat",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Approved",
+      "max_value": "Pending",
+      "top_k_values": [
+        {
+          "value": "Approved",
+          "count": 371
+        },
+        {
+          "value": "Denied",
+          "count": 323
+        },
+        {
+          "value": "Pending",
+          "count": 306
+        }
+      ],
+      "min_length": 6,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAAAA",
+        "AAAAAAA"
+      ]
+    },
+    "mental_template|patients|disabstat": {
+      "table_name": "patients",
+      "column_name": "disabstat",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Pending",
+      "max_value": "Temporary",
+      "top_k_values": [
+        {
+          "value": "Pending",
+          "count": 522
+        },
+        {
+          "value": "Permanent",
+          "count": 247
+        },
+        {
+          "value": "Temporary",
+          "count": 231
+        }
+      ],
+      "min_length": 7,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAAAAA"
+      ]
+    },
+    "mental_template|patients|housestable": {
+      "table_name": "patients",
+      "column_name": "housestable",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "At Risk",
+      "max_value": "Unstable",
+      "top_k_values": [
+        {
+          "value": "At Risk",
+          "count": 263
+        },
+        {
+          "value": "Unstable",
+          "count": 259
+        },
+        {
+          "value": "Stable",
+          "count": 253
+        },
+        {
+          "value": "Homeless",
+          "count": 225
+        }
+      ],
+      "min_length": 6,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AA AAAA",
+        "AAAAAA"
+      ]
+    },
+    "mental_template|patients|cultfactor": {
+      "table_name": "patients",
+      "column_name": "cultfactor",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "Beliefs",
+      "max_value": "Multiple",
+      "top_k_values": [
+        {
+          "value": "Language",
+          "count": 393
+        },
+        {
+          "value": "Family",
+          "count": 218
+        },
+        {
+          "value": "Beliefs",
+          "count": 210
+        },
+        {
+          "value": "Multiple",
+          "count": 179
+        }
+      ],
+      "min_length": 6,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAAAA",
+        "AAAAAAA"
+      ]
+    },
+    "mental_template|patients|stigmaimp": {
+      "table_name": "patients",
+      "column_name": "stigmaimp",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Mild",
+      "max_value": "Severe",
+      "top_k_values": [
+        {
+          "value": "Mild",
+          "count": 474
+        },
+        {
+          "value": "Severe",
+          "count": 277
+        },
+        {
+          "value": "Moderate",
+          "count": 249
+        }
+      ],
+      "min_length": 4,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "mental_template|patients|finstress": {
+      "table_name": "patients",
+      "column_name": "finstress",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Mild",
+      "max_value": "Severe",
+      "top_k_values": [
+        {
+          "value": "Mild",
+          "count": 508
+        },
+        {
+          "value": "Severe",
+          "count": 259
+        },
+        {
+          "value": "Moderate",
+          "count": 233
+        }
+      ],
+      "min_length": 4,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "mental_template|patients|clinleadref": {
+      "table_name": "patients",
+      "column_name": "clinleadref",
+      "column_type": "TEXT(20)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 941,
+      "min_value": "C1014",
+      "max_value": "C9995",
+      "top_k_values": [
+        {
+          "value": "C7119",
+          "count": 3
+        },
+        {
+          "value": "C2875",
+          "count": 3
+        },
+        {
+          "value": "C2695",
+          "count": 3
+        },
+        {
+          "value": "C9966",
+          "count": 2
+        },
+        {
+          "value": "C9879",
+          "count": 2
+        },
+        {
+          "value": "C9723",
+          "count": 2
+        },
+        {
+          "value": "C9525",
+          "count": 2
+        },
+        {
+          "value": "C8941",
+          "count": 2
+        },
+        {
+          "value": "C8933",
+          "count": 2
+        },
+        {
+          "value": "C8706",
+          "count": 2
+        }
+      ],
+      "min_length": 5,
+      "max_length": 5,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "ADDDD"
+      ]
+    },
+    "mental_template|treatmentbasics|txkey": {
+      "table_name": "treatmentbasics",
+      "column_name": "txkey",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "1",
+      "max_value": "999",
+      "top_k_values": [
+        {
+          "value": "1",
+          "count": 1
+        },
+        {
+          "value": "2",
+          "count": 1
+        },
+        {
+          "value": "3",
+          "count": 1
+        },
+        {
+          "value": "4",
+          "count": 1
+        },
+        {
+          "value": "5",
+          "count": 1
+        },
+        {
+          "value": "6",
+          "count": 1
+        },
+        {
+          "value": "7",
+          "count": 1
+        },
+        {
+          "value": "8",
+          "count": 1
+        },
+        {
+          "value": "9",
+          "count": 1
+        },
+        {
+          "value": "10",
+          "count": 1
+        }
+      ],
+      "min_length": 1,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D",
+        "DDDD"
+      ]
+    },
+    "mental_template|treatmentbasics|encref": {
+      "table_name": "treatmentbasics",
+      "column_name": "encref",
+      "column_type": "TEXT(30)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 999,
+      "min_value": "MH100725",
+      "max_value": "MH999865",
+      "top_k_values": [
+        {
+          "value": "MH125603",
+          "count": 2
+        },
+        {
+          "value": "MH999865",
+          "count": 1
+        },
+        {
+          "value": "MH999686",
+          "count": 1
+        },
+        {
+          "value": "MH998748",
+          "count": 1
+        },
+        {
+          "value": "MH998489",
+          "count": 1
+        },
+        {
+          "value": "MH996759",
+          "count": 1
+        },
+        {
+          "value": "MH994724",
+          "count": 1
+        },
+        {
+          "value": "MH994337",
+          "count": 1
+        },
+        {
+          "value": "MH994335",
+          "count": 1
+        },
+        {
+          "value": "MH992563",
+          "count": 1
+        }
+      ],
+      "min_length": 8,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDDDD"
+      ]
+    },
+    "mental_template|treatmentbasics|curmed": {
+      "table_name": "treatmentbasics",
+      "column_name": "curmed",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 84,
+      "min_value": "",
+      "max_value": "None,Mood Stabilizer,Anxiolytic",
+      "top_k_values": [
+        {
+          "value": "",
+          "count": 317
+        },
+        {
+          "value": "Mood Stabilizer",
+          "count": 54
+        },
+        {
+          "value": "Antipsychotic",
+          "count": 52
+        },
+        {
+          "value": "Antidepressant",
+          "count": 51
+        },
+        {
+          "value": "Anxiolytic",
+          "count": 37
+        },
+        {
+          "value": "Antidepressant,Anxiolytic",
+          "count": 20
+        },
+        {
+          "value": "Antipsychotic,Mood Stabilizer",
+          "count": 15
+        },
+        {
+          "value": "None,Mood Stabilizer",
+          "count": 14
+        },
+        {
+          "value": "Mood Stabilizer,Antipsychotic",
+          "count": 14
+        },
+        {
+          "value": "Anxiolytic,Antidepressant",
+          "count": 14
+        }
+      ],
+      "min_length": 0,
+      "max_length": 44,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "",
+        "AAAA AAAAAAAAAA",
+        "AAAAAAAAAAAAA",
+        "AAAAAAAAAAAAAA",
+        "AAAAAAAAAA"
+      ]
+    },
+    "mental_template|treatmentbasics|medadh": {
+      "table_name": "treatmentbasics",
+      "column_name": "medadh",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "High",
+      "max_value": "Non-compliant",
+      "top_k_values": [
+        {
+          "value": "Medium",
+          "count": 262
+        },
+        {
+          "value": "High",
+          "count": 260
+        },
+        {
+          "value": "Low",
+          "count": 248
+        },
+        {
+          "value": "Non-compliant",
+          "count": 230
+        }
+      ],
+      "min_length": 3,
+      "max_length": 13,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AAAA",
+        "AAA",
+        "AAA-AAAAAAAAA"
+      ]
+    },
+    "mental_template|treatmentbasics|medside": {
+      "table_name": "treatmentbasics",
+      "column_name": "medside",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Mild",
+      "max_value": "Severe",
+      "top_k_values": [
+        {
+          "value": "Mild",
+          "count": 498
+        },
+        {
+          "value": "Severe",
+          "count": 259
+        },
+        {
+          "value": "Moderate",
+          "count": 243
+        }
+      ],
+      "min_length": 4,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "mental_template|treatmentbasics|medchg": {
+      "table_name": "treatmentbasics",
+      "column_name": "medchg",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Augmentation",
+      "max_value": "Switch",
+      "top_k_values": [
+        {
+          "value": "Dose Adjustment",
+          "count": 485
+        },
+        {
+          "value": "Switch",
+          "count": 285
+        },
+        {
+          "value": "Augmentation",
+          "count": 230
+        }
+      ],
+      "min_length": 6,
+      "max_length": 15,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA AAAAAAAAAA",
+        "AAAAAA",
+        "AAAAAAAAAAAA"
+      ]
+    },
+    "mental_template|treatmentbasics|crisisint": {
+      "table_name": "treatmentbasics",
+      "column_name": "crisisint",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 6,
+      "min_value": "0.0",
+      "max_value": "5.0",
+      "top_k_values": [
+        {
+          "value": "0.0",
+          "count": 185
+        },
+        {
+          "value": "2.0",
+          "count": 182
+        },
+        {
+          "value": "5.0",
+          "count": 166
+        },
+        {
+          "value": "4.0",
+          "count": 158
+        },
+        {
+          "value": "3.0",
+          "count": 155
+        },
+        {
+          "value": "1.0",
+          "count": 154
+        }
+      ],
+      "min_length": 3,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D.D"
+      ]
+    },
+    "mental_template|treatmentbasics|therapy_details": {
+      "table_name": "treatmentbasics",
+      "column_name": "therapy_details",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 921,
+      "min_value": "{\"type\": \"CBT\", \"changes\": \"Frequency Change\", \"frequency\": \"Biweekly\", \"engagement\": \"High\", \"duration_months\": 1}",
+      "max_value": "{\"type\": \"Psychodynamic\", \"changes\": \"Therapist Change\", \"frequency\": \"Weekly\", \"engagement\": \"Non-compliant\", \"duration_months\": 8}",
+      "top_k_values": [
+        {
+          "value": "{\"type\": \"CBT\", \"changes\": \"Modality Change\", \"frequency\": \"Weekly\", \"engagement\": \"Medium\", \"duration_months\": 25}",
+          "count": 3
+        },
+        {
+          "value": "{\"type\": \"CBT\", \"changes\": \"Frequency Change\", \"frequency\": \"Weekly\", \"engagement\": \"Non-compliant\", \"duration_months\": 9}",
+          "count": 3
+        },
+        {
+          "value": "{\"type\": \"CBT\", \"changes\": \"Frequency Change\", \"frequency\": \"Weekly\", \"engagement\": \"Low\", \"duration_months\": 34}",
+          "count": 3
+        },
+        {
+          "value": "{\"type\": \"CBT\", \"changes\": \"Frequency Change\", \"frequency\": \"Biweekly\", \"engagement\": \"Low\", \"duration_months\": 20}",
+          "count": 3
+        },
+        {
+          "value": "{\"type\": \"Psychodynamic\", \"changes\": \"Therapist Change\", \"frequency\": \"Monthly\", \"engagement\": \"Low\", \"duration_months\": 29}",
+          "count": 2
+        },
+        {
+          "value": "{\"type\": \"Psychodynamic\", \"changes\": \"Therapist Change\", \"frequency\": \"Biweekly\", \"engagement\": \"Low\", \"duration_months\": 33}",
+          "count": 2
+        },
+        {
+          "value": "{\"type\": \"Psychodynamic\", \"changes\": \"Modality Change\", \"frequency\": \"Monthly\", \"engagement\": \"Non-compliant\", \"duration_months\": 31}",
+          "count": 2
+        },
+        {
+          "value": "{\"type\": \"Psychodynamic\", \"changes\": \"Modality Change\", \"frequency\": \"Biweekly\", \"engagement\": \"Low\", \"duration_months\": 31}",
+          "count": 2
+        },
+        {
+          "value": "{\"type\": \"Psychodynamic\", \"changes\": \"Frequency Change\", \"frequency\": \"Weekly\", \"engagement\": \"Non-compliant\", \"duration_months\": 56}",
+          "count": 2
+        },
+        {
+          "value": "{\"type\": \"Psychodynamic\", \"changes\": \"Frequency Change\", \"frequency\": \"Weekly\", \"engagement\": \"Non-compliant\", \"duration_months\": 35}",
+          "count": 2
+        }
+      ],
+      "min_length": 111,
+      "max_length": 135,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "{\"AAAA\": \"AAA\", \"AAAAAAA\": \"AAAAAAAAA AAAAAA\", \"AAAAAAAAA\": \"AAAAAA\", \"AAAAAAAAAA\": \"AAAA\", \"AAAAAAAA_AAAAAA\": DD}",
+        "{\"AAAA\": \"AAA\", \"AAAAAAA\": \"AAAAAAAAA AAAAAA\", \"AAAAAAAAA\": \"AAAAAA\", \"AAAAAAAAAA\": \"AAA\", \"AAAAAAAA_AAAAAA\": DD}",
+        "{\"AAAA\": \"AAA\", \"AAAAAAA\": \"AAAAAAAAA AAAAAA\", \"AAAAAAAAA\": \"AAAAAA\", \"AAAAAAAAAA\": \"AAA-AAAAAAAAA\", \"AAAAAAAA_AAAAAA\": DD}",
+        "{\"AAAA\": \"AAA\", \"AAAAAAA\": \"AAAAAAAAA AAAAAA\", \"AAAAAAAAA\": \"AAAAAA\", \"AAAAAAAAAA\": \"AAAAAA\", \"AAAAAAAA_AAAAAA\": DD}",
+        "{\"AAAA\": \"AAAAAAAAAAAAA\", \"AAAAAAA\": \"AAAAAAAAA AAAAAA\", \"AAAAAAAAA\": \"AAAAAA\", \"AAAAAAAAAA\": \"AAAA\", \"AAAAAAAA_AAAAAA\": DD}"
+      ]
+    },
+    "mental_template|treatmentbasics|therapy_details.type": {
+      "table_name": "treatmentbasics",
+      "column_name": "therapy_details.type",
+      "column_type": "JSON field",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "CBT",
+      "max_value": "Psychodynamic",
+      "top_k_values": [
+        {
+          "value": "CBT",
+          "count": 365
+        },
+        {
+          "value": "Psychodynamic",
+          "count": 231
+        },
+        {
+          "value": "DBT",
+          "count": 204
+        },
+        {
+          "value": "Group",
+          "count": 200
+        }
+      ],
+      "min_length": 3,
+      "max_length": 13,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAA",
+        "AAAAAAAAAAAAA",
+        "AAAAA"
+      ]
+    },
+    "mental_template|treatmentbasics|therapy_details.changes": {
+      "table_name": "treatmentbasics",
+      "column_name": "therapy_details.changes",
+      "column_type": "JSON field",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Frequency Change",
+      "max_value": "Therapist Change",
+      "top_k_values": [
+        {
+          "value": "Frequency Change",
+          "count": 520
+        },
+        {
+          "value": "Modality Change",
+          "count": 243
+        },
+        {
+          "value": "Therapist Change",
+          "count": 237
+        }
+      ],
+      "min_length": 15,
+      "max_length": 16,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAA AAAAAA",
+        "AAAAAAAA AAAAAA"
+      ]
+    },
+    "mental_template|treatmentbasics|therapy_details.frequency": {
+      "table_name": "treatmentbasics",
+      "column_name": "therapy_details.frequency",
+      "column_type": "JSON field",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Biweekly",
+      "max_value": "Weekly",
+      "top_k_values": [
+        {
+          "value": "Weekly",
+          "count": 479
+        },
+        {
+          "value": "Biweekly",
+          "count": 267
+        },
+        {
+          "value": "Monthly",
+          "count": 254
+        }
+      ],
+      "min_length": 6,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AAAAAAAA",
+        "AAAAAAA"
+      ]
+    },
+    "mental_template|treatmentbasics|therapy_details.engagement": {
+      "table_name": "treatmentbasics",
+      "column_name": "therapy_details.engagement",
+      "column_type": "JSON field",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "High",
+      "max_value": "Non-compliant",
+      "top_k_values": [
+        {
+          "value": "High",
+          "count": 265
+        },
+        {
+          "value": "Low",
+          "count": 262
+        },
+        {
+          "value": "Non-compliant",
+          "count": 240
+        },
+        {
+          "value": "Medium",
+          "count": 233
+        }
+      ],
+      "min_length": 3,
+      "max_length": 13,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAA",
+        "AAA-AAAAAAAAA",
+        "AAAAAA"
+      ]
+    },
+    "mental_template|treatmentbasics|therapy_details.duration_months": {
+      "table_name": "treatmentbasics",
+      "column_name": "therapy_details.duration_months",
+      "column_type": "JSON field",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 61,
+      "min_value": "0",
+      "max_value": "60",
+      "top_k_values": [
+        {
+          "value": "22",
+          "count": 28
+        },
+        {
+          "value": "1",
+          "count": 24
+        },
+        {
+          "value": "35",
+          "count": 23
+        },
+        {
+          "value": "25",
+          "count": 23
+        },
+        {
+          "value": "8",
+          "count": 22
+        },
+        {
+          "value": "3",
+          "count": 22
+        },
+        {
+          "value": "28",
+          "count": 21
+        },
+        {
+          "value": "34",
+          "count": 21
+        },
+        {
+          "value": "9",
+          "count": 21
+        },
+        {
+          "value": "49",
+          "count": 19
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D"
+      ]
+    },
+    "mental_template|treatmentoutcomes|txoutkey": {
+      "table_name": "treatmentoutcomes",
+      "column_name": "txoutkey",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "1",
+      "max_value": "999",
+      "top_k_values": [
+        {
+          "value": "1",
+          "count": 1
+        },
+        {
+          "value": "2",
+          "count": 1
+        },
+        {
+          "value": "3",
+          "count": 1
+        },
+        {
+          "value": "4",
+          "count": 1
+        },
+        {
+          "value": "5",
+          "count": 1
+        },
+        {
+          "value": "6",
+          "count": 1
+        },
+        {
+          "value": "7",
+          "count": 1
+        },
+        {
+          "value": "8",
+          "count": 1
+        },
+        {
+          "value": "9",
+          "count": 1
+        },
+        {
+          "value": "10",
+          "count": 1
+        }
+      ],
+      "min_length": 1,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D",
+        "DDDD"
+      ]
+    },
+    "mental_template|treatmentoutcomes|txref": {
+      "table_name": "treatmentoutcomes",
+      "column_name": "txref",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "1",
+      "max_value": "999",
+      "top_k_values": [
+        {
+          "value": "1000",
+          "count": 1
+        },
+        {
+          "value": "999",
+          "count": 1
+        },
+        {
+          "value": "998",
+          "count": 1
+        },
+        {
+          "value": "997",
+          "count": 1
+        },
+        {
+          "value": "996",
+          "count": 1
+        },
+        {
+          "value": "995",
+          "count": 1
+        },
+        {
+          "value": "994",
+          "count": 1
+        },
+        {
+          "value": "993",
+          "count": 1
+        },
+        {
+          "value": "992",
+          "count": 1
+        },
+        {
+          "value": "991",
+          "count": 1
+        }
+      ],
+      "min_length": 1,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D",
+        "DDDD"
+      ]
+    },
+    "mental_template|treatmentoutcomes|thprog": {
+      "table_name": "treatmentoutcomes",
+      "column_name": "thprog",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Fair",
+      "max_value": "Poor",
+      "top_k_values": [
+        {
+          "value": "Fair",
+          "count": 507
+        },
+        {
+          "value": "Poor",
+          "count": 256
+        },
+        {
+          "value": "Good",
+          "count": 237
+        }
+      ],
+      "min_length": 4,
+      "max_length": 4,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAA"
+      ]
+    },
+    "mental_template|treatmentoutcomes|txadh": {
+      "table_name": "treatmentoutcomes",
+      "column_name": "txadh",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "High",
+      "max_value": "Non-compliant",
+      "top_k_values": [
+        {
+          "value": "Medium",
+          "count": 265
+        },
+        {
+          "value": "Low",
+          "count": 251
+        },
+        {
+          "value": "Non-compliant",
+          "count": 248
+        },
+        {
+          "value": "High",
+          "count": 236
+        }
+      ],
+      "min_length": 3,
+      "max_length": 13,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AAA",
+        "AAA-AAAAAAAAA",
+        "AAAA"
+      ]
+    },
+    "mental_template|treatmentoutcomes|txresp": {
+      "table_name": "treatmentoutcomes",
+      "column_name": "txresp",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Good",
+      "max_value": "Poor",
+      "top_k_values": [
+        {
+          "value": "Partial",
+          "count": 505
+        },
+        {
+          "value": "Good",
+          "count": 254
+        },
+        {
+          "value": "Poor",
+          "count": 241
+        }
+      ],
+      "min_length": 4,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAA"
+      ]
+    },
+    "mental_template|treatmentoutcomes|sideburd": {
+      "table_name": "treatmentoutcomes",
+      "column_name": "sideburd",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Mild",
+      "max_value": "Severe",
+      "top_k_values": [
+        {
+          "value": "Mild",
+          "count": 508
+        },
+        {
+          "value": "Severe",
+          "count": 248
+        },
+        {
+          "value": "Moderate",
+          "count": 244
+        }
+      ],
+      "min_length": 4,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "mental_template|treatmentoutcomes|txgoalstat": {
+      "table_name": "treatmentoutcomes",
+      "column_name": "txgoalstat",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "Achieved",
+      "max_value": "Not Started",
+      "top_k_values": [
+        {
+          "value": "In Progress",
+          "count": 266
+        },
+        {
+          "value": "Not Started",
+          "count": 257
+        },
+        {
+          "value": "Achieved",
+          "count": 242
+        },
+        {
+          "value": "Modified",
+          "count": 235
+        }
+      ],
+      "min_length": 8,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AA AAAAAAAA",
+        "AAA AAAAAAA"
+      ]
+    },
+    "mental_template|treatmentoutcomes|recgoalstat": {
+      "table_name": "treatmentoutcomes",
+      "column_name": "recgoalstat",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "Achieved",
+      "max_value": "Not Started",
+      "top_k_values": [
+        {
+          "value": "In Progress",
+          "count": 266
+        },
+        {
+          "value": "Achieved",
+          "count": 248
+        },
+        {
+          "value": "Modified",
+          "count": 245
+        },
+        {
+          "value": "Not Started",
+          "count": 241
+        }
+      ],
+      "min_length": 8,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AA AAAAAAAA",
+        "AAA AAAAAAA"
+      ]
+    },
+    "mental_template|treatmentoutcomes|sympimp": {
+      "table_name": "treatmentoutcomes",
+      "column_name": "sympimp",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Minimal",
+      "max_value": "Significant",
+      "top_k_values": [
+        {
+          "value": "Minimal",
+          "count": 489
+        },
+        {
+          "value": "Moderate",
+          "count": 257
+        },
+        {
+          "value": "Significant",
+          "count": 254
+        }
+      ],
+      "min_length": 7,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAAAA",
+        "AAAAAAAAAAA"
+      ]
+    },
+    "mental_template|treatmentoutcomes|funcimpv": {
+      "table_name": "treatmentoutcomes",
+      "column_name": "funcimpv",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Minimal",
+      "max_value": "Significant",
+      "top_k_values": [
+        {
+          "value": "Minimal",
+          "count": 493
+        },
+        {
+          "value": "Significant",
+          "count": 259
+        },
+        {
+          "value": "Moderate",
+          "count": 248
+        }
+      ],
+      "min_length": 7,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAAAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "mental_template|treatmentoutcomes|workstatchg": {
+      "table_name": "treatmentoutcomes",
+      "column_name": "workstatchg",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Leave",
+      "max_value": "Terminated",
+      "top_k_values": [
+        {
+          "value": "Leave",
+          "count": 504
+        },
+        {
+          "value": "Terminated",
+          "count": 248
+        },
+        {
+          "value": "Reduced Hours",
+          "count": 248
+        }
+      ],
+      "min_length": 5,
+      "max_length": 13,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAA",
+        "AAAAAAA AAAAA",
+        "AAAAAAAAAA"
+      ]
+    },
+    "mental_template|treatmentoutcomes|satscr": {
+      "table_name": "treatmentoutcomes",
+      "column_name": "satscr",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 10,
+      "min_value": "1.0",
+      "max_value": "9.0",
+      "top_k_values": [
+        {
+          "value": "7.0",
+          "count": 122
+        },
+        {
+          "value": "2.0",
+          "count": 107
+        },
+        {
+          "value": "1.0",
+          "count": 104
+        },
+        {
+          "value": "4.0",
+          "count": 102
+        },
+        {
+          "value": "9.0",
+          "count": 100
+        },
+        {
+          "value": "10.0",
+          "count": 98
+        },
+        {
+          "value": "6.0",
+          "count": 98
+        },
+        {
+          "value": "5.0",
+          "count": 94
+        },
+        {
+          "value": "8.0",
+          "count": 90
+        },
+        {
+          "value": "3.0",
+          "count": 85
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.D",
+        "DD.D"
+      ]
+    },
+    "mental_template|treatmentoutcomes|theralliance": {
+      "table_name": "treatmentoutcomes",
+      "column_name": "theralliance",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "Moderate",
+      "max_value": "Weak",
+      "top_k_values": [
+        {
+          "value": "Moderate",
+          "count": 256
+        },
+        {
+          "value": "Poor",
+          "count": 250
+        },
+        {
+          "value": "Weak",
+          "count": 247
+        },
+        {
+          "value": "Strong",
+          "count": 247
+        }
+      ],
+      "min_length": 4,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAAAAAAA",
+        "AAAAAA"
+      ]
+    },
+    "mental_template|treatmentoutcomes|txeng": {
+      "table_name": "treatmentoutcomes",
+      "column_name": "txeng",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "High",
+      "max_value": "Non-compliant",
+      "top_k_values": [
+        {
+          "value": "High",
+          "count": 271
+        },
+        {
+          "value": "Low",
+          "count": 254
+        },
+        {
+          "value": "Medium",
+          "count": 242
+        },
+        {
+          "value": "Non-compliant",
+          "count": 233
+        }
+      ],
+      "min_length": 3,
+      "max_length": 13,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAA",
+        "AAAAAA",
+        "AAA-AAAAAAAAA"
+      ]
+    },
+    "mental_template|treatmentoutcomes|txsat": {
+      "table_name": "treatmentoutcomes",
+      "column_name": "txsat",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "Dissatisfied",
+      "max_value": "Medium",
+      "top_k_values": [
+        {
+          "value": "Medium",
+          "count": 275
+        },
+        {
+          "value": "High",
+          "count": 266
+        },
+        {
+          "value": "Low",
+          "count": 236
+        },
+        {
+          "value": "Dissatisfied",
+          "count": 223
+        }
+      ],
+      "min_length": 3,
+      "max_length": 12,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AAAA",
+        "AAA",
+        "AAAAAAAAAAAA"
+      ]
+    }
+  },
+  "meta": {
+    "facilities": {
+      "profiled_at": "2026-08-30T12:03:59.173618+00:00",
+      "row_count": 595
+    },
+    "assessmentsymptomsandrisk": {
+      "profiled_at": "2026-08-30T12:03:59.173618+00:00",
+      "row_count": 999
+    },
+    "treatmentbasics": {
+      "profiled_at": "2026-08-30T12:03:59.173618+00:00",
+      "row_count": 1000
+    },
+    "patients": {
+      "profiled_at": "2026-08-30T12:03:59.173618+00:00",
+      "row_count": 1000
+    },
+    "assessmentsocialanddiagnosis": {
+      "profiled_at": "2026-08-30T12:03:59.173618+00:00",
+      "row_count": 999
+    },
+    "encounters": {
+      "profiled_at": "2026-08-30T12:03:59.173618+00:00",
+      "row_count": 999
+    },
+    "treatmentoutcomes": {
+      "profiled_at": "2026-08-30T12:03:59.173618+00:00",
+      "row_count": 1000
+    },
+    "assessmentbasics": {
+      "profiled_at": "2026-08-30T12:03:59.173618+00:00",
+      "row_count": 999
+    },
+    "clinicians": {
+      "profiled_at": "2026-08-30T12:03:59.173618+00:00",
+      "row_count": 941
+    }
+  }
+}

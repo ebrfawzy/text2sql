@@ -1,0 +1,251 @@
+CREATE TABLE "audioandmedia" (
+audregistry text(20) NOT NULL,
+auddevref text(20) NOT NULL,
+audperfref text(20) NOT NULL,
+sndleveldb real(4,1) NULL,
+sndsig text(30) NULL,
+noiseisodb integer(16) NULL,
+audlatms real(4,1) NULL,
+micsensedb real(5,2) NULL,
+micfreqresp text(50) NULL,
+spkimpohm integer(16) NULL,
+spksensedb integer(16) NULL,
+thdpct real(3,2) NULL,
+freqresp text(50) NULL,
+drvszmm integer(16) NULL,
+surrsnd text(30) NULL,
+eqcount integer(16) NULL,
+micmon INTEGER NULL,
+noisecanc TEXT NULL,
+btversion text(35) NULL,
+btrangem integer(16) NULL,
+btlatms real(5,2) NULL,
+multidev INTEGER NULL,
+autoslpmin integer(16) NULL,
+wakems real(5,1) NULL,
+    PRIMARY KEY (audregistry),
+    FOREIGN KEY (audperfref) REFERENCES performance(perfregistry),
+    FOREIGN KEY (auddevref) REFERENCES deviceidentity(devregistry)
+);
+First 3 rows:
+audregistry    auddevref    audperfref      sndleveldb  sndsig      noiseisodb    audlatms    micsensedb  micfreqresp      spkimpohm    spksensedb    thdpct  freqresp      drvszmm  surrsnd      eqcount    micmon  noisecanc      btversion    btrangem    btlatms    multidev    autoslpmin    wakems
+AUD_62KLBY     DEV_RQ33OK   PERF_F82J4K           54.4  Silent              26        15             -34  87-14667Hz              16           108      1.82  17-22680Hz         53  Stereo             9         0  Passive              4            21      217.7           1             6     771.6
+AUD_HN6IA9     DEV_UPPRRQ   PERF_UFXS4T           37.2  Silent              21         3.1           -42  38-19153Hz              64           108      1.11  18-28862Hz         50  5.1                6         0  Active               5            25      147             0            11     979.7
+AUD_QYXW48     DEV_E2VRHA   PERF_3PQ3KQ           63.6  Thocky              15        11.5           -38  42-10348Hz              16            99      0.81  19-20571Hz         53  7.1                4         0  Active               5.1          19      200.2           0             9     373.9
+...
+
+CREATE TABLE "deviceidentity" (
+devregistry text(20) NOT NULL,
+devsessionref text(20) NOT NULL,
+makername text(50) NULL,
+modnum text(50) NULL,
+fwver text(50) NULL,
+conntype text(35) NULL,
+wlrangem real(4,1) NULL,
+wlinterf text(35) NULL,
+wlchanhop INTEGER NULL,
+wllatvar real(4,2) NULL,
+pwridlemw integer(32) NULL,
+pwractmw integer(32) NULL,
+pwrrgbmw integer(32) NULL,
+brdmemmb integer(16) NULL,
+profcount integer(16) NULL,
+mcresptime real(4,2) NULL,
+mcexecspeed real(4,2) NULL,
+mctimacc real(5,2) NULL,
+dpires integer(32) NULL,
+dpisteps integer(16) NULL,
+senstype text(50) NULL,
+sensres integer(32) NULL,
+    PRIMARY KEY (devregistry),
+    FOREIGN KEY (devsessionref) REFERENCES testsessions(sessionregistry)
+);
+First 3 rows:
+devregistry    devsessionref    makername    modnum    fwver    conntype           wlrangem  wlinterf      wlchanhop    wllatvar    pwridlemw    pwractmw    pwrrgbmw    brdmemmb    profcount    mcresptime    mcexecspeed    mctimacc    dpires    dpisteps  senstype      sensres
+DEV_RQ33OK     GPT287164        HyperX       MDL7333   6.6.9    Wireless 2.4GHz           8  Low                   0        1.3            90         143         113           8            2          1.51           0.24        92.7      9774           4  PMW3389         22986
+DEV_UPPRRQ     GPT831546        Corsair      MDL8501   5.3.7    Wired                     6  Low                   0        1.45           21         335         149          64            4          2.32           0.36        92.8     24096           1  Optical         16401
+DEV_E2VRHA     GPT573068        Logitech     MDL8929   7.0.3    Bluetooth                16  High                  0        1.96           45         345         136           8            3          4.63           0.63        96.8      5125           1  Optical         20417
+...
+
+CREATE TABLE "interactionandcontrol" (
+interactregistry text(20) NOT NULL,
+interactphysref text(20) NOT NULL,
+interactdevref text(20) NOT NULL,
+amblight INTEGER NULL,
+tempsense INTEGER NULL,
+accelsense INTEGER NULL,
+gyrosense INTEGER NULL,
+hapfeed text(30) NULL,
+hapstr integer(16) NULL,
+vibmodes integer(16) NULL,
+forcefeed text(35) NULL,
+trigres integer(16) NULL,
+trigtravmm real(3,1) NULL,
+joydead real(4,2) NULL,
+joyprec real(4,1) NULL,
+btnspcmm real(4,1) NULL,
+btnszmm real(4,1) NULL,
+dpadvar text(30) NULL,
+dpadacc real(4,1) NULL,
+astickvar text(30) NULL,
+driftres real(4,1) NULL,
+    PRIMARY KEY (interactregistry),
+    FOREIGN KEY (interactphysref) REFERENCES physicaldurability(physregistry),
+    FOREIGN KEY (interactdevref) REFERENCES deviceidentity(devregistry)
+);
+First 3 rows:
+interactregistry    interactphysref    interactdevref      amblight    tempsense    accelsense    gyrosense  hapfeed      hapstr    vibmodes  forcefeed      trigres    trigtravmm    joydead    joyprec    btnspcmm    btnszmm  dpadvar      dpadacc  astickvar      driftres
+INT_X42CX3          PHYS_GHOT80        DEV_RQ33OK                 1            1             0            1  Basic             4           5  Advanced             7           7.1       0.11       94.9         4.8       17.5  Hybrid          95.2  Standard           98.5
+INT_UHLDYQ          PHYS_3F7AUT        DEV_UPPRRQ                 0            1             0            0  Advanced          4           4  None                10           7.2       0.19       94.4         2.5       16.7  Standard        99.9  Standard           98.9
+INT_HTXID6          PHYS_2Q0KFG        DEV_E2VRHA                 1            0             1            1  None              1           4  None                10           6.6       0.13       93.9         3.1       18.4  Standard        92.3  Magnetic           93.9
+...
+
+CREATE TABLE "mechanical" (
+mechregistry text(20) NOT NULL,
+mechperfref text(20) NOT NULL,
+mechdevref text(20) NOT NULL,
+keyforceg real(5,2) NULL,
+keytravmm real(3,1) NULL,
+swtchvar text(40) NULL,
+swtchdur integer(64) NULL,
+ghostkeys integer(16) NULL,
+keyrollo text(35) NULL,
+swtchcons real(4,1) NULL,
+ghosteff real(4,1) NULL,
+keychatter real(3,2) NULL,
+actpointmm real(3,1) NULL,
+respointmm real(3,1) NULL,
+tacbumpmm real(3,1) NULL,
+tottravmm real(3,1) NULL,
+stabrattle TEXT NULL,
+stabtype text(30) NULL,
+capthkmm real(3,1) NULL,
+capmat text(35) NULL,
+caplegmeth text(40) NULL,
+kbdangle integer(16) NULL,
+wristflag INTEGER NULL,
+palmangle integer(16) NULL,
+ergorate integer(16) NULL,
+    PRIMARY KEY (mechregistry),
+    FOREIGN KEY (mechperfref) REFERENCES performance(perfregistry),
+    FOREIGN KEY (mechdevref) REFERENCES deviceidentity(devregistry)
+);
+First 3 rows:
+mechregistry    mechperfref    mechdevref      keyforceg    keytravmm  swtchvar      swtchdur    ghostkeys  keyrollo      swtchcons    ghosteff    keychatter    actpointmm    respointmm    tacbumpmm    tottravmm  stabrattle    stabtype      capthkmm  capmat    caplegmeth      kbdangle    wristflag    palmangle    ergorate
+MECH_JOL75L     PERF_F82J4K    DEV_RQ33OK           75.8          3.3  Membrane      74090272           65  2KRO               97          95.2          1.72           1.4           2.4          1.9          3.4  Minimal       PCB Mount          1.4  ABS       Double Shot            1            1            0           6
+MECH_0WBA9L     PERF_UFXS4T    DEV_UPPRRQ           79.9          2.4  Mechanical    27318594           68  6KRO               99.3        95.2          1.17           2.4           1.4          1.6          3.7  Minimal       PCB Mount          1.4  ABS       Dye Sub                1            0           15           9
+MECH_Q9PD87     PERF_3PQ3KQ    DEV_E2VRHA           79.3          1.9  Mechanical    76894521          102  6KRO               92.6        94.8          0.85           1.6           1.5          2.3          4    Minimal       Screw-in           1    ABS       Double Shot            1            0            8           8
+...
+
+CREATE TABLE "performance" (
+perfregistry text(20) NOT NULL,
+perfsessionref text(20) NOT NULL,
+accelmax integer(16) NULL,
+speedips integer(16) NULL,
+liftdistmm real(3,1) NULL,
+angsnap INTEGER NULL,
+btntens TEXT NULL,
+clklat real(3,2) NULL,
+clkdur integer(64) NULL,
+screnctyp TEXT NULL,
+scrsteps integer(16) NULL,
+scraccy real(4,1) NULL,
+    PRIMARY KEY (perfregistry),
+    FOREIGN KEY (perfsessionref) REFERENCES testsessions(sessionregistry)
+);
+First 3 rows:
+perfregistry    perfsessionref      accelmax    speedips    liftdistmm    angsnap  btntens      clklat    clkdur  screnctyp      scrsteps    scraccy
+PERF_F82J4K     GPT287164                 36         360           0.8          0  Light          0.49  52679106  Optical              20       91.8
+PERF_UFXS4T     GPT831546                 32         396           1.6          0  Medium         1.83  36886488  Optical              23       96.8
+PERF_3PQ3KQ     GPT573068                 38         273           1.2          0  Light          0.51  32306990  Optical              20       90.2
+...
+
+CREATE TABLE "physicaldurability" (
+physregistry text(20) NOT NULL,
+physrgbref text(20) NOT NULL,
+physperfref text(20) NOT NULL,
+wgtgram integer(16) NULL,
+wgtdist text(30) NULL,
+cablegram integer(16) NULL,
+cabledrag text(25) NULL,
+feetmat text(25) NULL,
+feetthkmm real(3,1) NULL,
+glidecons real(4,1) NULL,
+fricstatic real(3,2) NULL,
+frickinetic real(3,2) NULL,
+surfcompat text(25) NULL,
+gripsty text(30) NULL,
+gripcoat text(30) NULL,
+gripdur integer(16) NULL,
+sweatres text(30) NULL,
+tempres TEXT NULL,
+humidres TEXT NULL,
+dustres text(30) NULL,
+waterres text(35) NULL,
+impres text(30) NULL,
+drophtm real(3,1) NULL,
+bendforce integer(16) NULL,
+twistdeg integer(16) NULL,
+cablebend integer(32) NULL,
+usbconndur integer(32) NULL,
+    PRIMARY KEY (physregistry),
+    FOREIGN KEY (physrgbref) REFERENCES rgb(rgbregistry),
+    FOREIGN KEY (physperfref) REFERENCES performance(perfregistry)
+);
+First 3 rows:
+physregistry    physrgbref    physperfref      wgtgram  wgtdist        cablegram  cabledrag    feetmat        feetthkmm    glidecons    fricstatic    frickinetic  surfcompat          gripsty    gripcoat      gripdur  sweatres    tempres    humidres    dustres    waterres    impres      drophtm    bendforce    twistdeg    cablebend    usbconndur
+PHYS_GHOT80     RGB_33D8M7    PERF_F82J4K           83  Front Heavy           62  Moderate     Glass                1.2         85.4          0.41           0.27  Cloth Preferred     Palm       Rubberized         17  Low         Standard   Premium     IPX1       IPX1        Standard        1            106          30         4036          2814
+PHYS_3F7AUT     RGB_INHK9M    PERF_UFXS4T           84  Back Heavy            74  Minimal      Virgin PTFE          1           91.1          0.48           0.12  Hard Pad Preferred  Palm       Matte              22  Medium      Premium    Enhanced    IPX2       IPX1        Standard        1.9          350          32         3626          1975
+PHYS_2Q0KFG     RGB_0P73NA    PERF_3PQ3KQ          116  Back Heavy            99  Minimal      Virgin PTFE          0.6         90.7          0.44           0.22  Cloth Preferred     Hybrid     Rubberized         24  Low         Enhanced   Enhanced    IPX3       IPX3        Standard        1.7          346          34         2085          1742
+...
+
+CREATE TABLE "rgb" (
+rgbregistry text(20) NOT NULL,
+rgbmechref text(20) NOT NULL,
+rgbaudref text(20) NOT NULL,
+rgbbright integer(16) NULL,
+rgbcoloracc real(4,1) NULL,
+rgbrfrate integer(16) NULL,
+rgbmodes text(25) NULL,
+rgbzones integer(16) NULL,
+rgbcolors integer(32) NULL,
+    PRIMARY KEY (rgbregistry),
+    FOREIGN KEY (rgbmechref) REFERENCES mechanical(mechregistry),
+    FOREIGN KEY (rgbaudref) REFERENCES audioandmedia(audregistry)
+);
+First 3 rows:
+rgbregistry    rgbmechref    rgbaudref      rgbbright    rgbcoloracc    rgbrfrate    rgbmodes    rgbzones    rgbcolors
+RGB_33D8M7     MECH_JOL75L   AUD_62KLBY            88           84.3          166          18           1      3461298
+RGB_INHK9M     MECH_0WBA9L   AUD_HN6IA9            12           87.1          847          11           3      3206043
+RGB_0P73NA     MECH_Q9PD87   AUD_QYXW48            23           97.2          159          14           1     11826339
+...
+
+CREATE TABLE "testsessions" (
+sessionregistry text(20) NOT NULL,
+stampmoment text(6) NOT NULL,
+devscope TEXT NULL,
+cpuusepct real(5,2) NULL,
+memusemb integer(32) NULL,
+driverstatus TEXT NULL,
+fwupdur integer(16) NULL,
+wlsignal real(5,2) NULL,
+battlevel integer(16) NULL,
+battcapmah integer(32) NULL,
+battlifeh real(4,1) NULL,
+chgtimemin real(5,2) NULL,
+qchgflag INTEGER NULL,
+usbpwrline text(25) NULL,
+latms real(5,2) NULL,
+inplagms real(5,2) NULL,
+pollratehz integer(16) NULL,
+dbtimems real(4,2) NULL,
+resptimems real(4,2) NULL,
+clkregms real(4,3) NULL,
+    PRIMARY KEY (sessionregistry)
+);
+First 3 rows:
+sessionregistry    stampmoment                 devscope      cpuusepct    memusemb  driverstatus      fwupdur    wlsignal    battlevel    battcapmah    battlifeh    chgtimemin    qchgflag  usbpwrline      latms    inplagms    pollratehz    dbtimems    resptimems    clkregms
+GPT287164          2024-09-26 17:36:53.795502  Keyboard           3.14          78  Stable                202      -67              33          1939           38           150           1  7.5W             3.35        9.94          1000        2.28          2.53       0.827
+GPT831546          2024-11-26 19:47:28.795502  Headset            4.15          27  Beta                   93       80.62            9          1115           54            64           1  5W              12.61        5.98           125        9.11          1.39       1.138
+GPT573068          2024-10-12 10:19:04.795502  Keyboard           4.04          81  Experimental           79       71.61           17          1026           84            76           0  10W              5.24        1.15          1000        0.14          3.59       1.656
+...

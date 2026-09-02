@@ -1,0 +1,52 @@
+{# version: v1, description: direct SQL generation — static prefix first so it caches across questions #}
+Write {{ dialect }} SQL answering the question, using only the schema below
+
+{# Rules: the agent's are a byte-identical subset — test_agent_rules_are_a_subset_of_direct guards it #}
+<rules>
+- Respect question definitions
+- Return EXACTLY the columns the question asks for; NO LESS NO MORE
+- Return a stored column as stored; TRIM or LOWER it only inside a predicate, or on an expression you built yourself
+- Identify an entity by the key of the table whose columns the criteria use; never join elsewhere for a nicer id
+- Compute a metric at the level its own definition names, then aggregate; dividing sums where the definition divides per row gives a different number
+- To create an object, use the exact name the question gives and add IF NOT EXISTS
+- Name a computed output column after the term the question uses for it, in snake_case; pass a stored column through under its own name
+- Answer the operation asked: submit the CREATE/ALTER/UPDATE itself: no rows is expected and a SELECT is not a substitute. Semicolon-separate when one statement cannot do it (ALTER then UPDATE)
+- Division: CAST(a AS REAL) / NULLIF(b, 0). Integer division truncates and division by zero is NULL
+- JSON: json_extract(c, '$.k') and c ->> '$.k' return bare scalars (High); c -> '$.k' returns JSON ("High"). Compare against the bare value
+- Round only to the precision the question states; ORDER BY what it ranks by; LIMIT when it asks for top-N
+- Explicit JOIN ... ON, table aliases, no SELECT *
+</rules>
+{% if strategy == "decompose" %}
+
+<procedure>
+Break the question into sub-questions, solve each in a CTE, then compose the final SELECT from them
+</procedure>
+{% elif strategy == "query_plan" %}
+
+<procedure>
+First outline the execution plan in 3-5 steps (scan, filter, join, aggregate, order), then write the SQL implementing exactly that plan
+</procedure>
+{% endif %}
+
+<schema>
+{{ schema }}
+</schema>
+{% if knowledge %}
+
+<domain_knowledge>
+{% for e in knowledge %}
+- {{ e.knowledge }}: {{ e.description }}
+{% if e.refuted %}
+  Measured: {{ e.refutes[0] }} does not hold {{ e.refutes[1] }} in this database
+{% elif knowledge_full and e.definition %}
+  Definition: {{ e.definition }}
+{% endif %}
+{% endfor %}
+</domain_knowledge>
+{% endif %}
+
+<task>
+{{ question }}
+</task>
+
+Return only the SQL, no comments

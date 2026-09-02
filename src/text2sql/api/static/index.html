@@ -1,0 +1,392 @@
+{% import "_macros.html" as m %}
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Text2SQL Studio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.14.1/cdn.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/sql.min.js"></script>
+  <link rel="stylesheet" href="/static/app.css">
+  <script src="/static/app.js"></script>
+  <script>
+    tailwind.config = { darkMode: 'class' };
+    // Apply the saved/system theme before first paint (Tailwind's class strategy needs
+    // `.dark` on an ancestor of <body>) — avoids a flash.
+    document.documentElement.classList.toggle('dark', (localStorage.getItem('t2s-theme')
+      || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')) === 'dark');
+  </script>
+</head>
+
+<body class="h-screen overflow-hidden bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-200"
+  x-data="app()" x-init="init()" x-effect="applyTheme()">
+  <div class="flex h-screen flex-col">
+
+    <!-- ── Navbar ───────────────────────────────────────────────── -->
+    <header class="flex items-center justify-between border-b border-slate-200 dark:border-slate-800
+                   bg-white dark:bg-slate-900 px-4 py-2 shrink-0">
+      <div class="flex items-center gap-3">
+        <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-indigo-600 text-white font-bold">T2S</div>
+        <div>
+          <div class="font-semibold leading-tight">Text2SQL Studio</div>
+          <div class="text-xs text-slate-400 leading-tight">Natural language → SQL, live</div>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-4 text-sm">
+        <span class="hidden sm:inline-flex items-center gap-1.5 rounded-full border border-slate-200
+                     dark:border-slate-700 px-2.5 py-1">
+          <span class="h-2 w-2 rounded-full" :class="health === 'ok' ? 'bg-emerald-500' : 'bg-rose-500'"></span>
+          <span x-text="health === 'ok' ? 'API healthy' : 'API unreachable'"></span>
+        </span>
+        <span class="hidden md:inline text-slate-400" x-show="version" x-text="'v' + version"></span>
+
+        <!-- Settings: theme + which YAML the form is populated from -->
+        <div class="relative" @click.outside="settingsOpen = false">
+          <button @click="settingsOpen = !settingsOpen" class="{{ m.BTN }} px-2.5 py-1">⚙️ Settings</button>
+          <div x-show="settingsOpen" x-cloak class="absolute right-0 mt-2 w-80 z-30 rounded-lg border p-3 space-y-3
+                 border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 shadow-xl">
+            <div class="flex items-center justify-between">
+              <span class="text-sm font-medium">Theme</span>
+              <button @click="theme = theme === 'dark' ? 'light' : 'dark'" class="{{ m.BTN }} px-2.5 py-1"
+                x-text="theme === 'dark' ? '☀️ Light' : '🌙 Dark'"></button>
+            </div>
+            <div>
+              <label class="text-xs font-semibold uppercase tracking-wide text-slate-400">Config file</label>
+              <select x-model="configYamlPath" @change="loadConfig()" class="{{ m.INPUT }} mt-1 py-1.5 text-sm">
+                <option value="">(server default)</option>
+                <template x-for="fpath in configFiles" :key="fpath">
+                  <option :value="fpath" x-text="fpath"></option>
+                </template>
+              </select>
+              <div class="mt-1 flex gap-1">
+                <input type="text" x-model="configYamlPath" placeholder="browse or type a path…"
+                  @keydown.enter="loadConfig()" class="{{ m.INPUT }} flex-1 py-1.5 text-sm">
+                <button @click="loadConfig()" :disabled="configLoading"
+                  class="shrink-0 rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-medium text-white
+                         hover:bg-indigo-700 disabled:opacity-40" x-text="configLoading ? '…' : 'Load'"></button>
+              </div>
+              <p x-show="configMsg" class="mt-1 text-[11px]" x-text="configMsg"
+                :class="configError ? 'text-rose-500' : 'text-emerald-500'"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="flex flex-1 min-h-0">
+
+      <!-- ── Sidebar: every /config/schema group for the current tab ── -->
+      <aside class="w-80 shrink-0 overflow-y-auto border-r border-slate-200 dark:border-slate-800
+                    bg-white dark:bg-slate-900 p-3 space-y-4">
+        <div class="grid grid-cols-3 gap-1 rounded-lg bg-slate-100 dark:bg-slate-800 p-1">
+          <template x-for="t in ['ask','profile','benchmark']" :key="t">
+            <button @click="tab = t" x-text="t" class="rounded-md px-2 py-1.5 text-sm font-medium capitalize transition"
+              :class="tab === t ? 'bg-indigo-600 text-white shadow'
+                : 'text-slate-500 hover:text-slate-800 dark:hover:text-slate-100'"></button>
+          </template>
+        </div>
+
+        <template x-for="group in groups()" :key="group.key">
+          <div class="rounded-lg border border-slate-200 dark:border-slate-800">
+            <button @click="openGroups[group.key] = !openGroups[group.key]"
+              class="flex w-full items-center justify-between px-3 py-2 text-sm font-semibold">
+              <span x-text="group.label"></span><span x-text="openGroups[group.key] ? '−' : '+'"></span>
+            </button>
+            <div x-show="openGroups[group.key]" x-cloak class="space-y-2 px-3 pb-3">
+              <template x-for="f in group.fields" :key="f.name">
+                <div x-show="isActive(f)" x-cloak x-html="fieldHTML(f)"></div>
+              </template>
+            </div>
+          </div>
+        </template>
+
+        <div>
+          <label class="text-xs font-semibold uppercase tracking-wide text-slate-400">Request payload</label>
+          <pre x-text="JSON.stringify(buildPayload(tab), null, 2)"
+            class="mono mt-1 max-h-48 overflow-auto rounded-md bg-slate-900 text-slate-100 p-2 text-[11px]"></pre>
+        </div>
+
+        <button @click="fillDefaults(); configYamlPath = ''" class="{{ m.BTN }} w-full py-1.5">Reset to defaults</button>
+      </aside>
+
+      <!-- ── Main workflow area ─────────────────────────────────── -->
+      <main class="flex-1 overflow-y-auto p-4 space-y-4">
+
+        <!-- ══════════ ASK ══════════ -->
+        <template x-if="tab === 'ask'">
+          <div class="space-y-4 max-w-5xl mx-auto">
+            <div class="{{ m.CARD }}">
+              <label class="text-sm font-semibold">Question</label>
+              <div class="mt-2 flex gap-2">
+                <textarea x-model="ask.question" rows="2" class="{{ m.INPUT }} flex-1 px-3 py-2 text-sm"
+                  placeholder="e.g. What are the top 5 customers by total order value?"></textarea>
+                {{ m.run_button('ask', 'runAsk()', '!ask.question.trim()', 'Ask') }}
+              </div>
+            </div>
+
+            <!-- Narrow this question to a subset of already-profiled tables -->
+            <div class="{{ m.CARD }}">
+              <div class="flex items-center justify-between">
+                <button @click="ask.pickerOpen = !ask.pickerOpen" class="text-sm font-semibold flex items-center gap-2">
+                  <span x-text="ask.pickerOpen ? '▾' : '▸'"></span><span>Tables to include</span>
+                  <span class="text-xs font-normal text-slate-400"
+                    x-text="Object.keys(ask.sel).length ? selectionSummary(ask.sel) : 'full cached profile'"></span>
+                </button>
+                <button @click="loadSchema('ask')" :disabled="ask.loadingSchema || !config.db_uri"
+                  class="{{ m.BTN_XS }} px-3" x-text="ask.loadingSchema ? 'Loading…' : 'Load cached tables'"></button>
+              </div>
+              <div x-show="ask.pickerOpen" x-cloak class="mt-3">
+                <div x-show="ask.schemaError" class="text-xs text-rose-600 mb-2" x-text="ask.schemaError"></div>
+                <template x-if="Object.keys(ask.sel).length">
+                  <div>{{ m.picker('ask.sel') }}</div>
+                </template>
+                <p x-show="!Object.keys(ask.sel).length && !ask.schemaError" class="text-xs text-slate-400 italic">
+                  Load cached tables to restrict this question to a profiled subset. Leave empty to use the full
+                  cached profile.</p>
+              </div>
+            </div>
+
+            <div class="{{ m.CARD }}">{{ m.stepper('ask', 'ask') }}</div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+              <div class="{{ m.CARD }}">{{ m.events('ask', 'askEvents') }}</div>
+              <div class="{{ m.CARD }}">
+                <h3 class="text-sm font-semibold mb-2">Model output (tokens)</h3>
+                <div class="h-80 overflow-y-auto mono text-xs space-y-2">
+                  <div>
+                    <div class="text-[11px] uppercase tracking-wide text-slate-400 mb-1">Reasoning</div>
+                    <p class="italic text-slate-400 whitespace-pre-wrap" x-text="ask.thinkingText || '—'"></p>
+                  </div>
+                  <div>
+                    <div class="text-[11px] uppercase tracking-wide text-slate-400 mb-1">Output</div>
+                    <p class="whitespace-pre-wrap" x-text="ask.outputText || '—'"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <template x-if="ask.result">
+              <div class="{{ m.CARD }} space-y-3">
+                {{ m.tiles('usageStats(ask.result.trace && ask.result.trace.llm_usage)') }}
+
+                <template x-if="ask.result.error">
+                  <div class="rounded-md border border-rose-300 bg-rose-50 dark:bg-rose-950/40 p-3 text-sm
+                       text-rose-700 dark:text-rose-300">
+                    <strong>Pipeline failed:</strong> <span x-text="ask.result.error"></span>
+                  </div>
+                </template>
+
+                <template x-if="!ask.result.error">
+                  <div class="space-y-3">
+                    <div class="flex items-center justify-between mb-1">
+                      <h3 class="text-sm font-semibold">Final SQL</h3>
+                      <button @click="navigator.clipboard.writeText(ask.result.sql)"
+                        class="{{ m.BTN_XS }}">Copy</button>
+                    </div>
+                    <pre class="rounded-md overflow-x-auto"><code class="language-sql mono text-xs"
+                      x-html="highlightSql(ask.result.sql)"></code></pre>
+                    <h3 class="text-sm font-semibold" x-text="(ask.result.results || []).length + ' rows'"></h3>
+                    <div x-html="resultTable(ask.result.results)"></div>
+                  </div>
+                </template>
+
+                <div>
+                  <button @click="showTrace = !showTrace" x-text="(showTrace ? '▾ ' : '▸ ') + 'Trace'"
+                    class="text-xs font-semibold uppercase tracking-wide text-slate-400"></button>
+                  <pre x-show="showTrace" x-cloak x-text="JSON.stringify(ask.result.trace, null, 2)"
+                    class="mono mt-1 max-h-56 overflow-auto rounded-md bg-slate-900 text-slate-100 p-2 text-[11px]"></pre>
+                </div>
+              </div>
+            </template>
+          </div>
+        </template>
+
+        <!-- ══════════ PROFILE ══════════ -->
+        <template x-if="tab === 'profile'">
+          <div class="space-y-4 max-w-5xl mx-auto">
+            <div class="{{ m.CARD }} flex items-center gap-2">
+              <p class="flex-1 text-sm text-slate-500">Profiles the database configured in the sidebar (Database →
+                Database URI). Load tables to pick exactly which tables and columns to include.</p>
+              <button @click="loadSchema()" :disabled="profile.loadingSchema || !config.db_uri" class="{{ m.BTN }}"
+                x-text="profile.loadingSchema ? 'Loading…' : 'Load tables'"></button>
+              <button @click="profile.showCached ? profile.showCached = false : showCachedProfile()"
+                :disabled="!config.db_uri" class="{{ m.BTN }}"
+                x-text="profile.showCached ? 'Hide cached' : 'Show cached profile'"></button>
+              {{ m.run_button('profile', 'runProfile()', '!config.db_uri') }}
+            </div>
+
+            {{ m.alert('profile.schemaError') }}
+
+            <!-- Cached profile: view, refresh, delete -->
+            <template x-if="profile.showCached">
+              <div class="{{ m.CARD }} space-y-3">
+                <div class="flex items-center justify-between">
+                  <h3 class="text-sm font-semibold">Cached profile</h3>
+                  <div class="flex items-center gap-3 text-xs">
+                    <span x-show="profile.cacheBusy" class="text-indigo-500 animate-pulse">Working…</span>
+                    <button @click="showCachedProfile()" x-html="icon('reload', 15)" aria-label="Reload"
+                      title="Reload the cached profile" class="p-1 rounded hover:bg-slate-100 dark:hover:bg-slate-800"></button>
+                    <button @click="profile.showCached = false" x-html="icon('hide', 15)" aria-label="Hide"
+                      title="Hide this panel" class="p-1 rounded hover:bg-slate-100 dark:hover:bg-slate-800"></button>
+                  </div>
+                </div>
+                <p x-show="!Object.keys(profile.cached?.tables || {}).length" class="text-sm text-slate-400 italic">
+                  No cached profile yet — run profiling to populate the cache.</p>
+                <template x-for="[tname, t] in Object.entries(profile.cached?.tables || {})" :key="tname">
+                  <div class="{{ m.BOX }}">
+                    <div class="flex items-center justify-between px-3 py-2 border-b border-slate-200
+                         dark:border-slate-800">
+                      <div class="flex items-baseline gap-2 min-w-0">
+                        <h4 class="font-semibold mono truncate" x-text="tname"></h4>
+                        <span class="text-xs text-slate-400 whitespace-nowrap"
+                          x-text="t.row_count + ' rows · ' + Object.keys(t.columns || {}).length + ' cols'"></span>
+                      </div>
+                      <div class="flex gap-2 text-xs shrink-0">
+                        <button @click="refreshCache(tname, Object.keys(t.columns || {}))" :disabled="profile.cacheBusy"
+                          x-html="icon('reload')" aria-label="Refresh table" class="{{ m.BTN_XS }} p-1.5"
+                          title="Re-profile this table, overwriting the cache"></button>
+                        <button @click="deleteCache(tname)" :disabled="profile.cacheBusy" x-html="icon('trash')"
+                          aria-label="Delete table" title="Remove this table from the cache"
+                          class="rounded border border-rose-300 text-rose-600 p-1.5 hover:bg-rose-50
+                                 dark:hover:bg-rose-950/40 disabled:opacity-40"></button>
+                      </div>
+                    </div>
+                    {{ m.columns_table('profile.cached', actions=true) }}
+                  </div>
+                </template>
+                <div x-html="kbHTML(profile.cached?.kb)"></div>
+              </div>
+            </template>
+
+            <!-- What to profile -->
+            <template x-if="Object.keys(profile.sel).length">
+              <div class="{{ m.CARD }}">
+                <h3 class="text-sm font-semibold mb-1">Tables &amp; columns to profile</h3>
+                <p class="text-[11px] text-slate-400 mb-2">Columns marked “cached” are shown for context and excluded
+                  from Run — edit them via “Show cached profile”.</p>
+                {{ m.picker('profile.sel') }}
+              </div>
+            </template>
+
+            <div class="{{ m.CARD }}">{{ m.stepper('profile', 'profile') }}</div>
+            <div class="{{ m.CARD }}">{{ m.events('profile', 'profileEvents') }}</div>
+
+            {{ m.alert('profile.error') }}
+
+            <template x-if="profile.result">
+              <div class="space-y-3">
+                <template x-for="[tname, t] in Object.entries(profile.result.tables || {})" :key="tname">
+                  <div class="{{ m.CARD }}">
+                    <div class="flex items-center justify-between mb-2">
+                      <h4 class="font-semibold" x-text="tname"></h4>
+                      <span class="text-xs text-slate-400" x-text="t.row_count + ' rows'"></span>
+                    </div>
+                    {{ m.columns_table('profile.result') }}
+                  </div>
+                </template>
+                <div x-html="kbHTML(profile.result?.kb)"></div>
+              </div>
+            </template>
+          </div>
+        </template>
+
+        <!-- ══════════ BENCHMARK ══════════ -->
+        <template x-if="tab === 'benchmark'">
+          <div class="space-y-4 max-w-5xl mx-auto">
+            <div class="{{ m.CARD }}">
+              <h3 class="text-sm font-semibold mb-3">Benchmark options</h3>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <template x-for="f in fields('benchmark')" :key="f.name">
+                  <div x-show="isActive(f)" x-cloak x-html="fieldHTML(f)"></div>
+                </template>
+              </div>
+              <div class="mt-4 flex gap-2">
+                <button @click="previewBenchmark()" :disabled="benchmark.previewing || benchmark.running"
+                  class="{{ m.BTN }}" x-text="benchmark.previewing ? 'Loading…' : 'Preview records'"></button>
+                {{ m.run_button('benchmark', 'runBenchmark()') }}
+              </div>
+            </div>
+
+            {{ m.alert('benchmark.error') }}
+
+            <template x-if="benchmark.examples">
+              <div class="{{ m.CARD }}">
+                <h3 class="text-sm font-semibold mb-2">Preview — <span x-text="benchmark.previewTotal"></span>
+                  matching records <span class="text-slate-400"
+                    x-show="benchmark.examples.length < benchmark.previewTotal"
+                    x-text="'(showing ' + benchmark.examples.length + ')'"></span>
+                </h3>
+                {% call m.table(['ID', 'DB', 'Question', 'Gold SQL'], 'benchmark.examples', 'ex.id', var='ex') %}
+                <td class="px-2 py-1 mono" x-text="ex.id"></td>
+                <td class="px-2 py-1" x-text="ex.db_name"></td>
+                <td class="px-2 py-1" x-text="ex.question"></td>
+                <td class="px-2 py-1 mono text-slate-500" x-text="ex.gold_sql"></td>
+                {% endcall %}
+              </div>
+            </template>
+
+            <!-- Live run: current question, per-question stepper, running usage -->
+            <template x-if="benchmark.started">
+              <div class="{{ m.CARD }} space-y-3">
+                <div class="flex items-center justify-between text-sm">
+                  <span>Model <strong x-text="benchmark.started.model"></strong></span>
+                  <span class="text-slate-400"
+                    x-text="benchmark.done + ' / ' + benchmark.started.total_examples + ' done'"></span>
+                </div>
+                <div x-show="benchmark.current" class="text-sm">
+                  <span class="text-slate-400">Q<span x-text="benchmark.current?.index + 1"></span>:</span>
+                  <span x-text="benchmark.current?.question"></span>
+                </div>
+                {{ m.stepper('benchmark', 'benchmark') }}
+                {{ m.tiles('usageStats(benchmark.usage)') }}
+              </div>
+            </template>
+
+            <!-- Per-question comparison -->
+            <template x-for="r in benchmark.results" :key="r.id">
+              <div class="{{ m.CARD }} space-y-2">
+                <div class="flex items-center justify-between">
+                  <h4 class="text-sm font-semibold"><span class="mono text-slate-400" x-text="r.id"></span> —
+                    <span x-text="r.question"></span></h4>
+                  <span class="text-xs rounded-full px-2 py-0.5" :class="verdict(r).cls" x-text="verdict(r).label"></span>
+                </div>
+                <div class="text-[11px] text-slate-400" x-text="'latency ' + r.usage.latency_seconds + 's · '
+                  + (r.usage.total_tokens || 0) + ' tokens'"></div>
+                <div x-show="r.verdict.error" class="text-xs text-rose-500" x-text="r.verdict.error"></div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                  {{ m.sql_pane('Predicted SQL', 'r.sql.predicted', 'r.results.predicted') }}
+                  {{ m.sql_pane('Gold SQL', 'r.sql.gold', 'r.results.gold') }}
+                </div>
+              </div>
+            </template>
+
+            <template x-if="benchmark.report">
+              <div class="{{ m.CARD }} space-y-3">
+                <h3 class="text-sm font-semibold">Report</h3>
+                {{ m.tiles('reportStats(benchmark.report)') }}
+                {% call m.table(['ID', 'Difficulty', 'Question', 'Match', 'Latency', 'Tokens', 'Error'],
+                                'benchmark.results', "'row-' + r.id", var='r', height='96') %}
+                <td class="px-2 py-1 mono" x-text="r.id"></td>
+                <td class="px-2 py-1" x-text="r.difficulty || '—'"></td>
+                <td class="px-2 py-1" x-text="r.question"></td>
+                <td class="px-2 py-1" x-text="verdict(r).mark"></td>
+                <td class="px-2 py-1" x-text="r.usage.latency_seconds + 's'"></td>
+                <td class="px-2 py-1" x-text="r.usage.total_tokens || 0"></td>
+                <td class="px-2 py-1 text-rose-500" x-text="r.verdict.error || ''"></td>
+                {% endcall %}
+              </div>
+            </template>
+          </div>
+        </template>
+
+      </main>
+    </div>
+  </div>
+</body>
+
+</html>

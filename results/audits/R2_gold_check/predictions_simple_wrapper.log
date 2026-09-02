@@ -1,0 +1,824 @@
+2026-09-01 04:01:55,140 - INFO - === Starting Simple SQLite Evaluation Wrapper ===
+2026-09-01 04:01:55,140 - INFO - Processing 270 instances
+2026-09-01 04:01:55,141 - INFO - Batch size: 10
+2026-09-01 04:01:55,141 - INFO - Databases: ['alien', 'archeology', 'credit', 'cross_db', 'crypto', 'cybermarket', 'disaster', 'fake', 'gaming', 'insider', 'mental', 'museum', 'news', 'polar', 'robot', 'solar', 'vaccine', 'virtual']
+2026-09-01 04:01:55,141 - INFO - Looking for template: /Users/e/Documents/github/text2sql/data/solar/solar_template.sqlite
+2026-09-01 04:01:55,141 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/solar/solar_ephemeral_1.sqlite from /Users/e/Documents/github/text2sql/data/solar/solar_template.sqlite...
+2026-09-01 04:01:55,146 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/solar/solar_ephemeral_1.sqlite
+2026-09-01 04:01:55,146 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/solar/solar_ephemeral_2.sqlite from /Users/e/Documents/github/text2sql/data/solar/solar_template.sqlite...
+2026-09-01 04:01:55,147 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/solar/solar_ephemeral_2.sqlite
+2026-09-01 04:01:55,147 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/solar/solar_ephemeral_3.sqlite from /Users/e/Documents/github/text2sql/data/solar/solar_template.sqlite...
+2026-09-01 04:01:55,148 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/solar/solar_ephemeral_3.sqlite
+2026-09-01 04:01:55,148 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/solar/solar_ephemeral_4.sqlite from /Users/e/Documents/github/text2sql/data/solar/solar_template.sqlite...
+2026-09-01 04:01:55,149 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/solar/solar_ephemeral_4.sqlite
+2026-09-01 04:01:55,149 - INFO - For base_db=solar, ephemeral db list = ['/Users/e/Documents/github/text2sql/data/solar/solar_ephemeral_1.sqlite', '/Users/e/Documents/github/text2sql/data/solar/solar_ephemeral_2.sqlite', '/Users/e/Documents/github/text2sql/data/solar/solar_ephemeral_3.sqlite', '/Users/e/Documents/github/text2sql/data/solar/solar_ephemeral_4.sqlite']
+2026-09-01 04:01:55,149 - INFO - Looking for template: /Users/e/Documents/github/text2sql/data/credit/credit_template.sqlite
+2026-09-01 04:01:55,150 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/credit/credit_ephemeral_1.sqlite from /Users/e/Documents/github/text2sql/data/credit/credit_template.sqlite...
+2026-09-01 04:01:55,156 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/credit/credit_ephemeral_1.sqlite
+2026-09-01 04:01:55,156 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/credit/credit_ephemeral_2.sqlite from /Users/e/Documents/github/text2sql/data/credit/credit_template.sqlite...
+2026-09-01 04:01:55,158 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/credit/credit_ephemeral_2.sqlite
+2026-09-01 04:01:55,158 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/credit/credit_ephemeral_3.sqlite from /Users/e/Documents/github/text2sql/data/credit/credit_template.sqlite...
+2026-09-01 04:01:55,159 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/credit/credit_ephemeral_3.sqlite
+2026-09-01 04:01:55,159 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/credit/credit_ephemeral_4.sqlite from /Users/e/Documents/github/text2sql/data/credit/credit_template.sqlite...
+2026-09-01 04:01:55,161 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/credit/credit_ephemeral_4.sqlite
+2026-09-01 04:01:55,161 - INFO - For base_db=credit, ephemeral db list = ['/Users/e/Documents/github/text2sql/data/credit/credit_ephemeral_1.sqlite', '/Users/e/Documents/github/text2sql/data/credit/credit_ephemeral_2.sqlite', '/Users/e/Documents/github/text2sql/data/credit/credit_ephemeral_3.sqlite', '/Users/e/Documents/github/text2sql/data/credit/credit_ephemeral_4.sqlite']
+2026-09-01 04:01:55,161 - INFO - Looking for template: /Users/e/Documents/github/text2sql/data/news/news_template.sqlite
+2026-09-01 04:01:55,161 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/news/news_ephemeral_1.sqlite from /Users/e/Documents/github/text2sql/data/news/news_template.sqlite...
+2026-09-01 04:01:55,166 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/news/news_ephemeral_1.sqlite
+2026-09-01 04:01:55,166 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/news/news_ephemeral_2.sqlite from /Users/e/Documents/github/text2sql/data/news/news_template.sqlite...
+2026-09-01 04:01:55,167 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/news/news_ephemeral_2.sqlite
+2026-09-01 04:01:55,167 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/news/news_ephemeral_3.sqlite from /Users/e/Documents/github/text2sql/data/news/news_template.sqlite...
+2026-09-01 04:01:55,167 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/news/news_ephemeral_3.sqlite
+2026-09-01 04:01:55,167 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/news/news_ephemeral_4.sqlite from /Users/e/Documents/github/text2sql/data/news/news_template.sqlite...
+2026-09-01 04:01:55,168 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/news/news_ephemeral_4.sqlite
+2026-09-01 04:01:55,168 - INFO - For base_db=news, ephemeral db list = ['/Users/e/Documents/github/text2sql/data/news/news_ephemeral_1.sqlite', '/Users/e/Documents/github/text2sql/data/news/news_ephemeral_2.sqlite', '/Users/e/Documents/github/text2sql/data/news/news_ephemeral_3.sqlite', '/Users/e/Documents/github/text2sql/data/news/news_ephemeral_4.sqlite']
+2026-09-01 04:01:55,168 - INFO - Looking for template: /Users/e/Documents/github/text2sql/data/museum/museum_template.sqlite
+2026-09-01 04:01:55,168 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/museum/museum_ephemeral_1.sqlite from /Users/e/Documents/github/text2sql/data/museum/museum_template.sqlite...
+2026-09-01 04:01:55,174 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/museum/museum_ephemeral_1.sqlite
+2026-09-01 04:01:55,174 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/museum/museum_ephemeral_2.sqlite from /Users/e/Documents/github/text2sql/data/museum/museum_template.sqlite...
+2026-09-01 04:01:55,176 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/museum/museum_ephemeral_2.sqlite
+2026-09-01 04:01:55,176 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/museum/museum_ephemeral_3.sqlite from /Users/e/Documents/github/text2sql/data/museum/museum_template.sqlite...
+2026-09-01 04:01:55,178 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/museum/museum_ephemeral_3.sqlite
+2026-09-01 04:01:55,178 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/museum/museum_ephemeral_4.sqlite from /Users/e/Documents/github/text2sql/data/museum/museum_template.sqlite...
+2026-09-01 04:01:55,180 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/museum/museum_ephemeral_4.sqlite
+2026-09-01 04:01:55,180 - INFO - For base_db=museum, ephemeral db list = ['/Users/e/Documents/github/text2sql/data/museum/museum_ephemeral_1.sqlite', '/Users/e/Documents/github/text2sql/data/museum/museum_ephemeral_2.sqlite', '/Users/e/Documents/github/text2sql/data/museum/museum_ephemeral_3.sqlite', '/Users/e/Documents/github/text2sql/data/museum/museum_ephemeral_4.sqlite']
+2026-09-01 04:01:55,180 - INFO - Looking for template: /Users/e/Documents/github/text2sql/data/crypto/crypto_template.sqlite
+2026-09-01 04:01:55,180 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/crypto/crypto_ephemeral_1.sqlite from /Users/e/Documents/github/text2sql/data/crypto/crypto_template.sqlite...
+2026-09-01 04:01:55,189 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/crypto/crypto_ephemeral_1.sqlite
+2026-09-01 04:01:55,189 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/crypto/crypto_ephemeral_2.sqlite from /Users/e/Documents/github/text2sql/data/crypto/crypto_template.sqlite...
+2026-09-01 04:01:55,191 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/crypto/crypto_ephemeral_2.sqlite
+2026-09-01 04:01:55,191 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/crypto/crypto_ephemeral_3.sqlite from /Users/e/Documents/github/text2sql/data/crypto/crypto_template.sqlite...
+2026-09-01 04:01:55,193 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/crypto/crypto_ephemeral_3.sqlite
+2026-09-01 04:01:55,194 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/crypto/crypto_ephemeral_4.sqlite from /Users/e/Documents/github/text2sql/data/crypto/crypto_template.sqlite...
+2026-09-01 04:01:55,197 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/crypto/crypto_ephemeral_4.sqlite
+2026-09-01 04:01:55,197 - INFO - For base_db=crypto, ephemeral db list = ['/Users/e/Documents/github/text2sql/data/crypto/crypto_ephemeral_1.sqlite', '/Users/e/Documents/github/text2sql/data/crypto/crypto_ephemeral_2.sqlite', '/Users/e/Documents/github/text2sql/data/crypto/crypto_ephemeral_3.sqlite', '/Users/e/Documents/github/text2sql/data/crypto/crypto_ephemeral_4.sqlite']
+2026-09-01 04:01:55,197 - INFO - Looking for template: /Users/e/Documents/github/text2sql/data/robot/robot_template.sqlite
+2026-09-01 04:01:55,197 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/robot/robot_ephemeral_1.sqlite from /Users/e/Documents/github/text2sql/data/robot/robot_template.sqlite...
+2026-09-01 04:01:55,207 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/robot/robot_ephemeral_1.sqlite
+2026-09-01 04:01:55,207 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/robot/robot_ephemeral_2.sqlite from /Users/e/Documents/github/text2sql/data/robot/robot_template.sqlite...
+2026-09-01 04:01:55,209 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/robot/robot_ephemeral_2.sqlite
+2026-09-01 04:01:55,209 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/robot/robot_ephemeral_3.sqlite from /Users/e/Documents/github/text2sql/data/robot/robot_template.sqlite...
+2026-09-01 04:01:55,212 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/robot/robot_ephemeral_3.sqlite
+2026-09-01 04:01:55,212 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/robot/robot_ephemeral_4.sqlite from /Users/e/Documents/github/text2sql/data/robot/robot_template.sqlite...
+2026-09-01 04:01:55,214 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/robot/robot_ephemeral_4.sqlite
+2026-09-01 04:01:55,214 - INFO - For base_db=robot, ephemeral db list = ['/Users/e/Documents/github/text2sql/data/robot/robot_ephemeral_1.sqlite', '/Users/e/Documents/github/text2sql/data/robot/robot_ephemeral_2.sqlite', '/Users/e/Documents/github/text2sql/data/robot/robot_ephemeral_3.sqlite', '/Users/e/Documents/github/text2sql/data/robot/robot_ephemeral_4.sqlite']
+2026-09-01 04:01:55,214 - INFO - Looking for template: /Users/e/Documents/github/text2sql/data/vaccine/vaccine_template.sqlite
+2026-09-01 04:01:55,215 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/vaccine/vaccine_ephemeral_1.sqlite from /Users/e/Documents/github/text2sql/data/vaccine/vaccine_template.sqlite...
+2026-09-01 04:01:55,220 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/vaccine/vaccine_ephemeral_1.sqlite
+2026-09-01 04:01:55,220 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/vaccine/vaccine_ephemeral_2.sqlite from /Users/e/Documents/github/text2sql/data/vaccine/vaccine_template.sqlite...
+2026-09-01 04:01:55,221 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/vaccine/vaccine_ephemeral_2.sqlite
+2026-09-01 04:01:55,221 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/vaccine/vaccine_ephemeral_3.sqlite from /Users/e/Documents/github/text2sql/data/vaccine/vaccine_template.sqlite...
+2026-09-01 04:01:55,222 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/vaccine/vaccine_ephemeral_3.sqlite
+2026-09-01 04:01:55,222 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/vaccine/vaccine_ephemeral_4.sqlite from /Users/e/Documents/github/text2sql/data/vaccine/vaccine_template.sqlite...
+2026-09-01 04:01:55,224 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/vaccine/vaccine_ephemeral_4.sqlite
+2026-09-01 04:01:55,224 - INFO - For base_db=vaccine, ephemeral db list = ['/Users/e/Documents/github/text2sql/data/vaccine/vaccine_ephemeral_1.sqlite', '/Users/e/Documents/github/text2sql/data/vaccine/vaccine_ephemeral_2.sqlite', '/Users/e/Documents/github/text2sql/data/vaccine/vaccine_ephemeral_3.sqlite', '/Users/e/Documents/github/text2sql/data/vaccine/vaccine_ephemeral_4.sqlite']
+2026-09-01 04:01:55,224 - INFO - Looking for template: /Users/e/Documents/github/text2sql/data/insider/insider_template.sqlite
+2026-09-01 04:01:55,224 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/insider/insider_ephemeral_1.sqlite from /Users/e/Documents/github/text2sql/data/insider/insider_template.sqlite...
+2026-09-01 04:01:55,230 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/insider/insider_ephemeral_1.sqlite
+2026-09-01 04:01:55,230 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/insider/insider_ephemeral_2.sqlite from /Users/e/Documents/github/text2sql/data/insider/insider_template.sqlite...
+2026-09-01 04:01:55,230 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/insider/insider_ephemeral_2.sqlite
+2026-09-01 04:01:55,230 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/insider/insider_ephemeral_3.sqlite from /Users/e/Documents/github/text2sql/data/insider/insider_template.sqlite...
+2026-09-01 04:01:55,232 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/insider/insider_ephemeral_3.sqlite
+2026-09-01 04:01:55,232 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/insider/insider_ephemeral_4.sqlite from /Users/e/Documents/github/text2sql/data/insider/insider_template.sqlite...
+2026-09-01 04:01:55,233 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/insider/insider_ephemeral_4.sqlite
+2026-09-01 04:01:55,233 - INFO - For base_db=insider, ephemeral db list = ['/Users/e/Documents/github/text2sql/data/insider/insider_ephemeral_1.sqlite', '/Users/e/Documents/github/text2sql/data/insider/insider_ephemeral_2.sqlite', '/Users/e/Documents/github/text2sql/data/insider/insider_ephemeral_3.sqlite', '/Users/e/Documents/github/text2sql/data/insider/insider_ephemeral_4.sqlite']
+2026-09-01 04:01:55,233 - INFO - Looking for template: /Users/e/Documents/github/text2sql/data/disaster/disaster_template.sqlite
+2026-09-01 04:01:55,233 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/disaster/disaster_ephemeral_1.sqlite from /Users/e/Documents/github/text2sql/data/disaster/disaster_template.sqlite...
+2026-09-01 04:01:55,240 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/disaster/disaster_ephemeral_1.sqlite
+2026-09-01 04:01:55,240 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/disaster/disaster_ephemeral_2.sqlite from /Users/e/Documents/github/text2sql/data/disaster/disaster_template.sqlite...
+2026-09-01 04:01:55,243 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/disaster/disaster_ephemeral_2.sqlite
+2026-09-01 04:01:55,243 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/disaster/disaster_ephemeral_3.sqlite from /Users/e/Documents/github/text2sql/data/disaster/disaster_template.sqlite...
+2026-09-01 04:01:55,244 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/disaster/disaster_ephemeral_3.sqlite
+2026-09-01 04:01:55,244 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/disaster/disaster_ephemeral_4.sqlite from /Users/e/Documents/github/text2sql/data/disaster/disaster_template.sqlite...
+2026-09-01 04:01:55,245 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/disaster/disaster_ephemeral_4.sqlite
+2026-09-01 04:01:55,245 - INFO - For base_db=disaster, ephemeral db list = ['/Users/e/Documents/github/text2sql/data/disaster/disaster_ephemeral_1.sqlite', '/Users/e/Documents/github/text2sql/data/disaster/disaster_ephemeral_2.sqlite', '/Users/e/Documents/github/text2sql/data/disaster/disaster_ephemeral_3.sqlite', '/Users/e/Documents/github/text2sql/data/disaster/disaster_ephemeral_4.sqlite']
+2026-09-01 04:01:55,245 - INFO - Looking for template: /Users/e/Documents/github/text2sql/data/alien/alien_template.sqlite
+2026-09-01 04:01:55,245 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/alien/alien_ephemeral_1.sqlite from /Users/e/Documents/github/text2sql/data/alien/alien_template.sqlite...
+2026-09-01 04:01:55,252 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/alien/alien_ephemeral_1.sqlite
+2026-09-01 04:01:55,252 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/alien/alien_ephemeral_2.sqlite from /Users/e/Documents/github/text2sql/data/alien/alien_template.sqlite...
+2026-09-01 04:01:55,254 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/alien/alien_ephemeral_2.sqlite
+2026-09-01 04:01:55,254 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/alien/alien_ephemeral_3.sqlite from /Users/e/Documents/github/text2sql/data/alien/alien_template.sqlite...
+2026-09-01 04:01:55,257 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/alien/alien_ephemeral_3.sqlite
+2026-09-01 04:01:55,257 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/alien/alien_ephemeral_4.sqlite from /Users/e/Documents/github/text2sql/data/alien/alien_template.sqlite...
+2026-09-01 04:01:55,259 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/alien/alien_ephemeral_4.sqlite
+2026-09-01 04:01:55,259 - INFO - For base_db=alien, ephemeral db list = ['/Users/e/Documents/github/text2sql/data/alien/alien_ephemeral_1.sqlite', '/Users/e/Documents/github/text2sql/data/alien/alien_ephemeral_2.sqlite', '/Users/e/Documents/github/text2sql/data/alien/alien_ephemeral_3.sqlite', '/Users/e/Documents/github/text2sql/data/alien/alien_ephemeral_4.sqlite']
+2026-09-01 04:01:55,259 - INFO - Looking for template: /Users/e/Documents/github/text2sql/data/gaming/gaming_template.sqlite
+2026-09-01 04:01:55,259 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/gaming/gaming_ephemeral_1.sqlite from /Users/e/Documents/github/text2sql/data/gaming/gaming_template.sqlite...
+2026-09-01 04:01:55,265 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/gaming/gaming_ephemeral_1.sqlite
+2026-09-01 04:01:55,265 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/gaming/gaming_ephemeral_2.sqlite from /Users/e/Documents/github/text2sql/data/gaming/gaming_template.sqlite...
+2026-09-01 04:01:55,266 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/gaming/gaming_ephemeral_2.sqlite
+2026-09-01 04:01:55,266 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/gaming/gaming_ephemeral_3.sqlite from /Users/e/Documents/github/text2sql/data/gaming/gaming_template.sqlite...
+2026-09-01 04:01:55,267 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/gaming/gaming_ephemeral_3.sqlite
+2026-09-01 04:01:55,267 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/gaming/gaming_ephemeral_4.sqlite from /Users/e/Documents/github/text2sql/data/gaming/gaming_template.sqlite...
+2026-09-01 04:01:55,268 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/gaming/gaming_ephemeral_4.sqlite
+2026-09-01 04:01:55,268 - INFO - For base_db=gaming, ephemeral db list = ['/Users/e/Documents/github/text2sql/data/gaming/gaming_ephemeral_1.sqlite', '/Users/e/Documents/github/text2sql/data/gaming/gaming_ephemeral_2.sqlite', '/Users/e/Documents/github/text2sql/data/gaming/gaming_ephemeral_3.sqlite', '/Users/e/Documents/github/text2sql/data/gaming/gaming_ephemeral_4.sqlite']
+2026-09-01 04:01:55,268 - INFO - Looking for template: /Users/e/Documents/github/text2sql/data/polar/polar_template.sqlite
+2026-09-01 04:01:55,268 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/polar/polar_ephemeral_1.sqlite from /Users/e/Documents/github/text2sql/data/polar/polar_template.sqlite...
+2026-09-01 04:01:55,276 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/polar/polar_ephemeral_1.sqlite
+2026-09-01 04:01:55,276 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/polar/polar_ephemeral_2.sqlite from /Users/e/Documents/github/text2sql/data/polar/polar_template.sqlite...
+2026-09-01 04:01:55,277 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/polar/polar_ephemeral_2.sqlite
+2026-09-01 04:01:55,277 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/polar/polar_ephemeral_3.sqlite from /Users/e/Documents/github/text2sql/data/polar/polar_template.sqlite...
+2026-09-01 04:01:55,281 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/polar/polar_ephemeral_3.sqlite
+2026-09-01 04:01:55,281 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/polar/polar_ephemeral_4.sqlite from /Users/e/Documents/github/text2sql/data/polar/polar_template.sqlite...
+2026-09-01 04:01:55,284 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/polar/polar_ephemeral_4.sqlite
+2026-09-01 04:01:55,284 - INFO - For base_db=polar, ephemeral db list = ['/Users/e/Documents/github/text2sql/data/polar/polar_ephemeral_1.sqlite', '/Users/e/Documents/github/text2sql/data/polar/polar_ephemeral_2.sqlite', '/Users/e/Documents/github/text2sql/data/polar/polar_ephemeral_3.sqlite', '/Users/e/Documents/github/text2sql/data/polar/polar_ephemeral_4.sqlite']
+2026-09-01 04:01:55,284 - INFO - Looking for template: /Users/e/Documents/github/text2sql/data/cross_db/cross_db_template.sqlite
+2026-09-01 04:01:55,284 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/cross_db/cross_db_ephemeral_1.sqlite from /Users/e/Documents/github/text2sql/data/cross_db/cross_db_template.sqlite...
+2026-09-01 04:01:55,290 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/cross_db/cross_db_ephemeral_1.sqlite
+2026-09-01 04:01:55,290 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/cross_db/cross_db_ephemeral_2.sqlite from /Users/e/Documents/github/text2sql/data/cross_db/cross_db_template.sqlite...
+2026-09-01 04:01:55,291 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/cross_db/cross_db_ephemeral_2.sqlite
+2026-09-01 04:01:55,291 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/cross_db/cross_db_ephemeral_3.sqlite from /Users/e/Documents/github/text2sql/data/cross_db/cross_db_template.sqlite...
+2026-09-01 04:01:55,292 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/cross_db/cross_db_ephemeral_3.sqlite
+2026-09-01 04:01:55,292 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/cross_db/cross_db_ephemeral_4.sqlite from /Users/e/Documents/github/text2sql/data/cross_db/cross_db_template.sqlite...
+2026-09-01 04:01:55,292 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/cross_db/cross_db_ephemeral_4.sqlite
+2026-09-01 04:01:55,292 - INFO - For base_db=cross_db, ephemeral db list = ['/Users/e/Documents/github/text2sql/data/cross_db/cross_db_ephemeral_1.sqlite', '/Users/e/Documents/github/text2sql/data/cross_db/cross_db_ephemeral_2.sqlite', '/Users/e/Documents/github/text2sql/data/cross_db/cross_db_ephemeral_3.sqlite', '/Users/e/Documents/github/text2sql/data/cross_db/cross_db_ephemeral_4.sqlite']
+2026-09-01 04:01:55,292 - INFO - Looking for template: /Users/e/Documents/github/text2sql/data/fake/fake_template.sqlite
+2026-09-01 04:01:55,292 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/fake/fake_ephemeral_1.sqlite from /Users/e/Documents/github/text2sql/data/fake/fake_template.sqlite...
+2026-09-01 04:01:55,299 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/fake/fake_ephemeral_1.sqlite
+2026-09-01 04:01:55,299 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/fake/fake_ephemeral_2.sqlite from /Users/e/Documents/github/text2sql/data/fake/fake_template.sqlite...
+2026-09-01 04:01:55,301 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/fake/fake_ephemeral_2.sqlite
+2026-09-01 04:01:55,301 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/fake/fake_ephemeral_3.sqlite from /Users/e/Documents/github/text2sql/data/fake/fake_template.sqlite...
+2026-09-01 04:01:55,302 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/fake/fake_ephemeral_3.sqlite
+2026-09-01 04:01:55,302 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/fake/fake_ephemeral_4.sqlite from /Users/e/Documents/github/text2sql/data/fake/fake_template.sqlite...
+2026-09-01 04:01:55,304 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/fake/fake_ephemeral_4.sqlite
+2026-09-01 04:01:55,304 - INFO - For base_db=fake, ephemeral db list = ['/Users/e/Documents/github/text2sql/data/fake/fake_ephemeral_1.sqlite', '/Users/e/Documents/github/text2sql/data/fake/fake_ephemeral_2.sqlite', '/Users/e/Documents/github/text2sql/data/fake/fake_ephemeral_3.sqlite', '/Users/e/Documents/github/text2sql/data/fake/fake_ephemeral_4.sqlite']
+2026-09-01 04:01:55,304 - INFO - Looking for template: /Users/e/Documents/github/text2sql/data/archeology/archeology_template.sqlite
+2026-09-01 04:01:55,304 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/archeology/archeology_ephemeral_1.sqlite from /Users/e/Documents/github/text2sql/data/archeology/archeology_template.sqlite...
+2026-09-01 04:01:55,312 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/archeology/archeology_ephemeral_1.sqlite
+2026-09-01 04:01:55,312 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/archeology/archeology_ephemeral_2.sqlite from /Users/e/Documents/github/text2sql/data/archeology/archeology_template.sqlite...
+2026-09-01 04:01:55,314 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/archeology/archeology_ephemeral_2.sqlite
+2026-09-01 04:01:55,314 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/archeology/archeology_ephemeral_3.sqlite from /Users/e/Documents/github/text2sql/data/archeology/archeology_template.sqlite...
+2026-09-01 04:01:55,315 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/archeology/archeology_ephemeral_3.sqlite
+2026-09-01 04:01:55,315 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/archeology/archeology_ephemeral_4.sqlite from /Users/e/Documents/github/text2sql/data/archeology/archeology_template.sqlite...
+2026-09-01 04:01:55,317 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/archeology/archeology_ephemeral_4.sqlite
+2026-09-01 04:01:55,317 - INFO - For base_db=archeology, ephemeral db list = ['/Users/e/Documents/github/text2sql/data/archeology/archeology_ephemeral_1.sqlite', '/Users/e/Documents/github/text2sql/data/archeology/archeology_ephemeral_2.sqlite', '/Users/e/Documents/github/text2sql/data/archeology/archeology_ephemeral_3.sqlite', '/Users/e/Documents/github/text2sql/data/archeology/archeology_ephemeral_4.sqlite']
+2026-09-01 04:01:55,317 - INFO - Looking for template: /Users/e/Documents/github/text2sql/data/mental/mental_template.sqlite
+2026-09-01 04:01:55,317 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/mental/mental_ephemeral_1.sqlite from /Users/e/Documents/github/text2sql/data/mental/mental_template.sqlite...
+2026-09-01 04:01:55,324 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/mental/mental_ephemeral_1.sqlite
+2026-09-01 04:01:55,324 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/mental/mental_ephemeral_2.sqlite from /Users/e/Documents/github/text2sql/data/mental/mental_template.sqlite...
+2026-09-01 04:01:55,325 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/mental/mental_ephemeral_2.sqlite
+2026-09-01 04:01:55,325 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/mental/mental_ephemeral_3.sqlite from /Users/e/Documents/github/text2sql/data/mental/mental_template.sqlite...
+2026-09-01 04:01:55,326 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/mental/mental_ephemeral_3.sqlite
+2026-09-01 04:01:55,326 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/mental/mental_ephemeral_4.sqlite from /Users/e/Documents/github/text2sql/data/mental/mental_template.sqlite...
+2026-09-01 04:01:55,328 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/mental/mental_ephemeral_4.sqlite
+2026-09-01 04:01:55,328 - INFO - For base_db=mental, ephemeral db list = ['/Users/e/Documents/github/text2sql/data/mental/mental_ephemeral_1.sqlite', '/Users/e/Documents/github/text2sql/data/mental/mental_ephemeral_2.sqlite', '/Users/e/Documents/github/text2sql/data/mental/mental_ephemeral_3.sqlite', '/Users/e/Documents/github/text2sql/data/mental/mental_ephemeral_4.sqlite']
+2026-09-01 04:01:55,328 - INFO - Looking for template: /Users/e/Documents/github/text2sql/data/virtual/virtual_template.sqlite
+2026-09-01 04:01:55,328 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/virtual/virtual_ephemeral_1.sqlite from /Users/e/Documents/github/text2sql/data/virtual/virtual_template.sqlite...
+2026-09-01 04:01:55,334 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/virtual/virtual_ephemeral_1.sqlite
+2026-09-01 04:01:55,334 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/virtual/virtual_ephemeral_2.sqlite from /Users/e/Documents/github/text2sql/data/virtual/virtual_template.sqlite...
+2026-09-01 04:01:55,336 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/virtual/virtual_ephemeral_2.sqlite
+2026-09-01 04:01:55,336 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/virtual/virtual_ephemeral_3.sqlite from /Users/e/Documents/github/text2sql/data/virtual/virtual_template.sqlite...
+2026-09-01 04:01:55,339 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/virtual/virtual_ephemeral_3.sqlite
+2026-09-01 04:01:55,339 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/virtual/virtual_ephemeral_4.sqlite from /Users/e/Documents/github/text2sql/data/virtual/virtual_template.sqlite...
+2026-09-01 04:01:55,340 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/virtual/virtual_ephemeral_4.sqlite
+2026-09-01 04:01:55,340 - INFO - For base_db=virtual, ephemeral db list = ['/Users/e/Documents/github/text2sql/data/virtual/virtual_ephemeral_1.sqlite', '/Users/e/Documents/github/text2sql/data/virtual/virtual_ephemeral_2.sqlite', '/Users/e/Documents/github/text2sql/data/virtual/virtual_ephemeral_3.sqlite', '/Users/e/Documents/github/text2sql/data/virtual/virtual_ephemeral_4.sqlite']
+2026-09-01 04:01:55,340 - INFO - Looking for template: /Users/e/Documents/github/text2sql/data/cybermarket/cybermarket_template.sqlite
+2026-09-01 04:01:55,340 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/cybermarket/cybermarket_ephemeral_1.sqlite from /Users/e/Documents/github/text2sql/data/cybermarket/cybermarket_template.sqlite...
+2026-09-01 04:01:55,351 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/cybermarket/cybermarket_ephemeral_1.sqlite
+2026-09-01 04:01:55,351 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/cybermarket/cybermarket_ephemeral_2.sqlite from /Users/e/Documents/github/text2sql/data/cybermarket/cybermarket_template.sqlite...
+2026-09-01 04:01:55,355 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/cybermarket/cybermarket_ephemeral_2.sqlite
+2026-09-01 04:01:55,355 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/cybermarket/cybermarket_ephemeral_3.sqlite from /Users/e/Documents/github/text2sql/data/cybermarket/cybermarket_template.sqlite...
+2026-09-01 04:01:55,357 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/cybermarket/cybermarket_ephemeral_3.sqlite
+2026-09-01 04:01:55,357 - INFO - Creating ephemeral db /Users/e/Documents/github/text2sql/data/cybermarket/cybermarket_ephemeral_4.sqlite from /Users/e/Documents/github/text2sql/data/cybermarket/cybermarket_template.sqlite...
+2026-09-01 04:01:55,359 - INFO - Successfully created /Users/e/Documents/github/text2sql/data/cybermarket/cybermarket_ephemeral_4.sqlite
+2026-09-01 04:01:55,359 - INFO - For base_db=cybermarket, ephemeral db list = ['/Users/e/Documents/github/text2sql/data/cybermarket/cybermarket_ephemeral_1.sqlite', '/Users/e/Documents/github/text2sql/data/cybermarket/cybermarket_ephemeral_2.sqlite', '/Users/e/Documents/github/text2sql/data/cybermarket/cybermarket_ephemeral_3.sqlite', '/Users/e/Documents/github/text2sql/data/cybermarket/cybermarket_ephemeral_4.sqlite']
+2026-09-01 04:01:55,436 - INFO - Starting instance archeology_5 with DB: /Users/e/Documents/github/text2sql/data/archeology/archeology_ephemeral_1.sqlite
+2026-09-01 04:01:55,438 - INFO - Starting instance credit_1 with DB: /Users/e/Documents/github/text2sql/data/credit/credit_ephemeral_1.sqlite
+2026-09-01 04:01:55,440 - INFO - Starting instance alien_M_1 with DB: /Users/e/Documents/github/text2sql/data/alien/alien_ephemeral_1.sqlite
+2026-09-01 04:01:55,440 - INFO - Starting instance alien_1 with DB: /Users/e/Documents/github/text2sql/data/alien/alien_ephemeral_1.sqlite
+2026-09-01 04:01:55,550 - INFO - Instance credit_1 completed successfully
+2026-09-01 04:01:55,552 - INFO - Instance alien_M_1 completed successfully
+2026-09-01 04:01:55,591 - INFO - Instance archeology_5 completed successfully
+2026-09-01 04:01:55,653 - INFO - Starting instance alien_M_2 with DB: /Users/e/Documents/github/text2sql/data/alien/alien_ephemeral_2.sqlite
+2026-09-01 04:01:55,653 - INFO - Starting instance credit_10 with DB: /Users/e/Documents/github/text2sql/data/credit/credit_ephemeral_2.sqlite
+2026-09-01 04:01:55,698 - INFO - Starting instance archeology_6 with DB: /Users/e/Documents/github/text2sql/data/archeology/archeology_ephemeral_2.sqlite
+2026-09-01 04:01:55,715 - INFO - Instance alien_M_2 completed successfully
+2026-09-01 04:01:55,717 - INFO - Instance credit_10 completed successfully
+2026-09-01 04:01:55,775 - INFO - Instance archeology_6 completed successfully
+2026-09-01 04:01:55,820 - INFO - Starting instance alien_M_3 with DB: /Users/e/Documents/github/text2sql/data/alien/alien_ephemeral_3.sqlite
+2026-09-01 04:01:55,821 - INFO - Starting instance credit_2 with DB: /Users/e/Documents/github/text2sql/data/credit/credit_ephemeral_3.sqlite
+2026-09-01 04:01:55,881 - INFO - Instance credit_2 completed successfully
+2026-09-01 04:01:55,882 - INFO - Instance alien_M_3 completed successfully
+2026-09-01 04:01:55,882 - INFO - Starting instance archeology_7 with DB: /Users/e/Documents/github/text2sql/data/archeology/archeology_ephemeral_3.sqlite
+2026-09-01 04:01:55,959 - INFO - Instance archeology_7 completed successfully
+2026-09-01 04:01:55,986 - INFO - Starting instance credit_3 with DB: /Users/e/Documents/github/text2sql/data/credit/credit_ephemeral_4.sqlite
+2026-09-01 04:01:55,989 - INFO - Starting instance alien_M_4 with DB: /Users/e/Documents/github/text2sql/data/alien/alien_ephemeral_4.sqlite
+2026-09-01 04:01:56,046 - INFO - Instance alien_M_4 completed successfully
+2026-09-01 04:01:56,049 - INFO - Instance credit_3 completed successfully
+2026-09-01 04:01:56,065 - INFO - Starting instance archeology_8 with DB: /Users/e/Documents/github/text2sql/data/archeology/archeology_ephemeral_4.sqlite
+2026-09-01 04:01:56,127 - INFO - Instance archeology_8 completed successfully
+2026-09-01 04:01:56,152 - INFO - Starting instance alien_M_5 with DB: /Users/e/Documents/github/text2sql/data/alien/alien_ephemeral_1.sqlite
+2026-09-01 04:01:56,155 - INFO - Starting instance credit_4 with DB: /Users/e/Documents/github/text2sql/data/credit/credit_ephemeral_1.sqlite
+2026-09-01 04:01:56,213 - INFO - Instance credit_4 completed successfully
+2026-09-01 04:01:56,217 - INFO - Instance alien_M_5 completed successfully
+2026-09-01 04:01:56,233 - INFO - Starting instance archeology_9 with DB: /Users/e/Documents/github/text2sql/data/archeology/archeology_ephemeral_1.sqlite
+2026-09-01 04:01:56,306 - INFO - Instance archeology_9 completed successfully
+2026-09-01 04:01:56,320 - INFO - Starting instance archeology_1 with DB: /Users/e/Documents/github/text2sql/data/archeology/archeology_ephemeral_2.sqlite
+2026-09-01 04:01:56,321 - INFO - Starting instance credit_5 with DB: /Users/e/Documents/github/text2sql/data/credit/credit_ephemeral_2.sqlite
+2026-09-01 04:01:56,395 - INFO - Instance archeology_1 completed successfully
+2026-09-01 04:01:56,398 - INFO - Instance credit_5 completed successfully
+2026-09-01 04:01:56,412 - INFO - Starting instance archeology_M_1 with DB: /Users/e/Documents/github/text2sql/data/archeology/archeology_ephemeral_2.sqlite
+2026-09-01 04:01:56,469 - INFO - Instance archeology_M_1 completed successfully
+2026-09-01 04:01:56,500 - INFO - Starting instance archeology_10 with DB: /Users/e/Documents/github/text2sql/data/archeology/archeology_ephemeral_3.sqlite
+2026-09-01 04:01:56,504 - INFO - Starting instance credit_6 with DB: /Users/e/Documents/github/text2sql/data/credit/credit_ephemeral_3.sqlite
+2026-09-01 04:01:56,555 - INFO - Instance alien_1 completed successfully
+2026-09-01 04:01:56,566 - INFO - Instance credit_6 completed successfully
+2026-09-01 04:01:56,575 - INFO - Starting instance archeology_M_2 with DB: /Users/e/Documents/github/text2sql/data/archeology/archeology_ephemeral_3.sqlite
+2026-09-01 04:01:56,584 - INFO - Instance archeology_10 completed successfully
+2026-09-01 04:01:56,631 - INFO - Instance archeology_M_2 completed successfully
+2026-09-01 04:01:56,657 - INFO - Starting instance alien_10 with DB: /Users/e/Documents/github/text2sql/data/alien/alien_ephemeral_2.sqlite
+2026-09-01 04:01:56,670 - INFO - Starting instance credit_7 with DB: /Users/e/Documents/github/text2sql/data/credit/credit_ephemeral_4.sqlite
+2026-09-01 04:01:56,690 - INFO - Starting instance archeology_2 with DB: /Users/e/Documents/github/text2sql/data/archeology/archeology_ephemeral_4.sqlite
+2026-09-01 04:01:56,736 - INFO - Instance credit_7 completed successfully
+2026-09-01 04:01:56,737 - INFO - Starting instance archeology_M_3 with DB: /Users/e/Documents/github/text2sql/data/archeology/archeology_ephemeral_4.sqlite
+2026-09-01 04:01:56,743 - INFO - Instance alien_10 completed successfully
+2026-09-01 04:01:56,760 - INFO - Instance archeology_2 completed successfully
+2026-09-01 04:01:56,794 - INFO - Instance archeology_M_3 completed successfully
+2026-09-01 04:01:56,842 - INFO - Starting instance credit_8 with DB: /Users/e/Documents/github/text2sql/data/credit/credit_ephemeral_1.sqlite
+2026-09-01 04:01:56,849 - INFO - Starting instance alien_2 with DB: /Users/e/Documents/github/text2sql/data/alien/alien_ephemeral_3.sqlite
+2026-09-01 04:01:56,866 - INFO - Starting instance archeology_3 with DB: /Users/e/Documents/github/text2sql/data/archeology/archeology_ephemeral_1.sqlite
+2026-09-01 04:01:56,900 - INFO - Starting instance archeology_M_4 with DB: /Users/e/Documents/github/text2sql/data/archeology/archeology_ephemeral_1.sqlite
+2026-09-01 04:01:56,909 - INFO - Instance alien_2 completed successfully
+2026-09-01 04:01:56,919 - INFO - Instance credit_8 completed successfully
+2026-09-01 04:01:56,934 - INFO - Instance archeology_3 completed successfully
+2026-09-01 04:01:56,958 - INFO - Instance archeology_M_4 completed successfully
+2026-09-01 04:01:57,011 - INFO - Starting instance alien_3 with DB: /Users/e/Documents/github/text2sql/data/alien/alien_ephemeral_4.sqlite
+2026-09-01 04:01:57,025 - INFO - Starting instance credit_9 with DB: /Users/e/Documents/github/text2sql/data/credit/credit_ephemeral_2.sqlite
+2026-09-01 04:01:57,036 - INFO - Starting instance archeology_4 with DB: /Users/e/Documents/github/text2sql/data/archeology/archeology_ephemeral_2.sqlite
+2026-09-01 04:01:57,064 - INFO - Starting instance archeology_M_5 with DB: /Users/e/Documents/github/text2sql/data/archeology/archeology_ephemeral_2.sqlite
+2026-09-01 04:01:57,085 - INFO - Instance alien_3 completed successfully
+2026-09-01 04:01:57,099 - INFO - Instance credit_9 completed successfully
+2026-09-01 04:01:57,117 - INFO - Instance archeology_4 completed successfully
+2026-09-01 04:01:57,131 - INFO - Instance archeology_M_5 completed successfully
+2026-09-01 04:01:57,192 - INFO - Starting instance alien_4 with DB: /Users/e/Documents/github/text2sql/data/alien/alien_ephemeral_1.sqlite
+2026-09-01 04:01:57,204 - INFO - Completed batch 4/27
+2026-09-01 04:01:57,208 - INFO - Starting instance credit_M_1 with DB: /Users/e/Documents/github/text2sql/data/credit/credit_ephemeral_1.sqlite
+2026-09-01 04:01:57,223 - INFO - Completed batch 2/27
+2026-09-01 04:01:57,225 - INFO - Starting instance cross_db_5 with DB: /Users/e/Documents/github/text2sql/data/cross_db/cross_db_ephemeral_1.sqlite
+2026-09-01 04:01:57,237 - INFO - Completed batch 3/27
+2026-09-01 04:01:57,241 - INFO - Starting instance crypto_1 with DB: /Users/e/Documents/github/text2sql/data/crypto/crypto_ephemeral_1.sqlite
+2026-09-01 04:01:57,259 - INFO - Instance alien_4 completed successfully
+2026-09-01 04:01:57,270 - INFO - Instance credit_M_1 completed successfully
+2026-09-01 04:01:57,287 - INFO - Instance cross_db_5 completed successfully
+2026-09-01 04:01:57,301 - INFO - Instance crypto_1 completed successfully
+2026-09-01 04:01:57,367 - INFO - Starting instance alien_5 with DB: /Users/e/Documents/github/text2sql/data/alien/alien_ephemeral_2.sqlite
+2026-09-01 04:01:57,376 - INFO - Starting instance credit_M_2 with DB: /Users/e/Documents/github/text2sql/data/credit/credit_ephemeral_2.sqlite
+2026-09-01 04:01:57,393 - INFO - Starting instance cross_db_6 with DB: /Users/e/Documents/github/text2sql/data/cross_db/cross_db_ephemeral_2.sqlite
+2026-09-01 04:01:57,405 - INFO - Starting instance crypto_10 with DB: /Users/e/Documents/github/text2sql/data/crypto/crypto_ephemeral_2.sqlite
+2026-09-01 04:01:57,439 - INFO - Instance credit_M_2 completed successfully
+2026-09-01 04:01:57,440 - INFO - Instance alien_5 completed successfully
+2026-09-01 04:01:57,456 - INFO - Instance cross_db_6 completed successfully
+2026-09-01 04:01:57,472 - INFO - Instance crypto_10 completed successfully
+2026-09-01 04:01:57,544 - INFO - Starting instance credit_M_3 with DB: /Users/e/Documents/github/text2sql/data/credit/credit_ephemeral_3.sqlite
+2026-09-01 04:01:57,544 - INFO - Starting instance alien_6 with DB: /Users/e/Documents/github/text2sql/data/alien/alien_ephemeral_3.sqlite
+2026-09-01 04:01:57,562 - INFO - Starting instance cross_db_7 with DB: /Users/e/Documents/github/text2sql/data/cross_db/cross_db_ephemeral_3.sqlite
+2026-09-01 04:01:57,579 - INFO - Starting instance crypto_2 with DB: /Users/e/Documents/github/text2sql/data/crypto/crypto_ephemeral_3.sqlite
+2026-09-01 04:01:57,615 - INFO - Instance credit_M_3 completed successfully
+2026-09-01 04:01:57,627 - INFO - Instance cross_db_7 completed successfully
+2026-09-01 04:01:57,633 - INFO - Instance alien_6 completed successfully
+2026-09-01 04:01:57,655 - INFO - Instance crypto_2 completed successfully
+2026-09-01 04:01:57,721 - INFO - Starting instance credit_M_4 with DB: /Users/e/Documents/github/text2sql/data/credit/credit_ephemeral_4.sqlite
+2026-09-01 04:01:57,734 - INFO - Starting instance cross_db_8 with DB: /Users/e/Documents/github/text2sql/data/cross_db/cross_db_ephemeral_4.sqlite
+2026-09-01 04:01:57,739 - INFO - Starting instance alien_7 with DB: /Users/e/Documents/github/text2sql/data/alien/alien_ephemeral_4.sqlite
+2026-09-01 04:01:57,761 - INFO - Starting instance crypto_3 with DB: /Users/e/Documents/github/text2sql/data/crypto/crypto_ephemeral_4.sqlite
+2026-09-01 04:01:57,803 - INFO - Instance cross_db_8 completed successfully
+2026-09-01 04:01:57,805 - INFO - Instance alien_7 completed successfully
+2026-09-01 04:01:57,830 - INFO - Instance crypto_3 completed successfully
+2026-09-01 04:01:57,904 - INFO - Starting instance cross_db_9 with DB: /Users/e/Documents/github/text2sql/data/cross_db/cross_db_ephemeral_1.sqlite
+2026-09-01 04:01:57,911 - INFO - Starting instance alien_8 with DB: /Users/e/Documents/github/text2sql/data/alien/alien_ephemeral_1.sqlite
+2026-09-01 04:01:57,921 - INFO - Instance credit_M_4 completed successfully
+2026-09-01 04:01:57,933 - INFO - Starting instance crypto_4 with DB: /Users/e/Documents/github/text2sql/data/crypto/crypto_ephemeral_1.sqlite
+2026-09-01 04:01:57,966 - INFO - Instance cross_db_9 completed successfully
+2026-09-01 04:01:57,974 - INFO - Instance alien_8 completed successfully
+2026-09-01 04:01:58,013 - INFO - Instance crypto_4 completed successfully
+2026-09-01 04:01:58,027 - INFO - Starting instance credit_M_5 with DB: /Users/e/Documents/github/text2sql/data/credit/credit_ephemeral_1.sqlite
+2026-09-01 04:01:58,070 - INFO - Starting instance cross_db_M_1 with DB: /Users/e/Documents/github/text2sql/data/cross_db/cross_db_ephemeral_2.sqlite
+2026-09-01 04:01:58,080 - INFO - Starting instance alien_9 with DB: /Users/e/Documents/github/text2sql/data/alien/alien_ephemeral_2.sqlite
+2026-09-01 04:01:58,082 - INFO - Instance credit_M_5 completed successfully
+2026-09-01 04:01:58,119 - INFO - Starting instance crypto_5 with DB: /Users/e/Documents/github/text2sql/data/crypto/crypto_ephemeral_2.sqlite
+2026-09-01 04:01:58,151 - INFO - Instance cross_db_M_1 completed successfully
+2026-09-01 04:01:58,166 - INFO - Instance alien_9 completed successfully
+2026-09-01 04:01:58,176 - INFO - Instance crypto_5 completed successfully
+2026-09-01 04:01:58,188 - INFO - Starting instance cross_db_1 with DB: /Users/e/Documents/github/text2sql/data/cross_db/cross_db_ephemeral_2.sqlite
+2026-09-01 04:01:58,248 - INFO - Instance cross_db_1 completed successfully
+2026-09-01 04:01:58,257 - INFO - Starting instance cross_db_M_2 with DB: /Users/e/Documents/github/text2sql/data/cross_db/cross_db_ephemeral_3.sqlite
+2026-09-01 04:01:58,269 - INFO - Completed batch 1/27
+2026-09-01 04:01:58,272 - INFO - Starting instance crypto_M_1 with DB: /Users/e/Documents/github/text2sql/data/crypto/crypto_ephemeral_1.sqlite
+2026-09-01 04:01:58,282 - INFO - Starting instance crypto_6 with DB: /Users/e/Documents/github/text2sql/data/crypto/crypto_ephemeral_3.sqlite
+2026-09-01 04:01:58,318 - INFO - Instance cross_db_M_2 completed successfully
+2026-09-01 04:01:58,332 - INFO - Instance crypto_M_1 completed successfully
+2026-09-01 04:01:58,353 - INFO - Starting instance cross_db_10 with DB: /Users/e/Documents/github/text2sql/data/cross_db/cross_db_ephemeral_3.sqlite
+2026-09-01 04:01:58,383 - INFO - Instance crypto_6 completed successfully
+2026-09-01 04:01:58,414 - INFO - Instance cross_db_10 completed successfully
+2026-09-01 04:01:58,420 - INFO - Starting instance cross_db_M_3 with DB: /Users/e/Documents/github/text2sql/data/cross_db/cross_db_ephemeral_4.sqlite
+2026-09-01 04:01:58,438 - INFO - Starting instance crypto_M_2 with DB: /Users/e/Documents/github/text2sql/data/crypto/crypto_ephemeral_2.sqlite
+2026-09-01 04:01:58,489 - INFO - Starting instance crypto_7 with DB: /Users/e/Documents/github/text2sql/data/crypto/crypto_ephemeral_4.sqlite
+2026-09-01 04:01:58,490 - INFO - Instance cross_db_M_3 completed successfully
+2026-09-01 04:01:58,497 - INFO - Instance crypto_M_2 completed successfully
+2026-09-01 04:01:58,520 - INFO - Starting instance cross_db_2 with DB: /Users/e/Documents/github/text2sql/data/cross_db/cross_db_ephemeral_4.sqlite
+2026-09-01 04:01:58,572 - INFO - Instance crypto_7 completed successfully
+2026-09-01 04:01:58,575 - INFO - Instance cross_db_2 completed successfully
+2026-09-01 04:01:58,597 - INFO - Starting instance cross_db_M_4 with DB: /Users/e/Documents/github/text2sql/data/cross_db/cross_db_ephemeral_1.sqlite
+2026-09-01 04:01:58,603 - INFO - Starting instance crypto_M_3 with DB: /Users/e/Documents/github/text2sql/data/crypto/crypto_ephemeral_3.sqlite
+2026-09-01 04:01:58,654 - INFO - Instance cross_db_M_4 completed successfully
+2026-09-01 04:01:58,657 - INFO - Instance crypto_M_3 completed successfully
+2026-09-01 04:01:58,677 - INFO - Starting instance crypto_8 with DB: /Users/e/Documents/github/text2sql/data/crypto/crypto_ephemeral_1.sqlite
+2026-09-01 04:01:58,680 - INFO - Starting instance cross_db_3 with DB: /Users/e/Documents/github/text2sql/data/cross_db/cross_db_ephemeral_1.sqlite
+2026-09-01 04:01:58,734 - INFO - Instance cross_db_3 completed successfully
+2026-09-01 04:01:58,757 - INFO - Instance crypto_8 completed successfully
+2026-09-01 04:01:58,760 - INFO - Starting instance cross_db_M_5 with DB: /Users/e/Documents/github/text2sql/data/cross_db/cross_db_ephemeral_2.sqlite
+2026-09-01 04:01:58,762 - INFO - Starting instance crypto_M_4 with DB: /Users/e/Documents/github/text2sql/data/crypto/crypto_ephemeral_4.sqlite
+2026-09-01 04:01:58,817 - INFO - Instance cross_db_M_5 completed successfully
+2026-09-01 04:01:58,836 - INFO - Starting instance cross_db_4 with DB: /Users/e/Documents/github/text2sql/data/cross_db/cross_db_ephemeral_2.sqlite
+2026-09-01 04:01:58,860 - INFO - Starting instance crypto_9 with DB: /Users/e/Documents/github/text2sql/data/crypto/crypto_ephemeral_2.sqlite
+2026-09-01 04:01:58,895 - INFO - Instance cross_db_4 completed successfully
+2026-09-01 04:01:58,923 - INFO - Completed batch 6/27
+2026-09-01 04:01:58,926 - INFO - Starting instance cybermarket_5 with DB: /Users/e/Documents/github/text2sql/data/cybermarket/cybermarket_ephemeral_1.sqlite
+2026-09-01 04:01:58,942 - INFO - Instance crypto_9 completed successfully
+2026-09-01 04:01:59,000 - INFO - Completed batch 5/27
+2026-09-01 04:01:59,003 - INFO - Starting instance disaster_1 with DB: /Users/e/Documents/github/text2sql/data/disaster/disaster_ephemeral_1.sqlite
+2026-09-01 04:01:59,018 - INFO - Instance cybermarket_5 completed successfully
+2026-09-01 04:01:59,048 - INFO - Completed batch 7/27
+2026-09-01 04:01:59,051 - INFO - Starting instance disaster_M_1 with DB: /Users/e/Documents/github/text2sql/data/disaster/disaster_ephemeral_1.sqlite
+2026-09-01 04:01:59,067 - INFO - Instance disaster_1 completed successfully
+2026-09-01 04:01:59,123 - INFO - Starting instance cybermarket_6 with DB: /Users/e/Documents/github/text2sql/data/cybermarket/cybermarket_ephemeral_2.sqlite
+2026-09-01 04:01:59,170 - INFO - Starting instance disaster_10 with DB: /Users/e/Documents/github/text2sql/data/disaster/disaster_ephemeral_2.sqlite
+2026-09-01 04:01:59,192 - INFO - Instance cybermarket_6 completed successfully
+2026-09-01 04:01:59,208 - INFO - Instance disaster_M_1 completed successfully
+2026-09-01 04:01:59,245 - INFO - Instance disaster_10 completed successfully
+2026-09-01 04:01:59,296 - INFO - Starting instance cybermarket_7 with DB: /Users/e/Documents/github/text2sql/data/cybermarket/cybermarket_ephemeral_3.sqlite
+2026-09-01 04:01:59,314 - INFO - Starting instance disaster_M_2 with DB: /Users/e/Documents/github/text2sql/data/disaster/disaster_ephemeral_2.sqlite
+2026-09-01 04:01:59,352 - INFO - Starting instance disaster_2 with DB: /Users/e/Documents/github/text2sql/data/disaster/disaster_ephemeral_3.sqlite
+2026-09-01 04:01:59,367 - INFO - Instance cybermarket_7 completed successfully
+2026-09-01 04:01:59,377 - INFO - Instance disaster_M_2 completed successfully
+2026-09-01 04:01:59,419 - INFO - Instance disaster_2 completed successfully
+2026-09-01 04:01:59,471 - INFO - Starting instance cybermarket_8 with DB: /Users/e/Documents/github/text2sql/data/cybermarket/cybermarket_ephemeral_4.sqlite
+2026-09-01 04:01:59,480 - INFO - Starting instance disaster_M_3 with DB: /Users/e/Documents/github/text2sql/data/disaster/disaster_ephemeral_3.sqlite
+2026-09-01 04:01:59,524 - INFO - Starting instance disaster_3 with DB: /Users/e/Documents/github/text2sql/data/disaster/disaster_ephemeral_4.sqlite
+2026-09-01 04:01:59,545 - INFO - Instance disaster_M_3 completed successfully
+2026-09-01 04:01:59,565 - INFO - Instance cybermarket_8 completed successfully
+2026-09-01 04:01:59,595 - INFO - Instance disaster_3 completed successfully
+2026-09-01 04:01:59,648 - INFO - Starting instance disaster_M_4 with DB: /Users/e/Documents/github/text2sql/data/disaster/disaster_ephemeral_4.sqlite
+2026-09-01 04:01:59,659 - INFO - Instance crypto_M_4 completed successfully
+2026-09-01 04:01:59,671 - INFO - Starting instance cybermarket_9 with DB: /Users/e/Documents/github/text2sql/data/cybermarket/cybermarket_ephemeral_1.sqlite
+2026-09-01 04:01:59,701 - INFO - Starting instance disaster_4 with DB: /Users/e/Documents/github/text2sql/data/disaster/disaster_ephemeral_1.sqlite
+2026-09-01 04:01:59,714 - INFO - Instance disaster_M_4 completed successfully
+2026-09-01 04:01:59,752 - INFO - Instance cybermarket_9 completed successfully
+2026-09-01 04:01:59,760 - INFO - Starting instance crypto_M_5 with DB: /Users/e/Documents/github/text2sql/data/crypto/crypto_ephemeral_1.sqlite
+2026-09-01 04:01:59,761 - INFO - Instance disaster_4 completed successfully
+2026-09-01 04:01:59,819 - INFO - Instance crypto_M_5 completed successfully
+2026-09-01 04:01:59,820 - INFO - Starting instance disaster_M_5 with DB: /Users/e/Documents/github/text2sql/data/disaster/disaster_ephemeral_1.sqlite
+2026-09-01 04:01:59,858 - INFO - Starting instance cybermarket_M_1 with DB: /Users/e/Documents/github/text2sql/data/cybermarket/cybermarket_ephemeral_2.sqlite
+2026-09-01 04:01:59,867 - INFO - Starting instance disaster_5 with DB: /Users/e/Documents/github/text2sql/data/disaster/disaster_ephemeral_2.sqlite
+2026-09-01 04:01:59,876 - INFO - Instance disaster_M_5 completed successfully
+2026-09-01 04:01:59,922 - INFO - Instance cybermarket_M_1 completed successfully
+2026-09-01 04:01:59,925 - INFO - Starting instance cybermarket_1 with DB: /Users/e/Documents/github/text2sql/data/cybermarket/cybermarket_ephemeral_2.sqlite
+2026-09-01 04:01:59,933 - INFO - Instance disaster_5 completed successfully
+2026-09-01 04:01:59,982 - INFO - Starting instance fake_1 with DB: /Users/e/Documents/github/text2sql/data/fake/fake_ephemeral_2.sqlite
+2026-09-01 04:01:59,983 - INFO - Instance cybermarket_1 completed successfully
+2026-09-01 04:02:00,028 - INFO - Starting instance cybermarket_M_2 with DB: /Users/e/Documents/github/text2sql/data/cybermarket/cybermarket_ephemeral_3.sqlite
+2026-09-01 04:02:00,039 - INFO - Starting instance disaster_6 with DB: /Users/e/Documents/github/text2sql/data/disaster/disaster_ephemeral_3.sqlite
+2026-09-01 04:02:00,085 - INFO - Instance cybermarket_M_2 completed successfully
+2026-09-01 04:02:00,087 - INFO - Starting instance cybermarket_10 with DB: /Users/e/Documents/github/text2sql/data/cybermarket/cybermarket_ephemeral_3.sqlite
+2026-09-01 04:02:00,103 - INFO - Instance disaster_6 completed successfully
+2026-09-01 04:02:00,156 - INFO - Instance cybermarket_10 completed successfully
+2026-09-01 04:02:00,162 - INFO - Instance fake_1 completed successfully
+2026-09-01 04:02:00,191 - INFO - Starting instance cybermarket_M_3 with DB: /Users/e/Documents/github/text2sql/data/cybermarket/cybermarket_ephemeral_4.sqlite
+2026-09-01 04:02:00,206 - INFO - Starting instance disaster_7 with DB: /Users/e/Documents/github/text2sql/data/disaster/disaster_ephemeral_4.sqlite
+2026-09-01 04:02:00,246 - INFO - Instance cybermarket_M_3 completed successfully
+2026-09-01 04:02:00,262 - INFO - Starting instance cybermarket_2 with DB: /Users/e/Documents/github/text2sql/data/cybermarket/cybermarket_ephemeral_4.sqlite
+2026-09-01 04:02:00,268 - INFO - Starting instance fake_10 with DB: /Users/e/Documents/github/text2sql/data/fake/fake_ephemeral_3.sqlite
+2026-09-01 04:02:00,283 - INFO - Instance disaster_7 completed successfully
+2026-09-01 04:02:00,322 - INFO - Instance cybermarket_2 completed successfully
+2026-09-01 04:02:00,345 - INFO - Instance fake_10 completed successfully
+2026-09-01 04:02:00,352 - INFO - Starting instance cybermarket_M_4 with DB: /Users/e/Documents/github/text2sql/data/cybermarket/cybermarket_ephemeral_1.sqlite
+2026-09-01 04:02:00,389 - INFO - Starting instance disaster_8 with DB: /Users/e/Documents/github/text2sql/data/disaster/disaster_ephemeral_1.sqlite
+2026-09-01 04:02:00,428 - INFO - Starting instance cybermarket_3 with DB: /Users/e/Documents/github/text2sql/data/cybermarket/cybermarket_ephemeral_1.sqlite
+2026-09-01 04:02:00,430 - INFO - Instance cybermarket_M_4 completed successfully
+2026-09-01 04:02:00,447 - INFO - Starting instance fake_2 with DB: /Users/e/Documents/github/text2sql/data/fake/fake_ephemeral_4.sqlite
+2026-09-01 04:02:00,458 - INFO - Instance disaster_8 completed successfully
+2026-09-01 04:02:00,534 - INFO - Instance cybermarket_3 completed successfully
+2026-09-01 04:02:00,536 - INFO - Starting instance cybermarket_M_5 with DB: /Users/e/Documents/github/text2sql/data/cybermarket/cybermarket_ephemeral_2.sqlite
+2026-09-01 04:02:00,544 - INFO - Instance fake_2 completed successfully
+2026-09-01 04:02:00,564 - INFO - Starting instance disaster_9 with DB: /Users/e/Documents/github/text2sql/data/disaster/disaster_ephemeral_2.sqlite
+2026-09-01 04:02:00,597 - INFO - Instance cybermarket_M_5 completed successfully
+2026-09-01 04:02:00,626 - INFO - Instance disaster_9 completed successfully
+2026-09-01 04:02:00,636 - INFO - Starting instance cybermarket_4 with DB: /Users/e/Documents/github/text2sql/data/cybermarket/cybermarket_ephemeral_2.sqlite
+2026-09-01 04:02:00,650 - INFO - Starting instance fake_3 with DB: /Users/e/Documents/github/text2sql/data/fake/fake_ephemeral_1.sqlite
+2026-09-01 04:02:00,703 - INFO - Completed batch 9/27
+2026-09-01 04:02:00,706 - INFO - Starting instance fake_5 with DB: /Users/e/Documents/github/text2sql/data/fake/fake_ephemeral_1.sqlite
+2026-09-01 04:02:00,711 - INFO - Instance fake_3 completed successfully
+2026-09-01 04:02:00,731 - INFO - Completed batch 10/27
+2026-09-01 04:02:00,734 - INFO - Starting instance gaming_1 with DB: /Users/e/Documents/github/text2sql/data/gaming/gaming_ephemeral_1.sqlite
+2026-09-01 04:02:00,757 - INFO - Instance cybermarket_4 completed successfully
+2026-09-01 04:02:00,795 - INFO - Instance gaming_1 completed successfully
+2026-09-01 04:02:00,817 - INFO - Starting instance fake_4 with DB: /Users/e/Documents/github/text2sql/data/fake/fake_ephemeral_2.sqlite
+2026-09-01 04:02:00,863 - INFO - Completed batch 8/27
+2026-09-01 04:02:00,866 - INFO - Starting instance gaming_M_1 with DB: /Users/e/Documents/github/text2sql/data/gaming/gaming_ephemeral_1.sqlite
+2026-09-01 04:02:00,875 - INFO - Instance fake_4 completed successfully
+2026-09-01 04:02:00,901 - INFO - Starting instance gaming_10 with DB: /Users/e/Documents/github/text2sql/data/gaming/gaming_ephemeral_2.sqlite
+2026-09-01 04:02:00,930 - INFO - Instance gaming_M_1 completed successfully
+2026-09-01 04:02:00,959 - INFO - Instance gaming_10 completed successfully
+2026-09-01 04:02:00,981 - INFO - Completed batch 11/27
+2026-09-01 04:02:00,983 - INFO - Starting instance insider_5 with DB: /Users/e/Documents/github/text2sql/data/insider/insider_ephemeral_1.sqlite
+2026-09-01 04:02:01,036 - INFO - Starting instance gaming_M_2 with DB: /Users/e/Documents/github/text2sql/data/gaming/gaming_ephemeral_2.sqlite
+2026-09-01 04:02:01,043 - INFO - Instance fake_5 completed successfully
+2026-09-01 04:02:01,049 - INFO - Instance insider_5 completed successfully
+2026-09-01 04:02:01,065 - INFO - Starting instance gaming_2 with DB: /Users/e/Documents/github/text2sql/data/gaming/gaming_ephemeral_3.sqlite
+2026-09-01 04:02:01,114 - INFO - Instance gaming_M_2 completed successfully
+2026-09-01 04:02:01,132 - INFO - Instance gaming_2 completed successfully
+2026-09-01 04:02:01,149 - INFO - Starting instance fake_6 with DB: /Users/e/Documents/github/text2sql/data/fake/fake_ephemeral_2.sqlite
+2026-09-01 04:02:01,155 - INFO - Starting instance insider_6 with DB: /Users/e/Documents/github/text2sql/data/insider/insider_ephemeral_2.sqlite
+2026-09-01 04:02:01,210 - INFO - Instance insider_6 completed successfully
+2026-09-01 04:02:01,220 - INFO - Starting instance gaming_M_3 with DB: /Users/e/Documents/github/text2sql/data/gaming/gaming_ephemeral_3.sqlite
+2026-09-01 04:02:01,239 - INFO - Starting instance gaming_3 with DB: /Users/e/Documents/github/text2sql/data/gaming/gaming_ephemeral_4.sqlite
+2026-09-01 04:02:01,285 - INFO - Instance gaming_M_3 completed successfully
+2026-09-01 04:02:01,314 - INFO - Starting instance insider_7 with DB: /Users/e/Documents/github/text2sql/data/insider/insider_ephemeral_3.sqlite
+2026-09-01 04:02:01,323 - INFO - Instance gaming_3 completed successfully
+2026-09-01 04:02:01,386 - INFO - Starting instance gaming_M_4 with DB: /Users/e/Documents/github/text2sql/data/gaming/gaming_ephemeral_4.sqlite
+2026-09-01 04:02:01,390 - INFO - Instance insider_7 completed successfully
+2026-09-01 04:02:01,429 - INFO - Starting instance gaming_4 with DB: /Users/e/Documents/github/text2sql/data/gaming/gaming_ephemeral_1.sqlite
+2026-09-01 04:02:01,450 - INFO - Instance gaming_M_4 completed successfully
+2026-09-01 04:02:01,494 - INFO - Instance gaming_4 completed successfully
+2026-09-01 04:02:01,496 - INFO - Starting instance insider_8 with DB: /Users/e/Documents/github/text2sql/data/insider/insider_ephemeral_4.sqlite
+2026-09-01 04:02:01,556 - INFO - Starting instance gaming_M_5 with DB: /Users/e/Documents/github/text2sql/data/gaming/gaming_ephemeral_1.sqlite
+2026-09-01 04:02:01,571 - INFO - Instance insider_8 completed successfully
+2026-09-01 04:02:01,600 - INFO - Starting instance gaming_5 with DB: /Users/e/Documents/github/text2sql/data/gaming/gaming_ephemeral_2.sqlite
+2026-09-01 04:02:01,618 - INFO - Instance gaming_M_5 completed successfully
+2026-09-01 04:02:01,663 - INFO - Instance gaming_5 completed successfully
+2026-09-01 04:02:01,677 - INFO - Starting instance insider_9 with DB: /Users/e/Documents/github/text2sql/data/insider/insider_ephemeral_1.sqlite
+2026-09-01 04:02:01,724 - INFO - Starting instance insider_1 with DB: /Users/e/Documents/github/text2sql/data/insider/insider_ephemeral_2.sqlite
+2026-09-01 04:02:01,743 - INFO - Instance insider_9 completed successfully
+2026-09-01 04:02:01,772 - INFO - Starting instance gaming_6 with DB: /Users/e/Documents/github/text2sql/data/gaming/gaming_ephemeral_3.sqlite
+2026-09-01 04:02:01,796 - INFO - Instance insider_1 completed successfully
+2026-09-01 04:02:01,832 - INFO - Instance gaming_6 completed successfully
+2026-09-01 04:02:01,849 - INFO - Starting instance insider_M_1 with DB: /Users/e/Documents/github/text2sql/data/insider/insider_ephemeral_2.sqlite
+2026-09-01 04:02:01,897 - INFO - Starting instance insider_10 with DB: /Users/e/Documents/github/text2sql/data/insider/insider_ephemeral_3.sqlite
+2026-09-01 04:02:01,903 - INFO - Instance insider_M_1 completed successfully
+2026-09-01 04:02:01,938 - INFO - Starting instance gaming_7 with DB: /Users/e/Documents/github/text2sql/data/gaming/gaming_ephemeral_4.sqlite
+2026-09-01 04:02:01,963 - INFO - Instance insider_10 completed successfully
+2026-09-01 04:02:02,010 - INFO - Starting instance insider_M_2 with DB: /Users/e/Documents/github/text2sql/data/insider/insider_ephemeral_3.sqlite
+2026-09-01 04:02:02,011 - INFO - Instance gaming_7 completed successfully
+2026-09-01 04:02:02,069 - INFO - Starting instance insider_2 with DB: /Users/e/Documents/github/text2sql/data/insider/insider_ephemeral_4.sqlite
+2026-09-01 04:02:02,080 - INFO - Instance insider_M_2 completed successfully
+2026-09-01 04:02:02,117 - INFO - Starting instance gaming_8 with DB: /Users/e/Documents/github/text2sql/data/gaming/gaming_ephemeral_1.sqlite
+2026-09-01 04:02:02,132 - INFO - Instance insider_2 completed successfully
+2026-09-01 04:02:02,184 - INFO - Starting instance insider_M_3 with DB: /Users/e/Documents/github/text2sql/data/insider/insider_ephemeral_4.sqlite
+2026-09-01 04:02:02,222 - INFO - Instance gaming_8 completed successfully
+2026-09-01 04:02:02,238 - INFO - Starting instance insider_3 with DB: /Users/e/Documents/github/text2sql/data/insider/insider_ephemeral_1.sqlite
+2026-09-01 04:02:02,263 - INFO - Instance insider_M_3 completed successfully
+2026-09-01 04:02:02,313 - INFO - Instance insider_3 completed successfully
+2026-09-01 04:02:02,325 - INFO - Starting instance gaming_9 with DB: /Users/e/Documents/github/text2sql/data/gaming/gaming_ephemeral_2.sqlite
+2026-09-01 04:02:02,370 - INFO - Starting instance insider_M_4 with DB: /Users/e/Documents/github/text2sql/data/insider/insider_ephemeral_1.sqlite
+2026-09-01 04:02:02,399 - INFO - Instance gaming_9 completed successfully
+2026-09-01 04:02:02,419 - INFO - Starting instance insider_4 with DB: /Users/e/Documents/github/text2sql/data/insider/insider_ephemeral_2.sqlite
+2026-09-01 04:02:02,441 - INFO - Instance insider_M_4 completed successfully
+2026-09-01 04:02:02,502 - INFO - Completed batch 13/27
+2026-09-01 04:02:02,505 - INFO - Instance insider_4 completed successfully
+2026-09-01 04:02:02,506 - INFO - Starting instance mental_1 with DB: /Users/e/Documents/github/text2sql/data/mental/mental_ephemeral_1.sqlite
+2026-09-01 04:02:02,547 - INFO - Starting instance insider_M_5 with DB: /Users/e/Documents/github/text2sql/data/insider/insider_ephemeral_2.sqlite
+2026-09-01 04:02:02,580 - INFO - Instance mental_1 completed successfully
+2026-09-01 04:02:02,611 - INFO - Completed batch 14/27
+2026-09-01 04:02:02,614 - INFO - Starting instance mental_M_1 with DB: /Users/e/Documents/github/text2sql/data/mental/mental_ephemeral_1.sqlite
+2026-09-01 04:02:02,658 - INFO - Instance insider_M_5 completed successfully
+2026-09-01 04:02:02,680 - INFO - Instance mental_M_1 completed successfully
+2026-09-01 04:02:02,686 - INFO - Starting instance mental_10 with DB: /Users/e/Documents/github/text2sql/data/mental/mental_ephemeral_2.sqlite
+2026-09-01 04:02:02,760 - INFO - Instance mental_10 completed successfully
+2026-09-01 04:02:02,764 - INFO - Completed batch 15/27
+2026-09-01 04:02:02,767 - INFO - Starting instance museum_5 with DB: /Users/e/Documents/github/text2sql/data/museum/museum_ephemeral_1.sqlite
+2026-09-01 04:02:02,786 - INFO - Starting instance mental_M_2 with DB: /Users/e/Documents/github/text2sql/data/mental/mental_ephemeral_2.sqlite
+2026-09-01 04:02:02,871 - INFO - Starting instance mental_2 with DB: /Users/e/Documents/github/text2sql/data/mental/mental_ephemeral_3.sqlite
+2026-09-01 04:02:02,929 - INFO - Instance mental_M_2 completed successfully
+2026-09-01 04:02:02,956 - INFO - Instance museum_5 completed successfully
+2026-09-01 04:02:03,033 - INFO - Instance mental_2 completed successfully
+2026-09-01 04:02:03,035 - INFO - Starting instance mental_M_3 with DB: /Users/e/Documents/github/text2sql/data/mental/mental_ephemeral_3.sqlite
+2026-09-01 04:02:03,066 - INFO - Starting instance museum_6 with DB: /Users/e/Documents/github/text2sql/data/museum/museum_ephemeral_2.sqlite
+2026-09-01 04:02:03,142 - INFO - Starting instance mental_3 with DB: /Users/e/Documents/github/text2sql/data/mental/mental_ephemeral_4.sqlite
+2026-09-01 04:02:03,146 - INFO - Instance mental_M_3 completed successfully
+2026-09-01 04:02:03,176 - INFO - Instance museum_6 completed successfully
+2026-09-01 04:02:03,236 - INFO - Instance mental_3 completed successfully
+2026-09-01 04:02:03,252 - INFO - Starting instance mental_M_4 with DB: /Users/e/Documents/github/text2sql/data/mental/mental_ephemeral_4.sqlite
+2026-09-01 04:02:03,285 - INFO - Starting instance museum_7 with DB: /Users/e/Documents/github/text2sql/data/museum/museum_ephemeral_3.sqlite
+2026-09-01 04:02:03,319 - INFO - Instance mental_M_4 completed successfully
+2026-09-01 04:02:03,342 - INFO - Starting instance mental_4 with DB: /Users/e/Documents/github/text2sql/data/mental/mental_ephemeral_1.sqlite
+2026-09-01 04:02:03,348 - INFO - Instance museum_7 completed successfully
+2026-09-01 04:02:03,406 - INFO - Instance mental_4 completed successfully
+2026-09-01 04:02:03,425 - INFO - Starting instance mental_M_5 with DB: /Users/e/Documents/github/text2sql/data/mental/mental_ephemeral_1.sqlite
+2026-09-01 04:02:03,453 - INFO - Starting instance museum_8 with DB: /Users/e/Documents/github/text2sql/data/museum/museum_ephemeral_4.sqlite
+2026-09-01 04:02:03,493 - INFO - Instance mental_M_5 completed successfully
+2026-09-01 04:02:03,510 - INFO - Starting instance mental_5 with DB: /Users/e/Documents/github/text2sql/data/mental/mental_ephemeral_2.sqlite
+2026-09-01 04:02:03,528 - INFO - Instance museum_8 completed successfully
+2026-09-01 04:02:03,600 - INFO - Starting instance museum_1 with DB: /Users/e/Documents/github/text2sql/data/museum/museum_ephemeral_2.sqlite
+2026-09-01 04:02:03,634 - INFO - Starting instance museum_9 with DB: /Users/e/Documents/github/text2sql/data/museum/museum_ephemeral_1.sqlite
+2026-09-01 04:02:03,671 - INFO - Instance museum_1 completed successfully
+2026-09-01 04:02:03,702 - INFO - Instance mental_5 completed successfully
+2026-09-01 04:02:03,774 - INFO - Instance museum_9 completed successfully
+2026-09-01 04:02:03,777 - INFO - Starting instance museum_10 with DB: /Users/e/Documents/github/text2sql/data/museum/museum_ephemeral_3.sqlite
+2026-09-01 04:02:03,807 - INFO - Starting instance mental_6 with DB: /Users/e/Documents/github/text2sql/data/mental/mental_ephemeral_3.sqlite
+2026-09-01 04:02:03,850 - INFO - Instance museum_10 completed successfully
+2026-09-01 04:02:03,878 - INFO - Instance mental_6 completed successfully
+2026-09-01 04:02:03,880 - INFO - Starting instance museum_M_1 with DB: /Users/e/Documents/github/text2sql/data/museum/museum_ephemeral_2.sqlite
+2026-09-01 04:02:03,938 - INFO - Instance museum_M_1 completed successfully
+2026-09-01 04:02:03,954 - INFO - Starting instance museum_2 with DB: /Users/e/Documents/github/text2sql/data/museum/museum_ephemeral_4.sqlite
+2026-09-01 04:02:03,984 - INFO - Starting instance mental_7 with DB: /Users/e/Documents/github/text2sql/data/mental/mental_ephemeral_4.sqlite
+2026-09-01 04:02:04,029 - INFO - Instance museum_2 completed successfully
+2026-09-01 04:02:04,044 - INFO - Starting instance museum_M_2 with DB: /Users/e/Documents/github/text2sql/data/museum/museum_ephemeral_3.sqlite
+2026-09-01 04:02:04,056 - INFO - Instance mental_7 completed successfully
+2026-09-01 04:02:04,101 - INFO - Instance museum_M_2 completed successfully
+2026-09-01 04:02:04,135 - INFO - Starting instance museum_3 with DB: /Users/e/Documents/github/text2sql/data/museum/museum_ephemeral_1.sqlite
+2026-09-01 04:02:04,162 - INFO - Starting instance mental_8 with DB: /Users/e/Documents/github/text2sql/data/mental/mental_ephemeral_1.sqlite
+2026-09-01 04:02:04,202 - INFO - Starting instance museum_M_3 with DB: /Users/e/Documents/github/text2sql/data/museum/museum_ephemeral_4.sqlite
+2026-09-01 04:02:04,207 - INFO - Instance museum_3 completed successfully
+2026-09-01 04:02:04,229 - INFO - Instance mental_8 completed successfully
+2026-09-01 04:02:04,261 - INFO - Instance museum_M_3 completed successfully
+2026-09-01 04:02:04,314 - INFO - Starting instance museum_4 with DB: /Users/e/Documents/github/text2sql/data/museum/museum_ephemeral_2.sqlite
+2026-09-01 04:02:04,336 - INFO - Starting instance mental_9 with DB: /Users/e/Documents/github/text2sql/data/mental/mental_ephemeral_2.sqlite
+2026-09-01 04:02:04,367 - INFO - Starting instance museum_M_4 with DB: /Users/e/Documents/github/text2sql/data/museum/museum_ephemeral_1.sqlite
+2026-09-01 04:02:04,386 - INFO - Instance museum_4 completed successfully
+2026-09-01 04:02:04,404 - INFO - Instance mental_9 completed successfully
+2026-09-01 04:02:04,425 - INFO - Instance museum_M_4 completed successfully
+2026-09-01 04:02:04,487 - INFO - Completed batch 17/27
+2026-09-01 04:02:04,490 - INFO - Starting instance news_1 with DB: /Users/e/Documents/github/text2sql/data/news/news_ephemeral_1.sqlite
+2026-09-01 04:02:04,510 - INFO - Completed batch 16/27
+2026-09-01 04:02:04,513 - INFO - Starting instance news_M_1 with DB: /Users/e/Documents/github/text2sql/data/news/news_ephemeral_1.sqlite
+2026-09-01 04:02:04,531 - INFO - Starting instance museum_M_5 with DB: /Users/e/Documents/github/text2sql/data/museum/museum_ephemeral_2.sqlite
+2026-09-01 04:02:04,555 - INFO - Instance news_1 completed successfully
+2026-09-01 04:02:04,572 - INFO - Instance news_M_1 completed successfully
+2026-09-01 04:02:04,589 - INFO - Instance museum_M_5 completed successfully
+2026-09-01 04:02:04,662 - INFO - Starting instance news_10 with DB: /Users/e/Documents/github/text2sql/data/news/news_ephemeral_2.sqlite
+2026-09-01 04:02:04,678 - INFO - Starting instance news_M_2 with DB: /Users/e/Documents/github/text2sql/data/news/news_ephemeral_2.sqlite
+2026-09-01 04:02:04,695 - INFO - Completed batch 18/27
+2026-09-01 04:02:04,699 - INFO - Starting instance polar_5 with DB: /Users/e/Documents/github/text2sql/data/polar/polar_ephemeral_1.sqlite
+2026-09-01 04:02:04,724 - INFO - Instance news_10 completed successfully
+2026-09-01 04:02:04,738 - INFO - Instance news_M_2 completed successfully
+2026-09-01 04:02:04,765 - INFO - Instance polar_5 completed successfully
+2026-09-01 04:02:04,830 - INFO - Starting instance news_2 with DB: /Users/e/Documents/github/text2sql/data/news/news_ephemeral_3.sqlite
+2026-09-01 04:02:04,845 - INFO - Starting instance news_M_3 with DB: /Users/e/Documents/github/text2sql/data/news/news_ephemeral_3.sqlite
+2026-09-01 04:02:04,871 - INFO - Starting instance polar_6 with DB: /Users/e/Documents/github/text2sql/data/polar/polar_ephemeral_2.sqlite
+2026-09-01 04:02:04,894 - INFO - Instance news_2 completed successfully
+2026-09-01 04:02:04,903 - INFO - Instance news_M_3 completed successfully
+2026-09-01 04:02:04,937 - INFO - Instance polar_6 completed successfully
+2026-09-01 04:02:05,000 - INFO - Starting instance news_3 with DB: /Users/e/Documents/github/text2sql/data/news/news_ephemeral_4.sqlite
+2026-09-01 04:02:05,009 - INFO - Starting instance news_M_4 with DB: /Users/e/Documents/github/text2sql/data/news/news_ephemeral_4.sqlite
+2026-09-01 04:02:05,040 - INFO - Starting instance polar_7 with DB: /Users/e/Documents/github/text2sql/data/polar/polar_ephemeral_3.sqlite
+2026-09-01 04:02:05,074 - INFO - Instance news_3 completed successfully
+2026-09-01 04:02:05,075 - INFO - Instance news_M_4 completed successfully
+2026-09-01 04:02:05,107 - INFO - Instance polar_7 completed successfully
+2026-09-01 04:02:05,182 - INFO - Starting instance news_M_5 with DB: /Users/e/Documents/github/text2sql/data/news/news_ephemeral_1.sqlite
+2026-09-01 04:02:05,183 - INFO - Starting instance news_4 with DB: /Users/e/Documents/github/text2sql/data/news/news_ephemeral_1.sqlite
+2026-09-01 04:02:05,212 - INFO - Starting instance polar_8 with DB: /Users/e/Documents/github/text2sql/data/polar/polar_ephemeral_4.sqlite
+2026-09-01 04:02:05,255 - INFO - Instance news_M_5 completed successfully
+2026-09-01 04:02:05,293 - INFO - Instance polar_8 completed successfully
+2026-09-01 04:02:05,357 - INFO - Starting instance polar_1 with DB: /Users/e/Documents/github/text2sql/data/polar/polar_ephemeral_2.sqlite
+2026-09-01 04:02:05,399 - INFO - Starting instance polar_9 with DB: /Users/e/Documents/github/text2sql/data/polar/polar_ephemeral_1.sqlite
+2026-09-01 04:02:05,437 - INFO - Instance polar_1 completed successfully
+2026-09-01 04:02:05,457 - INFO - Instance polar_9 completed successfully
+2026-09-01 04:02:05,543 - INFO - Starting instance polar_10 with DB: /Users/e/Documents/github/text2sql/data/polar/polar_ephemeral_3.sqlite
+2026-09-01 04:02:05,563 - INFO - Starting instance polar_M_1 with DB: /Users/e/Documents/github/text2sql/data/polar/polar_ephemeral_2.sqlite
+2026-09-01 04:02:05,619 - INFO - Instance polar_10 completed successfully
+2026-09-01 04:02:05,627 - INFO - Instance polar_M_1 completed successfully
+2026-09-01 04:02:05,725 - INFO - Starting instance polar_2 with DB: /Users/e/Documents/github/text2sql/data/polar/polar_ephemeral_4.sqlite
+2026-09-01 04:02:05,733 - INFO - Starting instance polar_M_2 with DB: /Users/e/Documents/github/text2sql/data/polar/polar_ephemeral_3.sqlite
+2026-09-01 04:02:05,791 - INFO - Instance polar_M_2 completed successfully
+2026-09-01 04:02:05,804 - INFO - Instance polar_2 completed successfully
+2026-09-01 04:02:05,898 - INFO - Starting instance polar_M_3 with DB: /Users/e/Documents/github/text2sql/data/polar/polar_ephemeral_4.sqlite
+2026-09-01 04:02:05,911 - INFO - Starting instance polar_3 with DB: /Users/e/Documents/github/text2sql/data/polar/polar_ephemeral_1.sqlite
+2026-09-01 04:02:05,966 - INFO - Instance polar_M_3 completed successfully
+2026-09-01 04:02:05,976 - INFO - Instance polar_3 completed successfully
+2026-09-01 04:02:06,072 - INFO - Starting instance polar_M_4 with DB: /Users/e/Documents/github/text2sql/data/polar/polar_ephemeral_1.sqlite
+2026-09-01 04:02:06,082 - INFO - Starting instance polar_4 with DB: /Users/e/Documents/github/text2sql/data/polar/polar_ephemeral_2.sqlite
+2026-09-01 04:02:06,132 - INFO - Instance polar_M_4 completed successfully
+2026-09-01 04:02:06,177 - INFO - Instance polar_4 completed successfully
+2026-09-01 04:02:06,238 - INFO - Starting instance polar_M_5 with DB: /Users/e/Documents/github/text2sql/data/polar/polar_ephemeral_2.sqlite
+2026-09-01 04:02:06,282 - INFO - Instance news_4 completed successfully
+2026-09-01 04:02:06,282 - INFO - Completed batch 20/27
+2026-09-01 04:02:06,285 - INFO - Starting instance robot_1 with DB: /Users/e/Documents/github/text2sql/data/robot/robot_ephemeral_1.sqlite
+2026-09-01 04:02:06,297 - INFO - Instance polar_M_5 completed successfully
+2026-09-01 04:02:06,350 - INFO - Instance robot_1 completed successfully
+2026-09-01 04:02:06,388 - INFO - Starting instance news_5 with DB: /Users/e/Documents/github/text2sql/data/news/news_ephemeral_2.sqlite
+2026-09-01 04:02:06,403 - INFO - Completed batch 21/27
+2026-09-01 04:02:06,405 - INFO - Starting instance robot_M_1 with DB: /Users/e/Documents/github/text2sql/data/robot/robot_ephemeral_1.sqlite
+2026-09-01 04:02:06,456 - INFO - Starting instance robot_10 with DB: /Users/e/Documents/github/text2sql/data/robot/robot_ephemeral_2.sqlite
+2026-09-01 04:02:06,473 - INFO - Instance news_5 completed successfully
+2026-09-01 04:02:06,497 - INFO - Instance robot_M_1 completed successfully
+2026-09-01 04:02:06,526 - INFO - Instance robot_10 completed successfully
+2026-09-01 04:02:06,576 - INFO - Starting instance news_6 with DB: /Users/e/Documents/github/text2sql/data/news/news_ephemeral_3.sqlite
+2026-09-01 04:02:06,603 - INFO - Starting instance robot_M_2 with DB: /Users/e/Documents/github/text2sql/data/robot/robot_ephemeral_2.sqlite
+2026-09-01 04:02:06,629 - INFO - Starting instance robot_2 with DB: /Users/e/Documents/github/text2sql/data/robot/robot_ephemeral_3.sqlite
+2026-09-01 04:02:06,654 - INFO - Instance news_6 completed successfully
+2026-09-01 04:02:06,709 - INFO - Instance robot_2 completed successfully
+2026-09-01 04:02:06,761 - INFO - Starting instance news_7 with DB: /Users/e/Documents/github/text2sql/data/news/news_ephemeral_4.sqlite
+2026-09-01 04:02:06,815 - INFO - Starting instance robot_3 with DB: /Users/e/Documents/github/text2sql/data/robot/robot_ephemeral_4.sqlite
+2026-09-01 04:02:06,827 - INFO - Instance news_7 completed successfully
+2026-09-01 04:02:06,882 - INFO - Instance robot_3 completed successfully
+2026-09-01 04:02:06,933 - INFO - Starting instance news_8 with DB: /Users/e/Documents/github/text2sql/data/news/news_ephemeral_1.sqlite
+2026-09-01 04:02:06,992 - INFO - Starting instance robot_4 with DB: /Users/e/Documents/github/text2sql/data/robot/robot_ephemeral_1.sqlite
+2026-09-01 04:02:07,057 - INFO - Instance news_8 completed successfully
+2026-09-01 04:02:07,064 - INFO - Instance robot_4 completed successfully
+2026-09-01 04:02:07,163 - INFO - Starting instance news_9 with DB: /Users/e/Documents/github/text2sql/data/news/news_ephemeral_2.sqlite
+2026-09-01 04:02:07,170 - INFO - Starting instance robot_5 with DB: /Users/e/Documents/github/text2sql/data/robot/robot_ephemeral_2.sqlite
+2026-09-01 04:02:07,225 - INFO - Instance news_9 completed successfully
+2026-09-01 04:02:07,238 - INFO - Instance robot_5 completed successfully
+2026-09-01 04:02:07,330 - INFO - Completed batch 19/27
+2026-09-01 04:02:07,334 - INFO - Starting instance solar_5 with DB: /Users/e/Documents/github/text2sql/data/solar/solar_ephemeral_1.sqlite
+2026-09-01 04:02:07,344 - INFO - Starting instance robot_6 with DB: /Users/e/Documents/github/text2sql/data/robot/robot_ephemeral_3.sqlite
+2026-09-01 04:02:07,427 - INFO - Instance robot_6 completed successfully
+2026-09-01 04:02:07,434 - INFO - Instance solar_5 completed successfully
+2026-09-01 04:02:07,525 - INFO - Instance fake_6 completed successfully
+2026-09-01 04:02:07,530 - INFO - Starting instance robot_7 with DB: /Users/e/Documents/github/text2sql/data/robot/robot_ephemeral_4.sqlite
+2026-09-01 04:02:07,536 - INFO - Starting instance solar_6 with DB: /Users/e/Documents/github/text2sql/data/solar/solar_ephemeral_2.sqlite
+2026-09-01 04:02:07,608 - INFO - Instance robot_7 completed successfully
+2026-09-01 04:02:07,627 - INFO - Starting instance fake_7 with DB: /Users/e/Documents/github/text2sql/data/fake/fake_ephemeral_3.sqlite
+2026-09-01 04:02:07,632 - INFO - Instance solar_6 completed successfully
+2026-09-01 04:02:07,687 - INFO - Instance fake_7 completed successfully
+2026-09-01 04:02:07,715 - INFO - Starting instance robot_8 with DB: /Users/e/Documents/github/text2sql/data/robot/robot_ephemeral_1.sqlite
+2026-09-01 04:02:07,737 - INFO - Starting instance solar_7 with DB: /Users/e/Documents/github/text2sql/data/solar/solar_ephemeral_3.sqlite
+2026-09-01 04:02:07,777 - INFO - Instance robot_8 completed successfully
+2026-09-01 04:02:07,793 - INFO - Starting instance fake_8 with DB: /Users/e/Documents/github/text2sql/data/fake/fake_ephemeral_4.sqlite
+2026-09-01 04:02:07,812 - INFO - Instance solar_7 completed successfully
+2026-09-01 04:02:07,851 - INFO - Instance fake_8 completed successfully
+2026-09-01 04:02:07,883 - INFO - Starting instance robot_9 with DB: /Users/e/Documents/github/text2sql/data/robot/robot_ephemeral_2.sqlite
+2026-09-01 04:02:07,913 - INFO - Starting instance solar_8 with DB: /Users/e/Documents/github/text2sql/data/solar/solar_ephemeral_4.sqlite
+2026-09-01 04:02:07,953 - INFO - Starting instance fake_9 with DB: /Users/e/Documents/github/text2sql/data/fake/fake_ephemeral_1.sqlite
+2026-09-01 04:02:07,956 - INFO - Instance robot_9 completed successfully
+2026-09-01 04:02:08,005 - INFO - Instance solar_8 completed successfully
+2026-09-01 04:02:08,061 - INFO - Completed batch 22/27
+2026-09-01 04:02:08,064 - INFO - Starting instance vaccine_1 with DB: /Users/e/Documents/github/text2sql/data/vaccine/vaccine_ephemeral_1.sqlite
+2026-09-01 04:02:08,111 - INFO - Starting instance solar_9 with DB: /Users/e/Documents/github/text2sql/data/solar/solar_ephemeral_1.sqlite
+2026-09-01 04:02:08,119 - INFO - Instance fake_9 completed successfully
+2026-09-01 04:02:08,178 - INFO - Instance vaccine_1 completed successfully
+2026-09-01 04:02:08,208 - INFO - Instance solar_9 completed successfully
+2026-09-01 04:02:08,221 - INFO - Starting instance fake_M_1 with DB: /Users/e/Documents/github/text2sql/data/fake/fake_ephemeral_2.sqlite
+2026-09-01 04:02:08,284 - INFO - Starting instance vaccine_10 with DB: /Users/e/Documents/github/text2sql/data/vaccine/vaccine_ephemeral_2.sqlite
+2026-09-01 04:02:08,289 - INFO - Instance fake_M_1 completed successfully
+2026-09-01 04:02:08,314 - INFO - Starting instance solar_M_1 with DB: /Users/e/Documents/github/text2sql/data/solar/solar_ephemeral_2.sqlite
+2026-09-01 04:02:08,346 - INFO - Instance vaccine_10 completed successfully
+2026-09-01 04:02:08,373 - INFO - Instance solar_M_1 completed successfully
+2026-09-01 04:02:08,390 - INFO - Starting instance fake_M_2 with DB: /Users/e/Documents/github/text2sql/data/fake/fake_ephemeral_3.sqlite
+2026-09-01 04:02:08,452 - INFO - Starting instance vaccine_2 with DB: /Users/e/Documents/github/text2sql/data/vaccine/vaccine_ephemeral_3.sqlite
+2026-09-01 04:02:08,464 - INFO - Instance fake_M_2 completed successfully
+2026-09-01 04:02:08,477 - INFO - Starting instance solar_M_2 with DB: /Users/e/Documents/github/text2sql/data/solar/solar_ephemeral_3.sqlite
+2026-09-01 04:02:08,526 - INFO - Instance vaccine_2 completed successfully
+2026-09-01 04:02:08,570 - INFO - Starting instance fake_M_3 with DB: /Users/e/Documents/github/text2sql/data/fake/fake_ephemeral_4.sqlite
+2026-09-01 04:02:08,632 - INFO - Starting instance vaccine_3 with DB: /Users/e/Documents/github/text2sql/data/vaccine/vaccine_ephemeral_4.sqlite
+2026-09-01 04:02:08,646 - INFO - Instance fake_M_3 completed successfully
+2026-09-01 04:02:08,656 - INFO - Instance solar_M_2 completed successfully
+2026-09-01 04:02:08,749 - INFO - Starting instance fake_M_4 with DB: /Users/e/Documents/github/text2sql/data/fake/fake_ephemeral_1.sqlite
+2026-09-01 04:02:08,760 - INFO - Starting instance solar_M_3 with DB: /Users/e/Documents/github/text2sql/data/solar/solar_ephemeral_4.sqlite
+2026-09-01 04:02:08,827 - INFO - Instance solar_M_3 completed successfully
+2026-09-01 04:02:08,842 - INFO - Instance vaccine_3 completed successfully
+2026-09-01 04:02:08,843 - INFO - Instance fake_M_4 completed successfully
+2026-09-01 04:02:08,933 - INFO - Starting instance solar_M_4 with DB: /Users/e/Documents/github/text2sql/data/solar/solar_ephemeral_1.sqlite
+2026-09-01 04:02:08,948 - INFO - Starting instance vaccine_4 with DB: /Users/e/Documents/github/text2sql/data/vaccine/vaccine_ephemeral_1.sqlite
+2026-09-01 04:02:08,950 - INFO - Starting instance fake_M_5 with DB: /Users/e/Documents/github/text2sql/data/fake/fake_ephemeral_2.sqlite
+2026-09-01 04:02:08,997 - INFO - Instance solar_M_4 completed successfully
+2026-09-01 04:02:09,011 - INFO - Instance fake_M_5 completed successfully
+2026-09-01 04:02:09,011 - INFO - Instance vaccine_4 completed successfully
+2026-09-01 04:02:09,103 - INFO - Starting instance solar_M_5 with DB: /Users/e/Documents/github/text2sql/data/solar/solar_ephemeral_2.sqlite
+2026-09-01 04:02:09,117 - INFO - Completed batch 12/27
+2026-09-01 04:02:09,120 - INFO - Starting instance vaccine_5 with DB: /Users/e/Documents/github/text2sql/data/vaccine/vaccine_ephemeral_2.sqlite
+2026-09-01 04:02:09,120 - INFO - Starting instance vaccine_M_1 with DB: /Users/e/Documents/github/text2sql/data/vaccine/vaccine_ephemeral_1.sqlite
+2026-09-01 04:02:09,166 - INFO - Instance solar_M_5 completed successfully
+2026-09-01 04:02:09,183 - INFO - Instance vaccine_M_1 completed successfully
+2026-09-01 04:02:09,271 - INFO - Completed batch 24/27
+2026-09-01 04:02:09,274 - INFO - Starting instance virtual_5 with DB: /Users/e/Documents/github/text2sql/data/virtual/virtual_ephemeral_1.sqlite
+2026-09-01 04:02:09,289 - INFO - Starting instance vaccine_M_2 with DB: /Users/e/Documents/github/text2sql/data/vaccine/vaccine_ephemeral_2.sqlite
+2026-09-01 04:02:09,332 - INFO - Instance vaccine_5 completed successfully
+2026-09-01 04:02:09,352 - INFO - Instance virtual_5 completed successfully
+2026-09-01 04:02:09,352 - INFO - Instance vaccine_M_2 completed successfully
+2026-09-01 04:02:09,438 - INFO - Starting instance vaccine_6 with DB: /Users/e/Documents/github/text2sql/data/vaccine/vaccine_ephemeral_3.sqlite
+2026-09-01 04:02:09,456 - INFO - Starting instance virtual_6 with DB: /Users/e/Documents/github/text2sql/data/virtual/virtual_ephemeral_2.sqlite
+2026-09-01 04:02:09,458 - INFO - Starting instance vaccine_M_3 with DB: /Users/e/Documents/github/text2sql/data/vaccine/vaccine_ephemeral_3.sqlite
+2026-09-01 04:02:09,498 - INFO - Instance vaccine_6 completed successfully
+2026-09-01 04:02:09,515 - INFO - Instance vaccine_M_3 completed successfully
+2026-09-01 04:02:09,523 - INFO - Instance virtual_6 completed successfully
+2026-09-01 04:02:09,605 - INFO - Starting instance vaccine_7 with DB: /Users/e/Documents/github/text2sql/data/vaccine/vaccine_ephemeral_4.sqlite
+2026-09-01 04:02:09,620 - INFO - Starting instance vaccine_M_4 with DB: /Users/e/Documents/github/text2sql/data/vaccine/vaccine_ephemeral_4.sqlite
+2026-09-01 04:02:09,630 - INFO - Starting instance virtual_7 with DB: /Users/e/Documents/github/text2sql/data/virtual/virtual_ephemeral_3.sqlite
+2026-09-01 04:02:09,669 - INFO - Instance vaccine_7 completed successfully
+2026-09-01 04:02:09,680 - INFO - Instance vaccine_M_4 completed successfully
+2026-09-01 04:02:09,775 - INFO - Starting instance vaccine_8 with DB: /Users/e/Documents/github/text2sql/data/vaccine/vaccine_ephemeral_1.sqlite
+2026-09-01 04:02:09,783 - INFO - Starting instance vaccine_M_5 with DB: /Users/e/Documents/github/text2sql/data/vaccine/vaccine_ephemeral_1.sqlite
+2026-09-01 04:02:09,850 - INFO - Instance vaccine_M_5 completed successfully
+2026-09-01 04:02:09,957 - INFO - Starting instance virtual_1 with DB: /Users/e/Documents/github/text2sql/data/virtual/virtual_ephemeral_2.sqlite
+2026-09-01 04:02:09,973 - INFO - Instance vaccine_8 completed successfully
+2026-09-01 04:02:10,023 - INFO - Instance virtual_1 completed successfully
+2026-09-01 04:02:10,086 - INFO - Starting instance vaccine_9 with DB: /Users/e/Documents/github/text2sql/data/vaccine/vaccine_ephemeral_2.sqlite
+2026-09-01 04:02:10,129 - INFO - Starting instance virtual_10 with DB: /Users/e/Documents/github/text2sql/data/virtual/virtual_ephemeral_3.sqlite
+2026-09-01 04:02:10,149 - INFO - Instance vaccine_9 completed successfully
+2026-09-01 04:02:10,209 - INFO - Instance virtual_10 completed successfully
+2026-09-01 04:02:10,250 - INFO - Completed batch 25/27
+2026-09-01 04:02:10,315 - INFO - Starting instance virtual_2 with DB: /Users/e/Documents/github/text2sql/data/virtual/virtual_ephemeral_4.sqlite
+2026-09-01 04:02:10,348 - INFO - Instance robot_M_2 completed successfully
+2026-09-01 04:02:10,385 - INFO - Instance virtual_2 completed successfully
+2026-09-01 04:02:10,454 - INFO - Starting instance robot_M_3 with DB: /Users/e/Documents/github/text2sql/data/robot/robot_ephemeral_3.sqlite
+2026-09-01 04:02:10,491 - INFO - Starting instance virtual_3 with DB: /Users/e/Documents/github/text2sql/data/virtual/virtual_ephemeral_1.sqlite
+2026-09-01 04:02:10,515 - INFO - Instance robot_M_3 completed successfully
+2026-09-01 04:02:10,547 - INFO - Instance virtual_3 completed successfully
+2026-09-01 04:02:10,622 - INFO - Starting instance robot_M_4 with DB: /Users/e/Documents/github/text2sql/data/robot/robot_ephemeral_4.sqlite
+2026-09-01 04:02:10,653 - INFO - Starting instance virtual_4 with DB: /Users/e/Documents/github/text2sql/data/virtual/virtual_ephemeral_2.sqlite
+2026-09-01 04:02:10,679 - INFO - Instance robot_M_4 completed successfully
+2026-09-01 04:02:10,734 - INFO - Instance virtual_4 completed successfully
+2026-09-01 04:02:10,785 - INFO - Starting instance robot_M_5 with DB: /Users/e/Documents/github/text2sql/data/robot/robot_ephemeral_1.sqlite
+2026-09-01 04:02:10,840 - INFO - Completed batch 26/27
+2026-09-01 04:02:10,851 - INFO - Instance robot_M_5 completed successfully
+2026-09-01 04:02:10,953 - INFO - Starting instance solar_1 with DB: /Users/e/Documents/github/text2sql/data/solar/solar_ephemeral_2.sqlite
+2026-09-01 04:02:11,011 - INFO - Instance solar_1 completed successfully
+2026-09-01 04:02:11,117 - INFO - Starting instance solar_10 with DB: /Users/e/Documents/github/text2sql/data/solar/solar_ephemeral_3.sqlite
+2026-09-01 04:02:11,209 - INFO - Instance solar_10 completed successfully
+2026-09-01 04:02:11,315 - INFO - Starting instance solar_2 with DB: /Users/e/Documents/github/text2sql/data/solar/solar_ephemeral_4.sqlite
+2026-09-01 04:02:11,414 - INFO - Instance solar_2 completed successfully
+2026-09-01 04:02:11,520 - INFO - Starting instance solar_3 with DB: /Users/e/Documents/github/text2sql/data/solar/solar_ephemeral_1.sqlite
+2026-09-01 04:02:11,586 - INFO - Instance solar_3 completed successfully
+2026-09-01 04:02:11,692 - INFO - Starting instance solar_4 with DB: /Users/e/Documents/github/text2sql/data/solar/solar_ephemeral_2.sqlite
+2026-09-01 04:02:11,766 - INFO - Instance solar_4 completed successfully
+2026-09-01 04:02:11,869 - INFO - Completed batch 23/27
+2026-09-01 04:02:19,153 - INFO - Instance virtual_7 completed successfully
+2026-09-01 04:02:19,261 - INFO - Starting instance virtual_8 with DB: /Users/e/Documents/github/text2sql/data/virtual/virtual_ephemeral_4.sqlite
+2026-09-01 04:02:19,357 - INFO - Instance virtual_8 completed successfully
+2026-09-01 04:02:19,465 - INFO - Starting instance virtual_9 with DB: /Users/e/Documents/github/text2sql/data/virtual/virtual_ephemeral_1.sqlite
+2026-09-01 04:02:19,566 - INFO - Instance virtual_9 completed successfully
+2026-09-01 04:02:19,669 - INFO - Starting instance virtual_M_1 with DB: /Users/e/Documents/github/text2sql/data/virtual/virtual_ephemeral_2.sqlite
+2026-09-01 04:02:44,321 - INFO - Instance virtual_M_1 completed successfully
+2026-09-01 04:02:44,428 - INFO - Starting instance virtual_M_2 with DB: /Users/e/Documents/github/text2sql/data/virtual/virtual_ephemeral_3.sqlite
+2026-09-01 04:02:44,524 - INFO - Instance virtual_M_2 completed successfully
+2026-09-01 04:02:44,631 - INFO - Starting instance virtual_M_3 with DB: /Users/e/Documents/github/text2sql/data/virtual/virtual_ephemeral_4.sqlite
+2026-09-01 04:02:44,708 - INFO - Instance virtual_M_3 completed successfully
+2026-09-01 04:02:44,815 - INFO - Starting instance virtual_M_4 with DB: /Users/e/Documents/github/text2sql/data/virtual/virtual_ephemeral_1.sqlite
+2026-09-01 04:02:44,894 - INFO - Instance virtual_M_4 completed successfully
+2026-09-01 04:02:45,001 - INFO - Starting instance virtual_M_5 with DB: /Users/e/Documents/github/text2sql/data/virtual/virtual_ephemeral_2.sqlite
+2026-09-01 04:02:45,094 - INFO - Instance virtual_M_5 completed successfully
+2026-09-01 04:02:45,199 - INFO - Completed batch 27/27
+2026-09-01 04:02:45,213 - INFO - === Cleaning up ephemeral databases ===
+2026-09-01 04:02:45,213 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/solar/solar_ephemeral_1.sqlite
+2026-09-01 04:02:45,213 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/solar/solar_ephemeral_2.sqlite
+2026-09-01 04:02:45,214 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/solar/solar_ephemeral_3.sqlite
+2026-09-01 04:02:45,214 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/solar/solar_ephemeral_4.sqlite
+2026-09-01 04:02:45,215 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/credit/credit_ephemeral_1.sqlite
+2026-09-01 04:02:45,215 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/credit/credit_ephemeral_2.sqlite
+2026-09-01 04:02:45,215 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/credit/credit_ephemeral_3.sqlite
+2026-09-01 04:02:45,215 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/credit/credit_ephemeral_4.sqlite
+2026-09-01 04:02:45,216 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/news/news_ephemeral_1.sqlite
+2026-09-01 04:02:45,216 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/news/news_ephemeral_2.sqlite
+2026-09-01 04:02:45,216 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/news/news_ephemeral_3.sqlite
+2026-09-01 04:02:45,217 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/news/news_ephemeral_4.sqlite
+2026-09-01 04:02:45,217 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/museum/museum_ephemeral_1.sqlite
+2026-09-01 04:02:45,217 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/museum/museum_ephemeral_2.sqlite
+2026-09-01 04:02:45,218 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/museum/museum_ephemeral_3.sqlite
+2026-09-01 04:02:45,218 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/museum/museum_ephemeral_4.sqlite
+2026-09-01 04:02:45,218 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/crypto/crypto_ephemeral_1.sqlite
+2026-09-01 04:02:45,219 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/crypto/crypto_ephemeral_2.sqlite
+2026-09-01 04:02:45,219 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/crypto/crypto_ephemeral_3.sqlite
+2026-09-01 04:02:45,219 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/crypto/crypto_ephemeral_4.sqlite
+2026-09-01 04:02:45,220 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/robot/robot_ephemeral_1.sqlite
+2026-09-01 04:02:45,220 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/robot/robot_ephemeral_2.sqlite
+2026-09-01 04:02:45,221 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/robot/robot_ephemeral_3.sqlite
+2026-09-01 04:02:45,221 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/robot/robot_ephemeral_4.sqlite
+2026-09-01 04:02:45,221 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/vaccine/vaccine_ephemeral_1.sqlite
+2026-09-01 04:02:45,222 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/vaccine/vaccine_ephemeral_2.sqlite
+2026-09-01 04:02:45,222 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/vaccine/vaccine_ephemeral_3.sqlite
+2026-09-01 04:02:45,222 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/vaccine/vaccine_ephemeral_4.sqlite
+2026-09-01 04:02:45,223 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/insider/insider_ephemeral_1.sqlite
+2026-09-01 04:02:45,223 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/insider/insider_ephemeral_2.sqlite
+2026-09-01 04:02:45,223 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/insider/insider_ephemeral_3.sqlite
+2026-09-01 04:02:45,223 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/insider/insider_ephemeral_4.sqlite
+2026-09-01 04:02:45,224 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/disaster/disaster_ephemeral_1.sqlite
+2026-09-01 04:02:45,224 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/disaster/disaster_ephemeral_2.sqlite
+2026-09-01 04:02:45,225 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/disaster/disaster_ephemeral_3.sqlite
+2026-09-01 04:02:45,225 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/disaster/disaster_ephemeral_4.sqlite
+2026-09-01 04:02:45,225 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/alien/alien_ephemeral_1.sqlite
+2026-09-01 04:02:45,226 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/alien/alien_ephemeral_2.sqlite
+2026-09-01 04:02:45,226 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/alien/alien_ephemeral_3.sqlite
+2026-09-01 04:02:45,226 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/alien/alien_ephemeral_4.sqlite
+2026-09-01 04:02:45,226 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/gaming/gaming_ephemeral_1.sqlite
+2026-09-01 04:02:45,227 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/gaming/gaming_ephemeral_2.sqlite
+2026-09-01 04:02:45,227 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/gaming/gaming_ephemeral_3.sqlite
+2026-09-01 04:02:45,227 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/gaming/gaming_ephemeral_4.sqlite
+2026-09-01 04:02:45,227 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/polar/polar_ephemeral_1.sqlite
+2026-09-01 04:02:45,228 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/polar/polar_ephemeral_2.sqlite
+2026-09-01 04:02:45,228 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/polar/polar_ephemeral_3.sqlite
+2026-09-01 04:02:45,228 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/polar/polar_ephemeral_4.sqlite
+2026-09-01 04:02:45,229 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/cross_db/cross_db_ephemeral_1.sqlite
+2026-09-01 04:02:45,229 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/cross_db/cross_db_ephemeral_2.sqlite
+2026-09-01 04:02:45,229 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/cross_db/cross_db_ephemeral_3.sqlite
+2026-09-01 04:02:45,230 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/cross_db/cross_db_ephemeral_4.sqlite
+2026-09-01 04:02:45,230 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/fake/fake_ephemeral_1.sqlite
+2026-09-01 04:02:45,230 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/fake/fake_ephemeral_2.sqlite
+2026-09-01 04:02:45,231 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/fake/fake_ephemeral_3.sqlite
+2026-09-01 04:02:45,231 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/fake/fake_ephemeral_4.sqlite
+2026-09-01 04:02:45,232 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/archeology/archeology_ephemeral_1.sqlite
+2026-09-01 04:02:45,232 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/archeology/archeology_ephemeral_2.sqlite
+2026-09-01 04:02:45,232 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/archeology/archeology_ephemeral_3.sqlite
+2026-09-01 04:02:45,232 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/archeology/archeology_ephemeral_4.sqlite
+2026-09-01 04:02:45,233 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/mental/mental_ephemeral_1.sqlite
+2026-09-01 04:02:45,233 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/mental/mental_ephemeral_2.sqlite
+2026-09-01 04:02:45,233 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/mental/mental_ephemeral_3.sqlite
+2026-09-01 04:02:45,234 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/mental/mental_ephemeral_4.sqlite
+2026-09-01 04:02:45,234 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/virtual/virtual_ephemeral_1.sqlite
+2026-09-01 04:02:45,234 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/virtual/virtual_ephemeral_2.sqlite
+2026-09-01 04:02:45,234 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/virtual/virtual_ephemeral_3.sqlite
+2026-09-01 04:02:45,235 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/virtual/virtual_ephemeral_4.sqlite
+2026-09-01 04:02:45,235 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/cybermarket/cybermarket_ephemeral_1.sqlite
+2026-09-01 04:02:45,236 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/cybermarket/cybermarket_ephemeral_2.sqlite
+2026-09-01 04:02:45,236 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/cybermarket/cybermarket_ephemeral_3.sqlite
+2026-09-01 04:02:45,236 - INFO - Dropping ephemeral db: /Users/e/Documents/github/text2sql/data/cybermarket/cybermarket_ephemeral_4.sqlite

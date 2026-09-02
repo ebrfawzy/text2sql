@@ -1,0 +1,1106 @@
+{
+  "version": 1,
+  "profiled_at": "2026-08-30T12:40:37.592259+00:00",
+  "columns": {
+    "alien_template|signalclassification|Artificial signal": {
+      "id": 0,
+      "knowledge": "Artificial signal",
+      "description": "A signal whose classification type is Artificial. Selects 27% of rows.",
+      "definition": "sigclasstype = 'Artificial'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "signalclassification"
+      ],
+      "refuted": false
+    },
+    "alien_template|signalclassification|Natural signal": {
+      "id": 1,
+      "knowledge": "Natural signal",
+      "description": "A signal whose classification type is Natural. Selects 25% of rows.",
+      "definition": "sigclasstype = 'Natural'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "signalclassification"
+      ],
+      "refuted": false
+    },
+    "alien_template|signalclassification|Candidate signal": {
+      "id": 2,
+      "knowledge": "Candidate signal",
+      "description": "A signal whose classification type is Candidate. Selects 25% of rows.",
+      "definition": "sigclasstype = 'Candidate'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "signalclassification"
+      ],
+      "refuted": false
+    },
+    "alien_template|signalclassification|Unknown signal": {
+      "id": 3,
+      "knowledge": "Unknown signal",
+      "description": "A signal whose classification type is Unknown. Selects 23% of rows.",
+      "definition": "sigclasstype = 'Unknown'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "signalclassification"
+      ],
+      "refuted": false
+    },
+    "alien_template|signalclassification|Periodic signal": {
+      "id": 4,
+      "knowledge": "Periodic signal",
+      "description": "A signal whose pattern category is Periodic. Selects 23% of rows.",
+      "definition": "sigpattern = 'Periodic'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "signalclassification"
+      ],
+      "refuted": false
+    },
+    "alien_template|sourceproperties|source right ascension (RA)": {
+      "id": 5,
+      "knowledge": "source right ascension (RA)",
+      "description": "Source right ascension in decimal degrees, converted from galactic coordinates.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        7,
+        8
+      ],
+      "tables": [
+        "sourceproperties"
+      ],
+      "refuted": false
+    },
+    "alien_template|sourceproperties|source declination (Dec)": {
+      "id": 6,
+      "knowledge": "source declination (Dec)",
+      "description": "Source declination in decimal degrees, converted from galactic coordinates.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        7,
+        8
+      ],
+      "tables": [
+        "sourceproperties"
+      ],
+      "refuted": false
+    },
+    "alien_template|sourceproperties|galactic longitude (gallong)": {
+      "id": 7,
+      "knowledge": "galactic longitude (gallong)",
+      "description": "Galactic longitude in decimal degrees, converted from equatorial coordinates.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        5,
+        6
+      ],
+      "tables": [
+        "sourceproperties"
+      ],
+      "refuted": false
+    },
+    "alien_template|sourceproperties|galactic latitude (gallat)": {
+      "id": 8,
+      "knowledge": "galactic latitude (gallat)",
+      "description": "Galactic latitude in decimal degrees, converted from equatorial coordinates.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        5,
+        6
+      ],
+      "tables": [
+        "sourceproperties"
+      ],
+      "refuted": false
+    },
+    "alien_template|sourceproperties|absolute magnitude (M)": {
+      "id": 9,
+      "knowledge": "absolute magnitude (M)",
+      "description": "Intrinsic brightness of an object at 10 parsecs, computed from apparent magnitude and distance.",
+      "definition": "objmag - 5 * LOG10(sourcedistly / 32.6156)",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sourceproperties"
+      ],
+      "refuted": false
+    },
+    "alien_template|sourceproperties|transverse velocity (v_t)": {
+      "id": 10,
+      "knowledge": "transverse velocity (v_t)",
+      "description": "Velocity perpendicular to the line of sight, computed from proper motion and distance.",
+      "definition": "4.74 * objpropmotion * (sourcedistly / 3.26156)",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sourceproperties"
+      ],
+      "refuted": false
+    },
+    "alien_template|sourceproperties|total space velocity (v_space)": {
+      "id": 11,
+      "knowledge": "total space velocity (v_space)",
+      "description": "Full three-dimensional velocity, combining radial and transverse components.",
+      "definition": "SQRT(objradvel * objradvel + (4.74 * objpropmotion * (sourcedistly / 3.26156)) * (4.74 * objpropmotion * (sourcedistly / 3.26156)))",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        10
+      ],
+      "tables": [
+        "sourceproperties"
+      ],
+      "refuted": false
+    },
+    "alien_template|observatories|Dew point (DP)": {
+      "id": 12,
+      "knowledge": "Dew point (DP)",
+      "description": "Approximate dew point temperature in Celsius from air temperature and relative humidity.",
+      "definition": "airtempc - ((100 - humidityrate) / 5)",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "observatories"
+      ],
+      "refuted": false
+    },
+    "alien_template|observatories|Clear sky condition": {
+      "id": 13,
+      "knowledge": "Clear sky condition",
+      "description": "A clear sky condition combines a Clear weather profile with high atmospheric transparency. Selects 17% of rows.",
+      "definition": "TRIM(weathprofile) = 'Clear' AND atmostransparency > 0.5",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "observatories"
+      ],
+      "refuted": false
+    },
+    "alien_template|observatories|Excellent seeing": {
+      "id": 14,
+      "knowledge": "Excellent seeing",
+      "description": "Excellent astronomical seeing is associated with high transparency, calm wind, and quiet geomagnetic activity. Selects 2% of rows.",
+      "definition": "seeingprofile = 'Excellent' AND atmostransparency > 0.7 AND windspeedms < 15 AND geomagstatus = 'Quiet'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "observatories"
+      ],
+      "refuted": false
+    },
+    "alien_template|observatories|Geomagnetic storm watch": {
+      "id": 15,
+      "knowledge": "Geomagnetic storm watch",
+      "description": "A geomagnetic storm watch is expected when solar activity is High and geomagnetic activity is Storm. Selects 12% of rows.",
+      "definition": "solarstatus = 'High' AND geomagstatus = 'Storm'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "observatories"
+      ],
+      "refuted": false
+    },
+    "alien_template|observatories|Low-pressure high-wind system": {
+      "id": 16,
+      "knowledge": "Low-pressure high-wind system",
+      "description": "Unstable weather is indicated by low pressure, high wind speed, and high humidity. Selects 5% of rows.",
+      "definition": "presshpa < 1000 AND windspeedms >= 15 AND humidityrate >= 70",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "observatories"
+      ],
+      "refuted": false
+    },
+    "alien_template|observatories|High lunar interference": {
+      "id": 17,
+      "knowledge": "High lunar interference",
+      "description": "A clear night with a Full Moon produces high lunar interference for observations. Selects 9% of rows.",
+      "definition": "lunarstage = 'Full' AND TRIM(weathprofile) = 'Clear'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "observatories"
+      ],
+      "refuted": false
+    },
+    "alien_template|telescopes|Operational equipment status": {
+      "id": 18,
+      "knowledge": "Operational equipment status",
+      "description": "Telescope whose equipment status is Operational. Selects 31% of rows.",
+      "definition": "equipstatus = 'Operational'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "telescopes"
+      ],
+      "refuted": false
+    },
+    "alien_template|telescopes|Calibration current status": {
+      "id": 19,
+      "knowledge": "Calibration current status",
+      "description": "Telescope whose calibration status is Current. Selects 35% of rows.",
+      "definition": "calibrstatus = 'Current'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "telescopes"
+      ],
+      "refuted": false
+    },
+    "alien_template|telescopes|Normal cooling system status": {
+      "id": 20,
+      "knowledge": "Normal cooling system status",
+      "description": "Telescope whose cooling system status is Normal. Selects 29% of rows.",
+      "definition": "coolsysstatus = 'Normal'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "telescopes"
+      ],
+      "refuted": false
+    },
+    "alien_template|telescopes|Main power source status": {
+      "id": 21,
+      "knowledge": "Main power source status",
+      "description": "Telescope whose power source status is Main. Selects 35% of rows.",
+      "definition": "powerstatus = 'Main'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "telescopes"
+      ],
+      "refuted": false
+    },
+    "alien_template|telescopes|Available data storage status": {
+      "id": 22,
+      "knowledge": "Available data storage status",
+      "description": "Telescope whose data storage status is Available. Selects 33% of rows.",
+      "definition": "datastorstatus = 'Available'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "telescopes"
+      ],
+      "refuted": false
+    },
+    "alien_template|telescopes|Connected network status": {
+      "id": 23,
+      "knowledge": "Connected network status",
+      "description": "Telescope whose network connection status is Connected. Selects 31% of rows.",
+      "definition": "netstatus = 'Connected'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "telescopes"
+      ],
+      "refuted": false
+    },
+    "alien_template|telescopes|Normal processing queue status": {
+      "id": 24,
+      "knowledge": "Normal processing queue status",
+      "description": "Telescope whose processing queue status is Normal. Selects 32% of rows.",
+      "definition": "procqueuestatus = 'Normal'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "telescopes"
+      ],
+      "refuted": false
+    },
+    "alien_template|signaldynamics|Signal integrity (SI)": {
+      "id": 25,
+      "knowledge": "Signal integrity (SI)",
+      "description": "Overall signal quality as a percentage, computed from all six stability scores.",
+      "definition": "sigintegrity != (tempstab + spatstab + freqstab + phasestab + ampstab + modstab) / 6 * 100",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "signaldynamics"
+      ],
+      "refuted": true
+    },
+    "alien_template|signaldynamics|Signal coherence (SC)": {
+      "id": 26,
+      "knowledge": "Signal coherence (SC)",
+      "description": "Consistency of a signal's temporal, spatial, frequency, and phase behavior, normalized to 0-1.",
+      "definition": "sigcoherence != (tempstab + spatstab + freqstab + phasestab) / 4",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "signaldynamics"
+      ],
+      "refuted": true
+    },
+    "alien_template|signaldynamics|Signal dispersion (SD)": {
+      "id": 27,
+      "knowledge": "Signal dispersion (SD)",
+      "description": "Spread among the six stability scores, scaled by 1000.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "signaldynamics"
+      ],
+      "refuted": false
+    },
+    "alien_template|signaldynamics|Signal scintillation (SS)": {
+      "id": 28,
+      "knowledge": "Signal scintillation (SS)",
+      "description": "Amount of amplitude and phase fluctuation; the complement of their average stability.",
+      "definition": "sigscint != 1 - (ampstab + phasestab) / 2",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "signaldynamics"
+      ],
+      "refuted": true
+    },
+    "alien_template|signaldynamics|Regular signal": {
+      "id": 29,
+      "knowledge": "Regular signal",
+      "description": "A signal whose recurrence type is Regular. Selects 52% of rows.",
+      "definition": "TRIM(sigrecurr) = 'Regular'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "signaldynamics"
+      ],
+      "refuted": false
+    },
+    "alien_template|signaldynamics|Dynamic signal": {
+      "id": 30,
+      "knowledge": "Dynamic signal",
+      "description": "A signal whose evolution type is Dynamic. Selects 34% of rows.",
+      "definition": "TRIM(sigevolve) = 'Dynamic'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "signaldynamics"
+      ],
+      "refuted": false
+    },
+    "alien_template|observationalconditions|Observation timestamp": {
+      "id": 31,
+      "knowledge": "Observation timestamp",
+      "description": "The combined date and time at which an observation was recorded.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "observationalconditions"
+      ],
+      "refuted": false
+    },
+    "alien_template|observationalconditions|Observation year": {
+      "id": 32,
+      "knowledge": "Observation year",
+      "description": "The calendar year in which the observation occurred.",
+      "definition": "SUBSTR(obsdate, 1, 4)",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "observationalconditions"
+      ],
+      "refuted": false
+    },
+    "alien_template|observationalconditions|Signal prefix": {
+      "id": 33,
+      "knowledge": "Signal prefix",
+      "description": "The first two characters of the signal reference identifier.",
+      "definition": "SUBSTR(TRIM(signalref), 1, 2)",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "observationalconditions"
+      ],
+      "refuted": false
+    },
+    "alien_template|observationalconditions|2024 observation": {
+      "id": 34,
+      "knowledge": "2024 observation",
+      "description": "An observation whose recorded date is in 2024. Selects 11% of rows.",
+      "definition": "SUBSTR(obsdate, 1, 4) = '2024'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        32
+      ],
+      "tables": [
+        "observationalconditions"
+      ],
+      "refuted": false
+    },
+    "alien_template|observationalconditions|Midnight observation": {
+      "id": 35,
+      "knowledge": "Midnight observation",
+      "description": "An observation recorded at exactly 00:00:00.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "observationalconditions"
+      ],
+      "refuted": false
+    },
+    "alien_template|signaladvancedphenomena|severe intermediate effects": {
+      "id": 36,
+      "knowledge": "severe intermediate effects",
+      "description": "Signals with an intermediate effects rating of Severe. Selects 31% of rows.",
+      "definition": "intermedeffects = 'Severe'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "signaladvancedphenomena"
+      ],
+      "refuted": false
+    },
+    "alien_template|signaladvancedphenomena|strong gravitational lensing": {
+      "id": 37,
+      "knowledge": "strong gravitational lensing",
+      "description": "Signals with strong gravitational lensing. Selects 52% of rows.",
+      "definition": "gravlens = 'Strong'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "signaladvancedphenomena"
+      ],
+      "refuted": false
+    },
+    "alien_template|signaladvancedphenomena|significant quantum effects": {
+      "id": 38,
+      "knowledge": "significant quantum effects",
+      "description": "Signals with significant quantum effects. Selects 48% of rows.",
+      "definition": "quanteffects = 'Significant'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "signaladvancedphenomena"
+      ],
+      "refuted": false
+    },
+    "alien_template|signaladvancedphenomena|complex language structure": {
+      "id": 39,
+      "knowledge": "complex language structure",
+      "description": "Signals whose language structure is Complex. Selects 54% of rows.",
+      "definition": "langstruct = 'Complex'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "signaladvancedphenomena"
+      ],
+      "refuted": false
+    },
+    "alien_template|signaladvancedphenomena|major scientific impact": {
+      "id": 40,
+      "knowledge": "major scientific impact",
+      "description": "Signals with a major scientific impact rating. Selects 33% of rows.",
+      "definition": "sciimpact = 'Major'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "signaladvancedphenomena"
+      ],
+      "refuted": false
+    },
+    "alien_template|signaldecoding|Complex encoding (CE)": {
+      "id": 41,
+      "knowledge": "Complex encoding (CE)",
+      "description": "Signals that use the complex encoding type. Selects 25% of rows.",
+      "definition": "encodetype = 'Complex'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "signaldecoding"
+      ],
+      "refuted": false
+    },
+    "alien_template|signaldecoding|High error correction (HEC)": {
+      "id": 42,
+      "knowledge": "High error correction (HEC)",
+      "description": "Decode attempts using the high error correction level. Selects 34% of rows.",
+      "definition": "errcorrlvl = 'High'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "signaldecoding"
+      ],
+      "refuted": false
+    },
+    "alien_template|signaldecoding|Quantum decoding (QD)": {
+      "id": 43,
+      "knowledge": "Quantum decoding (QD)",
+      "description": "Decode attempts that use the quantum decode method. Selects 24% of rows.",
+      "definition": "decodemethod = 'Quantum'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "signaldecoding"
+      ],
+      "refuted": false
+    },
+    "alien_template|signaldecoding|Completed decoding (CD)": {
+      "id": 44,
+      "knowledge": "Completed decoding (CD)",
+      "description": "Decode attempts whose decode status is Completed. Selects 34% of rows.",
+      "definition": "decodestat = 'Completed'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "signaldecoding"
+      ],
+      "refuted": false
+    },
+    "alien_template|signaldecoding|Confirmed signal (CS)": {
+      "id": 45,
+      "knowledge": "Confirmed signal (CS)",
+      "description": "Signals whose confirmation status is Confirmed. Selects 32% of rows.",
+      "definition": "confirmstat = 'Confirmed'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "signaldecoding"
+      ],
+      "refuted": false
+    },
+    "alien_template|signaldecoding|Confirmed completed decode (CCD)": {
+      "id": 46,
+      "knowledge": "Confirmed completed decode (CCD)",
+      "description": "Decode attempts that both completed and were confirmed. Selects 10% of rows.",
+      "definition": "decodestat = 'Completed' AND confirmstat = 'Confirmed'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        44,
+        45
+      ],
+      "tables": [
+        "signaldecoding"
+      ],
+      "refuted": false
+    },
+    "alien_template|researchprocess|Urgent analysis priority": {
+      "id": 47,
+      "knowledge": "Urgent analysis priority",
+      "description": "Signals whose analysis priority is Urgent. Selects 26% of rows.",
+      "definition": "analysisprio = 'Urgent'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "researchprocess"
+      ],
+      "refuted": false
+    },
+    "alien_template|researchprocess|Completed follow-up": {
+      "id": 48,
+      "knowledge": "Completed follow-up",
+      "description": "Signals with follow-up status Completed. Selects 35% of rows.",
+      "definition": "followstat = 'Completed'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "researchprocess"
+      ],
+      "refuted": false
+    },
+    "alien_template|researchprocess|Published publication status": {
+      "id": 49,
+      "knowledge": "Published publication status",
+      "description": "Signals with publication status Published. Selects 34% of rows.",
+      "definition": "TRIM(pubstat) = 'Published'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "researchprocess"
+      ],
+      "refuted": false
+    },
+    "alien_template|researchprocess|Funded funding status": {
+      "id": 50,
+      "knowledge": "Funded funding status",
+      "description": "Signals with funding status Funded. Selects 32% of rows.",
+      "definition": "TRIM(fundstat) = 'Funded'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "researchprocess"
+      ],
+      "refuted": false
+    },
+    "alien_template|researchprocess|Public security classification": {
+      "id": 51,
+      "knowledge": "Public security classification",
+      "description": "Signals with security classification Public. Selects 35% of rows.",
+      "definition": "TRIM(secclass) = 'Public'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "researchprocess"
+      ],
+      "refuted": false
+    },
+    "alien_template|signalprobabilities|false positive probability": {
+      "id": 52,
+      "knowledge": "false positive probability",
+      "description": "Probability that a detected signal is a false positive; complement of signal uniqueness.",
+      "definition": "falseposprob != 1 - sigunique",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "signalprobabilities"
+      ],
+      "refuted": true
+    },
+    "alien_template|signalprobabilities|technical signal probability": {
+      "id": 53,
+      "knowledge": "technical signal probability",
+      "description": "Probability that a signal is technical rather than biological; complement of biological signal probability.",
+      "definition": "techsigprob != 1 - biosigprob",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        54
+      ],
+      "tables": [
+        "signalprobabilities"
+      ],
+      "refuted": true
+    },
+    "alien_template|signalprobabilities|biological signal probability": {
+      "id": 54,
+      "knowledge": "biological signal probability",
+      "description": "Probability that a signal is biological rather than technical; complement of technical signal probability.",
+      "definition": "biosigprob != 1 - techsigprob",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        53
+      ],
+      "tables": [
+        "signalprobabilities"
+      ],
+      "refuted": true
+    },
+    "alien_template|signalprobabilities|natural source probability": {
+      "id": 55,
+      "knowledge": "natural source probability",
+      "description": "Probability that a signal originates from a natural source; complement of artificial source probability.",
+      "definition": "natsrcprob != 1 - artsrcprob",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        56
+      ],
+      "tables": [
+        "signalprobabilities"
+      ],
+      "refuted": true
+    },
+    "alien_template|signalprobabilities|artificial source probability": {
+      "id": 56,
+      "knowledge": "artificial source probability",
+      "description": "Probability that a signal originates from an artificial source; complement of natural source probability.",
+      "definition": "artsrcprob != 1 - natsrcprob",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        55
+      ],
+      "tables": [
+        "signalprobabilities"
+      ],
+      "refuted": true
+    },
+    "alien_template|signals|signal-to-noise ratio (SNR)": {
+      "id": 57,
+      "knowledge": "signal-to-noise ratio (SNR)",
+      "description": "Difference between signal strength and noise floor in dB.",
+      "definition": "snrratio != sigstrdb - noisefloordbm",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        64
+      ],
+      "tables": [
+        "signals"
+      ],
+      "refuted": true
+    },
+    "alien_template|signals|Doppler shift": {
+      "id": 58,
+      "knowledge": "Doppler shift",
+      "description": "Frequency shift between emitted carrier frequency and observed center frequency.",
+      "definition": "doppshifthz != (centerfreqmhz - carrierfreqmhz) * 1000000",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        60,
+        61
+      ],
+      "tables": [
+        "signals"
+      ],
+      "refuted": true
+    },
+    "alien_template|signals|frequency drift rate": {
+      "id": 59,
+      "knowledge": "frequency drift rate",
+      "description": "Rate at which the signal frequency changes over its duration.",
+      "definition": "freqdrifthzs != doppshifthz / sigdursec",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "signals"
+      ],
+      "refuted": true
+    },
+    "alien_template|signals|center frequency": {
+      "id": 60,
+      "knowledge": "center frequency",
+      "description": "Midpoint of the signal band computed from signal frequency and bandwidth.",
+      "definition": "centerfreqmhz != freqmhz + bwhz / 2000000",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "signals"
+      ],
+      "refuted": true
+    },
+    "alien_template|signals|carrier frequency": {
+      "id": 61,
+      "knowledge": "carrier frequency",
+      "description": "Emitted frequency recovered by removing the Doppler shift from the observed center frequency.",
+      "definition": "carrierfreqmhz != centerfreqmhz - doppshifthz / 1000000",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        58,
+        60
+      ],
+      "tables": [
+        "signals"
+      ],
+      "refuted": true
+    },
+    "alien_template|signals|pulse duty cycle": {
+      "id": 62,
+      "knowledge": "pulse duty cycle",
+      "description": "Fraction of the pulse period occupied by the pulse.",
+      "definition": "pulsepersec * pulsewidms / 1000",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "signals"
+      ],
+      "refuted": false
+    },
+    "alien_template|signals|pulse count": {
+      "id": 63,
+      "knowledge": "pulse count",
+      "description": "Total number of pulses occurring over the signal duration.",
+      "definition": "pulsepersec * sigdursec",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "signals"
+      ],
+      "refuted": false
+    },
+    "alien_template|signals|noise floor": {
+      "id": 64,
+      "knowledge": "noise floor",
+      "description": "Noise power derived from signal strength and signal-to-noise ratio.",
+      "definition": "noisefloordbm != sigstrdb - snrratio",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        57
+      ],
+      "tables": [
+        "signals"
+      ],
+      "refuted": true
+    },
+    "alien_template|signals|pulsed signal": {
+      "id": 65,
+      "knowledge": "pulsed signal",
+      "description": "Signal classified as Pulsed. Selects 20% of rows.",
+      "definition": "TRIM(signalclass) = 'Pulsed'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "signals"
+      ],
+      "refuted": false
+    },
+    "alien_template|signals|clean RFI status": {
+      "id": 66,
+      "knowledge": "clean RFI status",
+      "description": "Signal whose RFI status is Clean. Selects 31% of rows.",
+      "definition": "TRIM(rfistat) = 'Clean'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "signals"
+      ],
+      "refuted": false
+    },
+    "alien_template|signals|high interference": {
+      "id": 67,
+      "knowledge": "high interference",
+      "description": "Signal with interference level High. Selects 32% of rows.",
+      "definition": "TRIM(interflvl) = 'High'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "signals"
+      ],
+      "refuted": false
+    },
+    "alien_template|signals|severe atmospheric interference": {
+      "id": 68,
+      "knowledge": "severe atmospheric interference",
+      "description": "Signal with atmospheric interference Severe. Selects 31% of rows.",
+      "definition": "TRIM(atmointerf) = 'Severe'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "signals"
+      ],
+      "refuted": false
+    },
+    "alien_template|signalclassification,signaldynamics|High-confidence artificial dynamic signal (HADS)": {
+      "id": 69,
+      "knowledge": "High-confidence artificial dynamic signal (HADS)",
+      "description": "Signal classified as artificial with classification confidence above 90 and dynamic evolution.",
+      "definition": "sigclasstype = 'Artificial' AND classconf > 90 AND sigevolve = 'Dynamic'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        0,
+        30
+      ],
+      "tables": [
+        "signalclassification",
+        "signaldynamics"
+      ],
+      "refuted": false
+    },
+    "alien_template|signalclassification,signaldecoding|Confirmed artificial decode (CAD)": {
+      "id": 70,
+      "knowledge": "Confirmed artificial decode (CAD)",
+      "description": "Artificial signal with confirmed decode status and decode confidence above 80.",
+      "definition": "sigclasstype = 'Artificial' AND confirmstat = 'Confirmed' AND decodeconf > 80",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        0,
+        45
+      ],
+      "tables": [
+        "signalclassification",
+        "signaldecoding"
+      ],
+      "refuted": false
+    },
+    "alien_template|signaldecoding,signalprobabilities|Quantum-decoded high-artificial-probability signal (QHAS)": {
+      "id": 71,
+      "knowledge": "Quantum-decoded high-artificial-probability signal (QHAS)",
+      "description": "Completed quantum decode of a signal with artificial source probability above 0.8.",
+      "definition": "decodemethod = 'Quantum' AND decodestat = 'Completed' AND artsrcprob > 0.8",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        43,
+        44,
+        56
+      ],
+      "tables": [
+        "signaldecoding",
+        "signalprobabilities"
+      ],
+      "refuted": false
+    },
+    "alien_template|signaladvancedphenomena,signalprobabilities|Strong-encryption high-artificial-probability signal (SEAPS)": {
+      "id": 72,
+      "knowledge": "Strong-encryption high-artificial-probability signal (SEAPS)",
+      "description": "Signal with strong encryption evidence and artificial source probability above 0.8.",
+      "definition": "encryptevid = 'Strong' AND artsrcprob > 0.8",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        56
+      ],
+      "tables": [
+        "signaladvancedphenomena",
+        "signalprobabilities"
+      ],
+      "refuted": false
+    },
+    "alien_template|observatories,signalprobabilities|Clear-sky high-uniqueness artificial-probability signal (CHUAPS)": {
+      "id": 73,
+      "knowledge": "Clear-sky high-uniqueness artificial-probability signal (CHUAPS)",
+      "description": "High-uniqueness artificial-probability signal observed under clear sky conditions.",
+      "definition": "sigunique > 0.9 AND artsrcprob > 0.8 AND weathprofile = 'Clear'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        13,
+        56
+      ],
+      "tables": [
+        "observatories",
+        "signalprobabilities"
+      ],
+      "refuted": false
+    },
+    "alien_template|researchprocess,signals|Published high-SNR signal (PHSS)": {
+      "id": 74,
+      "knowledge": "Published high-SNR signal (PHSS)",
+      "description": "Published signal with signal-to-noise ratio above 30.",
+      "definition": "TRIM(pubstat) = 'Published' AND snrratio > 30",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        49,
+        57
+      ],
+      "tables": [
+        "researchprocess",
+        "signals"
+      ],
+      "refuted": false
+    },
+    "alien_template|signals,telescopes|Cold-detector pulsed signal (CDPS)": {
+      "id": 75,
+      "knowledge": "Cold-detector pulsed signal (CDPS)",
+      "description": "Pulsed signal observed by a telescope with detector temperature below 200 K.",
+      "definition": "signalclass = 'Pulsed' AND detecttempk < 200",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        65
+      ],
+      "tables": [
+        "signals",
+        "telescopes"
+      ],
+      "refuted": false
+    },
+    "alien_template|signaldynamics,sourceproperties|High-metallicity coherent signal (HMCS)": {
+      "id": 76,
+      "knowledge": "High-metallicity coherent signal (HMCS)",
+      "description": "Signal from a high-metallicity source with coherence stability above 0.8.",
+      "definition": "objmetal > 0.5 AND CAST(sigcoherence AS REAL) > 0.8",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        26
+      ],
+      "tables": [
+        "signaldynamics",
+        "sourceproperties"
+      ],
+      "refuted": false
+    },
+    "alien_template|signalclassification,signalprobabilities|Artificial source confidence score (ASCS)": {
+      "id": 77,
+      "knowledge": "Artificial source confidence score (ASCS)",
+      "description": "Classification confidence weighted by artificial source probability.",
+      "definition": "classconf * artsrcprob / 100",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        56
+      ],
+      "tables": [
+        "signalclassification",
+        "signalprobabilities"
+      ],
+      "refuted": false
+    },
+    "alien_template|signalclassification,signals|Spectral information efficiency (SIE)": {
+      "id": 78,
+      "knowledge": "Spectral information efficiency (SIE)",
+      "description": "Signal bandwidth divided by entropy value.",
+      "definition": "bwhz / entropyval",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "signalclassification",
+        "signals"
+      ],
+      "refuted": false
+    },
+    "alien_template|observationalconditions,signaldecoding|Processing throughput per observation hour (PTOH)": {
+      "id": 79,
+      "knowledge": "Processing throughput per observation hour (PTOH)",
+      "description": "Decode iterations per observation hour.",
+      "definition": "decodeiters / obsdurhrs",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "observationalconditions",
+        "signaldecoding"
+      ],
+      "refuted": false
+    }
+  },
+  "meta": {
+    "signalclassification,signals": {
+      "profiled_at": "2026-08-30T12:40:37.592259+00:00"
+    },
+    "signaldynamics,sourceproperties": {
+      "profiled_at": "2026-08-30T12:40:37.592259+00:00"
+    },
+    "signaldecoding,signalprobabilities": {
+      "profiled_at": "2026-08-30T12:40:37.592259+00:00"
+    },
+    "telescopes": {
+      "profiled_at": "2026-08-30T12:40:37.592259+00:00"
+    },
+    "signaldynamics": {
+      "profiled_at": "2026-08-30T12:40:37.592259+00:00"
+    },
+    "observationalconditions": {
+      "profiled_at": "2026-08-30T12:40:37.592259+00:00"
+    },
+    "signalclassification,signaldecoding": {
+      "profiled_at": "2026-08-30T12:40:37.592259+00:00"
+    },
+    "signaldecoding": {
+      "profiled_at": "2026-08-30T12:40:37.592259+00:00"
+    },
+    "researchprocess": {
+      "profiled_at": "2026-08-30T12:40:37.592259+00:00"
+    },
+    "signaladvancedphenomena,signalprobabilities": {
+      "profiled_at": "2026-08-30T12:40:37.592259+00:00"
+    },
+    "signals": {
+      "profiled_at": "2026-08-30T12:40:37.592259+00:00"
+    },
+    "signalclassification,signalprobabilities": {
+      "profiled_at": "2026-08-30T12:40:37.592259+00:00"
+    },
+    "observationalconditions,signaldecoding": {
+      "profiled_at": "2026-08-30T12:40:37.592259+00:00"
+    },
+    "signalclassification": {
+      "profiled_at": "2026-08-30T12:40:37.592259+00:00"
+    },
+    "sourceproperties": {
+      "profiled_at": "2026-08-30T12:40:37.592259+00:00"
+    },
+    "observatories,signalprobabilities": {
+      "profiled_at": "2026-08-30T12:40:37.592259+00:00"
+    },
+    "observatories": {
+      "profiled_at": "2026-08-30T12:40:37.592259+00:00"
+    },
+    "signals,telescopes": {
+      "profiled_at": "2026-08-30T12:40:37.592259+00:00"
+    },
+    "researchprocess,signals": {
+      "profiled_at": "2026-08-30T12:40:37.592259+00:00"
+    },
+    "signaladvancedphenomena": {
+      "profiled_at": "2026-08-30T12:40:37.592259+00:00"
+    },
+    "signalprobabilities": {
+      "profiled_at": "2026-08-30T12:40:37.592259+00:00"
+    },
+    "signalclassification,signaldynamics": {
+      "profiled_at": "2026-08-30T12:40:37.592259+00:00"
+    }
+  }
+}

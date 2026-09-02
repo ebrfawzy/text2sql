@@ -1,0 +1,6352 @@
+{
+  "version": 1,
+  "profiled_at": "2026-08-30T11:07:44.144501+00:00",
+  "columns": {
+    "cross_db_template|auditandcompliance|audittrace": {
+      "table_name": "auditandcompliance",
+      "column_name": "audittrace",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "1",
+      "max_value": "999",
+      "top_k_values": [
+        {
+          "value": "1",
+          "count": 1
+        },
+        {
+          "value": "2",
+          "count": 1
+        },
+        {
+          "value": "3",
+          "count": 1
+        },
+        {
+          "value": "4",
+          "count": 1
+        },
+        {
+          "value": "5",
+          "count": 1
+        },
+        {
+          "value": "6",
+          "count": 1
+        },
+        {
+          "value": "7",
+          "count": 1
+        },
+        {
+          "value": "8",
+          "count": 1
+        },
+        {
+          "value": "9",
+          "count": 1
+        },
+        {
+          "value": "10",
+          "count": 1
+        }
+      ],
+      "min_length": 1,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D",
+        "DDDD"
+      ]
+    },
+    "cross_db_template|auditandcompliance|profjoin": {
+      "table_name": "auditandcompliance",
+      "column_name": "profjoin",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "1",
+      "max_value": "999",
+      "top_k_values": [
+        {
+          "value": "1000",
+          "count": 1
+        },
+        {
+          "value": "999",
+          "count": 1
+        },
+        {
+          "value": "998",
+          "count": 1
+        },
+        {
+          "value": "997",
+          "count": 1
+        },
+        {
+          "value": "996",
+          "count": 1
+        },
+        {
+          "value": "995",
+          "count": 1
+        },
+        {
+          "value": "994",
+          "count": 1
+        },
+        {
+          "value": "993",
+          "count": 1
+        },
+        {
+          "value": "992",
+          "count": 1
+        },
+        {
+          "value": "991",
+          "count": 1
+        }
+      ],
+      "min_length": 1,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D",
+        "DDDD"
+      ]
+    },
+    "cross_db_template|auditandcompliance|compjoin": {
+      "table_name": "auditandcompliance",
+      "column_name": "compjoin",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "1",
+      "max_value": "999",
+      "top_k_values": [
+        {
+          "value": "1000",
+          "count": 1
+        },
+        {
+          "value": "999",
+          "count": 1
+        },
+        {
+          "value": "998",
+          "count": 1
+        },
+        {
+          "value": "997",
+          "count": 1
+        },
+        {
+          "value": "996",
+          "count": 1
+        },
+        {
+          "value": "995",
+          "count": 1
+        },
+        {
+          "value": "994",
+          "count": 1
+        },
+        {
+          "value": "993",
+          "count": 1
+        },
+        {
+          "value": "992",
+          "count": 1
+        },
+        {
+          "value": "991",
+          "count": 1
+        }
+      ],
+      "min_length": 1,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D",
+        "DDDD"
+      ]
+    },
+    "cross_db_template|auditandcompliance|vendjoin": {
+      "table_name": "auditandcompliance",
+      "column_name": "vendjoin",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "1",
+      "max_value": "999",
+      "top_k_values": [
+        {
+          "value": "1000",
+          "count": 1
+        },
+        {
+          "value": "999",
+          "count": 1
+        },
+        {
+          "value": "998",
+          "count": 1
+        },
+        {
+          "value": "997",
+          "count": 1
+        },
+        {
+          "value": "996",
+          "count": 1
+        },
+        {
+          "value": "995",
+          "count": 1
+        },
+        {
+          "value": "994",
+          "count": 1
+        },
+        {
+          "value": "993",
+          "count": 1
+        },
+        {
+          "value": "992",
+          "count": 1
+        },
+        {
+          "value": "991",
+          "count": 1
+        }
+      ],
+      "min_length": 1,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D",
+        "DDDD"
+      ]
+    },
+    "cross_db_template|auditandcompliance|recordregistry": {
+      "table_name": "auditandcompliance",
+      "column_name": "recordregistry",
+      "column_type": "TEXT(10)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 999,
+      "min_value": "CB100138  ",
+      "max_value": "CB999870  ",
+      "top_k_values": [
+        {
+          "value": "CB891187  ",
+          "count": 2
+        },
+        {
+          "value": "CB999870  ",
+          "count": 1
+        },
+        {
+          "value": "CB997219  ",
+          "count": 1
+        },
+        {
+          "value": "CB997034  ",
+          "count": 1
+        },
+        {
+          "value": "CB996808  ",
+          "count": 1
+        },
+        {
+          "value": "CB996635  ",
+          "count": 1
+        },
+        {
+          "value": "CB995776  ",
+          "count": 1
+        },
+        {
+          "value": "CB995397  ",
+          "count": 1
+        },
+        {
+          "value": "CB994500  ",
+          "count": 1
+        },
+        {
+          "value": "CB992859  ",
+          "count": 1
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDDDD  "
+      ]
+    },
+    "cross_db_template|auditandcompliance|audtrailstate": {
+      "table_name": "auditandcompliance",
+      "column_name": "audtrailstate",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 655,
+      "non_null_count": 345,
+      "distinct_count": 1,
+      "min_value": "Complete",
+      "max_value": "Complete",
+      "top_k_values": [
+        {
+          "value": "Complete",
+          "count": 345
+        }
+      ],
+      "min_length": 8,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAAAAAA"
+      ]
+    },
+    "cross_db_template|auditandcompliance|findtally": {
+      "table_name": "auditandcompliance",
+      "column_name": "findtally",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 51,
+      "min_value": "0",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "50",
+          "count": 31
+        },
+        {
+          "value": "12",
+          "count": 30
+        },
+        {
+          "value": "3",
+          "count": 28
+        },
+        {
+          "value": "40",
+          "count": 27
+        },
+        {
+          "value": "15",
+          "count": 27
+        },
+        {
+          "value": "30",
+          "count": 26
+        },
+        {
+          "value": "37",
+          "count": 25
+        },
+        {
+          "value": "29",
+          "count": 25
+        },
+        {
+          "value": "11",
+          "count": 24
+        },
+        {
+          "value": "43",
+          "count": 23
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D"
+      ]
+    },
+    "cross_db_template|auditandcompliance|critfindnum": {
+      "table_name": "auditandcompliance",
+      "column_name": "critfindnum",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 11,
+      "min_value": "0",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "6",
+          "count": 107
+        },
+        {
+          "value": "5",
+          "count": 103
+        },
+        {
+          "value": "0",
+          "count": 97
+        },
+        {
+          "value": "9",
+          "count": 95
+        },
+        {
+          "value": "2",
+          "count": 89
+        },
+        {
+          "value": "1",
+          "count": 89
+        },
+        {
+          "value": "10",
+          "count": 88
+        },
+        {
+          "value": "7",
+          "count": 86
+        },
+        {
+          "value": "4",
+          "count": 84
+        },
+        {
+          "value": "3",
+          "count": 82
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D",
+        "DD"
+      ]
+    },
+    "cross_db_template|auditandcompliance|remedstate": {
+      "table_name": "auditandcompliance",
+      "column_name": "remedstate",
+      "column_type": "TEXT(40)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Completed",
+      "max_value": "Not Started",
+      "top_k_values": [
+        {
+          "value": "In Progress",
+          "count": 337
+        },
+        {
+          "value": "Completed",
+          "count": 332
+        },
+        {
+          "value": "Not Started",
+          "count": 331
+        }
+      ],
+      "min_length": 9,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AA AAAAAAAA",
+        "AAAAAAAAA",
+        "AAA AAAAAAA"
+      ]
+    },
+    "cross_db_template|auditandcompliance|remeddue": {
+      "table_name": "auditandcompliance",
+      "column_name": "remeddue",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 90,
+      "min_value": "2025-02-20",
+      "max_value": "2025-05-20",
+      "top_k_values": [
+        {
+          "value": "2025-04-08",
+          "count": 18
+        },
+        {
+          "value": "2025-04-12",
+          "count": 17
+        },
+        {
+          "value": "2025-03-06",
+          "count": 17
+        },
+        {
+          "value": "2025-05-17",
+          "count": 16
+        },
+        {
+          "value": "2025-05-09",
+          "count": 15
+        },
+        {
+          "value": "2025-05-05",
+          "count": 15
+        },
+        {
+          "value": "2025-05-01",
+          "count": 15
+        },
+        {
+          "value": "2025-04-30",
+          "count": 15
+        },
+        {
+          "value": "2025-03-28",
+          "count": 15
+        },
+        {
+          "value": "2025-02-23",
+          "count": 15
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDD-DD-DD"
+      ]
+    },
+    "cross_db_template|auditandcompliance|authnotify": {
+      "table_name": "auditandcompliance",
+      "column_name": "authnotify",
+      "column_type": "TEXT(40)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Not Required",
+      "max_value": "Submitted",
+      "top_k_values": [
+        {
+          "value": "Submitted",
+          "count": 337
+        },
+        {
+          "value": "Not Required",
+          "count": 335
+        },
+        {
+          "value": "Required",
+          "count": 328
+        }
+      ],
+      "min_length": 8,
+      "max_length": 12,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAA",
+        "AAA AAAAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "cross_db_template|auditandcompliance|bordermech": {
+      "table_name": "auditandcompliance",
+      "column_name": "bordermech",
+      "column_type": "TEXT(40)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "Adequacy Decision",
+      "max_value": "SCCs",
+      "top_k_values": [
+        {
+          "value": "Derogations",
+          "count": 264
+        },
+        {
+          "value": "Adequacy Decision",
+          "count": 256
+        },
+        {
+          "value": "BCRs",
+          "count": 245
+        },
+        {
+          "value": "SCCs",
+          "count": 235
+        }
+      ],
+      "min_length": 4,
+      "max_length": 17,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAAAAAAAAAA",
+        "AAAAAAAA AAAAAAAA"
+      ]
+    },
+    "cross_db_template|auditandcompliance|transimpassess": {
+      "table_name": "auditandcompliance",
+      "column_name": "transimpassess",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Completed",
+      "max_value": "Required",
+      "top_k_values": [
+        {
+          "value": "In Progress",
+          "count": 361
+        },
+        {
+          "value": "Required",
+          "count": 332
+        },
+        {
+          "value": "Completed",
+          "count": 307
+        }
+      ],
+      "min_length": 8,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AA AAAAAAAA",
+        "AAAAAAAA",
+        "AAAAAAAAA"
+      ]
+    },
+    "cross_db_template|auditandcompliance|localreqs": {
+      "table_name": "auditandcompliance",
+      "column_name": "localreqs",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Met",
+      "max_value": "Partial",
+      "top_k_values": [
+        {
+          "value": "Met",
+          "count": 354
+        },
+        {
+          "value": "Not Met",
+          "count": 333
+        },
+        {
+          "value": "Partial",
+          "count": 313
+        }
+      ],
+      "min_length": 3,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAA",
+        "AAA AAA",
+        "AAAAAAA"
+      ]
+    },
+    "cross_db_template|auditandcompliance|datamapstate": {
+      "table_name": "auditandcompliance",
+      "column_name": "datamapstate",
+      "column_type": "TEXT(40)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Complete",
+      "max_value": "Partial",
+      "top_k_values": [
+        {
+          "value": "Outdated",
+          "count": 355
+        },
+        {
+          "value": "Complete",
+          "count": 346
+        },
+        {
+          "value": "Partial",
+          "count": 299
+        }
+      ],
+      "min_length": 7,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAAAAA"
+      ]
+    },
+    "cross_db_template|auditandcompliance|sysintstate": {
+      "table_name": "auditandcompliance",
+      "column_name": "sysintstate",
+      "column_type": "TEXT(40)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Fully Integrated",
+      "max_value": "Partial",
+      "top_k_values": [
+        {
+          "value": "Fully Integrated",
+          "count": 339
+        },
+        {
+          "value": "Manual",
+          "count": 332
+        },
+        {
+          "value": "Partial",
+          "count": 329
+        }
+      ],
+      "min_length": 6,
+      "max_length": 16,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAA AAAAAAAAAA",
+        "AAAAAA",
+        "AAAAAAA"
+      ]
+    },
+    "cross_db_template|auditandcompliance|accreqnum": {
+      "table_name": "auditandcompliance",
+      "column_name": "accreqnum",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 610,
+      "min_value": "0",
+      "max_value": "999",
+      "top_k_values": [
+        {
+          "value": "84",
+          "count": 6
+        },
+        {
+          "value": "500",
+          "count": 5
+        },
+        {
+          "value": "960",
+          "count": 4
+        },
+        {
+          "value": "835",
+          "count": 4
+        },
+        {
+          "value": "830",
+          "count": 4
+        },
+        {
+          "value": "799",
+          "count": 4
+        },
+        {
+          "value": "708",
+          "count": 4
+        },
+        {
+          "value": "700",
+          "count": 4
+        },
+        {
+          "value": "673",
+          "count": 4
+        },
+        {
+          "value": "663",
+          "count": 4
+        }
+      ],
+      "min_length": 1,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D"
+      ]
+    },
+    "cross_db_template|auditandcompliance|delreqnum": {
+      "table_name": "auditandcompliance",
+      "column_name": "delreqnum",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 441,
+      "min_value": "0",
+      "max_value": "99",
+      "top_k_values": [
+        {
+          "value": "357",
+          "count": 7
+        },
+        {
+          "value": "356",
+          "count": 7
+        },
+        {
+          "value": "220",
+          "count": 7
+        },
+        {
+          "value": "353",
+          "count": 6
+        },
+        {
+          "value": "345",
+          "count": 6
+        },
+        {
+          "value": "322",
+          "count": 6
+        },
+        {
+          "value": "247",
+          "count": 6
+        },
+        {
+          "value": "236",
+          "count": 6
+        },
+        {
+          "value": "174",
+          "count": 6
+        },
+        {
+          "value": "478",
+          "count": 5
+        }
+      ],
+      "min_length": 1,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D"
+      ]
+    },
+    "cross_db_template|auditandcompliance|rectreqnum": {
+      "table_name": "auditandcompliance",
+      "column_name": "rectreqnum",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 200,
+      "min_value": "0",
+      "max_value": "99",
+      "top_k_values": [
+        {
+          "value": "14",
+          "count": 12
+        },
+        {
+          "value": "83",
+          "count": 11
+        },
+        {
+          "value": "170",
+          "count": 10
+        },
+        {
+          "value": "169",
+          "count": 10
+        },
+        {
+          "value": "131",
+          "count": 10
+        },
+        {
+          "value": "128",
+          "count": 10
+        },
+        {
+          "value": "185",
+          "count": 9
+        },
+        {
+          "value": "54",
+          "count": 9
+        },
+        {
+          "value": "5",
+          "count": 9
+        },
+        {
+          "value": "179",
+          "count": 8
+        }
+      ],
+      "min_length": 1,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D"
+      ]
+    },
+    "cross_db_template|auditandcompliance|portreqnum": {
+      "table_name": "auditandcompliance",
+      "column_name": "portreqnum",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 101,
+      "min_value": "0",
+      "max_value": "99",
+      "top_k_values": [
+        {
+          "value": "14",
+          "count": 17
+        },
+        {
+          "value": "48",
+          "count": 16
+        },
+        {
+          "value": "98",
+          "count": 15
+        },
+        {
+          "value": "94",
+          "count": 15
+        },
+        {
+          "value": "60",
+          "count": 15
+        },
+        {
+          "value": "35",
+          "count": 15
+        },
+        {
+          "value": "25",
+          "count": 15
+        },
+        {
+          "value": "8",
+          "count": 15
+        },
+        {
+          "value": "89",
+          "count": 14
+        },
+        {
+          "value": "87",
+          "count": 14
+        }
+      ],
+      "min_length": 1,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D",
+        "DDD"
+      ]
+    },
+    "cross_db_template|auditandcompliance|resptimeday": {
+      "table_name": "auditandcompliance",
+      "column_name": "resptimeday",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 281,
+      "min_value": "1.0",
+      "max_value": "9.9",
+      "top_k_values": [
+        {
+          "value": "23.2",
+          "count": 10
+        },
+        {
+          "value": "6.1",
+          "count": 9
+        },
+        {
+          "value": "28.7",
+          "count": 8
+        },
+        {
+          "value": "25.5",
+          "count": 8
+        },
+        {
+          "value": "24.9",
+          "count": 8
+        },
+        {
+          "value": "21.8",
+          "count": 8
+        },
+        {
+          "value": "20.1",
+          "count": 8
+        },
+        {
+          "value": "4.3",
+          "count": 8
+        },
+        {
+          "value": "3.9",
+          "count": 8
+        },
+        {
+          "value": "28.4",
+          "count": 7
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.D",
+        "D.D"
+      ]
+    },
+    "cross_db_template|compliance|compliancetrace": {
+      "table_name": "compliance",
+      "column_name": "compliancetrace",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "1",
+      "max_value": "999",
+      "top_k_values": [
+        {
+          "value": "1",
+          "count": 1
+        },
+        {
+          "value": "2",
+          "count": 1
+        },
+        {
+          "value": "3",
+          "count": 1
+        },
+        {
+          "value": "4",
+          "count": 1
+        },
+        {
+          "value": "5",
+          "count": 1
+        },
+        {
+          "value": "6",
+          "count": 1
+        },
+        {
+          "value": "7",
+          "count": 1
+        },
+        {
+          "value": "8",
+          "count": 1
+        },
+        {
+          "value": "9",
+          "count": 1
+        },
+        {
+          "value": "10",
+          "count": 1
+        }
+      ],
+      "min_length": 1,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D",
+        "DDDD"
+      ]
+    },
+    "cross_db_template|compliance|risktie": {
+      "table_name": "compliance",
+      "column_name": "risktie",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "1",
+      "max_value": "999",
+      "top_k_values": [
+        {
+          "value": "1000",
+          "count": 1
+        },
+        {
+          "value": "999",
+          "count": 1
+        },
+        {
+          "value": "998",
+          "count": 1
+        },
+        {
+          "value": "997",
+          "count": 1
+        },
+        {
+          "value": "996",
+          "count": 1
+        },
+        {
+          "value": "995",
+          "count": 1
+        },
+        {
+          "value": "994",
+          "count": 1
+        },
+        {
+          "value": "993",
+          "count": 1
+        },
+        {
+          "value": "992",
+          "count": 1
+        },
+        {
+          "value": "991",
+          "count": 1
+        }
+      ],
+      "min_length": 1,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D",
+        "DDDD"
+      ]
+    },
+    "cross_db_template|compliance|vendortie": {
+      "table_name": "compliance",
+      "column_name": "vendortie",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "1",
+      "max_value": "999",
+      "top_k_values": [
+        {
+          "value": "1000",
+          "count": 1
+        },
+        {
+          "value": "999",
+          "count": 1
+        },
+        {
+          "value": "998",
+          "count": 1
+        },
+        {
+          "value": "997",
+          "count": 1
+        },
+        {
+          "value": "996",
+          "count": 1
+        },
+        {
+          "value": "995",
+          "count": 1
+        },
+        {
+          "value": "994",
+          "count": 1
+        },
+        {
+          "value": "993",
+          "count": 1
+        },
+        {
+          "value": "992",
+          "count": 1
+        },
+        {
+          "value": "991",
+          "count": 1
+        }
+      ],
+      "min_length": 1,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D",
+        "DDDD"
+      ]
+    },
+    "cross_db_template|compliance|recordregistry": {
+      "table_name": "compliance",
+      "column_name": "recordregistry",
+      "column_type": "TEXT(10)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 999,
+      "min_value": "CB100138  ",
+      "max_value": "CB999870  ",
+      "top_k_values": [
+        {
+          "value": "CB891187  ",
+          "count": 2
+        },
+        {
+          "value": "CB999870  ",
+          "count": 1
+        },
+        {
+          "value": "CB997219  ",
+          "count": 1
+        },
+        {
+          "value": "CB997034  ",
+          "count": 1
+        },
+        {
+          "value": "CB996808  ",
+          "count": 1
+        },
+        {
+          "value": "CB996635  ",
+          "count": 1
+        },
+        {
+          "value": "CB995776  ",
+          "count": 1
+        },
+        {
+          "value": "CB995397  ",
+          "count": 1
+        },
+        {
+          "value": "CB994500  ",
+          "count": 1
+        },
+        {
+          "value": "CB992859  ",
+          "count": 1
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDDDD  "
+      ]
+    },
+    "cross_db_template|compliance|legalbase": {
+      "table_name": "compliance",
+      "column_name": "legalbase",
+      "column_type": "TEXT(150)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "Consent",
+      "max_value": "Legitimate Interest",
+      "top_k_values": [
+        {
+          "value": "Consent",
+          "count": 262
+        },
+        {
+          "value": "Contract",
+          "count": 260
+        },
+        {
+          "value": "Legal Obligation",
+          "count": 254
+        },
+        {
+          "value": "Legitimate Interest",
+          "count": 224
+        }
+      ],
+      "min_length": 7,
+      "max_length": 19,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAAAA",
+        "AAAAA AAAAAAAAAA",
+        "AAAAAAAAAA AAAAAAAA"
+      ]
+    },
+    "cross_db_template|compliance|consentstate": {
+      "table_name": "compliance",
+      "column_name": "consentstate",
+      "column_type": "TEXT(30)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "Expired",
+      "max_value": "Valid",
+      "top_k_values": [
+        {
+          "value": "Expired",
+          "count": 277
+        },
+        {
+          "value": "Not Required",
+          "count": 247
+        },
+        {
+          "value": "Pending",
+          "count": 245
+        },
+        {
+          "value": "Valid",
+          "count": 231
+        }
+      ],
+      "min_length": 5,
+      "max_length": 12,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAA AAAAAAAA",
+        "AAAAA"
+      ]
+    },
+    "cross_db_template|compliance|consentcoll": {
+      "table_name": "compliance",
+      "column_name": "consentcoll",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 343,
+      "min_value": "2024-02-20",
+      "max_value": "2025-02-19",
+      "top_k_values": [
+        {
+          "value": "2024-09-03",
+          "count": 9
+        },
+        {
+          "value": "2025-01-20",
+          "count": 8
+        },
+        {
+          "value": "2024-10-17",
+          "count": 8
+        },
+        {
+          "value": "2024-04-14",
+          "count": 8
+        },
+        {
+          "value": "2025-01-01",
+          "count": 7
+        },
+        {
+          "value": "2024-12-13",
+          "count": 7
+        },
+        {
+          "value": "2024-10-05",
+          "count": 7
+        },
+        {
+          "value": "2024-08-17",
+          "count": 7
+        },
+        {
+          "value": "2024-05-04",
+          "count": 7
+        },
+        {
+          "value": "2025-02-03",
+          "count": 6
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDD-DD-DD"
+      ]
+    },
+    "cross_db_template|compliance|consentexp": {
+      "table_name": "compliance",
+      "column_name": "consentexp",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 546,
+      "min_value": "2025-02-19",
+      "max_value": "2027-02-19",
+      "top_k_values": [
+        {
+          "value": "2027-01-19",
+          "count": 6
+        },
+        {
+          "value": "2026-07-01",
+          "count": 6
+        },
+        {
+          "value": "2025-06-20",
+          "count": 6
+        },
+        {
+          "value": "2025-04-15",
+          "count": 6
+        },
+        {
+          "value": "2026-12-07",
+          "count": 5
+        },
+        {
+          "value": "2026-11-10",
+          "count": 5
+        },
+        {
+          "value": "2026-05-29",
+          "count": 5
+        },
+        {
+          "value": "2026-04-02",
+          "count": 5
+        },
+        {
+          "value": "2025-12-20",
+          "count": 5
+        },
+        {
+          "value": "2025-02-23",
+          "count": 5
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDD-DD-DD"
+      ]
+    },
+    "cross_db_template|compliance|purplimit": {
+      "table_name": "compliance",
+      "column_name": "purplimit",
+      "column_type": "TEXT(300)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "General",
+      "max_value": "Specific",
+      "top_k_values": [
+        {
+          "value": "General",
+          "count": 337
+        },
+        {
+          "value": "Specific",
+          "count": 332
+        },
+        {
+          "value": "Multiple",
+          "count": 331
+        }
+      ],
+      "min_length": 7,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAAAAA"
+      ]
+    },
+    "cross_db_template|compliance|purpdesc": {
+      "table_name": "compliance",
+      "column_name": "purpdesc",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "Business Operations",
+      "max_value": "Research",
+      "top_k_values": [
+        {
+          "value": "Marketing",
+          "count": 271
+        },
+        {
+          "value": "Research",
+          "count": 256
+        },
+        {
+          "value": "Compliance",
+          "count": 238
+        },
+        {
+          "value": "Business Operations",
+          "count": 235
+        }
+      ],
+      "min_length": 8,
+      "max_length": 19,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAA",
+        "AAAAAAAA",
+        "AAAAAAAAAA",
+        "AAAAAAAA AAAAAAAAAA"
+      ]
+    },
+    "cross_db_template|compliance|gdprcomp": {
+      "table_name": "compliance",
+      "column_name": "gdprcomp",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Compliant",
+      "max_value": "Partial",
+      "top_k_values": [
+        {
+          "value": "Non-compliant",
+          "count": 343
+        },
+        {
+          "value": "Partial",
+          "count": 341
+        },
+        {
+          "value": "Compliant",
+          "count": 316
+        }
+      ],
+      "min_length": 7,
+      "max_length": 13,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAA-AAAAAAAAA",
+        "AAAAAAA",
+        "AAAAAAAAA"
+      ]
+    },
+    "cross_db_template|compliance|ccpacomp": {
+      "table_name": "compliance",
+      "column_name": "ccpacomp",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Compliant",
+      "max_value": "Partial",
+      "top_k_values": [
+        {
+          "value": "Compliant",
+          "count": 340
+        },
+        {
+          "value": "Non-compliant",
+          "count": 339
+        },
+        {
+          "value": "Partial",
+          "count": 321
+        }
+      ],
+      "min_length": 7,
+      "max_length": 13,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAA",
+        "AAA-AAAAAAAAA",
+        "AAAAAAA"
+      ]
+    },
+    "cross_db_template|compliance|piplcomp": {
+      "table_name": "compliance",
+      "column_name": "piplcomp",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Compliant",
+      "max_value": "Partial",
+      "top_k_values": [
+        {
+          "value": "Non-compliant",
+          "count": 344
+        },
+        {
+          "value": "Partial",
+          "count": 328
+        },
+        {
+          "value": "Compliant",
+          "count": 328
+        }
+      ],
+      "min_length": 7,
+      "max_length": 13,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAA-AAAAAAAAA",
+        "AAAAAAA",
+        "AAAAAAAAA"
+      ]
+    },
+    "cross_db_template|compliance|loclawcomp": {
+      "table_name": "compliance",
+      "column_name": "loclawcomp",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Compliant",
+      "max_value": "Partial",
+      "top_k_values": [
+        {
+          "value": "Non-compliant",
+          "count": 341
+        },
+        {
+          "value": "Partial",
+          "count": 339
+        },
+        {
+          "value": "Compliant",
+          "count": 320
+        }
+      ],
+      "min_length": 7,
+      "max_length": 13,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAA-AAAAAAAAA",
+        "AAAAAAA",
+        "AAAAAAAAA"
+      ]
+    },
+    "cross_db_template|compliance|regapprovals": {
+      "table_name": "compliance",
+      "column_name": "regapprovals",
+      "column_type": "TEXT(300)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Not Required",
+      "max_value": "Pending",
+      "top_k_values": [
+        {
+          "value": "Obtained",
+          "count": 347
+        },
+        {
+          "value": "Not Required",
+          "count": 327
+        },
+        {
+          "value": "Pending",
+          "count": 326
+        }
+      ],
+      "min_length": 7,
+      "max_length": 12,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAA AAAAAAAA",
+        "AAAAAAA"
+      ]
+    },
+    "cross_db_template|compliance|privimpassess": {
+      "table_name": "compliance",
+      "column_name": "privimpassess",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Completed",
+      "max_value": "Required",
+      "top_k_values": [
+        {
+          "value": "In Progress",
+          "count": 351
+        },
+        {
+          "value": "Completed",
+          "count": 331
+        },
+        {
+          "value": "Required",
+          "count": 318
+        }
+      ],
+      "min_length": 8,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AA AAAAAAAA",
+        "AAAAAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "cross_db_template|compliance|datasubjright": {
+      "table_name": "compliance",
+      "column_name": "datasubjright",
+      "column_type": "TEXT(40)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Fully Supported",
+      "max_value": "Partial",
+      "top_k_values": [
+        {
+          "value": "Fully Supported",
+          "count": 340
+        },
+        {
+          "value": "Limited",
+          "count": 334
+        },
+        {
+          "value": "Partial",
+          "count": 326
+        }
+      ],
+      "min_length": 7,
+      "max_length": 15,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAA AAAAAAAAA"
+      ]
+    },
+    "cross_db_template|dataflow|recordregistry": {
+      "table_name": "dataflow",
+      "column_name": "recordregistry",
+      "column_type": "TEXT(10)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "CB100138  ",
+      "max_value": "CB999870  ",
+      "top_k_values": [
+        {
+          "value": "CB100138  ",
+          "count": 1
+        },
+        {
+          "value": "CB100432  ",
+          "count": 1
+        },
+        {
+          "value": "CB100698  ",
+          "count": 1
+        },
+        {
+          "value": "CB102232  ",
+          "count": 1
+        },
+        {
+          "value": "CB102272  ",
+          "count": 1
+        },
+        {
+          "value": "CB105271  ",
+          "count": 1
+        },
+        {
+          "value": "CB105896  ",
+          "count": 1
+        },
+        {
+          "value": "CB108116  ",
+          "count": 1
+        },
+        {
+          "value": "CB108769  ",
+          "count": 1
+        },
+        {
+          "value": "CB108793  ",
+          "count": 1
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDDDD  "
+      ]
+    },
+    "cross_db_template|dataflow|flowstamp": {
+      "table_name": "dataflow",
+      "column_name": "flowstamp",
+      "column_type": "TEXT(6)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "2024-02-19 12:33:02.084298",
+      "max_value": "2025-02-18 05:39:21.223344",
+      "top_k_values": [
+        {
+          "value": "2025-02-18 05:39:21.223344",
+          "count": 1
+        },
+        {
+          "value": "2025-02-17 04:29:25.186039",
+          "count": 1
+        },
+        {
+          "value": "2025-02-17 03:56:55.159287",
+          "count": 1
+        },
+        {
+          "value": "2025-02-17 03:47:42.221302",
+          "count": 1
+        },
+        {
+          "value": "2025-02-16 20:50:38.167871",
+          "count": 1
+        },
+        {
+          "value": "2025-02-16 04:30:23.186255",
+          "count": 1
+        },
+        {
+          "value": "2025-02-15 21:26:03.131892",
+          "count": 1
+        },
+        {
+          "value": "2025-02-15 11:39:27.04587",
+          "count": 1
+        },
+        {
+          "value": "2025-02-14 17:27:59.188322",
+          "count": 1
+        },
+        {
+          "value": "2025-02-14 01:50:42.074258",
+          "count": 1
+        }
+      ],
+      "min_length": 24,
+      "max_length": 26,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDD-DD-DD DD:DD:DD.DDDDDD",
+        "DDDD-DD-DD DD:DD:DD.DDDDD",
+        "DDDD-DD-DD DD:DD:DD.DDDD"
+      ]
+    },
+    "cross_db_template|dataflow|flowtag": {
+      "table_name": "dataflow",
+      "column_name": "flowtag",
+      "column_type": "TEXT(20)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 952,
+      "min_value": "DF1004",
+      "max_value": "DF9993",
+      "top_k_values": [
+        {
+          "value": "DF9903",
+          "count": 3
+        },
+        {
+          "value": "DF7339",
+          "count": 3
+        },
+        {
+          "value": "DF9563",
+          "count": 2
+        },
+        {
+          "value": "DF9437",
+          "count": 2
+        },
+        {
+          "value": "DF9283",
+          "count": 2
+        },
+        {
+          "value": "DF9213",
+          "count": 2
+        },
+        {
+          "value": "DF9165",
+          "count": 2
+        },
+        {
+          "value": "DF9025",
+          "count": 2
+        },
+        {
+          "value": "DF8711",
+          "count": 2
+        },
+        {
+          "value": "DF8704",
+          "count": 2
+        }
+      ],
+      "min_length": 6,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDD"
+      ]
+    },
+    "cross_db_template|dataflow|orignation": {
+      "table_name": "dataflow",
+      "column_name": "orignation",
+      "column_type": "TEXT(80)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 235,
+      "min_value": "Afghanistan",
+      "max_value": "Zimbabwe",
+      "top_k_values": [
+        {
+          "value": "Congo",
+          "count": 10
+        },
+        {
+          "value": "Algeria",
+          "count": 10
+        },
+        {
+          "value": "Romania",
+          "count": 9
+        },
+        {
+          "value": "Netherlands",
+          "count": 9
+        },
+        {
+          "value": "Mauritius",
+          "count": 9
+        },
+        {
+          "value": "Guinea",
+          "count": 9
+        },
+        {
+          "value": "Denmark",
+          "count": 9
+        },
+        {
+          "value": "Reunion",
+          "count": 8
+        },
+        {
+          "value": "Portugal",
+          "count": 8
+        },
+        {
+          "value": "Paraguay",
+          "count": 8
+        }
+      ],
+      "min_length": 4,
+      "max_length": 51,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAA",
+        "AAAAA",
+        "AAAAAAAA",
+        "AAAAAAAAAA"
+      ]
+    },
+    "cross_db_template|dataflow|destnation": {
+      "table_name": "dataflow",
+      "column_name": "destnation",
+      "column_type": "TEXT(80)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 241,
+      "min_value": "Afghanistan",
+      "max_value": "Zimbabwe",
+      "top_k_values": [
+        {
+          "value": "American Samoa",
+          "count": 13
+        },
+        {
+          "value": "Tunisia",
+          "count": 9
+        },
+        {
+          "value": "Myanmar",
+          "count": 9
+        },
+        {
+          "value": "Hungary",
+          "count": 9
+        },
+        {
+          "value": "Angola",
+          "count": 9
+        },
+        {
+          "value": "Venezuela",
+          "count": 8
+        },
+        {
+          "value": "Timor-Leste",
+          "count": 8
+        },
+        {
+          "value": "Portugal",
+          "count": 8
+        },
+        {
+          "value": "Nicaragua",
+          "count": 8
+        },
+        {
+          "value": "Moldova",
+          "count": 8
+        }
+      ],
+      "min_length": 4,
+      "max_length": 51,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAA",
+        "AAAAA",
+        "AAAAAAAA",
+        "AAAAAAAAAA"
+      ]
+    },
+    "cross_db_template|dataflow|origactor": {
+      "table_name": "dataflow",
+      "column_name": "origactor",
+      "column_type": "TEXT(150)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 977,
+      "min_value": "Adams LLC",
+      "max_value": "Zamora-Scott",
+      "top_k_values": [
+        {
+          "value": "Williams Inc",
+          "count": 3
+        },
+        {
+          "value": "Dixon Inc",
+          "count": 3
+        },
+        {
+          "value": "Brown Inc",
+          "count": 3
+        },
+        {
+          "value": "Yoder LLC",
+          "count": 2
+        },
+        {
+          "value": "Warren and Sons",
+          "count": 2
+        },
+        {
+          "value": "Ward and Sons",
+          "count": 2
+        },
+        {
+          "value": "Perez Inc",
+          "count": 2
+        },
+        {
+          "value": "Palmer and Sons",
+          "count": 2
+        },
+        {
+          "value": "Little LLC",
+          "count": 2
+        },
+        {
+          "value": "Hill Ltd",
+          "count": 2
+        }
+      ],
+      "min_length": 7,
+      "max_length": 33,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA AAA",
+        "AAAAA AAA",
+        "AAAAAAA AAA",
+        "AAAAAA-AAAAA",
+        "AAAA AAA"
+      ]
+    },
+    "cross_db_template|dataflow|destactor": {
+      "table_name": "dataflow",
+      "column_name": "destactor",
+      "column_type": "TEXT(150)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 976,
+      "min_value": "Abbott and Sons",
+      "max_value": "Zuniga and Sons",
+      "top_k_values": [
+        {
+          "value": "Smith Ltd",
+          "count": 3
+        },
+        {
+          "value": "Smith Inc",
+          "count": 3
+        },
+        {
+          "value": "Davis Inc",
+          "count": 3
+        },
+        {
+          "value": "Brown Group",
+          "count": 3
+        },
+        {
+          "value": "Young Ltd",
+          "count": 2
+        },
+        {
+          "value": "Wood Group",
+          "count": 2
+        },
+        {
+          "value": "White PLC",
+          "count": 2
+        },
+        {
+          "value": "Vega-Martin",
+          "count": 2
+        },
+        {
+          "value": "Smith PLC",
+          "count": 2
+        },
+        {
+          "value": "Scott Inc",
+          "count": 2
+        }
+      ],
+      "min_length": 6,
+      "max_length": 34,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA AAA",
+        "AAAAA AAA",
+        "AAAAAAA AAA",
+        "AAAAAA-AAAAA",
+        "AAAAAAAA AAA"
+      ]
+    },
+    "cross_db_template|dataflow|chanproto": {
+      "table_name": "dataflow",
+      "column_name": "chanproto",
+      "column_type": "TEXT(30)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 4,
+      "min_value": "Blockchain",
+      "max_value": "SFTP",
+      "top_k_values": [
+        {
+          "value": "Blockchain",
+          "count": 267
+        },
+        {
+          "value": "Private Network",
+          "count": 263
+        },
+        {
+          "value": "SFTP",
+          "count": 242
+        },
+        {
+          "value": "HTTPS",
+          "count": 227
+        }
+      ],
+      "min_length": 4,
+      "max_length": 15,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAAA",
+        "AAAAAAA AAAAAAA",
+        "AAAA",
+        "AAAAA"
+      ]
+    },
+    "cross_db_template|dataflow|chanfreq": {
+      "table_name": "dataflow",
+      "column_name": "chanfreq",
+      "column_type": "TEXT(25)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 4,
+      "min_value": "Daily",
+      "max_value": "Weekly",
+      "top_k_values": [
+        {
+          "value": "Daily",
+          "count": 271
+        },
+        {
+          "value": "Weekly",
+          "count": 257
+        },
+        {
+          "value": "Real-time",
+          "count": 248
+        },
+        {
+          "value": "Hourly",
+          "count": 223
+        }
+      ],
+      "min_length": 5,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AAAAA",
+        "AAAA-AAAA"
+      ]
+    },
+    "cross_db_template|dataflow|datasizemb": {
+      "table_name": "dataflow",
+      "column_name": "datasizemb",
+      "column_type": "REAL",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "10218.62",
+      "max_value": "99933.39",
+      "top_k_values": [
+        {
+          "value": "99933.39",
+          "count": 1
+        },
+        {
+          "value": "99707.76",
+          "count": 1
+        },
+        {
+          "value": "99678.83",
+          "count": 1
+        },
+        {
+          "value": "99474.85",
+          "count": 1
+        },
+        {
+          "value": "99432.69",
+          "count": 1
+        },
+        {
+          "value": "99194.09",
+          "count": 1
+        },
+        {
+          "value": "99174.33",
+          "count": 1
+        },
+        {
+          "value": "99157.11",
+          "count": 1
+        },
+        {
+          "value": "99134.07",
+          "count": 1
+        },
+        {
+          "value": "99110.31",
+          "count": 1
+        }
+      ],
+      "min_length": 5,
+      "max_length": 8,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDD.DD",
+        "DDDDD.D",
+        "DDDD.DD",
+        "DDD.DD",
+        "DDDD.D"
+      ]
+    },
+    "cross_db_template|dataflow|durmin": {
+      "table_name": "dataflow",
+      "column_name": "durmin",
+      "column_type": "INTEGER",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 731,
+      "min_value": "10",
+      "max_value": "999",
+      "top_k_values": [
+        {
+          "value": "1386",
+          "count": 5
+        },
+        {
+          "value": "1375",
+          "count": 5
+        },
+        {
+          "value": "1014",
+          "count": 4
+        },
+        {
+          "value": "898",
+          "count": 4
+        },
+        {
+          "value": "672",
+          "count": 4
+        },
+        {
+          "value": "487",
+          "count": 4
+        },
+        {
+          "value": "459",
+          "count": 4
+        },
+        {
+          "value": "68",
+          "count": 4
+        },
+        {
+          "value": "1395",
+          "count": 3
+        },
+        {
+          "value": "1389",
+          "count": 3
+        }
+      ],
+      "min_length": 1,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DDDD",
+        "DD",
+        "D"
+      ]
+    },
+    "cross_db_template|dataflow|bwidthpct": {
+      "table_name": "dataflow",
+      "column_name": "bwidthpct",
+      "column_type": "REAL",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 952,
+      "min_value": "0.01",
+      "max_value": "99.99",
+      "top_k_values": [
+        {
+          "value": "77.26",
+          "count": 3
+        },
+        {
+          "value": "37.2",
+          "count": 3
+        },
+        {
+          "value": "29.87",
+          "count": 3
+        },
+        {
+          "value": "15.08",
+          "count": 3
+        },
+        {
+          "value": "99.02",
+          "count": 2
+        },
+        {
+          "value": "98.23",
+          "count": 2
+        },
+        {
+          "value": "92.95",
+          "count": 2
+        },
+        {
+          "value": "90.49",
+          "count": 2
+        },
+        {
+          "value": "88.46",
+          "count": 2
+        },
+        {
+          "value": "86.73",
+          "count": 2
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.DD",
+        "DD.D",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "cross_db_template|dataflow|successpct": {
+      "table_name": "dataflow",
+      "column_name": "successpct",
+      "column_type": "REAL",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 624,
+      "min_value": "100.0",
+      "max_value": "99.99",
+      "top_k_values": [
+        {
+          "value": "99.1",
+          "count": 5
+        },
+        {
+          "value": "95.85",
+          "count": 5
+        },
+        {
+          "value": "91.38",
+          "count": 5
+        },
+        {
+          "value": "98.74",
+          "count": 4
+        },
+        {
+          "value": "98.42",
+          "count": 4
+        },
+        {
+          "value": "97.4",
+          "count": 4
+        },
+        {
+          "value": "97.39",
+          "count": 4
+        },
+        {
+          "value": "95.05",
+          "count": 4
+        },
+        {
+          "value": "94.96",
+          "count": 4
+        },
+        {
+          "value": "93.76",
+          "count": 4
+        }
+      ],
+      "min_length": 4,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.DD",
+        "DD.D",
+        "DDD.D"
+      ]
+    },
+    "cross_db_template|dataflow|errtally": {
+      "table_name": "dataflow",
+      "column_name": "errtally",
+      "column_type": "INTEGER",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 101,
+      "min_value": "0",
+      "max_value": "99",
+      "top_k_values": [
+        {
+          "value": "29",
+          "count": 19
+        },
+        {
+          "value": "63",
+          "count": 18
+        },
+        {
+          "value": "95",
+          "count": 17
+        },
+        {
+          "value": "55",
+          "count": 16
+        },
+        {
+          "value": "60",
+          "count": 15
+        },
+        {
+          "value": "50",
+          "count": 15
+        },
+        {
+          "value": "39",
+          "count": 15
+        },
+        {
+          "value": "34",
+          "count": 15
+        },
+        {
+          "value": "2",
+          "count": 15
+        },
+        {
+          "value": "83",
+          "count": 14
+        }
+      ],
+      "min_length": 1,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D",
+        "DDD"
+      ]
+    },
+    "cross_db_template|dataflow|rtrytally": {
+      "table_name": "dataflow",
+      "column_name": "rtrytally",
+      "column_type": "INTEGER",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 51,
+      "min_value": "0",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "37",
+          "count": 33
+        },
+        {
+          "value": "30",
+          "count": 28
+        },
+        {
+          "value": "7",
+          "count": 27
+        },
+        {
+          "value": "34",
+          "count": 26
+        },
+        {
+          "value": "3",
+          "count": 26
+        },
+        {
+          "value": "48",
+          "count": 25
+        },
+        {
+          "value": "41",
+          "count": 24
+        },
+        {
+          "value": "32",
+          "count": 24
+        },
+        {
+          "value": "20",
+          "count": 24
+        },
+        {
+          "value": "2",
+          "count": 24
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D"
+      ]
+    },
+    "cross_db_template|dataprofile|profiletrace": {
+      "table_name": "dataprofile",
+      "column_name": "profiletrace",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "1",
+      "max_value": "999",
+      "top_k_values": [
+        {
+          "value": "1",
+          "count": 1
+        },
+        {
+          "value": "2",
+          "count": 1
+        },
+        {
+          "value": "3",
+          "count": 1
+        },
+        {
+          "value": "4",
+          "count": 1
+        },
+        {
+          "value": "5",
+          "count": 1
+        },
+        {
+          "value": "6",
+          "count": 1
+        },
+        {
+          "value": "7",
+          "count": 1
+        },
+        {
+          "value": "8",
+          "count": 1
+        },
+        {
+          "value": "9",
+          "count": 1
+        },
+        {
+          "value": "10",
+          "count": 1
+        }
+      ],
+      "min_length": 1,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D",
+        "DDDD"
+      ]
+    },
+    "cross_db_template|dataprofile|flowsign": {
+      "table_name": "dataprofile",
+      "column_name": "flowsign",
+      "column_type": "TEXT(10)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 999,
+      "min_value": "CB100138  ",
+      "max_value": "CB999870  ",
+      "top_k_values": [
+        {
+          "value": "CB891187  ",
+          "count": 2
+        },
+        {
+          "value": "CB999870  ",
+          "count": 1
+        },
+        {
+          "value": "CB997219  ",
+          "count": 1
+        },
+        {
+          "value": "CB997034  ",
+          "count": 1
+        },
+        {
+          "value": "CB996808  ",
+          "count": 1
+        },
+        {
+          "value": "CB996635  ",
+          "count": 1
+        },
+        {
+          "value": "CB995776  ",
+          "count": 1
+        },
+        {
+          "value": "CB995397  ",
+          "count": 1
+        },
+        {
+          "value": "CB994500  ",
+          "count": 1
+        },
+        {
+          "value": "CB992859  ",
+          "count": 1
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDDDD  "
+      ]
+    },
+    "cross_db_template|dataprofile|riskjoin": {
+      "table_name": "dataprofile",
+      "column_name": "riskjoin",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "1",
+      "max_value": "999",
+      "top_k_values": [
+        {
+          "value": "1000",
+          "count": 1
+        },
+        {
+          "value": "999",
+          "count": 1
+        },
+        {
+          "value": "998",
+          "count": 1
+        },
+        {
+          "value": "997",
+          "count": 1
+        },
+        {
+          "value": "996",
+          "count": 1
+        },
+        {
+          "value": "995",
+          "count": 1
+        },
+        {
+          "value": "994",
+          "count": 1
+        },
+        {
+          "value": "993",
+          "count": 1
+        },
+        {
+          "value": "992",
+          "count": 1
+        },
+        {
+          "value": "991",
+          "count": 1
+        }
+      ],
+      "min_length": 1,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D",
+        "DDDD"
+      ]
+    },
+    "cross_db_template|dataprofile|recordregistry": {
+      "table_name": "dataprofile",
+      "column_name": "recordregistry",
+      "column_type": "TEXT(10)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 999,
+      "min_value": "CB100138  ",
+      "max_value": "CB999870  ",
+      "top_k_values": [
+        {
+          "value": "CB891187  ",
+          "count": 2
+        },
+        {
+          "value": "CB999870  ",
+          "count": 1
+        },
+        {
+          "value": "CB997219  ",
+          "count": 1
+        },
+        {
+          "value": "CB997034  ",
+          "count": 1
+        },
+        {
+          "value": "CB996808  ",
+          "count": 1
+        },
+        {
+          "value": "CB996635  ",
+          "count": 1
+        },
+        {
+          "value": "CB995776  ",
+          "count": 1
+        },
+        {
+          "value": "CB995397  ",
+          "count": 1
+        },
+        {
+          "value": "CB994500  ",
+          "count": 1
+        },
+        {
+          "value": "CB992859  ",
+          "count": 1
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDDDD  "
+      ]
+    },
+    "cross_db_template|dataprofile|datatype": {
+      "table_name": "dataprofile",
+      "column_name": "datatype",
+      "column_type": "TEXT(80)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 5,
+      "min_value": "Commercial",
+      "max_value": "Personal",
+      "top_k_values": [
+        {
+          "value": "Financial",
+          "count": 221
+        },
+        {
+          "value": "Industrial",
+          "count": 208
+        },
+        {
+          "value": "Medical",
+          "count": 205
+        },
+        {
+          "value": "Personal",
+          "count": 184
+        },
+        {
+          "value": "Commercial",
+          "count": 182
+        }
+      ],
+      "min_length": 7,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAAA",
+        "AAAAAAAAA",
+        "AAAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "cross_db_template|dataprofile|datasense": {
+      "table_name": "dataprofile",
+      "column_name": "datasense",
+      "column_type": "TEXT(30)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "Critical",
+      "max_value": "Medium",
+      "top_k_values": [
+        {
+          "value": "High",
+          "count": 268
+        },
+        {
+          "value": "Low",
+          "count": 258
+        },
+        {
+          "value": "Critical",
+          "count": 246
+        },
+        {
+          "value": "Medium",
+          "count": 228
+        }
+      ],
+      "min_length": 3,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAA",
+        "AAAAAAAA",
+        "AAAAAA"
+      ]
+    },
+    "cross_db_template|dataprofile|volgb": {
+      "table_name": "dataprofile",
+      "column_name": "volgb",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "1010.28",
+      "max_value": "9995.87",
+      "top_k_values": [
+        {
+          "value": "9995.87",
+          "count": 1
+        },
+        {
+          "value": "9970.36",
+          "count": 1
+        },
+        {
+          "value": "9936.38",
+          "count": 1
+        },
+        {
+          "value": "9935.56",
+          "count": 1
+        },
+        {
+          "value": "9930.65",
+          "count": 1
+        },
+        {
+          "value": "9927.38",
+          "count": 1
+        },
+        {
+          "value": "9920.65",
+          "count": 1
+        },
+        {
+          "value": "9918.31",
+          "count": 1
+        },
+        {
+          "value": "9905.42",
+          "count": 1
+        },
+        {
+          "value": "9885.8",
+          "count": 1
+        }
+      ],
+      "min_length": 5,
+      "max_length": 7,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDD.DD",
+        "DDDD.D",
+        "DDD.DD",
+        "DDD.D",
+        "DD.DD"
+      ]
+    },
+    "cross_db_template|dataprofile|rectally": {
+      "table_name": "dataprofile",
+      "column_name": "rectally",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "1000157",
+      "max_value": "9989330",
+      "top_k_values": [
+        {
+          "value": "9989330",
+          "count": 1
+        },
+        {
+          "value": "9987362",
+          "count": 1
+        },
+        {
+          "value": "9969873",
+          "count": 1
+        },
+        {
+          "value": "9968930",
+          "count": 1
+        },
+        {
+          "value": "9949138",
+          "count": 1
+        },
+        {
+          "value": "9945103",
+          "count": 1
+        },
+        {
+          "value": "9944187",
+          "count": 1
+        },
+        {
+          "value": "9940015",
+          "count": 1
+        },
+        {
+          "value": "9936195",
+          "count": 1
+        },
+        {
+          "value": "9931884",
+          "count": 1
+        }
+      ],
+      "min_length": 5,
+      "max_length": 7,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDDDD",
+        "DDDDDD",
+        "DDDDD"
+      ]
+    },
+    "cross_db_template|dataprofile|subjtally": {
+      "table_name": "dataprofile",
+      "column_name": "subjtally",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 999,
+      "min_value": "101033",
+      "max_value": "998513",
+      "top_k_values": [
+        {
+          "value": "272424",
+          "count": 2
+        },
+        {
+          "value": "998513",
+          "count": 1
+        },
+        {
+          "value": "997494",
+          "count": 1
+        },
+        {
+          "value": "997269",
+          "count": 1
+        },
+        {
+          "value": "996467",
+          "count": 1
+        },
+        {
+          "value": "995882",
+          "count": 1
+        },
+        {
+          "value": "995268",
+          "count": 1
+        },
+        {
+          "value": "994894",
+          "count": 1
+        },
+        {
+          "value": "992608",
+          "count": 1
+        },
+        {
+          "value": "990079",
+          "count": 1
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDDD",
+        "DDDDD",
+        "DDDD",
+        "DDD"
+      ]
+    },
+    "cross_db_template|dataprofile|retdays": {
+      "table_name": "dataprofile",
+      "column_name": "retdays",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 879,
+      "min_value": "1002",
+      "max_value": "998",
+      "top_k_values": [
+        {
+          "value": "3303",
+          "count": 3
+        },
+        {
+          "value": "1841",
+          "count": 3
+        },
+        {
+          "value": "1396",
+          "count": 3
+        },
+        {
+          "value": "102",
+          "count": 3
+        },
+        {
+          "value": "3590",
+          "count": 2
+        },
+        {
+          "value": "3547",
+          "count": 2
+        },
+        {
+          "value": "3465",
+          "count": 2
+        },
+        {
+          "value": "3436",
+          "count": 2
+        },
+        {
+          "value": "3430",
+          "count": 2
+        },
+        {
+          "value": "3380",
+          "count": 2
+        }
+      ],
+      "min_length": 2,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDD",
+        "DDD",
+        "DD"
+      ]
+    },
+    "cross_db_template|dataprofile|formattype": {
+      "table_name": "dataprofile",
+      "column_name": "formattype",
+      "column_type": "TEXT(80)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Mixed",
+      "max_value": "Unstructured",
+      "top_k_values": [
+        {
+          "value": "Unstructured",
+          "count": 349
+        },
+        {
+          "value": "Mixed",
+          "count": 331
+        },
+        {
+          "value": "Structured",
+          "count": 320
+        }
+      ],
+      "min_length": 5,
+      "max_length": 12,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAAAAA",
+        "AAAAA",
+        "AAAAAAAAAA"
+      ]
+    },
+    "cross_db_template|dataprofile|qltyscore": {
+      "table_name": "dataprofile",
+      "column_name": "qltyscore",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 945,
+      "min_value": "0.13",
+      "max_value": "99.84",
+      "top_k_values": [
+        {
+          "value": "99.46",
+          "count": 2
+        },
+        {
+          "value": "97.7",
+          "count": 2
+        },
+        {
+          "value": "91.7",
+          "count": 2
+        },
+        {
+          "value": "91.12",
+          "count": 2
+        },
+        {
+          "value": "87.74",
+          "count": 2
+        },
+        {
+          "value": "86.68",
+          "count": 2
+        },
+        {
+          "value": "85.99",
+          "count": 2
+        },
+        {
+          "value": "85.67",
+          "count": 2
+        },
+        {
+          "value": "78.0",
+          "count": 2
+        },
+        {
+          "value": "75.31",
+          "count": 2
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.DD",
+        "D.DD",
+        "DD.D",
+        "D.D"
+      ]
+    },
+    "cross_db_template|dataprofile|intcheck": {
+      "table_name": "dataprofile",
+      "column_name": "intcheck",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 360,
+      "non_null_count": 640,
+      "distinct_count": 2,
+      "min_value": "Failed",
+      "max_value": "Passed",
+      "top_k_values": [
+        {
+          "value": "Passed",
+          "count": 328
+        },
+        {
+          "value": "Failed",
+          "count": 312
+        }
+      ],
+      "min_length": 6,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAAAA"
+      ]
+    },
+    "cross_db_template|dataprofile|csumverify": {
+      "table_name": "dataprofile",
+      "column_name": "csumverify",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Failed",
+      "max_value": "Success",
+      "top_k_values": [
+        {
+          "value": "Pending",
+          "count": 342
+        },
+        {
+          "value": "Failed",
+          "count": 333
+        },
+        {
+          "value": "Success",
+          "count": 325
+        }
+      ],
+      "min_length": 6,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAA"
+      ]
+    },
+    "cross_db_template|dataprofile|srcvalstate": {
+      "table_name": "dataprofile",
+      "column_name": "srcvalstate",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Failed",
+      "max_value": "Verified",
+      "top_k_values": [
+        {
+          "value": "Verified",
+          "count": 350
+        },
+        {
+          "value": "Pending",
+          "count": 331
+        },
+        {
+          "value": "Failed",
+          "count": 319
+        }
+      ],
+      "min_length": 6,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAAAAA",
+        "AAAAAA"
+      ]
+    },
+    "cross_db_template|dataprofile|destvalstate": {
+      "table_name": "dataprofile",
+      "column_name": "destvalstate",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Failed",
+      "max_value": "Verified",
+      "top_k_values": [
+        {
+          "value": "Verified",
+          "count": 351
+        },
+        {
+          "value": "Failed",
+          "count": 333
+        },
+        {
+          "value": "Pending",
+          "count": 316
+        }
+      ],
+      "min_length": 6,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAAAA",
+        "AAAAAAA"
+      ]
+    },
+    "cross_db_template|riskmanagement|risktrace": {
+      "table_name": "riskmanagement",
+      "column_name": "risktrace",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "1",
+      "max_value": "999",
+      "top_k_values": [
+        {
+          "value": "1",
+          "count": 1
+        },
+        {
+          "value": "2",
+          "count": 1
+        },
+        {
+          "value": "3",
+          "count": 1
+        },
+        {
+          "value": "4",
+          "count": 1
+        },
+        {
+          "value": "5",
+          "count": 1
+        },
+        {
+          "value": "6",
+          "count": 1
+        },
+        {
+          "value": "7",
+          "count": 1
+        },
+        {
+          "value": "8",
+          "count": 1
+        },
+        {
+          "value": "9",
+          "count": 1
+        },
+        {
+          "value": "10",
+          "count": 1
+        }
+      ],
+      "min_length": 1,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D",
+        "DDDD"
+      ]
+    },
+    "cross_db_template|riskmanagement|flowlink": {
+      "table_name": "riskmanagement",
+      "column_name": "flowlink",
+      "column_type": "TEXT(10)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 999,
+      "min_value": "CB100138  ",
+      "max_value": "CB999870  ",
+      "top_k_values": [
+        {
+          "value": "CB891187  ",
+          "count": 2
+        },
+        {
+          "value": "CB999870  ",
+          "count": 1
+        },
+        {
+          "value": "CB997219  ",
+          "count": 1
+        },
+        {
+          "value": "CB997034  ",
+          "count": 1
+        },
+        {
+          "value": "CB996808  ",
+          "count": 1
+        },
+        {
+          "value": "CB996635  ",
+          "count": 1
+        },
+        {
+          "value": "CB995776  ",
+          "count": 1
+        },
+        {
+          "value": "CB995397  ",
+          "count": 1
+        },
+        {
+          "value": "CB994500  ",
+          "count": 1
+        },
+        {
+          "value": "CB992859  ",
+          "count": 1
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDDDD  "
+      ]
+    },
+    "cross_db_template|riskmanagement|recordregistry": {
+      "table_name": "riskmanagement",
+      "column_name": "recordregistry",
+      "column_type": "TEXT(10)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 999,
+      "min_value": "CB100138  ",
+      "max_value": "CB999870  ",
+      "top_k_values": [
+        {
+          "value": "CB891187  ",
+          "count": 2
+        },
+        {
+          "value": "CB999870  ",
+          "count": 1
+        },
+        {
+          "value": "CB997219  ",
+          "count": 1
+        },
+        {
+          "value": "CB997034  ",
+          "count": 1
+        },
+        {
+          "value": "CB996808  ",
+          "count": 1
+        },
+        {
+          "value": "CB996635  ",
+          "count": 1
+        },
+        {
+          "value": "CB995776  ",
+          "count": 1
+        },
+        {
+          "value": "CB995397  ",
+          "count": 1
+        },
+        {
+          "value": "CB994500  ",
+          "count": 1
+        },
+        {
+          "value": "CB992859  ",
+          "count": 1
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDDDD  "
+      ]
+    },
+    "cross_db_template|riskmanagement|riskassess": {
+      "table_name": "riskmanagement",
+      "column_name": "riskassess",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 950,
+      "min_value": "0.08",
+      "max_value": "99.76",
+      "top_k_values": [
+        {
+          "value": "15.31",
+          "count": 3
+        },
+        {
+          "value": "97.84",
+          "count": 2
+        },
+        {
+          "value": "97.31",
+          "count": 2
+        },
+        {
+          "value": "91.08",
+          "count": 2
+        },
+        {
+          "value": "89.36",
+          "count": 2
+        },
+        {
+          "value": "85.02",
+          "count": 2
+        },
+        {
+          "value": "83.87",
+          "count": 2
+        },
+        {
+          "value": "81.21",
+          "count": 2
+        },
+        {
+          "value": "81.03",
+          "count": 2
+        },
+        {
+          "value": "79.61",
+          "count": 2
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.DD",
+        "D.DD",
+        "DD.D",
+        "D.D"
+      ]
+    },
+    "cross_db_template|riskmanagement|riskmitstate": {
+      "table_name": "riskmanagement",
+      "column_name": "riskmitstate",
+      "column_type": "TEXT(40)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Implemented",
+      "max_value": "Pending",
+      "top_k_values": [
+        {
+          "value": "Pending",
+          "count": 351
+        },
+        {
+          "value": "Implemented",
+          "count": 325
+        },
+        {
+          "value": "Partial",
+          "count": 324
+        }
+      ],
+      "min_length": 7,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAAAAAAA"
+      ]
+    },
+    "cross_db_template|riskmanagement|secureaction": {
+      "table_name": "riskmanagement",
+      "column_name": "secureaction",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Adequate",
+      "max_value": "Strong",
+      "top_k_values": [
+        {
+          "value": "Strong",
+          "count": 367
+        },
+        {
+          "value": "Insufficient",
+          "count": 354
+        },
+        {
+          "value": "Adequate",
+          "count": 279
+        }
+      ],
+      "min_length": 6,
+      "max_length": 12,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AAAAAAAAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "cross_db_template|riskmanagement|breachnotify": {
+      "table_name": "riskmanagement",
+      "column_name": "breachnotify",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Established",
+      "max_value": "Partial",
+      "top_k_values": [
+        {
+          "value": "Missing",
+          "count": 345
+        },
+        {
+          "value": "Partial",
+          "count": 331
+        },
+        {
+          "value": "Established",
+          "count": 324
+        }
+      ],
+      "min_length": 7,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAAAAAAA"
+      ]
+    },
+    "cross_db_template|riskmanagement|incidentplan": {
+      "table_name": "riskmanagement",
+      "column_name": "incidentplan",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Active",
+      "max_value": "Outdated",
+      "top_k_values": [
+        {
+          "value": "Missing",
+          "count": 360
+        },
+        {
+          "value": "Outdated",
+          "count": 325
+        },
+        {
+          "value": "Active",
+          "count": 315
+        }
+      ],
+      "min_length": 6,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAAAA",
+        "AAAAAA"
+      ]
+    },
+    "cross_db_template|riskmanagement|incidentcount": {
+      "table_name": "riskmanagement",
+      "column_name": "incidentcount",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 101,
+      "min_value": "0",
+      "max_value": "99",
+      "top_k_values": [
+        {
+          "value": "93",
+          "count": 19
+        },
+        {
+          "value": "1",
+          "count": 18
+        },
+        {
+          "value": "88",
+          "count": 16
+        },
+        {
+          "value": "79",
+          "count": 16
+        },
+        {
+          "value": "69",
+          "count": 16
+        },
+        {
+          "value": "14",
+          "count": 16
+        },
+        {
+          "value": "67",
+          "count": 15
+        },
+        {
+          "value": "58",
+          "count": 15
+        },
+        {
+          "value": "36",
+          "count": 15
+        },
+        {
+          "value": "27",
+          "count": 15
+        }
+      ],
+      "min_length": 1,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D",
+        "DDD"
+      ]
+    },
+    "cross_db_template|riskmanagement|breachcount": {
+      "table_name": "riskmanagement",
+      "column_name": "breachcount",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 11,
+      "min_value": "0",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "8",
+          "count": 107
+        },
+        {
+          "value": "7",
+          "count": 95
+        },
+        {
+          "value": "4",
+          "count": 95
+        },
+        {
+          "value": "2",
+          "count": 94
+        },
+        {
+          "value": "9",
+          "count": 92
+        },
+        {
+          "value": "1",
+          "count": 90
+        },
+        {
+          "value": "3",
+          "count": 89
+        },
+        {
+          "value": "5",
+          "count": 88
+        },
+        {
+          "value": "0",
+          "count": 88
+        },
+        {
+          "value": "6",
+          "count": 85
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D",
+        "DD"
+      ]
+    },
+    "cross_db_template|riskmanagement|nearmissnum": {
+      "table_name": "riskmanagement",
+      "column_name": "nearmissnum",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 51,
+      "min_value": "0",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "26",
+          "count": 29
+        },
+        {
+          "value": "14",
+          "count": 29
+        },
+        {
+          "value": "6",
+          "count": 28
+        },
+        {
+          "value": "47",
+          "count": 27
+        },
+        {
+          "value": "40",
+          "count": 26
+        },
+        {
+          "value": "36",
+          "count": 25
+        },
+        {
+          "value": "28",
+          "count": 25
+        },
+        {
+          "value": "5",
+          "count": 25
+        },
+        {
+          "value": "48",
+          "count": 24
+        },
+        {
+          "value": "34",
+          "count": 24
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D"
+      ]
+    },
+    "cross_db_template|riskmanagement|avgresolhrs": {
+      "table_name": "riskmanagement",
+      "column_name": "avgresolhrs",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 743,
+      "min_value": "1.2",
+      "max_value": "99.9",
+      "top_k_values": [
+        {
+          "value": "128.1",
+          "count": 6
+        },
+        {
+          "value": "149.6",
+          "count": 4
+        },
+        {
+          "value": "66.6",
+          "count": 4
+        },
+        {
+          "value": "152.9",
+          "count": 3
+        },
+        {
+          "value": "151.6",
+          "count": 3
+        },
+        {
+          "value": "149.9",
+          "count": 3
+        },
+        {
+          "value": "147.7",
+          "count": 3
+        },
+        {
+          "value": "147.2",
+          "count": 3
+        },
+        {
+          "value": "144.6",
+          "count": 3
+        },
+        {
+          "value": "133.8",
+          "count": 3
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.D",
+        "DDD.D",
+        "D.D"
+      ]
+    },
+    "cross_db_template|riskmanagement|slapct": {
+      "table_name": "riskmanagement",
+      "column_name": "slapct",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 783,
+      "min_value": "80.03",
+      "max_value": "99.99",
+      "top_k_values": [
+        {
+          "value": "97.15",
+          "count": 4
+        },
+        {
+          "value": "90.19",
+          "count": 4
+        },
+        {
+          "value": "89.0",
+          "count": 4
+        },
+        {
+          "value": "87.62",
+          "count": 4
+        },
+        {
+          "value": "80.98",
+          "count": 4
+        },
+        {
+          "value": "80.51",
+          "count": 4
+        },
+        {
+          "value": "99.89",
+          "count": 3
+        },
+        {
+          "value": "96.68",
+          "count": 3
+        },
+        {
+          "value": "95.16",
+          "count": 3
+        },
+        {
+          "value": "94.66",
+          "count": 3
+        }
+      ],
+      "min_length": 4,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.DD",
+        "DD.D"
+      ]
+    },
+    "cross_db_template|riskmanagement|costusd": {
+      "table_name": "riskmanagement",
+      "column_name": "costusd",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "1000.73",
+      "max_value": "999974.04",
+      "top_k_values": [
+        {
+          "value": "999974.04",
+          "count": 1
+        },
+        {
+          "value": "996885.89",
+          "count": 1
+        },
+        {
+          "value": "994842.35",
+          "count": 1
+        },
+        {
+          "value": "994605.39",
+          "count": 1
+        },
+        {
+          "value": "993264.13",
+          "count": 1
+        },
+        {
+          "value": "992297.77",
+          "count": 1
+        },
+        {
+          "value": "991483.66",
+          "count": 1
+        },
+        {
+          "value": "991082.18",
+          "count": 1
+        },
+        {
+          "value": "990033.3",
+          "count": 1
+        },
+        {
+          "value": "989334.79",
+          "count": 1
+        }
+      ],
+      "min_length": 7,
+      "max_length": 9,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDDD.DD",
+        "DDDDDD.D",
+        "DDDDD.DD",
+        "DDDDD.D",
+        "DDDD.DD"
+      ]
+    },
+    "cross_db_template|riskmanagement|penusd": {
+      "table_name": "riskmanagement",
+      "column_name": "penusd",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "1001152.59",
+      "max_value": "997543.28",
+      "top_k_values": [
+        {
+          "value": "1999455.07",
+          "count": 1
+        },
+        {
+          "value": "1998703.15",
+          "count": 1
+        },
+        {
+          "value": "1997747.16",
+          "count": 1
+        },
+        {
+          "value": "1996637.77",
+          "count": 1
+        },
+        {
+          "value": "1995807.14",
+          "count": 1
+        },
+        {
+          "value": "1995101.17",
+          "count": 1
+        },
+        {
+          "value": "1992973.45",
+          "count": 1
+        },
+        {
+          "value": "1991987.31",
+          "count": 1
+        },
+        {
+          "value": "1989984.51",
+          "count": 1
+        },
+        {
+          "value": "1988726.46",
+          "count": 1
+        }
+      ],
+      "min_length": 7,
+      "max_length": 10,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDDDD.DD",
+        "DDDDDD.DD",
+        "DDDDD.DD",
+        "DDDDDD.D",
+        "DDDDDDD.D"
+      ]
+    },
+    "cross_db_template|riskmanagement|coveragestate": {
+      "table_name": "riskmanagement",
+      "column_name": "coveragestate",
+      "column_type": "TEXT(40)",
+      "row_count": 1000,
+      "null_count": 315,
+      "non_null_count": 685,
+      "distinct_count": 2,
+      "min_value": "Adequate",
+      "max_value": "Limited",
+      "top_k_values": [
+        {
+          "value": "Adequate",
+          "count": 366
+        },
+        {
+          "value": "Limited",
+          "count": 319
+        }
+      ],
+      "min_length": 7,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAAAAA"
+      ]
+    },
+    "cross_db_template|riskmanagement|residrisklevel": {
+      "table_name": "riskmanagement",
+      "column_name": "residrisklevel",
+      "column_type": "TEXT(40)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "High",
+      "max_value": "Medium",
+      "top_k_values": [
+        {
+          "value": "Medium",
+          "count": 351
+        },
+        {
+          "value": "High",
+          "count": 337
+        },
+        {
+          "value": "Low",
+          "count": 312
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AAAA",
+        "AAA"
+      ]
+    },
+    "cross_db_template|riskmanagement|ctrleff": {
+      "table_name": "riskmanagement",
+      "column_name": "ctrleff",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 957,
+      "min_value": "0.07",
+      "max_value": "99.92",
+      "top_k_values": [
+        {
+          "value": "68.93",
+          "count": 3
+        },
+        {
+          "value": "19.8",
+          "count": 3
+        },
+        {
+          "value": "6.69",
+          "count": 3
+        },
+        {
+          "value": "99.09",
+          "count": 2
+        },
+        {
+          "value": "90.75",
+          "count": 2
+        },
+        {
+          "value": "90.68",
+          "count": 2
+        },
+        {
+          "value": "83.66",
+          "count": 2
+        },
+        {
+          "value": "82.73",
+          "count": 2
+        },
+        {
+          "value": "79.84",
+          "count": 2
+        },
+        {
+          "value": "76.1",
+          "count": 2
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.DD",
+        "DD.D",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "cross_db_template|riskmanagement|compscore": {
+      "table_name": "riskmanagement",
+      "column_name": "compscore",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 962,
+      "min_value": "0.36",
+      "max_value": "99.98",
+      "top_k_values": [
+        {
+          "value": "82.46",
+          "count": 3
+        },
+        {
+          "value": "6.59",
+          "count": 3
+        },
+        {
+          "value": "98.23",
+          "count": 2
+        },
+        {
+          "value": "97.56",
+          "count": 2
+        },
+        {
+          "value": "97.4",
+          "count": 2
+        },
+        {
+          "value": "94.39",
+          "count": 2
+        },
+        {
+          "value": "89.36",
+          "count": 2
+        },
+        {
+          "value": "86.93",
+          "count": 2
+        },
+        {
+          "value": "86.05",
+          "count": 2
+        },
+        {
+          "value": "82.94",
+          "count": 2
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.DD",
+        "D.DD",
+        "DD.D",
+        "D.D"
+      ]
+    },
+    "cross_db_template|riskmanagement|maturitylevel": {
+      "table_name": "riskmanagement",
+      "column_name": "maturitylevel",
+      "column_type": "TEXT(40)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Initial",
+      "max_value": "Optimized",
+      "top_k_values": [
+        {
+          "value": "Managed",
+          "count": 340
+        },
+        {
+          "value": "Optimized",
+          "count": 335
+        },
+        {
+          "value": "Initial",
+          "count": 325
+        }
+      ],
+      "min_length": 7,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAAAAA"
+      ]
+    },
+    "cross_db_template|riskmanagement|nextrevdate": {
+      "table_name": "riskmanagement",
+      "column_name": "nextrevdate",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 336,
+      "min_value": "2025-02-20",
+      "max_value": "2026-02-18",
+      "top_k_values": [
+        {
+          "value": "2025-09-24",
+          "count": 8
+        },
+        {
+          "value": "2025-06-16",
+          "count": 8
+        },
+        {
+          "value": "2025-04-24",
+          "count": 8
+        },
+        {
+          "value": "2025-04-23",
+          "count": 8
+        },
+        {
+          "value": "2026-02-03",
+          "count": 7
+        },
+        {
+          "value": "2025-11-24",
+          "count": 7
+        },
+        {
+          "value": "2025-10-25",
+          "count": 7
+        },
+        {
+          "value": "2025-08-22",
+          "count": 7
+        },
+        {
+          "value": "2025-07-15",
+          "count": 7
+        },
+        {
+          "value": "2025-04-29",
+          "count": 7
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDD-DD-DD"
+      ]
+    },
+    "cross_db_template|riskmanagement|planstate": {
+      "table_name": "riskmanagement",
+      "column_name": "planstate",
+      "column_type": "TEXT(45)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Delayed",
+      "max_value": "On Track",
+      "top_k_values": [
+        {
+          "value": "Delayed",
+          "count": 342
+        },
+        {
+          "value": "On Track",
+          "count": 335
+        },
+        {
+          "value": "Not Started",
+          "count": 323
+        }
+      ],
+      "min_length": 7,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AA AAAAA",
+        "AAA AAAAAAA"
+      ]
+    },
+    "cross_db_template|securityprofile|securitytrace": {
+      "table_name": "securityprofile",
+      "column_name": "securitytrace",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "1",
+      "max_value": "999",
+      "top_k_values": [
+        {
+          "value": "1",
+          "count": 1
+        },
+        {
+          "value": "2",
+          "count": 1
+        },
+        {
+          "value": "3",
+          "count": 1
+        },
+        {
+          "value": "4",
+          "count": 1
+        },
+        {
+          "value": "5",
+          "count": 1
+        },
+        {
+          "value": "6",
+          "count": 1
+        },
+        {
+          "value": "7",
+          "count": 1
+        },
+        {
+          "value": "8",
+          "count": 1
+        },
+        {
+          "value": "9",
+          "count": 1
+        },
+        {
+          "value": "10",
+          "count": 1
+        }
+      ],
+      "min_length": 1,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D",
+        "DDDD"
+      ]
+    },
+    "cross_db_template|securityprofile|flowkey": {
+      "table_name": "securityprofile",
+      "column_name": "flowkey",
+      "column_type": "TEXT(10)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 999,
+      "min_value": "CB100138  ",
+      "max_value": "CB999870  ",
+      "top_k_values": [
+        {
+          "value": "CB891187  ",
+          "count": 2
+        },
+        {
+          "value": "CB999870  ",
+          "count": 1
+        },
+        {
+          "value": "CB997219  ",
+          "count": 1
+        },
+        {
+          "value": "CB997034  ",
+          "count": 1
+        },
+        {
+          "value": "CB996808  ",
+          "count": 1
+        },
+        {
+          "value": "CB996635  ",
+          "count": 1
+        },
+        {
+          "value": "CB995776  ",
+          "count": 1
+        },
+        {
+          "value": "CB995397  ",
+          "count": 1
+        },
+        {
+          "value": "CB994500  ",
+          "count": 1
+        },
+        {
+          "value": "CB992859  ",
+          "count": 1
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDDDD  "
+      ]
+    },
+    "cross_db_template|securityprofile|riskkey": {
+      "table_name": "securityprofile",
+      "column_name": "riskkey",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "1",
+      "max_value": "999",
+      "top_k_values": [
+        {
+          "value": "1000",
+          "count": 1
+        },
+        {
+          "value": "999",
+          "count": 1
+        },
+        {
+          "value": "998",
+          "count": 1
+        },
+        {
+          "value": "997",
+          "count": 1
+        },
+        {
+          "value": "996",
+          "count": 1
+        },
+        {
+          "value": "995",
+          "count": 1
+        },
+        {
+          "value": "994",
+          "count": 1
+        },
+        {
+          "value": "993",
+          "count": 1
+        },
+        {
+          "value": "992",
+          "count": 1
+        },
+        {
+          "value": "991",
+          "count": 1
+        }
+      ],
+      "min_length": 1,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D",
+        "DDDD"
+      ]
+    },
+    "cross_db_template|securityprofile|profilekey": {
+      "table_name": "securityprofile",
+      "column_name": "profilekey",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "1",
+      "max_value": "999",
+      "top_k_values": [
+        {
+          "value": "1000",
+          "count": 1
+        },
+        {
+          "value": "999",
+          "count": 1
+        },
+        {
+          "value": "998",
+          "count": 1
+        },
+        {
+          "value": "997",
+          "count": 1
+        },
+        {
+          "value": "996",
+          "count": 1
+        },
+        {
+          "value": "995",
+          "count": 1
+        },
+        {
+          "value": "994",
+          "count": 1
+        },
+        {
+          "value": "993",
+          "count": 1
+        },
+        {
+          "value": "992",
+          "count": 1
+        },
+        {
+          "value": "991",
+          "count": 1
+        }
+      ],
+      "min_length": 1,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D",
+        "DDDD"
+      ]
+    },
+    "cross_db_template|securityprofile|recordregistry": {
+      "table_name": "securityprofile",
+      "column_name": "recordregistry",
+      "column_type": "TEXT(10)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 999,
+      "min_value": "CB100138  ",
+      "max_value": "CB999870  ",
+      "top_k_values": [
+        {
+          "value": "CB891187  ",
+          "count": 2
+        },
+        {
+          "value": "CB999870  ",
+          "count": 1
+        },
+        {
+          "value": "CB997219  ",
+          "count": 1
+        },
+        {
+          "value": "CB997034  ",
+          "count": 1
+        },
+        {
+          "value": "CB996808  ",
+          "count": 1
+        },
+        {
+          "value": "CB996635  ",
+          "count": 1
+        },
+        {
+          "value": "CB995776  ",
+          "count": 1
+        },
+        {
+          "value": "CB995397  ",
+          "count": 1
+        },
+        {
+          "value": "CB994500  ",
+          "count": 1
+        },
+        {
+          "value": "CB992859  ",
+          "count": 1
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDDDD  "
+      ]
+    },
+    "cross_db_template|securityprofile|encstate": {
+      "table_name": "securityprofile",
+      "column_name": "encstate",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 323,
+      "non_null_count": 677,
+      "distinct_count": 2,
+      "min_value": "Full",
+      "max_value": "Partial",
+      "top_k_values": [
+        {
+          "value": "Partial",
+          "count": 343
+        },
+        {
+          "value": "Full",
+          "count": 334
+        }
+      ],
+      "min_length": 4,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAA"
+      ]
+    },
+    "cross_db_template|securityprofile|encmeth": {
+      "table_name": "securityprofile",
+      "column_name": "encmeth",
+      "column_type": "TEXT(40)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "AES-256",
+      "max_value": "SM4",
+      "top_k_values": [
+        {
+          "value": "SM4",
+          "count": 265
+        },
+        {
+          "value": "Custom",
+          "count": 253
+        },
+        {
+          "value": "RSA-2048",
+          "count": 241
+        },
+        {
+          "value": "AES-256",
+          "count": 241
+        }
+      ],
+      "min_length": 3,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAD",
+        "AAAAAA",
+        "AAA-DDDD",
+        "AAA-DDD"
+      ]
+    },
+    "cross_db_template|securityprofile|keymanstate": {
+      "table_name": "securityprofile",
+      "column_name": "keymanstate",
+      "column_type": "TEXT(40)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Centralized",
+      "max_value": "Hybrid",
+      "top_k_values": [
+        {
+          "value": "Distributed",
+          "count": 342
+        },
+        {
+          "value": "Centralized",
+          "count": 332
+        },
+        {
+          "value": "Hybrid",
+          "count": 326
+        }
+      ],
+      "min_length": 6,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAAAA",
+        "AAAAAA"
+      ]
+    },
+    "cross_db_template|securityprofile|masklevel": {
+      "table_name": "securityprofile",
+      "column_name": "masklevel",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 694,
+      "non_null_count": 306,
+      "distinct_count": 1,
+      "min_value": "Partial",
+      "max_value": "Partial",
+      "top_k_values": [
+        {
+          "value": "Partial",
+          "count": 306
+        }
+      ],
+      "min_length": 7,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAAAAA"
+      ]
+    },
+    "cross_db_template|securityprofile|anonmeth": {
+      "table_name": "securityprofile",
+      "column_name": "anonmeth",
+      "column_type": "TEXT(40)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "K-Anonymity",
+      "max_value": "T-Closeness",
+      "top_k_values": [
+        {
+          "value": "K-Anonymity",
+          "count": 350
+        },
+        {
+          "value": "L-Diversity",
+          "count": 328
+        },
+        {
+          "value": "T-Closeness",
+          "count": 322
+        }
+      ],
+      "min_length": 11,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "A-AAAAAAAAA"
+      ]
+    },
+    "cross_db_template|securityprofile|psymstate": {
+      "table_name": "securityprofile",
+      "column_name": "psymstate",
+      "column_type": "TEXT(40)",
+      "row_count": 1000,
+      "null_count": 325,
+      "non_null_count": 675,
+      "distinct_count": 2,
+      "min_value": "Applied",
+      "max_value": "Partial",
+      "top_k_values": [
+        {
+          "value": "Applied",
+          "count": 349
+        },
+        {
+          "value": "Partial",
+          "count": 326
+        }
+      ],
+      "min_length": 7,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAAAAA"
+      ]
+    },
+    "cross_db_template|securityprofile|authmeth": {
+      "table_name": "securityprofile",
+      "column_name": "authmeth",
+      "column_type": "TEXT(40)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Basic",
+      "max_value": "SSO",
+      "top_k_values": [
+        {
+          "value": "SSO",
+          "count": 346
+        },
+        {
+          "value": "MFA",
+          "count": 328
+        },
+        {
+          "value": "Basic",
+          "count": 326
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAA",
+        "AAAAA"
+      ]
+    },
+    "cross_db_template|securityprofile|authzframe": {
+      "table_name": "securityprofile",
+      "column_name": "authzframe",
+      "column_type": "TEXT(45)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "ABAC",
+      "max_value": "RBAC",
+      "top_k_values": [
+        {
+          "value": "ABAC",
+          "count": 354
+        },
+        {
+          "value": "RBAC",
+          "count": 330
+        },
+        {
+          "value": "Custom",
+          "count": 316
+        }
+      ],
+      "min_length": 4,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAAAAA"
+      ]
+    },
+    "cross_db_template|securityprofile|aclstate": {
+      "table_name": "securityprofile",
+      "column_name": "aclstate",
+      "column_type": "TEXT(30)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Adequate",
+      "max_value": "Weak",
+      "top_k_values": [
+        {
+          "value": "Strong",
+          "count": 360
+        },
+        {
+          "value": "Weak",
+          "count": 331
+        },
+        {
+          "value": "Adequate",
+          "count": 309
+        }
+      ],
+      "min_length": 4,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "cross_db_template|securityprofile|apisecstate": {
+      "table_name": "securityprofile",
+      "column_name": "apisecstate",
+      "column_type": "TEXT(30)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Review Required",
+      "max_value": "Vulnerable",
+      "top_k_values": [
+        {
+          "value": "Vulnerable",
+          "count": 337
+        },
+        {
+          "value": "Review Required",
+          "count": 334
+        },
+        {
+          "value": "Secure",
+          "count": 329
+        }
+      ],
+      "min_length": 6,
+      "max_length": 15,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAAA",
+        "AAAAAA AAAAAAAA",
+        "AAAAAA"
+      ]
+    },
+    "cross_db_template|securityprofile|logintcheck": {
+      "table_name": "securityprofile",
+      "column_name": "logintcheck",
+      "column_type": "TEXT(30)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Failed",
+      "max_value": "Pending",
+      "top_k_values": [
+        {
+          "value": "Pending",
+          "count": 344
+        },
+        {
+          "value": "Passed",
+          "count": 330
+        },
+        {
+          "value": "Failed",
+          "count": 326
+        }
+      ],
+      "min_length": 6,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AAAAAAA"
+      ]
+    },
+    "cross_db_template|securityprofile|logretdays": {
+      "table_name": "securityprofile",
+      "column_name": "logretdays",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 867,
+      "min_value": "1001",
+      "max_value": "994",
+      "top_k_values": [
+        {
+          "value": "1401",
+          "count": 4
+        },
+        {
+          "value": "3231",
+          "count": 3
+        },
+        {
+          "value": "2842",
+          "count": 3
+        },
+        {
+          "value": "2619",
+          "count": 3
+        },
+        {
+          "value": "2499",
+          "count": 3
+        },
+        {
+          "value": "2451",
+          "count": 3
+        },
+        {
+          "value": "2149",
+          "count": 3
+        },
+        {
+          "value": "2013",
+          "count": 3
+        },
+        {
+          "value": "1658",
+          "count": 3
+        },
+        {
+          "value": "1567",
+          "count": 3
+        }
+      ],
+      "min_length": 2,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDD",
+        "DDD",
+        "DD"
+      ]
+    },
+    "cross_db_template|securityprofile|bkpstate": {
+      "table_name": "securityprofile",
+      "column_name": "bkpstate",
+      "column_type": "TEXT(35)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Current",
+      "max_value": "Outdated",
+      "top_k_values": [
+        {
+          "value": "Outdated",
+          "count": 355
+        },
+        {
+          "value": "Failed",
+          "count": 331
+        },
+        {
+          "value": "Current",
+          "count": 314
+        }
+      ],
+      "min_length": 6,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAAAA",
+        "AAAAAAA"
+      ]
+    },
+    "cross_db_template|securityprofile|drecstate": {
+      "table_name": "securityprofile",
+      "column_name": "drecstate",
+      "column_type": "TEXT(35)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Missing",
+      "max_value": "Untested",
+      "top_k_values": [
+        {
+          "value": "Tested",
+          "count": 351
+        },
+        {
+          "value": "Untested",
+          "count": 331
+        },
+        {
+          "value": "Missing",
+          "count": 318
+        }
+      ],
+      "min_length": 6,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AAAAAAAA",
+        "AAAAAAA"
+      ]
+    },
+    "cross_db_template|securityprofile|bcstate": {
+      "table_name": "securityprofile",
+      "column_name": "bcstate",
+      "column_type": "TEXT(35)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Active",
+      "max_value": "Review Required",
+      "top_k_values": [
+        {
+          "value": "Review Required",
+          "count": 341
+        },
+        {
+          "value": "Outdated",
+          "count": 340
+        },
+        {
+          "value": "Active",
+          "count": 319
+        }
+      ],
+      "min_length": 6,
+      "max_length": 15,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA AAAAAAAA",
+        "AAAAAAAA",
+        "AAAAAA"
+      ]
+    },
+    "cross_db_template|vendormanagement|vendortrace": {
+      "table_name": "vendormanagement",
+      "column_name": "vendortrace",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "1",
+      "max_value": "999",
+      "top_k_values": [
+        {
+          "value": "1",
+          "count": 1
+        },
+        {
+          "value": "2",
+          "count": 1
+        },
+        {
+          "value": "3",
+          "count": 1
+        },
+        {
+          "value": "4",
+          "count": 1
+        },
+        {
+          "value": "5",
+          "count": 1
+        },
+        {
+          "value": "6",
+          "count": 1
+        },
+        {
+          "value": "7",
+          "count": 1
+        },
+        {
+          "value": "8",
+          "count": 1
+        },
+        {
+          "value": "9",
+          "count": 1
+        },
+        {
+          "value": "10",
+          "count": 1
+        }
+      ],
+      "min_length": 1,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D",
+        "DDDD"
+      ]
+    },
+    "cross_db_template|vendormanagement|secjoin": {
+      "table_name": "vendormanagement",
+      "column_name": "secjoin",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "1",
+      "max_value": "999",
+      "top_k_values": [
+        {
+          "value": "1000",
+          "count": 1
+        },
+        {
+          "value": "999",
+          "count": 1
+        },
+        {
+          "value": "998",
+          "count": 1
+        },
+        {
+          "value": "997",
+          "count": 1
+        },
+        {
+          "value": "996",
+          "count": 1
+        },
+        {
+          "value": "995",
+          "count": 1
+        },
+        {
+          "value": "994",
+          "count": 1
+        },
+        {
+          "value": "993",
+          "count": 1
+        },
+        {
+          "value": "992",
+          "count": 1
+        },
+        {
+          "value": "991",
+          "count": 1
+        }
+      ],
+      "min_length": 1,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D",
+        "DDDD"
+      ]
+    },
+    "cross_db_template|vendormanagement|riskassoc": {
+      "table_name": "vendormanagement",
+      "column_name": "riskassoc",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "1",
+      "max_value": "999",
+      "top_k_values": [
+        {
+          "value": "1000",
+          "count": 1
+        },
+        {
+          "value": "999",
+          "count": 1
+        },
+        {
+          "value": "998",
+          "count": 1
+        },
+        {
+          "value": "997",
+          "count": 1
+        },
+        {
+          "value": "996",
+          "count": 1
+        },
+        {
+          "value": "995",
+          "count": 1
+        },
+        {
+          "value": "994",
+          "count": 1
+        },
+        {
+          "value": "993",
+          "count": 1
+        },
+        {
+          "value": "992",
+          "count": 1
+        },
+        {
+          "value": "991",
+          "count": 1
+        }
+      ],
+      "min_length": 1,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D",
+        "DDDD"
+      ]
+    },
+    "cross_db_template|vendormanagement|recordregistry": {
+      "table_name": "vendormanagement",
+      "column_name": "recordregistry",
+      "column_type": "TEXT(10)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 999,
+      "min_value": "CB100138  ",
+      "max_value": "CB999870  ",
+      "top_k_values": [
+        {
+          "value": "CB891187  ",
+          "count": 2
+        },
+        {
+          "value": "CB999870  ",
+          "count": 1
+        },
+        {
+          "value": "CB997219  ",
+          "count": 1
+        },
+        {
+          "value": "CB997034  ",
+          "count": 1
+        },
+        {
+          "value": "CB996808  ",
+          "count": 1
+        },
+        {
+          "value": "CB996635  ",
+          "count": 1
+        },
+        {
+          "value": "CB995776  ",
+          "count": 1
+        },
+        {
+          "value": "CB995397  ",
+          "count": 1
+        },
+        {
+          "value": "CB994500  ",
+          "count": 1
+        },
+        {
+          "value": "CB992859  ",
+          "count": 1
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDDDD  "
+      ]
+    },
+    "cross_db_template|vendormanagement|vendassess": {
+      "table_name": "vendormanagement",
+      "column_name": "vendassess",
+      "column_type": "TEXT(40)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Completed",
+      "max_value": "In Progress",
+      "top_k_values": [
+        {
+          "value": "In Progress",
+          "count": 345
+        },
+        {
+          "value": "Due",
+          "count": 333
+        },
+        {
+          "value": "Completed",
+          "count": 322
+        }
+      ],
+      "min_length": 3,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AA AAAAAAAA",
+        "AAA",
+        "AAAAAAAAA"
+      ]
+    },
+    "cross_db_template|vendormanagement|vendsecrate": {
+      "table_name": "vendormanagement",
+      "column_name": "vendsecrate",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "A",
+      "max_value": "D",
+      "top_k_values": [
+        {
+          "value": "D",
+          "count": 262
+        },
+        {
+          "value": "B",
+          "count": 251
+        },
+        {
+          "value": "A",
+          "count": 247
+        },
+        {
+          "value": "C",
+          "count": 240
+        }
+      ],
+      "min_length": 1,
+      "max_length": 1,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "A"
+      ]
+    },
+    "cross_db_template|vendormanagement|vendauddate": {
+      "table_name": "vendormanagement",
+      "column_name": "vendauddate",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 344,
+      "min_value": "2024-02-20",
+      "max_value": "2025-02-19",
+      "top_k_values": [
+        {
+          "value": "2024-07-30",
+          "count": 10
+        },
+        {
+          "value": "2024-07-17",
+          "count": 10
+        },
+        {
+          "value": "2024-10-13",
+          "count": 8
+        },
+        {
+          "value": "2024-12-28",
+          "count": 7
+        },
+        {
+          "value": "2024-07-13",
+          "count": 7
+        },
+        {
+          "value": "2024-06-23",
+          "count": 7
+        },
+        {
+          "value": "2024-04-15",
+          "count": 7
+        },
+        {
+          "value": "2024-03-28",
+          "count": 7
+        },
+        {
+          "value": "2024-03-09",
+          "count": 7
+        },
+        {
+          "value": "2024-03-05",
+          "count": 7
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDD-DD-DD"
+      ]
+    },
+    "cross_db_template|vendormanagement|contrstate": {
+      "table_name": "vendormanagement",
+      "column_name": "contrstate",
+      "column_type": "TEXT(30)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Active",
+      "max_value": "Under Review",
+      "top_k_values": [
+        {
+          "value": "Under Review",
+          "count": 350
+        },
+        {
+          "value": "Active",
+          "count": 331
+        },
+        {
+          "value": "Expired",
+          "count": 319
+        }
+      ],
+      "min_length": 6,
+      "max_length": 12,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAA AAAAAA",
+        "AAAAAA",
+        "AAAAAAA"
+      ]
+    },
+    "cross_db_template|vendormanagement|contrexpire": {
+      "table_name": "vendormanagement",
+      "column_name": "contrexpire",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 540,
+      "min_value": "2025-02-19",
+      "max_value": "2027-02-19",
+      "top_k_values": [
+        {
+          "value": "2026-12-08",
+          "count": 5
+        },
+        {
+          "value": "2026-09-30",
+          "count": 5
+        },
+        {
+          "value": "2026-08-20",
+          "count": 5
+        },
+        {
+          "value": "2026-08-03",
+          "count": 5
+        },
+        {
+          "value": "2025-07-06",
+          "count": 5
+        },
+        {
+          "value": "2025-06-20",
+          "count": 5
+        },
+        {
+          "value": "2025-05-23",
+          "count": 5
+        },
+        {
+          "value": "2025-03-29",
+          "count": 5
+        },
+        {
+          "value": "2025-03-18",
+          "count": 5
+        },
+        {
+          "value": "2025-03-07",
+          "count": 5
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDD-DD-DD"
+      ]
+    },
+    "cross_db_template|vendormanagement|dpastate": {
+      "table_name": "vendormanagement",
+      "column_name": "dpastate",
+      "column_type": "TEXT(30)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Pending",
+      "max_value": "Signed",
+      "top_k_values": [
+        {
+          "value": "Required",
+          "count": 337
+        },
+        {
+          "value": "Pending",
+          "count": 337
+        },
+        {
+          "value": "Signed",
+          "count": 326
+        }
+      ],
+      "min_length": 6,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAAAAA",
+        "AAAAAA"
+      ]
+    },
+    "cross_db_template|vendormanagement|sccstate": {
+      "table_name": "vendormanagement",
+      "column_name": "sccstate",
+      "column_type": "TEXT(30)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Implemented",
+      "max_value": "Partial",
+      "top_k_values": [
+        {
+          "value": "Partial",
+          "count": 334
+        },
+        {
+          "value": "Not Required",
+          "count": 334
+        },
+        {
+          "value": "Implemented",
+          "count": 332
+        }
+      ],
+      "min_length": 7,
+      "max_length": 12,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAA AAAAAAAA",
+        "AAAAAAAAAAA"
+      ]
+    },
+    "cross_db_template|vendormanagement|bcrstate": {
+      "table_name": "vendormanagement",
+      "column_name": "bcrstate",
+      "column_type": "TEXT(30)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Approved",
+      "max_value": "Pending",
+      "top_k_values": [
+        {
+          "value": "Approved",
+          "count": 351
+        },
+        {
+          "value": "Pending",
+          "count": 347
+        },
+        {
+          "value": "Not Applicable",
+          "count": 302
+        }
+      ],
+      "min_length": 7,
+      "max_length": 14,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAAAAA",
+        "AAA AAAAAAAAAA"
+      ]
+    },
+    "cross_db_template|vendormanagement|docustate": {
+      "table_name": "vendormanagement",
+      "column_name": "docustate",
+      "column_type": "TEXT(30)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Complete",
+      "max_value": "Partial",
+      "top_k_values": [
+        {
+          "value": "Complete",
+          "count": 356
+        },
+        {
+          "value": "Partial",
+          "count": 335
+        },
+        {
+          "value": "Incomplete",
+          "count": 309
+        }
+      ],
+      "min_length": 7,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAAAAA",
+        "AAAAAAAAAA"
+      ]
+    },
+    "cross_db_template|vendormanagement|polcomp": {
+      "table_name": "vendormanagement",
+      "column_name": "polcomp",
+      "column_type": "TEXT(30)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Full",
+      "max_value": "Partial",
+      "top_k_values": [
+        {
+          "value": "Partial",
+          "count": 343
+        },
+        {
+          "value": "Non-compliant",
+          "count": 329
+        },
+        {
+          "value": "Full",
+          "count": 328
+        }
+      ],
+      "min_length": 4,
+      "max_length": 13,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAA-AAAAAAAAA",
+        "AAAA"
+      ]
+    },
+    "cross_db_template|vendormanagement|proccomp": {
+      "table_name": "vendormanagement",
+      "column_name": "proccomp",
+      "column_type": "TEXT(30)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Full",
+      "max_value": "Partial",
+      "top_k_values": [
+        {
+          "value": "Partial",
+          "count": 339
+        },
+        {
+          "value": "Full",
+          "count": 339
+        },
+        {
+          "value": "Non-compliant",
+          "count": 322
+        }
+      ],
+      "min_length": 4,
+      "max_length": 13,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAAAAAA",
+        "AAA-AAAAAAAAA"
+      ]
+    },
+    "cross_db_template|vendormanagement|trainstate": {
+      "table_name": "vendormanagement",
+      "column_name": "trainstate",
+      "column_type": "TEXT(30)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Current",
+      "max_value": "Overdue",
+      "top_k_values": [
+        {
+          "value": "Due",
+          "count": 343
+        },
+        {
+          "value": "Overdue",
+          "count": 341
+        },
+        {
+          "value": "Current",
+          "count": 316
+        }
+      ],
+      "min_length": 3,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAA"
+      ]
+    },
+    "cross_db_template|vendormanagement|certstate": {
+      "table_name": "vendormanagement",
+      "column_name": "certstate",
+      "column_type": "TEXT(30)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Expired",
+      "max_value": "Valid",
+      "top_k_values": [
+        {
+          "value": "Valid",
+          "count": 353
+        },
+        {
+          "value": "Expired",
+          "count": 327
+        },
+        {
+          "value": "Pending",
+          "count": 320
+        }
+      ],
+      "min_length": 5,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAA"
+      ]
+    },
+    "cross_db_template|vendormanagement|monstate": {
+      "table_name": "vendormanagement",
+      "column_name": "monstate",
+      "column_type": "TEXT(30)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Active",
+      "max_value": "Partial",
+      "top_k_values": [
+        {
+          "value": "Partial",
+          "count": 337
+        },
+        {
+          "value": "Active",
+          "count": 337
+        },
+        {
+          "value": "Inactive",
+          "count": 326
+        }
+      ],
+      "min_length": 6,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "cross_db_template|vendormanagement|repstate": {
+      "table_name": "vendormanagement",
+      "column_name": "repstate",
+      "column_type": "TEXT(30)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Current",
+      "max_value": "Overdue",
+      "top_k_values": [
+        {
+          "value": "Overdue",
+          "count": 349
+        },
+        {
+          "value": "Delayed",
+          "count": 327
+        },
+        {
+          "value": "Current",
+          "count": 324
+        }
+      ],
+      "min_length": 7,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAAAAA"
+      ]
+    },
+    "cross_db_template|vendormanagement|stakecomm": {
+      "table_name": "vendormanagement",
+      "column_name": "stakecomm",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Limited",
+      "max_value": "Regular",
+      "top_k_values": [
+        {
+          "value": "Limited",
+          "count": 347
+        },
+        {
+          "value": "Poor",
+          "count": 342
+        },
+        {
+          "value": "Regular",
+          "count": 311
+        }
+      ],
+      "min_length": 4,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAA"
+      ]
+    }
+  },
+  "meta": {
+    "dataflow": {
+      "profiled_at": "2026-08-30T11:07:44.144501+00:00",
+      "row_count": 999
+    },
+    "compliance": {
+      "profiled_at": "2026-08-30T11:07:44.144501+00:00",
+      "row_count": 1000
+    },
+    "auditandcompliance": {
+      "profiled_at": "2026-08-30T11:07:44.144501+00:00",
+      "row_count": 1000
+    },
+    "dataprofile": {
+      "profiled_at": "2026-08-30T11:07:44.144501+00:00",
+      "row_count": 1000
+    },
+    "riskmanagement": {
+      "profiled_at": "2026-08-30T11:07:44.144501+00:00",
+      "row_count": 1000
+    },
+    "securityprofile": {
+      "profiled_at": "2026-08-30T11:07:44.144501+00:00",
+      "row_count": 1000
+    },
+    "vendormanagement": {
+      "profiled_at": "2026-08-30T11:07:44.144501+00:00",
+      "row_count": 1000
+    }
+  }
+}

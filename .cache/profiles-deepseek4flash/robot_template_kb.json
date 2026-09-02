@@ -1,0 +1,1111 @@
+{
+  "version": 1,
+  "profiled_at": "2026-08-30T12:54:25.346901+00:00",
+  "columns": {
+    "robot_template|robot_details|Cartesian robot": {
+      "id": 0,
+      "knowledge": "Cartesian robot",
+      "description": "Robot whose type value is Cartesian. Selects 21% of rows.",
+      "definition": "TRIM(bottypeval) = 'Cartesian'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "robot_details"
+      ],
+      "refuted": false
+    },
+    "robot_template|robot_details|SCARA robot": {
+      "id": 1,
+      "knowledge": "SCARA robot",
+      "description": "Robot whose type value is SCARA. Selects 20% of rows.",
+      "definition": "TRIM(bottypeval) = 'SCARA'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "robot_details"
+      ],
+      "refuted": false
+    },
+    "robot_template|robot_details|Articulated robot": {
+      "id": 2,
+      "knowledge": "Articulated robot",
+      "description": "Robot whose type value is Articulated. Selects 20% of rows.",
+      "definition": "TRIM(bottypeval) = 'Articulated'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "robot_details"
+      ],
+      "refuted": false
+    },
+    "robot_template|robot_details|Collaborative robot (cobot)": {
+      "id": 3,
+      "knowledge": "Collaborative robot (cobot)",
+      "description": "Robot whose type value is Collaborative. Selects 19% of rows.",
+      "definition": "TRIM(bottypeval) = 'Collaborative'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "robot_details"
+      ],
+      "refuted": false
+    },
+    "robot_template|robot_details|Delta robot": {
+      "id": 4,
+      "knowledge": "Delta robot",
+      "description": "Robot whose type value is Delta. Selects 19% of rows.",
+      "definition": "TRIM(bottypeval) = 'Delta'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "robot_details"
+      ],
+      "refuted": false
+    },
+    "robot_template|joint_condition|average joint temperature (AVG_TEMP)": {
+      "id": 5,
+      "knowledge": "average joint temperature (AVG_TEMP)",
+      "description": "Mean temperature reading across the six joints.",
+      "definition": "(j1tempval + j2tempval + j3tempval + j4tempval + j5tempval + j6tempval) / 6",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "joint_condition"
+      ],
+      "refuted": false
+    },
+    "robot_template|joint_condition|average joint vibration (AVG_VIB)": {
+      "id": 6,
+      "knowledge": "average joint vibration (AVG_VIB)",
+      "description": "Mean vibration reading across the six joints.",
+      "definition": "(j1vibval + j2vibval + j3vibval + j4vibval + j5vibval + j6vibval) / 6",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "joint_condition"
+      ],
+      "refuted": false
+    },
+    "robot_template|joint_condition|average joint backlash (AVG_BACK)": {
+      "id": 7,
+      "knowledge": "average joint backlash (AVG_BACK)",
+      "description": "Mean backlash measurement across the six joints.",
+      "definition": "(j1backval + j2backval + j3backval + j4backval + j5backval + j6backval) / 6",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "joint_condition"
+      ],
+      "refuted": false
+    },
+    "robot_template|joint_condition|total joint temperature (SUM_TEMP)": {
+      "id": 8,
+      "knowledge": "total joint temperature (SUM_TEMP)",
+      "description": "Sum of all six joint temperature readings.",
+      "definition": "j1tempval + j2tempval + j3tempval + j4tempval + j5tempval + j6tempval",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "joint_condition"
+      ],
+      "refuted": false
+    },
+    "robot_template|joint_condition|total joint vibration (SUM_VIB)": {
+      "id": 9,
+      "knowledge": "total joint vibration (SUM_VIB)",
+      "description": "Sum of all six joint vibration readings.",
+      "definition": "j1vibval + j2vibval + j3vibval + j4vibval + j5vibval + j6vibval",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "joint_condition"
+      ],
+      "refuted": false
+    },
+    "robot_template|joint_condition|total joint backlash (SUM_BACK)": {
+      "id": 10,
+      "knowledge": "total joint backlash (SUM_BACK)",
+      "description": "Sum of all six joint backlash measurements.",
+      "definition": "j1backval + j2backval + j3backval + j4backval + j5backval + j6backval",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "joint_condition"
+      ],
+      "refuted": false
+    },
+    "robot_template|joint_condition|joint 2 minus joint 1 temperature difference (TEMP_DIFF_21)": {
+      "id": 11,
+      "knowledge": "joint 2 minus joint 1 temperature difference (TEMP_DIFF_21)",
+      "description": "Temperature at joint 2 minus temperature at joint 1.",
+      "definition": "j2tempval - j1tempval",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "joint_condition"
+      ],
+      "refuted": false
+    },
+    "robot_template|joint_condition|joint 3 minus joint 2 temperature difference (TEMP_DIFF_32)": {
+      "id": 12,
+      "knowledge": "joint 3 minus joint 2 temperature difference (TEMP_DIFF_32)",
+      "description": "Temperature at joint 3 minus temperature at joint 2.",
+      "definition": "j3tempval - j2tempval",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "joint_condition"
+      ],
+      "refuted": false
+    },
+    "robot_template|joint_condition|joint 4 minus joint 3 vibration difference (VIB_DIFF_43)": {
+      "id": 13,
+      "knowledge": "joint 4 minus joint 3 vibration difference (VIB_DIFF_43)",
+      "description": "Vibration at joint 4 minus vibration at joint 3.",
+      "definition": "j4vibval - j3vibval",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "joint_condition"
+      ],
+      "refuted": false
+    },
+    "robot_template|joint_condition|joint 6 minus joint 5 backlash difference (BACK_DIFF_65)": {
+      "id": 14,
+      "knowledge": "joint 6 minus joint 5 backlash difference (BACK_DIFF_65)",
+      "description": "Backlash at joint 6 minus backlash at joint 5.",
+      "definition": "j6backval - j5backval",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "joint_condition"
+      ],
+      "refuted": false
+    },
+    "robot_template|robot_record|Valid RF registration code": {
+      "id": 15,
+      "knowledge": "Valid RF registration code",
+      "description": "Registration code that starts with the RF robot-registration prefix.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "robot_record"
+      ],
+      "refuted": false
+    },
+    "robot_template|robot_record|Valid RB robot code": {
+      "id": 16,
+      "knowledge": "Valid RB robot code",
+      "description": "Robot code that starts with the RB robot-unit prefix.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "robot_record"
+      ],
+      "refuted": false
+    },
+    "robot_template|robot_record|Complete robot record": {
+      "id": 17,
+      "knowledge": "Complete robot record",
+      "description": "Record that has a registration code, robot code, and timestamp.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "robot_record"
+      ],
+      "refuted": false
+    },
+    "robot_template|robot_record|2025-02-19 robot record": {
+      "id": 18,
+      "knowledge": "2025-02-19 robot record",
+      "description": "Record whose timestamp is during the 2025-02-19 reporting day. Selects 37% of rows.",
+      "definition": "TRIM(rects) >= '2025-02-19 00:00:00' AND TRIM(rects) < '2025-02-20 00:00:00'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "robot_record"
+      ],
+      "refuted": false
+    },
+    "robot_template|robot_record|RF-registered RB robot": {
+      "id": 19,
+      "knowledge": "RF-registered RB robot",
+      "description": "Record with both an RF registration code and an RB robot code.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        15,
+        16
+      ],
+      "tables": [
+        "robot_record"
+      ],
+      "refuted": false
+    },
+    "robot_template|joint_performance|joint performance operation reference equals record reference": {
+      "id": 20,
+      "knowledge": "joint performance operation reference equals record reference",
+      "description": "Operation reference is the same value as the record reference.",
+      "definition": "jperfoperref = jperfrecref",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "joint_performance"
+      ],
+      "refuted": false
+    },
+    "robot_template|joint_performance|joint performance operation reference equals detail reference": {
+      "id": 21,
+      "knowledge": "joint performance operation reference equals detail reference",
+      "description": "Operation reference is the same value as the detail reference.",
+      "definition": "jperfoperref = jperfdetref",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "joint_performance"
+      ],
+      "refuted": false
+    },
+    "robot_template|joint_performance|joint performance record reference equals detail reference": {
+      "id": 22,
+      "knowledge": "joint performance record reference equals detail reference",
+      "description": "Record reference is the same value as the detail reference.",
+      "definition": "jperfrecref = jperfdetref",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "joint_performance"
+      ],
+      "refuted": false
+    },
+    "robot_template|joint_performance|joint count": {
+      "id": 30,
+      "knowledge": "joint count",
+      "description": "Number of joints stored in the joint metrics JSON is six.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "joint_performance"
+      ],
+      "refuted": false
+    },
+    "robot_template|maintenance_and_fault|Upkeep cost per remaining hour": {
+      "id": 31,
+      "knowledge": "Upkeep cost per remaining hour",
+      "description": "Estimated upkeep cost divided by remaining useful life in hours.",
+      "definition": "upkeepcostest / rulhours",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "maintenance_and_fault"
+      ],
+      "refuted": false
+    },
+    "robot_template|maintenance_and_fault|Critical issue": {
+      "id": 32,
+      "knowledge": "Critical issue",
+      "description": "Maintenance issue with Critical severity. Selects 25% of rows.",
+      "definition": "issuelevelval = 'Critical'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "maintenance_and_fault"
+      ],
+      "refuted": false
+    },
+    "robot_template|maintenance_and_fault|Mechanical issue": {
+      "id": 33,
+      "knowledge": "Mechanical issue",
+      "description": "Maintenance issue categorized as Mechanical. Selects 28% of rows.",
+      "definition": "issuecategoryval = 'Mechanical'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "maintenance_and_fault"
+      ],
+      "refuted": false
+    },
+    "robot_template|maintenance_and_fault|Gearbox fault": {
+      "id": 34,
+      "knowledge": "Gearbox fault",
+      "description": "Estimated fault type is Gearbox. Selects 29% of rows.",
+      "definition": "faulttypeestimation = 'Gearbox'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "maintenance_and_fault"
+      ],
+      "refuted": false
+    },
+    "robot_template|maintenance_and_fault|Coded fault": {
+      "id": 35,
+      "knowledge": "Coded fault",
+      "description": "Maintenance event with a non-null fault code. Selects 51% of rows.",
+      "definition": "faultcodeval IS NOT NULL",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "maintenance_and_fault"
+      ],
+      "refuted": false
+    },
+    "robot_template|mechanical_status|Brake 1 error": {
+      "id": 36,
+      "knowledge": "Brake 1 error",
+      "description": "Brake 1 has the status Error. Selects 34% of rows.",
+      "definition": "brk1statval = 'Error'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "mechanical_status"
+      ],
+      "refuted": false
+    },
+    "robot_template|mechanical_status|Brake 2 error": {
+      "id": 37,
+      "knowledge": "Brake 2 error",
+      "description": "Brake 2 has the status Error. Selects 30% of rows.",
+      "definition": "brk2statval = 'Error'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "mechanical_status"
+      ],
+      "refuted": false
+    },
+    "robot_template|mechanical_status|Brake 3 error": {
+      "id": 38,
+      "knowledge": "Brake 3 error",
+      "description": "Brake 3 has the status Error. Selects 36% of rows.",
+      "definition": "brk3statval = 'Error'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "mechanical_status"
+      ],
+      "refuted": false
+    },
+    "robot_template|mechanical_status|Brake 4 error": {
+      "id": 39,
+      "knowledge": "Brake 4 error",
+      "description": "Brake 4 has the status Error. Selects 34% of rows.",
+      "definition": "brk4statval = 'Error'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "mechanical_status"
+      ],
+      "refuted": false
+    },
+    "robot_template|mechanical_status|Brake 5 error": {
+      "id": 40,
+      "knowledge": "Brake 5 error",
+      "description": "Brake 5 has the status Error. Selects 33% of rows.",
+      "definition": "brk5statval = 'Error'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "mechanical_status"
+      ],
+      "refuted": false
+    },
+    "robot_template|mechanical_status|Brake 6 error": {
+      "id": 41,
+      "knowledge": "Brake 6 error",
+      "description": "Brake 6 has the status Error. Selects 32% of rows.",
+      "definition": "brk6statval = 'Error'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "mechanical_status"
+      ],
+      "refuted": false
+    },
+    "robot_template|mechanical_status|Encoder 1 error": {
+      "id": 42,
+      "knowledge": "Encoder 1 error",
+      "description": "Encoder 1 has the status Error. Selects 34% of rows.",
+      "definition": "enc1statval = 'Error'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "mechanical_status"
+      ],
+      "refuted": false
+    },
+    "robot_template|mechanical_status|Encoder 2 error": {
+      "id": 43,
+      "knowledge": "Encoder 2 error",
+      "description": "Encoder 2 has the status Error. Selects 37% of rows.",
+      "definition": "enc2statval = 'Error'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "mechanical_status"
+      ],
+      "refuted": false
+    },
+    "robot_template|mechanical_status|Encoder 3 error": {
+      "id": 44,
+      "knowledge": "Encoder 3 error",
+      "description": "Encoder 3 has the status Error. Selects 35% of rows.",
+      "definition": "enc3statval = 'Error'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "mechanical_status"
+      ],
+      "refuted": false
+    },
+    "robot_template|mechanical_status|Encoder 4 error": {
+      "id": 45,
+      "knowledge": "Encoder 4 error",
+      "description": "Encoder 4 has the status Error. Selects 35% of rows.",
+      "definition": "enc4statval = 'Error'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "mechanical_status"
+      ],
+      "refuted": false
+    },
+    "robot_template|mechanical_status|Encoder 5 error": {
+      "id": 46,
+      "knowledge": "Encoder 5 error",
+      "description": "Encoder 5 has the status Error. Selects 33% of rows.",
+      "definition": "enc5statval = 'Error'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "mechanical_status"
+      ],
+      "refuted": false
+    },
+    "robot_template|mechanical_status|Encoder 6 error": {
+      "id": 47,
+      "knowledge": "Encoder 6 error",
+      "description": "Encoder 6 has the status Error. Selects 33% of rows.",
+      "definition": "enc6statval = 'Error'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "mechanical_status"
+      ],
+      "refuted": false
+    },
+    "robot_template|mechanical_status|Any mechanical error": {
+      "id": 48,
+      "knowledge": "Any mechanical error",
+      "description": "At least one brake or encoder has the status Error.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
+      ],
+      "tables": [
+        "mechanical_status"
+      ],
+      "refuted": false
+    },
+    "robot_template|performance_and_safety|Total safety incidents": {
+      "id": 49,
+      "knowledge": "Total safety incidents",
+      "description": "Sum of all recorded safety event counts in the safety metrics JSON.",
+      "definition": "COALESCE(json_extract(safety_metrics, '$.overloads'), 0) + COALESCE(json_extract(safety_metrics, '$.collisions'), 0) + COALESCE(json_extract(safety_metrics, '$.emergency_stops'), 0) + COALESCE(json_extract(safety_metrics, '$.zone_violations'), 0) + COALESCE(json_extract(safety_metrics, '$.speed_violations'), 0)",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "performance_and_safety"
+      ],
+      "refuted": false
+    },
+    "robot_template|performance_and_safety|Normal safety state": {
+      "id": 50,
+      "knowledge": "Normal safety state",
+      "description": "Safety status showing no active warning or emergency condition. Selects 32% of rows.",
+      "definition": "json_extract(safety_metrics, '$.safety_state') = 'Normal'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "performance_and_safety"
+      ],
+      "refuted": false
+    },
+    "robot_template|performance_and_safety|Warning safety state": {
+      "id": 51,
+      "knowledge": "Warning safety state",
+      "description": "Safety status indicating a caution-level condition. Selects 35% of rows.",
+      "definition": "json_extract(safety_metrics, '$.safety_state') = 'Warning'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "performance_and_safety"
+      ],
+      "refuted": false
+    },
+    "robot_template|performance_and_safety|Emergency safety state": {
+      "id": 52,
+      "knowledge": "Emergency safety state",
+      "description": "Safety status indicating an emergency-level condition. Selects 34% of rows.",
+      "definition": "json_extract(safety_metrics, '$.safety_state') = 'Emergency'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "performance_and_safety"
+      ],
+      "refuted": false
+    },
+    "robot_template|performance_and_safety|Valid calibration state": {
+      "id": 53,
+      "knowledge": "Valid calibration state",
+      "description": "Calibration status is valid and no recalibration is currently due. Selects 36% of rows.",
+      "definition": "TRIM(json_extract(safety_metrics, '$.calibration_state')) = 'Valid'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "performance_and_safety"
+      ],
+      "refuted": false
+    },
+    "robot_template|performance_and_safety|Invalid calibration state": {
+      "id": 54,
+      "knowledge": "Invalid calibration state",
+      "description": "Calibration status is invalid. Selects 32% of rows.",
+      "definition": "TRIM(json_extract(safety_metrics, '$.calibration_state')) = 'Invalid'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "performance_and_safety"
+      ],
+      "refuted": false
+    },
+    "robot_template|performance_and_safety|Due calibration state": {
+      "id": 55,
+      "knowledge": "Due calibration state",
+      "description": "Calibration status indicates that calibration is due. Selects 31% of rows.",
+      "definition": "TRIM(json_extract(safety_metrics, '$.calibration_state')) = 'Due'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "performance_and_safety"
+      ],
+      "refuted": false
+    },
+    "robot_template|performance_and_safety|Overload event": {
+      "id": 56,
+      "knowledge": "Overload event",
+      "description": "At least one overload event was recorded.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "performance_and_safety"
+      ],
+      "refuted": false
+    },
+    "robot_template|performance_and_safety|Collision event": {
+      "id": 57,
+      "knowledge": "Collision event",
+      "description": "At least one collision event was recorded.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "performance_and_safety"
+      ],
+      "refuted": false
+    },
+    "robot_template|system_controller|controller_metrics.load_value": {
+      "id": 58,
+      "knowledge": "controller_metrics.load_value",
+      "description": "Numeric load value stored inside the controller_metrics JSON object.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "system_controller"
+      ],
+      "refuted": false
+    },
+    "robot_template|system_controller|controller_metrics.memory_usage": {
+      "id": 59,
+      "knowledge": "controller_metrics.memory_usage",
+      "description": "Numeric memory usage value stored inside the controller_metrics JSON object.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "system_controller"
+      ],
+      "refuted": false
+    },
+    "robot_template|system_controller|controller_metrics.thermal_level": {
+      "id": 60,
+      "knowledge": "controller_metrics.thermal_level",
+      "description": "Numeric thermal level value stored inside the controller_metrics JSON object.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "system_controller"
+      ],
+      "refuted": false
+    },
+    "robot_template|system_controller|controller_metrics.cabinet_humidity": {
+      "id": 61,
+      "knowledge": "controller_metrics.cabinet_humidity",
+      "description": "Numeric cabinet humidity value stored inside the controller_metrics JSON object.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "system_controller"
+      ],
+      "refuted": false
+    },
+    "robot_template|system_controller|controller_metrics.cabinet_temperature": {
+      "id": 62,
+      "knowledge": "controller_metrics.cabinet_temperature",
+      "description": "Numeric cabinet temperature value stored inside the controller_metrics JSON object.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "system_controller"
+      ],
+      "refuted": false
+    },
+    "robot_template|operation|operation robot detail reference equals operation record reference": {
+      "id": 63,
+      "knowledge": "operation robot detail reference equals operation record reference",
+      "description": "The operation robot detail reference is the same as the operation record reference.",
+      "definition": "operbotdetref = operrecref",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "operation"
+      ],
+      "refuted": false
+    },
+    "robot_template|operation|Auto mode operation": {
+      "id": 64,
+      "knowledge": "Auto mode operation",
+      "description": "An operation whose operation mode is Auto. Selects 28% of rows.",
+      "definition": "TRIM(opermodeval) = 'Auto'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "operation"
+      ],
+      "refuted": false
+    },
+    "robot_template|operation|Material handling operation": {
+      "id": 65,
+      "knowledge": "Material handling operation",
+      "description": "An operation whose application type is Material Handling. Selects 22% of rows.",
+      "definition": "apptypeval = 'Material Handling'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "operation"
+      ],
+      "refuted": false
+    },
+    "robot_template|operation|Painting operation": {
+      "id": 66,
+      "knowledge": "Painting operation",
+      "description": "An operation whose application type is Painting. Selects 20% of rows.",
+      "definition": "apptypeval = 'Painting'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "operation"
+      ],
+      "refuted": false
+    },
+    "robot_template|operation|Assembly operation": {
+      "id": 67,
+      "knowledge": "Assembly operation",
+      "description": "An operation whose application type is Assembly. Selects 20% of rows.",
+      "definition": "apptypeval = 'Assembly'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "operation"
+      ],
+      "refuted": false
+    },
+    "robot_template|actuation_data|Motor 1 power (P1)": {
+      "id": 68,
+      "knowledge": "Motor 1 power (P1)",
+      "description": "Electrical power consumed by motor 1, the product of its current and voltage.",
+      "definition": "m1currval * m1voltval",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "actuation_data"
+      ],
+      "refuted": false
+    },
+    "robot_template|actuation_data|Motor 2 power (P2)": {
+      "id": 69,
+      "knowledge": "Motor 2 power (P2)",
+      "description": "Electrical power consumed by motor 2, the product of its current and voltage.",
+      "definition": "m2currval * m2voltval",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "actuation_data"
+      ],
+      "refuted": false
+    },
+    "robot_template|actuation_data|Motor 3 power (P3)": {
+      "id": 70,
+      "knowledge": "Motor 3 power (P3)",
+      "description": "Electrical power consumed by motor 3, the product of its current and voltage.",
+      "definition": "m3currval * m3voltval",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "actuation_data"
+      ],
+      "refuted": false
+    },
+    "robot_template|actuation_data|Motor 4 power (P4)": {
+      "id": 71,
+      "knowledge": "Motor 4 power (P4)",
+      "description": "Electrical power consumed by motor 4, the product of its current and voltage.",
+      "definition": "m4currval * m4voltval",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "actuation_data"
+      ],
+      "refuted": false
+    },
+    "robot_template|actuation_data|Motor 5 power (P5)": {
+      "id": 72,
+      "knowledge": "Motor 5 power (P5)",
+      "description": "Electrical power consumed by motor 5, the product of its current and voltage.",
+      "definition": "m5currval * m5voltval",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "actuation_data"
+      ],
+      "refuted": false
+    },
+    "robot_template|actuation_data|Motor 6 power (P6)": {
+      "id": 73,
+      "knowledge": "Motor 6 power (P6)",
+      "description": "Electrical power consumed by motor 6, the product of its current and voltage.",
+      "definition": "m6currval * m6voltval",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "actuation_data"
+      ],
+      "refuted": false
+    },
+    "robot_template|actuation_data|Total motor current (Itotal)": {
+      "id": 74,
+      "knowledge": "Total motor current (Itotal)",
+      "description": "Sum of the currents drawn by all six motors.",
+      "definition": "m1currval + m2currval + m3currval + m4currval + m5currval + m6currval",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "actuation_data"
+      ],
+      "refuted": false
+    },
+    "robot_template|actuation_data|Total motor voltage (Vtotal)": {
+      "id": 75,
+      "knowledge": "Total motor voltage (Vtotal)",
+      "description": "Sum of the voltages supplied to all six motors.",
+      "definition": "m1voltval + m2voltval + m3voltval + m4voltval + m5voltval + m6voltval",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "actuation_data"
+      ],
+      "refuted": false
+    },
+    "robot_template|actuation_data|Total motor power (Ptotal)": {
+      "id": 76,
+      "knowledge": "Total motor power (Ptotal)",
+      "description": "Total electrical power consumed by all six motors.",
+      "definition": "m1currval * m1voltval + m2currval * m2voltval + m3currval * m3voltval + m4currval * m4voltval + m5currval * m5voltval + m6currval * m6voltval",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "actuation_data"
+      ],
+      "refuted": false
+    },
+    "robot_template|actuation_data|Average motor current (Iavg)": {
+      "id": 77,
+      "knowledge": "Average motor current (Iavg)",
+      "description": "Mean current drawn per motor across all six motors.",
+      "definition": "(m1currval + m2currval + m3currval + m4currval + m5currval + m6currval) / 6",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "actuation_data"
+      ],
+      "refuted": false
+    },
+    "robot_template|actuation_data|Average motor voltage (Vavg)": {
+      "id": 78,
+      "knowledge": "Average motor voltage (Vavg)",
+      "description": "Mean voltage supplied per motor across all six motors.",
+      "definition": "(m1voltval + m2voltval + m3voltval + m4voltval + m5voltval + m6voltval) / 6",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "actuation_data"
+      ],
+      "refuted": false
+    },
+    "robot_template|actuation_data|TCP distance from origin (Dtcp)": {
+      "id": 79,
+      "knowledge": "TCP distance from origin (Dtcp)",
+      "description": "Euclidean distance of the TCP position from the origin.",
+      "definition": "SQRT(tcpxval * tcpxval + tcpyval * tcpyval + tcpzval * tcpzval)",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "actuation_data"
+      ],
+      "refuted": false
+    },
+    "robot_template|actuation_data|TCP orientation magnitude (Rtcp)": {
+      "id": 80,
+      "knowledge": "TCP orientation magnitude (Rtcp)",
+      "description": "Euclidean norm of the TCP orientation vector.",
+      "definition": "SQRT(tcp_rxval * tcp_rxval + tcp_ryval * tcp_ryval + tcp_rzval * tcp_rzval)",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "actuation_data"
+      ],
+      "refuted": false
+    },
+    "robot_template|actuation_data|Payload force (Fp)": {
+      "id": 81,
+      "knowledge": "Payload force (Fp)",
+      "description": "Gravitational force exerted by the payload mass under standard gravity.",
+      "definition": "payloadwval * 9.81",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "actuation_data"
+      ],
+      "refuted": false
+    },
+    "robot_template|actuation_data,robot_details|Payload utilization ratio (PUR)": {
+      "id": 82,
+      "knowledge": "Payload utilization ratio (PUR)",
+      "description": "Actual payload weight as a percentage of rated payload capacity.",
+      "definition": "payloadwval / payloadcapkg * 100",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "actuation_data",
+        "robot_details"
+      ],
+      "refuted": false
+    },
+    "robot_template|maintenance_and_fault,operation|Remaining useful life in cycles (RUL_CYCLES)": {
+      "id": 83,
+      "knowledge": "Remaining useful life in cycles (RUL_CYCLES)",
+      "description": "Estimated number of remaining operation cycles from remaining useful life hours and cycle time.",
+      "definition": "rulhours * 3600 / cycletimesecval",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "maintenance_and_fault",
+        "operation"
+      ],
+      "refuted": false
+    },
+    "robot_template|operation,robot_details|Operation share per payload capacity (OSPC)": {
+      "id": 84,
+      "knowledge": "Operation share per payload capacity (OSPC)",
+      "description": "Total operation share divided by robot payload capacity in kilograms.",
+      "definition": "totopshrval / payloadcapkg",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "operation",
+        "robot_details"
+      ],
+      "refuted": false
+    },
+    "robot_template|maintenance_and_fault,operation|Upkeep cost per operation share (UCOS)": {
+      "id": 85,
+      "knowledge": "Upkeep cost per operation share (UCOS)",
+      "description": "Estimated upkeep cost per unit of total operation share.",
+      "definition": "upkeepcostest / totopshrval",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "maintenance_and_fault",
+        "operation"
+      ],
+      "refuted": false
+    },
+    "robot_template|operation,performance_and_safety|Effectiveness per cycle second (EPCS)": {
+      "id": 86,
+      "knowledge": "Effectiveness per cycle second (EPCS)",
+      "description": "Effectiveness index value per second of cycle time.",
+      "definition": "effectivenessindexval / cycletimesecval",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "operation",
+        "performance_and_safety"
+      ],
+      "refuted": false
+    },
+    "robot_template|maintenance_and_fault,operation|Critical issue in auto mode": {
+      "id": 87,
+      "knowledge": "Critical issue in auto mode",
+      "description": "Upkeep event with critical issue severity while the operation mode is Auto.",
+      "definition": "issuelevelval = 'Critical' AND TRIM(opermodeval) = 'Auto'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        32,
+        64
+      ],
+      "tables": [
+        "maintenance_and_fault",
+        "operation"
+      ],
+      "refuted": false
+    },
+    "robot_template|joint_condition,robot_details|High average joint temperature articulated robot": {
+      "id": 88,
+      "knowledge": "High average joint temperature articulated robot",
+      "description": "Articulated robot whose average joint temperature exceeds 70.",
+      "definition": "(j1tempval + j2tempval + j3tempval + j4tempval + j5tempval + j6tempval) / 6 > 70 AND TRIM(bottypeval) = 'Articulated'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        2,
+        5
+      ],
+      "tables": [
+        "joint_condition",
+        "robot_details"
+      ],
+      "refuted": false
+    },
+    "robot_template|joint_condition,robot_details|High average joint vibration collaborative robot": {
+      "id": 89,
+      "knowledge": "High average joint vibration collaborative robot",
+      "description": "Collaborative robot whose average joint vibration exceeds 8.",
+      "definition": "(j1vibval + j2vibval + j3vibval + j4vibval + j5vibval + j6vibval) / 6 > 8 AND TRIM(bottypeval) = 'Collaborative'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        3,
+        6
+      ],
+      "tables": [
+        "joint_condition",
+        "robot_details"
+      ],
+      "refuted": false
+    },
+    "robot_template|joint_condition,robot_details|High average joint backlash delta robot": {
+      "id": 90,
+      "knowledge": "High average joint backlash delta robot",
+      "description": "Delta robot whose average joint backlash exceeds 0.08 millimeters.",
+      "definition": "(j1backval + j2backval + j3backval + j4backval + j5backval + j6backval) / 6 > 0.08 AND TRIM(bottypeval) = 'Delta'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        4,
+        7
+      ],
+      "tables": [
+        "joint_condition",
+        "robot_details"
+      ],
+      "refuted": false
+    },
+    "robot_template|operation,robot_details|FANUC robot with high total operation share": {
+      "id": 91,
+      "knowledge": "FANUC robot with high total operation share",
+      "description": "FANUC robot with a total operation share greater than 40000.",
+      "definition": "mfgnameval = 'FANUC' AND totopshrval > 40000.0",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "operation",
+        "robot_details"
+      ],
+      "refuted": false
+    }
+  },
+  "meta": {
+    "joint_condition,robot_details": {
+      "profiled_at": "2026-08-30T12:54:25.346901+00:00"
+    },
+    "robot_details": {
+      "profiled_at": "2026-08-30T12:54:25.346901+00:00"
+    },
+    "joint_condition": {
+      "profiled_at": "2026-08-30T12:54:25.346901+00:00"
+    },
+    "robot_record": {
+      "profiled_at": "2026-08-30T12:54:25.346901+00:00"
+    },
+    "joint_performance": {
+      "profiled_at": "2026-08-30T12:54:25.346901+00:00"
+    },
+    "maintenance_and_fault,operation": {
+      "profiled_at": "2026-08-30T12:54:25.346901+00:00"
+    },
+    "maintenance_and_fault": {
+      "profiled_at": "2026-08-30T12:54:25.346901+00:00"
+    },
+    "mechanical_status": {
+      "profiled_at": "2026-08-30T12:54:25.346901+00:00"
+    },
+    "operation,performance_and_safety": {
+      "profiled_at": "2026-08-30T12:54:25.346901+00:00"
+    },
+    "performance_and_safety": {
+      "profiled_at": "2026-08-30T12:54:25.346901+00:00"
+    },
+    "system_controller": {
+      "profiled_at": "2026-08-30T12:54:25.346901+00:00"
+    },
+    "operation,robot_details": {
+      "profiled_at": "2026-08-30T12:54:25.346901+00:00"
+    },
+    "actuation_data,robot_details": {
+      "profiled_at": "2026-08-30T12:54:25.346901+00:00"
+    },
+    "operation": {
+      "profiled_at": "2026-08-30T12:54:25.346901+00:00"
+    },
+    "actuation_data": {
+      "profiled_at": "2026-08-30T12:54:25.346901+00:00"
+    }
+  }
+}

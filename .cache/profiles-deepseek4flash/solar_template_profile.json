@@ -1,0 +1,5585 @@
+{
+  "version": 1,
+  "profiled_at": "2026-08-30T11:42:12.866225+00:00",
+  "columns": {
+    "solar_template|alerts|alertreg": {
+      "table_name": "alerts",
+      "column_name": "alertreg",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "00564c61-9386-4fbf-ab33-85ba0bde2515",
+      "max_value": "ffb6a6cb-8f34-4c9b-ad59-664b63a4dde6",
+      "top_k_values": [
+        {
+          "value": "00564c61-9386-4fbf-ab33-85ba0bde2515",
+          "count": 1
+        },
+        {
+          "value": "007974ad-ef38-4d2e-9c5a-19a5bff49ea1",
+          "count": 1
+        },
+        {
+          "value": "00a38ef9-3bad-4201-8114-28292775280f",
+          "count": 1
+        },
+        {
+          "value": "00a6cf27-9040-4600-91a3-56c4ee38ff83",
+          "count": 1
+        },
+        {
+          "value": "00aa8f38-bdb6-4a5c-b6a5-2690c2306cfd",
+          "count": 1
+        },
+        {
+          "value": "00bfcb5b-37fb-43a8-9823-30d4dd62defe",
+          "count": 1
+        },
+        {
+          "value": "0111f9c4-6303-414c-a8cd-ca155cae7c44",
+          "count": 1
+        },
+        {
+          "value": "01200746-5236-4240-a354-66905e42de43",
+          "count": 1
+        },
+        {
+          "value": "0164857c-92c9-473c-b60e-93d6dfe47b1b",
+          "count": 1
+        },
+        {
+          "value": "019f22cf-2b5d-4e95-a2d0-9dcacc33c275",
+          "count": 1
+        }
+      ],
+      "min_length": 36,
+      "max_length": 36,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDDDADD-ADAA-DAAA-AADD-AAAADDAADAAD",
+        "DDADDDAD-DAAD-DDAA-ADAD-DDADDAAADDDA",
+        "ADDADDDD-DDDA-DDDA-DDDA-ADADDDDDDADA",
+        "DDDDDADD-DDAA-DDDA-ADDD-DADDDADDDDAD",
+        "ADDDADDD-AADD-DAAA-DADD-ADAAADDDDDDD"
+      ]
+    },
+    "solar_template|alerts|compreg": {
+      "table_name": "alerts",
+      "column_name": "compreg",
+      "column_type": "TEXT(36)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "00564c61-9386-4fbf-ab33-85ba0bde2515",
+      "max_value": "ffb6a6cb-8f34-4c9b-ad59-664b63a4dde6",
+      "top_k_values": [
+        {
+          "value": "ffb6a6cb-8f34-4c9b-ad59-664b63a4dde6",
+          "count": 1
+        },
+        {
+          "value": "ff910d02-3a42-46e3-9d22-8fcd85fe7598",
+          "count": 1
+        },
+        {
+          "value": "ff4076d8-ff1c-421f-b6bf-0978206b792e",
+          "count": 1
+        },
+        {
+          "value": "ff20a5f7-2950-4916-af84-bae8455bfe94",
+          "count": 1
+        },
+        {
+          "value": "febebd33-941d-400a-b1a6-ada0bcbc653f",
+          "count": 1
+        },
+        {
+          "value": "fe1fd562-b108-42e0-b67e-05bf4ac9152a",
+          "count": 1
+        },
+        {
+          "value": "fe0db5c7-6138-419f-b7b2-846087c0c3ca",
+          "count": 1
+        },
+        {
+          "value": "fd9ad843-2ba1-4395-861d-40ede3ba1c72",
+          "count": 1
+        },
+        {
+          "value": "fd99f6f0-2fc6-45ba-8f00-a05ea3fcaa78",
+          "count": 1
+        },
+        {
+          "value": "fd345ca9-7560-4398-94be-f9fc6349d726",
+          "count": 1
+        }
+      ],
+      "min_length": 36,
+      "max_length": 36,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDDDADD-ADAA-DAAA-AADD-AAAADDAADAAD",
+        "DDADDDAD-DAAD-DDAA-ADAD-DDADDAAADDDA",
+        "ADDADDDD-DDDA-DDDA-DDDA-ADADDDDDDADA",
+        "DDDDDADD-DDAA-DDDA-ADDD-DADDDADDDDAD",
+        "ADDDADDD-AADD-DAAA-DADD-ADAAADDDDDDD"
+      ]
+    },
+    "solar_template|alerts|deviceref": {
+      "table_name": "alerts",
+      "column_name": "deviceref",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "00564c61-9386-4fbf-ab33-85ba0bde2515",
+      "max_value": "ffb6a6cb-8f34-4c9b-ad59-664b63a4dde6",
+      "top_k_values": [
+        {
+          "value": "ffb6a6cb-8f34-4c9b-ad59-664b63a4dde6",
+          "count": 1
+        },
+        {
+          "value": "ff910d02-3a42-46e3-9d22-8fcd85fe7598",
+          "count": 1
+        },
+        {
+          "value": "ff4076d8-ff1c-421f-b6bf-0978206b792e",
+          "count": 1
+        },
+        {
+          "value": "ff20a5f7-2950-4916-af84-bae8455bfe94",
+          "count": 1
+        },
+        {
+          "value": "febebd33-941d-400a-b1a6-ada0bcbc653f",
+          "count": 1
+        },
+        {
+          "value": "fe1fd562-b108-42e0-b67e-05bf4ac9152a",
+          "count": 1
+        },
+        {
+          "value": "fe0db5c7-6138-419f-b7b2-846087c0c3ca",
+          "count": 1
+        },
+        {
+          "value": "fd9ad843-2ba1-4395-861d-40ede3ba1c72",
+          "count": 1
+        },
+        {
+          "value": "fd99f6f0-2fc6-45ba-8f00-a05ea3fcaa78",
+          "count": 1
+        },
+        {
+          "value": "fd345ca9-7560-4398-94be-f9fc6349d726",
+          "count": 1
+        }
+      ],
+      "min_length": 36,
+      "max_length": 36,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDDDADD-ADAA-DAAA-AADD-AAAADDAADAAD",
+        "DDADDDAD-DAAD-DDAA-ADAD-DDADDAAADDDA",
+        "ADDADDDD-DDDA-DDDA-DDDA-ADADDDDDDADA",
+        "DDDDDADD-DDAA-DDDA-ADDD-DADDDADDDDAD",
+        "ADDDADDD-AADD-DAAA-DADD-ADAAADDDDDDD"
+      ]
+    },
+    "solar_template|alerts|incidentref": {
+      "table_name": "alerts",
+      "column_name": "incidentref",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "00564c61-9386-4fbf-ab33-85ba0bde2515",
+      "max_value": "ffb6a6cb-8f34-4c9b-ad59-664b63a4dde6",
+      "top_k_values": [
+        {
+          "value": "ffb6a6cb-8f34-4c9b-ad59-664b63a4dde6",
+          "count": 1
+        },
+        {
+          "value": "ff910d02-3a42-46e3-9d22-8fcd85fe7598",
+          "count": 1
+        },
+        {
+          "value": "ff4076d8-ff1c-421f-b6bf-0978206b792e",
+          "count": 1
+        },
+        {
+          "value": "ff20a5f7-2950-4916-af84-bae8455bfe94",
+          "count": 1
+        },
+        {
+          "value": "febebd33-941d-400a-b1a6-ada0bcbc653f",
+          "count": 1
+        },
+        {
+          "value": "fe1fd562-b108-42e0-b67e-05bf4ac9152a",
+          "count": 1
+        },
+        {
+          "value": "fe0db5c7-6138-419f-b7b2-846087c0c3ca",
+          "count": 1
+        },
+        {
+          "value": "fd9ad843-2ba1-4395-861d-40ede3ba1c72",
+          "count": 1
+        },
+        {
+          "value": "fd99f6f0-2fc6-45ba-8f00-a05ea3fcaa78",
+          "count": 1
+        },
+        {
+          "value": "fd345ca9-7560-4398-94be-f9fc6349d726",
+          "count": 1
+        }
+      ],
+      "min_length": 36,
+      "max_length": 36,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDDDADD-ADAA-DAAA-AADD-AAAADDAADAAD",
+        "DDADDDAD-DAAD-DDAA-ADAD-DDADDAAADDDA",
+        "ADDADDDD-DDDA-DDDA-DDDA-ADADDDDDDADA",
+        "DDDDDADD-DDAA-DDDA-ADDD-DADDDADDDDAD",
+        "ADDDADDD-AADD-DAAA-DADD-ADAAADDDDDDD"
+      ]
+    },
+    "solar_template|alerts|alertmoment": {
+      "table_name": "alerts",
+      "column_name": "alertmoment",
+      "column_type": "TEXT(6)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "2015-03-06 23:44:15.061367",
+      "max_value": "2025-02-16 18:54:12.141865",
+      "top_k_values": [
+        {
+          "value": "2025-02-16 18:54:12.141865",
+          "count": 1
+        },
+        {
+          "value": "2025-02-11 16:51:49.061367",
+          "count": 1
+        },
+        {
+          "value": "2025-02-07 13:00:14.145392",
+          "count": 1
+        },
+        {
+          "value": "2025-02-06 16:34:23.15073",
+          "count": 1
+        },
+        {
+          "value": "2025-02-04 21:13:42.08302",
+          "count": 1
+        },
+        {
+          "value": "2025-02-03 01:14:42.053478",
+          "count": 1
+        },
+        {
+          "value": "2025-01-27 21:54:53.066086",
+          "count": 1
+        },
+        {
+          "value": "2025-01-25 16:17:18.149719",
+          "count": 1
+        },
+        {
+          "value": "2025-01-23 05:33:41.076834",
+          "count": 1
+        },
+        {
+          "value": "2025-01-19 20:14:14.089131",
+          "count": 1
+        }
+      ],
+      "min_length": 25,
+      "max_length": 26,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDD-DD-DD DD:DD:DD.DDDDDD",
+        "DDDD-DD-DD DD:DD:DD.DDDDD"
+      ]
+    },
+    "solar_template|alerts|alertstat": {
+      "table_name": "alerts",
+      "column_name": "alertstat",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 324,
+      "non_null_count": 676,
+      "distinct_count": 2,
+      "min_value": "Critical",
+      "max_value": "Warning",
+      "top_k_values": [
+        {
+          "value": "Warning",
+          "count": 352
+        },
+        {
+          "value": "Critical",
+          "count": 324
+        }
+      ],
+      "min_length": 7,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "solar_template|alerts|alertcnt": {
+      "table_name": "alerts",
+      "column_name": "alertcnt",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 95,
+      "non_null_count": 905,
+      "distinct_count": 10,
+      "min_value": "1",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "5",
+          "count": 111
+        },
+        {
+          "value": "8",
+          "count": 101
+        },
+        {
+          "value": "10",
+          "count": 95
+        },
+        {
+          "value": "1",
+          "count": 95
+        },
+        {
+          "value": "4",
+          "count": 93
+        },
+        {
+          "value": "7",
+          "count": 88
+        },
+        {
+          "value": "9",
+          "count": 84
+        },
+        {
+          "value": "2",
+          "count": 81
+        },
+        {
+          "value": "3",
+          "count": 79
+        },
+        {
+          "value": "6",
+          "count": 78
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D",
+        "DD"
+      ]
+    },
+    "solar_template|alerts|maintprior": {
+      "table_name": "alerts",
+      "column_name": "maintprior",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "High",
+      "max_value": "Medium",
+      "top_k_values": [
+        {
+          "value": "Medium",
+          "count": 354
+        },
+        {
+          "value": "Low",
+          "count": 324
+        },
+        {
+          "value": "High",
+          "count": 322
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AAA",
+        "AAAA"
+      ]
+    },
+    "solar_template|alerts|replaceprior": {
+      "table_name": "alerts",
+      "column_name": "replaceprior",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "High",
+      "max_value": "Medium",
+      "top_k_values": [
+        {
+          "value": "Medium",
+          "count": 340
+        },
+        {
+          "value": "Low",
+          "count": 332
+        },
+        {
+          "value": "High",
+          "count": 328
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AAA",
+        "AAAA"
+      ]
+    },
+    "solar_template|alerts|optpotential": {
+      "table_name": "alerts",
+      "column_name": "optpotential",
+      "column_type": "TEXT(100)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "High",
+      "max_value": "Medium",
+      "top_k_values": [
+        {
+          "value": "High",
+          "count": 355
+        },
+        {
+          "value": "Low",
+          "count": 331
+        },
+        {
+          "value": "Medium",
+          "count": 314
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAA",
+        "AAAAAA"
+      ]
+    },
+    "solar_template|electrical|elecregistry": {
+      "table_name": "electrical",
+      "column_name": "elecregistry",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "00564c61-9386-4fbf-ab33-85ba0bde2515",
+      "max_value": "ffb6a6cb-8f34-4c9b-ad59-664b63a4dde6",
+      "top_k_values": [
+        {
+          "value": "00564c61-9386-4fbf-ab33-85ba0bde2515",
+          "count": 1
+        },
+        {
+          "value": "007974ad-ef38-4d2e-9c5a-19a5bff49ea1",
+          "count": 1
+        },
+        {
+          "value": "00a38ef9-3bad-4201-8114-28292775280f",
+          "count": 1
+        },
+        {
+          "value": "00a6cf27-9040-4600-91a3-56c4ee38ff83",
+          "count": 1
+        },
+        {
+          "value": "00aa8f38-bdb6-4a5c-b6a5-2690c2306cfd",
+          "count": 1
+        },
+        {
+          "value": "00bfcb5b-37fb-43a8-9823-30d4dd62defe",
+          "count": 1
+        },
+        {
+          "value": "0111f9c4-6303-414c-a8cd-ca155cae7c44",
+          "count": 1
+        },
+        {
+          "value": "01200746-5236-4240-a354-66905e42de43",
+          "count": 1
+        },
+        {
+          "value": "0164857c-92c9-473c-b60e-93d6dfe47b1b",
+          "count": 1
+        },
+        {
+          "value": "019f22cf-2b5d-4e95-a2d0-9dcacc33c275",
+          "count": 1
+        }
+      ],
+      "min_length": 36,
+      "max_length": 36,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDDDADD-ADAA-DAAA-AADD-AAAADDAADAAD",
+        "DDADDDAD-DAAD-DDAA-ADAD-DDADDAAADDDA",
+        "ADDADDDD-DDDA-DDDA-DDDA-ADADDDDDDADA",
+        "DDDDDADD-DDAA-DDDA-ADDD-DADDDADDDDAD",
+        "ADDDADDD-AADD-DAAA-DADD-ADAAADDDDDDD"
+      ]
+    },
+    "solar_template|electrical|engyunitref": {
+      "table_name": "electrical",
+      "column_name": "engyunitref",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "00564c61-9386-4fbf-ab33-85ba0bde2515",
+      "max_value": "ffb6a6cb-8f34-4c9b-ad59-664b63a4dde6",
+      "top_k_values": [
+        {
+          "value": "ffb6a6cb-8f34-4c9b-ad59-664b63a4dde6",
+          "count": 1
+        },
+        {
+          "value": "ff910d02-3a42-46e3-9d22-8fcd85fe7598",
+          "count": 1
+        },
+        {
+          "value": "ff4076d8-ff1c-421f-b6bf-0978206b792e",
+          "count": 1
+        },
+        {
+          "value": "ff20a5f7-2950-4916-af84-bae8455bfe94",
+          "count": 1
+        },
+        {
+          "value": "febebd33-941d-400a-b1a6-ada0bcbc653f",
+          "count": 1
+        },
+        {
+          "value": "fe1fd562-b108-42e0-b67e-05bf4ac9152a",
+          "count": 1
+        },
+        {
+          "value": "fe0db5c7-6138-419f-b7b2-846087c0c3ca",
+          "count": 1
+        },
+        {
+          "value": "fd9ad843-2ba1-4395-861d-40ede3ba1c72",
+          "count": 1
+        },
+        {
+          "value": "fd99f6f0-2fc6-45ba-8f00-a05ea3fcaa78",
+          "count": 1
+        },
+        {
+          "value": "fd345ca9-7560-4398-94be-f9fc6349d726",
+          "count": 1
+        }
+      ],
+      "min_length": 36,
+      "max_length": 36,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDDDADD-ADAA-DAAA-AADD-AAAADDAADAAD",
+        "DDADDDAD-DAAD-DDAA-ADAD-DDADDAAADDDA",
+        "ADDADDDD-DDDA-DDDA-DDDA-ADADDDDDDADA",
+        "DDDDDADD-DDAA-DDDA-ADDD-DADDDADDDDAD",
+        "ADDDADDD-AADD-DAAA-DADD-ADAAADDDDDDD"
+      ]
+    },
+    "solar_template|electrical|efflogref": {
+      "table_name": "electrical",
+      "column_name": "efflogref",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "00564c61-9386-4fbf-ab33-85ba0bde2515",
+      "max_value": "ffb6a6cb-8f34-4c9b-ad59-664b63a4dde6",
+      "top_k_values": [
+        {
+          "value": "ffb6a6cb-8f34-4c9b-ad59-664b63a4dde6",
+          "count": 1
+        },
+        {
+          "value": "ff910d02-3a42-46e3-9d22-8fcd85fe7598",
+          "count": 1
+        },
+        {
+          "value": "ff4076d8-ff1c-421f-b6bf-0978206b792e",
+          "count": 1
+        },
+        {
+          "value": "ff20a5f7-2950-4916-af84-bae8455bfe94",
+          "count": 1
+        },
+        {
+          "value": "febebd33-941d-400a-b1a6-ada0bcbc653f",
+          "count": 1
+        },
+        {
+          "value": "fe1fd562-b108-42e0-b67e-05bf4ac9152a",
+          "count": 1
+        },
+        {
+          "value": "fe0db5c7-6138-419f-b7b2-846087c0c3ca",
+          "count": 1
+        },
+        {
+          "value": "fd9ad843-2ba1-4395-861d-40ede3ba1c72",
+          "count": 1
+        },
+        {
+          "value": "fd99f6f0-2fc6-45ba-8f00-a05ea3fcaa78",
+          "count": 1
+        },
+        {
+          "value": "fd345ca9-7560-4398-94be-f9fc6349d726",
+          "count": 1
+        }
+      ],
+      "min_length": 36,
+      "max_length": 36,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDDDADD-ADAA-DAAA-AADD-AAAADDAADAAD",
+        "DDADDDAD-DAAD-DDAA-ADAD-DDADDAAADDDA",
+        "ADDADDDD-DDDA-DDDA-DDDA-ADADDDDDDADA",
+        "DDDDDADD-DDAA-DDDA-ADDD-DADDDADDDDAD",
+        "ADDDADDD-AADD-DAAA-DADD-ADAAADDDDDDD"
+      ]
+    },
+    "solar_template|electrical|iscinita": {
+      "table_name": "electrical",
+      "column_name": "iscinita",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 198,
+      "min_value": "10.0",
+      "max_value": "9.99",
+      "top_k_values": [
+        {
+          "value": "9.71",
+          "count": 12
+        },
+        {
+          "value": "9.11",
+          "count": 11
+        },
+        {
+          "value": "10.9",
+          "count": 10
+        },
+        {
+          "value": "10.25",
+          "count": 10
+        },
+        {
+          "value": "10.13",
+          "count": 10
+        },
+        {
+          "value": "9.64",
+          "count": 10
+        },
+        {
+          "value": "9.55",
+          "count": 10
+        },
+        {
+          "value": "10.7",
+          "count": 9
+        },
+        {
+          "value": "10.14",
+          "count": 9
+        },
+        {
+          "value": "9.94",
+          "count": 9
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "DD.DD",
+        "DD.D",
+        "D.D"
+      ]
+    },
+    "solar_template|electrical|isccurra": {
+      "table_name": "electrical",
+      "column_name": "isccurra",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 199,
+      "min_value": "10.0",
+      "max_value": "9.99",
+      "top_k_values": [
+        {
+          "value": "9.01",
+          "count": 13
+        },
+        {
+          "value": "9.46",
+          "count": 12
+        },
+        {
+          "value": "8.98",
+          "count": 11
+        },
+        {
+          "value": "9.55",
+          "count": 10
+        },
+        {
+          "value": "9.11",
+          "count": 10
+        },
+        {
+          "value": "8.16",
+          "count": 10
+        },
+        {
+          "value": "9.34",
+          "count": 9
+        },
+        {
+          "value": "8.83",
+          "count": 9
+        },
+        {
+          "value": "8.28",
+          "count": 9
+        },
+        {
+          "value": "8.17",
+          "count": 9
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D",
+        "DD.D"
+      ]
+    },
+    "solar_template|electrical|vocinitv": {
+      "table_name": "electrical",
+      "column_name": "vocinitv",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 427,
+      "min_value": "45.02",
+      "max_value": "49.99",
+      "top_k_values": [
+        {
+          "value": "46.07",
+          "count": 7
+        },
+        {
+          "value": "45.24",
+          "count": 7
+        },
+        {
+          "value": "49.86",
+          "count": 6
+        },
+        {
+          "value": "48.41",
+          "count": 6
+        },
+        {
+          "value": "48.31",
+          "count": 6
+        },
+        {
+          "value": "47.21",
+          "count": 6
+        },
+        {
+          "value": "45.75",
+          "count": 6
+        },
+        {
+          "value": "45.57",
+          "count": 6
+        },
+        {
+          "value": "49.73",
+          "count": 5
+        },
+        {
+          "value": "49.4",
+          "count": 5
+        }
+      ],
+      "min_length": 4,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.DD",
+        "DD.D"
+      ]
+    },
+    "solar_template|electrical|voccurrv": {
+      "table_name": "electrical",
+      "column_name": "voccurrv",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 429,
+      "min_value": "43.0",
+      "max_value": "47.99",
+      "top_k_values": [
+        {
+          "value": "44.54",
+          "count": 7
+        },
+        {
+          "value": "44.13",
+          "count": 7
+        },
+        {
+          "value": "46.3",
+          "count": 6
+        },
+        {
+          "value": "45.29",
+          "count": 6
+        },
+        {
+          "value": "44.61",
+          "count": 6
+        },
+        {
+          "value": "44.19",
+          "count": 6
+        },
+        {
+          "value": "43.02",
+          "count": 6
+        },
+        {
+          "value": "47.92",
+          "count": 5
+        },
+        {
+          "value": "47.79",
+          "count": 5
+        },
+        {
+          "value": "47.78",
+          "count": 5
+        }
+      ],
+      "min_length": 4,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.DD",
+        "DD.D"
+      ]
+    },
+    "solar_template|electrical|impinita": {
+      "table_name": "electrical",
+      "column_name": "impinita",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 200,
+      "min_value": "10.0",
+      "max_value": "9.99",
+      "top_k_values": [
+        {
+          "value": "9.51",
+          "count": 16
+        },
+        {
+          "value": "8.65",
+          "count": 12
+        },
+        {
+          "value": "9.5",
+          "count": 10
+        },
+        {
+          "value": "9.99",
+          "count": 9
+        },
+        {
+          "value": "9.47",
+          "count": 9
+        },
+        {
+          "value": "9.08",
+          "count": 9
+        },
+        {
+          "value": "8.86",
+          "count": 9
+        },
+        {
+          "value": "8.47",
+          "count": 9
+        },
+        {
+          "value": "8.16",
+          "count": 9
+        },
+        {
+          "value": "9.87",
+          "count": 8
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D",
+        "DD.D"
+      ]
+    },
+    "solar_template|electrical|impcurra": {
+      "table_name": "electrical",
+      "column_name": "impcurra",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 198,
+      "min_value": "7.0",
+      "max_value": "9.0",
+      "top_k_values": [
+        {
+          "value": "8.44",
+          "count": 12
+        },
+        {
+          "value": "8.91",
+          "count": 11
+        },
+        {
+          "value": "8.79",
+          "count": 11
+        },
+        {
+          "value": "8.34",
+          "count": 11
+        },
+        {
+          "value": "7.45",
+          "count": 11
+        },
+        {
+          "value": "7.07",
+          "count": 11
+        },
+        {
+          "value": "8.64",
+          "count": 10
+        },
+        {
+          "value": "7.83",
+          "count": 10
+        },
+        {
+          "value": "8.93",
+          "count": 9
+        },
+        {
+          "value": "8.9",
+          "count": 9
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "solar_template|electrical|vmpinitv": {
+      "table_name": "electrical",
+      "column_name": "vmpinitv",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 431,
+      "min_value": "35.01",
+      "max_value": "39.98",
+      "top_k_values": [
+        {
+          "value": "38.29",
+          "count": 7
+        },
+        {
+          "value": "36.13",
+          "count": 7
+        },
+        {
+          "value": "35.65",
+          "count": 7
+        },
+        {
+          "value": "35.34",
+          "count": 6
+        },
+        {
+          "value": "39.98",
+          "count": 5
+        },
+        {
+          "value": "39.79",
+          "count": 5
+        },
+        {
+          "value": "39.58",
+          "count": 5
+        },
+        {
+          "value": "39.0",
+          "count": 5
+        },
+        {
+          "value": "38.11",
+          "count": 5
+        },
+        {
+          "value": "38.09",
+          "count": 5
+        }
+      ],
+      "min_length": 4,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.DD",
+        "DD.D"
+      ]
+    },
+    "solar_template|electrical|vmpcurrv": {
+      "table_name": "electrical",
+      "column_name": "vmpcurrv",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 433,
+      "min_value": "33.01",
+      "max_value": "38.0",
+      "top_k_values": [
+        {
+          "value": "35.08",
+          "count": 7
+        },
+        {
+          "value": "34.08",
+          "count": 7
+        },
+        {
+          "value": "33.94",
+          "count": 7
+        },
+        {
+          "value": "33.67",
+          "count": 7
+        },
+        {
+          "value": "36.96",
+          "count": 6
+        },
+        {
+          "value": "36.83",
+          "count": 6
+        },
+        {
+          "value": "36.78",
+          "count": 6
+        },
+        {
+          "value": "37.77",
+          "count": 5
+        },
+        {
+          "value": "37.67",
+          "count": 5
+        },
+        {
+          "value": "37.48",
+          "count": 5
+        }
+      ],
+      "min_length": 4,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.DD",
+        "DD.D"
+      ]
+    },
+    "solar_template|electrical|ffactorinit": {
+      "table_name": "electrical",
+      "column_name": "ffactorinit",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 101,
+      "min_value": "0.75",
+      "max_value": "0.85",
+      "top_k_values": [
+        {
+          "value": "0.805",
+          "count": 17
+        },
+        {
+          "value": "0.826",
+          "count": 16
+        },
+        {
+          "value": "0.791",
+          "count": 16
+        },
+        {
+          "value": "0.772",
+          "count": 16
+        },
+        {
+          "value": "0.781",
+          "count": 15
+        },
+        {
+          "value": "0.767",
+          "count": 15
+        },
+        {
+          "value": "0.844",
+          "count": 14
+        },
+        {
+          "value": "0.842",
+          "count": 14
+        },
+        {
+          "value": "0.838",
+          "count": 14
+        },
+        {
+          "value": "0.832",
+          "count": 14
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "solar_template|electrical|ffactorcurr": {
+      "table_name": "electrical",
+      "column_name": "ffactorcurr",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 101,
+      "min_value": "0.7",
+      "max_value": "0.8",
+      "top_k_values": [
+        {
+          "value": "0.742",
+          "count": 20
+        },
+        {
+          "value": "0.765",
+          "count": 17
+        },
+        {
+          "value": "0.755",
+          "count": 17
+        },
+        {
+          "value": "0.732",
+          "count": 16
+        },
+        {
+          "value": "0.712",
+          "count": 16
+        },
+        {
+          "value": "0.762",
+          "count": 15
+        },
+        {
+          "value": "0.756",
+          "count": 15
+        },
+        {
+          "value": "0.75",
+          "count": 15
+        },
+        {
+          "value": "0.708",
+          "count": 15
+        },
+        {
+          "value": "0.703",
+          "count": 15
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "solar_template|electrical|seriesresohm": {
+      "table_name": "electrical",
+      "column_name": "seriesresohm",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 612,
+      "min_value": "0.102",
+      "max_value": "0.997",
+      "top_k_values": [
+        {
+          "value": "0.931",
+          "count": 5
+        },
+        {
+          "value": "0.757",
+          "count": 5
+        },
+        {
+          "value": "0.706",
+          "count": 5
+        },
+        {
+          "value": "0.676",
+          "count": 5
+        },
+        {
+          "value": "0.883",
+          "count": 4
+        },
+        {
+          "value": "0.821",
+          "count": 4
+        },
+        {
+          "value": "0.738",
+          "count": 4
+        },
+        {
+          "value": "0.615",
+          "count": 4
+        },
+        {
+          "value": "0.599",
+          "count": 4
+        },
+        {
+          "value": "0.452",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "solar_template|electrical|shuntresohm": {
+      "table_name": "electrical",
+      "column_name": "shuntresohm",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 947,
+      "min_value": "201.7",
+      "max_value": "999.8",
+      "top_k_values": [
+        {
+          "value": "965.5",
+          "count": 3
+        },
+        {
+          "value": "595.6",
+          "count": 3
+        },
+        {
+          "value": "521.2",
+          "count": 3
+        },
+        {
+          "value": "437.3",
+          "count": 3
+        },
+        {
+          "value": "981.4",
+          "count": 2
+        },
+        {
+          "value": "967.6",
+          "count": 2
+        },
+        {
+          "value": "907.9",
+          "count": 2
+        },
+        {
+          "value": "900.0",
+          "count": 2
+        },
+        {
+          "value": "895.4",
+          "count": 2
+        },
+        {
+          "value": "829.4",
+          "count": 2
+        }
+      ],
+      "min_length": 5,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDD.D"
+      ]
+    },
+    "solar_template|environment|envregistry": {
+      "table_name": "environment",
+      "column_name": "envregistry",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "00564c61-9386-4fbf-ab33-85ba0bde2515",
+      "max_value": "ffb6a6cb-8f34-4c9b-ad59-664b63a4dde6",
+      "top_k_values": [
+        {
+          "value": "00564c61-9386-4fbf-ab33-85ba0bde2515",
+          "count": 1
+        },
+        {
+          "value": "007974ad-ef38-4d2e-9c5a-19a5bff49ea1",
+          "count": 1
+        },
+        {
+          "value": "00a38ef9-3bad-4201-8114-28292775280f",
+          "count": 1
+        },
+        {
+          "value": "00a6cf27-9040-4600-91a3-56c4ee38ff83",
+          "count": 1
+        },
+        {
+          "value": "00aa8f38-bdb6-4a5c-b6a5-2690c2306cfd",
+          "count": 1
+        },
+        {
+          "value": "00bfcb5b-37fb-43a8-9823-30d4dd62defe",
+          "count": 1
+        },
+        {
+          "value": "0111f9c4-6303-414c-a8cd-ca155cae7c44",
+          "count": 1
+        },
+        {
+          "value": "01200746-5236-4240-a354-66905e42de43",
+          "count": 1
+        },
+        {
+          "value": "0164857c-92c9-473c-b60e-93d6dfe47b1b",
+          "count": 1
+        },
+        {
+          "value": "019f22cf-2b5d-4e95-a2d0-9dcacc33c275",
+          "count": 1
+        }
+      ],
+      "min_length": 36,
+      "max_length": 36,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDDDADD-ADAA-DAAA-AADD-AAAADDAADAAD",
+        "DDADDDAD-DAAD-DDAA-ADAD-DDADDAAADDDA",
+        "ADDADDDD-DDDA-DDDA-DDDA-ADADDDDDDADA",
+        "DDDDDADD-DDAA-DDDA-ADDD-DADDDADDDDAD",
+        "ADDDADDD-AADD-DAAA-DADD-ADAAADDDDDDD"
+      ]
+    },
+    "solar_template|environment|arearegistry": {
+      "table_name": "environment",
+      "column_name": "arearegistry",
+      "column_type": "TEXT(36)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "00564c61-9386-4fbf-ab33-85ba0bde2515",
+      "max_value": "ffb6a6cb-8f34-4c9b-ad59-664b63a4dde6",
+      "top_k_values": [
+        {
+          "value": "ffb6a6cb-8f34-4c9b-ad59-664b63a4dde6",
+          "count": 1
+        },
+        {
+          "value": "ff910d02-3a42-46e3-9d22-8fcd85fe7598",
+          "count": 1
+        },
+        {
+          "value": "ff4076d8-ff1c-421f-b6bf-0978206b792e",
+          "count": 1
+        },
+        {
+          "value": "ff20a5f7-2950-4916-af84-bae8455bfe94",
+          "count": 1
+        },
+        {
+          "value": "febebd33-941d-400a-b1a6-ada0bcbc653f",
+          "count": 1
+        },
+        {
+          "value": "fe1fd562-b108-42e0-b67e-05bf4ac9152a",
+          "count": 1
+        },
+        {
+          "value": "fe0db5c7-6138-419f-b7b2-846087c0c3ca",
+          "count": 1
+        },
+        {
+          "value": "fd9ad843-2ba1-4395-861d-40ede3ba1c72",
+          "count": 1
+        },
+        {
+          "value": "fd99f6f0-2fc6-45ba-8f00-a05ea3fcaa78",
+          "count": 1
+        },
+        {
+          "value": "fd345ca9-7560-4398-94be-f9fc6349d726",
+          "count": 1
+        }
+      ],
+      "min_length": 36,
+      "max_length": 36,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDDDADD-ADAA-DAAA-AADD-AAAADDAADAAD",
+        "DDADDDAD-DAAD-DDAA-ADAD-DDADDAAADDDA",
+        "ADDADDDD-DDDA-DDDA-DDDA-ADADDDDDDADA",
+        "DDDDDADD-DDAA-DDDA-ADDD-DADDDADDDDAD",
+        "ADDDADDD-AADD-DAAA-DADD-ADAAADDDDDDD"
+      ]
+    },
+    "solar_template|environment|envmoment": {
+      "table_name": "environment",
+      "column_name": "envmoment",
+      "column_type": "TEXT(6)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "2015-03-06 23:44:15.061367",
+      "max_value": "2025-02-16 18:54:12.141865",
+      "top_k_values": [
+        {
+          "value": "2025-02-16 18:54:12.141865",
+          "count": 1
+        },
+        {
+          "value": "2025-02-11 16:51:49.061367",
+          "count": 1
+        },
+        {
+          "value": "2025-02-07 13:00:14.145392",
+          "count": 1
+        },
+        {
+          "value": "2025-02-06 16:34:23.15073",
+          "count": 1
+        },
+        {
+          "value": "2025-02-04 21:13:42.08302",
+          "count": 1
+        },
+        {
+          "value": "2025-02-03 01:14:42.053478",
+          "count": 1
+        },
+        {
+          "value": "2025-01-27 21:54:53.066086",
+          "count": 1
+        },
+        {
+          "value": "2025-01-25 16:17:18.149719",
+          "count": 1
+        },
+        {
+          "value": "2025-01-23 05:33:41.076834",
+          "count": 1
+        },
+        {
+          "value": "2025-01-19 20:14:14.089131",
+          "count": 1
+        }
+      ],
+      "min_length": 25,
+      "max_length": 26,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDD-DD-DD DD:DD:DD.DDDDDD",
+        "DDDD-DD-DD DD:DD:DD.DDDDD"
+      ]
+    },
+    "solar_template|environment|celltempc": {
+      "table_name": "environment",
+      "column_name": "celltempc",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 424,
+      "min_value": "25.1",
+      "max_value": "75.0",
+      "top_k_values": [
+        {
+          "value": "58.3",
+          "count": 7
+        },
+        {
+          "value": "41.6",
+          "count": 7
+        },
+        {
+          "value": "63.1",
+          "count": 6
+        },
+        {
+          "value": "59.5",
+          "count": 6
+        },
+        {
+          "value": "53.4",
+          "count": 6
+        },
+        {
+          "value": "47.9",
+          "count": 6
+        },
+        {
+          "value": "40.9",
+          "count": 6
+        },
+        {
+          "value": "32.3",
+          "count": 6
+        },
+        {
+          "value": "28.3",
+          "count": 6
+        },
+        {
+          "value": "73.3",
+          "count": 5
+        }
+      ],
+      "min_length": 4,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DD.D"
+      ]
+    },
+    "solar_template|environment|ambtempc": {
+      "table_name": "environment",
+      "column_name": "ambtempc",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 2,
+      "non_null_count": 998,
+      "distinct_count": 460,
+      "min_value": "-0.1",
+      "max_value": "9.9",
+      "top_k_values": [
+        {
+          "value": "35.1",
+          "count": 6
+        },
+        {
+          "value": "22.4",
+          "count": 6
+        },
+        {
+          "value": "17.1",
+          "count": 6
+        },
+        {
+          "value": "9.4",
+          "count": 6
+        },
+        {
+          "value": "3.5",
+          "count": 6
+        },
+        {
+          "value": "0.2",
+          "count": 6
+        },
+        {
+          "value": "42.4",
+          "count": 5
+        },
+        {
+          "value": "39.8",
+          "count": 5
+        },
+        {
+          "value": "38.8",
+          "count": 5
+        },
+        {
+          "value": "38.4",
+          "count": 5
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.D",
+        "D.D",
+        "-D.D",
+        "-DD.D"
+      ]
+    },
+    "solar_template|environment|soillosspct": {
+      "table_name": "environment",
+      "column_name": "soillosspct",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 724,
+      "min_value": "0.02",
+      "max_value": "9.93",
+      "top_k_values": [
+        {
+          "value": "10.12",
+          "count": 5
+        },
+        {
+          "value": "3.86",
+          "count": 5
+        },
+        {
+          "value": "2.29",
+          "count": 5
+        },
+        {
+          "value": "1.22",
+          "count": 5
+        },
+        {
+          "value": "14.87",
+          "count": 4
+        },
+        {
+          "value": "5.94",
+          "count": 4
+        },
+        {
+          "value": "3.16",
+          "count": 4
+        },
+        {
+          "value": "0.02",
+          "count": 4
+        },
+        {
+          "value": "13.22",
+          "count": 3
+        },
+        {
+          "value": "13.05",
+          "count": 3
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "DD.DD",
+        "D.D",
+        "DD.D"
+      ]
+    },
+    "solar_template|environment|dustdengm2": {
+      "table_name": "environment",
+      "column_name": "dustdengm2",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 916,
+      "min_value": "0.006",
+      "max_value": "4.993",
+      "top_k_values": [
+        {
+          "value": "1.856",
+          "count": 5
+        },
+        {
+          "value": "4.13",
+          "count": 4
+        },
+        {
+          "value": "4.626",
+          "count": 3
+        },
+        {
+          "value": "2.837",
+          "count": 3
+        },
+        {
+          "value": "2.506",
+          "count": 3
+        },
+        {
+          "value": "2.14",
+          "count": 3
+        },
+        {
+          "value": "4.989",
+          "count": 2
+        },
+        {
+          "value": "4.858",
+          "count": 2
+        },
+        {
+          "value": "4.843",
+          "count": 2
+        },
+        {
+          "value": "4.757",
+          "count": 2
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "solar_template|environment|cleancycledays": {
+      "table_name": "environment",
+      "column_name": "cleancycledays",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 54,
+      "min_value": "10",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "9",
+          "count": 28
+        },
+        {
+          "value": "12",
+          "count": 27
+        },
+        {
+          "value": "21",
+          "count": 26
+        },
+        {
+          "value": "54",
+          "count": 24
+        },
+        {
+          "value": "46",
+          "count": 24
+        },
+        {
+          "value": "27",
+          "count": 24
+        },
+        {
+          "value": "25",
+          "count": 24
+        },
+        {
+          "value": "56",
+          "count": 23
+        },
+        {
+          "value": "39",
+          "count": 22
+        },
+        {
+          "value": "37",
+          "count": 22
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D"
+      ]
+    },
+    "solar_template|environment|lastcleandt": {
+      "table_name": "environment",
+      "column_name": "lastcleandt",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 61,
+      "min_value": "2024-12-21",
+      "max_value": "2025-02-19",
+      "top_k_values": [
+        {
+          "value": "2025-02-15",
+          "count": 24
+        },
+        {
+          "value": "2025-02-19",
+          "count": 23
+        },
+        {
+          "value": "2024-12-22",
+          "count": 23
+        },
+        {
+          "value": "2025-01-30",
+          "count": 22
+        },
+        {
+          "value": "2024-12-31",
+          "count": 22
+        },
+        {
+          "value": "2025-02-13",
+          "count": 21
+        },
+        {
+          "value": "2025-01-29",
+          "count": 21
+        },
+        {
+          "value": "2024-12-21",
+          "count": 21
+        },
+        {
+          "value": "2025-02-12",
+          "count": 20
+        },
+        {
+          "value": "2025-01-19",
+          "count": 20
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDD-DD-DD"
+      ]
+    },
+    "solar_template|environment|relhumpct": {
+      "table_name": "environment",
+      "column_name": "relhumpct",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 1,
+      "non_null_count": 999,
+      "distinct_count": 628,
+      "min_value": "0.1",
+      "max_value": "99.9",
+      "top_k_values": [
+        {
+          "value": "98.7",
+          "count": 6
+        },
+        {
+          "value": "84.1",
+          "count": 5
+        },
+        {
+          "value": "74.4",
+          "count": 5
+        },
+        {
+          "value": "10.6",
+          "count": 5
+        },
+        {
+          "value": "2.5",
+          "count": 5
+        },
+        {
+          "value": "98.5",
+          "count": 4
+        },
+        {
+          "value": "98.1",
+          "count": 4
+        },
+        {
+          "value": "97.4",
+          "count": 4
+        },
+        {
+          "value": "97.0",
+          "count": 4
+        },
+        {
+          "value": "87.7",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.D",
+        "D.D",
+        "DDD.D"
+      ]
+    },
+    "solar_template|environment|windspdms": {
+      "table_name": "environment",
+      "column_name": "windspdms",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 1,
+      "non_null_count": 999,
+      "distinct_count": 241,
+      "min_value": "0.1",
+      "max_value": "9.9",
+      "top_k_values": [
+        {
+          "value": "23.7",
+          "count": 10
+        },
+        {
+          "value": "23.0",
+          "count": 9
+        },
+        {
+          "value": "5.0",
+          "count": 9
+        },
+        {
+          "value": "3.1",
+          "count": 9
+        },
+        {
+          "value": "22.3",
+          "count": 8
+        },
+        {
+          "value": "19.6",
+          "count": 8
+        },
+        {
+          "value": "19.5",
+          "count": 8
+        },
+        {
+          "value": "17.9",
+          "count": 8
+        },
+        {
+          "value": "11.9",
+          "count": 8
+        },
+        {
+          "value": "11.6",
+          "count": 8
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.D",
+        "D.D"
+      ]
+    },
+    "solar_template|environment|winddirdeg": {
+      "table_name": "environment",
+      "column_name": "winddirdeg",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 875,
+      "min_value": "0.1",
+      "max_value": "99.9",
+      "top_k_values": [
+        {
+          "value": "336.7",
+          "count": 3
+        },
+        {
+          "value": "333.3",
+          "count": 3
+        },
+        {
+          "value": "303.8",
+          "count": 3
+        },
+        {
+          "value": "279.0",
+          "count": 3
+        },
+        {
+          "value": "242.9",
+          "count": 3
+        },
+        {
+          "value": "221.6",
+          "count": 3
+        },
+        {
+          "value": "359.1",
+          "count": 2
+        },
+        {
+          "value": "357.3",
+          "count": 2
+        },
+        {
+          "value": "354.7",
+          "count": 2
+        },
+        {
+          "value": "353.5",
+          "count": 2
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD.D",
+        "DD.D",
+        "D.D"
+      ]
+    },
+    "solar_template|environment|preciptmm": {
+      "table_name": "environment",
+      "column_name": "preciptmm",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 1,
+      "non_null_count": 999,
+      "distinct_count": 423,
+      "min_value": "0.1",
+      "max_value": "9.9",
+      "top_k_values": [
+        {
+          "value": "13.9",
+          "count": 8
+        },
+        {
+          "value": "46.8",
+          "count": 7
+        },
+        {
+          "value": "21.0",
+          "count": 7
+        },
+        {
+          "value": "14.0",
+          "count": 7
+        },
+        {
+          "value": "1.7",
+          "count": 7
+        },
+        {
+          "value": "45.5",
+          "count": 6
+        },
+        {
+          "value": "22.3",
+          "count": 6
+        },
+        {
+          "value": "9.9",
+          "count": 6
+        },
+        {
+          "value": "8.3",
+          "count": 6
+        },
+        {
+          "value": "7.7",
+          "count": 6
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.D",
+        "D.D"
+      ]
+    },
+    "solar_template|environment|airpresshpa": {
+      "table_name": "environment",
+      "column_name": "airpresshpa",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 799,
+      "min_value": "1000.0",
+      "max_value": "999.8",
+      "top_k_values": [
+        {
+          "value": "934.7",
+          "count": 4
+        },
+        {
+          "value": "1097.7",
+          "count": 3
+        },
+        {
+          "value": "1080.5",
+          "count": 3
+        },
+        {
+          "value": "1063.9",
+          "count": 3
+        },
+        {
+          "value": "1062.7",
+          "count": 3
+        },
+        {
+          "value": "1050.4",
+          "count": 3
+        },
+        {
+          "value": "1045.7",
+          "count": 3
+        },
+        {
+          "value": "1044.3",
+          "count": 3
+        },
+        {
+          "value": "1042.9",
+          "count": 3
+        },
+        {
+          "value": "1038.5",
+          "count": 3
+        }
+      ],
+      "min_length": 5,
+      "max_length": 6,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDD.D",
+        "DDD.D"
+      ]
+    },
+    "solar_template|environment|uv_idx": {
+      "table_name": "environment",
+      "column_name": "uv_idx",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 4,
+      "non_null_count": 996,
+      "distinct_count": 120,
+      "min_value": "0.1",
+      "max_value": "9.9",
+      "top_k_values": [
+        {
+          "value": "8.0",
+          "count": 16
+        },
+        {
+          "value": "3.4",
+          "count": 16
+        },
+        {
+          "value": "0.6",
+          "count": 14
+        },
+        {
+          "value": "11.1",
+          "count": 13
+        },
+        {
+          "value": "8.8",
+          "count": 13
+        },
+        {
+          "value": "7.2",
+          "count": 13
+        },
+        {
+          "value": "4.3",
+          "count": 13
+        },
+        {
+          "value": "3.1",
+          "count": 13
+        },
+        {
+          "value": "1.4",
+          "count": 13
+        },
+        {
+          "value": "1.1",
+          "count": 13
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.D",
+        "DD.D"
+      ]
+    },
+    "solar_template|environment|cloudcovpct": {
+      "table_name": "environment",
+      "column_name": "cloudcovpct",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 640,
+      "min_value": "0.1",
+      "max_value": "99.9",
+      "top_k_values": [
+        {
+          "value": "64.2",
+          "count": 6
+        },
+        {
+          "value": "32.8",
+          "count": 6
+        },
+        {
+          "value": "81.0",
+          "count": 5
+        },
+        {
+          "value": "68.0",
+          "count": 5
+        },
+        {
+          "value": "99.4",
+          "count": 4
+        },
+        {
+          "value": "97.0",
+          "count": 4
+        },
+        {
+          "value": "94.4",
+          "count": 4
+        },
+        {
+          "value": "88.6",
+          "count": 4
+        },
+        {
+          "value": "85.8",
+          "count": 4
+        },
+        {
+          "value": "81.4",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.D",
+        "D.D",
+        "DDD.D"
+      ]
+    },
+    "solar_template|environment|snowcovpct": {
+      "table_name": "environment",
+      "column_name": "snowcovpct",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 1,
+      "non_null_count": 999,
+      "distinct_count": 634,
+      "min_value": "0.1",
+      "max_value": "99.9",
+      "top_k_values": [
+        {
+          "value": "35.9",
+          "count": 5
+        },
+        {
+          "value": "74.7",
+          "count": 4
+        },
+        {
+          "value": "72.7",
+          "count": 4
+        },
+        {
+          "value": "59.7",
+          "count": 4
+        },
+        {
+          "value": "56.0",
+          "count": 4
+        },
+        {
+          "value": "51.8",
+          "count": 4
+        },
+        {
+          "value": "36.1",
+          "count": 4
+        },
+        {
+          "value": "29.2",
+          "count": 4
+        },
+        {
+          "value": "27.5",
+          "count": 4
+        },
+        {
+          "value": "22.1",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.D",
+        "D.D"
+      ]
+    },
+    "solar_template|environment|irradiance_conditions": {
+      "table_name": "environment",
+      "column_name": "irradiance_conditions",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "{\"specmisfac\": 0.950, \"irradiance_types\": [1002.00, 149.8, 143.100, 1156.400]}",
+      "max_value": "{\"specmisfac\": 1.050, \"irradiance_types\": [779.90, 280.7, 70.600, 568.700]}",
+      "top_k_values": [
+        {
+          "value": "{\"specmisfac\": 1.050, \"irradiance_types\": [779.90, 280.7, 70.600, 568.700]}",
+          "count": 1
+        },
+        {
+          "value": "{\"specmisfac\": 1.050, \"irradiance_types\": [489.90, 381.2, 196.100, 131.600]}",
+          "count": 1
+        },
+        {
+          "value": "{\"specmisfac\": 1.050, \"irradiance_types\": [445.50, 670.8, 154.400, 1125.100]}",
+          "count": 1
+        },
+        {
+          "value": "{\"specmisfac\": 1.050, \"irradiance_types\": [369.10, 471.5, 15.700, 452.900]}",
+          "count": 1
+        },
+        {
+          "value": "{\"specmisfac\": 1.050, \"irradiance_types\": [354.30, 22.5, 194.100, 924.600]}",
+          "count": 1
+        },
+        {
+          "value": "{\"specmisfac\": 1.050, \"irradiance_types\": [330.30, 817.0, 178.300, 1194.100]}",
+          "count": 1
+        },
+        {
+          "value": "{\"specmisfac\": 1.050, \"irradiance_types\": [321.30, 387.3, 130.700, 1010.300]}",
+          "count": 1
+        },
+        {
+          "value": "{\"specmisfac\": 1.050, \"irradiance_types\": [1112.30, 665.0, 9.900, 114.600]}",
+          "count": 1
+        },
+        {
+          "value": "{\"specmisfac\": 1.049, \"irradiance_types\": [994.20, 238.0, 125.400, 182.500]}",
+          "count": 1
+        },
+        {
+          "value": "{\"specmisfac\": 1.049, \"irradiance_types\": [783.40, 933.7, 72.500, 409.300]}",
+          "count": 1
+        }
+      ],
+      "min_length": 72,
+      "max_length": 78,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "{\"AAAAAAAAAA\": D.DDD, \"AAAAAAAAAA_AAAAA\": [DDD.DD, DDD.D, DDD.DDD, DDD.DDD]}",
+        "{\"AAAAAAAAAA\": D.DDD, \"AAAAAAAAAA_AAAAA\": [DDD.DD, DDD.D, DD.DDD, DDD.DDD]}",
+        "{\"AAAAAAAAAA\": D.DDD, \"AAAAAAAAAA_AAAAA\": [DDDD.DD, DDD.D, DDD.DDD, DDD.DDD]}",
+        "{\"AAAAAAAAAA\": D.DDD, \"AAAAAAAAAA_AAAAA\": [DDD.DD, DDD.D, DDD.DDD, DDDD.DDD]}",
+        "{\"AAAAAAAAAA\": D.DDD, \"AAAAAAAAAA_AAAAA\": [DDDD.DD, DDD.D, DD.DDD, DDD.DDD]}"
+      ]
+    },
+    "solar_template|environment|irradiance_conditions.specmisfac": {
+      "table_name": "environment",
+      "column_name": "irradiance_conditions.specmisfac",
+      "column_type": "JSON field",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 101,
+      "min_value": "0.95",
+      "max_value": "1.05",
+      "top_k_values": [
+        {
+          "value": "0.973",
+          "count": 19
+        },
+        {
+          "value": "0.96",
+          "count": 18
+        },
+        {
+          "value": "1.026",
+          "count": 17
+        },
+        {
+          "value": "1.034",
+          "count": 16
+        },
+        {
+          "value": "0.959",
+          "count": 15
+        },
+        {
+          "value": "1.033",
+          "count": 15
+        },
+        {
+          "value": "1.028",
+          "count": 15
+        },
+        {
+          "value": "0.955",
+          "count": 14
+        },
+        {
+          "value": "0.968",
+          "count": 14
+        },
+        {
+          "value": "0.958",
+          "count": 14
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "solar_template|environment|irradiance_conditions.irradiance_types": {
+      "table_name": "environment",
+      "column_name": "irradiance_conditions.irradiance_types",
+      "column_type": "JSON field",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "[0.7, 285.1, 191.8, 920.9]",
+      "max_value": "[998.4, 975.3, 137.1, 293.7]",
+      "top_k_values": [
+        {
+          "value": "[530.4, 169.3, 44.1, 135.1]",
+          "count": 1
+        },
+        {
+          "value": "[556.4, 686.2, 81.9, 500.1]",
+          "count": 1
+        },
+        {
+          "value": "[637.1, 656.6, 71.4, 1155.0]",
+          "count": 1
+        },
+        {
+          "value": "[684.4, 710.7, 199.5, 468.6]",
+          "count": 1
+        },
+        {
+          "value": "[329.5, 945.9, 87.6, 180.1]",
+          "count": 1
+        },
+        {
+          "value": "[745.3, 118.8, 67.0, 165.3]",
+          "count": 1
+        },
+        {
+          "value": "[1138.0, 169.1, 60.8, 159.1]",
+          "count": 1
+        },
+        {
+          "value": "[604.7, 231.4, 157.8, 1039.1]",
+          "count": 1
+        },
+        {
+          "value": "[462.4, 649.7, 34.6, 72.7]",
+          "count": 1
+        },
+        {
+          "value": "[1113.8, 94.1, 149.4, 841.3]",
+          "count": 1
+        }
+      ],
+      "min_length": 24,
+      "max_length": 30,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "[DDD.D, DDD.D, DDD.D, DDD.D]",
+        "[DDD.D, DDD.D, DD.D, DDD.D]",
+        "[DDDD.D, DDD.D, DDD.D, DDD.D]",
+        "[DDD.D, DDD.D, DDD.D, DDDD.D]",
+        "[DDDD.D, DDD.D, DD.D, DDD.D]"
+      ]
+    },
+    "solar_template|inverter|invertregistry": {
+      "table_name": "inverter",
+      "column_name": "invertregistry",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "00564c61-9386-4fbf-ab33-85ba0bde2515",
+      "max_value": "ffb6a6cb-8f34-4c9b-ad59-664b63a4dde6",
+      "top_k_values": [
+        {
+          "value": "00564c61-9386-4fbf-ab33-85ba0bde2515",
+          "count": 1
+        },
+        {
+          "value": "007974ad-ef38-4d2e-9c5a-19a5bff49ea1",
+          "count": 1
+        },
+        {
+          "value": "00a38ef9-3bad-4201-8114-28292775280f",
+          "count": 1
+        },
+        {
+          "value": "00a6cf27-9040-4600-91a3-56c4ee38ff83",
+          "count": 1
+        },
+        {
+          "value": "00aa8f38-bdb6-4a5c-b6a5-2690c2306cfd",
+          "count": 1
+        },
+        {
+          "value": "00bfcb5b-37fb-43a8-9823-30d4dd62defe",
+          "count": 1
+        },
+        {
+          "value": "0111f9c4-6303-414c-a8cd-ca155cae7c44",
+          "count": 1
+        },
+        {
+          "value": "01200746-5236-4240-a354-66905e42de43",
+          "count": 1
+        },
+        {
+          "value": "0164857c-92c9-473c-b60e-93d6dfe47b1b",
+          "count": 1
+        },
+        {
+          "value": "019f22cf-2b5d-4e95-a2d0-9dcacc33c275",
+          "count": 1
+        }
+      ],
+      "min_length": 36,
+      "max_length": 36,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDADDDD-AADD-DDAD-ADDD-DDDDDDDADDDA",
+        "DAADAADA-DDDD-DDAA-AADD-AAADADAAADAA",
+        "AADADDDD-DADA-DDDD-AAAA-DADDAAAADDAD",
+        "DADDDADA-DDAD-DDAD-DAAA-ADDADDDDDDAD",
+        "DDDDDADD-ADDD-DDDA-DDAD-DDDADDDAADDD"
+      ]
+    },
+    "solar_template|inverter|siteref": {
+      "table_name": "inverter",
+      "column_name": "siteref",
+      "column_type": "TEXT(36)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "00564c61-9386-4fbf-ab33-85ba0bde2515",
+      "max_value": "ffb6a6cb-8f34-4c9b-ad59-664b63a4dde6",
+      "top_k_values": [
+        {
+          "value": "ffb6a6cb-8f34-4c9b-ad59-664b63a4dde6",
+          "count": 1
+        },
+        {
+          "value": "ff910d02-3a42-46e3-9d22-8fcd85fe7598",
+          "count": 1
+        },
+        {
+          "value": "ff4076d8-ff1c-421f-b6bf-0978206b792e",
+          "count": 1
+        },
+        {
+          "value": "ff20a5f7-2950-4916-af84-bae8455bfe94",
+          "count": 1
+        },
+        {
+          "value": "febebd33-941d-400a-b1a6-ada0bcbc653f",
+          "count": 1
+        },
+        {
+          "value": "fe1fd562-b108-42e0-b67e-05bf4ac9152a",
+          "count": 1
+        },
+        {
+          "value": "fe0db5c7-6138-419f-b7b2-846087c0c3ca",
+          "count": 1
+        },
+        {
+          "value": "fd9ad843-2ba1-4395-861d-40ede3ba1c72",
+          "count": 1
+        },
+        {
+          "value": "fd99f6f0-2fc6-45ba-8f00-a05ea3fcaa78",
+          "count": 1
+        },
+        {
+          "value": "fd345ca9-7560-4398-94be-f9fc6349d726",
+          "count": 1
+        }
+      ],
+      "min_length": 36,
+      "max_length": 36,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDADDDD-AADD-DDAD-ADDD-DDDDDDDADDDA",
+        "DAADAADA-DDDD-DDAA-AADD-AAADADAAADAA",
+        "AADADDDD-DADA-DDDD-AAAA-DADDAAAADDAD",
+        "DADDDADA-DDAD-DDAD-DAAA-ADDADDDDDDAD",
+        "DDDDDADD-ADDD-DDDA-DDAD-DDDADDDAADDD"
+      ]
+    },
+    "solar_template|inverter|invertmoment": {
+      "table_name": "inverter",
+      "column_name": "invertmoment",
+      "column_type": "TEXT(6)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "2015-03-06 23:44:15.061367",
+      "max_value": "2025-02-16 18:54:12.141865",
+      "top_k_values": [
+        {
+          "value": "2025-02-16 18:54:12.141865",
+          "count": 1
+        },
+        {
+          "value": "2025-02-11 16:51:49.061367",
+          "count": 1
+        },
+        {
+          "value": "2025-02-07 13:00:14.145392",
+          "count": 1
+        },
+        {
+          "value": "2025-02-06 16:34:23.15073",
+          "count": 1
+        },
+        {
+          "value": "2025-02-04 21:13:42.08302",
+          "count": 1
+        },
+        {
+          "value": "2025-02-03 01:14:42.053478",
+          "count": 1
+        },
+        {
+          "value": "2025-01-27 21:54:53.066086",
+          "count": 1
+        },
+        {
+          "value": "2025-01-25 16:17:18.149719",
+          "count": 1
+        },
+        {
+          "value": "2025-01-23 05:33:41.076834",
+          "count": 1
+        },
+        {
+          "value": "2025-01-19 20:14:14.089131",
+          "count": 1
+        }
+      ],
+      "min_length": 25,
+      "max_length": 26,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDD-DD-DD DD:DD:DD.DDDDDD",
+        "DDDD-DD-DD DD:DD:DD.DDDDD"
+      ]
+    },
+    "solar_template|inverter|inverttempc": {
+      "table_name": "inverter",
+      "column_name": "inverttempc",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 370,
+      "min_value": "20.0",
+      "max_value": "60.0",
+      "top_k_values": [
+        {
+          "value": "41.2",
+          "count": 10
+        },
+        {
+          "value": "30.5",
+          "count": 8
+        },
+        {
+          "value": "50.5",
+          "count": 7
+        },
+        {
+          "value": "43.4",
+          "count": 7
+        },
+        {
+          "value": "35.5",
+          "count": 7
+        },
+        {
+          "value": "35.4",
+          "count": 7
+        },
+        {
+          "value": "57.7",
+          "count": 6
+        },
+        {
+          "value": "47.5",
+          "count": 6
+        },
+        {
+          "value": "47.3",
+          "count": 6
+        },
+        {
+          "value": "47.2",
+          "count": 6
+        }
+      ],
+      "min_length": 4,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DD.D"
+      ]
+    },
+    "solar_template|inverter|gridvolt": {
+      "table_name": "inverter",
+      "column_name": "gridvolt",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 199,
+      "min_value": "220.0",
+      "max_value": "240.0",
+      "top_k_values": [
+        {
+          "value": "234.2",
+          "count": 13
+        },
+        {
+          "value": "229.3",
+          "count": 12
+        },
+        {
+          "value": "238.3",
+          "count": 10
+        },
+        {
+          "value": "236.3",
+          "count": 10
+        },
+        {
+          "value": "226.1",
+          "count": 10
+        },
+        {
+          "value": "221.5",
+          "count": 10
+        },
+        {
+          "value": "237.7",
+          "count": 9
+        },
+        {
+          "value": "227.3",
+          "count": 9
+        },
+        {
+          "value": "223.2",
+          "count": 9
+        },
+        {
+          "value": "239.8",
+          "count": 8
+        }
+      ],
+      "min_length": 5,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDD.D"
+      ]
+    },
+    "solar_template|inverter|gridfreqhz": {
+      "table_name": "inverter",
+      "column_name": "gridfreqhz",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 101,
+      "min_value": "49.5",
+      "max_value": "50.5",
+      "top_k_values": [
+        {
+          "value": "50.2",
+          "count": 17
+        },
+        {
+          "value": "49.74",
+          "count": 17
+        },
+        {
+          "value": "49.89",
+          "count": 16
+        },
+        {
+          "value": "50.47",
+          "count": 15
+        },
+        {
+          "value": "50.43",
+          "count": 15
+        },
+        {
+          "value": "50.42",
+          "count": 15
+        },
+        {
+          "value": "50.34",
+          "count": 15
+        },
+        {
+          "value": "50.3",
+          "count": 15
+        },
+        {
+          "value": "50.17",
+          "count": 15
+        },
+        {
+          "value": "50.09",
+          "count": 15
+        }
+      ],
+      "min_length": 4,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.DD",
+        "DD.D"
+      ]
+    },
+    "solar_template|inverter|pwrqualidx": {
+      "table_name": "inverter",
+      "column_name": "pwrqualidx",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 650,
+      "min_value": "0.002",
+      "max_value": "0.999",
+      "top_k_values": [
+        {
+          "value": "0.233",
+          "count": 6
+        },
+        {
+          "value": "0.913",
+          "count": 4
+        },
+        {
+          "value": "0.778",
+          "count": 4
+        },
+        {
+          "value": "0.629",
+          "count": 4
+        },
+        {
+          "value": "0.59",
+          "count": 4
+        },
+        {
+          "value": "0.525",
+          "count": 4
+        },
+        {
+          "value": "0.449",
+          "count": 4
+        },
+        {
+          "value": "0.344",
+          "count": 4
+        },
+        {
+          "value": "0.323",
+          "count": 4
+        },
+        {
+          "value": "0.27",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "solar_template|inverter|power_metrics": {
+      "table_name": "inverter",
+      "column_name": "power_metrics",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "{\"harmdistpct\": 0.010, \"reacpwrkvar\": -31.63, \"inverteffpct\": 98.070, \"invertpowfac\": 0.908}",
+      "max_value": "{\"harmdistpct\": null, \"reacpwrkvar\": -12.54, \"inverteffpct\": 97.140, \"invertpowfac\": 0.960}",
+      "top_k_values": [
+        {
+          "value": "{\"harmdistpct\": null, \"reacpwrkvar\": -12.54, \"inverteffpct\": 97.140, \"invertpowfac\": 0.960}",
+          "count": 1
+        },
+        {
+          "value": "{\"harmdistpct\": 5.000, \"reacpwrkvar\": -32.41, \"inverteffpct\": 97.400, \"invertpowfac\": 0.964}",
+          "count": 1
+        },
+        {
+          "value": "{\"harmdistpct\": 4.990, \"reacpwrkvar\": 23.03, \"inverteffpct\": 96.660, \"invertpowfac\": 0.979}",
+          "count": 1
+        },
+        {
+          "value": "{\"harmdistpct\": 4.990, \"reacpwrkvar\": 13.12, \"inverteffpct\": 97.760, \"invertpowfac\": 0.906}",
+          "count": 1
+        },
+        {
+          "value": "{\"harmdistpct\": 4.980, \"reacpwrkvar\": 88.25, \"inverteffpct\": 98.770, \"invertpowfac\": 0.998}",
+          "count": 1
+        },
+        {
+          "value": "{\"harmdistpct\": 4.980, \"reacpwrkvar\": 4.05, \"inverteffpct\": 95.670, \"invertpowfac\": 0.939}",
+          "count": 1
+        },
+        {
+          "value": "{\"harmdistpct\": 4.980, \"reacpwrkvar\": -57.72, \"inverteffpct\": 98.530, \"invertpowfac\": 0.967}",
+          "count": 1
+        },
+        {
+          "value": "{\"harmdistpct\": 4.980, \"reacpwrkvar\": -43.67, \"inverteffpct\": 95.710, \"invertpowfac\": 0.951}",
+          "count": 1
+        },
+        {
+          "value": "{\"harmdistpct\": 4.970, \"reacpwrkvar\": -2.32, \"inverteffpct\": 97.190, \"invertpowfac\": 0.914}",
+          "count": 1
+        },
+        {
+          "value": "{\"harmdistpct\": 4.960, \"reacpwrkvar\": 48.61, \"inverteffpct\": 96.840, \"invertpowfac\": 0.945}",
+          "count": 1
+        }
+      ],
+      "min_length": 90,
+      "max_length": 92,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "{\"AAAAAAAAAAA\": D.DDD, \"AAAAAAAAAAA\": DD.DD, \"AAAAAAAAAAAA\": DD.DDD, \"AAAAAAAAAAAA\": D.DDD}",
+        "{\"AAAAAAAAAAA\": D.DDD, \"AAAAAAAAAAA\": -DD.DD, \"AAAAAAAAAAAA\": DD.DDD, \"AAAAAAAAAAAA\": D.DDD}",
+        "{\"AAAAAAAAAAA\": D.DDD, \"AAAAAAAAAAA\": D.DD, \"AAAAAAAAAAAA\": DD.DDD, \"AAAAAAAAAAAA\": D.DDD}",
+        "{\"AAAAAAAAAAA\": D.DDD, \"AAAAAAAAAAA\": -D.DD, \"AAAAAAAAAAAA\": DD.DDD, \"AAAAAAAAAAAA\": D.DDD}",
+        "{\"AAAAAAAAAAA\": AAAA, \"AAAAAAAAAAA\": -DD.DD, \"AAAAAAAAAAAA\": DD.DDD, \"AAAAAAAAAAAA\": D.DDD}"
+      ]
+    },
+    "solar_template|inverter|power_metrics.harmdistpct": {
+      "table_name": "inverter",
+      "column_name": "power_metrics.harmdistpct",
+      "column_type": "JSON field",
+      "row_count": 1000,
+      "null_count": 1,
+      "non_null_count": 999,
+      "distinct_count": 424,
+      "min_value": "0.01",
+      "max_value": "5.0",
+      "top_k_values": [
+        {
+          "value": "4.01",
+          "count": 7
+        },
+        {
+          "value": "1.78",
+          "count": 7
+        },
+        {
+          "value": "1.08",
+          "count": 7
+        },
+        {
+          "value": "1.73",
+          "count": 6
+        },
+        {
+          "value": "4.47",
+          "count": 6
+        },
+        {
+          "value": "3.78",
+          "count": 6
+        },
+        {
+          "value": "4.62",
+          "count": 6
+        },
+        {
+          "value": "2.03",
+          "count": 6
+        },
+        {
+          "value": "4.05",
+          "count": 6
+        },
+        {
+          "value": "1.3",
+          "count": 6
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "solar_template|inverter|power_metrics.reacpwrkvar": {
+      "table_name": "inverter",
+      "column_name": "power_metrics.reacpwrkvar",
+      "column_type": "JSON field",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 979,
+      "min_value": "-99.86",
+      "max_value": "99.52",
+      "top_k_values": [
+        {
+          "value": "80.3",
+          "count": 2
+        },
+        {
+          "value": "-43.98",
+          "count": 2
+        },
+        {
+          "value": "-87.11",
+          "count": 2
+        },
+        {
+          "value": "-80.84",
+          "count": 2
+        },
+        {
+          "value": "-87.25",
+          "count": 2
+        },
+        {
+          "value": "-93.27",
+          "count": 2
+        },
+        {
+          "value": "-21.17",
+          "count": 2
+        },
+        {
+          "value": "28.93",
+          "count": 2
+        },
+        {
+          "value": "63.73",
+          "count": 2
+        },
+        {
+          "value": "77.88",
+          "count": 2
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.DD",
+        "-DD.DD",
+        "D.DD",
+        "DD.D",
+        "-D.DD"
+      ]
+    },
+    "solar_template|inverter|power_metrics.inverteffpct": {
+      "table_name": "inverter",
+      "column_name": "power_metrics.inverteffpct",
+      "column_type": "JSON field",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 368,
+      "min_value": "95.0",
+      "max_value": "98.99",
+      "top_k_values": [
+        {
+          "value": "97.11",
+          "count": 9
+        },
+        {
+          "value": "98.89",
+          "count": 8
+        },
+        {
+          "value": "96.05",
+          "count": 8
+        },
+        {
+          "value": "98.38",
+          "count": 7
+        },
+        {
+          "value": "97.5",
+          "count": 7
+        },
+        {
+          "value": "97.75",
+          "count": 7
+        },
+        {
+          "value": "95.32",
+          "count": 7
+        },
+        {
+          "value": "95.19",
+          "count": 6
+        },
+        {
+          "value": "98.64",
+          "count": 6
+        },
+        {
+          "value": "95.72",
+          "count": 6
+        }
+      ],
+      "min_length": 4,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.DD",
+        "DD.D"
+      ]
+    },
+    "solar_template|inverter|power_metrics.invertpowfac": {
+      "table_name": "inverter",
+      "column_name": "power_metrics.invertpowfac",
+      "column_type": "JSON field",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 101,
+      "min_value": "0.9",
+      "max_value": "1.0",
+      "top_k_values": [
+        {
+          "value": "0.926",
+          "count": 20
+        },
+        {
+          "value": "0.908",
+          "count": 17
+        },
+        {
+          "value": "0.989",
+          "count": 17
+        },
+        {
+          "value": "0.991",
+          "count": 16
+        },
+        {
+          "value": "0.928",
+          "count": 15
+        },
+        {
+          "value": "0.99",
+          "count": 15
+        },
+        {
+          "value": "0.979",
+          "count": 15
+        },
+        {
+          "value": "0.914",
+          "count": 15
+        },
+        {
+          "value": "0.983",
+          "count": 14
+        },
+        {
+          "value": "0.957",
+          "count": 14
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "solar_template|maintenance|maintregistry": {
+      "table_name": "maintenance",
+      "column_name": "maintregistry",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "00564c61-9386-4fbf-ab33-85ba0bde2515",
+      "max_value": "ffb6a6cb-8f34-4c9b-ad59-664b63a4dde6",
+      "top_k_values": [
+        {
+          "value": "00564c61-9386-4fbf-ab33-85ba0bde2515",
+          "count": 1
+        },
+        {
+          "value": "007974ad-ef38-4d2e-9c5a-19a5bff49ea1",
+          "count": 1
+        },
+        {
+          "value": "00a38ef9-3bad-4201-8114-28292775280f",
+          "count": 1
+        },
+        {
+          "value": "00a6cf27-9040-4600-91a3-56c4ee38ff83",
+          "count": 1
+        },
+        {
+          "value": "00aa8f38-bdb6-4a5c-b6a5-2690c2306cfd",
+          "count": 1
+        },
+        {
+          "value": "00bfcb5b-37fb-43a8-9823-30d4dd62defe",
+          "count": 1
+        },
+        {
+          "value": "0111f9c4-6303-414c-a8cd-ca155cae7c44",
+          "count": 1
+        },
+        {
+          "value": "01200746-5236-4240-a354-66905e42de43",
+          "count": 1
+        },
+        {
+          "value": "0164857c-92c9-473c-b60e-93d6dfe47b1b",
+          "count": 1
+        },
+        {
+          "value": "019f22cf-2b5d-4e95-a2d0-9dcacc33c275",
+          "count": 1
+        }
+      ],
+      "min_length": 36,
+      "max_length": 36,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDDDADD-ADAA-DAAA-AADD-AAAADDAADAAD",
+        "DDADDDAD-DAAD-DDAA-ADAD-DDADDAAADDDA",
+        "ADDADDDD-DDDA-DDDA-DDDA-ADADDDDDDADA",
+        "DDDDDADD-DDAA-DDDA-ADDD-DADDDADDDDAD",
+        "ADDDADDD-AADD-DAAA-DADD-ADAAADDDDDDD"
+      ]
+    },
+    "solar_template|maintenance|powerref": {
+      "table_name": "maintenance",
+      "column_name": "powerref",
+      "column_type": "TEXT(36)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "00564c61-9386-4fbf-ab33-85ba0bde2515",
+      "max_value": "ffb6a6cb-8f34-4c9b-ad59-664b63a4dde6",
+      "top_k_values": [
+        {
+          "value": "ffb6a6cb-8f34-4c9b-ad59-664b63a4dde6",
+          "count": 1
+        },
+        {
+          "value": "ff910d02-3a42-46e3-9d22-8fcd85fe7598",
+          "count": 1
+        },
+        {
+          "value": "ff4076d8-ff1c-421f-b6bf-0978206b792e",
+          "count": 1
+        },
+        {
+          "value": "ff20a5f7-2950-4916-af84-bae8455bfe94",
+          "count": 1
+        },
+        {
+          "value": "febebd33-941d-400a-b1a6-ada0bcbc653f",
+          "count": 1
+        },
+        {
+          "value": "fe1fd562-b108-42e0-b67e-05bf4ac9152a",
+          "count": 1
+        },
+        {
+          "value": "fe0db5c7-6138-419f-b7b2-846087c0c3ca",
+          "count": 1
+        },
+        {
+          "value": "fd9ad843-2ba1-4395-861d-40ede3ba1c72",
+          "count": 1
+        },
+        {
+          "value": "fd99f6f0-2fc6-45ba-8f00-a05ea3fcaa78",
+          "count": 1
+        },
+        {
+          "value": "fd345ca9-7560-4398-94be-f9fc6349d726",
+          "count": 1
+        }
+      ],
+      "min_length": 36,
+      "max_length": 36,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDDDADD-ADAA-DAAA-AADD-AAAADDAADAAD",
+        "DDADDDAD-DAAD-DDAA-ADAD-DDADDAAADDDA",
+        "ADDADDDD-DDDA-DDDA-DDDA-ADADDDDDDADA",
+        "DDDDDADD-DDAA-DDDA-ADDD-DADDDADDDDAD",
+        "ADDDADDD-AADD-DAAA-DADD-ADAAADDDDDDD"
+      ]
+    },
+    "solar_template|maintenance|compref": {
+      "table_name": "maintenance",
+      "column_name": "compref",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "00564c61-9386-4fbf-ab33-85ba0bde2515",
+      "max_value": "ffb6a6cb-8f34-4c9b-ad59-664b63a4dde6",
+      "top_k_values": [
+        {
+          "value": "ffb6a6cb-8f34-4c9b-ad59-664b63a4dde6",
+          "count": 1
+        },
+        {
+          "value": "ff910d02-3a42-46e3-9d22-8fcd85fe7598",
+          "count": 1
+        },
+        {
+          "value": "ff4076d8-ff1c-421f-b6bf-0978206b792e",
+          "count": 1
+        },
+        {
+          "value": "ff20a5f7-2950-4916-af84-bae8455bfe94",
+          "count": 1
+        },
+        {
+          "value": "febebd33-941d-400a-b1a6-ada0bcbc653f",
+          "count": 1
+        },
+        {
+          "value": "fe1fd562-b108-42e0-b67e-05bf4ac9152a",
+          "count": 1
+        },
+        {
+          "value": "fe0db5c7-6138-419f-b7b2-846087c0c3ca",
+          "count": 1
+        },
+        {
+          "value": "fd9ad843-2ba1-4395-861d-40ede3ba1c72",
+          "count": 1
+        },
+        {
+          "value": "fd99f6f0-2fc6-45ba-8f00-a05ea3fcaa78",
+          "count": 1
+        },
+        {
+          "value": "fd345ca9-7560-4398-94be-f9fc6349d726",
+          "count": 1
+        }
+      ],
+      "min_length": 36,
+      "max_length": 36,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDDDADD-ADAA-DAAA-AADD-AAAADDAADAAD",
+        "DDADDDAD-DAAD-DDAA-ADAD-DDADDAAADDDA",
+        "ADDADDDD-DDDA-DDDA-DDDA-ADADDDDDDADA",
+        "DDDDDADD-DDAA-DDDA-ADDD-DADDDADDDDAD",
+        "ADDDADDD-AADD-DAAA-DADD-ADAAADDDDDDD"
+      ]
+    },
+    "solar_template|maintenance|obsref": {
+      "table_name": "maintenance",
+      "column_name": "obsref",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "00564c61-9386-4fbf-ab33-85ba0bde2515",
+      "max_value": "ffb6a6cb-8f34-4c9b-ad59-664b63a4dde6",
+      "top_k_values": [
+        {
+          "value": "ffb6a6cb-8f34-4c9b-ad59-664b63a4dde6",
+          "count": 1
+        },
+        {
+          "value": "ff910d02-3a42-46e3-9d22-8fcd85fe7598",
+          "count": 1
+        },
+        {
+          "value": "ff4076d8-ff1c-421f-b6bf-0978206b792e",
+          "count": 1
+        },
+        {
+          "value": "ff20a5f7-2950-4916-af84-bae8455bfe94",
+          "count": 1
+        },
+        {
+          "value": "febebd33-941d-400a-b1a6-ada0bcbc653f",
+          "count": 1
+        },
+        {
+          "value": "fe1fd562-b108-42e0-b67e-05bf4ac9152a",
+          "count": 1
+        },
+        {
+          "value": "fe0db5c7-6138-419f-b7b2-846087c0c3ca",
+          "count": 1
+        },
+        {
+          "value": "fd9ad843-2ba1-4395-861d-40ede3ba1c72",
+          "count": 1
+        },
+        {
+          "value": "fd99f6f0-2fc6-45ba-8f00-a05ea3fcaa78",
+          "count": 1
+        },
+        {
+          "value": "fd345ca9-7560-4398-94be-f9fc6349d726",
+          "count": 1
+        }
+      ],
+      "min_length": 36,
+      "max_length": 36,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDDDADD-ADAA-DAAA-AADD-AAAADDAADAAD",
+        "DDADDDAD-DAAD-DDAA-ADAD-DDADDAAADDDA",
+        "ADDADDDD-DDDA-DDDA-DDDA-ADADDDDDDADA",
+        "DDDDDADD-DDAA-DDDA-ADDD-DADDDADDDDAD",
+        "ADDDADDD-AADD-DAAA-DADD-ADAAADDDDDDD"
+      ]
+    },
+    "solar_template|maintenance|inspectmeth": {
+      "table_name": "maintenance",
+      "column_name": "inspectmeth",
+      "column_type": "TEXT(100)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "EL Imaging",
+      "max_value": "Visual",
+      "top_k_values": [
+        {
+          "value": "EL Imaging",
+          "count": 278
+        },
+        {
+          "value": "Visual",
+          "count": 251
+        },
+        {
+          "value": "IR Thermal",
+          "count": 243
+        },
+        {
+          "value": "IV Curve",
+          "count": 228
+        }
+      ],
+      "min_length": 6,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AA AAAAAAA",
+        "AAAAAA",
+        "AA AAAAA"
+      ]
+    },
+    "solar_template|maintenance|inspectres": {
+      "table_name": "maintenance",
+      "column_name": "inspectres",
+      "column_type": "TEXT(150)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Major Issues",
+      "max_value": "Pass",
+      "top_k_values": [
+        {
+          "value": "Major Issues",
+          "count": 356
+        },
+        {
+          "value": "Minor Issues",
+          "count": 335
+        },
+        {
+          "value": "Pass",
+          "count": 309
+        }
+      ],
+      "min_length": 4,
+      "max_length": 12,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAA AAAAAA",
+        "AAAA"
+      ]
+    },
+    "solar_template|maintenance|inspectdate": {
+      "table_name": "maintenance",
+      "column_name": "inspectdate",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 180,
+      "min_value": "2024-08-23",
+      "max_value": "2025-02-19",
+      "top_k_values": [
+        {
+          "value": "2025-01-07",
+          "count": 12
+        },
+        {
+          "value": "2024-12-30",
+          "count": 12
+        },
+        {
+          "value": "2024-11-23",
+          "count": 12
+        },
+        {
+          "value": "2024-09-22",
+          "count": 12
+        },
+        {
+          "value": "2024-11-04",
+          "count": 11
+        },
+        {
+          "value": "2025-02-14",
+          "count": 10
+        },
+        {
+          "value": "2025-02-07",
+          "count": 10
+        },
+        {
+          "value": "2025-02-18",
+          "count": 9
+        },
+        {
+          "value": "2024-12-26",
+          "count": 9
+        },
+        {
+          "value": "2024-12-25",
+          "count": 9
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDD-DD-DD"
+      ]
+    },
+    "solar_template|maintenance|maintsched": {
+      "table_name": "maintenance",
+      "column_name": "maintsched",
+      "column_type": "TEXT(100)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Delayed",
+      "max_value": "Overdue",
+      "top_k_values": [
+        {
+          "value": "Delayed",
+          "count": 336
+        },
+        {
+          "value": "On Schedule",
+          "count": 333
+        },
+        {
+          "value": "Overdue",
+          "count": 331
+        }
+      ],
+      "min_length": 7,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AA AAAAAAAA"
+      ]
+    },
+    "solar_template|maintenance|wtystatus": {
+      "table_name": "maintenance",
+      "column_name": "wtystatus",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Active",
+      "max_value": "Expired",
+      "top_k_values": [
+        {
+          "value": "Active",
+          "count": 344
+        },
+        {
+          "value": "Expired",
+          "count": 331
+        },
+        {
+          "value": "Claimed",
+          "count": 325
+        }
+      ],
+      "min_length": 6,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAA"
+      ]
+    },
+    "solar_template|maintenance|wtyclaimcnt": {
+      "table_name": "maintenance",
+      "column_name": "wtyclaimcnt",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 156,
+      "non_null_count": 844,
+      "distinct_count": 5,
+      "min_value": "1",
+      "max_value": "5",
+      "top_k_values": [
+        {
+          "value": "5",
+          "count": 186
+        },
+        {
+          "value": "3",
+          "count": 178
+        },
+        {
+          "value": "2",
+          "count": 169
+        },
+        {
+          "value": "1",
+          "count": 158
+        },
+        {
+          "value": "4",
+          "count": 153
+        }
+      ],
+      "min_length": 1,
+      "max_length": 1,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D"
+      ]
+    },
+    "solar_template|maintenance|maintcostusd": {
+      "table_name": "maintenance",
+      "column_name": "maintcostusd",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 999,
+      "min_value": "1004.62",
+      "max_value": "9996.37",
+      "top_k_values": [
+        {
+          "value": "5125.31",
+          "count": 2
+        },
+        {
+          "value": "9996.37",
+          "count": 1
+        },
+        {
+          "value": "9977.88",
+          "count": 1
+        },
+        {
+          "value": "9975.54",
+          "count": 1
+        },
+        {
+          "value": "9956.38",
+          "count": 1
+        },
+        {
+          "value": "9956.21",
+          "count": 1
+        },
+        {
+          "value": "9955.09",
+          "count": 1
+        },
+        {
+          "value": "9953.82",
+          "count": 1
+        },
+        {
+          "value": "9950.93",
+          "count": 1
+        },
+        {
+          "value": "9948.13",
+          "count": 1
+        }
+      ],
+      "min_length": 4,
+      "max_length": 7,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDD.DD",
+        "DDDD.D",
+        "DDD.DD",
+        "DDD.D",
+        "DD.DD"
+      ]
+    },
+    "solar_template|maintenance|cleancostusd": {
+      "table_name": "maintenance",
+      "column_name": "cleancostusd",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "100.44",
+      "max_value": "987.28",
+      "top_k_values": [
+        {
+          "value": "4992.91",
+          "count": 1
+        },
+        {
+          "value": "4985.63",
+          "count": 1
+        },
+        {
+          "value": "4984.58",
+          "count": 1
+        },
+        {
+          "value": "4979.71",
+          "count": 1
+        },
+        {
+          "value": "4968.37",
+          "count": 1
+        },
+        {
+          "value": "4966.61",
+          "count": 1
+        },
+        {
+          "value": "4960.96",
+          "count": 1
+        },
+        {
+          "value": "4960.49",
+          "count": 1
+        },
+        {
+          "value": "4951.89",
+          "count": 1
+        },
+        {
+          "value": "4951.59",
+          "count": 1
+        }
+      ],
+      "min_length": 4,
+      "max_length": 7,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDD.DD",
+        "DDD.DD",
+        "DDDD.D",
+        "DD.DD",
+        "DDD.D"
+      ]
+    },
+    "solar_template|maintenance|replacecostusd": {
+      "table_name": "maintenance",
+      "column_name": "replacecostusd",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "10.72",
+      "max_value": "9910.73",
+      "top_k_values": [
+        {
+          "value": "49997.32",
+          "count": 1
+        },
+        {
+          "value": "49967.48",
+          "count": 1
+        },
+        {
+          "value": "49949.83",
+          "count": 1
+        },
+        {
+          "value": "49895.61",
+          "count": 1
+        },
+        {
+          "value": "49724.13",
+          "count": 1
+        },
+        {
+          "value": "49708.83",
+          "count": 1
+        },
+        {
+          "value": "49685.99",
+          "count": 1
+        },
+        {
+          "value": "49683.35",
+          "count": 1
+        },
+        {
+          "value": "49621.81",
+          "count": 1
+        },
+        {
+          "value": "49619.89",
+          "count": 1
+        }
+      ],
+      "min_length": 5,
+      "max_length": 8,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDD.DD",
+        "DDDD.DD",
+        "DDDDD.D",
+        "DDDD.D",
+        "DDD.DD"
+      ]
+    },
+    "solar_template|maintenance|revlossusd": {
+      "table_name": "maintenance",
+      "column_name": "revlossusd",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "10007.15",
+      "max_value": "9992.05",
+      "top_k_values": [
+        {
+          "value": "19993.95",
+          "count": 1
+        },
+        {
+          "value": "19988.97",
+          "count": 1
+        },
+        {
+          "value": "19976.33",
+          "count": 1
+        },
+        {
+          "value": "19968.7",
+          "count": 1
+        },
+        {
+          "value": "19962.16",
+          "count": 1
+        },
+        {
+          "value": "19961.13",
+          "count": 1
+        },
+        {
+          "value": "19921.4",
+          "count": 1
+        },
+        {
+          "value": "19919.97",
+          "count": 1
+        },
+        {
+          "value": "19914.33",
+          "count": 1
+        },
+        {
+          "value": "19889.05",
+          "count": 1
+        }
+      ],
+      "min_length": 5,
+      "max_length": 8,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDD.DD",
+        "DDDD.DD",
+        "DDDDD.D",
+        "DDDD.D",
+        "DDD.DD"
+      ]
+    },
+    "solar_template|panel|panemark": {
+      "table_name": "panel",
+      "column_name": "panemark",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "00564c61-9386-4fbf-ab33-85ba0bde2515",
+      "max_value": "ffb6a6cb-8f34-4c9b-ad59-664b63a4dde6",
+      "top_k_values": [
+        {
+          "value": "00564c61-9386-4fbf-ab33-85ba0bde2515",
+          "count": 1
+        },
+        {
+          "value": "007974ad-ef38-4d2e-9c5a-19a5bff49ea1",
+          "count": 1
+        },
+        {
+          "value": "00a38ef9-3bad-4201-8114-28292775280f",
+          "count": 1
+        },
+        {
+          "value": "00a6cf27-9040-4600-91a3-56c4ee38ff83",
+          "count": 1
+        },
+        {
+          "value": "00aa8f38-bdb6-4a5c-b6a5-2690c2306cfd",
+          "count": 1
+        },
+        {
+          "value": "00bfcb5b-37fb-43a8-9823-30d4dd62defe",
+          "count": 1
+        },
+        {
+          "value": "0111f9c4-6303-414c-a8cd-ca155cae7c44",
+          "count": 1
+        },
+        {
+          "value": "01200746-5236-4240-a354-66905e42de43",
+          "count": 1
+        },
+        {
+          "value": "0164857c-92c9-473c-b60e-93d6dfe47b1b",
+          "count": 1
+        },
+        {
+          "value": "019f22cf-2b5d-4e95-a2d0-9dcacc33c275",
+          "count": 1
+        }
+      ],
+      "min_length": 36,
+      "max_length": 36,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDDDADD-ADAA-DAAA-AADD-AAAADDAADAAD",
+        "DDADDDAD-DAAD-DDAA-ADAD-DDADDAAADDDA",
+        "ADDADDDD-DDDA-DDDA-DDDA-ADADDDDDDADA",
+        "DDDDDADD-DDAA-DDDA-ADDD-DADDDADDDDAD",
+        "ADDDADDD-AADD-DAAA-DADD-ADAAADDDDDDD"
+      ]
+    },
+    "solar_template|panel|hubregistry": {
+      "table_name": "panel",
+      "column_name": "hubregistry",
+      "column_type": "TEXT(36)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "00564c61-9386-4fbf-ab33-85ba0bde2515",
+      "max_value": "ffb6a6cb-8f34-4c9b-ad59-664b63a4dde6",
+      "top_k_values": [
+        {
+          "value": "ffb6a6cb-8f34-4c9b-ad59-664b63a4dde6",
+          "count": 1
+        },
+        {
+          "value": "ff910d02-3a42-46e3-9d22-8fcd85fe7598",
+          "count": 1
+        },
+        {
+          "value": "ff4076d8-ff1c-421f-b6bf-0978206b792e",
+          "count": 1
+        },
+        {
+          "value": "ff20a5f7-2950-4916-af84-bae8455bfe94",
+          "count": 1
+        },
+        {
+          "value": "febebd33-941d-400a-b1a6-ada0bcbc653f",
+          "count": 1
+        },
+        {
+          "value": "fe1fd562-b108-42e0-b67e-05bf4ac9152a",
+          "count": 1
+        },
+        {
+          "value": "fe0db5c7-6138-419f-b7b2-846087c0c3ca",
+          "count": 1
+        },
+        {
+          "value": "fd9ad843-2ba1-4395-861d-40ede3ba1c72",
+          "count": 1
+        },
+        {
+          "value": "fd99f6f0-2fc6-45ba-8f00-a05ea3fcaa78",
+          "count": 1
+        },
+        {
+          "value": "fd345ca9-7560-4398-94be-f9fc6349d726",
+          "count": 1
+        }
+      ],
+      "min_length": 36,
+      "max_length": 36,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDDDADD-ADAA-DAAA-AADD-AAAADDAADAAD",
+        "DDADDDAD-DAAD-DDAA-ADAD-DDADDAAADDDA",
+        "ADDADDDD-DDDA-DDDA-DDDA-ADADDDDDDADA",
+        "DDDDDADD-DDAA-DDDA-ADDD-DADDDADDDDAD",
+        "ADDDADDD-AADD-DAAA-DADD-ADAAADDDDDDD"
+      ]
+    },
+    "solar_template|panel|panemfr": {
+      "table_name": "panel",
+      "column_name": "panemfr",
+      "column_type": "TEXT(100)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 5,
+      "min_value": "Canadian Solar",
+      "max_value": "Trina",
+      "top_k_values": [
+        {
+          "value": "Longi",
+          "count": 225
+        },
+        {
+          "value": "JA Solar",
+          "count": 210
+        },
+        {
+          "value": "Trina",
+          "count": 191
+        },
+        {
+          "value": "Canadian Solar",
+          "count": 191
+        },
+        {
+          "value": "JinkoSolar",
+          "count": 183
+        }
+      ],
+      "min_length": 5,
+      "max_length": 14,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAA",
+        "AA AAAAA",
+        "AAAAAAAA AAAAA",
+        "AAAAAAAAAA"
+      ]
+    },
+    "solar_template|panel|paneline": {
+      "table_name": "panel",
+      "column_name": "paneline",
+      "column_type": "TEXT(100)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 596,
+      "min_value": "Model-100",
+      "max_value": "Model-999",
+      "top_k_values": [
+        {
+          "value": "Model-900",
+          "count": 6
+        },
+        {
+          "value": "Model-479",
+          "count": 6
+        },
+        {
+          "value": "Model-901",
+          "count": 5
+        },
+        {
+          "value": "Model-840",
+          "count": 5
+        },
+        {
+          "value": "Model-661",
+          "count": 5
+        },
+        {
+          "value": "Model-561",
+          "count": 5
+        },
+        {
+          "value": "Model-466",
+          "count": 5
+        },
+        {
+          "value": "Model-332",
+          "count": 5
+        },
+        {
+          "value": "Model-278",
+          "count": 5
+        },
+        {
+          "value": "Model-265",
+          "count": 5
+        }
+      ],
+      "min_length": 9,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAAA-DDD"
+      ]
+    },
+    "solar_template|panel|panetype": {
+      "table_name": "panel",
+      "column_name": "panetype",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 5,
+      "min_value": "Bifacial",
+      "max_value": "TOPCon",
+      "top_k_values": [
+        {
+          "value": "HJT",
+          "count": 209
+        },
+        {
+          "value": "TOPCon",
+          "count": 206
+        },
+        {
+          "value": "Poly-PERC",
+          "count": 202
+        },
+        {
+          "value": "Bifacial",
+          "count": 195
+        },
+        {
+          "value": "Mono-PERC",
+          "count": 188
+        }
+      ],
+      "min_length": 3,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA-AAAA",
+        "AAA",
+        "AAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "solar_template|panel|powratew": {
+      "table_name": "panel",
+      "column_name": "powratew",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 5,
+      "min_value": "450",
+      "max_value": "650",
+      "top_k_values": [
+        {
+          "value": "450",
+          "count": 221
+        },
+        {
+          "value": "650",
+          "count": 209
+        },
+        {
+          "value": "600",
+          "count": 203
+        },
+        {
+          "value": "500",
+          "count": 185
+        },
+        {
+          "value": "550",
+          "count": 182
+        }
+      ],
+      "min_length": 3,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDD"
+      ]
+    },
+    "solar_template|panel|paneeffpct": {
+      "table_name": "panel",
+      "column_name": "paneeffpct",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 427,
+      "min_value": "18.01",
+      "max_value": "23.0",
+      "top_k_values": [
+        {
+          "value": "21.21",
+          "count": 7
+        },
+        {
+          "value": "19.3",
+          "count": 7
+        },
+        {
+          "value": "20.02",
+          "count": 6
+        },
+        {
+          "value": "19.98",
+          "count": 6
+        },
+        {
+          "value": "18.59",
+          "count": 6
+        },
+        {
+          "value": "18.13",
+          "count": 6
+        },
+        {
+          "value": "22.77",
+          "count": 5
+        },
+        {
+          "value": "22.45",
+          "count": 5
+        },
+        {
+          "value": "22.4",
+          "count": 5
+        },
+        {
+          "value": "22.29",
+          "count": 5
+        }
+      ],
+      "min_length": 4,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.DD",
+        "DD.D"
+      ]
+    },
+    "solar_template|panel|nomtempc": {
+      "table_name": "panel",
+      "column_name": "nomtempc",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 61,
+      "min_value": "42.0",
+      "max_value": "48.0",
+      "top_k_values": [
+        {
+          "value": "45.0",
+          "count": 24
+        },
+        {
+          "value": "44.5",
+          "count": 24
+        },
+        {
+          "value": "47.0",
+          "count": 23
+        },
+        {
+          "value": "42.9",
+          "count": 23
+        },
+        {
+          "value": "42.5",
+          "count": 23
+        },
+        {
+          "value": "46.8",
+          "count": 22
+        },
+        {
+          "value": "47.3",
+          "count": 21
+        },
+        {
+          "value": "46.7",
+          "count": 21
+        },
+        {
+          "value": "44.4",
+          "count": 21
+        },
+        {
+          "value": "43.9",
+          "count": 21
+        }
+      ],
+      "min_length": 4,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DD.D"
+      ]
+    },
+    "solar_template|panel|tempcoef": {
+      "table_name": "panel",
+      "column_name": "tempcoef",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 101,
+      "min_value": "-0.35",
+      "max_value": "-0.45",
+      "top_k_values": [
+        {
+          "value": "-0.432",
+          "count": 18
+        },
+        {
+          "value": "-0.427",
+          "count": 16
+        },
+        {
+          "value": "-0.436",
+          "count": 16
+        },
+        {
+          "value": "-0.351",
+          "count": 15
+        },
+        {
+          "value": "-0.359",
+          "count": 15
+        },
+        {
+          "value": "-0.361",
+          "count": 15
+        },
+        {
+          "value": "-0.37",
+          "count": 15
+        },
+        {
+          "value": "-0.393",
+          "count": 15
+        },
+        {
+          "value": "-0.449",
+          "count": 15
+        },
+        {
+          "value": "-0.382",
+          "count": 14
+        }
+      ],
+      "min_length": 4,
+      "max_length": 6,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "-D.DDD",
+        "-D.DD",
+        "-D.D"
+      ]
+    },
+    "solar_template|performance|perfregistry": {
+      "table_name": "performance",
+      "column_name": "perfregistry",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "00564c61-9386-4fbf-ab33-85ba0bde2515",
+      "max_value": "ffb6a6cb-8f34-4c9b-ad59-664b63a4dde6",
+      "top_k_values": [
+        {
+          "value": "00564c61-9386-4fbf-ab33-85ba0bde2515",
+          "count": 1
+        },
+        {
+          "value": "007974ad-ef38-4d2e-9c5a-19a5bff49ea1",
+          "count": 1
+        },
+        {
+          "value": "00a38ef9-3bad-4201-8114-28292775280f",
+          "count": 1
+        },
+        {
+          "value": "00a6cf27-9040-4600-91a3-56c4ee38ff83",
+          "count": 1
+        },
+        {
+          "value": "00aa8f38-bdb6-4a5c-b6a5-2690c2306cfd",
+          "count": 1
+        },
+        {
+          "value": "00bfcb5b-37fb-43a8-9823-30d4dd62defe",
+          "count": 1
+        },
+        {
+          "value": "0111f9c4-6303-414c-a8cd-ca155cae7c44",
+          "count": 1
+        },
+        {
+          "value": "01200746-5236-4240-a354-66905e42de43",
+          "count": 1
+        },
+        {
+          "value": "0164857c-92c9-473c-b60e-93d6dfe47b1b",
+          "count": 1
+        },
+        {
+          "value": "019f22cf-2b5d-4e95-a2d0-9dcacc33c275",
+          "count": 1
+        }
+      ],
+      "min_length": 36,
+      "max_length": 36,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDDDADD-ADDD-DDDA-DDAD-DDDADDDAADDD",
+        "ADADADDD-DDAD-DDAD-DDAA-DADDDDADDADD",
+        "ADDDDAAA-DDAA-DDDA-AADD-DDADDADADDAD",
+        "DDAADADD-DADD-DDDD-ADDD-ADDDDDADADDA",
+        "DDDADDDD-DDAD-DDDA-AAAD-ADADADDADDDA"
+      ]
+    },
+    "solar_template|performance|solmodref": {
+      "table_name": "performance",
+      "column_name": "solmodref",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "00564c61-9386-4fbf-ab33-85ba0bde2515",
+      "max_value": "ffb6a6cb-8f34-4c9b-ad59-664b63a4dde6",
+      "top_k_values": [
+        {
+          "value": "ffb6a6cb-8f34-4c9b-ad59-664b63a4dde6",
+          "count": 1
+        },
+        {
+          "value": "ff910d02-3a42-46e3-9d22-8fcd85fe7598",
+          "count": 1
+        },
+        {
+          "value": "ff4076d8-ff1c-421f-b6bf-0978206b792e",
+          "count": 1
+        },
+        {
+          "value": "ff20a5f7-2950-4916-af84-bae8455bfe94",
+          "count": 1
+        },
+        {
+          "value": "febebd33-941d-400a-b1a6-ada0bcbc653f",
+          "count": 1
+        },
+        {
+          "value": "fe1fd562-b108-42e0-b67e-05bf4ac9152a",
+          "count": 1
+        },
+        {
+          "value": "fe0db5c7-6138-419f-b7b2-846087c0c3ca",
+          "count": 1
+        },
+        {
+          "value": "fd9ad843-2ba1-4395-861d-40ede3ba1c72",
+          "count": 1
+        },
+        {
+          "value": "fd99f6f0-2fc6-45ba-8f00-a05ea3fcaa78",
+          "count": 1
+        },
+        {
+          "value": "fd345ca9-7560-4398-94be-f9fc6349d726",
+          "count": 1
+        }
+      ],
+      "min_length": 36,
+      "max_length": 36,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDDDADD-ADDD-DDDA-DDAD-DDDADDDAADDD",
+        "ADADADDD-DDAD-DDAD-DDAA-DADDDDADDADD",
+        "ADDDDAAA-DDAA-DDDA-AADD-DDADDADADDAD",
+        "DDAADADD-DADD-DDDD-ADDD-ADDDDDADADDA",
+        "DDDADDDD-DDAD-DDDA-AAAD-ADADADDADDDA"
+      ]
+    },
+    "solar_template|performance|perfmoment": {
+      "table_name": "performance",
+      "column_name": "perfmoment",
+      "column_type": "TEXT(6)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "2015-03-06 23:44:15.061367",
+      "max_value": "2025-02-16 18:54:12.141865",
+      "top_k_values": [
+        {
+          "value": "2025-02-16 18:54:12.141865",
+          "count": 1
+        },
+        {
+          "value": "2025-02-11 16:51:49.061367",
+          "count": 1
+        },
+        {
+          "value": "2025-02-07 13:00:14.145392",
+          "count": 1
+        },
+        {
+          "value": "2025-02-06 16:34:23.15073",
+          "count": 1
+        },
+        {
+          "value": "2025-02-04 21:13:42.08302",
+          "count": 1
+        },
+        {
+          "value": "2025-02-03 01:14:42.053478",
+          "count": 1
+        },
+        {
+          "value": "2025-01-27 21:54:53.066086",
+          "count": 1
+        },
+        {
+          "value": "2025-01-25 16:17:18.149719",
+          "count": 1
+        },
+        {
+          "value": "2025-01-23 05:33:41.076834",
+          "count": 1
+        },
+        {
+          "value": "2025-01-19 20:14:14.089131",
+          "count": 1
+        }
+      ],
+      "min_length": 25,
+      "max_length": 26,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDD-DD-DD DD:DD:DD.DDDDDD",
+        "DDDD-DD-DD DD:DD:DD.DDDDD"
+      ]
+    },
+    "solar_template|performance|measpoww": {
+      "table_name": "performance",
+      "column_name": "measpoww",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 928,
+      "min_value": "382.68",
+      "max_value": "648.18",
+      "top_k_values": [
+        {
+          "value": "624.26",
+          "count": 4
+        },
+        {
+          "value": "628.68",
+          "count": 3
+        },
+        {
+          "value": "402.16",
+          "count": 3
+        },
+        {
+          "value": "634.21",
+          "count": 2
+        },
+        {
+          "value": "629.78",
+          "count": 2
+        },
+        {
+          "value": "615.94",
+          "count": 2
+        },
+        {
+          "value": "606.06",
+          "count": 2
+        },
+        {
+          "value": "603.79",
+          "count": 2
+        },
+        {
+          "value": "600.73",
+          "count": 2
+        },
+        {
+          "value": "598.2",
+          "count": 2
+        }
+      ],
+      "min_length": 5,
+      "max_length": 6,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD.DD",
+        "DDD.D"
+      ]
+    },
+    "solar_template|performance|powlossw": {
+      "table_name": "performance",
+      "column_name": "powlossw",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 1,
+      "non_null_count": 999,
+      "distinct_count": 890,
+      "min_value": "0.15",
+      "max_value": "97.17",
+      "top_k_values": [
+        {
+          "value": "42.12",
+          "count": 4
+        },
+        {
+          "value": "25.74",
+          "count": 4
+        },
+        {
+          "value": "65.46",
+          "count": 3
+        },
+        {
+          "value": "51.8",
+          "count": 3
+        },
+        {
+          "value": "47.84",
+          "count": 3
+        },
+        {
+          "value": "35.37",
+          "count": 3
+        },
+        {
+          "value": "21.32",
+          "count": 3
+        },
+        {
+          "value": "17.6",
+          "count": 3
+        },
+        {
+          "value": "1.26",
+          "count": 3
+        },
+        {
+          "value": "0.5",
+          "count": 3
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.DD",
+        "DD.D",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "solar_template|performance|efficiency_profile": {
+      "table_name": "performance",
+      "column_name": "efficiency_profile",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "{\"degradation\": {\"cumdegpct\": 0.030, \"anndegrate\": 0.820}, \"current_efficiency\": {\"curreffpct\": 19.370, \"efflosspct\": 2.800}}",
+      "max_value": "{\"degradation\": {\"cumdegpct\": null, \"anndegrate\": 0.410}, \"current_efficiency\": {\"curreffpct\": 18.720, \"efflosspct\": 3.300}}",
+      "top_k_values": [
+        {
+          "value": "{\"degradation\": {\"cumdegpct\": null, \"anndegrate\": 0.410}, \"current_efficiency\": {\"curreffpct\": 18.720, \"efflosspct\": 3.300}}",
+          "count": 1
+        },
+        {
+          "value": "{\"degradation\": {\"cumdegpct\": 9.980, \"anndegrate\": 0.830}, \"current_efficiency\": {\"curreffpct\": 20.360, \"efflosspct\": 2.030}}",
+          "count": 1
+        },
+        {
+          "value": "{\"degradation\": {\"cumdegpct\": 9.940, \"anndegrate\": 0.900}, \"current_efficiency\": {\"curreffpct\": 17.900, \"efflosspct\": 1.450}}",
+          "count": 1
+        },
+        {
+          "value": "{\"degradation\": {\"cumdegpct\": 9.940, \"anndegrate\": 0.890}, \"current_efficiency\": {\"curreffpct\": 17.210, \"efflosspct\": 3.120}}",
+          "count": 1
+        },
+        {
+          "value": "{\"degradation\": {\"cumdegpct\": 9.920, \"anndegrate\": 0.900}, \"current_efficiency\": {\"curreffpct\": 18.200, \"efflosspct\": 2.860}}",
+          "count": 1
+        },
+        {
+          "value": "{\"degradation\": {\"cumdegpct\": 9.920, \"anndegrate\": 0.580}, \"current_efficiency\": {\"curreffpct\": 15.020, \"efflosspct\": 6.670}}",
+          "count": 1
+        },
+        {
+          "value": "{\"degradation\": {\"cumdegpct\": 9.910, \"anndegrate\": 0.690}, \"current_efficiency\": {\"curreffpct\": 20.490, \"efflosspct\": 1.320}}",
+          "count": 1
+        },
+        {
+          "value": "{\"degradation\": {\"cumdegpct\": 9.860, \"anndegrate\": 0.870}, \"current_efficiency\": {\"curreffpct\": 16.320, \"efflosspct\": 6.480}}",
+          "count": 1
+        },
+        {
+          "value": "{\"degradation\": {\"cumdegpct\": 9.850, \"anndegrate\": 1.080}, \"current_efficiency\": {\"curreffpct\": 19.810, \"efflosspct\": -0.790}}",
+          "count": 1
+        },
+        {
+          "value": "{\"degradation\": {\"cumdegpct\": 9.850, \"anndegrate\": 0.380}, \"current_efficiency\": {\"curreffpct\": 15.220, \"efflosspct\": 3.180}}",
+          "count": 1
+        }
+      ],
+      "min_length": 124,
+      "max_length": 127,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "{\"AAAAAAAAAAA\": {\"AAAAAAAAA\": D.DDD, \"AAAAAAAAAA\": D.DDD}, \"AAAAAAA_AAAAAAAAAA\": {\"AAAAAAAAAA\": DD.DDD, \"AAAAAAAAAA\": D.DDD}}",
+        "{\"AAAAAAAAAAA\": {\"AAAAAAAAA\": DD.DDD, \"AAAAAAAAAA\": D.DDD}, \"AAAAAAA_AAAAAAAAAA\": {\"AAAAAAAAAA\": DD.DDD, \"AAAAAAAAAA\": D.DDD}}",
+        "{\"AAAAAAAAAAA\": {\"AAAAAAAAA\": D.DDD, \"AAAAAAAAAA\": D.DDD}, \"AAAAAAA_AAAAAAAAAA\": {\"AAAAAAAAAA\": DD.DDD, \"AAAAAAAAAA\": -D.DDD}}",
+        "{\"AAAAAAAAAAA\": {\"AAAAAAAAA\": DD.DDD, \"AAAAAAAAAA\": D.DDD}, \"AAAAAAA_AAAAAAAAAA\": {\"AAAAAAAAAA\": DD.DDD, \"AAAAAAAAAA\": -D.DDD}}",
+        "{\"AAAAAAAAAAA\": {\"AAAAAAAAA\": AAAA, \"AAAAAAAAAA\": D.DDD}, \"AAAAAAA_AAAAAAAAAA\": {\"AAAAAAAAAA\": DD.DDD, \"AAAAAAAAAA\": D.DDD}}"
+      ]
+    },
+    "solar_template|performance|efficiency_profile.degradation.cumdegpct": {
+      "table_name": "performance",
+      "column_name": "efficiency_profile.degradation.cumdegpct",
+      "column_type": "JSON field",
+      "row_count": 1000,
+      "null_count": 1,
+      "non_null_count": 999,
+      "distinct_count": 714,
+      "min_value": "0.03",
+      "max_value": "15.0",
+      "top_k_values": [
+        {
+          "value": "3.96",
+          "count": 4
+        },
+        {
+          "value": "5.24",
+          "count": 4
+        },
+        {
+          "value": "1.21",
+          "count": 4
+        },
+        {
+          "value": "9.38",
+          "count": 4
+        },
+        {
+          "value": "10.39",
+          "count": 4
+        },
+        {
+          "value": "12.48",
+          "count": 4
+        },
+        {
+          "value": "3.28",
+          "count": 4
+        },
+        {
+          "value": "5.76",
+          "count": 4
+        },
+        {
+          "value": "10.29",
+          "count": 4
+        },
+        {
+          "value": "6.99",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "DD.DD",
+        "D.D",
+        "DD.D"
+      ]
+    },
+    "solar_template|performance|efficiency_profile.degradation.anndegrate": {
+      "table_name": "performance",
+      "column_name": "efficiency_profile.degradation.anndegrate",
+      "column_type": "JSON field",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 91,
+      "min_value": "0.3",
+      "max_value": "1.2",
+      "top_k_values": [
+        {
+          "value": "0.34",
+          "count": 20
+        },
+        {
+          "value": "1.12",
+          "count": 19
+        },
+        {
+          "value": "0.47",
+          "count": 18
+        },
+        {
+          "value": "0.91",
+          "count": 18
+        },
+        {
+          "value": "0.93",
+          "count": 18
+        },
+        {
+          "value": "0.8",
+          "count": 16
+        },
+        {
+          "value": "0.35",
+          "count": 16
+        },
+        {
+          "value": "0.39",
+          "count": 16
+        },
+        {
+          "value": "0.88",
+          "count": 16
+        },
+        {
+          "value": "0.94",
+          "count": 15
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "solar_template|performance|efficiency_profile.current_efficiency.curreffpct": {
+      "table_name": "performance",
+      "column_name": "efficiency_profile.current_efficiency.curreffpct",
+      "column_type": "JSON field",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 473,
+      "min_value": "15.01",
+      "max_value": "21.0",
+      "top_k_values": [
+        {
+          "value": "15.71",
+          "count": 7
+        },
+        {
+          "value": "18.08",
+          "count": 7
+        },
+        {
+          "value": "18.0",
+          "count": 6
+        },
+        {
+          "value": "17.07",
+          "count": 6
+        },
+        {
+          "value": "17.24",
+          "count": 6
+        },
+        {
+          "value": "16.17",
+          "count": 5
+        },
+        {
+          "value": "15.82",
+          "count": 5
+        },
+        {
+          "value": "20.79",
+          "count": 5
+        },
+        {
+          "value": "18.23",
+          "count": 5
+        },
+        {
+          "value": "19.24",
+          "count": 5
+        }
+      ],
+      "min_length": 4,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.DD",
+        "DD.D"
+      ]
+    },
+    "solar_template|performance|efficiency_profile.current_efficiency.efflosspct": {
+      "table_name": "performance",
+      "column_name": "efficiency_profile.current_efficiency.efflosspct",
+      "column_type": "JSON field",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 601,
+      "min_value": "-2.7",
+      "max_value": "7.66",
+      "top_k_values": [
+        {
+          "value": "4.47",
+          "count": 7
+        },
+        {
+          "value": "1.45",
+          "count": 6
+        },
+        {
+          "value": "0.28",
+          "count": 5
+        },
+        {
+          "value": "1.9",
+          "count": 5
+        },
+        {
+          "value": "2.0",
+          "count": 5
+        },
+        {
+          "value": "1.93",
+          "count": 5
+        },
+        {
+          "value": "3.53",
+          "count": 5
+        },
+        {
+          "value": "2.03",
+          "count": 5
+        },
+        {
+          "value": "1.67",
+          "count": 5
+        },
+        {
+          "value": "4.24",
+          "count": 5
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "-D.DD",
+        "D.D",
+        "-D.D"
+      ]
+    },
+    "solar_template|plant|growregistry": {
+      "table_name": "plant",
+      "column_name": "growregistry",
+      "column_type": "TEXT(36)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "00564c61-9386-4fbf-ab33-85ba0bde2515",
+      "max_value": "ffb6a6cb-8f34-4c9b-ad59-664b63a4dde6",
+      "top_k_values": [
+        {
+          "value": "00564c61-9386-4fbf-ab33-85ba0bde2515",
+          "count": 1
+        },
+        {
+          "value": "007974ad-ef38-4d2e-9c5a-19a5bff49ea1",
+          "count": 1
+        },
+        {
+          "value": "00a38ef9-3bad-4201-8114-28292775280f",
+          "count": 1
+        },
+        {
+          "value": "00a6cf27-9040-4600-91a3-56c4ee38ff83",
+          "count": 1
+        },
+        {
+          "value": "00aa8f38-bdb6-4a5c-b6a5-2690c2306cfd",
+          "count": 1
+        },
+        {
+          "value": "00bfcb5b-37fb-43a8-9823-30d4dd62defe",
+          "count": 1
+        },
+        {
+          "value": "0111f9c4-6303-414c-a8cd-ca155cae7c44",
+          "count": 1
+        },
+        {
+          "value": "01200746-5236-4240-a354-66905e42de43",
+          "count": 1
+        },
+        {
+          "value": "0164857c-92c9-473c-b60e-93d6dfe47b1b",
+          "count": 1
+        },
+        {
+          "value": "019f22cf-2b5d-4e95-a2d0-9dcacc33c275",
+          "count": 1
+        }
+      ],
+      "min_length": 36,
+      "max_length": 36,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDDDADD-ADAA-DAAA-AADD-AAAADDAADAAD",
+        "DDADDDAD-DAAD-DDAA-ADAD-DDADDAAADDDA",
+        "ADDADDDD-DDDA-DDDA-DDDA-ADADDDDDDADA",
+        "DDDDDADD-DDAA-DDDA-ADDD-DADDDADDDDAD",
+        "ADDDADDD-AADD-DAAA-DADD-ADAAADDDDDDD"
+      ]
+    },
+    "solar_template|plant|growalias": {
+      "table_name": "plant",
+      "column_name": "growalias",
+      "column_type": "TEXT(100)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 977,
+      "min_value": "Solar Plant Aaronborough",
+      "max_value": "Solar Plant Zunigaside",
+      "top_k_values": [
+        {
+          "value": "Solar Plant Woodardtown",
+          "count": 2
+        },
+        {
+          "value": "Solar Plant West Steven",
+          "count": 2
+        },
+        {
+          "value": "Solar Plant Theresamouth",
+          "count": 2
+        },
+        {
+          "value": "Solar Plant South Julia",
+          "count": 2
+        },
+        {
+          "value": "Solar Plant South Andrew",
+          "count": 2
+        },
+        {
+          "value": "Solar Plant Smithport",
+          "count": 2
+        },
+        {
+          "value": "Solar Plant Robertburgh",
+          "count": 2
+        },
+        {
+          "value": "Solar Plant Port Jennifer",
+          "count": 2
+        },
+        {
+          "value": "Solar Plant Port Ashley",
+          "count": 2
+        },
+        {
+          "value": "Solar Plant North Robert",
+          "count": 2
+        }
+      ],
+      "min_length": 18,
+      "max_length": 34,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAA AAAAA AAAAAAAAAA",
+        "AAAAA AAAAA AAAAAAAAAAA",
+        "AAAAA AAAAA AAAAAAAAA",
+        "AAAAA AAAAA AAAAAAAAAAAA",
+        "AAAAA AAAAA AAAAAAAAAAAAA"
+      ]
+    },
+    "solar_template|plant|gencapmw": {
+      "table_name": "plant",
+      "column_name": "gencapmw",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 991,
+      "min_value": "1.44",
+      "max_value": "99.04",
+      "top_k_values": [
+        {
+          "value": "471.0",
+          "count": 2
+        },
+        {
+          "value": "436.25",
+          "count": 2
+        },
+        {
+          "value": "272.54",
+          "count": 2
+        },
+        {
+          "value": "254.88",
+          "count": 2
+        },
+        {
+          "value": "251.56",
+          "count": 2
+        },
+        {
+          "value": "247.06",
+          "count": 2
+        },
+        {
+          "value": "82.89",
+          "count": 2
+        },
+        {
+          "value": "48.05",
+          "count": 2
+        },
+        {
+          "value": "33.67",
+          "count": 2
+        },
+        {
+          "value": "499.99",
+          "count": 1
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD.DD",
+        "DD.DD",
+        "DDD.D",
+        "DD.D",
+        "D.DD"
+      ]
+    },
+    "solar_template|plant|initdate": {
+      "table_name": "plant",
+      "column_name": "initdate",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 860,
+      "min_value": "2015-03-03",
+      "max_value": "2024-02-20",
+      "top_k_values": [
+        {
+          "value": "2019-09-13",
+          "count": 3
+        },
+        {
+          "value": "2019-05-22",
+          "count": 3
+        },
+        {
+          "value": "2019-02-13",
+          "count": 3
+        },
+        {
+          "value": "2018-05-15",
+          "count": 3
+        },
+        {
+          "value": "2017-06-26",
+          "count": 3
+        },
+        {
+          "value": "2017-02-15",
+          "count": 3
+        },
+        {
+          "value": "2015-05-29",
+          "count": 3
+        },
+        {
+          "value": "2024-01-25",
+          "count": 2
+        },
+        {
+          "value": "2024-01-06",
+          "count": 2
+        },
+        {
+          "value": "2023-12-31",
+          "count": 2
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDD-DD-DD"
+      ]
+    }
+  },
+  "meta": {
+    "electrical": {
+      "profiled_at": "2026-08-30T11:42:12.866225+00:00",
+      "row_count": 1000
+    },
+    "inverter": {
+      "profiled_at": "2026-08-30T11:42:12.866225+00:00",
+      "row_count": 1000
+    },
+    "panel": {
+      "profiled_at": "2026-08-30T11:42:12.866225+00:00",
+      "row_count": 1000
+    },
+    "performance": {
+      "profiled_at": "2026-08-30T11:42:12.866225+00:00",
+      "row_count": 1000
+    },
+    "alerts": {
+      "profiled_at": "2026-08-30T11:42:12.866225+00:00",
+      "row_count": 1000
+    },
+    "plant": {
+      "profiled_at": "2026-08-30T11:42:12.866225+00:00",
+      "row_count": 1000
+    },
+    "environment": {
+      "profiled_at": "2026-08-30T11:42:12.866225+00:00",
+      "row_count": 1000
+    },
+    "maintenance": {
+      "profiled_at": "2026-08-30T11:42:12.866225+00:00",
+      "row_count": 1000
+    }
+  }
+}

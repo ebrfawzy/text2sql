@@ -1,0 +1,184 @@
+CREATE TABLE "advancedbehavior" (
+abhvreg text(50) NOT NULL,
+translink text(50) NOT NULL,
+patsim real(7,4) NULL,
+peercorr real(7,4) NULL,
+mktcorr real(7,4) NULL,
+secrotimp real(7,4) NULL,
+    PRIMARY KEY (abhvreg),
+    FOREIGN KEY (translink) REFERENCES transactionrecord(transreg)
+);
+First 3 rows:
+abhvreg     translink      patsim    peercorr    mktcorr    secrotimp
+ABHV_0Z7PG  IT291460        0.823       0.525     -0.327       -0.793
+ABHV_XIYLR  IT931600        0.457      -0.353     -0.324        0.371
+ABHV_4WDLK  IT310545        0.06        0.382     -0.104       -0.183
+...
+
+CREATE TABLE "compliancecase" (
+compreg text(50) NOT NULL,
+transref text(50) NOT NULL,
+regfilestat TEXT NULL,
+disclosecmp TEXT NULL,
+brokrepstat TEXT NULL,
+exchnotif TEXT NULL,
+prevviol integer(32) NULL,
+comprate TEXT NULL,
+risksc real(7,4) NULL,
+alertlvl TEXT NULL,
+invstprior TEXT NULL,
+casestat TEXT NULL,
+revfreq TEXT NULL,
+lastrevdt TEXT NULL,
+nextrevdt TEXT NULL,
+monitint TEXT NULL,
+survsys TEXT NULL,
+detectmth TEXT NULL,
+fposrate real(5,2) NULL,
+modelconf real(7,4) NULL,
+abhvref text(50) NULL,
+    PRIMARY KEY (compreg),
+    FOREIGN KEY (transref) REFERENCES transactionrecord(transreg),
+    FOREIGN KEY (abhvref) REFERENCES advancedbehavior(abhvreg)
+);
+First 3 rows:
+compreg     transref    regfilestat    disclosecmp    brokrepstat    exchnotif      prevviol  comprate      risksc  alertlvl    invstprior    casestat       revfreq    lastrevdt    nextrevdt    monitint    survsys    detectmth      fposrate    modelconf  abhvref
+CASE_GR8LZ  IT291460    Delayed        Full           Incomplete     Warning               1  B              58.84  Low         Low           Investigation  Monthly    2025-02-02   2025-03-19   Enhanced    Secondary  Automated          0.03        0.883  ABHV_0Z7PG
+CASE_8YXF1  IT931600    Missing        Full           Late           Inquiry               1  A              49.31  Low         Low           Investigation  Monthly    2025-02-14   2025-03-07   Intensive   Secondary  Automated          0.14        0.613  ABHV_XIYLR
+CASE_L2L48  IT310545    Delayed        Non-compliant  Incomplete     Warning               5  D              56.81  Critical    Low           Closed         Monthly    2025-02-07   2025-02-22   Intensive   Secondary  Hybrid             0.2         0.73   ABHV_4WDLK
+...
+
+CREATE TABLE "enforcementactions" (
+enforcereg text(50) NOT NULL,
+compref2 text(50) NOT NULL,
+acttake TEXT NULL,
+esclvl TEXT NULL,
+resstat TEXT NULL,
+penimp TEXT NULL,
+penamt real(20,2) NULL,
+legactstat TEXT NULL,
+settlestat TEXT NULL,
+repimp TEXT NULL,
+busrestr TEXT NULL,
+remedstat TEXT NULL,
+traderestr TEXT NULL,
+sysupdneed TEXT NULL,
+polupdneed TEXT NULL,
+trainreq TEXT NULL,
+repgenstat TEXT NULL,
+dataretstat TEXT NULL,
+auditstat TEXT NULL,
+conflvl TEXT NULL,
+accrestr TEXT NULL,
+datashare TEXT NULL,
+invdetref text(50) NULL,
+    PRIMARY KEY (enforcereg),
+    FOREIGN KEY (invdetref) REFERENCES investigationdetails(invdetreg),
+    FOREIGN KEY (compref2) REFERENCES compliancecase(compreg)
+);
+First 3 rows:
+enforcereg    compref2    acttake      esclvl      resstat      penimp      penamt  legactstat    settlestat    repimp    busrestr    remedstat     traderestr    sysupdneed    polupdneed    trainreq    repgenstat    dataretstat    auditstat    conflvl           accrestr    datashare    invdetref
+ENF_2MI2A     CASE_GR8LZ  Warning      Supervisor  Resolved     Warning   290459    Pending       Negotiating   Severe    Partial     Not Required  Special       Minor         Yes           Refresher   Hybrid        Archived       Complete     Normal            Internal    Limited      INV_WSENV
+ENF_R2LMP     CASE_8YXF1  Warning      Compliance  In Progress  Warning    76804.6  Pending       Negotiating   Moderate  Partial     Pending       Special       Minor         No            Refresher   Hybrid        Archived       Missing      Highly Sensitive  Internal    Prohibited   INV_A9P2J
+ENF_Q3872     CASE_L2L48  Restriction  Legal       In Progress  Warning   504728    Active        Settled       Moderate  Full        Pending       Blackout      Major         Yes           Refresher   Automated     Deleted        Complete     Sensitive         Internal    Prohibited   INV_H8QVD
+...
+
+CREATE TABLE "investigationdetails" (
+invdetreg text(50) NOT NULL,
+compref text(50) NOT NULL,
+reginv TEXT NULL,
+patrecsc real(7,4) NULL,
+behansc real(7,4) NULL,
+netansc real(7,4) NULL,
+relmapstat TEXT NULL,
+connent text(100) NULL,
+commaddr integer(32) NULL,
+sharectc TEXT NULL,
+finrel TEXT NULL,
+commpat TEXT NULL,
+tcirclesz integer(32) NULL,
+grpbehsc real(7,4) NULL,
+mktabprob real(5,2) NULL,
+evidstr TEXT NULL,
+docustat TEXT NULL,
+sentref text(50) NULL,
+    PRIMARY KEY (invdetreg),
+    FOREIGN KEY (sentref) REFERENCES sentimentandfundamentals(sentreg),
+    FOREIGN KEY (compref) REFERENCES compliancecase(compreg)
+);
+First 3 rows:
+invdetreg    compref     reginv         patrecsc    behansc    netansc  relmapstat      connent    commaddr  sharectc    finrel    commpat      tcirclesz    grpbehsc    mktabprob  evidstr    docustat    sentref
+INV_WSENV    CASE_GR8LZ  Preliminary       42.51      37.76      68.91  Partial              19           3  Email       Business  Regular             32       41.87         0.18  Strong     Incomplete  SENT_XSX4T
+INV_A9P2J    CASE_8YXF1  Preliminary       12.01      92.39      77.42  Partial               8           0  Email       Business  Irregular           50       74.18         0.99  Weak       Incomplete  SENT_MOR6T
+INV_H8QVD    CASE_L2L48  Preliminary       88.2       73.36      47.35  Pending              12           1  Email       Business  Irregular           39       55.24         0.68  Strong     Partial     SENT_HWFBT
+...
+
+CREATE TABLE "sentimentandfundamentals" (
+sentreg text(50) NOT NULL,
+transref text(50) NOT NULL,
+newsscore real(5,2) NULL,
+socscore real(5,2) NULL,
+anlycount integer(32) NULL,
+inholdpct real(5,2) NULL,
+instownpct real(5,2) NULL,
+shortintrt real(7,4) NULL,
+optvolrt real(7,4) NULL,
+putcallrt real(7,4) NULL,
+impvolrank real(7,4) NULL,
+unuoptact TEXT NULL,
+corpeventprx TEXT NULL,
+eventannotm TEXT NULL,
+infoleaksc real(5,2) NULL,
+trdref2 text(50) NULL,
+    PRIMARY KEY (sentreg),
+    FOREIGN KEY (trdref2) REFERENCES trader(tradereg),
+    FOREIGN KEY (transref) REFERENCES transactionrecord(transreg)
+);
+First 3 rows:
+sentreg     transref      newsscore    socscore    anlycount    inholdpct    instownpct    shortintrt    optvolrt    putcallrt    impvolrank  unuoptact    corpeventprx    eventannotm      infoleaksc  trdref2
+SENT_XSX4T  IT291460           0.87        0.61           18        45.91          3.85         18.66        2.91         1.17         11.39  Moderate     Earnings        Pre-market            34.04
+SENT_MOR6T  IT931600          -0.93       -0.48            9        37.78         64.69         18.89        1.39         0.85         91.47  Moderate     Restructuring   Intraday              41.03
+SENT_HWFBT  IT310545           0.83        0.59           29        35.22         72.15         17.24        3.9          0.65         12.68  Moderate     M&A             Pre-market            12.66
+...
+
+CREATE TABLE "trader" (
+tradereg text(50) NOT NULL,
+tradekind TEXT NULL,
+acctdays integer(32) NULL,
+acctbal real(20,2) NULL,
+freqscope TEXT NULL,
+voldaily real(20,4) NULL,
+posavg real(20,4) NULL,
+posspan TEXT NULL,
+trading_performance TEXT NULL,
+    PRIMARY KEY (tradereg)
+);
+First 3 rows:
+tradereg    tradekind      acctdays      acctbal  freqscope      voldaily    posavg  posspan    trading_performance
+TR32485     Broker             1386  8.04279e+06  Medium          79650.9     68768  Intraday   {"winpct": 34.88, "plratio": 2.3000, "risklevel": {"margpct": 24.48, "levratio": 9.4400, "risklevel": "Conservative"}}
+TR16169     Individual         3206  1.41456e+06  Medium         494564      111835  Intraday   {"winpct": 68.01, "plratio": 2.7100, "risklevel": {"margpct": 58.43, "levratio": 7.4700, "risklevel": "Moderate"}}
+TR67490     Broker             1061  9.01803e+06  Medium         151127      293964  Long-term  {"winpct": 42.62, "plratio": 1.7900, "risklevel": {"margpct": 51.07, "levratio": 5.8700, "risklevel": "Conservative"}}
+...
+
+CREATE TABLE "transactionrecord" (
+transreg text(50) NOT NULL,
+transtime text(6) NOT NULL,
+trdref text(50) NOT NULL,
+ordervar real(20,4) NULL,
+ordertimepat TEXT NULL,
+ordertypedist TEXT NULL,
+cancelpct real(7,4) NULL,
+modfreq real(7,4) NULL,
+darkusage text(100) NULL,
+offmkt text(100) NULL,
+crossfreq real(10,4) NULL,
+risk_indicators TEXT NULL,
+    PRIMARY KEY (transreg),
+    FOREIGN KEY (trdref) REFERENCES trader(tradereg)
+);
+First 3 rows:
+transreg    transtime                  trdref      ordervar  ordertimepat    ordertypedist      cancelpct    modfreq    darkusage    offmkt    crossfreq  risk_indicators
+IT855524    2024-04-21 12:53:22.10326  TR47794        0.381  Irregular       Market                 0.208      0.486        0.114     0.124        0.017  {"washsus": "Low", "layerind": "Suspected", "spoofprob": 0.32, "frontscore": 85.6200, "momentignit": "Weak", "qstuffindex": 0.5190, "markclosepat": "Occasional"}
+IT110951    2025-01-05 18:39:26.10326  TR47821        1.854  Irregular       Mixed                  0.213      0.164        0.338     0.016        0.058  {"washsus": "High", "layerind": "Confirmed", "spoofprob": 0.95, "frontscore": 15.8200, "momentignit": "Weak", "qstuffindex": 0.5280, "markclosepat": "Occasional"}
+IT589692    2024-06-12 16:39:52.10326  TR74663        1.119  Regular         Mixed                  0.127      0.114        0.153     0.089        0.015  {"washsus": "High", "layerind": "Confirmed", "spoofprob": 0.25, "frontscore": 16.9400, "momentignit": "Weak", "qstuffindex": 0.8940, "markclosepat": "Occasional"}
+...

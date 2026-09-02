@@ -1,0 +1,17 @@
+{# version: v1, description: Knowledge-base generation — one table's columns; the rules are the cached system prefix #}
+Derive {{ count }} relations from this table
+
+Table: {{ table_name }}
+
+| Column | Type | Description | Frequent values |
+| --- | --- | --- | --- |
+{% for c in columns %}
+| {{ c.column_name }} | {{ c.column_type }} | {{ c.description }} | {{ c.top_values }} |
+{% endfor %}
+
+First find every column whose own name states a quantity the other columns compute, and write
+that column's entry as `thatcolumn = <formula over those columns>`, so the data can confirm or
+refute the claim. Never spend such a column on a threshold instead, and where no formula over
+the other columns produces it, it is not an entry at all
+
+Use only the column names above, spelled exactly

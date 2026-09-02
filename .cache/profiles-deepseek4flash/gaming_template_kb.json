@@ -1,0 +1,1116 @@
+{
+  "version": 1,
+  "profiled_at": "2026-08-30T13:38:09.477339+00:00",
+  "columns": {
+    "gaming_template|performance|Speed in millimeters per second": {
+      "id": 0,
+      "knowledge": "Speed in millimeters per second",
+      "description": "Speed converted from inches per second to millimeters per second.",
+      "definition": "speedips * 25.4",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "performance"
+      ],
+      "refuted": false
+    },
+    "gaming_template|performance|Lift distance in inches": {
+      "id": 1,
+      "knowledge": "Lift distance in inches",
+      "description": "Lift distance converted from millimeters to inches.",
+      "definition": "liftdistmm / 25.4",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "performance"
+      ],
+      "refuted": false
+    },
+    "gaming_template|performance|Scroll accuracy as a proportion": {
+      "id": 2,
+      "knowledge": "Scroll accuracy as a proportion",
+      "description": "Scroll accuracy percentage expressed as a value from 0 to 1.",
+      "definition": "scraccy / 100",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "performance"
+      ],
+      "refuted": false
+    },
+    "gaming_template|performance|High maximum acceleration": {
+      "id": 3,
+      "knowledge": "High maximum acceleration",
+      "description": "A performance record with maximum acceleration at least 40. Selects 34% of rows.",
+      "definition": "accelmax >= 40",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "performance"
+      ],
+      "refuted": false
+    },
+    "gaming_template|performance|High click latency": {
+      "id": 4,
+      "knowledge": "High click latency",
+      "description": "A performance record with click latency greater than 1 millisecond. Selects 52% of rows.",
+      "definition": "clklat > 1.0",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "performance"
+      ],
+      "refuted": false
+    },
+    "gaming_template|performance|Magnetic scroll encoder": {
+      "id": 5,
+      "knowledge": "Magnetic scroll encoder",
+      "description": "A scroll encoder that uses magnetic sensing. Selects 35% of rows.",
+      "definition": "TRIM(screnctyp) = 'Magnetic'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "performance"
+      ],
+      "refuted": false
+    },
+    "gaming_template|deviceidentity|Active power overhead": {
+      "id": 6,
+      "knowledge": "Active power overhead",
+      "description": "Power draw while active that is not explained by idle draw or RGB lighting.",
+      "definition": "pwractmw - pwridlemw - pwrrgbmw",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "deviceidentity"
+      ],
+      "refuted": false
+    },
+    "gaming_template|deviceidentity|Idle power ratio": {
+      "id": 7,
+      "knowledge": "Idle power ratio",
+      "description": "Percentage of active power draw consumed while idle.",
+      "definition": "pwridlemw / pwractmw * 100",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "deviceidentity"
+      ],
+      "refuted": false
+    },
+    "gaming_template|deviceidentity|RGB power share": {
+      "id": 8,
+      "knowledge": "RGB power share",
+      "description": "Percentage of active power draw consumed by RGB lighting.",
+      "definition": "pwrrgbmw / pwractmw * 100",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "deviceidentity"
+      ],
+      "refuted": false
+    },
+    "gaming_template|deviceidentity|Microcontroller speed ratio": {
+      "id": 9,
+      "knowledge": "Microcontroller speed ratio",
+      "description": "Microcontroller execution speed relative to its response time.",
+      "definition": "mcexecspeed / mcresptime",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "deviceidentity"
+      ],
+      "refuted": false
+    },
+    "gaming_template|deviceidentity|Microcontroller time accuracy error": {
+      "id": 10,
+      "knowledge": "Microcontroller time accuracy error",
+      "description": "Deviation from perfect microcontroller time accuracy.",
+      "definition": "100 - mctimacc",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "deviceidentity"
+      ],
+      "refuted": false
+    },
+    "gaming_template|deviceidentity|DPI step size": {
+      "id": 11,
+      "knowledge": "DPI step size",
+      "description": "Average DPI resolution per DPI step.",
+      "definition": "dpires / dpisteps",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "deviceidentity"
+      ],
+      "refuted": false
+    },
+    "gaming_template|deviceidentity|DPI-to-sensor resolution ratio": {
+      "id": 12,
+      "knowledge": "DPI-to-sensor resolution ratio",
+      "description": "DPI resolution relative to the raw sensor resolution.",
+      "definition": "dpires / sensres",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "deviceidentity"
+      ],
+      "refuted": false
+    },
+    "gaming_template|deviceidentity|Profile count (PROFCOUNT)": {
+      "id": 13,
+      "knowledge": "Profile count (PROFCOUNT)",
+      "description": "Number of profiles determined by onboard memory, one default profile plus one per 16 MB. Selects 22% of rows.",
+      "definition": "profcount = FLOOR(brdmemmb / 16.0) + 1",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "deviceidentity"
+      ],
+      "refuted": false
+    },
+    "gaming_template|deviceidentity|Wireless range efficiency": {
+      "id": 14,
+      "knowledge": "Wireless range efficiency",
+      "description": "Wireless range achieved per unit of wireless latency variance.",
+      "definition": "wlrangem / wllatvar",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "deviceidentity"
+      ],
+      "refuted": false
+    },
+    "gaming_template|deviceidentity|Wireless device": {
+      "id": 15,
+      "knowledge": "Wireless device",
+      "description": "A device that has any wireless connection option. Selects 74% of rows.",
+      "definition": "TRIM(conntype) <> 'Wired'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "deviceidentity"
+      ],
+      "refuted": false
+    },
+    "gaming_template|deviceidentity|Low-latency wireless device": {
+      "id": 16,
+      "knowledge": "Low-latency wireless device",
+      "description": "Wireless device with wireless latency variance below 1 ms. Selects 36% of rows.",
+      "definition": "wllatvar < 1.0 AND TRIM(conntype) <> 'Wired'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        15
+      ],
+      "tables": [
+        "deviceidentity"
+      ],
+      "refuted": false
+    },
+    "gaming_template|interactionandcontrol|Sensor count (sensor_count)": {
+      "id": 17,
+      "knowledge": "Sensor count (sensor_count)",
+      "description": "Total number of presence sensors reported for the interaction. No column stores this; compute the formula.",
+      "definition": "sensor_count = amblight + tempsense + accelsense + gyrosense",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "interactionandcontrol"
+      ],
+      "refuted": false
+    },
+    "gaming_template|interactionandcontrol|Haptic strength (hapstr)": {
+      "id": 18,
+      "knowledge": "Haptic strength (hapstr)",
+      "description": "Haptic strength rating produced by haptic feedback level and vibration modes. Selects 6% of rows.",
+      "definition": "hapstr = (CASE hapfeed WHEN 'Advanced' THEN 2 WHEN 'Basic' THEN 1 ELSE 0 END) * vibmodes",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "interactionandcontrol"
+      ],
+      "refuted": false
+    },
+    "gaming_template|interactionandcontrol|Trigger resolution (trigres)": {
+      "id": 19,
+      "knowledge": "Trigger resolution (trigres)",
+      "description": "Trigger resolution derived from trigger travel distance and force feedback level. Selects 9% of rows.",
+      "definition": "trigres = FLOOR(trigtravmm + 0.5) + (CASE forcefeed WHEN 'Advanced' THEN 1 WHEN 'Basic' THEN 0 ELSE -1 END)",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "interactionandcontrol"
+      ],
+      "refuted": false
+    },
+    "gaming_template|interactionandcontrol|Joystick precision (joyprec)": {
+      "id": 20,
+      "knowledge": "Joystick precision (joyprec)",
+      "description": "Joystick precision as 100% minus the joystick deadzone expressed as a percentage.",
+      "definition": "joyprec != 100 - (joydead * 100)",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "interactionandcontrol"
+      ],
+      "refuted": true
+    },
+    "gaming_template|interactionandcontrol|Button pitch (button_pitch)": {
+      "id": 21,
+      "knowledge": "Button pitch (button_pitch)",
+      "description": "Center-to-center button separation, the sum of button size and button spacing. No column stores this; compute the formula.",
+      "definition": "button_pitch = btnszmm + btnspcmm",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "interactionandcontrol"
+      ],
+      "refuted": false
+    },
+    "gaming_template|interactionandcontrol|Haptic feedback enabled": {
+      "id": 22,
+      "knowledge": "Haptic feedback enabled",
+      "description": "Interaction has a non-None haptic feedback level. Selects 67% of rows.",
+      "definition": "hapfeed <> 'None'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "interactionandcontrol"
+      ],
+      "refuted": false
+    },
+    "gaming_template|interactionandcontrol|Force feedback enabled": {
+      "id": 23,
+      "knowledge": "Force feedback enabled",
+      "description": "Interaction has a non-None force feedback level. Selects 67% of rows.",
+      "definition": "forcefeed <> 'None'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "interactionandcontrol"
+      ],
+      "refuted": false
+    },
+    "gaming_template|interactionandcontrol|Advanced haptic feedback": {
+      "id": 24,
+      "knowledge": "Advanced haptic feedback",
+      "description": "Interaction uses the Advanced haptic feedback level. Selects 37% of rows.",
+      "definition": "hapfeed = 'Advanced'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "interactionandcontrol"
+      ],
+      "refuted": false
+    },
+    "gaming_template|interactionandcontrol|Floating D-pad": {
+      "id": 25,
+      "knowledge": "Floating D-pad",
+      "description": "Interaction has the Floating D-pad variant. Selects 32% of rows.",
+      "definition": "dpadvar = 'Floating'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "interactionandcontrol"
+      ],
+      "refuted": false
+    },
+    "gaming_template|interactionandcontrol|Hall Effect analog stick": {
+      "id": 26,
+      "knowledge": "Hall Effect analog stick",
+      "description": "Interaction has the Hall Effect analog stick variant. Selects 37% of rows.",
+      "definition": "astickvar = 'Hall Effect'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "interactionandcontrol"
+      ],
+      "refuted": false
+    },
+    "gaming_template|rgb|RGB registry identifier format": {
+      "id": 27,
+      "knowledge": "RGB registry identifier format",
+      "description": "RGB registry IDs are 10 characters and begin with 'RGB_'.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "rgb"
+      ],
+      "refuted": false
+    },
+    "gaming_template|rgb|MECH reference identifier format": {
+      "id": 28,
+      "knowledge": "MECH reference identifier format",
+      "description": "MECH reference IDs are 11 characters and begin with 'MECH_'.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "rgb"
+      ],
+      "refuted": false
+    },
+    "gaming_template|rgb|AUD reference identifier format": {
+      "id": 29,
+      "knowledge": "AUD reference identifier format",
+      "description": "AUD reference IDs are 10 characters and begin with 'AUD_'.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "rgb"
+      ],
+      "refuted": false
+    },
+    "gaming_template|rgb|MECH reference length versus RGB registry length": {
+      "id": 30,
+      "knowledge": "MECH reference length versus RGB registry length",
+      "description": "MECH reference IDs are one character longer than RGB registry IDs.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        27,
+        28
+      ],
+      "tables": [
+        "rgb"
+      ],
+      "refuted": false
+    },
+    "gaming_template|rgb|AUD reference length versus RGB registry length": {
+      "id": 31,
+      "knowledge": "AUD reference length versus RGB registry length",
+      "description": "AUD reference IDs have the same length as RGB registry IDs.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        27,
+        29
+      ],
+      "tables": [
+        "rgb"
+      ],
+      "refuted": false
+    },
+    "gaming_template|mechanical|Actuation point before total travel": {
+      "id": 32,
+      "knowledge": "Actuation point before total travel",
+      "description": "The switch actuation point occurs before the key reaches the bottom of its travel.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "mechanical"
+      ],
+      "refuted": false
+    },
+    "gaming_template|mechanical|Reset point before total travel": {
+      "id": 33,
+      "knowledge": "Reset point before total travel",
+      "description": "The switch reset point occurs before the key reaches the bottom of its travel.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "mechanical"
+      ],
+      "refuted": false
+    },
+    "gaming_template|mechanical|Tactile bump before total travel": {
+      "id": 34,
+      "knowledge": "Tactile bump before total travel",
+      "description": "The tactile bump position occurs before the key reaches the bottom of its travel.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "mechanical"
+      ],
+      "refuted": false
+    },
+    "gaming_template|mechanical|N-Key Rollover (NKRO)": {
+      "id": 35,
+      "knowledge": "N-Key Rollover (NKRO)",
+      "description": "Rollover mode that registers all keys independently and avoids ghost keys.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "mechanical"
+      ],
+      "refuted": false
+    },
+    "gaming_template|mechanical|Six-Key Rollover (6KRO)": {
+      "id": 36,
+      "knowledge": "Six-Key Rollover (6KRO)",
+      "description": "Rollover mode that registers up to six simultaneous key presses. Selects 30% of rows.",
+      "definition": "TRIM(keyrollo) = '6KRO'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "mechanical"
+      ],
+      "refuted": false
+    },
+    "gaming_template|mechanical|Two-Key Rollover (2KRO)": {
+      "id": 37,
+      "knowledge": "Two-Key Rollover (2KRO)",
+      "description": "Rollover mode that registers up to two simultaneous key presses. Selects 35% of rows.",
+      "definition": "TRIM(keyrollo) = '2KRO'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "mechanical"
+      ],
+      "refuted": false
+    },
+    "gaming_template|mechanical|Mechanical switch": {
+      "id": 38,
+      "knowledge": "Mechanical switch",
+      "description": "Switch type that uses a mechanical spring and metal contact. Selects 24% of rows.",
+      "definition": "TRIM(swtchvar) = 'Mechanical'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "mechanical"
+      ],
+      "refuted": false
+    },
+    "gaming_template|mechanical|Membrane switch": {
+      "id": 39,
+      "knowledge": "Membrane switch",
+      "description": "Switch type that uses a membrane dome. Selects 28% of rows.",
+      "definition": "TRIM(swtchvar) = 'Membrane'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "mechanical"
+      ],
+      "refuted": false
+    },
+    "gaming_template|mechanical|Magnetic switch": {
+      "id": 40,
+      "knowledge": "Magnetic switch",
+      "description": "Switch type that uses a magnetic Hall-effect sensor. Selects 24% of rows.",
+      "definition": "TRIM(swtchvar) = 'Magnetic'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "mechanical"
+      ],
+      "refuted": false
+    },
+    "gaming_template|mechanical|Optical switch": {
+      "id": 41,
+      "knowledge": "Optical switch",
+      "description": "Switch type that uses an optical light beam. Selects 24% of rows.",
+      "definition": "TRIM(swtchvar) = 'Optical'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "mechanical"
+      ],
+      "refuted": false
+    },
+    "gaming_template|mechanical|Screw-in stabilizer": {
+      "id": 42,
+      "knowledge": "Screw-in stabilizer",
+      "description": "Stabilizer mounted to the PCB with screws. Selects 34% of rows.",
+      "definition": "TRIM(stabtype) = 'Screw-in'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "mechanical"
+      ],
+      "refuted": false
+    },
+    "gaming_template|mechanical|Double Shot PBT keycap": {
+      "id": 43,
+      "knowledge": "Double Shot PBT keycap",
+      "description": "PBT keycap with legends formed by double-shot molding. Selects 9% of rows.",
+      "definition": "TRIM(capmat) = 'Double Shot PBT' AND TRIM(caplegmeth) = 'Double Shot'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "mechanical"
+      ],
+      "refuted": false
+    },
+    "gaming_template|testsessions|USB Power Delivery (USB-PD)": {
+      "id": 44,
+      "knowledge": "USB Power Delivery (USB-PD)",
+      "description": "A USB charger or connection that uses the USB-PD power-delivery protocol. Selects 25% of rows.",
+      "definition": "TRIM(usbpwrline) LIKE 'USB-PD%'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "testsessions"
+      ],
+      "refuted": false
+    },
+    "gaming_template|testsessions|Quick charge enabled": {
+      "id": 45,
+      "knowledge": "Quick charge enabled",
+      "description": "A session where the quick-charge flag is set because the charger is USB-PD or rated at 10W. Selects 48% of rows.",
+      "definition": "qchgflag = CASE WHEN TRIM(usbpwrline) LIKE 'USB-PD%' OR TRIM(usbpwrline) = '10W' THEN 1 ELSE 0 END",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        44
+      ],
+      "tables": [
+        "testsessions"
+      ],
+      "refuted": false
+    },
+    "gaming_template|testsessions|Stable driver release": {
+      "id": 46,
+      "knowledge": "Stable driver release",
+      "description": "A driver session whose release status is Stable. Selects 33% of rows.",
+      "definition": "TRIM(driverstatus) = 'Stable'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "testsessions"
+      ],
+      "refuted": false
+    },
+    "gaming_template|testsessions|Headset device session": {
+      "id": 47,
+      "knowledge": "Headset device session",
+      "description": "A session using a Headset as the device category. Selects 26% of rows.",
+      "definition": "TRIM(devscope) = 'Headset'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "testsessions"
+      ],
+      "refuted": false
+    },
+    "gaming_template|testsessions|Low battery level": {
+      "id": 48,
+      "knowledge": "Low battery level",
+      "description": "Battery charge at or below 20 percent. Selects 20% of rows.",
+      "definition": "battlevel <= 20",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "testsessions"
+      ],
+      "refuted": false
+    },
+    "gaming_template|testsessions|High CPU usage": {
+      "id": 49,
+      "knowledge": "High CPU usage",
+      "description": "CPU usage greater than 4 percent. Selects 21% of rows.",
+      "definition": "cpuusepct > 4.0",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "testsessions"
+      ],
+      "refuted": false
+    },
+    "gaming_template|testsessions|High memory usage": {
+      "id": 50,
+      "knowledge": "High memory usage",
+      "description": "Memory usage at or above 70 MB. Selects 32% of rows.",
+      "definition": "memusemb >= 70",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "testsessions"
+      ],
+      "refuted": false
+    },
+    "gaming_template|testsessions|Strong wireless signal": {
+      "id": 51,
+      "knowledge": "Strong wireless signal",
+      "description": "Wireless signal strength above -50 dBm. Selects 82% of rows.",
+      "definition": "wlsignal > -50.0",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "testsessions"
+      ],
+      "refuted": false
+    },
+    "gaming_template|testsessions|Long firmware update duration": {
+      "id": 52,
+      "knowledge": "Long firmware update duration",
+      "description": "Firmware update duration greater than 250 units. Selects 22% of rows.",
+      "definition": "fwupdur > 250",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "testsessions"
+      ],
+      "refuted": false
+    },
+    "gaming_template|testsessions|High polling rate": {
+      "id": 53,
+      "knowledge": "High polling rate",
+      "description": "Polling rate at or above 1000 Hz. Selects 54% of rows.",
+      "definition": "pollratehz >= 1000",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "testsessions"
+      ],
+      "refuted": false
+    },
+    "gaming_template|physicaldurability|Weight Distribution Category": {
+      "id": 54,
+      "knowledge": "Weight Distribution Category",
+      "description": "Categorizes a physical durability record's weight distribution as back heavy, balanced, or front heavy.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "physicaldurability"
+      ],
+      "refuted": false
+    },
+    "gaming_template|physicaldurability|Cable Drag Category": {
+      "id": 55,
+      "knowledge": "Cable Drag Category",
+      "description": "Categorizes cable drag as minimal, moderate, or significant.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "physicaldurability"
+      ],
+      "refuted": false
+    },
+    "gaming_template|physicaldurability|Feet Material Category": {
+      "id": 56,
+      "knowledge": "Feet Material Category",
+      "description": "Material used for the mouse feet.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "physicaldurability"
+      ],
+      "refuted": false
+    },
+    "gaming_template|physicaldurability|Surface Compatibility Category": {
+      "id": 57,
+      "knowledge": "Surface Compatibility Category",
+      "description": "Preferred surface type for the mouse feet.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "physicaldurability"
+      ],
+      "refuted": false
+    },
+    "gaming_template|physicaldurability|Grip Style Category": {
+      "id": 58,
+      "knowledge": "Grip Style Category",
+      "description": "Intended user grip style for the device.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "physicaldurability"
+      ],
+      "refuted": false
+    },
+    "gaming_template|physicaldurability|Grip Coating Finish Category": {
+      "id": 59,
+      "knowledge": "Grip Coating Finish Category",
+      "description": "Finish of the grip coating.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "physicaldurability"
+      ],
+      "refuted": false
+    },
+    "gaming_template|physicaldurability|Sweat Resistance Level": {
+      "id": 60,
+      "knowledge": "Sweat Resistance Level",
+      "description": "Level of resistance to sweat.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "physicaldurability"
+      ],
+      "refuted": false
+    },
+    "gaming_template|physicaldurability|Temperature Resistance Level": {
+      "id": 61,
+      "knowledge": "Temperature Resistance Level",
+      "description": "Level of resistance to temperature.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "physicaldurability"
+      ],
+      "refuted": false
+    },
+    "gaming_template|physicaldurability|Humidity Resistance Level": {
+      "id": 62,
+      "knowledge": "Humidity Resistance Level",
+      "description": "Level of resistance to humidity.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "physicaldurability"
+      ],
+      "refuted": false
+    },
+    "gaming_template|physicaldurability|Dust and Water Resistance Rating (IPX)": {
+      "id": 63,
+      "knowledge": "Dust and Water Resistance Rating (IPX)",
+      "description": "Dust and water resistance ratings use IPX0 through IPX3.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "physicaldurability"
+      ],
+      "refuted": false
+    },
+    "gaming_template|physicaldurability|Impact Resistance Level": {
+      "id": 64,
+      "knowledge": "Impact Resistance Level",
+      "description": "Impact resistance level assigned from the drop height test value. Selects 32% of rows.",
+      "definition": "impres = CASE WHEN drophtm < 1.0 THEN 'Standard' WHEN drophtm <= 1.5 THEN 'Enhanced' ELSE 'Military Grade' END",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "physicaldurability"
+      ],
+      "refuted": false
+    },
+    "gaming_template|physicaldurability|Weight-Cable Relation": {
+      "id": 65,
+      "knowledge": "Weight-Cable Relation",
+      "description": "Cable weight is always less than total device weight. Selects 92% of rows.",
+      "definition": "cablegram < wgtgram",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "physicaldurability"
+      ],
+      "refuted": false
+    },
+    "gaming_template|physicaldurability|Registry Reference Code Format": {
+      "id": 66,
+      "knowledge": "Registry Reference Code Format",
+      "description": "Registry and reference IDs follow PHYS_, RGB_, and PERF_ prefixes.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "physicaldurability"
+      ],
+      "refuted": false
+    },
+    "gaming_template|audioandmedia|Audio registry ID (AUD registry)": {
+      "id": 67,
+      "knowledge": "Audio registry ID (AUD registry)",
+      "description": "Unique audio registry identifier whose code begins with AUD_.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "audioandmedia"
+      ],
+      "refuted": false
+    },
+    "gaming_template|audioandmedia|Audio device reference (DEV reference)": {
+      "id": 68,
+      "knowledge": "Audio device reference (DEV reference)",
+      "description": "Unique audio device reference whose code begins with DEV_.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "audioandmedia"
+      ],
+      "refuted": false
+    },
+    "gaming_template|audioandmedia|Audio performance reference (PERF reference)": {
+      "id": 69,
+      "knowledge": "Audio performance reference (PERF reference)",
+      "description": "Unique audio performance reference whose code begins with PERF_.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "audioandmedia"
+      ],
+      "refuted": false
+    },
+    "gaming_template|audioandmedia|Sound signature (sndsig)": {
+      "id": 70,
+      "knowledge": "Sound signature (sndsig)",
+      "description": "Sound signature category of an audio device.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "audioandmedia"
+      ],
+      "refuted": false
+    },
+    "gaming_template|audioandmedia|Microphone frequency response (micfreqresp)": {
+      "id": 71,
+      "knowledge": "Microphone frequency response (micfreqresp)",
+      "description": "Microphone frequency response is stored as a frequency range in Hz.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "audioandmedia"
+      ],
+      "refuted": false
+    },
+    "gaming_template|audioandmedia|Frequency response (freqresp)": {
+      "id": 72,
+      "knowledge": "Frequency response (freqresp)",
+      "description": "Overall frequency response is stored as a frequency range in Hz.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "audioandmedia"
+      ],
+      "refuted": false
+    },
+    "gaming_template|audioandmedia|Surround sound format (surrsnd)": {
+      "id": 73,
+      "knowledge": "Surround sound format (surrsnd)",
+      "description": "Surround sound format supported by the device.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "audioandmedia"
+      ],
+      "refuted": false
+    },
+    "gaming_template|audioandmedia|Microphone monitor flag (micmon)": {
+      "id": 74,
+      "knowledge": "Microphone monitor flag (micmon)",
+      "description": "Indicator for microphone monitoring; always disabled.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "audioandmedia"
+      ],
+      "refuted": false
+    },
+    "gaming_template|audioandmedia|Noise cancellation type (noisecanc)": {
+      "id": 75,
+      "knowledge": "Noise cancellation type (noisecanc)",
+      "description": "Type of noise cancellation used by the device.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "audioandmedia"
+      ],
+      "refuted": false
+    },
+    "gaming_template|audioandmedia|Bluetooth version (btversion)": {
+      "id": 76,
+      "knowledge": "Bluetooth version (btversion)",
+      "description": "Bluetooth protocol version supported by the device.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "audioandmedia"
+      ],
+      "refuted": false
+    },
+    "gaming_template|audioandmedia|Multi-device support flag (multidev)": {
+      "id": 77,
+      "knowledge": "Multi-device support flag (multidev)",
+      "description": "Flag indicating whether multi-device pairing is supported.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "audioandmedia"
+      ],
+      "refuted": false
+    },
+    "gaming_template|audioandmedia|Driver size (drvszmm)": {
+      "id": 78,
+      "knowledge": "Driver size (drvszmm)",
+      "description": "Speaker driver diameter in millimeters.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "audioandmedia"
+      ],
+      "refuted": false
+    },
+    "gaming_template|deviceidentity,testsessions|Battery life per wireless range": {
+      "id": 79,
+      "knowledge": "Battery life per wireless range",
+      "description": "Battery life in hours divided by wireless range in meters.",
+      "definition": "battlifeh / wlrangem",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "deviceidentity",
+        "testsessions"
+      ],
+      "refuted": false
+    },
+    "gaming_template|deviceidentity,testsessions|Battery capacity per active power draw": {
+      "id": 80,
+      "knowledge": "Battery capacity per active power draw",
+      "description": "Battery capacity in milliampere-hours divided by active power draw in milliwatts.",
+      "definition": "battcapmah / pwractmw",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "deviceidentity",
+        "testsessions"
+      ],
+      "refuted": false
+    },
+    "gaming_template|deviceidentity,performance|Click latency per wireless latency variance": {
+      "id": 81,
+      "knowledge": "Click latency per wireless latency variance",
+      "description": "Click latency in milliseconds divided by wireless latency variance in milliseconds.",
+      "definition": "clklat / wllatvar",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "deviceidentity",
+        "performance"
+      ],
+      "refuted": false
+    },
+    "gaming_template|mechanical,performance|Scroll accuracy per switch consistency": {
+      "id": 82,
+      "knowledge": "Scroll accuracy per switch consistency",
+      "description": "Scroll accuracy percentage divided by switch consistency percentage.",
+      "definition": "scraccy / swtchcons",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "mechanical",
+        "performance"
+      ],
+      "refuted": false
+    },
+    "gaming_template|performance,physicaldurability|Acceleration-to-weight ratio": {
+      "id": 83,
+      "knowledge": "Acceleration-to-weight ratio",
+      "description": "Maximum acceleration divided by device weight in grams.",
+      "definition": "accelmax / wgtgram",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "performance",
+        "physicaldurability"
+      ],
+      "refuted": false
+    },
+    "gaming_template|audioandmedia,performance|Audio latency per click latency": {
+      "id": 84,
+      "knowledge": "Audio latency per click latency",
+      "description": "Audio latency in milliseconds divided by click latency in milliseconds.",
+      "definition": "audlatms / clklat",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "audioandmedia",
+        "performance"
+      ],
+      "refuted": false
+    },
+    "gaming_template|deviceidentity,testsessions|High-range high-endurance wireless device": {
+      "id": 85,
+      "knowledge": "High-range high-endurance wireless device",
+      "description": "Wireless device with battery life above 90 hours and wireless range above 15 meters.",
+      "definition": "wlrangem > 15.0 AND battlifeh > 90.0",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        15
+      ],
+      "tables": [
+        "deviceidentity",
+        "testsessions"
+      ],
+      "refuted": false
+    },
+    "gaming_template|interactionandcontrol,physicaldurability|Durable precise joystick": {
+      "id": 86,
+      "knowledge": "Durable precise joystick",
+      "description": "Joystick with bend force above 400 and precision above 95 percent.",
+      "definition": "bendforce > 400.0 AND joyprec > 95.0",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        20
+      ],
+      "tables": [
+        "interactionandcontrol",
+        "physicaldurability"
+      ],
+      "refuted": false
+    }
+  },
+  "meta": {
+    "deviceidentity": {
+      "profiled_at": "2026-08-30T13:38:09.477339+00:00"
+    },
+    "mechanical,performance": {
+      "profiled_at": "2026-08-30T13:38:09.477339+00:00"
+    },
+    "deviceidentity,performance": {
+      "profiled_at": "2026-08-30T13:38:09.477339+00:00"
+    },
+    "interactionandcontrol": {
+      "profiled_at": "2026-08-30T13:38:09.477339+00:00"
+    },
+    "rgb": {
+      "profiled_at": "2026-08-30T13:38:09.477339+00:00"
+    },
+    "deviceidentity,testsessions": {
+      "profiled_at": "2026-08-30T13:38:09.477339+00:00"
+    },
+    "audioandmedia,performance": {
+      "profiled_at": "2026-08-30T13:38:09.477339+00:00"
+    },
+    "mechanical": {
+      "profiled_at": "2026-08-30T13:38:09.477339+00:00"
+    },
+    "audioandmedia": {
+      "profiled_at": "2026-08-30T13:38:09.477339+00:00"
+    },
+    "interactionandcontrol,physicaldurability": {
+      "profiled_at": "2026-08-30T13:38:09.477339+00:00"
+    },
+    "testsessions": {
+      "profiled_at": "2026-08-30T13:38:09.477339+00:00"
+    },
+    "physicaldurability": {
+      "profiled_at": "2026-08-30T13:38:09.477339+00:00"
+    },
+    "performance": {
+      "profiled_at": "2026-08-30T13:38:09.477339+00:00"
+    },
+    "performance,physicaldurability": {
+      "profiled_at": "2026-08-30T13:38:09.477339+00:00"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{# version: v1, description: direct schema linking — question + schema → the tables/columns it needs #}
+Identify MINIMAL necessary tables and columns to answer the question
+
+Schema
+{{ schema }}
+{% if knowledge %}
+
+Domain terms used in this database
+{% for e in knowledge %}
+- {{ e.knowledge }}: {{ e.description }}
+{% if knowledge_full %}
+  Definition: {{ e.definition }}
+{% endif %}
+{% endfor %}
+{% endif %}
+
+Question: {{ question }}
+
+Return ONLY a JSON array: [{"table": "...", "columns": ["..."]}]

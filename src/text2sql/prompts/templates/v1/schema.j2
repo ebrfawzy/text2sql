@@ -1,0 +1,8 @@
+{# version: v1, description: schema block — one table per stanza, one line per column #}
+{% for t in tables %}Table: {{ t.name }}{{ " (%d rows)" | format(t.row_count) if t.row_count is not none else "" }}
+{% for line in t.columns %}{{ line }}
+{% endfor %}{% for fk in t.fks %}  FK: {{ t.name }}.{{ fk.column }} -> {{ fk.referred_table }}.{{ fk.referred_column }}
+{% endfor %}
+
+{% endfor %}{% if unlinked %}Other tables in this database (not shown in detail, inspect before use): {{ unlinked | join(", ") }}
+{% endif %}

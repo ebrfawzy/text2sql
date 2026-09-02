@@ -1,0 +1,6882 @@
+{
+  "version": 1,
+  "profiled_at": "2026-08-30T11:41:59.963360+00:00",
+  "columns": {
+    "vaccine_template|container|containregistry": {
+      "table_name": "container",
+      "column_name": "containregistry",
+      "column_type": "TEXT(20)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 900,
+      "min_value": "C10354",
+      "max_value": "C99982",
+      "top_k_values": [
+        {
+          "value": "C10354",
+          "count": 1
+        },
+        {
+          "value": "C10487",
+          "count": 1
+        },
+        {
+          "value": "C10510",
+          "count": 1
+        },
+        {
+          "value": "C10514",
+          "count": 1
+        },
+        {
+          "value": "C10643",
+          "count": 1
+        },
+        {
+          "value": "C10909",
+          "count": 1
+        },
+        {
+          "value": "C11016",
+          "count": 1
+        },
+        {
+          "value": "C11046",
+          "count": 1
+        },
+        {
+          "value": "C11266",
+          "count": 1
+        },
+        {
+          "value": "C11279",
+          "count": 1
+        }
+      ],
+      "min_length": 6,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "ADDDDD"
+      ]
+    },
+    "vaccine_template|container|containmodel": {
+      "table_name": "container",
+      "column_name": "containmodel",
+      "column_type": "TEXT(40)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 3,
+      "min_value": "Cryo Container",
+      "max_value": "Ultra-Low Freezer",
+      "top_k_values": [
+        {
+          "value": "Ultra-Low Freezer",
+          "count": 336
+        },
+        {
+          "value": "Cryo Container",
+          "count": 303
+        },
+        {
+          "value": "Thermal Shipper",
+          "count": 261
+        }
+      ],
+      "min_length": 14,
+      "max_length": 17,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAA-AAA AAAAAAA",
+        "AAAA AAAAAAAAA",
+        "AAAAAAA AAAAAAA"
+      ]
+    },
+    "vaccine_template|container|volliters": {
+      "table_name": "container",
+      "column_name": "volliters",
+      "column_type": "INTEGER",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 392,
+      "min_value": "100",
+      "max_value": "99",
+      "top_k_values": [
+        {
+          "value": "388",
+          "count": 7
+        },
+        {
+          "value": "209",
+          "count": 7
+        },
+        {
+          "value": "457",
+          "count": 6
+        },
+        {
+          "value": "337",
+          "count": 6
+        },
+        {
+          "value": "279",
+          "count": 6
+        },
+        {
+          "value": "77",
+          "count": 6
+        },
+        {
+          "value": "495",
+          "count": 5
+        },
+        {
+          "value": "485",
+          "count": 5
+        },
+        {
+          "value": "483",
+          "count": 5
+        },
+        {
+          "value": "456",
+          "count": 5
+        }
+      ],
+      "min_length": 2,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD"
+      ]
+    },
+    "vaccine_template|container|masskg": {
+      "table_name": "container",
+      "column_name": "masskg",
+      "column_type": "INTEGER",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 693,
+      "min_value": "100.2",
+      "max_value": "99.9",
+      "top_k_values": [
+        {
+          "value": "167",
+          "count": 4
+        },
+        {
+          "value": "132.9",
+          "count": 4
+        },
+        {
+          "value": "107.6",
+          "count": 4
+        },
+        {
+          "value": "67.6",
+          "count": 4
+        },
+        {
+          "value": "28.1",
+          "count": 4
+        },
+        {
+          "value": "197",
+          "count": 3
+        },
+        {
+          "value": "196.2",
+          "count": 3
+        },
+        {
+          "value": "193.1",
+          "count": 3
+        },
+        {
+          "value": "189",
+          "count": 3
+        },
+        {
+          "value": "176.6",
+          "count": 3
+        }
+      ],
+      "min_length": 2,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD.D",
+        "DD.D",
+        "DDD",
+        "DD"
+      ]
+    },
+    "vaccine_template|container|containflag": {
+      "table_name": "container",
+      "column_name": "containflag",
+      "column_type": "TEXT(30)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 4,
+      "min_value": "Active",
+      "max_value": "Return",
+      "top_k_values": [
+        {
+          "value": "Return",
+          "count": 253
+        },
+        {
+          "value": "Active",
+          "count": 219
+        },
+        {
+          "value": "Delivered",
+          "count": 218
+        },
+        {
+          "value": "In Transit",
+          "count": 210
+        }
+      ],
+      "min_length": 6,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AAAAAAAAA",
+        "AA AAAAAAA"
+      ]
+    },
+    "vaccine_template|container|coolkind": {
+      "table_name": "container",
+      "column_name": "coolkind",
+      "column_type": "TEXT(40)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 3,
+      "min_value": "Dry Ice",
+      "max_value": "Phase Change Material",
+      "top_k_values": [
+        {
+          "value": "Dry Ice",
+          "count": 314
+        },
+        {
+          "value": "Liquid Nitrogen",
+          "count": 294
+        },
+        {
+          "value": "Phase Change Material",
+          "count": 292
+        }
+      ],
+      "min_length": 7,
+      "max_length": 21,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAA AAA",
+        "AAAAAA AAAAAAAA",
+        "AAAAA AAAAAA AAAAAAAA"
+      ]
+    },
+    "vaccine_template|container|coolmass": {
+      "table_name": "container",
+      "column_name": "coolmass",
+      "column_type": "INTEGER",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 387,
+      "min_value": "10",
+      "max_value": "9.9",
+      "top_k_values": [
+        {
+          "value": "42.5",
+          "count": 8
+        },
+        {
+          "value": "47.7",
+          "count": 7
+        },
+        {
+          "value": "13.4",
+          "count": 7
+        },
+        {
+          "value": "8.3",
+          "count": 7
+        },
+        {
+          "value": "49.9",
+          "count": 6
+        },
+        {
+          "value": "48.6",
+          "count": 6
+        },
+        {
+          "value": "17.9",
+          "count": 6
+        },
+        {
+          "value": "46.2",
+          "count": 5
+        },
+        {
+          "value": "43.6",
+          "count": 5
+        },
+        {
+          "value": "40.6",
+          "count": 5
+        }
+      ],
+      "min_length": 1,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.D",
+        "D.D",
+        "DD",
+        "D"
+      ]
+    },
+    "vaccine_template|container|coolremainpct": {
+      "table_name": "container",
+      "column_name": "coolremainpct",
+      "column_type": "REAL",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 523,
+      "min_value": "20.0",
+      "max_value": "99.9",
+      "top_k_values": [
+        {
+          "value": "86.8",
+          "count": 6
+        },
+        {
+          "value": "97.8",
+          "count": 5
+        },
+        {
+          "value": "46.1",
+          "count": 5
+        },
+        {
+          "value": "31.6",
+          "count": 5
+        },
+        {
+          "value": "96.1",
+          "count": 4
+        },
+        {
+          "value": "90.9",
+          "count": 4
+        },
+        {
+          "value": "86.6",
+          "count": 4
+        },
+        {
+          "value": "83.5",
+          "count": 4
+        },
+        {
+          "value": "83.3",
+          "count": 4
+        },
+        {
+          "value": "81.7",
+          "count": 4
+        }
+      ],
+      "min_length": 4,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DD.D"
+      ]
+    },
+    "vaccine_template|container|coolrefills": {
+      "table_name": "container",
+      "column_name": "coolrefills",
+      "column_type": "INTEGER",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 6,
+      "min_value": "0",
+      "max_value": "5",
+      "top_k_values": [
+        {
+          "value": "2",
+          "count": 171
+        },
+        {
+          "value": "1",
+          "count": 154
+        },
+        {
+          "value": "4",
+          "count": 151
+        },
+        {
+          "value": "5",
+          "count": 145
+        },
+        {
+          "value": "3",
+          "count": 141
+        },
+        {
+          "value": "0",
+          "count": 138
+        }
+      ],
+      "min_length": 1,
+      "max_length": 1,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D"
+      ]
+    },
+    "vaccine_template|container|refilllatest": {
+      "table_name": "container",
+      "column_name": "refilllatest",
+      "column_type": "TEXT",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 11,
+      "min_value": "2025-02-09",
+      "max_value": "2025-02-19",
+      "top_k_values": [
+        {
+          "value": "2025-02-12",
+          "count": 99
+        },
+        {
+          "value": "2025-02-17",
+          "count": 93
+        },
+        {
+          "value": "2025-02-14",
+          "count": 88
+        },
+        {
+          "value": "2025-02-09",
+          "count": 88
+        },
+        {
+          "value": "2025-02-13",
+          "count": 86
+        },
+        {
+          "value": "2025-02-11",
+          "count": 85
+        },
+        {
+          "value": "2025-02-16",
+          "count": 77
+        },
+        {
+          "value": "2025-02-10",
+          "count": 74
+        },
+        {
+          "value": "2025-02-15",
+          "count": 73
+        },
+        {
+          "value": "2025-02-18",
+          "count": 70
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDD-DD-DD"
+      ]
+    },
+    "vaccine_template|container|refillnext": {
+      "table_name": "container",
+      "column_name": "refillnext",
+      "column_type": "TEXT",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 5,
+      "min_value": "2025-02-20",
+      "max_value": "2025-02-24",
+      "top_k_values": [
+        {
+          "value": "2025-02-22",
+          "count": 201
+        },
+        {
+          "value": "2025-02-21",
+          "count": 186
+        },
+        {
+          "value": "2025-02-23",
+          "count": 181
+        },
+        {
+          "value": "2025-02-24",
+          "count": 169
+        },
+        {
+          "value": "2025-02-20",
+          "count": 163
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDD-DD-DD"
+      ]
+    },
+    "vaccine_template|container|batterypct": {
+      "table_name": "container",
+      "column_name": "batterypct",
+      "column_type": "INTEGER",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 101,
+      "min_value": "0",
+      "max_value": "99",
+      "top_k_values": [
+        {
+          "value": "41",
+          "count": 19
+        },
+        {
+          "value": "75",
+          "count": 17
+        },
+        {
+          "value": "1",
+          "count": 17
+        },
+        {
+          "value": "97",
+          "count": 16
+        },
+        {
+          "value": "46",
+          "count": 15
+        },
+        {
+          "value": "9",
+          "count": 15
+        },
+        {
+          "value": "90",
+          "count": 14
+        },
+        {
+          "value": "31",
+          "count": 14
+        },
+        {
+          "value": "78",
+          "count": 13
+        },
+        {
+          "value": "51",
+          "count": 13
+        }
+      ],
+      "min_length": 1,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D",
+        "DDD"
+      ]
+    },
+    "vaccine_template|container|pwrfeed": {
+      "table_name": "container",
+      "column_name": "pwrfeed",
+      "column_type": "TEXT(40)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 3,
+      "min_value": "Battery",
+      "max_value": "Hybrid",
+      "top_k_values": [
+        {
+          "value": "Hybrid",
+          "count": 310
+        },
+        {
+          "value": "External",
+          "count": 298
+        },
+        {
+          "value": "Battery",
+          "count": 292
+        }
+      ],
+      "min_length": 6,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AAAAAAAA",
+        "AAAAAAA"
+      ]
+    },
+    "vaccine_template|container|pwrbackupflag": {
+      "table_name": "container",
+      "column_name": "pwrbackupflag",
+      "column_type": "TEXT(40)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 3,
+      "min_value": "Available",
+      "max_value": "Not Available",
+      "top_k_values": [
+        {
+          "value": "In Use",
+          "count": 322
+        },
+        {
+          "value": "Available",
+          "count": 292
+        },
+        {
+          "value": "Not Available",
+          "count": 286
+        }
+      ],
+      "min_length": 6,
+      "max_length": 13,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AA AAA",
+        "AAAAAAAAA",
+        "AAA AAAAAAAAA"
+      ]
+    },
+    "vaccine_template|container|shipown": {
+      "table_name": "container",
+      "column_name": "shipown",
+      "column_type": "TEXT(20)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 900,
+      "min_value": "VS101443",
+      "max_value": "VS999632",
+      "top_k_values": [
+        {
+          "value": "VS999632",
+          "count": 1
+        },
+        {
+          "value": "VS999459",
+          "count": 1
+        },
+        {
+          "value": "VS999134",
+          "count": 1
+        },
+        {
+          "value": "VS999027",
+          "count": 1
+        },
+        {
+          "value": "VS997699",
+          "count": 1
+        },
+        {
+          "value": "VS996761",
+          "count": 1
+        },
+        {
+          "value": "VS993249",
+          "count": 1
+        },
+        {
+          "value": "VS991810",
+          "count": 1
+        },
+        {
+          "value": "VS990820",
+          "count": 1
+        },
+        {
+          "value": "VS990225",
+          "count": 1
+        }
+      ],
+      "min_length": 8,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDDDD"
+      ]
+    },
+    "vaccine_template|datalogger|loggerreg": {
+      "table_name": "datalogger",
+      "column_name": "loggerreg",
+      "column_type": "TEXT(20)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 900,
+      "min_value": "DL1003",
+      "max_value": "DL9998",
+      "top_k_values": [
+        {
+          "value": "DL1003",
+          "count": 1
+        },
+        {
+          "value": "DL1014",
+          "count": 1
+        },
+        {
+          "value": "DL1022",
+          "count": 1
+        },
+        {
+          "value": "DL1023",
+          "count": 1
+        },
+        {
+          "value": "DL1039",
+          "count": 1
+        },
+        {
+          "value": "DL1052",
+          "count": 1
+        },
+        {
+          "value": "DL1066",
+          "count": 1
+        },
+        {
+          "value": "DL1119",
+          "count": 1
+        },
+        {
+          "value": "DL1121",
+          "count": 1
+        },
+        {
+          "value": "DL1132",
+          "count": 1
+        }
+      ],
+      "min_length": 6,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDD"
+      ]
+    },
+    "vaccine_template|datalogger|logflag": {
+      "table_name": "datalogger",
+      "column_name": "logflag",
+      "column_type": "TEXT",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 3,
+      "min_value": "Active",
+      "max_value": "Malfunction",
+      "top_k_values": [
+        {
+          "value": "Battery Low",
+          "count": 321
+        },
+        {
+          "value": "Active",
+          "count": 301
+        },
+        {
+          "value": "Malfunction",
+          "count": 278
+        }
+      ],
+      "min_length": 6,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA AAA",
+        "AAAAAA",
+        "AAAAAAAAAAA"
+      ]
+    },
+    "vaccine_template|datalogger|loginterval": {
+      "table_name": "datalogger",
+      "column_name": "loginterval",
+      "column_type": "INTEGER",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 5,
+      "min_value": "1",
+      "max_value": "5",
+      "top_k_values": [
+        {
+          "value": "30",
+          "count": 193
+        },
+        {
+          "value": "15",
+          "count": 179
+        },
+        {
+          "value": "5",
+          "count": 178
+        },
+        {
+          "value": "1",
+          "count": 178
+        },
+        {
+          "value": "10",
+          "count": 172
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D"
+      ]
+    },
+    "vaccine_template|datalogger|transmitflag": {
+      "table_name": "datalogger",
+      "column_name": "transmitflag",
+      "column_type": "TEXT",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 3,
+      "min_value": "Delayed",
+      "max_value": "Real-time",
+      "top_k_values": [
+        {
+          "value": "Delayed",
+          "count": 324
+        },
+        {
+          "value": "Failed",
+          "count": 289
+        },
+        {
+          "value": "Real-time",
+          "count": 287
+        }
+      ],
+      "min_length": 6,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAA",
+        "AAAA-AAAA"
+      ]
+    },
+    "vaccine_template|datalogger|datauptime": {
+      "table_name": "datalogger",
+      "column_name": "datauptime",
+      "column_type": "TEXT(6)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 61,
+      "min_value": "2025-02-19 07:32:08",
+      "max_value": "2025-02-19 08:32:08",
+      "top_k_values": [
+        {
+          "value": "2025-02-19 08:01:08",
+          "count": 28
+        },
+        {
+          "value": "2025-02-19 07:48:08",
+          "count": 24
+        },
+        {
+          "value": "2025-02-19 07:47:08",
+          "count": 22
+        },
+        {
+          "value": "2025-02-19 07:46:08",
+          "count": 21
+        },
+        {
+          "value": "2025-02-19 08:08:08",
+          "count": 20
+        },
+        {
+          "value": "2025-02-19 08:07:08",
+          "count": 20
+        },
+        {
+          "value": "2025-02-19 08:05:08",
+          "count": 20
+        },
+        {
+          "value": "2025-02-19 08:18:08",
+          "count": 19
+        },
+        {
+          "value": "2025-02-19 08:24:08",
+          "count": 18
+        },
+        {
+          "value": "2025-02-19 08:22:08",
+          "count": 18
+        }
+      ],
+      "min_length": 19,
+      "max_length": 19,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDD-DD-DD DD:DD:DD"
+      ]
+    },
+    "vaccine_template|datalogger|datapct": {
+      "table_name": "datalogger",
+      "column_name": "datapct",
+      "column_type": "INTEGER",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 199,
+      "min_value": "100",
+      "max_value": "99.9",
+      "top_k_values": [
+        {
+          "value": "97.7",
+          "count": 11
+        },
+        {
+          "value": "95",
+          "count": 10
+        },
+        {
+          "value": "98.1",
+          "count": 9
+        },
+        {
+          "value": "96.1",
+          "count": 9
+        },
+        {
+          "value": "93.1",
+          "count": 9
+        },
+        {
+          "value": "91",
+          "count": 9
+        },
+        {
+          "value": "99.8",
+          "count": 8
+        },
+        {
+          "value": "99.1",
+          "count": 8
+        },
+        {
+          "value": "93.4",
+          "count": 8
+        },
+        {
+          "value": "88.4",
+          "count": 8
+        }
+      ],
+      "min_length": 2,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.D",
+        "DD",
+        "DDD"
+      ]
+    },
+    "vaccine_template|datalogger|batteryswap": {
+      "table_name": "datalogger",
+      "column_name": "batteryswap",
+      "column_type": "TEXT",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 335,
+      "min_value": "2025-02-20",
+      "max_value": "2026-02-19",
+      "top_k_values": [
+        {
+          "value": "2025-09-30",
+          "count": 8
+        },
+        {
+          "value": "2026-02-18",
+          "count": 7
+        },
+        {
+          "value": "2026-01-02",
+          "count": 7
+        },
+        {
+          "value": "2025-04-21",
+          "count": 7
+        },
+        {
+          "value": "2026-02-12",
+          "count": 6
+        },
+        {
+          "value": "2026-01-10",
+          "count": 6
+        },
+        {
+          "value": "2026-01-05",
+          "count": 6
+        },
+        {
+          "value": "2025-12-22",
+          "count": 6
+        },
+        {
+          "value": "2025-11-29",
+          "count": 6
+        },
+        {
+          "value": "2025-11-15",
+          "count": 6
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDD-DD-DD"
+      ]
+    },
+    "vaccine_template|datalogger|firmvers": {
+      "table_name": "datalogger",
+      "column_name": "firmvers",
+      "column_type": "TEXT(50)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 431,
+      "min_value": "1.0.1",
+      "max_value": "5.9.9",
+      "top_k_values": [
+        {
+          "value": "4.3.0",
+          "count": 6
+        },
+        {
+          "value": "3.6.6",
+          "count": 6
+        },
+        {
+          "value": "3.5.4",
+          "count": 6
+        },
+        {
+          "value": "1.4.3",
+          "count": 6
+        },
+        {
+          "value": "5.8.6",
+          "count": 5
+        },
+        {
+          "value": "5.0.5",
+          "count": 5
+        },
+        {
+          "value": "4.7.6",
+          "count": 5
+        },
+        {
+          "value": "4.7.5",
+          "count": 5
+        },
+        {
+          "value": "4.1.6",
+          "count": 5
+        },
+        {
+          "value": "3.3.8",
+          "count": 5
+        }
+      ],
+      "min_length": 5,
+      "max_length": 5,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D.D.D"
+      ]
+    },
+    "vaccine_template|datalogger|softupdate": {
+      "table_name": "datalogger",
+      "column_name": "softupdate",
+      "column_type": "TEXT",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 3,
+      "min_value": "Current",
+      "max_value": "Pending",
+      "top_k_values": [
+        {
+          "value": "Pending",
+          "count": 311
+        },
+        {
+          "value": "Current",
+          "count": 298
+        },
+        {
+          "value": "Failed",
+          "count": 291
+        }
+      ],
+      "min_length": 6,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAA"
+      ]
+    },
+    "vaccine_template|datalogger|syshealth": {
+      "table_name": "datalogger",
+      "column_name": "syshealth",
+      "column_type": "TEXT",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 3,
+      "min_value": "Fair",
+      "max_value": "Poor",
+      "top_k_values": [
+        {
+          "value": "Fair",
+          "count": 316
+        },
+        {
+          "value": "Poor",
+          "count": 295
+        },
+        {
+          "value": "Good",
+          "count": 289
+        }
+      ],
+      "min_length": 4,
+      "max_length": 4,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAA"
+      ]
+    },
+    "vaccine_template|datalogger|memusepct": {
+      "table_name": "datalogger",
+      "column_name": "memusepct",
+      "column_type": "INTEGER",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 101,
+      "min_value": "0",
+      "max_value": "99",
+      "top_k_values": [
+        {
+          "value": "65",
+          "count": 16
+        },
+        {
+          "value": "51",
+          "count": 14
+        },
+        {
+          "value": "14",
+          "count": 14
+        },
+        {
+          "value": "0",
+          "count": 14
+        },
+        {
+          "value": "97",
+          "count": 13
+        },
+        {
+          "value": "87",
+          "count": 13
+        },
+        {
+          "value": "64",
+          "count": 13
+        },
+        {
+          "value": "41",
+          "count": 13
+        },
+        {
+          "value": "36",
+          "count": 13
+        },
+        {
+          "value": "16",
+          "count": 13
+        }
+      ],
+      "min_length": 1,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D",
+        "DDD"
+      ]
+    },
+    "vaccine_template|datalogger|storecapmb": {
+      "table_name": "datalogger",
+      "column_name": "storecapmb",
+      "column_type": "INTEGER",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 598,
+      "min_value": "1",
+      "max_value": "998",
+      "top_k_values": [
+        {
+          "value": "928",
+          "count": 5
+        },
+        {
+          "value": "753",
+          "count": 5
+        },
+        {
+          "value": "26",
+          "count": 5
+        },
+        {
+          "value": "966",
+          "count": 4
+        },
+        {
+          "value": "885",
+          "count": 4
+        },
+        {
+          "value": "636",
+          "count": 4
+        },
+        {
+          "value": "615",
+          "count": 4
+        },
+        {
+          "value": "552",
+          "count": 4
+        },
+        {
+          "value": "288",
+          "count": 4
+        },
+        {
+          "value": "259",
+          "count": 4
+        }
+      ],
+      "min_length": 1,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D",
+        "DDDD"
+      ]
+    },
+    "vaccine_template|datalogger|storeremainmb": {
+      "table_name": "datalogger",
+      "column_name": "storeremainmb",
+      "column_type": "INTEGER",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 599,
+      "min_value": "10",
+      "max_value": "997",
+      "top_k_values": [
+        {
+          "value": "740",
+          "count": 6
+        },
+        {
+          "value": "989",
+          "count": 4
+        },
+        {
+          "value": "948",
+          "count": 4
+        },
+        {
+          "value": "925",
+          "count": 4
+        },
+        {
+          "value": "817",
+          "count": 4
+        },
+        {
+          "value": "794",
+          "count": 4
+        },
+        {
+          "value": "668",
+          "count": 4
+        },
+        {
+          "value": "581",
+          "count": 4
+        },
+        {
+          "value": "556",
+          "count": 4
+        },
+        {
+          "value": "343",
+          "count": 4
+        }
+      ],
+      "min_length": 1,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D",
+        "DDDD"
+      ]
+    },
+    "vaccine_template|datalogger|netsignal": {
+      "table_name": "datalogger",
+      "column_name": "netsignal",
+      "column_type": "TEXT",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 4,
+      "min_value": "Excellent",
+      "max_value": "Poor",
+      "top_k_values": [
+        {
+          "value": "Excellent",
+          "count": 291
+        },
+        {
+          "value": "Good",
+          "count": 280
+        },
+        {
+          "value": "Poor",
+          "count": 270
+        },
+        {
+          "value": "None",
+          "count": 59
+        }
+      ],
+      "min_length": 4,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAAAAAAAA"
+      ]
+    },
+    "vaccine_template|datalogger|commproto": {
+      "table_name": "datalogger",
+      "column_name": "commproto",
+      "column_type": "TEXT(20)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 4,
+      "min_value": "Bluetooth",
+      "max_value": "Satellite",
+      "top_k_values": [
+        {
+          "value": "Bluetooth",
+          "count": 229
+        },
+        {
+          "value": "GSM",
+          "count": 226
+        },
+        {
+          "value": "Satellite",
+          "count": 223
+        },
+        {
+          "value": "RF",
+          "count": 222
+        }
+      ],
+      "min_length": 2,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAA",
+        "AAA",
+        "AA"
+      ]
+    },
+    "vaccine_template|datalogger|syncflag": {
+      "table_name": "datalogger",
+      "column_name": "syncflag",
+      "column_type": "TEXT(20)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 3,
+      "min_value": "Failed",
+      "max_value": "Success",
+      "top_k_values": [
+        {
+          "value": "Success",
+          "count": 303
+        },
+        {
+          "value": "Failed",
+          "count": 300
+        },
+        {
+          "value": "Pending",
+          "count": 297
+        }
+      ],
+      "min_length": 6,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAA"
+      ]
+    },
+    "vaccine_template|datalogger|syncfreqhr": {
+      "table_name": "datalogger",
+      "column_name": "syncfreqhr",
+      "column_type": "INTEGER",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 5,
+      "min_value": "1",
+      "max_value": "8",
+      "top_k_values": [
+        {
+          "value": "12",
+          "count": 208
+        },
+        {
+          "value": "4",
+          "count": 180
+        },
+        {
+          "value": "8",
+          "count": 179
+        },
+        {
+          "value": "1",
+          "count": 173
+        },
+        {
+          "value": "24",
+          "count": 160
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D",
+        "DD"
+      ]
+    },
+    "vaccine_template|datalogger|containlog": {
+      "table_name": "datalogger",
+      "column_name": "containlog",
+      "column_type": "TEXT(20)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 900,
+      "min_value": "C10354",
+      "max_value": "C99982",
+      "top_k_values": [
+        {
+          "value": "C99982",
+          "count": 1
+        },
+        {
+          "value": "C99958",
+          "count": 1
+        },
+        {
+          "value": "C99786",
+          "count": 1
+        },
+        {
+          "value": "C99743",
+          "count": 1
+        },
+        {
+          "value": "C99337",
+          "count": 1
+        },
+        {
+          "value": "C99316",
+          "count": 1
+        },
+        {
+          "value": "C99304",
+          "count": 1
+        },
+        {
+          "value": "C99285",
+          "count": 1
+        },
+        {
+          "value": "C99239",
+          "count": 1
+        },
+        {
+          "value": "C99191",
+          "count": 1
+        }
+      ],
+      "min_length": 6,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "ADDDDD"
+      ]
+    },
+    "vaccine_template|datalogger|shiplog": {
+      "table_name": "datalogger",
+      "column_name": "shiplog",
+      "column_type": "TEXT(20)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 900,
+      "min_value": "VS101443",
+      "max_value": "VS999632",
+      "top_k_values": [
+        {
+          "value": "VS999632",
+          "count": 1
+        },
+        {
+          "value": "VS999459",
+          "count": 1
+        },
+        {
+          "value": "VS999134",
+          "count": 1
+        },
+        {
+          "value": "VS999027",
+          "count": 1
+        },
+        {
+          "value": "VS997699",
+          "count": 1
+        },
+        {
+          "value": "VS996761",
+          "count": 1
+        },
+        {
+          "value": "VS993249",
+          "count": 1
+        },
+        {
+          "value": "VS991810",
+          "count": 1
+        },
+        {
+          "value": "VS990820",
+          "count": 1
+        },
+        {
+          "value": "VS990225",
+          "count": 1
+        }
+      ],
+      "min_length": 8,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDDDD"
+      ]
+    },
+    "vaccine_template|regulatoryandmaintenance|regmaintregistry": {
+      "table_name": "regulatoryandmaintenance",
+      "column_name": "regmaintregistry",
+      "column_type": "INTEGER",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 900,
+      "min_value": "1",
+      "max_value": "99",
+      "top_k_values": [
+        {
+          "value": "1",
+          "count": 1
+        },
+        {
+          "value": "2",
+          "count": 1
+        },
+        {
+          "value": "3",
+          "count": 1
+        },
+        {
+          "value": "4",
+          "count": 1
+        },
+        {
+          "value": "5",
+          "count": 1
+        },
+        {
+          "value": "6",
+          "count": 1
+        },
+        {
+          "value": "7",
+          "count": 1
+        },
+        {
+          "value": "8",
+          "count": 1
+        },
+        {
+          "value": "9",
+          "count": 1
+        },
+        {
+          "value": "10",
+          "count": 1
+        }
+      ],
+      "min_length": 1,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D"
+      ]
+    },
+    "vaccine_template|regulatoryandmaintenance|maintflag": {
+      "table_name": "regulatoryandmaintenance",
+      "column_name": "maintflag",
+      "column_type": "TEXT(20)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 3,
+      "min_value": "Due",
+      "max_value": "Up to Date",
+      "top_k_values": [
+        {
+          "value": "Up to Date",
+          "count": 305
+        },
+        {
+          "value": "Due",
+          "count": 304
+        },
+        {
+          "value": "Overdue",
+          "count": 291
+        }
+      ],
+      "min_length": 3,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AA AA AAAA",
+        "AAA",
+        "AAAAAAA"
+      ]
+    },
+    "vaccine_template|regulatoryandmaintenance|maintdatelast": {
+      "table_name": "regulatoryandmaintenance",
+      "column_name": "maintdatelast",
+      "column_type": "TEXT",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 91,
+      "min_value": "2024-11-21",
+      "max_value": "2025-02-19",
+      "top_k_values": [
+        {
+          "value": "2025-01-19",
+          "count": 18
+        },
+        {
+          "value": "2024-12-13",
+          "count": 18
+        },
+        {
+          "value": "2025-01-03",
+          "count": 17
+        },
+        {
+          "value": "2025-01-02",
+          "count": 16
+        },
+        {
+          "value": "2025-02-12",
+          "count": 15
+        },
+        {
+          "value": "2025-02-08",
+          "count": 15
+        },
+        {
+          "value": "2025-01-16",
+          "count": 15
+        },
+        {
+          "value": "2024-11-29",
+          "count": 15
+        },
+        {
+          "value": "2025-01-18",
+          "count": 14
+        },
+        {
+          "value": "2025-01-17",
+          "count": 14
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDD-DD-DD"
+      ]
+    },
+    "vaccine_template|regulatoryandmaintenance|maintdatenext": {
+      "table_name": "regulatoryandmaintenance",
+      "column_name": "maintdatenext",
+      "column_type": "TEXT",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 90,
+      "min_value": "2025-02-20",
+      "max_value": "2025-05-20",
+      "top_k_values": [
+        {
+          "value": "2025-02-26",
+          "count": 19
+        },
+        {
+          "value": "2025-05-20",
+          "count": 18
+        },
+        {
+          "value": "2025-02-20",
+          "count": 18
+        },
+        {
+          "value": "2025-03-02",
+          "count": 17
+        },
+        {
+          "value": "2025-04-29",
+          "count": 16
+        },
+        {
+          "value": "2025-04-10",
+          "count": 16
+        },
+        {
+          "value": "2025-04-07",
+          "count": 16
+        },
+        {
+          "value": "2025-05-06",
+          "count": 15
+        },
+        {
+          "value": "2025-03-03",
+          "count": 15
+        },
+        {
+          "value": "2025-02-24",
+          "count": 15
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDD-DD-DD"
+      ]
+    },
+    "vaccine_template|regulatoryandmaintenance|calibflag": {
+      "table_name": "regulatoryandmaintenance",
+      "column_name": "calibflag",
+      "column_type": "TEXT(20)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 3,
+      "min_value": "Due",
+      "max_value": "Valid",
+      "top_k_values": [
+        {
+          "value": "Expired",
+          "count": 313
+        },
+        {
+          "value": "Due",
+          "count": 304
+        },
+        {
+          "value": "Valid",
+          "count": 283
+        }
+      ],
+      "min_length": 3,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAA",
+        "AAAAA"
+      ]
+    },
+    "vaccine_template|regulatoryandmaintenance|calibdatelast": {
+      "table_name": "regulatoryandmaintenance",
+      "column_name": "calibdatelast",
+      "column_type": "TEXT",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 180,
+      "min_value": "2024-08-23",
+      "max_value": "2025-02-19",
+      "top_k_values": [
+        {
+          "value": "2024-11-08",
+          "count": 13
+        },
+        {
+          "value": "2025-02-09",
+          "count": 11
+        },
+        {
+          "value": "2025-02-01",
+          "count": 11
+        },
+        {
+          "value": "2024-12-26",
+          "count": 10
+        },
+        {
+          "value": "2024-11-29",
+          "count": 10
+        },
+        {
+          "value": "2024-11-22",
+          "count": 10
+        },
+        {
+          "value": "2024-11-04",
+          "count": 10
+        },
+        {
+          "value": "2024-10-22",
+          "count": 10
+        },
+        {
+          "value": "2025-02-14",
+          "count": 9
+        },
+        {
+          "value": "2025-01-18",
+          "count": 9
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDD-DD-DD"
+      ]
+    },
+    "vaccine_template|regulatoryandmaintenance|calibdatenext": {
+      "table_name": "regulatoryandmaintenance",
+      "column_name": "calibdatenext",
+      "column_type": "TEXT",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 178,
+      "min_value": "2025-02-20",
+      "max_value": "2025-08-18",
+      "top_k_values": [
+        {
+          "value": "2025-05-23",
+          "count": 12
+        },
+        {
+          "value": "2025-08-02",
+          "count": 11
+        },
+        {
+          "value": "2025-07-05",
+          "count": 11
+        },
+        {
+          "value": "2025-02-21",
+          "count": 11
+        },
+        {
+          "value": "2025-07-18",
+          "count": 10
+        },
+        {
+          "value": "2025-05-13",
+          "count": 10
+        },
+        {
+          "value": "2025-04-20",
+          "count": 10
+        },
+        {
+          "value": "2025-04-12",
+          "count": 10
+        },
+        {
+          "value": "2025-08-08",
+          "count": 9
+        },
+        {
+          "value": "2025-07-20",
+          "count": 9
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDD-DD-DD"
+      ]
+    },
+    "vaccine_template|regulatoryandmaintenance|docuflag": {
+      "table_name": "regulatoryandmaintenance",
+      "column_name": "docuflag",
+      "column_type": "TEXT(20)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 3,
+      "min_value": "Complete",
+      "max_value": "Partial",
+      "top_k_values": [
+        {
+          "value": "Missing",
+          "count": 320
+        },
+        {
+          "value": "Partial",
+          "count": 298
+        },
+        {
+          "value": "Complete",
+          "count": 282
+        }
+      ],
+      "min_length": 7,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "vaccine_template|regulatoryandmaintenance|compscore": {
+      "table_name": "regulatoryandmaintenance",
+      "column_name": "compscore",
+      "column_type": "INTEGER",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 599,
+      "min_value": "0.1",
+      "max_value": "99.9",
+      "top_k_values": [
+        {
+          "value": "88.1",
+          "count": 5
+        },
+        {
+          "value": "8.1",
+          "count": 5
+        },
+        {
+          "value": "96.1",
+          "count": 4
+        },
+        {
+          "value": "95.9",
+          "count": 4
+        },
+        {
+          "value": "90.3",
+          "count": 4
+        },
+        {
+          "value": "71.4",
+          "count": 4
+        },
+        {
+          "value": "64.1",
+          "count": 4
+        },
+        {
+          "value": "51.6",
+          "count": 4
+        },
+        {
+          "value": "26.7",
+          "count": 4
+        },
+        {
+          "value": "19.8",
+          "count": 4
+        }
+      ],
+      "min_length": 1,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.D",
+        "D.D",
+        "DD",
+        "D",
+        "DDD"
+      ]
+    },
+    "vaccine_template|regulatoryandmaintenance|riskflag": {
+      "table_name": "regulatoryandmaintenance",
+      "column_name": "riskflag",
+      "column_type": "TEXT(50)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 3,
+      "min_value": "High Risk",
+      "max_value": "Medium Risk",
+      "top_k_values": [
+        {
+          "value": "High Risk",
+          "count": 316
+        },
+        {
+          "value": "Low Risk",
+          "count": 314
+        },
+        {
+          "value": "Medium Risk",
+          "count": 270
+        }
+      ],
+      "min_length": 8,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA AAAA",
+        "AAA AAAA",
+        "AAAAAA AAAA"
+      ]
+    },
+    "vaccine_template|regulatoryandmaintenance|incidents": {
+      "table_name": "regulatoryandmaintenance",
+      "column_name": "incidents",
+      "column_type": "INTEGER",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 6,
+      "min_value": "0",
+      "max_value": "5",
+      "top_k_values": [
+        {
+          "value": "0",
+          "count": 171
+        },
+        {
+          "value": "1",
+          "count": 157
+        },
+        {
+          "value": "4",
+          "count": 156
+        },
+        {
+          "value": "5",
+          "count": 153
+        },
+        {
+          "value": "3",
+          "count": 143
+        },
+        {
+          "value": "2",
+          "count": 120
+        }
+      ],
+      "min_length": 1,
+      "max_length": 1,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D"
+      ]
+    },
+    "vaccine_template|regulatoryandmaintenance|resolveflag": {
+      "table_name": "regulatoryandmaintenance",
+      "column_name": "resolveflag",
+      "column_type": "TEXT(50)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 3,
+      "min_value": "Escalated",
+      "max_value": "Resolved",
+      "top_k_values": [
+        {
+          "value": "Escalated",
+          "count": 311
+        },
+        {
+          "value": "Pending",
+          "count": 301
+        },
+        {
+          "value": "Resolved",
+          "count": 288
+        }
+      ],
+      "min_length": 7,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAA",
+        "AAAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "vaccine_template|regulatoryandmaintenance|respperson": {
+      "table_name": "regulatoryandmaintenance",
+      "column_name": "respperson",
+      "column_type": "TEXT(100)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 894,
+      "min_value": "Aaron Waters",
+      "max_value": "Zachary Velasquez",
+      "top_k_values": [
+        {
+          "value": "Taylor Rodriguez",
+          "count": 2
+        },
+        {
+          "value": "Michael Lamb",
+          "count": 2
+        },
+        {
+          "value": "Jessica Wilson",
+          "count": 2
+        },
+        {
+          "value": "David Smith",
+          "count": 2
+        },
+        {
+          "value": "Brian Moore",
+          "count": 2
+        },
+        {
+          "value": "Angel Miller",
+          "count": 2
+        },
+        {
+          "value": "Zachary Velasquez",
+          "count": 1
+        },
+        {
+          "value": "Zachary Torres",
+          "count": 1
+        },
+        {
+          "value": "Zachary Russo",
+          "count": 1
+        },
+        {
+          "value": "Zachary Gonzalez",
+          "count": 1
+        }
+      ],
+      "min_length": 8,
+      "max_length": 24,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAA AAAAAA",
+        "AAAAA AAAAA",
+        "AAAAAA AAAAAA",
+        "AAAAAA AAAAA",
+        "AAAAAAA AAAAAA"
+      ]
+    },
+    "vaccine_template|regulatoryandmaintenance|contactno": {
+      "table_name": "regulatoryandmaintenance",
+      "column_name": "contactno",
+      "column_type": "TEXT(50)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 900,
+      "min_value": "(205)512-2940",
+      "max_value": "9967144709",
+      "top_k_values": [
+        {
+          "value": "9967144709",
+          "count": 1
+        },
+        {
+          "value": "9909018399",
+          "count": 1
+        },
+        {
+          "value": "990.468.9178",
+          "count": 1
+        },
+        {
+          "value": "980.933.8927",
+          "count": 1
+        },
+        {
+          "value": "980.614.8702x173",
+          "count": 1
+        },
+        {
+          "value": "978.372.9351x72446",
+          "count": 1
+        },
+        {
+          "value": "976.502.0663",
+          "count": 1
+        },
+        {
+          "value": "972-433-2553x55078",
+          "count": 1
+        },
+        {
+          "value": "971-634-0917x8213",
+          "count": 1
+        },
+        {
+          "value": "970.479.7525",
+          "count": 1
+        }
+      ],
+      "min_length": 10,
+      "max_length": 22,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDDDDDDD",
+        "DDD.DDD.DDDD",
+        "DDD-DDD-DDDD",
+        "(DDD)DDD-DDDD",
+        "DDD-DDD-DDDDADDDD"
+      ]
+    },
+    "vaccine_template|regulatoryandmaintenance|contactemerg": {
+      "table_name": "regulatoryandmaintenance",
+      "column_name": "contactemerg",
+      "column_type": "TEXT(50)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 900,
+      "min_value": "(202)460-9047x1986",
+      "max_value": "9977342242",
+      "top_k_values": [
+        {
+          "value": "9977342242",
+          "count": 1
+        },
+        {
+          "value": "997.653.2914x055",
+          "count": 1
+        },
+        {
+          "value": "997.443.0848x396",
+          "count": 1
+        },
+        {
+          "value": "997-649-9388x83004",
+          "count": 1
+        },
+        {
+          "value": "995.370.6016",
+          "count": 1
+        },
+        {
+          "value": "993.374.6048",
+          "count": 1
+        },
+        {
+          "value": "993.314.4161",
+          "count": 1
+        },
+        {
+          "value": "993-752-6457x8676",
+          "count": 1
+        },
+        {
+          "value": "988.457.3463",
+          "count": 1
+        },
+        {
+          "value": "982.480.1772x127",
+          "count": 1
+        }
+      ],
+      "min_length": 10,
+      "max_length": 22,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDDDDDDD",
+        "DDD.DDD.DDDD",
+        "(DDD)DDD-DDDD",
+        "DDD-DDD-DDDD",
+        "DDD-DDD-DDD-DDDDADDDDD"
+      ]
+    },
+    "vaccine_template|regulatoryandmaintenance|inspectdatelast": {
+      "table_name": "regulatoryandmaintenance",
+      "column_name": "inspectdatelast",
+      "column_type": "TEXT",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 31,
+      "min_value": "2025-01-20",
+      "max_value": "2025-02-19",
+      "top_k_values": [
+        {
+          "value": "2025-01-29",
+          "count": 41
+        },
+        {
+          "value": "2025-02-17",
+          "count": 37
+        },
+        {
+          "value": "2025-02-15",
+          "count": 36
+        },
+        {
+          "value": "2025-02-14",
+          "count": 34
+        },
+        {
+          "value": "2025-02-11",
+          "count": 33
+        },
+        {
+          "value": "2025-02-03",
+          "count": 33
+        },
+        {
+          "value": "2025-02-02",
+          "count": 33
+        },
+        {
+          "value": "2025-02-13",
+          "count": 32
+        },
+        {
+          "value": "2025-02-09",
+          "count": 32
+        },
+        {
+          "value": "2025-02-01",
+          "count": 32
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDD-DD-DD"
+      ]
+    },
+    "vaccine_template|regulatoryandmaintenance|inspectdatenext": {
+      "table_name": "regulatoryandmaintenance",
+      "column_name": "inspectdatenext",
+      "column_type": "TEXT",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 30,
+      "min_value": "2025-02-20",
+      "max_value": "2025-03-21",
+      "top_k_values": [
+        {
+          "value": "2025-03-16",
+          "count": 47
+        },
+        {
+          "value": "2025-03-04",
+          "count": 38
+        },
+        {
+          "value": "2025-02-21",
+          "count": 37
+        },
+        {
+          "value": "2025-03-07",
+          "count": 36
+        },
+        {
+          "value": "2025-02-27",
+          "count": 36
+        },
+        {
+          "value": "2025-03-03",
+          "count": 35
+        },
+        {
+          "value": "2025-03-18",
+          "count": 34
+        },
+        {
+          "value": "2025-03-17",
+          "count": 34
+        },
+        {
+          "value": "2025-02-26",
+          "count": 34
+        },
+        {
+          "value": "2025-02-24",
+          "count": 34
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDD-DD-DD"
+      ]
+    },
+    "vaccine_template|regulatoryandmaintenance|inspectoutcome": {
+      "table_name": "regulatoryandmaintenance",
+      "column_name": "inspectoutcome",
+      "column_type": "TEXT(50)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 3,
+      "min_value": "Conditional",
+      "max_value": "Pass",
+      "top_k_values": [
+        {
+          "value": "Conditional",
+          "count": 317
+        },
+        {
+          "value": "Fail",
+          "count": 310
+        },
+        {
+          "value": "Pass",
+          "count": 273
+        }
+      ],
+      "min_length": 4,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAAAAAAAAAA"
+      ]
+    },
+    "vaccine_template|regulatoryandmaintenance|correctactions": {
+      "table_name": "regulatoryandmaintenance",
+      "column_name": "correctactions",
+      "column_type": "TEXT",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 3,
+      "min_value": "Completed",
+      "max_value": "Pending",
+      "top_k_values": [
+        {
+          "value": "Completed",
+          "count": 332
+        },
+        {
+          "value": "Pending",
+          "count": 292
+        },
+        {
+          "value": "None Required",
+          "count": 276
+        }
+      ],
+      "min_length": 7,
+      "max_length": 13,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAA",
+        "AAAAAAA",
+        "AAAA AAAAAAAA"
+      ]
+    },
+    "vaccine_template|regulatoryandmaintenance|preventsteps": {
+      "table_name": "regulatoryandmaintenance",
+      "column_name": "preventsteps",
+      "column_type": "TEXT",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 3,
+      "min_value": "Implemented",
+      "max_value": "Under Review",
+      "top_k_values": [
+        {
+          "value": "Implemented",
+          "count": 317
+        },
+        {
+          "value": "Under Review",
+          "count": 306
+        },
+        {
+          "value": "Planned",
+          "count": 277
+        }
+      ],
+      "min_length": 7,
+      "max_length": 12,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAAAA",
+        "AAAAA AAAAAA",
+        "AAAAAAA"
+      ]
+    },
+    "vaccine_template|regulatoryandmaintenance|validflag": {
+      "table_name": "regulatoryandmaintenance",
+      "column_name": "validflag",
+      "column_type": "TEXT(20)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 3,
+      "min_value": "Failed",
+      "max_value": "Validated",
+      "top_k_values": [
+        {
+          "value": "Failed",
+          "count": 308
+        },
+        {
+          "value": "In Process",
+          "count": 307
+        },
+        {
+          "value": "Validated",
+          "count": 285
+        }
+      ],
+      "min_length": 6,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AA AAAAAAA",
+        "AAAAAAAAA"
+      ]
+    },
+    "vaccine_template|regulatoryandmaintenance|verifymethod": {
+      "table_name": "regulatoryandmaintenance",
+      "column_name": "verifymethod",
+      "column_type": "TEXT(50)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 3,
+      "min_value": "Electronic",
+      "max_value": "Manual",
+      "top_k_values": [
+        {
+          "value": "Manual",
+          "count": 324
+        },
+        {
+          "value": "Electronic",
+          "count": 301
+        },
+        {
+          "value": "Hybrid",
+          "count": 275
+        }
+      ],
+      "min_length": 6,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AAAAAAAAAA"
+      ]
+    },
+    "vaccine_template|regulatoryandmaintenance|shipgov": {
+      "table_name": "regulatoryandmaintenance",
+      "column_name": "shipgov",
+      "column_type": "TEXT(20)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 900,
+      "min_value": "VS101443",
+      "max_value": "VS999632",
+      "top_k_values": [
+        {
+          "value": "VS999632",
+          "count": 1
+        },
+        {
+          "value": "VS999459",
+          "count": 1
+        },
+        {
+          "value": "VS999134",
+          "count": 1
+        },
+        {
+          "value": "VS999027",
+          "count": 1
+        },
+        {
+          "value": "VS997699",
+          "count": 1
+        },
+        {
+          "value": "VS996761",
+          "count": 1
+        },
+        {
+          "value": "VS993249",
+          "count": 1
+        },
+        {
+          "value": "VS991810",
+          "count": 1
+        },
+        {
+          "value": "VS990820",
+          "count": 1
+        },
+        {
+          "value": "VS990225",
+          "count": 1
+        }
+      ],
+      "min_length": 8,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDDDD"
+      ]
+    },
+    "vaccine_template|regulatoryandmaintenance|vehgov": {
+      "table_name": "regulatoryandmaintenance",
+      "column_name": "vehgov",
+      "column_type": "TEXT(20)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 900,
+      "min_value": "V1011",
+      "max_value": "V9998",
+      "top_k_values": [
+        {
+          "value": "V9998",
+          "count": 1
+        },
+        {
+          "value": "V9995",
+          "count": 1
+        },
+        {
+          "value": "V9993",
+          "count": 1
+        },
+        {
+          "value": "V9989",
+          "count": 1
+        },
+        {
+          "value": "V9986",
+          "count": 1
+        },
+        {
+          "value": "V9964",
+          "count": 1
+        },
+        {
+          "value": "V9963",
+          "count": 1
+        },
+        {
+          "value": "V9941",
+          "count": 1
+        },
+        {
+          "value": "V9916",
+          "count": 1
+        },
+        {
+          "value": "V9911",
+          "count": 1
+        }
+      ],
+      "min_length": 5,
+      "max_length": 5,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "ADDDD"
+      ]
+    },
+    "vaccine_template|sensordata|sensortrack": {
+      "table_name": "sensordata",
+      "column_name": "sensortrack",
+      "column_type": "INTEGER",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 900,
+      "min_value": "1",
+      "max_value": "99",
+      "top_k_values": [
+        {
+          "value": "1",
+          "count": 1
+        },
+        {
+          "value": "2",
+          "count": 1
+        },
+        {
+          "value": "3",
+          "count": 1
+        },
+        {
+          "value": "4",
+          "count": 1
+        },
+        {
+          "value": "5",
+          "count": 1
+        },
+        {
+          "value": "6",
+          "count": 1
+        },
+        {
+          "value": "7",
+          "count": 1
+        },
+        {
+          "value": "8",
+          "count": 1
+        },
+        {
+          "value": "9",
+          "count": 1
+        },
+        {
+          "value": "10",
+          "count": 1
+        }
+      ],
+      "min_length": 1,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D"
+      ]
+    },
+    "vaccine_template|sensordata|storetempc": {
+      "table_name": "sensordata",
+      "column_name": "storetempc",
+      "column_type": "INTEGER",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 284,
+      "min_value": "-60.1",
+      "max_value": "-90",
+      "top_k_values": [
+        {
+          "value": "-84.8",
+          "count": 10
+        },
+        {
+          "value": "-73.3",
+          "count": 9
+        },
+        {
+          "value": "-78",
+          "count": 8
+        },
+        {
+          "value": "-81.6",
+          "count": 8
+        },
+        {
+          "value": "-75.4",
+          "count": 7
+        },
+        {
+          "value": "-75.6",
+          "count": 7
+        },
+        {
+          "value": "-75.9",
+          "count": 7
+        },
+        {
+          "value": "-77.1",
+          "count": 7
+        },
+        {
+          "value": "-85.3",
+          "count": 7
+        },
+        {
+          "value": "-60.1",
+          "count": 6
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "-DD.D",
+        "-DD"
+      ]
+    },
+    "vaccine_template|sensordata|temptolc": {
+      "table_name": "sensordata",
+      "column_name": "temptolc",
+      "column_type": "REAL",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 31,
+      "min_value": "2.0",
+      "max_value": "5.0",
+      "top_k_values": [
+        {
+          "value": "2.4",
+          "count": 41
+        },
+        {
+          "value": "4.6",
+          "count": 40
+        },
+        {
+          "value": "4.1",
+          "count": 36
+        },
+        {
+          "value": "3.8",
+          "count": 36
+        },
+        {
+          "value": "3.0",
+          "count": 35
+        },
+        {
+          "value": "4.8",
+          "count": 34
+        },
+        {
+          "value": "3.5",
+          "count": 33
+        },
+        {
+          "value": "3.1",
+          "count": 33
+        },
+        {
+          "value": "2.8",
+          "count": 33
+        },
+        {
+          "value": "4.4",
+          "count": 32
+        }
+      ],
+      "min_length": 3,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D.D"
+      ]
+    },
+    "vaccine_template|sensordata|tempnowc": {
+      "table_name": "sensordata",
+      "column_name": "tempnowc",
+      "column_type": "INTEGER",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 294,
+      "min_value": "-60",
+      "max_value": "-90",
+      "top_k_values": [
+        {
+          "value": "-63.7",
+          "count": 8
+        },
+        {
+          "value": "-64.9",
+          "count": 7
+        },
+        {
+          "value": "-72.4",
+          "count": 7
+        },
+        {
+          "value": "-73",
+          "count": 7
+        },
+        {
+          "value": "-75.3",
+          "count": 7
+        },
+        {
+          "value": "-82.9",
+          "count": 7
+        },
+        {
+          "value": "-84.7",
+          "count": 7
+        },
+        {
+          "value": "-88.2",
+          "count": 7
+        },
+        {
+          "value": "-61",
+          "count": 6
+        },
+        {
+          "value": "-61.6",
+          "count": 6
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "-DD.D",
+        "-DD"
+      ]
+    },
+    "vaccine_template|sensordata|tempdevcount": {
+      "table_name": "sensordata",
+      "column_name": "tempdevcount",
+      "column_type": "INTEGER",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 11,
+      "min_value": "0",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "1",
+          "count": 95
+        },
+        {
+          "value": "4",
+          "count": 93
+        },
+        {
+          "value": "6",
+          "count": 89
+        },
+        {
+          "value": "9",
+          "count": 83
+        },
+        {
+          "value": "5",
+          "count": 82
+        },
+        {
+          "value": "3",
+          "count": 80
+        },
+        {
+          "value": "8",
+          "count": 79
+        },
+        {
+          "value": "7",
+          "count": 78
+        },
+        {
+          "value": "2",
+          "count": 78
+        },
+        {
+          "value": "10",
+          "count": 76
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D",
+        "DD"
+      ]
+    },
+    "vaccine_template|sensordata|tempmaxc": {
+      "table_name": "sensordata",
+      "column_name": "tempmaxc",
+      "column_type": "REAL",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 199,
+      "min_value": "-40.0",
+      "max_value": "-60.0",
+      "top_k_values": [
+        {
+          "value": "-45.5",
+          "count": 12
+        },
+        {
+          "value": "-46.6",
+          "count": 12
+        },
+        {
+          "value": "-54.7",
+          "count": 11
+        },
+        {
+          "value": "-44.6",
+          "count": 10
+        },
+        {
+          "value": "-43.9",
+          "count": 9
+        },
+        {
+          "value": "-45.8",
+          "count": 9
+        },
+        {
+          "value": "-48.4",
+          "count": 9
+        },
+        {
+          "value": "-52.3",
+          "count": 9
+        },
+        {
+          "value": "-52.9",
+          "count": 9
+        },
+        {
+          "value": "-58.9",
+          "count": 9
+        }
+      ],
+      "min_length": 5,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "-DD.D"
+      ]
+    },
+    "vaccine_template|sensordata|tempminc": {
+      "table_name": "sensordata",
+      "column_name": "tempminc",
+      "column_type": "REAL",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 101,
+      "min_value": "-85.0",
+      "max_value": "-95.0",
+      "top_k_values": [
+        {
+          "value": "-86.8",
+          "count": 19
+        },
+        {
+          "value": "-86.3",
+          "count": 16
+        },
+        {
+          "value": "-85.4",
+          "count": 14
+        },
+        {
+          "value": "-85.9",
+          "count": 14
+        },
+        {
+          "value": "-91.2",
+          "count": 14
+        },
+        {
+          "value": "-91.3",
+          "count": 14
+        },
+        {
+          "value": "-94.7",
+          "count": 14
+        },
+        {
+          "value": "-87.5",
+          "count": 13
+        },
+        {
+          "value": "-87.8",
+          "count": 13
+        },
+        {
+          "value": "-89.4",
+          "count": 13
+        }
+      ],
+      "min_length": 5,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "-DD.D"
+      ]
+    },
+    "vaccine_template|sensordata|tempstabidx": {
+      "table_name": "sensordata",
+      "column_name": "tempstabidx",
+      "column_type": "INTEGER",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 198,
+      "min_value": "0.801",
+      "max_value": "1",
+      "top_k_values": [
+        {
+          "value": "0.811",
+          "count": 11
+        },
+        {
+          "value": "0.963",
+          "count": 10
+        },
+        {
+          "value": "0.934",
+          "count": 10
+        },
+        {
+          "value": "0.915",
+          "count": 10
+        },
+        {
+          "value": "0.803",
+          "count": 9
+        },
+        {
+          "value": "0.801",
+          "count": 9
+        },
+        {
+          "value": "0.985",
+          "count": 8
+        },
+        {
+          "value": "0.976",
+          "count": 8
+        },
+        {
+          "value": "0.971",
+          "count": 8
+        },
+        {
+          "value": "0.965",
+          "count": 8
+        }
+      ],
+      "min_length": 1,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D",
+        "D.D"
+      ]
+    },
+    "vaccine_template|sensordata|humiditypct": {
+      "table_name": "sensordata",
+      "column_name": "humiditypct",
+      "column_type": "REAL",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 199,
+      "min_value": "10.0",
+      "max_value": "30.0",
+      "top_k_values": [
+        {
+          "value": "17.4",
+          "count": 11
+        },
+        {
+          "value": "17.1",
+          "count": 11
+        },
+        {
+          "value": "26.1",
+          "count": 9
+        },
+        {
+          "value": "18.7",
+          "count": 9
+        },
+        {
+          "value": "18.5",
+          "count": 9
+        },
+        {
+          "value": "17.5",
+          "count": 9
+        },
+        {
+          "value": "28.2",
+          "count": 8
+        },
+        {
+          "value": "25.7",
+          "count": 8
+        },
+        {
+          "value": "24.1",
+          "count": 8
+        },
+        {
+          "value": "23.7",
+          "count": 8
+        }
+      ],
+      "min_length": 4,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DD.D"
+      ]
+    },
+    "vaccine_template|sensordata|presskpa": {
+      "table_name": "sensordata",
+      "column_name": "presskpa",
+      "column_type": "INTEGER",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 200,
+      "min_value": "100",
+      "max_value": "99.9",
+      "top_k_values": [
+        {
+          "value": "104.8",
+          "count": 11
+        },
+        {
+          "value": "94.7",
+          "count": 11
+        },
+        {
+          "value": "109.2",
+          "count": 10
+        },
+        {
+          "value": "99.4",
+          "count": 10
+        },
+        {
+          "value": "93.1",
+          "count": 10
+        },
+        {
+          "value": "103.3",
+          "count": 9
+        },
+        {
+          "value": "102.7",
+          "count": 9
+        },
+        {
+          "value": "107.6",
+          "count": 8
+        },
+        {
+          "value": "105.1",
+          "count": 8
+        },
+        {
+          "value": "103.9",
+          "count": 8
+        }
+      ],
+      "min_length": 2,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD.D",
+        "DD.D",
+        "DDD",
+        "DD"
+      ]
+    },
+    "vaccine_template|sensordata|shockflag": {
+      "table_name": "sensordata",
+      "column_name": "shockflag",
+      "column_type": "TEXT(20)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 3,
+      "min_value": "Malfunction",
+      "max_value": "Triggered",
+      "top_k_values": [
+        {
+          "value": "Triggered",
+          "count": 313
+        },
+        {
+          "value": "Malfunction",
+          "count": 300
+        },
+        {
+          "value": "Normal",
+          "count": 287
+        }
+      ],
+      "min_length": 6,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAA",
+        "AAAAAAAAAAA",
+        "AAAAAA"
+      ]
+    },
+    "vaccine_template|sensordata|tiltflag": {
+      "table_name": "sensordata",
+      "column_name": "tiltflag",
+      "column_type": "TEXT(20)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 3,
+      "min_value": "Malfunction",
+      "max_value": "Triggered",
+      "top_k_values": [
+        {
+          "value": "Malfunction",
+          "count": 319
+        },
+        {
+          "value": "Triggered",
+          "count": 297
+        },
+        {
+          "value": "Normal",
+          "count": 284
+        }
+      ],
+      "min_length": 6,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAAAA",
+        "AAAAAAAAA",
+        "AAAAAA"
+      ]
+    },
+    "vaccine_template|sensordata|impactflag": {
+      "table_name": "sensordata",
+      "column_name": "impactflag",
+      "column_type": "TEXT(20)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 3,
+      "min_value": "Malfunction",
+      "max_value": "Triggered",
+      "top_k_values": [
+        {
+          "value": "Normal",
+          "count": 315
+        },
+        {
+          "value": "Triggered",
+          "count": 301
+        },
+        {
+          "value": "Malfunction",
+          "count": 284
+        }
+      ],
+      "min_length": 6,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AAAAAAAAA",
+        "AAAAAAAAAAA"
+      ]
+    },
+    "vaccine_template|sensordata|vibelvlmms": {
+      "table_name": "sensordata",
+      "column_name": "vibelvlmms",
+      "column_type": "REAL",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 597,
+      "min_value": "0.02",
+      "max_value": "9.99",
+      "top_k_values": [
+        {
+          "value": "1.92",
+          "count": 6
+        },
+        {
+          "value": "9.76",
+          "count": 4
+        },
+        {
+          "value": "9.55",
+          "count": 4
+        },
+        {
+          "value": "9.1",
+          "count": 4
+        },
+        {
+          "value": "7.56",
+          "count": 4
+        },
+        {
+          "value": "7.26",
+          "count": 4
+        },
+        {
+          "value": "6.33",
+          "count": 4
+        },
+        {
+          "value": "6.14",
+          "count": 4
+        },
+        {
+          "value": "5.41",
+          "count": 4
+        },
+        {
+          "value": "4.97",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D",
+        "DD.D"
+      ]
+    },
+    "vaccine_template|sensordata|lightlux": {
+      "table_name": "sensordata",
+      "column_name": "lightlux",
+      "column_type": "INTEGER",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 582,
+      "min_value": "0",
+      "max_value": "998",
+      "top_k_values": [
+        {
+          "value": "287",
+          "count": 6
+        },
+        {
+          "value": "695",
+          "count": 5
+        },
+        {
+          "value": "154",
+          "count": 5
+        },
+        {
+          "value": "930",
+          "count": 4
+        },
+        {
+          "value": "896",
+          "count": 4
+        },
+        {
+          "value": "825",
+          "count": 4
+        },
+        {
+          "value": "735",
+          "count": 4
+        },
+        {
+          "value": "592",
+          "count": 4
+        },
+        {
+          "value": "465",
+          "count": 4
+        },
+        {
+          "value": "401",
+          "count": 4
+        }
+      ],
+      "min_length": 1,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D",
+        "DDDD"
+      ]
+    },
+    "vaccine_template|sensordata|acceldata": {
+      "table_name": "sensordata",
+      "column_name": "acceldata",
+      "column_type": "INTEGER",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 199,
+      "min_value": "0",
+      "max_value": "2",
+      "top_k_values": [
+        {
+          "value": "0.44",
+          "count": 11
+        },
+        {
+          "value": "1.85",
+          "count": 10
+        },
+        {
+          "value": "1.63",
+          "count": 10
+        },
+        {
+          "value": "1.11",
+          "count": 10
+        },
+        {
+          "value": "1.89",
+          "count": 9
+        },
+        {
+          "value": "1.54",
+          "count": 9
+        },
+        {
+          "value": "1.31",
+          "count": 9
+        },
+        {
+          "value": "1.27",
+          "count": 9
+        },
+        {
+          "value": "1.21",
+          "count": 9
+        },
+        {
+          "value": "0.72",
+          "count": 9
+        }
+      ],
+      "min_length": 1,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D",
+        "D"
+      ]
+    },
+    "vaccine_template|sensordata|handleevents": {
+      "table_name": "sensordata",
+      "column_name": "handleevents",
+      "column_type": "INTEGER",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 21,
+      "min_value": "0",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "18",
+          "count": 56
+        },
+        {
+          "value": "9",
+          "count": 52
+        },
+        {
+          "value": "4",
+          "count": 50
+        },
+        {
+          "value": "17",
+          "count": 49
+        },
+        {
+          "value": "13",
+          "count": 49
+        },
+        {
+          "value": "15",
+          "count": 46
+        },
+        {
+          "value": "20",
+          "count": 45
+        },
+        {
+          "value": "8",
+          "count": 45
+        },
+        {
+          "value": "5",
+          "count": 45
+        },
+        {
+          "value": "3",
+          "count": 45
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D"
+      ]
+    },
+    "vaccine_template|sensordata|critevents": {
+      "table_name": "sensordata",
+      "column_name": "critevents",
+      "column_type": "INTEGER",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 6,
+      "min_value": "0",
+      "max_value": "5",
+      "top_k_values": [
+        {
+          "value": "2",
+          "count": 179
+        },
+        {
+          "value": "1",
+          "count": 169
+        },
+        {
+          "value": "3",
+          "count": 146
+        },
+        {
+          "value": "5",
+          "count": 138
+        },
+        {
+          "value": "0",
+          "count": 135
+        },
+        {
+          "value": "4",
+          "count": 133
+        }
+      ],
+      "min_length": 1,
+      "max_length": 1,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D"
+      ]
+    },
+    "vaccine_template|sensordata|alerts": {
+      "table_name": "sensordata",
+      "column_name": "alerts",
+      "column_type": "INTEGER",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 11,
+      "min_value": "0",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "4",
+          "count": 100
+        },
+        {
+          "value": "1",
+          "count": 93
+        },
+        {
+          "value": "9",
+          "count": 89
+        },
+        {
+          "value": "7",
+          "count": 83
+        },
+        {
+          "value": "2",
+          "count": 80
+        },
+        {
+          "value": "0",
+          "count": 80
+        },
+        {
+          "value": "5",
+          "count": 78
+        },
+        {
+          "value": "10",
+          "count": 77
+        },
+        {
+          "value": "8",
+          "count": 76
+        },
+        {
+          "value": "6",
+          "count": 74
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D",
+        "DD"
+      ]
+    },
+    "vaccine_template|sensordata|alerttime": {
+      "table_name": "sensordata",
+      "column_name": "alerttime",
+      "column_type": "TEXT(6)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 25,
+      "min_value": "2025-02-18 08:32:08",
+      "max_value": "2025-02-19 08:32:08",
+      "top_k_values": [
+        {
+          "value": "2025-02-19 03:32:08",
+          "count": 53
+        },
+        {
+          "value": "2025-02-19 07:32:08",
+          "count": 49
+        },
+        {
+          "value": "2025-02-18 20:32:08",
+          "count": 45
+        },
+        {
+          "value": "2025-02-18 19:32:08",
+          "count": 44
+        },
+        {
+          "value": "2025-02-19 05:32:08",
+          "count": 42
+        },
+        {
+          "value": "2025-02-18 08:32:08",
+          "count": 41
+        },
+        {
+          "value": "2025-02-19 06:32:08",
+          "count": 40
+        },
+        {
+          "value": "2025-02-18 13:32:08",
+          "count": 38
+        },
+        {
+          "value": "2025-02-19 04:32:08",
+          "count": 37
+        },
+        {
+          "value": "2025-02-18 09:32:08",
+          "count": 37
+        }
+      ],
+      "min_length": 19,
+      "max_length": 19,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDD-DD-DD DD:DD:DD"
+      ]
+    },
+    "vaccine_template|sensordata|alertkind": {
+      "table_name": "sensordata",
+      "column_name": "alertkind",
+      "column_type": "TEXT(50)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 5,
+      "min_value": "Battery",
+      "max_value": "Temperature",
+      "top_k_values": [
+        {
+          "value": "Temperature",
+          "count": 193
+        },
+        {
+          "value": "Security",
+          "count": 190
+        },
+        {
+          "value": "Battery",
+          "count": 182
+        },
+        {
+          "value": "GPS",
+          "count": 170
+        },
+        {
+          "value": "N/A",
+          "count": 165
+        }
+      ],
+      "min_length": 3,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAAAA",
+        "AAAAAAAA",
+        "AAAAAAA",
+        "AAA",
+        "A/A"
+      ]
+    },
+    "vaccine_template|sensordata|containlink": {
+      "table_name": "sensordata",
+      "column_name": "containlink",
+      "column_type": "TEXT(20)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 900,
+      "min_value": "C10354",
+      "max_value": "C99982",
+      "top_k_values": [
+        {
+          "value": "C99982",
+          "count": 1
+        },
+        {
+          "value": "C99958",
+          "count": 1
+        },
+        {
+          "value": "C99786",
+          "count": 1
+        },
+        {
+          "value": "C99743",
+          "count": 1
+        },
+        {
+          "value": "C99337",
+          "count": 1
+        },
+        {
+          "value": "C99316",
+          "count": 1
+        },
+        {
+          "value": "C99304",
+          "count": 1
+        },
+        {
+          "value": "C99285",
+          "count": 1
+        },
+        {
+          "value": "C99239",
+          "count": 1
+        },
+        {
+          "value": "C99191",
+          "count": 1
+        }
+      ],
+      "min_length": 6,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "ADDDDD"
+      ]
+    },
+    "vaccine_template|sensordata|vehsenseref": {
+      "table_name": "sensordata",
+      "column_name": "vehsenseref",
+      "column_type": "TEXT(20)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 900,
+      "min_value": "V1011",
+      "max_value": "V9998",
+      "top_k_values": [
+        {
+          "value": "V9998",
+          "count": 1
+        },
+        {
+          "value": "V9995",
+          "count": 1
+        },
+        {
+          "value": "V9993",
+          "count": 1
+        },
+        {
+          "value": "V9989",
+          "count": 1
+        },
+        {
+          "value": "V9986",
+          "count": 1
+        },
+        {
+          "value": "V9964",
+          "count": 1
+        },
+        {
+          "value": "V9963",
+          "count": 1
+        },
+        {
+          "value": "V9941",
+          "count": 1
+        },
+        {
+          "value": "V9916",
+          "count": 1
+        },
+        {
+          "value": "V9911",
+          "count": 1
+        }
+      ],
+      "min_length": 5,
+      "max_length": 5,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "ADDDD"
+      ]
+    },
+    "vaccine_template|shipments|shipmentregistry": {
+      "table_name": "shipments",
+      "column_name": "shipmentregistry",
+      "column_type": "TEXT(20)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 900,
+      "min_value": "VS101443",
+      "max_value": "VS999632",
+      "top_k_values": [
+        {
+          "value": "VS101443",
+          "count": 1
+        },
+        {
+          "value": "VS101896",
+          "count": 1
+        },
+        {
+          "value": "VS103453",
+          "count": 1
+        },
+        {
+          "value": "VS107213",
+          "count": 1
+        },
+        {
+          "value": "VS107478",
+          "count": 1
+        },
+        {
+          "value": "VS108663",
+          "count": 1
+        },
+        {
+          "value": "VS109470",
+          "count": 1
+        },
+        {
+          "value": "VS110349",
+          "count": 1
+        },
+        {
+          "value": "VS111220",
+          "count": 1
+        },
+        {
+          "value": "VS113526",
+          "count": 1
+        }
+      ],
+      "min_length": 8,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDDDD"
+      ]
+    },
+    "vaccine_template|shipments|timemark": {
+      "table_name": "shipments",
+      "column_name": "timemark",
+      "column_type": "TEXT(6)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 900,
+      "min_value": "2024-02-19 14:45:28.230256",
+      "max_value": "2025-02-18 17:33:18.162452",
+      "top_k_values": [
+        {
+          "value": "2025-02-18 17:33:18.162452",
+          "count": 1
+        },
+        {
+          "value": "2025-02-17 20:26:01.295189",
+          "count": 1
+        },
+        {
+          "value": "2025-02-17 16:26:45.451378",
+          "count": 1
+        },
+        {
+          "value": "2025-02-17 01:43:59.158527",
+          "count": 1
+        },
+        {
+          "value": "2025-02-16 20:00:26.143378",
+          "count": 1
+        },
+        {
+          "value": "2025-02-16 17:35:23.481747",
+          "count": 1
+        },
+        {
+          "value": "2025-02-16 10:07:52.475588",
+          "count": 1
+        },
+        {
+          "value": "2025-02-15 20:51:36.141305",
+          "count": 1
+        },
+        {
+          "value": "2025-02-15 13:36:29.099704",
+          "count": 1
+        },
+        {
+          "value": "2025-02-14 23:52:26.349512",
+          "count": 1
+        }
+      ],
+      "min_length": 24,
+      "max_length": 26,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDD-DD-DD DD:DD:DD.DDDDDD",
+        "DDDD-DD-DD DD:DD:DD.DDDDD",
+        "DDDD-DD-DD DD:DD:DD.DDDD"
+      ]
+    },
+    "vaccine_template|shipments|routealign": {
+      "table_name": "shipments",
+      "column_name": "routealign",
+      "column_type": "TEXT(30)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 3,
+      "min_value": "Compliant",
+      "max_value": "Under Review",
+      "top_k_values": [
+        {
+          "value": "Under Review",
+          "count": 309
+        },
+        {
+          "value": "Compliant",
+          "count": 306
+        },
+        {
+          "value": "Deviation",
+          "count": 285
+        }
+      ],
+      "min_length": 9,
+      "max_length": 12,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAA",
+        "AAAAA AAAAAA"
+      ]
+    },
+    "vaccine_template|shipments|customsflag": {
+      "table_name": "shipments",
+      "column_name": "customsflag",
+      "column_type": "TEXT",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 3,
+      "min_value": "Cleared",
+      "max_value": "Pending",
+      "top_k_values": [
+        {
+          "value": "In Process",
+          "count": 322
+        },
+        {
+          "value": "Cleared",
+          "count": 303
+        },
+        {
+          "value": "Pending",
+          "count": 275
+        }
+      ],
+      "min_length": 7,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AA AAAAAAA"
+      ]
+    },
+    "vaccine_template|shipments|imppermitref": {
+      "table_name": "shipments",
+      "column_name": "imppermitref",
+      "column_type": "TEXT(50)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 899,
+      "min_value": "IP10224",
+      "max_value": "IP99844",
+      "top_k_values": [
+        {
+          "value": "IP69841",
+          "count": 2
+        },
+        {
+          "value": "IP99844",
+          "count": 1
+        },
+        {
+          "value": "IP99688",
+          "count": 1
+        },
+        {
+          "value": "IP99674",
+          "count": 1
+        },
+        {
+          "value": "IP99509",
+          "count": 1
+        },
+        {
+          "value": "IP99336",
+          "count": 1
+        },
+        {
+          "value": "IP99168",
+          "count": 1
+        },
+        {
+          "value": "IP99137",
+          "count": 1
+        },
+        {
+          "value": "IP99080",
+          "count": 1
+        },
+        {
+          "value": "IP98859",
+          "count": 1
+        }
+      ],
+      "min_length": 7,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDDD"
+      ]
+    },
+    "vaccine_template|shipments|exppermitref": {
+      "table_name": "shipments",
+      "column_name": "exppermitref",
+      "column_type": "TEXT(50)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 896,
+      "min_value": "EP10007",
+      "max_value": "EP99997",
+      "top_k_values": [
+        {
+          "value": "EP79100",
+          "count": 2
+        },
+        {
+          "value": "EP47719",
+          "count": 2
+        },
+        {
+          "value": "EP38862",
+          "count": 2
+        },
+        {
+          "value": "EP22441",
+          "count": 2
+        },
+        {
+          "value": "EP99997",
+          "count": 1
+        },
+        {
+          "value": "EP99949",
+          "count": 1
+        },
+        {
+          "value": "EP99947",
+          "count": 1
+        },
+        {
+          "value": "EP99919",
+          "count": 1
+        },
+        {
+          "value": "EP99911",
+          "count": 1
+        },
+        {
+          "value": "EP99828",
+          "count": 1
+        }
+      ],
+      "min_length": 7,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDDD"
+      ]
+    },
+    "vaccine_template|shipments|regprofile": {
+      "table_name": "shipments",
+      "column_name": "regprofile",
+      "column_type": "TEXT(50)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 3,
+      "min_value": "Compliant",
+      "max_value": "Under Review",
+      "top_k_values": [
+        {
+          "value": "Non-Compliant",
+          "count": 316
+        },
+        {
+          "value": "Compliant",
+          "count": 308
+        },
+        {
+          "value": "Under Review",
+          "count": 276
+        }
+      ],
+      "min_length": 9,
+      "max_length": 13,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAA-AAAAAAAAA",
+        "AAAAAAAAA",
+        "AAAAA AAAAAA"
+      ]
+    },
+    "vaccine_template|shipments|insureflag": {
+      "table_name": "shipments",
+      "column_name": "insureflag",
+      "column_type": "TEXT",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 3,
+      "min_value": "Active",
+      "max_value": "Pending",
+      "top_k_values": [
+        {
+          "value": "Expired",
+          "count": 317
+        },
+        {
+          "value": "Active",
+          "count": 292
+        },
+        {
+          "value": "Pending",
+          "count": 291
+        }
+      ],
+      "min_length": 6,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAA"
+      ]
+    },
+    "vaccine_template|shipments|insureref": {
+      "table_name": "shipments",
+      "column_name": "insureref",
+      "column_type": "TEXT(50)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 898,
+      "min_value": "INS10184",
+      "max_value": "INS99595",
+      "top_k_values": [
+        {
+          "value": "INS95849",
+          "count": 2
+        },
+        {
+          "value": "INS46711",
+          "count": 2
+        },
+        {
+          "value": "INS99595",
+          "count": 1
+        },
+        {
+          "value": "INS99567",
+          "count": 1
+        },
+        {
+          "value": "INS99280",
+          "count": 1
+        },
+        {
+          "value": "INS99273",
+          "count": 1
+        },
+        {
+          "value": "INS99247",
+          "count": 1
+        },
+        {
+          "value": "INS99213",
+          "count": 1
+        },
+        {
+          "value": "INS99100",
+          "count": 1
+        },
+        {
+          "value": "INS99084",
+          "count": 1
+        }
+      ],
+      "min_length": 8,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAADDDDD"
+      ]
+    },
+    "vaccine_template|shipments|qualcheck": {
+      "table_name": "shipments",
+      "column_name": "qualcheck",
+      "column_type": "TEXT",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 3,
+      "min_value": "Failed",
+      "max_value": "Pending",
+      "top_k_values": [
+        {
+          "value": "Passed",
+          "count": 303
+        },
+        {
+          "value": "Failed",
+          "count": 301
+        },
+        {
+          "value": "Pending",
+          "count": 296
+        }
+      ],
+      "min_length": 6,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AAAAAAA"
+      ]
+    },
+    "vaccine_template|shipments|integritymark": {
+      "table_name": "shipments",
+      "column_name": "integritymark",
+      "column_type": "TEXT",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 3,
+      "min_value": "Compromised",
+      "max_value": "Under Investigation",
+      "top_k_values": [
+        {
+          "value": "Compromised",
+          "count": 314
+        },
+        {
+          "value": "Under Investigation",
+          "count": 300
+        },
+        {
+          "value": "Intact",
+          "count": 286
+        }
+      ],
+      "min_length": 6,
+      "max_length": 19,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAAAA",
+        "AAAAA AAAAAAAAAAAAA",
+        "AAAAAA"
+      ]
+    },
+    "vaccine_template|shipments|contamlevel": {
+      "table_name": "shipments",
+      "column_name": "contamlevel",
+      "column_type": "TEXT",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 3,
+      "min_value": "High",
+      "max_value": "Medium",
+      "top_k_values": [
+        {
+          "value": "Low",
+          "count": 325
+        },
+        {
+          "value": "High",
+          "count": 299
+        },
+        {
+          "value": "Medium",
+          "count": 276
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAA",
+        "AAAA",
+        "AAAAAA"
+      ]
+    },
+    "vaccine_template|shipments|sterilemark": {
+      "table_name": "shipments",
+      "column_name": "sterilemark",
+      "column_type": "TEXT",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 3,
+      "min_value": "Compromised",
+      "max_value": "Unknown",
+      "top_k_values": [
+        {
+          "value": "Compromised",
+          "count": 326
+        },
+        {
+          "value": "Unknown",
+          "count": 296
+        },
+        {
+          "value": "Maintained",
+          "count": 278
+        }
+      ],
+      "min_length": 7,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAAAA",
+        "AAAAAAA",
+        "AAAAAAAAAA"
+      ]
+    },
+    "vaccine_template|shipments|packagestate": {
+      "table_name": "shipments",
+      "column_name": "packagestate",
+      "column_type": "TEXT",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 4,
+      "min_value": "Excellent",
+      "max_value": "Poor",
+      "top_k_values": [
+        {
+          "value": "Good",
+          "count": 245
+        },
+        {
+          "value": "Poor",
+          "count": 228
+        },
+        {
+          "value": "Excellent",
+          "count": 218
+        },
+        {
+          "value": "Fair",
+          "count": 209
+        }
+      ],
+      "min_length": 4,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAAAAAAAA"
+      ]
+    },
+    "vaccine_template|shipments|sealflag": {
+      "table_name": "shipments",
+      "column_name": "sealflag",
+      "column_type": "TEXT",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 3,
+      "min_value": "Broken",
+      "max_value": "Missing",
+      "top_k_values": [
+        {
+          "value": "Intact",
+          "count": 324
+        },
+        {
+          "value": "Broken",
+          "count": 301
+        },
+        {
+          "value": "Missing",
+          "count": 275
+        }
+      ],
+      "min_length": 6,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AAAAAAA"
+      ]
+    },
+    "vaccine_template|shipments|sealref": {
+      "table_name": "shipments",
+      "column_name": "sealref",
+      "column_type": "TEXT(50)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 899,
+      "min_value": "SEAL10389",
+      "max_value": "SEAL99954",
+      "top_k_values": [
+        {
+          "value": "SEAL37112",
+          "count": 2
+        },
+        {
+          "value": "SEAL99954",
+          "count": 1
+        },
+        {
+          "value": "SEAL99916",
+          "count": 1
+        },
+        {
+          "value": "SEAL99745",
+          "count": 1
+        },
+        {
+          "value": "SEAL99637",
+          "count": 1
+        },
+        {
+          "value": "SEAL99593",
+          "count": 1
+        },
+        {
+          "value": "SEAL99343",
+          "count": 1
+        },
+        {
+          "value": "SEAL99314",
+          "count": 1
+        },
+        {
+          "value": "SEAL99224",
+          "count": 1
+        },
+        {
+          "value": "SEAL99024",
+          "count": 1
+        }
+      ],
+      "min_length": 9,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAADDDDD"
+      ]
+    },
+    "vaccine_template|shipments|tampersign": {
+      "table_name": "shipments",
+      "column_name": "tampersign",
+      "column_type": "TEXT",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 3,
+      "min_value": "Confirmed",
+      "max_value": "Suspected",
+      "top_k_values": [
+        {
+          "value": "None Detected",
+          "count": 310
+        },
+        {
+          "value": "Confirmed",
+          "count": 298
+        },
+        {
+          "value": "Suspected",
+          "count": 292
+        }
+      ],
+      "min_length": 9,
+      "max_length": 13,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAA",
+        "AAAA AAAAAAAA"
+      ]
+    },
+    "vaccine_template|shipments|handlingguide": {
+      "table_name": "shipments",
+      "column_name": "handlingguide",
+      "column_type": "TEXT",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 3,
+      "min_value": "Special Care",
+      "max_value": "Urgent",
+      "top_k_values": [
+        {
+          "value": "Urgent",
+          "count": 317
+        },
+        {
+          "value": "Standard",
+          "count": 304
+        },
+        {
+          "value": "Special Care",
+          "count": 279
+        }
+      ],
+      "min_length": 6,
+      "max_length": 12,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AAAAAAAA",
+        "AAAAAAA AAAA"
+      ]
+    },
+    "vaccine_template|shipments|storagepose": {
+      "table_name": "shipments",
+      "column_name": "storagepose",
+      "column_type": "TEXT(40)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 3,
+      "min_value": "Horizontal",
+      "max_value": "Upright",
+      "top_k_values": [
+        {
+          "value": "Not Specified",
+          "count": 328
+        },
+        {
+          "value": "Upright",
+          "count": 294
+        },
+        {
+          "value": "Horizontal",
+          "count": 278
+        }
+      ],
+      "min_length": 7,
+      "max_length": 13,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAA AAAAAAAAA",
+        "AAAAAAA",
+        "AAAAAAAAAA"
+      ]
+    },
+    "vaccine_template|shipments|generalnote": {
+      "table_name": "shipments",
+      "column_name": "generalnote",
+      "column_type": "TEXT",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 472,
+      "min_value": "",
+      "max_value": "Your young attack.",
+      "top_k_values": [
+        {
+          "value": "",
+          "count": 429
+        },
+        {
+          "value": "Your young attack.",
+          "count": 1
+        },
+        {
+          "value": "Yes me financial.",
+          "count": 1
+        },
+        {
+          "value": "Yes behind add.",
+          "count": 1
+        },
+        {
+          "value": "Year fear wait base form see.",
+          "count": 1
+        },
+        {
+          "value": "Yard much far account single.",
+          "count": 1
+        },
+        {
+          "value": "Yard activity bad.",
+          "count": 1
+        },
+        {
+          "value": "Wrong section drug race full test never then.",
+          "count": 1
+        },
+        {
+          "value": "Wrong admit entire herself shake paper computer.",
+          "count": 1
+        },
+        {
+          "value": "Writer energy great marriage PM model story.",
+          "count": 1
+        }
+      ],
+      "min_length": 0,
+      "max_length": 66,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "",
+        "AAAA AAAA AAAAAA AAAAAA AAAA AAAAAA.",
+        "AAAA AAAAAA AAA.",
+        "AAAA AAAAAAAA AAAAAAAA AAAA AAAAAAAAA AAAAA.",
+        "AA AAAAAA AAA AAAAA AAAAAAAAA AAAAAAAAAAA AAAAA."
+      ]
+    },
+    "vaccine_template|transportinfo|vehiclereg": {
+      "table_name": "transportinfo",
+      "column_name": "vehiclereg",
+      "column_type": "TEXT(20)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 900,
+      "min_value": "V1011",
+      "max_value": "V9998",
+      "top_k_values": [
+        {
+          "value": "V1011",
+          "count": 1
+        },
+        {
+          "value": "V1045",
+          "count": 1
+        },
+        {
+          "value": "V1051",
+          "count": 1
+        },
+        {
+          "value": "V1072",
+          "count": 1
+        },
+        {
+          "value": "V1085",
+          "count": 1
+        },
+        {
+          "value": "V1092",
+          "count": 1
+        },
+        {
+          "value": "V1103",
+          "count": 1
+        },
+        {
+          "value": "V1108",
+          "count": 1
+        },
+        {
+          "value": "V1109",
+          "count": 1
+        },
+        {
+          "value": "V1110",
+          "count": 1
+        }
+      ],
+      "min_length": 5,
+      "max_length": 5,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "ADDDD"
+      ]
+    },
+    "vaccine_template|transportinfo|vehiclekind": {
+      "table_name": "transportinfo",
+      "column_name": "vehiclekind",
+      "column_type": "TEXT",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 3,
+      "min_value": "Cargo Aircraft",
+      "max_value": "Refrigerated Truck",
+      "top_k_values": [
+        {
+          "value": "Refrigerated Truck",
+          "count": 311
+        },
+        {
+          "value": "Reefer Container",
+          "count": 296
+        },
+        {
+          "value": "Cargo Aircraft",
+          "count": 293
+        }
+      ],
+      "min_length": 14,
+      "max_length": 18,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAAAAA AAAAA",
+        "AAAAAA AAAAAAAAA",
+        "AAAAA AAAAAAAA"
+      ]
+    },
+    "vaccine_template|transportinfo|vehtempc": {
+      "table_name": "transportinfo",
+      "column_name": "vehtempc",
+      "column_type": "INTEGER",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 288,
+      "min_value": "-60",
+      "max_value": "-90",
+      "top_k_values": [
+        {
+          "value": "-69.8",
+          "count": 9
+        },
+        {
+          "value": "-66.1",
+          "count": 8
+        },
+        {
+          "value": "-62.9",
+          "count": 7
+        },
+        {
+          "value": "-67.1",
+          "count": 7
+        },
+        {
+          "value": "-68.8",
+          "count": 7
+        },
+        {
+          "value": "-73.7",
+          "count": 7
+        },
+        {
+          "value": "-80.6",
+          "count": 7
+        },
+        {
+          "value": "-84.3",
+          "count": 7
+        },
+        {
+          "value": "-85.5",
+          "count": 7
+        },
+        {
+          "value": "-87",
+          "count": 7
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "-DD.D",
+        "-DD"
+      ]
+    },
+    "vaccine_template|transportinfo|speedkm": {
+      "table_name": "transportinfo",
+      "column_name": "speedkm",
+      "column_type": "INTEGER",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 296,
+      "min_value": "0",
+      "max_value": "99",
+      "top_k_values": [
+        {
+          "value": "95",
+          "count": 14
+        },
+        {
+          "value": "12",
+          "count": 14
+        },
+        {
+          "value": "68",
+          "count": 11
+        },
+        {
+          "value": "41",
+          "count": 11
+        },
+        {
+          "value": "34",
+          "count": 11
+        },
+        {
+          "value": "116",
+          "count": 10
+        },
+        {
+          "value": "85",
+          "count": 10
+        },
+        {
+          "value": "63",
+          "count": 10
+        },
+        {
+          "value": "97",
+          "count": 9
+        },
+        {
+          "value": "47",
+          "count": 9
+        }
+      ],
+      "min_length": 1,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "DDD",
+        "D"
+      ]
+    },
+    "vaccine_template|transportinfo|distdonekm": {
+      "table_name": "transportinfo",
+      "column_name": "distdonekm",
+      "column_type": "REAL",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 859,
+      "min_value": "1038.0",
+      "max_value": "9988.0",
+      "top_k_values": [
+        {
+          "value": "5441.0",
+          "count": 3
+        },
+        {
+          "value": "9936.0",
+          "count": 2
+        },
+        {
+          "value": "9898.0",
+          "count": 2
+        },
+        {
+          "value": "9260.0",
+          "count": 2
+        },
+        {
+          "value": "9218.0",
+          "count": 2
+        },
+        {
+          "value": "8516.0",
+          "count": 2
+        },
+        {
+          "value": "8481.0",
+          "count": 2
+        },
+        {
+          "value": "8167.0",
+          "count": 2
+        },
+        {
+          "value": "7618.0",
+          "count": 2
+        },
+        {
+          "value": "7510.0",
+          "count": 2
+        }
+      ],
+      "min_length": 4,
+      "max_length": 6,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDD.D",
+        "DDD.D",
+        "DD.D"
+      ]
+    },
+    "vaccine_template|transportinfo|distleftkm": {
+      "table_name": "transportinfo",
+      "column_name": "distleftkm",
+      "column_type": "REAL",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 817,
+      "min_value": "1008.0",
+      "max_value": "977.0",
+      "top_k_values": [
+        {
+          "value": "2670.0",
+          "count": 3
+        },
+        {
+          "value": "2148.0",
+          "count": 3
+        },
+        {
+          "value": "1220.0",
+          "count": 3
+        },
+        {
+          "value": "610.0",
+          "count": 3
+        },
+        {
+          "value": "90.0",
+          "count": 3
+        },
+        {
+          "value": "4882.0",
+          "count": 2
+        },
+        {
+          "value": "4761.0",
+          "count": 2
+        },
+        {
+          "value": "4693.0",
+          "count": 2
+        },
+        {
+          "value": "4367.0",
+          "count": 2
+        },
+        {
+          "value": "4364.0",
+          "count": 2
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDD.D",
+        "DDD.D",
+        "DD.D",
+        "D.D"
+      ]
+    },
+    "vaccine_template|transportinfo|eta": {
+      "table_name": "transportinfo",
+      "column_name": "eta",
+      "column_type": "TEXT(6)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 72,
+      "min_value": "2025-02-19 09:32:08",
+      "max_value": "2025-02-22 08:32:08",
+      "top_k_values": [
+        {
+          "value": "2025-02-22 02:32:08",
+          "count": 19
+        },
+        {
+          "value": "2025-02-22 04:32:08",
+          "count": 18
+        },
+        {
+          "value": "2025-02-21 20:32:08",
+          "count": 17
+        },
+        {
+          "value": "2025-02-20 22:32:08",
+          "count": 17
+        },
+        {
+          "value": "2025-02-20 09:32:08",
+          "count": 17
+        },
+        {
+          "value": "2025-02-20 02:32:08",
+          "count": 17
+        },
+        {
+          "value": "2025-02-21 08:32:08",
+          "count": 16
+        },
+        {
+          "value": "2025-02-20 23:32:08",
+          "count": 16
+        },
+        {
+          "value": "2025-02-20 15:32:08",
+          "count": 16
+        },
+        {
+          "value": "2025-02-20 13:32:08",
+          "count": 16
+        }
+      ],
+      "min_length": 19,
+      "max_length": 19,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDD-DD-DD DD:DD:DD"
+      ]
+    },
+    "vaccine_template|transportinfo|departsite": {
+      "table_name": "transportinfo",
+      "column_name": "departsite",
+      "column_type": "TEXT(100)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 865,
+      "min_value": "Aaronbury",
+      "max_value": "Youngstad",
+      "top_k_values": [
+        {
+          "value": "West Jennifer",
+          "count": 3
+        },
+        {
+          "value": "South Jennifer",
+          "count": 3
+        },
+        {
+          "value": "West Lisa",
+          "count": 2
+        },
+        {
+          "value": "West Laura",
+          "count": 2
+        },
+        {
+          "value": "South Robert",
+          "count": 2
+        },
+        {
+          "value": "South Michael",
+          "count": 2
+        },
+        {
+          "value": "South Lisa",
+          "count": 2
+        },
+        {
+          "value": "Smithview",
+          "count": 2
+        },
+        {
+          "value": "Smithmouth",
+          "count": 2
+        },
+        {
+          "value": "Smithland",
+          "count": 2
+        }
+      ],
+      "min_length": 6,
+      "max_length": 22,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAAA",
+        "AAAAAAAAAAA",
+        "AAAAAAAAA",
+        "AAAAAAAAAAAA",
+        "AAAA AAAAAAA"
+      ]
+    },
+    "vaccine_template|transportinfo|currentsite": {
+      "table_name": "transportinfo",
+      "column_name": "currentsite",
+      "column_type": "TEXT(100)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 876,
+      "min_value": "Adrianaton",
+      "max_value": "Zimmermanstad",
+      "top_k_values": [
+        {
+          "value": "Lake Nicole",
+          "count": 3
+        },
+        {
+          "value": "Williamsside",
+          "count": 2
+        },
+        {
+          "value": "Williamchester",
+          "count": 2
+        },
+        {
+          "value": "West Amy",
+          "count": 2
+        },
+        {
+          "value": "South Susan",
+          "count": 2
+        },
+        {
+          "value": "South James",
+          "count": 2
+        },
+        {
+          "value": "Smithmouth",
+          "count": 2
+        },
+        {
+          "value": "Rodriguezside",
+          "count": 2
+        },
+        {
+          "value": "Port Christopherberg",
+          "count": 2
+        },
+        {
+          "value": "North James",
+          "count": 2
+        }
+      ],
+      "min_length": 6,
+      "max_length": 21,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAAA",
+        "AAAAAAAAA",
+        "AAAAAAAAAAA",
+        "AAAAAAAAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "vaccine_template|transportinfo|destsite": {
+      "table_name": "transportinfo",
+      "column_name": "destsite",
+      "column_type": "TEXT(100)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 866,
+      "min_value": "Aaronbury",
+      "max_value": "Zacharyport",
+      "top_k_values": [
+        {
+          "value": "West Brian",
+          "count": 3
+        },
+        {
+          "value": "East John",
+          "count": 3
+        },
+        {
+          "value": "West Steven",
+          "count": 2
+        },
+        {
+          "value": "West Stephanie",
+          "count": 2
+        },
+        {
+          "value": "West Katherine",
+          "count": 2
+        },
+        {
+          "value": "West Jeffrey",
+          "count": 2
+        },
+        {
+          "value": "South Vanessatown",
+          "count": 2
+        },
+        {
+          "value": "South Scott",
+          "count": 2
+        },
+        {
+          "value": "South John",
+          "count": 2
+        },
+        {
+          "value": "South Jennifer",
+          "count": 2
+        }
+      ],
+      "min_length": 7,
+      "max_length": 21,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAAA",
+        "AAAAAAAAAAA",
+        "AAAAAAAAA",
+        "AAAAAAAAAAAA",
+        "AAAA AAAAAAAAAAA"
+      ]
+    },
+    "vaccine_template|transportinfo|gpsflag": {
+      "table_name": "transportinfo",
+      "column_name": "gpsflag",
+      "column_type": "TEXT",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 3,
+      "min_value": "Active",
+      "max_value": "Lost",
+      "top_k_values": [
+        {
+          "value": "Active",
+          "count": 310
+        },
+        {
+          "value": "Lost",
+          "count": 308
+        },
+        {
+          "value": "Limited",
+          "count": 282
+        }
+      ],
+      "min_length": 4,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AAAA",
+        "AAAAAAA"
+      ]
+    },
+    "vaccine_template|transportinfo|latvalue": {
+      "table_name": "transportinfo",
+      "column_name": "latvalue",
+      "column_type": "INTEGER",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 900,
+      "min_value": "-0.07255",
+      "max_value": "9.845862",
+      "top_k_values": [
+        {
+          "value": "89.850577",
+          "count": 1
+        },
+        {
+          "value": "89.843909",
+          "count": 1
+        },
+        {
+          "value": "89.581391",
+          "count": 1
+        },
+        {
+          "value": "89.455364",
+          "count": 1
+        },
+        {
+          "value": "89.045219",
+          "count": 1
+        },
+        {
+          "value": "88.986728",
+          "count": 1
+        },
+        {
+          "value": "88.9703",
+          "count": 1
+        },
+        {
+          "value": "88.403532",
+          "count": 1
+        },
+        {
+          "value": "87.90657",
+          "count": 1
+        },
+        {
+          "value": "87.859775",
+          "count": 1
+        }
+      ],
+      "min_length": 6,
+      "max_length": 10,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "-DD.DDDDDD",
+        "DD.DDDDDD",
+        "-D.DDDDDD",
+        "D.DDDDDD",
+        "-DD.DDDDD"
+      ]
+    },
+    "vaccine_template|transportinfo|lonvalue": {
+      "table_name": "transportinfo",
+      "column_name": "lonvalue",
+      "column_type": "INTEGER",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 900,
+      "min_value": "-0.110353",
+      "max_value": "99.999886",
+      "top_k_values": [
+        {
+          "value": "179.625169",
+          "count": 1
+        },
+        {
+          "value": "179.238615",
+          "count": 1
+        },
+        {
+          "value": "179.213359",
+          "count": 1
+        },
+        {
+          "value": "178.695752",
+          "count": 1
+        },
+        {
+          "value": "178.22891",
+          "count": 1
+        },
+        {
+          "value": "177.681382",
+          "count": 1
+        },
+        {
+          "value": "176.46989",
+          "count": 1
+        },
+        {
+          "value": "175.635631",
+          "count": 1
+        },
+        {
+          "value": "175.544028",
+          "count": 1
+        },
+        {
+          "value": "174.927946",
+          "count": 1
+        }
+      ],
+      "min_length": 7,
+      "max_length": 11,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD.DDDDDD",
+        "DD.DDDDDD",
+        "-DD.DDDDDD",
+        "-DDD.DDDDDD",
+        "-D.DDDDDD"
+      ]
+    },
+    "vaccine_template|transportinfo|altmeter": {
+      "table_name": "transportinfo",
+      "column_name": "altmeter",
+      "column_type": "INTEGER",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 893,
+      "min_value": "1019.9",
+      "max_value": "9997.6",
+      "top_k_values": [
+        {
+          "value": "9970.3",
+          "count": 2
+        },
+        {
+          "value": "9482.6",
+          "count": 2
+        },
+        {
+          "value": "9060.3",
+          "count": 2
+        },
+        {
+          "value": "7120.7",
+          "count": 2
+        },
+        {
+          "value": "5903.7",
+          "count": 2
+        },
+        {
+          "value": "5668.2",
+          "count": 2
+        },
+        {
+          "value": "1166.4",
+          "count": 2
+        },
+        {
+          "value": "9997.6",
+          "count": 1
+        },
+        {
+          "value": "9965.1",
+          "count": 1
+        },
+        {
+          "value": "9927.2",
+          "count": 1
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDD.D",
+        "DDDD",
+        "DDD.D",
+        "DD.D",
+        "DDD"
+      ]
+    },
+    "vaccine_template|transportinfo|locupdatemin": {
+      "table_name": "transportinfo",
+      "column_name": "locupdatemin",
+      "column_type": "INTEGER",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 4,
+      "min_value": "10",
+      "max_value": "5",
+      "top_k_values": [
+        {
+          "value": "30",
+          "count": 235
+        },
+        {
+          "value": "10",
+          "count": 231
+        },
+        {
+          "value": "5",
+          "count": 219
+        },
+        {
+          "value": "15",
+          "count": 215
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D"
+      ]
+    },
+    "vaccine_template|transportinfo|locupdatemark": {
+      "table_name": "transportinfo",
+      "column_name": "locupdatemark",
+      "column_type": "TEXT(6)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 31,
+      "min_value": "2025-02-19 08:02:08",
+      "max_value": "2025-02-19 08:32:08",
+      "top_k_values": [
+        {
+          "value": "2025-02-19 08:05:08",
+          "count": 48
+        },
+        {
+          "value": "2025-02-19 08:16:08",
+          "count": 41
+        },
+        {
+          "value": "2025-02-19 08:24:08",
+          "count": 39
+        },
+        {
+          "value": "2025-02-19 08:27:08",
+          "count": 38
+        },
+        {
+          "value": "2025-02-19 08:19:08",
+          "count": 36
+        },
+        {
+          "value": "2025-02-19 08:10:08",
+          "count": 36
+        },
+        {
+          "value": "2025-02-19 08:21:08",
+          "count": 33
+        },
+        {
+          "value": "2025-02-19 08:06:08",
+          "count": 32
+        },
+        {
+          "value": "2025-02-19 08:02:08",
+          "count": 32
+        },
+        {
+          "value": "2025-02-19 08:07:08",
+          "count": 31
+        }
+      ],
+      "min_length": 19,
+      "max_length": 19,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDD-DD-DD DD:DD:DD"
+      ]
+    },
+    "vaccine_template|transportinfo|transmode": {
+      "table_name": "transportinfo",
+      "column_name": "transmode",
+      "column_type": "TEXT",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 4,
+      "min_value": "Air",
+      "max_value": "Sea",
+      "top_k_values": [
+        {
+          "value": "Air",
+          "count": 231
+        },
+        {
+          "value": "Road",
+          "count": 227
+        },
+        {
+          "value": "Sea",
+          "count": 223
+        },
+        {
+          "value": "Rail",
+          "count": 219
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAA",
+        "AAAA"
+      ]
+    },
+    "vaccine_template|transportinfo|carrlabel": {
+      "table_name": "transportinfo",
+      "column_name": "carrlabel",
+      "column_type": "TEXT",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 879,
+      "min_value": "Acosta PLC",
+      "max_value": "Zimmerman-Andrews",
+      "top_k_values": [
+        {
+          "value": "Johnson Ltd",
+          "count": 4
+        },
+        {
+          "value": "Smith PLC",
+          "count": 3
+        },
+        {
+          "value": "Lee LLC",
+          "count": 3
+        },
+        {
+          "value": "Williams and Sons",
+          "count": 2
+        },
+        {
+          "value": "Watson Inc",
+          "count": 2
+        },
+        {
+          "value": "Turner Inc",
+          "count": 2
+        },
+        {
+          "value": "Torres LLC",
+          "count": 2
+        },
+        {
+          "value": "Smith Ltd",
+          "count": 2
+        },
+        {
+          "value": "Smith Group",
+          "count": 2
+        },
+        {
+          "value": "Sanchez PLC",
+          "count": 2
+        }
+      ],
+      "min_length": 7,
+      "max_length": 33,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA AAA",
+        "AAAAAAA AAA",
+        "AAAAA AAA",
+        "AAAAAA-AAAAA",
+        "AAAA AAA"
+      ]
+    },
+    "vaccine_template|transportinfo|carrcert": {
+      "table_name": "transportinfo",
+      "column_name": "carrcert",
+      "column_type": "TEXT(50)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 3,
+      "min_value": "CEIV Pharma",
+      "max_value": "ISO 9001",
+      "top_k_values": [
+        {
+          "value": "CEIV Pharma",
+          "count": 301
+        },
+        {
+          "value": "ISO 9001",
+          "count": 300
+        },
+        {
+          "value": "GDP",
+          "count": 299
+        }
+      ],
+      "min_length": 3,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA AAAAAA",
+        "AAA DDDD",
+        "AAA"
+      ]
+    },
+    "vaccine_template|transportinfo|shiptransit": {
+      "table_name": "transportinfo",
+      "column_name": "shiptransit",
+      "column_type": "TEXT(20)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 900,
+      "min_value": "VS101443",
+      "max_value": "VS999632",
+      "top_k_values": [
+        {
+          "value": "VS999632",
+          "count": 1
+        },
+        {
+          "value": "VS999459",
+          "count": 1
+        },
+        {
+          "value": "VS999134",
+          "count": 1
+        },
+        {
+          "value": "VS999027",
+          "count": 1
+        },
+        {
+          "value": "VS997699",
+          "count": 1
+        },
+        {
+          "value": "VS996761",
+          "count": 1
+        },
+        {
+          "value": "VS993249",
+          "count": 1
+        },
+        {
+          "value": "VS991810",
+          "count": 1
+        },
+        {
+          "value": "VS990820",
+          "count": 1
+        },
+        {
+          "value": "VS990225",
+          "count": 1
+        }
+      ],
+      "min_length": 8,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDDDD"
+      ]
+    },
+    "vaccine_template|transportinfo|containtransit": {
+      "table_name": "transportinfo",
+      "column_name": "containtransit",
+      "column_type": "TEXT(20)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 900,
+      "min_value": "C10354",
+      "max_value": "C99982",
+      "top_k_values": [
+        {
+          "value": "C99982",
+          "count": 1
+        },
+        {
+          "value": "C99958",
+          "count": 1
+        },
+        {
+          "value": "C99786",
+          "count": 1
+        },
+        {
+          "value": "C99743",
+          "count": 1
+        },
+        {
+          "value": "C99337",
+          "count": 1
+        },
+        {
+          "value": "C99316",
+          "count": 1
+        },
+        {
+          "value": "C99304",
+          "count": 1
+        },
+        {
+          "value": "C99285",
+          "count": 1
+        },
+        {
+          "value": "C99239",
+          "count": 1
+        },
+        {
+          "value": "C99191",
+          "count": 1
+        }
+      ],
+      "min_length": 6,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "ADDDDD"
+      ]
+    },
+    "vaccine_template|vaccinedetails|vacregistry": {
+      "table_name": "vaccinedetails",
+      "column_name": "vacregistry",
+      "column_type": "INTEGER",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 900,
+      "min_value": "1",
+      "max_value": "99",
+      "top_k_values": [
+        {
+          "value": "1",
+          "count": 1
+        },
+        {
+          "value": "2",
+          "count": 1
+        },
+        {
+          "value": "3",
+          "count": 1
+        },
+        {
+          "value": "4",
+          "count": 1
+        },
+        {
+          "value": "5",
+          "count": 1
+        },
+        {
+          "value": "6",
+          "count": 1
+        },
+        {
+          "value": "7",
+          "count": 1
+        },
+        {
+          "value": "8",
+          "count": 1
+        },
+        {
+          "value": "9",
+          "count": 1
+        },
+        {
+          "value": "10",
+          "count": 1
+        }
+      ],
+      "min_length": 1,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D"
+      ]
+    },
+    "vaccine_template|vaccinedetails|vacvariant": {
+      "table_name": "vaccinedetails",
+      "column_name": "vacvariant",
+      "column_type": "TEXT(50)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 4,
+      "min_value": "Inactivated",
+      "max_value": "mRNA",
+      "top_k_values": [
+        {
+          "value": "Protein Subunit",
+          "count": 241
+        },
+        {
+          "value": "Viral Vector",
+          "count": 230
+        },
+        {
+          "value": "Inactivated",
+          "count": 230
+        },
+        {
+          "value": "mRNA",
+          "count": 199
+        }
+      ],
+      "min_length": 4,
+      "max_length": 15,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA AAAAAAA",
+        "AAAAA AAAAAA",
+        "AAAAAAAAAAA",
+        "AAAA"
+      ]
+    },
+    "vaccine_template|vaccinedetails|mfgsource": {
+      "table_name": "vaccinedetails",
+      "column_name": "mfgsource",
+      "column_type": "TEXT",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 5,
+      "min_value": "AstraZeneca",
+      "max_value": "Sinovac",
+      "top_k_values": [
+        {
+          "value": "Moderna",
+          "count": 188
+        },
+        {
+          "value": "Sinovac",
+          "count": 183
+        },
+        {
+          "value": "AstraZeneca",
+          "count": 182
+        },
+        {
+          "value": "BioNTech",
+          "count": 177
+        },
+        {
+          "value": "Novavax",
+          "count": 170
+        }
+      ],
+      "min_length": 7,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAAAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "vaccine_template|vaccinedetails|batchlabel": {
+      "table_name": "vaccinedetails",
+      "column_name": "batchlabel",
+      "column_type": "TEXT(50)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 895,
+      "min_value": "B10050",
+      "max_value": "B99993",
+      "top_k_values": [
+        {
+          "value": "B91127",
+          "count": 2
+        },
+        {
+          "value": "B81238",
+          "count": 2
+        },
+        {
+          "value": "B81187",
+          "count": 2
+        },
+        {
+          "value": "B44950",
+          "count": 2
+        },
+        {
+          "value": "B26918",
+          "count": 2
+        },
+        {
+          "value": "B99993",
+          "count": 1
+        },
+        {
+          "value": "B99913",
+          "count": 1
+        },
+        {
+          "value": "B99796",
+          "count": 1
+        },
+        {
+          "value": "B99773",
+          "count": 1
+        },
+        {
+          "value": "B99539",
+          "count": 1
+        }
+      ],
+      "min_length": 6,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "ADDDDD"
+      ]
+    },
+    "vaccine_template|vaccinedetails|prodday": {
+      "table_name": "vaccinedetails",
+      "column_name": "prodday",
+      "column_type": "TEXT",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 150,
+      "min_value": "2024-08-23",
+      "max_value": "2025-01-20",
+      "top_k_values": [
+        {
+          "value": "2024-12-22",
+          "count": 12
+        },
+        {
+          "value": "2024-12-09",
+          "count": 12
+        },
+        {
+          "value": "2024-10-18",
+          "count": 12
+        },
+        {
+          "value": "2025-01-15",
+          "count": 11
+        },
+        {
+          "value": "2024-12-08",
+          "count": 11
+        },
+        {
+          "value": "2024-11-04",
+          "count": 11
+        },
+        {
+          "value": "2025-01-09",
+          "count": 10
+        },
+        {
+          "value": "2024-12-31",
+          "count": 10
+        },
+        {
+          "value": "2024-11-15",
+          "count": 10
+        },
+        {
+          "value": "2024-09-22",
+          "count": 10
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDD-DD-DD"
+      ]
+    },
+    "vaccine_template|vaccinedetails|expireday": {
+      "table_name": "vaccinedetails",
+      "column_name": "expireday",
+      "column_type": "TEXT",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 447,
+      "min_value": "2025-08-18",
+      "max_value": "2027-02-09",
+      "top_k_values": [
+        {
+          "value": "2025-12-14",
+          "count": 7
+        },
+        {
+          "value": "2026-05-19",
+          "count": 6
+        },
+        {
+          "value": "2025-11-26",
+          "count": 6
+        },
+        {
+          "value": "2026-12-12",
+          "count": 5
+        },
+        {
+          "value": "2026-09-14",
+          "count": 5
+        },
+        {
+          "value": "2026-08-21",
+          "count": 5
+        },
+        {
+          "value": "2026-06-03",
+          "count": 5
+        },
+        {
+          "value": "2026-02-18",
+          "count": 5
+        },
+        {
+          "value": "2026-01-29",
+          "count": 5
+        },
+        {
+          "value": "2027-01-21",
+          "count": 4
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDD-DD-DD"
+      ]
+    },
+    "vaccine_template|vaccinedetails|lotmeasure": {
+      "table_name": "vaccinedetails",
+      "column_name": "lotmeasure",
+      "column_type": "INTEGER",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 897,
+      "min_value": "10000",
+      "max_value": "99864",
+      "top_k_values": [
+        {
+          "value": "97234",
+          "count": 2
+        },
+        {
+          "value": "56731",
+          "count": 2
+        },
+        {
+          "value": "7420",
+          "count": 2
+        },
+        {
+          "value": "99864",
+          "count": 1
+        },
+        {
+          "value": "99829",
+          "count": 1
+        },
+        {
+          "value": "99632",
+          "count": 1
+        },
+        {
+          "value": "99456",
+          "count": 1
+        },
+        {
+          "value": "99259",
+          "count": 1
+        },
+        {
+          "value": "99248",
+          "count": 1
+        },
+        {
+          "value": "99088",
+          "count": 1
+        }
+      ],
+      "min_length": 4,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDD",
+        "DDDD"
+      ]
+    },
+    "vaccine_template|vaccinedetails|vialtally": {
+      "table_name": "vaccinedetails",
+      "column_name": "vialtally",
+      "column_type": "INTEGER",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 861,
+      "min_value": "1003",
+      "max_value": "9990",
+      "top_k_values": [
+        {
+          "value": "5641",
+          "count": 3
+        },
+        {
+          "value": "9952",
+          "count": 2
+        },
+        {
+          "value": "9455",
+          "count": 2
+        },
+        {
+          "value": "9112",
+          "count": 2
+        },
+        {
+          "value": "8812",
+          "count": 2
+        },
+        {
+          "value": "8689",
+          "count": 2
+        },
+        {
+          "value": "8605",
+          "count": 2
+        },
+        {
+          "value": "8536",
+          "count": 2
+        },
+        {
+          "value": "8427",
+          "count": 2
+        },
+        {
+          "value": "8175",
+          "count": 2
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDD",
+        "DDD"
+      ]
+    },
+    "vaccine_template|vaccinedetails|dosepervial": {
+      "table_name": "vaccinedetails",
+      "column_name": "dosepervial",
+      "column_type": "INTEGER",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 3,
+      "min_value": "1",
+      "max_value": "5",
+      "top_k_values": [
+        {
+          "value": "10",
+          "count": 302
+        },
+        {
+          "value": "5",
+          "count": 300
+        },
+        {
+          "value": "1",
+          "count": 298
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D",
+        "DD"
+      ]
+    },
+    "vaccine_template|vaccinedetails|dosetotal": {
+      "table_name": "vaccinedetails",
+      "column_name": "dosetotal",
+      "column_type": "INTEGER",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 879,
+      "min_value": "10030",
+      "max_value": "9995",
+      "top_k_values": [
+        {
+          "value": "56410",
+          "count": 2
+        },
+        {
+          "value": "53420",
+          "count": 2
+        },
+        {
+          "value": "49950",
+          "count": 2
+        },
+        {
+          "value": "49760",
+          "count": 2
+        },
+        {
+          "value": "44240",
+          "count": 2
+        },
+        {
+          "value": "43445",
+          "count": 2
+        },
+        {
+          "value": "42135",
+          "count": 2
+        },
+        {
+          "value": "38960",
+          "count": 2
+        },
+        {
+          "value": "37485",
+          "count": 2
+        },
+        {
+          "value": "27870",
+          "count": 2
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDD",
+        "DDDD",
+        "DDD"
+      ]
+    },
+    "vaccine_template|vaccinedetails|shipinject": {
+      "table_name": "vaccinedetails",
+      "column_name": "shipinject",
+      "column_type": "TEXT(20)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 900,
+      "min_value": "VS101443",
+      "max_value": "VS999632",
+      "top_k_values": [
+        {
+          "value": "VS999632",
+          "count": 1
+        },
+        {
+          "value": "VS999459",
+          "count": 1
+        },
+        {
+          "value": "VS999134",
+          "count": 1
+        },
+        {
+          "value": "VS999027",
+          "count": 1
+        },
+        {
+          "value": "VS997699",
+          "count": 1
+        },
+        {
+          "value": "VS996761",
+          "count": 1
+        },
+        {
+          "value": "VS993249",
+          "count": 1
+        },
+        {
+          "value": "VS991810",
+          "count": 1
+        },
+        {
+          "value": "VS990820",
+          "count": 1
+        },
+        {
+          "value": "VS990225",
+          "count": 1
+        }
+      ],
+      "min_length": 8,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDDDD"
+      ]
+    },
+    "vaccine_template|vaccinedetails|containvac": {
+      "table_name": "vaccinedetails",
+      "column_name": "containvac",
+      "column_type": "TEXT(20)",
+      "row_count": 900,
+      "null_count": 0,
+      "non_null_count": 900,
+      "distinct_count": 900,
+      "min_value": "C10354",
+      "max_value": "C99982",
+      "top_k_values": [
+        {
+          "value": "C99982",
+          "count": 1
+        },
+        {
+          "value": "C99958",
+          "count": 1
+        },
+        {
+          "value": "C99786",
+          "count": 1
+        },
+        {
+          "value": "C99743",
+          "count": 1
+        },
+        {
+          "value": "C99337",
+          "count": 1
+        },
+        {
+          "value": "C99316",
+          "count": 1
+        },
+        {
+          "value": "C99304",
+          "count": 1
+        },
+        {
+          "value": "C99285",
+          "count": 1
+        },
+        {
+          "value": "C99239",
+          "count": 1
+        },
+        {
+          "value": "C99191",
+          "count": 1
+        }
+      ],
+      "min_length": 6,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "ADDDDD"
+      ]
+    }
+  },
+  "meta": {
+    "regulatoryandmaintenance": {
+      "profiled_at": "2026-08-30T11:41:59.963360+00:00",
+      "row_count": 900
+    },
+    "shipments": {
+      "profiled_at": "2026-08-30T11:41:59.963360+00:00",
+      "row_count": 900
+    },
+    "sensordata": {
+      "profiled_at": "2026-08-30T11:41:59.963360+00:00",
+      "row_count": 900
+    },
+    "container": {
+      "profiled_at": "2026-08-30T11:41:59.963360+00:00",
+      "row_count": 900
+    },
+    "transportinfo": {
+      "profiled_at": "2026-08-30T11:41:59.963360+00:00",
+      "row_count": 900
+    },
+    "vaccinedetails": {
+      "profiled_at": "2026-08-30T11:41:59.963360+00:00",
+      "row_count": 900
+    },
+    "datalogger": {
+      "profiled_at": "2026-08-30T11:41:59.963360+00:00",
+      "row_count": 900
+    }
+  }
+}

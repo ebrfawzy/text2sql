@@ -1,0 +1,199 @@
+CREATE TABLE "account" (
+accindex text(12) NOT NULL,
+acctident text(14) NULL,
+platident text(8) NULL,
+plattype TEXT NULL,
+acctcreatedate TEXT NULL,
+acctagespan integer(16) NULL,
+acctstatus TEXT NULL,
+acctcategory TEXT NULL,
+authstatus TEXT NULL,
+    PRIMARY KEY (accindex)
+);
+First 3 rows:
+accindex    acctident    platident    plattype        acctcreatedate      acctagespan  acctstatus    acctcategory    authstatus
+FA410087    ACC7210284   PL331        Microblog       2023-12-26                  393  Active        Personal        Unverified
+FA122676    ACC2686094   PL784        Social Network  2023-03-20                  353  Deleted       Bot             Unverified
+FA731882    ACC7106934   PL235        Social Network  2023-07-12                  244  Active        Hybrid          Pending
+...
+
+CREATE TABLE "contentbehavior" (
+cntref text(12) NOT NULL,
+cntsessref text(12) NULL,
+postnum integer(32) NULL,
+postfreq real(5,3) NULL,
+postintvar real(6,3) NULL,
+cntsimscore real(4,2) NULL,
+cntuniqscore real(5,4) NULL,
+cntdiverseval real(6,3) NULL,
+cntlangnum TEXT NULL,
+cnttopicent real(4,3) NULL,
+hashusepat TEXT NULL,
+hashratio real(3,2) NULL,
+mentionpat TEXT NULL,
+mentionratio real(5,3) NULL,
+urlsharefreq text(24) NULL,
+urldomdiv real(4,2) NULL,
+mediaupratio real(5,3) NULL,
+mediareratio real(6,4) NULL,
+    PRIMARY KEY (cntref),
+    FOREIGN KEY (cntsessref) REFERENCES sessionbehavior(sessref)
+);
+First 3 rows:
+cntref     cntsessref      postnum    postfreq    postintvar    cntsimscore    cntuniqscore    cntdiverseval    cntlangnum    cnttopicent  hashusepat      hashratio  mentionpat      mentionratio  urlsharefreq      urldomdiv    mediaupratio    mediareratio
+CNT_QDB9A  SESS_H5R5F        47473      66.324        56.535           8.43          0.8266           77.65              2          4.734  Random               1.55  Spam                   0.148  SomeRate_N2X           1.29           0.629          0.5905
+CNT_TAPIN  SESS_331DO        23461      84.183        90.792           1.77          0.9615           10.859             4          9.487  Random               4.05  Targeted               0.192  SomeRate_DWW           9.78           0.477          0.6846
+CNT_58HX0  SESS_LYBFV        41331      24.803        60.072           3.65          0.2437           60.285             1          2.685  Normal               5.82  Spam                   0.636  SomeRate_BYZ           2.84           0.895          0.3091
+...
+
+CREATE TABLE "messaginganalysis" (
+msgkey text(12) NOT NULL,
+msgcntref text(12) NULL,
+msgnetref text(12) NULL,
+msgsimscore real(4,3) NULL,
+msgfreq real(6,2) NULL,
+msgtgtdiv real(4,2) NULL,
+resptimepat TEXT NULL,
+convnatval real(4,3) NULL,
+sentvar real(6,4) NULL,
+langsoph real(5,3) NULL,
+txtuniq real(4,2) NULL,
+keypatmatch text(32) NULL,
+topiccoh real(5,4) NULL,
+    PRIMARY KEY (msgkey),
+    FOREIGN KEY (msgnetref) REFERENCES networkmetrics(netkey),
+    FOREIGN KEY (msgcntref) REFERENCES contentbehavior(cntref)
+);
+First 3 rows:
+msgkey     msgcntref    msgnetref      msgsimscore    msgfreq    msgtgtdiv  resptimepat      convnatval    sentvar    langsoph    txtuniq  keypatmatch      topiccoh
+MSG_ZX7IM  CNT_QDB9A    NET_G8MVO            0.474    5426.79         6.53  Instant               0.802     0.6556       0.719       0.39  KPM_M3J            0.6181
+MSG_OZPQO  CNT_TAPIN    NET_I9HFW            0.247    1345.08         7.11  Random                0.245     0.0221       0.731       0.06  KPM_PZV            0.3439
+MSG_IPDS6  CNT_58HX0    NET_2PK29            0.234    4061.99        93.86  Random                0.568     0.7835       0.092       0.96  KPM_XC2            0.1375
+...
+
+CREATE TABLE "moderationaction" (
+modactkey text(12) NOT NULL,
+masedetref text(12) NULL,
+macntref text(12) NULL,
+abuserepnum integer(16) NULL,
+violtypedist TEXT NULL,
+susphist TEXT NULL,
+warnnum integer(16) NULL,
+appealnum TEXT NULL,
+linkacctnum integer(16) NULL,
+clustsize integer(16) NULL,
+clustrole TEXT NULL,
+netinflscore real(5,2) NULL,
+coordscore real(4,2) NULL,
+authenscore real(5,3) NULL,
+credscore real(4,1) NULL,
+reputscore real(5,4) NULL,
+trustval real(4,2) NULL,
+impactval real(4,3) NULL,
+monitorpriority TEXT NULL,
+investstatus TEXT NULL,
+actiontaken TEXT NULL,
+reviewfreq TEXT NULL,
+lastrevdate TEXT NULL,
+nextrevdate TEXT NULL,
+    PRIMARY KEY (modactkey),
+    FOREIGN KEY (masedetref) REFERENCES securitydetection(secdetkey),
+    FOREIGN KEY (macntref) REFERENCES contentbehavior(cntref)
+);
+First 3 rows:
+modactkey    masedetref    macntref      abuserepnum  violtypedist      susphist    warnnum    appealnum    linkacctnum    clustsize  clustrole      netinflscore    coordscore    authenscore    credscore    reputscore    trustval    impactval  monitorpriority    investstatus    actiontaken    reviewfreq    lastrevdate    nextrevdate
+MOD_3XO8L    SEC_5MMN6     CNT_QDB9A            9087                           3        475            2             13          316  Amplifier             69.55         38.57          0.598          8.2        0.3118        3.54        0.148  High               Active          Restriction    Daily         2022-07-20     2023-07-25
+MOD_AOFPW    SEC_26GHN     CNT_TAPIN            6430                           0        826            2             13          658  Leader                87.26         73             0.611          5.4        0.1222        0.3         0.634  Medium             Active          Suspension     Quarterly     2023-04-20     2020-07-25
+MOD_OOX29    SEC_G61S4     CNT_58HX0            8458                           4        949            0             21          887  Follower              43.3          98.24          0.601          1.9        0.2108        7.69        0.006  Urgent             Active          Restriction    Weekly        2024-01-16     2021-02-27
+...
+
+CREATE TABLE "networkmetrics" (
+netkey text(12) NOT NULL,
+netsessref text(12) NULL,
+network_engagement_metrics TEXT NULL,
+    PRIMARY KEY (netkey),
+    FOREIGN KEY (netsessref) REFERENCES sessionbehavior(sessref)
+);
+First 3 rows:
+netkey     netsessref    network_engagement_metrics
+NET_G8MVO  SESS_H5R5F    {"connection_metrics": {"follownum": 3042137, "conngrowpat": "Bot-like", "followratio": 241.41, "followingnum": 4912954, "connqualscore": 5.5, "followgrowrate": 9.932, "mutualconnratio": 0.4, "followinggrowrate": 1.8849}, "engagement_metrics": {"engauth": 0.9854, "engrate": 8.751, "cmtratio": 1.12, "likeratio": 5.92, "sharerate": 7.512}, "interaction_metrics": {"interactdiv": 94.22, "interactreci": 0.774, "tempinteractpat": "Periodic"}}
+NET_I9HFW  SESS_331DO    {"connection_metrics": {"follownum": 6688399, "conngrowpat": "Organic", "followratio": 163.30, "followingnum": 4859553, "connqualscore": 0.2, "followgrowrate": 9.326, "mutualconnratio": 8.6, "followinggrowrate": 9.5376}, "engagement_metrics": {"engauth": 0.4735, "engrate": 4.561, "cmtratio": 3.39, "likeratio": 1.31, "sharerate": 3.502}, "interaction_metrics": {"interactdiv": 85.69, "interactreci": 0.120, "tempinteractpat": "Random"}}
+NET_2PK29  SESS_LYBFV    {"connection_metrics": {"follownum": 2676917, "conngrowpat": "Bot-like", "followratio": 956.92, "followingnum": 926514, "connqualscore": 3.6, "followgrowrate": 3.418, "mutualconnratio": 0.9, "followinggrowrate": 1.4366}, "engagement_metrics": {"engauth": 0.0681, "engrate": 3.399, "cmtratio": 0.75, "likeratio": 5.24, "sharerate": 3.731}, "interaction_metrics": {"interactdiv": 87.43, "interactreci": 0.391, "tempinteractpat": "Periodic"}}
+...
+
+CREATE TABLE "profile" (
+profkey text(12) NOT NULL,
+profaccref text(12) NULL,
+profile_composition TEXT NULL,
+    PRIMARY KEY (profkey),
+    FOREIGN KEY (profaccref) REFERENCES account(accindex)
+);
+First 3 rows:
+profkey    profaccref    profile_composition
+FA410087   FA410087      {"bio": {"biolang": "en", "biospan": 118, "biolinknum": "3", "biokeycheck": "Suspicious"}, "contact": {"phnumstate": "Invalid", "maildomainfmt": "Free"}, "picture": {"picscval": 0.8, "picformat": "Stock"}, "location": {"locgiven": "Fake", "locshiftnum": 2}, "username": {"usrlen": 13, "usrpatn": "Random", "usrentval": 0.8350, "profnametag": "Sequential"}, "completeness": 0.17, "display_name": {"dispnameshift": 8}}
+FA122676   FA122676      {"bio": {"biolang": "en", "biospan": 72, "biolinknum": "2", "biokeycheck": "Suspicious"}, "contact": {"phnumstate": "Valid", "maildomainfmt": "Free"}, "picture": {"picscval": 0.8, "picformat": "Celebrity"}, "location": {"locgiven": "Fake", "locshiftnum": 0}, "username": {"usrlen": 5, "usrpatn": "Generated", "usrentval": 0.7210, "profnametag": "Template"}, "completeness": 0.32, "display_name": {"dispnameshift": 10}}
+FA731882   FA731882      {"bio": {"biolang": "multiple", "biospan": 38, "biolinknum": "2", "biokeycheck": "Normal"}, "contact": {"phnumstate": "VOIP", "maildomainfmt": "Unknown"}, "picture": {"picscval": 0.2, "picformat": "Stock"}, "location": {"locgiven": "No", "locshiftnum": 0}, "username": {"usrlen": 11, "usrpatn": "Meaningful", "usrentval": 0.2210, "profnametag": "Template"}, "completeness": 0.96, "display_name": {"dispnameshift": 0}}
+...
+
+CREATE TABLE "securitydetection" (
+secdetkey text(12) NOT NULL,
+sectechref text(12) NULL,
+detecttime text(6) NULL,
+detectsource TEXT NULL,
+lastupd text(6) NULL,
+updfreqhrs integer(16) NULL,
+detection_score_profile TEXT NULL,
+    PRIMARY KEY (secdetkey),
+    FOREIGN KEY (sectechref) REFERENCES technicalinfo(techkey)
+);
+First 3 rows:
+secdetkey    sectechref    detecttime           detectsource    lastupd                updfreqhrs  detection_score_profile
+SEC_5MMN6    TECH_TYVED    2021-10-16 07:40:11  User Report     2021-10-09 22:04:40           720  {"overall": {"confval": 0.20736, "riskval": 0.28, "fposprob": 0.4435, "threatlvl": "Critical", "detectconf": 0.26}, "pattern_scores": {"netpatscore": 8.40, "contpatscore": 0.007, "profpatscore": 0.611, "techpatscore": 0.183, "temppatscore": 5.463, "behavpatscore": 2.86}, "behavior_scores": {"botlikscore": 59.440, "commintscore": 0.8785, "autobehavscore": 0.264, "spambehavscore": 1.65}, "detection_reliability": {"featver": "FV_M3", "modelver": "MV_F7", "detmethrel": 0.512}}
+SEC_26GHN    TECH_M7PND    2021-07-08 14:53:21  Pattern Match   2020-06-15 23:41:26           117  {"overall": {"confval": 0.06661, "riskval": 5.94, "fposprob": 0.7838, "threatlvl": "Low", "detectconf": 0.08}, "pattern_scores": {"netpatscore": 3.30, "contpatscore": 0.738, "profpatscore": 0.567, "techpatscore": 0.036, "temppatscore": 1.035, "behavpatscore": 91.63}, "behavior_scores": {"botlikscore": 7.623, "commintscore": 0.2123, "autobehavscore": 0.845, "spambehavscore": 5.63}, "detection_reliability": {"featver": "FV_UF", "modelver": "MV_QK", "detmethrel": 0.617}}
+SEC_G61S4    TECH_9KWQR    2021-08-07 23:20:51  Pattern Match   2025-11-11 09:00:25            10  {"overall": {"confval": 0.45097, "riskval": 1.11, "fposprob": 0.5395, "threatlvl": "Medium", "detectconf": 0.75}, "pattern_scores": {"netpatscore": 1.34, "contpatscore": 0.322, "profpatscore": 0.522, "techpatscore": 0.182, "temppatscore": 1.982, "behavpatscore": 78.95}, "behavior_scores": {"botlikscore": 52.237, "commintscore": 0.1390, "autobehavscore": 0.848, "spambehavscore": 5.18}, "detection_reliability": {"featver": "FV_DP", "modelver": "MV_E2", "detmethrel": 0.074}}
+...
+
+CREATE TABLE "sessionbehavior" (
+sessref text(12) NOT NULL,
+sessprofref text(12) NULL,
+logintimepat TEXT NULL,
+loginfreq TEXT NULL,
+loginlocvar real(4,1) NULL,
+sesslenmean real(7,2) NULL,
+sesscount integer(32) NULL,
+actregval real(4,2) NULL,
+acttimedist TEXT NULL,
+    PRIMARY KEY (sessref),
+    FOREIGN KEY (sessprofref) REFERENCES profile(profkey)
+);
+First 3 rows:
+sessref     sessprofref    logintimepat    loginfreq      loginlocvar    sesslenmean    sesscount    actregval  acttimedist
+SESS_H5R5F  FA410087       Burst           Medium                13          4759.73       322488        58.62
+SESS_331DO  FA122676       Burst           High                  87.9        1882.65       701816         9.9
+SESS_LYBFV  FA731882       Burst           High                  99.2        1993.14       675414        59.04
+...
+
+CREATE TABLE "technicalinfo" (
+techkey text(12) NOT NULL,
+technetref text(12) NULL,
+techmsgref text(12) NULL,
+regip TEXT NULL,
+iprepscore real(6,3) NULL,
+ipcountrynum integer(16) NULL,
+vpnratio real(7,4) NULL,
+proxycount integer(16) NULL,
+torflag TEXT NULL,
+devtotal integer(16) NULL,
+devtypedist TEXT NULL,
+browserdiv real(5,3) NULL,
+uaconsval real(6,5) NULL,
+    PRIMARY KEY (techkey),
+    FOREIGN KEY (technetref) REFERENCES networkmetrics(netkey),
+    FOREIGN KEY (techmsgref) REFERENCES messaginganalysis(msgkey)
+);
+First 3 rows:
+techkey     technetref    techmsgref    regip             iprepscore    ipcountrynum    vpnratio    proxycount  torflag      devtotal  devtypedist      browserdiv    uaconsval
+TECH_TYVED  NET_G8MVO     MSG_ZX7IM     192.168.31.102         0.472              23      0.1837             0  Yes                14                        0.753      0.81378
+TECH_M7PND  NET_I9HFW     MSG_OZPQO     192.168.80.126         0.257              25      0.9819             6  No                 20                        0.545      0.65483
+TECH_9KWQR  NET_2PK29     MSG_IPDS6     192.168.14.134         0.903               7      0.1847             6  Yes                 3                        0.667      0.9836
+...

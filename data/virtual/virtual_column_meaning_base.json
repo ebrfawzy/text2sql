@@ -1,0 +1,218 @@
+{
+  "virtual|fans|userregistry": "A VARCHAR(20) primary key uniquely identifying each fan record (e.g., 'FAN001').",
+  "virtual|fans|nicklabel": "A VARCHAR(100) storing the fan's chosen nickname or handle.",
+  "virtual|fans|regmoment": "A DATE noting when the fan first registered (e.g., '2025-02-15').",
+  "virtual|fans|tierstep": "A SMALLINT that captures the fan's level or tier progression (e.g., 1, 2, 3).",
+  "virtual|fans|ptsval": "An INT holding the fan's accumulated points or score within the system.",
+  "virtual|fans|statustag": "An enum (FanStatus_enum) describing the fan’s current status (Inactive, VIP, Active, Blocked).",
+  "virtual|virtualidols|entityreg": "A VARCHAR(20) primary key uniquely identifying the virtual idol (e.g., 'IDOL001').",
+  "virtual|virtualidols|nametag": "A VARCHAR(100) for the idol’s name or stage name.",
+  "virtual|virtualidols|kindtag": "An enum (IdolType_enum) describing the idol's nature (2D, AI Generated, 3D, Mixed Reality).",
+  "virtual|virtualidols|debdate": "A DATE for the idol's debut (e.g., '2023-06-01').",
+  "virtual|virtualidols|assocgroup": "A VARCHAR(100) naming the idol's company or group affiliation.",
+  "virtual|virtualidols|genretag": "An enum (IdolGenre_enum) indicating the idol’s main genre (Electronic, Dance, Pop, Traditional, Rock).",
+  "virtual|virtualidols|primlang": "A VARCHAR(50) referencing the idol's primary performance language (e.g., 'English').",
+  "virtual|interactions|activityreg": "A VARCHAR(20) primary key for each interaction record (e.g., 'ACT001').",
+  "virtual|interactions|timemark": "A TIMESTAMP indicating when the interaction occurred.",
+  "virtual|interactions|interactfanpivot": "A VARCHAR(20) FK referencing Fans(UserRegistry), indicating which fan was involved.",
+  "virtual|interactions|interactidolpivot": "A VARCHAR(20) FK referencing VirtualIdols(EntityReg), showing which idol was involved.",
+  "virtual|interactions|actkind": "An enum (InteractionType_enum) describing the action (Vote, Comment, Share, Gift, Live Stream).",
+  "virtual|interactions|actplat": "An enum (InteractionPlatform_enum) for the platform used (YouTube, Twitter, Official App, TikTok).",
+  "virtual|interactions|platused": "An enum (PlatformUsed_enum) describing the device platform (Tablet, Mobile, Console, PC).",
+  "virtual|interactions|devtype": "An enum (DeviceType_enum) specifying the device type (Windows, iOS, Android, Mac).",
+  "virtual|interactions|appver": "A VARCHAR(20) capturing the version of the app used (e.g., 'v2.3.1').",
+  "virtual|interactions|giftfreq": "An enum (GiftSendingFrequency_enum) capturing how often gifts are sent (Often, Rarely, Never, Frequent).",
+  "virtual|interactions|gifttot": "An INT total count of gifts sent during this session/interaction (e.g., 3).",
+  "virtual|interactions|giftvalusd": "A DECIMAL(10,2) total USD value of gifts (e.g., 15.50).",
+  "virtual|interactions|favgifttag": "An enum (FavoriteGiftType_enum) for the fan’s preferred gift type (Limited, Custom, Premium, Standard).",
+  "virtual|membershipandspending|memberreg": "A VARCHAR(20) primary key for membership & spending records (e.g., 'MEM001').",
+  "virtual|membershipandspending|memberfanpivot": "A VARCHAR(20) FK referencing Fans(UserRegistry).",
+  "virtual|membershipandspending|membkind": "An enum (MembershipType_enum) describing membership tier (Free, Basic, Diamond, Premium).",
+  "virtual|membershipandspending|membdays": "A SMALLINT capturing how many days the fan has been a member (e.g., 120).",
+  "virtual|membershipandspending|spendusd": "A DECIMAL(10,2) total USD spent (e.g., 350.75).",
+  "virtual|membershipandspending|spendfreq": "An enum (SpendingFrequency_enum) for spending pattern (Occasional, Weekly, Monthly, Daily).",
+  "virtual|membershipandspending|paymethod": "An enum (PaymentMethod_enum) indicating how the fan pays (Credit Card, Mobile Payment, PayPal, Crypto).",
+  "virtual|engagement|engagereg": "A VARCHAR(20) primary key for engagement records (e.g., 'ENG001').",
+  "virtual|engagement|engageactivitypivot": "A VARCHAR(20) FK referencing Interactions(ActivityReg).",
+  "virtual|engagement|engagememberpivot": "A VARCHAR(20) FK referencing MembershipAndSpending(MemberReg).",
+  "virtual|engagement|socintscore": "A DECIMAL(6,2) rating social interaction (e.g., '85.20').",
+  "virtual|engagement|engrate": "A DECIMAL(6,3) indicating engagement rate (e.g., '0.512').",
+  "virtual|engagement|actfreq": "An enum (InteractionFrequency_enum) for how often interactions occur (Weekly, Monthly, Occasional, Daily).",
+  "virtual|engagement|peaktime": "An enum (PeakActivityTime_enum) describing the highest activity period (Afternoon, Evening, Night, Morning).",
+  "virtual|engagement|actdayswk": "A SMALLINT number of days per week the fan is active (e.g., 5).",
+  "virtual|engagement|avgsesscount": "A SMALLINT average number of sessions per day/week (e.g., 3).",
+  "virtual|engagement|contpref": "An enum (ContentPreference_enum) capturing the fan's preferred content (Music, Dance, Gaming, Chat).",
+  "virtual|engagement|langpref": "An enum (ContentLanguagePreference_enum) for content language (Both, Original, Translated).",
+  "virtual|engagement|transuse": "An enum (TranslationUsage_enum) describing translation usage (Always, Sometimes, Never).",
+  "virtual|commerceandcollection|commercereg": "A VARCHAR(20) primary key for commerce/collection records (e.g., 'COM001').",
+  "virtual|commerceandcollection|commerceengagepivot": "A VARCHAR(20) FK referencing Engagement(EngageReg).",
+  "virtual|commerceandcollection|commercememberpivot": "A VARCHAR(20) FK referencing MembershipAndSpending(MemberReg).",
+  "virtual|commerceandcollection|merchbuy": "A SMALLINT tally of merchandise purchases (e.g., 5).",
+  "virtual|commerceandcollection|merchspendusd": "A DECIMAL(10,2) total spent on merchandise in USD (e.g., 120.00).",
+  "virtual|commerceandcollection|digown": "An INT indicating how many digital items the fan owns (e.g., 20).",
+  "virtual|commerceandcollection|physown": "An INT indicating how many physical items the fan owns (e.g., 10).",
+  "virtual|commerceandcollection|collcomprate": "A DECIMAL(5,1) measuring the fan’s collection completion percentage (e.g., '75.5').",
+  "virtual|commerceandcollection|tradelevel": "An enum (TradingActivityLevel_enum) describing the fan’s trading or exchange activity (High, Low, Medium).",
+  "virtual|socialcommunity|socialreg": "A VARCHAR(20) primary key for social community records (e.g., 'SOC001').",
+  "virtual|socialcommunity|socialengagepivot": "A VARCHAR(20) FK referencing Engagement(EngageReg).",
+  "virtual|socialcommunity|socialcommercepivot": "A VARCHAR(20) FK referencing CommerceAndCollection(CommerceReg).",
+  "virtual|socialcommunity|collabcount": "A SMALLINT measuring how many collaborations the fan participated in (e.g., 3).",
+  "virtual|eventsandclub|eventsreg": "A VARCHAR(20) primary key for events & club records (e.g., 'EVC001').",
+  "virtual|eventsandclub|eventssocialpivot": "A VARCHAR(20) FK referencing SocialCommunity(SocialReg).",
+  "virtual|eventsandclub|eventsmemberpivot": "A VARCHAR(20) FK referencing MembershipAndSpending(MemberReg).",
+  "virtual|eventsandclub|clubjdate": "A DATE the fan joined the club (if applicable).",
+  "virtual|loyaltyandachievements|loyaltyreg": "A VARCHAR(20) primary key for loyalty & achievements (e.g., 'LOY001').",
+  "virtual|loyaltyandachievements|loyaltyeventspivot": "A VARCHAR(20) FK referencing EventsAndClub(EventsReg).",
+  "virtual|loyaltyandachievements|loyaltyengagepivot": "A VARCHAR(20) FK referencing Engagement(EngageReg).",
+  "virtual|loyaltyandachievements|rankpos": "An INT rank position among all fans (e.g., 120).",
+  "virtual|loyaltyandachievements|inflscore": "A DECIMAL(5,2) measuring influencer or leadership potential (e.g., '85.50').",
+  "virtual|loyaltyandachievements|reputelv": "An enum (ReputationLevel_enum) describing the fan’s reputation (Respected, Elite, New, Established).",
+  "virtual|loyaltyandachievements|trustval": "A DECIMAL(4,1) representing trust or reliability score (e.g., '9.2').",
+  "virtual|moderationandcompliance|modreg": "A VARCHAR(20) primary key for moderation records (e.g., 'MOD001').",
+  "virtual|moderationandcompliance|moderationinteractpivot": "A VARCHAR(20) FK referencing Interactions(ActivityReg).",
+  "virtual|moderationandcompliance|moderationsocialpivot": "A VARCHAR(20) FK referencing SocialCommunity(SocialReg).",
+  "virtual|moderationandcompliance|rptcount": "A SMALLINT count of how many times the fan was reported (e.g., 2).",
+  "virtual|moderationandcompliance|warncount": "A SMALLINT count of how many warnings were issued to the fan (e.g., 1).",
+  "virtual|moderationandcompliance|violhist": "An enum (ViolationHistory_enum) describing any prior infractions (Major, Minor).",
+  "virtual|moderationandcompliance|modstat": "An enum (ModerationStatus_enum) showing moderation status (Warning, Good Standing, Restricted).",
+  "virtual|moderationandcompliance|contcomp": "An enum (ContentCompliance_enum) for compliance with content policy (Warning, Violation, Compliant).",
+  "virtual|moderationandcompliance|ageverif": "An enum (AgeVerification_enum) indicating age verification state (Not Required, Verified, Pending).",
+  "virtual|moderationandcompliance|payverif": "An enum (PaymentVerification_enum) verifying payment info (Pending, Verified).",
+  "virtual|moderationandcompliance|idverif": "A VARCHAR(50) capturing any identity verification code or status (e.g., 'IDCheck#123').",
+  "virtual|preferencesandsettings|prefreg": "A VARCHAR(20) primary key for preferences/settings (e.g., 'PREF001').",
+  "virtual|preferencesandsettings|preferencesmemberpivot": "A VARCHAR(20) FK referencing MembershipAndSpending(MemberReg).",
+  "virtual|preferencesandsettings|preferencessocialpivot": "A VARCHAR(20) FK referencing SocialCommunity(SocialReg).",
+  "virtual|preferencesandsettings|privset": "An enum (PrivacySettings_enum) for privacy level (Private, Friends Only, Public).",
+  "virtual|preferencesandsettings|dsconsent": "An enum (DataSharingConsent_enum) capturing how much data the fan consents to share (Partial, Minimal, Full).",
+  "virtual|preferencesandsettings|notifpref": "An enum (NotifPref_enum) describing notifications setting (Important, All).",
+  "virtual|preferencesandsettings|commpref": "An enum (CommPref_enum) for communication method (SMS, Email, Push).",
+  "virtual|preferencesandsettings|markpref": "An enum (MarkPref_enum) describing marketing preference (Opted In, Selective, Opted Out).",
+  "virtual|preferencesandsettings|langset": "An enum (LangSet_enum) specifying how language is handled (Translated, Auto, Original).",
+  "virtual|preferencesandsettings|accessset": "An enum (AccessSet_enum) describing access or UI customization (Standard, Custom, Enhanced).",
+  "virtual|preferencesandsettings|devcount": "A SMALLINT number of devices the fan uses with the service (e.g., 2).",
+  "virtual|preferencesandsettings|logfreq": "An enum (LoginFrequency_enum) for login frequency (Rare, Monthly, Weekly, Daily).",
+  "virtual|preferencesandsettings|lastlogdt": "A DATE indicating last login date (e.g., '2025-03-15').",
+  "virtual|preferencesandsettings|sesscount": "An INT counting total sessions (e.g., 150).",
+  "virtual|preferencesandsettings|timehrs": "An INT representing total hours spent online (e.g., 120).",
+  "virtual|preferencesandsettings|avgdailymin": "A SMALLINT average daily minutes used (e.g., 45).",
+  "virtual|preferencesandsettings|peaksess": "A SMALLINT peak number of concurrent sessions (e.g., 3).",
+  "virtual|preferencesandsettings|intconsist": "A DECIMAL(3,2) measuring interaction consistency (0.00–1.00) (e.g., '0.85').",
+  "virtual|preferencesandsettings|platstable": "A DECIMAL(3,2) rating platform stability from the user’s perspective (0.00–1.00) (e.g., '0.90').",
+  "virtual|preferencesandsettings|connqual": "An enum (ConnectionQuality_enum) describing connectivity (Poor, Excellent, Good, Fair).",
+  "virtual|supportandfeedback|supportreg": "A VARCHAR(20) primary key for support/feedback records (e.g., 'SUP001').",
+  "virtual|supportandfeedback|supportinteractpivot": "A VARCHAR(20) FK referencing Interactions(ActivityReg).",
+  "virtual|supportandfeedback|supportprefpivot": "A VARCHAR(20) FK referencing PreferencesAndSettings(PrefReg).",
+  "virtual|supportandfeedback|techissuerpt": "A SMALLINT number of technical issues reported (e.g., 2).",
+  "virtual|supportandfeedback|supptix": "A SMALLINT how many support tickets the fan opened (e.g., 1).",
+  "virtual|supportandfeedback|fbsubs": "A SMALLINT count of feedback submissions (e.g., 3).",
+  "virtual|supportandfeedback|survpart": "An enum (SurveyParticipation_enum) describing survey participation (Never, Active, Occasional).",
+  "virtual|supportandfeedback|betapart": "An enum (BetaTestingParticipation_enum) for beta test participation (Former, Yes, No).",
+  "virtual|supportandfeedback|featreqsubs": "A SMALLINT how many feature requests the fan submitted (e.g., 1).",
+  "virtual|supportandfeedback|bugsubs": "A SMALLINT how many bug reports the fan submitted (e.g., 0).",
+  "virtual|supportandfeedback|satrate": "A DECIMAL(3,1) overall satisfaction rating (e.g., '8.5').",
+  "virtual|supportandfeedback|npsval": "A SMALLINT Net Promoter Score value (e.g., 9).",
+  "virtual|retentionandinfluence|retreg": "A VARCHAR(20) primary key for retention/influence records (e.g., 'RET001').",
+  "virtual|retentionandinfluence|retainengagepivot": "A VARCHAR(20) FK referencing Engagement(EngageReg).",
+  "virtual|retentionandinfluence|retainloyaltypivot": "A VARCHAR(20) FK referencing LoyaltyAndAchievements(LoyaltyReg).",
+  "virtual|retentionandinfluence|churnflag": "An enum (ChurnRisk_enum) capturing churn risk (High, Medium, Low, None).",
+  "virtual|retentionandinfluence|reactcount": "A SMALLINT how many times the fan reactivated after inactivity (e.g., 2).",
+  "virtual|retentionandinfluence|refcount": "A SMALLINT number of referrals the fan made (e.g., 3).",
+  "virtual|retentionandinfluence|contreach": "An INT measuring content reach or audience size (e.g., 500).",
+  "virtual|retentionandinfluence|viralcont": "A SMALLINT how many viral posts or content pieces the fan created (e.g., 1).",
+  "virtual|retentionandinfluence|trendpart": "A SMALLINT times the fan participated in trending topics or challenges (e.g., 4).",
+  "virtual|retentionandinfluence|hashuse": "A SMALLINT count of hashtags the fan used (e.g., 10).",
+  "virtual|additionalnotes|notesreg": "A VARCHAR(20) primary key for additional notes records (e.g., 'NOTE001').",
+  "virtual|additionalnotes|notesretainpivot": "A VARCHAR(20) FK referencing RetentionAndInfluence(RetReg).",
+  "virtual|additionalnotes|noteinfo": "A TEXT field storing any free-form notes or remarks about the fan.",
+  "virtual|fans|personal_attributes": {
+    "column_meaning": "JSONB column. Groups personal demographic and interest-related attributes of the fan, including age, gender, location, language preference, occupation, and interests.",
+    "fields_meaning": {
+      "demographics": {
+        "agecount": "A SMALLINT representing the fan’s age in years.",
+        "gendertype": "An enum (FanGender_enum) indicating the fan’s gender (Other, Male, Undisclosed, Female).",
+        "locnation": "A VARCHAR(100) for the fan’s country location (e.g., 'USA', 'Japan').",
+        "loctown": "A VARCHAR(100) for the fan’s city or town location."
+      },
+      "preferences": {
+        "langpref": "An enum (FanLang_enum) specifying the fan's main language (Multiple, Korean, English, Japanese, Chinese).",
+        "occupath": "An enum (FanOccupation_enum) describing the fan’s occupation (Professional, Student, Other, Creative).",
+        "interestset": "An enum (FanInterests_enum) indicating the fan's primary interest area (Technology, Anime, Art, Music, Gaming)."
+      }
+    }
+  },
+  "virtual|interactions|engagement_metrics": {
+    "column_meaning": "JSONB column. Captures metrics related to fan engagement during interactions, such as session duration, live attendance, watch hours, and chat activity.",
+    "fields_meaning": {
+      "session": {
+        "sessdurmin": "A SMALLINT measuring session duration in minutes (e.g., 45).",
+        "liveatt": "A SMALLINT counting how many live stream attendances happened in this session.",
+        "watchhrs": "A DECIMAL(6,1) specifying how many hours of content the fan watched (e.g., 2.5)."
+      },
+      "chat_activity": {
+        "chatmsg": "An INT tally of messages sent in chat (e.g., 30).",
+        "chatlang": "An enum (ChatLang_enum) describing chat language usage (Mixed, Translation, English, Native).",
+        "msgtone": "An enum (MessageSentiment_enum) indicating the sentiment (Negative, Positive, Neutral).",
+        "emojicount": "An INT number of emoji used by the fan (e.g., 10).",
+        "stkcount": "An INT number of stickers used (e.g., 2)."
+      }
+    }
+  },
+  "virtual|loyaltyandachievements|reward_progress": {
+    "column_meaning": "JSONB column. Aggregates data related to the fan’s loyalty rewards and achievements, including points, tier, badges, and special titles.",
+    "fields_meaning": {
+      "loyalty": {
+        "loypts": "An INT storing loyalty points earned (e.g., 2500).",
+        "rewtier": "An enum (RewardTier_enum) for the reward tier (Bronze, Platinum, Gold, Silver)."
+      },
+      "achievements": {
+        "achcount": "An INT number of achievements unlocked (e.g., 5).",
+        "badgecoll": "An INT count of badges collected by the fan (e.g., 3).",
+        "spectitles": "An INT how many special titles the fan holds (e.g., 1)."
+      }
+    }
+  },
+  "virtual|eventsandclub|participation_summary": {
+    "column_meaning": "JSONB column. Summarizes fan participation in events and fan club activities, including event attendance, voting participation, and club contribution level.",
+    "fields_meaning": {
+      "event_attendance": {
+        "evtpart": "An enum (EventParticipation_enum) describing event participation (Regular, Rare, Always, Never).",
+        "offevtatt": "A SMALLINT capturing how many offline events the fan attended (e.g., 2).",
+        "onevtatt": "A SMALLINT capturing how many online events the fan attended (e.g., 5).",
+        "meetatt": "A SMALLINT counting meet-and-greet or fan meeting attendance (e.g., 1).",
+        "concatt": "A SMALLINT capturing concert attendance (e.g., 0 for none)."
+      },
+      "engagement": {
+        "votepartrate": "A DECIMAL(4,1) measuring how often the fan participates in voting (e.g., '75.0').",
+        "camppart": "An enum (CampaignParticipation_enum) for participation in idol or brand campaigns (Selective, All, Active)."
+      },
+      "club": {
+        "clubstat": "An enum (FanClubStatus_enum) describing fan club membership (Non-member, Premium, Elite, Basic).",
+        "clubcontrib": "An enum (FanClubContribution_enum) capturing the fan’s contribution level (Medium, Outstanding, Low, High)."
+      }
+    }
+  },
+  "virtual|socialcommunity|community_engagement": {
+    "column_meaning": "JSONB column. Groups metrics related to the fan’s social network and community contributions, including network size, roles, and content creation activities.",
+    "fields_meaning": {
+      "network": {
+        "socnetsz": "An INT capturing the size of the fan's social network (e.g., 500).",
+        "follcount": "An INT indicating how many followers the fan has (e.g., 300).",
+        "fingcount": "An INT indicating how many accounts the fan follows (e.g., 250).",
+        "friendcon": "An INT number of direct friend connections (e.g., 75)."
+      },
+      "group_involvement": {
+        "grpmemb": "A SMALLINT counting group memberships (e.g., 2).",
+        "grprole": "An enum (GroupRole_enum) showing the fan's role (Member, Leader, Moderator)."
+      },
+      "content_creation": {
+        "commcontrib": "An enum (CommunityContribution_enum) indicating how much the fan contributes (Low, High, Medium).",
+        "contcreatestat": "An enum (ContentCreationStatus_enum) capturing the fan’s creation level (Active, Occasional).",
+        "artsubs": "An INT counting art submissions by the fan (e.g., 4).",
+        "ficsubs": "An INT counting fan fiction submissions (e.g., 2).",
+        "coverperfcnt": "An INT number of cover performances (e.g., 1).",
+        "ugcval": "An INT measuring user-generated content volume (e.g., 30 posts).",
+        "contqualrate": "A DECIMAL(3,1) rating the overall quality of the fan’s content (e.g., '8.5')."
+      }
+    }
+  }
+}

@@ -1,0 +1,935 @@
+{
+  "version": 1,
+  "profiled_at": "2026-08-30T13:00:28.424815+00:00",
+  "columns": {
+    "cross_db_template|securityprofile|Full Encryption": {
+      "id": 0,
+      "knowledge": "Full Encryption",
+      "description": "Encryption state where the data is fully encrypted. Selects 49% of rows.",
+      "definition": "encstate = 'Full'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "securityprofile"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|securityprofile|Distributed Key Management": {
+      "id": 1,
+      "knowledge": "Distributed Key Management",
+      "description": "Key management mode where keys are distributed rather than held centrally. Selects 34% of rows.",
+      "definition": "keymanstate = 'Distributed'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "securityprofile"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|securityprofile|Multifactor Authentication (MFA)": {
+      "id": 2,
+      "knowledge": "Multifactor Authentication (MFA)",
+      "description": "Authentication method that requires more than one verification factor. Selects 33% of rows.",
+      "definition": "authmeth = 'MFA'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "securityprofile"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|securityprofile|Strong Access Control": {
+      "id": 3,
+      "knowledge": "Strong Access Control",
+      "description": "Access control list state rated as Strong. Selects 36% of rows.",
+      "definition": "aclstate = 'Strong'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "securityprofile"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|securityprofile|Secure API Posture": {
+      "id": 4,
+      "knowledge": "Secure API Posture",
+      "description": "API security state rated as Secure. Selects 33% of rows.",
+      "definition": "apisecstate = 'Secure'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "securityprofile"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|securityprofile|High Security Profile": {
+      "id": 5,
+      "knowledge": "High Security Profile",
+      "description": "A profile meeting full encryption, distributed key management, MFA, strong access control, and secure API standards.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "tables": [
+        "securityprofile"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|securityprofile|Anonymization Masking": {
+      "id": 6,
+      "knowledge": "Anonymization Masking",
+      "description": "Presence of partial data masking together with an anonymization method.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "securityprofile"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|securityprofile|Pseudonymization Applied": {
+      "id": 7,
+      "knowledge": "Pseudonymization Applied",
+      "description": "Pseudonymization state where pseudonymization has been applied. Selects 52% of rows.",
+      "definition": "psymstate = 'Applied'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "securityprofile"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|securityprofile|Operational Readiness": {
+      "id": 8,
+      "knowledge": "Operational Readiness",
+      "description": "Backup, disaster recovery, business continuity, and login integrity states are all sound. Selects 1% of rows.",
+      "definition": "bkpstate = 'Current' AND drecstate = 'Tested' AND bcstate = 'Active' AND logintcheck = 'Passed'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "securityprofile"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|securityprofile|Log Retention Years": {
+      "id": 9,
+      "knowledge": "Log Retention Years",
+      "description": "Log retention period expressed in years.",
+      "definition": "logretdays / 365.0",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "securityprofile"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|dataprofile|Risk join key": {
+      "id": 10,
+      "knowledge": "Risk join key",
+      "description": "Numeric risk join key is the reverse of the trace counter.",
+      "definition": "riskjoin != 1001 - profiletrace",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "dataprofile"
+      ],
+      "refuted": true
+    },
+    "cross_db_template|dataprofile|Flow signature ID and record registry code": {
+      "id": 11,
+      "knowledge": "Flow signature ID and record registry code",
+      "description": "A record registry code is identical to the flow signature ID.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "dataprofile"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|dataprofile|Record-subject tally relationship": {
+      "id": 12,
+      "knowledge": "Record-subject tally relationship",
+      "description": "The record tally is at least as large as the subject tally. Selects 97% of rows.",
+      "definition": "rectally >= subjtally",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "dataprofile"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|dataprofile|Integrity-passed record": {
+      "id": 13,
+      "knowledge": "Integrity-passed record",
+      "description": "Record for which the integrity check result is Passed. Selects 51% of rows.",
+      "definition": "intcheck = 'Passed'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "dataprofile"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|dataprofile|Checksum-success record": {
+      "id": 14,
+      "knowledge": "Checksum-success record",
+      "description": "Record for which checksum verification status is Success. Selects 32% of rows.",
+      "definition": "csumverify = 'Success'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "dataprofile"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|dataprofile|Source-verified record": {
+      "id": 15,
+      "knowledge": "Source-verified record",
+      "description": "Record for which source validation status is Verified. Selects 35% of rows.",
+      "definition": "srcvalstate = 'Verified'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "dataprofile"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|dataprofile|Destination-verified record": {
+      "id": 16,
+      "knowledge": "Destination-verified record",
+      "description": "Record for which destination validation status is Verified. Selects 35% of rows.",
+      "definition": "destvalstate = 'Verified'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "dataprofile"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|dataprofile|Validated data record": {
+      "id": 17,
+      "knowledge": "Validated data record",
+      "description": "A record that has passed integrity, checksum, source, and destination validation. Selects 1% of rows.",
+      "definition": "intcheck = 'Passed' AND csumverify = 'Success' AND srcvalstate = 'Verified' AND destvalstate = 'Verified'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        13,
+        14,
+        15,
+        16
+      ],
+      "tables": [
+        "dataprofile"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|riskmanagement|Pending mitigation": {
+      "id": 18,
+      "knowledge": "Pending mitigation",
+      "description": "Cohort of rows where risk mitigation is still pending. Selects 35% of rows.",
+      "definition": "riskmitstate = 'Pending'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "riskmanagement"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|riskmanagement|Strong security action": {
+      "id": 19,
+      "knowledge": "Strong security action",
+      "description": "Cohort of rows rated Strong on security action. Selects 37% of rows.",
+      "definition": "secureaction = 'Strong'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "riskmanagement"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|riskmanagement|Established breach notification": {
+      "id": 20,
+      "knowledge": "Established breach notification",
+      "description": "Cohort of rows with Established breach notification status. Selects 32% of rows.",
+      "definition": "breachnotify = 'Established'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "riskmanagement"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|riskmanagement|Active incident plan": {
+      "id": 21,
+      "knowledge": "Active incident plan",
+      "description": "Cohort of rows with an Active incident plan. Selects 32% of rows.",
+      "definition": "incidentplan = 'Active'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "riskmanagement"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|riskmanagement|Adequate coverage": {
+      "id": 22,
+      "knowledge": "Adequate coverage",
+      "description": "Cohort of rows with Adequate coverage state. Selects 53% of rows.",
+      "definition": "coveragestate = 'Adequate'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "riskmanagement"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|riskmanagement|High residual risk": {
+      "id": 23,
+      "knowledge": "High residual risk",
+      "description": "Cohort of rows with residual risk level High. Selects 34% of rows.",
+      "definition": "residrisklevel = 'High'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "riskmanagement"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|riskmanagement|Optimized maturity level": {
+      "id": 24,
+      "knowledge": "Optimized maturity level",
+      "description": "Cohort of rows with maturity level Optimized. Selects 34% of rows.",
+      "definition": "maturitylevel = 'Optimized'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "riskmanagement"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|riskmanagement|On track plan": {
+      "id": 25,
+      "knowledge": "On track plan",
+      "description": "Cohort of rows whose plan is On Track. Selects 34% of rows.",
+      "definition": "planstate = 'On Track'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "riskmanagement"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|riskmanagement|Total risk events": {
+      "id": 26,
+      "knowledge": "Total risk events",
+      "description": "Total count of incidents plus near misses.",
+      "definition": "incidentcount + nearmissnum",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "riskmanagement"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|riskmanagement|Breach rate": {
+      "id": 27,
+      "knowledge": "Breach rate",
+      "description": "Breach count as a percentage of incident count.",
+      "definition": "breachcount * 100.0 / incidentcount",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "riskmanagement"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|riskmanagement|Average resolution time in days": {
+      "id": 28,
+      "knowledge": "Average resolution time in days",
+      "description": "Average resolution hours converted to days.",
+      "definition": "avgresolhrs / 24.0",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "riskmanagement"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|auditandcompliance|Data subject request volume": {
+      "id": 29,
+      "knowledge": "Data subject request volume",
+      "description": "Total number of data subject requests across access, deletion, rectification, and portability request types.",
+      "definition": "accreqnum + delreqnum + rectreqnum + portreqnum",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "auditandcompliance"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|auditandcompliance|Access request share": {
+      "id": 30,
+      "knowledge": "Access request share",
+      "description": "Percentage of all data subject requests that are access requests.",
+      "definition": "accreqnum * 100.0 / (accreqnum + delreqnum + rectreqnum + portreqnum)",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        29
+      ],
+      "tables": [
+        "auditandcompliance"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|auditandcompliance|Critical finding rate": {
+      "id": 31,
+      "knowledge": "Critical finding rate",
+      "description": "Percentage of audit findings that are critical.",
+      "definition": "critfindnum * 100.0 / findtally",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "auditandcompliance"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|auditandcompliance|Non-critical finding count": {
+      "id": 32,
+      "knowledge": "Non-critical finding count",
+      "description": "Number of audit findings that are not critical.",
+      "definition": "findtally - critfindnum",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "auditandcompliance"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|auditandcompliance|High critical finding count": {
+      "id": 33,
+      "knowledge": "High critical finding count",
+      "description": "Audit has more than five critical findings. Selects 46% of rows.",
+      "definition": "critfindnum > 5",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "auditandcompliance"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|auditandcompliance|Remediation completed": {
+      "id": 34,
+      "knowledge": "Remediation completed",
+      "description": "Remediation state is completed. Selects 33% of rows.",
+      "definition": "remedstate = 'Completed'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "auditandcompliance"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|auditandcompliance|Remediation overdue as of 2025-04-30": {
+      "id": 35,
+      "knowledge": "Remediation overdue as of 2025-04-30",
+      "description": "Remediation due date is before the April 30, 2025 cutoff. Selects 75% of rows.",
+      "definition": "remeddue < '2025-04-30'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "auditandcompliance"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|auditandcompliance|Authorization required": {
+      "id": 36,
+      "knowledge": "Authorization required",
+      "description": "Authorization notification state is required. Selects 33% of rows.",
+      "definition": "authnotify = 'Required'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "auditandcompliance"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|auditandcompliance|Transfer impact assessment required": {
+      "id": 37,
+      "knowledge": "Transfer impact assessment required",
+      "description": "Transfer impact assessment state is required. Selects 33% of rows.",
+      "definition": "transimpassess = 'Required'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "auditandcompliance"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|auditandcompliance|Data map outdated": {
+      "id": 38,
+      "knowledge": "Data map outdated",
+      "description": "Data map state is outdated. Selects 36% of rows.",
+      "definition": "datamapstate = 'Outdated'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "auditandcompliance"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|dataflow|international dataflow": {
+      "id": 39,
+      "knowledge": "international dataflow",
+      "description": "Dataflow where origin country differs from destination country. Selects 99% of rows.",
+      "definition": "orignation <> destnation",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "dataflow"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|dataflow|domestic dataflow": {
+      "id": 40,
+      "knowledge": "domestic dataflow",
+      "description": "Dataflow where origin and destination country are the same.",
+      "definition": "orignation = destnation",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "dataflow"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|dataflow|intra-company dataflow": {
+      "id": 41,
+      "knowledge": "intra-company dataflow",
+      "description": "Dataflow where origin and destination actors are the same organization.",
+      "definition": "origactor = destactor",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "dataflow"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|dataflow|inter-company dataflow": {
+      "id": 42,
+      "knowledge": "inter-company dataflow",
+      "description": "Dataflow where origin and destination actors are different organizations.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "dataflow"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|dataflow|blockchain dataflow": {
+      "id": 43,
+      "knowledge": "blockchain dataflow",
+      "description": "Dataflow transmitted over a blockchain channel. Selects 27% of rows.",
+      "definition": "chanproto = 'Blockchain'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "dataflow"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|dataflow|private-network dataflow": {
+      "id": 44,
+      "knowledge": "private-network dataflow",
+      "description": "Dataflow transmitted over a private network. Selects 26% of rows.",
+      "definition": "chanproto = 'Private Network'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "dataflow"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|dataflow|real-time dataflow": {
+      "id": 45,
+      "knowledge": "real-time dataflow",
+      "description": "Dataflow whose channel frequency is real-time. Selects 25% of rows.",
+      "definition": "chanfreq = 'Real-time'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "dataflow"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|vendormanagement|Active vendor contract": {
+      "id": 46,
+      "knowledge": "Active vendor contract",
+      "description": "Vendor contract currently has Active status. Selects 33% of rows.",
+      "definition": "contrstate = 'Active'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "vendormanagement"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|vendormanagement|Completed vendor assessment": {
+      "id": 47,
+      "knowledge": "Completed vendor assessment",
+      "description": "Vendor assessment status is Completed. Selects 32% of rows.",
+      "definition": "vendassess = 'Completed'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "vendormanagement"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|vendormanagement|Signed data processing agreement (DPA)": {
+      "id": 48,
+      "knowledge": "Signed data processing agreement (DPA)",
+      "description": "Data processing agreement state is Signed. Selects 33% of rows.",
+      "definition": "dpastate = 'Signed'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "vendormanagement"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|vendormanagement|Implemented standard contractual clauses (SCC)": {
+      "id": 49,
+      "knowledge": "Implemented standard contractual clauses (SCC)",
+      "description": "Standard contractual clauses state is Implemented. Selects 33% of rows.",
+      "definition": "sccstate = 'Implemented'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "vendormanagement"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|vendormanagement|Approved binding corporate rules (BCR)": {
+      "id": 50,
+      "knowledge": "Approved binding corporate rules (BCR)",
+      "description": "Binding corporate rules state is Approved. Selects 35% of rows.",
+      "definition": "bcrstate = 'Approved'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "vendormanagement"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|vendormanagement|Full policy compliance": {
+      "id": 51,
+      "knowledge": "Full policy compliance",
+      "description": "Policy compliance level is Full. Selects 33% of rows.",
+      "definition": "polcomp = 'Full'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "vendormanagement"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|vendormanagement|Full process compliance": {
+      "id": 52,
+      "knowledge": "Full process compliance",
+      "description": "Process compliance level is Full. Selects 34% of rows.",
+      "definition": "proccomp = 'Full'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "vendormanagement"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|vendormanagement|Current training status": {
+      "id": 53,
+      "knowledge": "Current training status",
+      "description": "Training status is Current. Selects 32% of rows.",
+      "definition": "trainstate = 'Current'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "vendormanagement"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|vendormanagement|Active contract with completed assessment": {
+      "id": 54,
+      "knowledge": "Active contract with completed assessment",
+      "description": "Vendor has an active contract and a completed assessment. Selects 10% of rows.",
+      "definition": "contrstate = 'Active' AND vendassess = 'Completed'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        46,
+        47
+      ],
+      "tables": [
+        "vendormanagement"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|vendormanagement|Fully compliant active vendor": {
+      "id": 55,
+      "knowledge": "Fully compliant active vendor",
+      "description": "Vendor meets all core active and compliance criteria.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        62
+      ],
+      "tables": [
+        "vendormanagement"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|compliance|Consent-Based Processing": {
+      "id": 56,
+      "knowledge": "Consent-Based Processing",
+      "description": "Processing that relies on the data subject's consent as the legal basis. Selects 26% of rows.",
+      "definition": "legalbase = 'Consent'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "compliance"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|compliance|Contract-Based Processing": {
+      "id": 57,
+      "knowledge": "Contract-Based Processing",
+      "description": "Processing that is necessary for a contract with the data subject. Selects 26% of rows.",
+      "definition": "legalbase = 'Contract'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "compliance"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|compliance|Legal Obligation Processing": {
+      "id": 58,
+      "knowledge": "Legal Obligation Processing",
+      "description": "Processing that is required by a legal obligation. Selects 25% of rows.",
+      "definition": "legalbase = 'Legal Obligation'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "compliance"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|compliance|Legitimate Interest Processing": {
+      "id": 59,
+      "knowledge": "Legitimate Interest Processing",
+      "description": "Processing based on the legitimate interests of the controller or a third party. Selects 22% of rows.",
+      "definition": "legalbase = 'Legitimate Interest'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "compliance"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|compliance|Valid Consent": {
+      "id": 60,
+      "knowledge": "Valid Consent",
+      "description": "Consent status marked Valid for a consent-based processing record. Selects 6% of rows.",
+      "definition": "legalbase = 'Consent' AND consentstate = 'Valid'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        56
+      ],
+      "tables": [
+        "compliance"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|compliance|Expired Consent": {
+      "id": 61,
+      "knowledge": "Expired Consent",
+      "description": "Consent status marked Expired for a consent-based processing record. Selects 7% of rows.",
+      "definition": "legalbase = 'Consent' AND consentstate = 'Expired'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        56
+      ],
+      "tables": [
+        "compliance"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|compliance|Fully Compliant": {
+      "id": 62,
+      "knowledge": "Fully Compliant",
+      "description": "Record is compliant with GDPR, CCPA, PIPL, and local law. Selects 1% of rows.",
+      "definition": "gdprcomp = 'Compliant' AND ccpacomp = 'Compliant' AND piplcomp = 'Compliant' AND loclawcomp = 'Compliant'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "compliance"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|compliance|Consent Duration (days)": {
+      "id": 63,
+      "knowledge": "Consent Duration (days)",
+      "description": "Number of days between consent collection and consent expiration.",
+      "definition": "julianday(consentexp) - julianday(consentcoll)",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "compliance"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|dataprofile,securityprofile|Protected Critical Data": {
+      "id": 64,
+      "knowledge": "Protected Critical Data",
+      "description": "A data profile classified as Critical that is linked to a security profile with Full encryption.",
+      "definition": "datasense = 'Critical' AND encstate = 'Full'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        0
+      ],
+      "tables": [
+        "dataprofile",
+        "securityprofile"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|dataflow,dataprofile|High-Quality Successful Flow": {
+      "id": 65,
+      "knowledge": "High-Quality Successful Flow",
+      "description": "A dataflow whose success percentage exceeds 95 while its linked data profile quality score exceeds 90.",
+      "definition": "successpct > 95 AND qltyscore > 90",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "dataflow",
+        "dataprofile"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|dataflow,riskmanagement|Risk Cost per Dataflow Megabyte": {
+      "id": 66,
+      "knowledge": "Risk Cost per Dataflow Megabyte",
+      "description": "Risk management cost in USD divided by dataflow size in megabytes for the linked risk and flow records.",
+      "definition": "costusd / datasizemb",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "dataflow",
+        "riskmanagement"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|dataflow,riskmanagement|Flow Duration per Resolution Hour": {
+      "id": 67,
+      "knowledge": "Flow Duration per Resolution Hour",
+      "description": "Dataflow duration in minutes divided by the average incident resolution hours in the linked risk record.",
+      "definition": "durmin / avgresolhrs",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "dataflow",
+        "riskmanagement"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|riskmanagement,vendormanagement|Active Low-Risk Vendor": {
+      "id": 68,
+      "knowledge": "Active Low-Risk Vendor",
+      "description": "A vendor with an Active contract linked to a risk record whose residual risk level is Low.",
+      "definition": "contrstate = 'Active' AND residrisklevel = 'Low'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "riskmanagement",
+        "vendormanagement"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|auditandcompliance,compliance|Complete Audit with Full Data Subject Rights": {
+      "id": 69,
+      "knowledge": "Complete Audit with Full Data Subject Rights",
+      "description": "An audit record with a Complete audit trail linked to a compliance record that Fully Supports data subject rights.",
+      "definition": "audtrailstate = 'Complete' AND datasubjright = 'Fully Supported'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "auditandcompliance",
+        "compliance"
+      ],
+      "refuted": false
+    },
+    "cross_db_template|auditandcompliance,compliance|Consent-Aligned Audit": {
+      "id": 70,
+      "knowledge": "Consent-Aligned Audit",
+      "description": "A compliance record based on Consent whose linked audit record has local requirements state Met.",
+      "definition": "legalbase = 'Consent' AND localreqs = 'Met'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "auditandcompliance",
+        "compliance"
+      ],
+      "refuted": false
+    }
+  },
+  "meta": {
+    "dataflow,dataprofile": {
+      "profiled_at": "2026-08-30T13:00:28.424815+00:00"
+    },
+    "dataprofile": {
+      "profiled_at": "2026-08-30T13:00:28.424815+00:00"
+    },
+    "securityprofile": {
+      "profiled_at": "2026-08-30T13:00:28.424815+00:00"
+    },
+    "riskmanagement": {
+      "profiled_at": "2026-08-30T13:00:28.424815+00:00"
+    },
+    "auditandcompliance": {
+      "profiled_at": "2026-08-30T13:00:28.424815+00:00"
+    },
+    "riskmanagement,vendormanagement": {
+      "profiled_at": "2026-08-30T13:00:28.424815+00:00"
+    },
+    "dataflow": {
+      "profiled_at": "2026-08-30T13:00:28.424815+00:00"
+    },
+    "dataflow,riskmanagement": {
+      "profiled_at": "2026-08-30T13:00:28.424815+00:00"
+    },
+    "compliance": {
+      "profiled_at": "2026-08-30T13:00:28.424815+00:00"
+    },
+    "dataprofile,securityprofile": {
+      "profiled_at": "2026-08-30T13:00:28.424815+00:00"
+    },
+    "auditandcompliance,compliance": {
+      "profiled_at": "2026-08-30T13:00:28.424815+00:00"
+    },
+    "vendormanagement": {
+      "profiled_at": "2026-08-30T13:00:28.424815+00:00"
+    }
+  }
+}

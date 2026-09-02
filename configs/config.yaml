@@ -1,0 +1,97 @@
+# -- Text2SQL Configuration -------------------------------------------
+# Every value here is the Settings default; sections follow the pipeline in
+# execution order and each key has a TEXT2SQL_ env var that overrides it.
+
+# == General ========================================================
+general:
+  log_level: INFO # DEBUG | INFO | WARNING | ERROR
+  log_transcript: true # log every message sent to the model and every reply
+  stop_after: # blank | profiling | schema_linking | sql_generation - stop the pipeline early
+
+# == Streaming ======================================================
+streaming:
+  event_verbosity: verbose # minimal | detailed | verbose
+
+# == LiteLLM ========================================================
+# API keys are set via env vars only (OPENAI_API_KEY, ANTHROPIC_API_KEY, etc.)
+litellm:
+  model: gpt-4o-mini # Any LiteLLM model string
+  temperature: 0.0 # 0.0 - 2.0
+  retries: 3 # Retries on rate limits / transient errors
+  idle_ms: 1000 # Backoff base between retries (ms)
+  reasoning_effort: none # none | low | medium | high - anything but none forces temperature 1
+
+# == AWS Bedrock (LLM account) =====================================
+# Keys go in .env (TEXT2SQL_BEDROCK_AWS_*); unset falls back to the boto3 chain.
+# bedrock:
+#   aws_region: us-east-1
+
+# == SQLAlchemy =====================================================
+sqlalchemy:
+  db_uri: sqlite:///example.db
+  # db_uri: postgresql://user:pass@localhost:5432/mydb
+  # db_uri: mysql+pymysql://user:pass@localhost:3306/mydb
+  # db_uri: awsathena+rest://athena.us-east-1.amazonaws.com:443/mydb
+
+# == AWS Athena (database account) =================================
+# Applied only when db_uri is an awsathena:// URI; keys go in .env (TEXT2SQL_ATHENA_AWS_*).
+# athena:
+#   aws_region: us-east-1
+#   s3_staging_dir: s3://my-athena-results-bucket/staging/
+
+# == Profiling ======================================================
+profiling:
+  cache_dir: .cache/profiles # Local dir or s3://bucket/prefix
+  top_k: 10 # Top-k frequent values per column (also the value index's input)
+  sample_size: 10000 # Max rows for shape analysis & minhash
+  one_call_per_table: true # true = 1 LLM call per table; false = 1 per column
+  exact_top_k: true # true = exact per-column GROUP BY top-k; false = from shared sample (cheaper)
+  approx_distinct: false # use dialect approx distinct-count (Athena/Snowflake/Redshift); exact elsewhere
+  sample_aggregates: false # false = exact full-table scan; true = aggregate over a LIMIT-n sample
+  summary: short_and_long # short | long | short_and_long
+  kb: true # Derive a knowledge base of cross-column relations (1 LLM call per table)
+
+# == Schema Linking =================================================
+schema_linking:
+  enabled: true # Enable schema linking pass
+  modes: [value] # Any combination of direct | reversed | value - results are unioned
+  direct: # Read only when 'direct' is selected
+    schema_scope: [full] # full = whole database | focused = non-LLM name/value pre-filter (caps recall; pair with full)
+    descriptions: [short] # short | long generated column descriptions; scope x description = one prompt each
+    knowledge: full # off | terms (name + description) | full (adds each term's definition)
+  reversed: # Read only when 'reversed' is selected
+    schema_scope: [full] # full = whole database | focused = non-LLM name/value pre-filter (caps recall; pair with full)
+    descriptions: [short] # short | long generated column descriptions; scope x description = one query each
+    knowledge: full # off | terms (name + description) | full (adds each term's definition)
+  value: # Read only when 'value' is selected
+    top_k: 30 # Floor under the candidate budget, which is 45% of the schema
+
+# == SQL Generation =================================================
+sql_generation:
+  mode: direct # direct = single-shot prompting | agent = ReAct tool loop (self-verifying)
+  num_candidates: 1 # 1-3; above 1 requires strategy: diverse
+  strategy: direct # direct | decompose | query_plan | diverse
+  knowledge: full # off | terms | full - domain terms in the generation/agent prompt
+  prompts:
+    template_dir: null # null = use bundled templates
+    version: v1 # Template version subdirectory
+  agent: # Read only when mode = agent
+    max_turns: 20 # Max agent turns before it must answer
+    mode: retrieval # schema_preloaded = schema + execute/review/submit | retrieval = table names only, pull the rest
+    scenarios_file: null # Optional path to domain scenarios (mode: retrieval)
+
+# == Verification ===================================================
+# Selection needs num_candidates > 1, which in turn requires strategy: diverse.
+verification:
+  repair: true # Enable the SQL repair/validation pass
+  repair_max_retries: 3 # Max LLM fix attempts per candidate
+  selection_mode: single # single | majority | confidence (adjudicates when all candidates disagree)
+
+# == Benchmark ====================================================
+benchmark:
+  instance_id: # Comma-separated id prefixes to run ('credit' a database, 'credit_1,fake_9' two questions); empty runs all
+  output_dir: results
+  data_jsonl: /app/data/livesqlbench_data_sqlite.jsonl # LiveSQLBench release: questions + databases
+  testcases_jsonl: /app/data/livesqlbench_sqlite_gt_kg_testcases_20260601.jsonl # Ground truth: sol_sql, KB ids, test cases
+  dataset_folder: /app/data
+  use_knowledge: true

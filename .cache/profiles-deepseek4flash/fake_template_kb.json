@@ -1,0 +1,1083 @@
+{
+  "version": 1,
+  "profiled_at": "2026-08-30T13:30:35.189543+00:00",
+  "columns": {
+    "fake_template|technicalinfo|Technical record key (TECH_)": {
+      "id": 0,
+      "knowledge": "Technical record key (TECH_)",
+      "description": "Unique technical record key stored in techkey, prefixed TECH_ and space-padded to 12 characters.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "technicalinfo"
+      ],
+      "refuted": false
+    },
+    "fake_template|technicalinfo|Network reference key (NET_)": {
+      "id": 1,
+      "knowledge": "Network reference key (NET_)",
+      "description": "Unique network reference key stored in technetref, prefixed NET_ and space-padded to 12 characters.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "technicalinfo"
+      ],
+      "refuted": false
+    },
+    "fake_template|technicalinfo|Message reference key (MSG_)": {
+      "id": 2,
+      "knowledge": "Message reference key (MSG_)",
+      "description": "Unique message reference key stored in techmsgref, prefixed MSG_ and space-padded to 12 characters.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "technicalinfo"
+      ],
+      "refuted": false
+    },
+    "fake_template|technicalinfo|Private registration IP (RFC1918)": {
+      "id": 3,
+      "knowledge": "Private registration IP (RFC1918)",
+      "description": "Registration IP address in the private 192.168.0.0/16 range, stored as dotted-decimal text.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "technicalinfo"
+      ],
+      "refuted": false
+    },
+    "fake_template|technicalinfo|Suspected Tor flag": {
+      "id": 4,
+      "knowledge": "Suspected Tor flag",
+      "description": "IP traffic is flagged as suspected Tor usage. Selects 35% of rows.",
+      "definition": "torflag = 'Suspected'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "technicalinfo"
+      ],
+      "refuted": false
+    },
+    "fake_template|technicalinfo|Missing device type distribution": {
+      "id": 5,
+      "knowledge": "Missing device type distribution",
+      "description": "Device type distribution is not recorded, so devtypedist is NULL.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "technicalinfo"
+      ],
+      "refuted": false
+    },
+    "fake_template|networkmetrics|Organic connection growth": {
+      "id": 7,
+      "knowledge": "Organic connection growth",
+      "description": "Connection growth pattern categorized as Organic. Selects 27% of rows.",
+      "definition": "TRIM(json_extract(network_engagement_metrics, '$.connection_metrics.conngrowpat')) = 'Organic'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "networkmetrics"
+      ],
+      "refuted": false
+    },
+    "fake_template|networkmetrics|Suspicious connection growth": {
+      "id": 8,
+      "knowledge": "Suspicious connection growth",
+      "description": "Connection growth pattern categorized as Suspicious. Selects 27% of rows.",
+      "definition": "TRIM(json_extract(network_engagement_metrics, '$.connection_metrics.conngrowpat')) = 'Suspicious'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "networkmetrics"
+      ],
+      "refuted": false
+    },
+    "fake_template|networkmetrics|Burst connection growth": {
+      "id": 9,
+      "knowledge": "Burst connection growth",
+      "description": "Connection growth pattern categorized as Burst. Selects 26% of rows.",
+      "definition": "TRIM(json_extract(network_engagement_metrics, '$.connection_metrics.conngrowpat')) = 'Burst'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "networkmetrics"
+      ],
+      "refuted": false
+    },
+    "fake_template|networkmetrics|Bot-like connection growth": {
+      "id": 10,
+      "knowledge": "Bot-like connection growth",
+      "description": "Connection growth pattern categorized as Bot-like. Selects 21% of rows.",
+      "definition": "TRIM(json_extract(network_engagement_metrics, '$.connection_metrics.conngrowpat')) = 'Bot-like'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "networkmetrics"
+      ],
+      "refuted": false
+    },
+    "fake_template|networkmetrics|Automated temporal interaction": {
+      "id": 11,
+      "knowledge": "Automated temporal interaction",
+      "description": "Temporal interaction pattern categorized as Automated. Selects 26% of rows.",
+      "definition": "TRIM(json_extract(network_engagement_metrics, '$.interaction_metrics.tempinteractpat')) = 'Automated'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "networkmetrics"
+      ],
+      "refuted": false
+    },
+    "fake_template|networkmetrics|Periodic temporal interaction": {
+      "id": 12,
+      "knowledge": "Periodic temporal interaction",
+      "description": "Temporal interaction pattern categorized as Periodic. Selects 25% of rows.",
+      "definition": "TRIM(json_extract(network_engagement_metrics, '$.interaction_metrics.tempinteractpat')) = 'Periodic'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "networkmetrics"
+      ],
+      "refuted": false
+    },
+    "fake_template|networkmetrics|Natural temporal interaction": {
+      "id": 13,
+      "knowledge": "Natural temporal interaction",
+      "description": "Temporal interaction pattern categorized as Natural. Selects 25% of rows.",
+      "definition": "TRIM(json_extract(network_engagement_metrics, '$.interaction_metrics.tempinteractpat')) = 'Natural'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "networkmetrics"
+      ],
+      "refuted": false
+    },
+    "fake_template|networkmetrics|Random temporal interaction": {
+      "id": 14,
+      "knowledge": "Random temporal interaction",
+      "description": "Temporal interaction pattern categorized as Random. Selects 24% of rows.",
+      "definition": "TRIM(json_extract(network_engagement_metrics, '$.interaction_metrics.tempinteractpat')) = 'Random'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "networkmetrics"
+      ],
+      "refuted": false
+    },
+    "fake_template|messaginganalysis|Message key format (msgkey)": {
+      "id": 15,
+      "knowledge": "Message key format (msgkey)",
+      "description": "Message key is a space-padded key whose trimmed value is MSG_ followed by 5 alphanumeric characters.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "messaginganalysis"
+      ],
+      "refuted": false
+    },
+    "fake_template|messaginganalysis|Content reference key format (msgcntref)": {
+      "id": 16,
+      "knowledge": "Content reference key format (msgcntref)",
+      "description": "Content reference key is a space-padded key whose trimmed value is CNT_ followed by 5 alphanumeric characters.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "messaginganalysis"
+      ],
+      "refuted": false
+    },
+    "fake_template|messaginganalysis|Network reference key format (msgnetref)": {
+      "id": 17,
+      "knowledge": "Network reference key format (msgnetref)",
+      "description": "Network reference key is a space-padded key whose trimmed value is NET_ followed by 5 alphanumeric characters.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "messaginganalysis"
+      ],
+      "refuted": false
+    },
+    "fake_template|messaginganalysis|Key pattern match format (keypatmatch)": {
+      "id": 18,
+      "knowledge": "Key pattern match format (keypatmatch)",
+      "description": "Key pattern match identifier is KPM_ followed by 3 alphanumeric characters.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "messaginganalysis"
+      ],
+      "refuted": false
+    },
+    "fake_template|messaginganalysis|Response time pattern (resptimepat)": {
+      "id": 19,
+      "knowledge": "Response time pattern (resptimepat)",
+      "description": "Response time is categorized as Instant, Natural, Delayed, or Random.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "messaginganalysis"
+      ],
+      "refuted": false
+    },
+    "fake_template|messaginganalysis|Message key uniqueness (msgkey)": {
+      "id": 20,
+      "knowledge": "Message key uniqueness (msgkey)",
+      "description": "Each message key identifies a unique message row in messaginganalysis.",
+      "definition": "COUNT(DISTINCT TRIM(msgkey)) = COUNT(TRIM(msgkey))",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "messaginganalysis"
+      ],
+      "refuted": false
+    },
+    "fake_template|moderationaction|Network influence score": {
+      "id": 21,
+      "knowledge": "Network influence score",
+      "description": "Network influence score is the average normalized linked-account and cluster-size contribution.",
+      "definition": "netinflscore != 100.0 * (linkacctnum * 1.0 / 50.0 + clustsize * 1.0 / 998.0) / 2.0",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "moderationaction"
+      ],
+      "refuted": true
+    },
+    "fake_template|moderationaction|Coordination score": {
+      "id": 22,
+      "knowledge": "Coordination score",
+      "description": "Coordination score is the average normalized linked-account and suspicion-history contribution.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "moderationaction"
+      ],
+      "refuted": false
+    },
+    "fake_template|moderationaction|Authenticity score": {
+      "id": 23,
+      "knowledge": "Authenticity score",
+      "description": "Authenticity score is the complement of the average normalized abuse-report and suspicion-history risk.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "moderationaction"
+      ],
+      "refuted": false
+    },
+    "fake_template|moderationaction|Reputation score": {
+      "id": 24,
+      "knowledge": "Reputation score",
+      "description": "Reputation score is the complement of the average normalized warning and appeal risk.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "moderationaction"
+      ],
+      "refuted": false
+    },
+    "fake_template|moderationaction|Credibility score": {
+      "id": 25,
+      "knowledge": "Credibility score",
+      "description": "Credibility score scales the average of authenticity and reputation to a 0-9.9 range.",
+      "definition": "credscore != 9.9 * (authenscore + reputscore) / 2.0",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        23,
+        24
+      ],
+      "tables": [
+        "moderationaction"
+      ],
+      "refuted": true
+    },
+    "fake_template|moderationaction|Trust value": {
+      "id": 26,
+      "knowledge": "Trust value",
+      "description": "Trust value scales the average of normalized credibility and reputation to a 0-9.99 range.",
+      "definition": "trustval != 9.99 * (credscore / 9.9 + reputscore) / 2.0",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        24,
+        25
+      ],
+      "tables": [
+        "moderationaction"
+      ],
+      "refuted": true
+    },
+    "fake_template|moderationaction|Impact value": {
+      "id": 27,
+      "knowledge": "Impact value",
+      "description": "Impact value is the average normalized authenticity, reputation, and credibility.",
+      "definition": "impactval != (authenscore + reputscore + credscore / 9.9) / 3.0",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        23,
+        24,
+        25
+      ],
+      "tables": [
+        "moderationaction"
+      ],
+      "refuted": true
+    },
+    "fake_template|moderationaction|Action taken": {
+      "id": 28,
+      "knowledge": "Action taken",
+      "description": "Action taken is determined by warning count thresholds. Selects 34% of rows.",
+      "definition": "actiontaken = CASE WHEN warnnum >= 800 THEN 'Suspension' WHEN warnnum >= 500 THEN 'Restriction' ELSE 'Warning' END",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "moderationaction"
+      ],
+      "refuted": false
+    },
+    "fake_template|moderationaction|Review frequency": {
+      "id": 29,
+      "knowledge": "Review frequency",
+      "description": "Review frequency is determined by monitoring priority. Selects 25% of rows.",
+      "definition": "reviewfreq = CASE WHEN monitorpriority = 'Urgent' THEN 'Daily' WHEN monitorpriority = 'High' THEN 'Weekly' WHEN monitorpriority = 'Medium' THEN 'Monthly' ELSE 'Quarterly' END",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "moderationaction"
+      ],
+      "refuted": false
+    },
+    "fake_template|moderationaction|Linked accounts within cluster": {
+      "id": 30,
+      "knowledge": "Linked accounts within cluster",
+      "description": "Linked account count cannot exceed cluster size. Selects 97% of rows.",
+      "definition": "linkacctnum <= clustsize",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "moderationaction"
+      ],
+      "refuted": false
+    },
+    "fake_template|moderationaction|Next review after last review": {
+      "id": 31,
+      "knowledge": "Next review after last review",
+      "description": "Next review date must be after last review date. Selects 51% of rows.",
+      "definition": "nextrevdate > lastrevdate",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "moderationaction"
+      ],
+      "refuted": false
+    },
+    "fake_template|moderationaction|High suspicion history": {
+      "id": 32,
+      "knowledge": "High suspicion history",
+      "description": "Suspicion history level 4 or 5 is considered high. Selects 32% of rows.",
+      "definition": "CAST(susphist AS INTEGER) >= 4",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "moderationaction"
+      ],
+      "refuted": false
+    },
+    "fake_template|sessionbehavior|Random low-frequency sessions": {
+      "id": 33,
+      "knowledge": "Random low-frequency sessions",
+      "description": "Sessions with random login time pattern and low login frequency. Selects 8% of rows.",
+      "definition": "logintimepat = 'Random' AND loginfreq = 'Low'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sessionbehavior"
+      ],
+      "refuted": false
+    },
+    "fake_template|sessionbehavior|Regular medium-frequency sessions": {
+      "id": 34,
+      "knowledge": "Regular medium-frequency sessions",
+      "description": "Sessions with regular login time pattern and medium login frequency. Selects 6% of rows.",
+      "definition": "logintimepat = 'Regular' AND loginfreq = 'Medium'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sessionbehavior"
+      ],
+      "refuted": false
+    },
+    "fake_template|sessionbehavior|Bot-like suspicious sessions": {
+      "id": 35,
+      "knowledge": "Bot-like suspicious sessions",
+      "description": "Sessions with bot-like login time pattern and suspicious login frequency. Selects 5% of rows.",
+      "definition": "logintimepat = 'Bot-like' AND loginfreq = 'Suspicious'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sessionbehavior"
+      ],
+      "refuted": false
+    },
+    "fake_template|sessionbehavior|Burst high-frequency sessions": {
+      "id": 36,
+      "knowledge": "Burst high-frequency sessions",
+      "description": "Sessions with burst login time pattern and high login frequency. Selects 7% of rows.",
+      "definition": "logintimepat = 'Burst' AND loginfreq = 'High'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sessionbehavior"
+      ],
+      "refuted": false
+    },
+    "fake_template|sessionbehavior|Missing activity time distribution": {
+      "id": 37,
+      "knowledge": "Missing activity time distribution",
+      "description": "Sessions with no activity time distribution value.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sessionbehavior"
+      ],
+      "refuted": false
+    },
+    "fake_template|securitydetection|update frequency hours (updfreqhrs)": {
+      "id": 38,
+      "knowledge": "update frequency hours (updfreqhrs)",
+      "description": "Hours elapsed from detection time to the last update.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "securitydetection"
+      ],
+      "refuted": false
+    },
+    "fake_template|securitydetection|Pattern Match detection": {
+      "id": 39,
+      "knowledge": "Pattern Match detection",
+      "description": "Detection source is Pattern Match. Selects 27% of rows.",
+      "definition": "detectsource = 'Pattern Match'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "securitydetection"
+      ],
+      "refuted": false
+    },
+    "fake_template|securitydetection|Algorithm detection": {
+      "id": 40,
+      "knowledge": "Algorithm detection",
+      "description": "Detection source is Algorithm. Selects 25% of rows.",
+      "definition": "detectsource = 'Algorithm'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "securitydetection"
+      ],
+      "refuted": false
+    },
+    "fake_template|securitydetection|Manual Review detection": {
+      "id": 41,
+      "knowledge": "Manual Review detection",
+      "description": "Detection source is Manual Review. Selects 25% of rows.",
+      "definition": "detectsource = 'Manual Review'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "securitydetection"
+      ],
+      "refuted": false
+    },
+    "fake_template|securitydetection|User Report detection": {
+      "id": 42,
+      "knowledge": "User Report detection",
+      "description": "Detection source is User Report. Selects 24% of rows.",
+      "definition": "detectsource = 'User Report'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "securitydetection"
+      ],
+      "refuted": false
+    },
+    "fake_template|securitydetection|Critical threat": {
+      "id": 43,
+      "knowledge": "Critical threat",
+      "description": "Threat level is Critical. Selects 25% of rows.",
+      "definition": "json_extract(detection_score_profile, '$.overall.threatlvl') = 'Critical'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "securitydetection"
+      ],
+      "refuted": false
+    },
+    "fake_template|securitydetection|High threat": {
+      "id": 44,
+      "knowledge": "High threat",
+      "description": "Threat level is High. Selects 26% of rows.",
+      "definition": "json_extract(detection_score_profile, '$.overall.threatlvl') = 'High'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "securitydetection"
+      ],
+      "refuted": false
+    },
+    "fake_template|securitydetection|Medium threat": {
+      "id": 45,
+      "knowledge": "Medium threat",
+      "description": "Threat level is Medium. Selects 24% of rows.",
+      "definition": "json_extract(detection_score_profile, '$.overall.threatlvl') = 'Medium'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "securitydetection"
+      ],
+      "refuted": false
+    },
+    "fake_template|securitydetection|Low threat": {
+      "id": 46,
+      "knowledge": "Low threat",
+      "description": "Threat level is Low. Selects 25% of rows.",
+      "definition": "json_extract(detection_score_profile, '$.overall.threatlvl') = 'Low'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "securitydetection"
+      ],
+      "refuted": false
+    },
+    "fake_template|securitydetection|Automated detection": {
+      "id": 47,
+      "knowledge": "Automated detection",
+      "description": "Detection source is either Pattern Match or Algorithm. Selects 52% of rows.",
+      "definition": "detectsource = 'Pattern Match' OR detectsource = 'Algorithm'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        39,
+        40
+      ],
+      "tables": [
+        "securitydetection"
+      ],
+      "refuted": false
+    },
+    "fake_template|securitydetection|Manual or User Report detection": {
+      "id": 48,
+      "knowledge": "Manual or User Report detection",
+      "description": "Detection source is either Manual Review or User Report. Selects 48% of rows.",
+      "definition": "detectsource = 'Manual Review' OR detectsource = 'User Report'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        41,
+        42
+      ],
+      "tables": [
+        "securitydetection"
+      ],
+      "refuted": false
+    },
+    "fake_template|securitydetection|Critical or High threat": {
+      "id": 49,
+      "knowledge": "Critical or High threat",
+      "description": "Threat level is Critical or High. Selects 51% of rows.",
+      "definition": "json_extract(detection_score_profile, '$.overall.threatlvl') = 'Critical' OR json_extract(detection_score_profile, '$.overall.threatlvl') = 'High'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        43,
+        44
+      ],
+      "tables": [
+        "securitydetection"
+      ],
+      "refuted": false
+    },
+    "fake_template|account|Active account": {
+      "id": 50,
+      "knowledge": "Active account",
+      "description": "An account whose status is Active. Selects 26% of rows.",
+      "definition": "acctstatus = 'Active'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "account"
+      ],
+      "refuted": false
+    },
+    "fake_template|account|Dormant account": {
+      "id": 51,
+      "knowledge": "Dormant account",
+      "description": "An account whose status is Dormant. Selects 25% of rows.",
+      "definition": "acctstatus = 'Dormant'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "account"
+      ],
+      "refuted": false
+    },
+    "fake_template|account|Bot account": {
+      "id": 52,
+      "knowledge": "Bot account",
+      "description": "An account categorized as Bot. Selects 24% of rows.",
+      "definition": "acctcategory = 'Bot'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "account"
+      ],
+      "refuted": false
+    },
+    "fake_template|account|Video platform": {
+      "id": 53,
+      "knowledge": "Video platform",
+      "description": "A platform whose type is Video Platform. Selects 25% of rows.",
+      "definition": "plattype = 'Video Platform'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "account"
+      ],
+      "refuted": false
+    },
+    "fake_template|account|Unverified authentication": {
+      "id": 54,
+      "knowledge": "Unverified authentication",
+      "description": "An account whose authentication status is Unverified. Selects 25% of rows.",
+      "definition": "authstatus = 'Unverified'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "account"
+      ],
+      "refuted": false
+    },
+    "fake_template|contentbehavior|content language 1": {
+      "id": 55,
+      "knowledge": "content language 1",
+      "description": "Content whose language number is 1. Selects 21% of rows.",
+      "definition": "cntlangnum = '1'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "contentbehavior"
+      ],
+      "refuted": false
+    },
+    "fake_template|contentbehavior|content language 2": {
+      "id": 56,
+      "knowledge": "content language 2",
+      "description": "Content whose language number is 2. Selects 21% of rows.",
+      "definition": "cntlangnum = '2'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "contentbehavior"
+      ],
+      "refuted": false
+    },
+    "fake_template|contentbehavior|content language 3": {
+      "id": 57,
+      "knowledge": "content language 3",
+      "description": "Content whose language number is 3. Selects 20% of rows.",
+      "definition": "cntlangnum = '3'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "contentbehavior"
+      ],
+      "refuted": false
+    },
+    "fake_template|contentbehavior|content language 4": {
+      "id": 58,
+      "knowledge": "content language 4",
+      "description": "Content whose language number is 4. Selects 20% of rows.",
+      "definition": "cntlangnum = '4'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "contentbehavior"
+      ],
+      "refuted": false
+    },
+    "fake_template|contentbehavior|content language 5": {
+      "id": 59,
+      "knowledge": "content language 5",
+      "description": "Content whose language number is 5. Selects 18% of rows.",
+      "definition": "cntlangnum = '5'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "contentbehavior"
+      ],
+      "refuted": false
+    },
+    "fake_template|contentbehavior|trending hashtag usage": {
+      "id": 60,
+      "knowledge": "trending hashtag usage",
+      "description": "Hashtag usage pattern labeled Trending. Selects 27% of rows.",
+      "definition": "hashusepat = 'Trending'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "contentbehavior"
+      ],
+      "refuted": false
+    },
+    "fake_template|contentbehavior|normal hashtag usage": {
+      "id": 61,
+      "knowledge": "normal hashtag usage",
+      "description": "Hashtag usage pattern labeled Normal. Selects 25% of rows.",
+      "definition": "hashusepat = 'Normal'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "contentbehavior"
+      ],
+      "refuted": false
+    },
+    "fake_template|contentbehavior|random hashtag usage": {
+      "id": 62,
+      "knowledge": "random hashtag usage",
+      "description": "Hashtag usage pattern labeled Random. Selects 24% of rows.",
+      "definition": "hashusepat = 'Random'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "contentbehavior"
+      ],
+      "refuted": false
+    },
+    "fake_template|contentbehavior|spam hashtag usage": {
+      "id": 63,
+      "knowledge": "spam hashtag usage",
+      "description": "Hashtag usage pattern labeled Spam. Selects 24% of rows.",
+      "definition": "hashusepat = 'Spam'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "contentbehavior"
+      ],
+      "refuted": false
+    },
+    "fake_template|profile|Suspicious bio": {
+      "id": 64,
+      "knowledge": "Suspicious bio",
+      "description": "Bio whose keyword check label is Suspicious. Selects 27% of rows.",
+      "definition": "json_extract(profile_composition, '$.bio.biokeycheck') = 'Suspicious'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "profile"
+      ],
+      "refuted": false
+    },
+    "fake_template|profile|Promo bio": {
+      "id": 65,
+      "knowledge": "Promo bio",
+      "description": "Bio whose keyword check label is Promo. Selects 24% of rows.",
+      "definition": "json_extract(profile_composition, '$.bio.biokeycheck') = 'Promo'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "profile"
+      ],
+      "refuted": false
+    },
+    "fake_template|profile|Valid phone number": {
+      "id": 66,
+      "knowledge": "Valid phone number",
+      "description": "Phone number state is Valid. Selects 31% of rows.",
+      "definition": "json_extract(profile_composition, '$.contact.phnumstate') = 'Valid'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "profile"
+      ],
+      "refuted": false
+    },
+    "fake_template|profile|Invalid phone number": {
+      "id": 67,
+      "knowledge": "Invalid phone number",
+      "description": "Phone number state is Invalid. Selects 36% of rows.",
+      "definition": "json_extract(profile_composition, '$.contact.phnumstate') = 'Invalid'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "profile"
+      ],
+      "refuted": false
+    },
+    "fake_template|profile|Disposable email domain": {
+      "id": 68,
+      "knowledge": "Disposable email domain",
+      "description": "Email domain format is Disposable. Selects 23% of rows.",
+      "definition": "json_extract(profile_composition, '$.contact.maildomainfmt') = 'Disposable'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "profile"
+      ],
+      "refuted": false
+    },
+    "fake_template|profile|AI generated profile picture": {
+      "id": 69,
+      "knowledge": "AI generated profile picture",
+      "description": "Picture format category is AI Generated. Selects 25% of rows.",
+      "definition": "json_extract(profile_composition, '$.picture.picformat') = 'AI Generated'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "profile"
+      ],
+      "refuted": false
+    },
+    "fake_template|profile|Real profile picture": {
+      "id": 70,
+      "knowledge": "Real profile picture",
+      "description": "Picture format category is Real. Selects 26% of rows.",
+      "definition": "json_extract(profile_composition, '$.picture.picformat') = 'Real'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "profile"
+      ],
+      "refuted": false
+    },
+    "fake_template|profile|Fake location": {
+      "id": 71,
+      "knowledge": "Fake location",
+      "description": "Location given indicator is Fake. Selects 24% of rows.",
+      "definition": "json_extract(profile_composition, '$.location.locgiven') = 'Fake'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "profile"
+      ],
+      "refuted": false
+    },
+    "fake_template|profile|Random username pattern": {
+      "id": 72,
+      "knowledge": "Random username pattern",
+      "description": "Username pattern category is Random. Selects 24% of rows.",
+      "definition": "json_extract(profile_composition, '$.username.usrpatn') = 'Random'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "profile"
+      ],
+      "refuted": false
+    },
+    "fake_template|messaginganalysis,technicalinfo|Message IP risk score": {
+      "id": 73,
+      "knowledge": "Message IP risk score",
+      "description": "Product of the IP reputation score and the message similarity score for a linked technical message.",
+      "definition": "iprepscore * msgsimscore",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        24
+      ],
+      "tables": [
+        "messaginganalysis",
+        "technicalinfo"
+      ],
+      "refuted": false
+    },
+    "fake_template|messaginganalysis,networkmetrics|Conversational network authenticity": {
+      "id": 74,
+      "knowledge": "Conversational network authenticity",
+      "description": "Engagement authenticity of the network attached to a message weighted by the message's conversational naturalness.",
+      "definition": "json_extract(network_engagement_metrics, '$.engagement_metrics.engauth') * convnatval",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "messaginganalysis",
+        "networkmetrics"
+      ],
+      "refuted": false
+    },
+    "fake_template|contentbehavior,sessionbehavior|Bot-like spam session": {
+      "id": 75,
+      "knowledge": "Bot-like spam session",
+      "description": "A bot-like suspicious login session whose content uses spam hashtags.",
+      "definition": "logintimepat = 'Bot-like' AND loginfreq = 'Suspicious' AND hashusepat = 'Spam'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        35,
+        63
+      ],
+      "tables": [
+        "contentbehavior",
+        "sessionbehavior"
+      ],
+      "refuted": false
+    },
+    "fake_template|moderationaction,securitydetection|Critical suspension detection": {
+      "id": 76,
+      "knowledge": "Critical suspension detection",
+      "description": "A security detection at the Critical threat level whose related moderation action was Suspension.",
+      "definition": "json_extract(detection_score_profile, '$.overall.threatlvl') = 'Critical' AND actiontaken = 'Suspension'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        28,
+        43
+      ],
+      "tables": [
+        "moderationaction",
+        "securitydetection"
+      ],
+      "refuted": false
+    },
+    "fake_template|securitydetection,technicalinfo|High-risk technical VPN detection": {
+      "id": 77,
+      "knowledge": "High-risk technical VPN detection",
+      "description": "Security detection on a technical record with high VPN ratio and High threat level.",
+      "definition": "vpnratio > 0.9 AND json_extract(detection_score_profile, '$.overall.threatlvl') = 'High'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        44
+      ],
+      "tables": [
+        "securitydetection",
+        "technicalinfo"
+      ],
+      "refuted": false
+    },
+    "fake_template|account,moderationaction|Influential coordinated bot account": {
+      "id": 78,
+      "knowledge": "Influential coordinated bot account",
+      "description": "Bot account linked to content with network influence and coordination scores above 90.",
+      "definition": "acctcategory = 'Bot' AND netinflscore > 90 AND coordscore > 90",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        21,
+        22,
+        52
+      ],
+      "tables": [
+        "account",
+        "moderationaction"
+      ],
+      "refuted": false
+    },
+    "fake_template|account,profile|Active account with suspicious fake profile": {
+      "id": 79,
+      "knowledge": "Active account with suspicious fake profile",
+      "description": "Active account linked to a profile with a suspicious bio, fake location, and disposable email domain.",
+      "definition": "acctstatus = 'Active' AND json_extract(profile_composition, '$.bio.biokeycheck') = 'Suspicious' AND json_extract(profile_composition, '$.location.locgiven') = 'Fake' AND json_extract(profile_composition, '$.contact.maildomainfmt') = 'Disposable'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        50,
+        64,
+        68,
+        71
+      ],
+      "tables": [
+        "account",
+        "profile"
+      ],
+      "refuted": false
+    },
+    "fake_template|moderationaction,securitydetection|Influence-adjusted detection confidence": {
+      "id": 80,
+      "knowledge": "Influence-adjusted detection confidence",
+      "description": "Detection confidence scaled by the network influence score from the related moderation action.",
+      "definition": "netinflscore / 100 * json_extract(detection_score_profile, '$.overall.detectconf')",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        21
+      ],
+      "tables": [
+        "moderationaction",
+        "securitydetection"
+      ],
+      "refuted": false
+    },
+    "fake_template|contentbehavior,networkmetrics|Bot-like network spam content": {
+      "id": 81,
+      "knowledge": "Bot-like network spam content",
+      "description": "Spam-hashtagged content connected to a network exhibiting bot-like connection growth.",
+      "definition": "json_extract(network_engagement_metrics, '$.connection_metrics.conngrowpat') = 'Bot-like' AND hashusepat = 'Spam'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        10,
+        63
+      ],
+      "tables": [
+        "contentbehavior",
+        "networkmetrics"
+      ],
+      "refuted": false
+    }
+  },
+  "meta": {
+    "technicalinfo": {
+      "profiled_at": "2026-08-30T13:30:35.189543+00:00"
+    },
+    "moderationaction,securitydetection": {
+      "profiled_at": "2026-08-30T13:30:35.189543+00:00"
+    },
+    "securitydetection": {
+      "profiled_at": "2026-08-30T13:30:35.189543+00:00"
+    },
+    "securitydetection,technicalinfo": {
+      "profiled_at": "2026-08-30T13:30:35.189543+00:00"
+    },
+    "account": {
+      "profiled_at": "2026-08-30T13:30:35.189543+00:00"
+    },
+    "moderationaction": {
+      "profiled_at": "2026-08-30T13:30:35.189543+00:00"
+    },
+    "contentbehavior": {
+      "profiled_at": "2026-08-30T13:30:35.189543+00:00"
+    },
+    "contentbehavior,sessionbehavior": {
+      "profiled_at": "2026-08-30T13:30:35.189543+00:00"
+    },
+    "networkmetrics": {
+      "profiled_at": "2026-08-30T13:30:35.189543+00:00"
+    },
+    "messaginganalysis": {
+      "profiled_at": "2026-08-30T13:30:35.189543+00:00"
+    },
+    "messaginganalysis,technicalinfo": {
+      "profiled_at": "2026-08-30T13:30:35.189543+00:00"
+    },
+    "messaginganalysis,networkmetrics": {
+      "profiled_at": "2026-08-30T13:30:35.189543+00:00"
+    },
+    "sessionbehavior": {
+      "profiled_at": "2026-08-30T13:30:35.189543+00:00"
+    },
+    "account,moderationaction": {
+      "profiled_at": "2026-08-30T13:30:35.189543+00:00"
+    },
+    "account,profile": {
+      "profiled_at": "2026-08-30T13:30:35.189543+00:00"
+    },
+    "profile": {
+      "profiled_at": "2026-08-30T13:30:35.189543+00:00"
+    },
+    "contentbehavior,networkmetrics": {
+      "profiled_at": "2026-08-30T13:30:35.189543+00:00"
+    }
+  }
+}

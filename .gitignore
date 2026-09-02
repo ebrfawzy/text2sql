@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Environment
+.env
+.venv/
+venv/
+.claude/
+
+# Anything private stays private by name: prefix a file or directory with
+# local_ and it is never tracked. Used for working notes, third-party paper
+# copies, alternative model configs, and the benchmark's withheld reference SQL.
+*local*
+
+# Backups
+*.bundle
+
+# Cache
+# .cache/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.coverage
+
+# Database
+*.db
+*.sqlite3
+# **/results/*
+data/*/*_ephemeral_*.sqlite*
+
+# IDE
+.vscode/
+.idea/
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+terraform.tfvars
+*.tfplan
+crash.log
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,197 @@
+CREATE TABLE "articles" (
+artkey integer(64) NOT NULL,
+catlabel TEXT NULL,
+subcatlbl TEXT NULL,
+pubtime text(6) NULL,
+authname text(200) NULL,
+srcref text(150) NULL,
+wordlen integer(32) NULL,
+readsec integer(32) NULL,
+difflevel TEXT NULL,
+freshscore real(5,2) NULL,
+qualscore real(5,2) NULL,
+sentscore real(5,2) NULL,
+contrscore real(5,2) NULL,
+tagset TEXT NULL,
+conttype TEXT NULL,
+contformat TEXT NULL,
+accscore real(5,2) NULL,
+mediacount integer(32) NULL,
+vidsec integer(32) NULL,
+paywall TEXT NULL,
+authref integer(64) NULL,
+engagement_metrics TEXT NULL,
+    PRIMARY KEY (artkey),
+    FOREIGN KEY (authref) REFERENCES users(userkey)
+);
+First 3 rows:
+  artkey  catlabel       subcatlbl      pubtime              authname              srcref                       wordlen    readsec  difflevel      freshscore    qualscore    sentscore    contrscore  tagset                       conttype     contformat      accscore    mediacount    vidsec  paywall      authref  engagement_metrics
+       6  Entertainment  Opinion        2025-02-18 05:31:16  Dominique Simpson     Lewis, Walters and Arnold       1410        338  Advanced             0.22         0.59         0.68          0.07  Trending,Interview,Analysis  Article      Mobile              0.88            20         0  Metered            6  {"social": {"shares": 8932, "comments": 786}, "average_rating": 4.2, "completion_rate": 0.31, "engagement_rate": 0.07, "popularity_score": 0.11}
+       7  Sports         International  2025-02-17 00:31:16  Rachel Patton         Schaefer Group                  2241        538  Basic                0.92         0.77        -0.67          0.47  Analysis,Interview           Interactive  HTML                0.17             0         0  Metered            7  {"social": {"shares": 312, "comments": 928}, "average_rating": 2.9, "completion_rate": 0.21, "engagement_rate": 0.68, "popularity_score": 0.57}
+       8  Entertainment  Local          2025-02-14 04:31:16  Christopher Williams  Hernandez Ltd                   1965        472  Basic                0.93         0.81        -0.86          0.65  Interview                    Gallery      Mobile              0.17            11         0  Premium            8  {"social": {"shares": 8282, "comments": 916}, "average_rating": 4.6, "completion_rate": 0.98, "engagement_rate": 0.61, "popularity_score": 0.57}
+...
+
+CREATE TABLE "devices" (
+devkey integer(64) NOT NULL,
+devtype TEXT NULL,
+brwtype TEXT NULL,
+osver text(40) NULL,
+appver text(20) NULL,
+scrres text(15) NULL,
+vpsize text(15) NULL,
+conntype TEXT NULL,
+netspd real(6,2) NULL,
+uselink integer(64) NULL,
+    PRIMARY KEY (devkey),
+    FOREIGN KEY (uselink) REFERENCES users(userkey)
+);
+First 3 rows:
+  devkey  devtype    brwtype      osver  appver    scrres     vpsize    conntype      netspd    uselink
+       1  iOS        Safari        13.7  1.9.5     1440x900   820x750   Cable           75.5          1
+       2  Windows    Edge          15.2  3.5.8     1920x1080  418x659   Cable           50            2
+       3  Windows    Chrome        13.2  2.9.5     1920x1080  420x697   5G              60.1          3
+...
+
+CREATE TABLE "interactionmetrics" (
+intmetkey integer(64) NOT NULL,
+interaction_behavior TEXT NULL,
+    PRIMARY KEY (intmetkey),
+    FOREIGN KEY (intmetkey) REFERENCES interactions(intkey)
+);
+First 3 rows:
+  intmetkey  interaction_behavior
+          3  {"scroll": {"depth": 82, "speed": 583.20, "percentage": 27.50}, "exit_type": "Bounce", "conversion": {"value": 98.75, "status": "Share"}, "time_spent": {"viewport_time": 170.20, "attention_time": 845.40, "reading_seconds": 1354.60, "duration_seconds": 2326}, "next_action": "Another Article", "bounce_status": "No", "click_seconds": 49.20}
+          4  {"scroll": {"depth": 63, "speed": 293.20, "percentage": 11.90}, "exit_type": "Timeout", "conversion": {"value": 23.19, "status": "Subscription"}, "time_spent": {"viewport_time": 209.40, "attention_time": 106.60, "reading_seconds": 1664.70, "duration_seconds": 272}, "next_action": "Share", "bounce_status": "No", "click_seconds": 21.50}
+          5  {"scroll": {"depth": 18, "speed": 888.20, "percentage": 77.40}, "exit_type": "Bounce", "conversion": {"value": 35.69, "status": "Newsletter"}, "time_spent": {"viewport_time": 107.10, "attention_time": 616.10, "reading_seconds": 593.00, "duration_seconds": 1212}, "next_action": "Exit", "bounce_status": "Yes", "click_seconds": 5.10}
+...
+
+CREATE TABLE "interactions" (
+intkey integer(64) NOT NULL,
+seshlink2 integer(64) NULL,
+reclink integer(64) NULL,
+artval integer(64) NULL,
+intts text(6) NULL,
+evttype TEXT NULL,
+seqval integer(32) NULL,
+agentval TEXT NULL,
+clkts text(6) NULL,
+clkpos TEXT NULL,
+clktype TEXT NULL,
+clksrc TEXT NULL,
+clkctx TEXT NULL,
+inttype TEXT NULL,
+    PRIMARY KEY (intkey),
+    FOREIGN KEY (seshlink2) REFERENCES sessions(seshkey),
+    FOREIGN KEY (reclink) REFERENCES recommendations(reckey)
+);
+First 3 rows:
+  intkey    seshlink2    reclink    artval  intts                      evttype      seqval  agentval    clkts                        clkpos  clktype    clksrc    clkctx    inttype
+       1            1          1     95846  2025-01-24 06:46:03.69467  bookmark         10  Desktop     2025-02-19 08:31:16.69467         7  Related    Article   Headline  Scroll
+       2            2          2     81619  2025-02-01 20:15:58.69467  bookmark         50  App         2025-02-19 08:31:16.69467         5  Trending   Homepage  Summary   Scroll
+       3            3          3     67960  2025-02-09 16:45:54.69467  bookmark          3  Desktop     2025-02-19 08:31:16.69467         4  Related    Article   Image     Share
+...
+
+CREATE TABLE "recommendations" (
+reckey integer(64) NOT NULL,
+alglabel TEXT NULL,
+stratlabel TEXT NULL,
+posval integer(32) NULL,
+recpage TEXT NULL,
+recsec TEXT NULL,
+recscore real(5,2) NULL,
+confval real(5,2) NULL,
+divval real(5,2) NULL,
+novval real(5,2) NULL,
+seryval real(5,2) NULL,
+artlink integer(64) NULL,
+    PRIMARY KEY (reckey),
+    FOREIGN KEY (artlink) REFERENCES articles(artkey)
+);
+First 3 rows:
+  reckey  alglabel       stratlabel      posval  recpage    recsec      recscore    confval    divval    novval    seryval    artlink
+       1  Contextual     Trending            11  Search     Bottom          0.31       0.91      0.13      0.27       0.88          1
+       2  Content-based  Trending             3  Search     Sidebar         0.36       0.4       0.14      0.86       0.39          2
+       3  Content-based  Editorial            9  Category   Related         0.85       0.78      0.1       0.66       0.93          3
+...
+
+CREATE TABLE "sessions" (
+seshkey integer(64) NOT NULL,
+userel integer(64) NULL,
+devrel integer(64) NULL,
+seshstart text(6) NULL,
+seshdur integer(32) NULL,
+seshviews integer(32) NULL,
+bncrate real(5,2) NULL,
+seshdepth integer(32) NULL,
+engscore real(5,2) NULL,
+seshrecs integer(32) NULL,
+seshclicks integer(32) NULL,
+ctrval real(5,2) NULL,
+langcode TEXT NULL,
+tzoffset TEXT NULL,
+ipaddr TEXT NULL,
+geoctry text(100) NULL,
+georeg text(100) NULL,
+geocity text(100) NULL,
+expref text(30) NULL,
+persver TEXT NULL,
+recset text(50) NULL,
+relscore real(5,2) NULL,
+persacc real(5,2) NULL,
+recutil real(5,2) NULL,
+    PRIMARY KEY (seshkey),
+    FOREIGN KEY (userel) REFERENCES users(userkey),
+    FOREIGN KEY (devrel) REFERENCES devices(devkey)
+);
+First 3 rows:
+  seshkey    userel    devrel  seshstart              seshdur    seshviews    bncrate    seshdepth    engscore    seshrecs    seshclicks    ctrval  langcode      tzoffset  ipaddr          geoctry           georeg    geocity           expref    persver    recset      relscore    persacc    recutil
+        1         1         1  2025-02-19 08:02:16        523           26       0.1             7        0.46          22             2      0.09  fr                   8  100.226.79.211  Niue              Nevada    North Shawnburgh  EXP229    v4         RS4466          0.84       0.6        0.72
+        2         2         2  2025-02-19 07:49:16       2666            6       0.29           11        0.72          10            15      1.5   es                   1  75.110.0.79     Cayman Islands    Maryland  North Ryan        EXP309    v1         RS3014          0.66       0.78       0.05
+        3         3         3  2025-02-19 07:37:16        677           23       0.51            3        0.09          40            13      0.33  fr                   0  153.39.158.144  Pitcairn Islands  Arkansas  Michaelton        EXP944    v3         RS8092          0.7        0.55       0.19
+...
+
+CREATE TABLE "systemperformance" (
+rectrace integer(64) NOT NULL,
+perfts text(6) NULL,
+resptime integer(32) NULL,
+loadscore real(5,2) NULL,
+errcount TEXT NULL,
+warncount integer(32) NULL,
+perfscore real(5,2) NULL,
+cachestate TEXT NULL,
+apiver TEXT NULL,
+cliver text(50) NULL,
+featset TEXT NULL,
+devlink integer(64) NULL,
+seshlink integer(64) NULL,
+    PRIMARY KEY (rectrace),
+    FOREIGN KEY (seshlink) REFERENCES sessions(seshkey),
+    FOREIGN KEY (devlink) REFERENCES devices(devkey)
+);
+First 3 rows:
+  rectrace  perfts                       resptime    loadscore    errcount    warncount    perfscore  cachestate    apiver      cliver  featset      devlink    seshlink
+         1  2025-01-24 06:46:03.69467        1106         0.6            4           10         0.08  Hit           v3             5    f3                 1           1
+         2  2025-02-01 20:15:58.69467        1488         0.38           0           10         0.43  Hit           v3             3.7  f3                 2           2
+         3  2025-02-09 16:45:54.69467        1270         0.1            4            1         0.25  Hit           v2             2.9  f4,f5              3           3
+...
+
+CREATE TABLE "users" (
+userkey integer(64) NOT NULL,
+regmoment TEXT NULL,
+typelabel TEXT NULL,
+seglabel TEXT NULL,
+substatus TEXT NULL,
+subdays integer(32) NULL,
+ageval integer(32) NULL,
+gendlbl TEXT NULL,
+occulbl TEXT NULL,
+testgrp TEXT NULL,
+user_preferences TEXT NULL,
+    PRIMARY KEY (userkey)
+);
+First 3 rows:
+  userkey  regmoment    typelabel    seglabel    substatus      subdays    ageval  gendlbl    occulbl       testgrp    user_preferences
+       11  2024-02-17   Trial        Regular     Enterprise          94        48  Other      Student       Variant_B  {"feedback": {"type": "Dislike", "value": "3.0", "category": "Format"}, "interests": "Entertainment,Tech,Politics", "activity_level": "Low", "preference_score": 0.26, "satisfaction_score": 0.52}
+       12  2023-01-24   Premium      New         Premium            212        74  F          Professional  Control    {"feedback": {"type": "Dislike", "value": "2.0", "category": "Relevance"}, "interests": "Science,Entertainment", "activity_level": "Medium", "preference_score": 0.79, "satisfaction_score": 0.73}
+       13  2023-11-21   Free         Regular     Basic              284        33  Other      Retired       Variant_B  {"feedback": {"type": "Like", "value": "5.0", "category": "Relevance"}, "interests": "Science", "activity_level": "High", "preference_score": 0.50, "satisfaction_score": 0.56}
+...

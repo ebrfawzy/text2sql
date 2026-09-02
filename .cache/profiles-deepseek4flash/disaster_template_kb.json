@@ -1,0 +1,1087 @@
+{
+  "version": 1,
+  "profiled_at": "2026-08-30T13:22:46.213639+00:00",
+  "columns": {
+    "disaster_template|environmentandhealth|High environmental impact rate": {
+      "id": 0,
+      "knowledge": "High environmental impact rate",
+      "description": "Cohort with high environmental impact, defined by high carbon emissions and low renewable energy use. Selects 5% of rows.",
+      "definition": "carbontons > 900 AND renewenergypct < 50",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "environmentandhealth"
+      ],
+      "refuted": false
+    },
+    "disaster_template|environmentandhealth|Low environmental impact rate": {
+      "id": 1,
+      "knowledge": "Low environmental impact rate",
+      "description": "Cohort with low environmental impact, defined by low carbon emissions and high renewable energy use. Selects 9% of rows.",
+      "definition": "carbontons < 500 AND renewenergypct > 80",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "environmentandhealth"
+      ],
+      "refuted": false
+    },
+    "disaster_template|environmentandhealth|Critical waste management state": {
+      "id": 2,
+      "knowledge": "Critical waste management state",
+      "description": "Cohort with critical waste management, defined by low recycling and low sanitation coverage. Selects 10% of rows.",
+      "definition": "recyclepct < 20 AND sanitationcoverage < 50",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "environmentandhealth"
+      ],
+      "refuted": false
+    },
+    "disaster_template|environmentandhealth|Adequate waste management state": {
+      "id": 3,
+      "knowledge": "Adequate waste management state",
+      "description": "Cohort with adequate waste management, defined by high recycling and high sanitation coverage. Selects 11% of rows.",
+      "definition": "recyclepct >= 60 AND sanitationcoverage >= 70",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "environmentandhealth"
+      ],
+      "refuted": false
+    },
+    "disaster_template|environmentandhealth|High disease risk": {
+      "id": 4,
+      "knowledge": "High disease risk",
+      "description": "Cohort with high disease risk, defined by low water quality, low sanitation, and low vaccination coverage. Selects 21% of rows.",
+      "definition": "waterqualityindex < 60 AND sanitationcoverage < 50 AND vaccinationcoverage < 70",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "environmentandhealth"
+      ],
+      "refuted": false
+    },
+    "disaster_template|environmentandhealth|Critical medical emergency capacity": {
+      "id": 5,
+      "knowledge": "Critical medical emergency capacity",
+      "description": "Cohort with critical medical emergency capacity, defined by low vaccination coverage. Selects 67% of rows.",
+      "definition": "vaccinationcoverage < 70",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "environmentandhealth"
+      ],
+      "refuted": false
+    },
+    "disaster_template|operations|Red emergency level": {
+      "id": 6,
+      "knowledge": "Red emergency level",
+      "description": "An operation with emergency level Red. Selects 27% of rows.",
+      "definition": "emerglevel = 'Red'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "operations"
+      ],
+      "refuted": false
+    },
+    "disaster_template|operations|Emergency response phase": {
+      "id": 7,
+      "knowledge": "Emergency response phase",
+      "description": "An operation in the Emergency response phase. Selects 26% of rows.",
+      "definition": "respphase = 'Emergency'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "operations"
+      ],
+      "refuted": false
+    },
+    "disaster_template|operations|Active operation status": {
+      "id": 8,
+      "knowledge": "Active operation status",
+      "description": "An operation whose status is Active. Selects 24% of rows.",
+      "definition": "opsstatus = 'Active'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "operations"
+      ],
+      "refuted": false
+    },
+    "disaster_template|operations|Critical priority rank": {
+      "id": 9,
+      "knowledge": "Critical priority rank",
+      "description": "An operation assigned Critical priority rank. Selects 23% of rows.",
+      "definition": "priorityrank = 'Critical'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "operations"
+      ],
+      "refuted": false
+    },
+    "disaster_template|operations|Critical resource allocation state": {
+      "id": 10,
+      "knowledge": "Critical resource allocation state",
+      "description": "An operation whose resource allocation state is Critical. Selects 33% of rows.",
+      "definition": "resourceallocstate = 'Critical'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "operations"
+      ],
+      "refuted": false
+    },
+    "disaster_template|operations|Disrupted supply flow state": {
+      "id": 11,
+      "knowledge": "Disrupted supply flow state",
+      "description": "An operation whose supply flow state is Disrupted. Selects 36% of rows.",
+      "definition": "supplyflowstate = 'Disrupted'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "operations"
+      ],
+      "refuted": false
+    },
+    "disaster_template|transportation|On-track delivery": {
+      "id": 12,
+      "knowledge": "On-track delivery",
+      "description": "A delivery whose last mile status is On Track. Selects 35% of rows.",
+      "definition": "TRIM(lastmilestatus) = 'On Track'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "transportation"
+      ],
+      "refuted": false
+    },
+    "disaster_template|transportation|Suspended delivery": {
+      "id": 13,
+      "knowledge": "Suspended delivery",
+      "description": "A delivery whose last mile status is Suspended. Selects 33% of rows.",
+      "definition": "TRIM(lastmilestatus) = 'Suspended'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "transportation"
+      ],
+      "refuted": false
+    },
+    "disaster_template|transportation|Delayed delivery": {
+      "id": 14,
+      "knowledge": "Delayed delivery",
+      "description": "A delivery whose last mile status is Delayed. Selects 32% of rows.",
+      "definition": "TRIM(lastmilestatus) = 'Delayed'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "transportation"
+      ],
+      "refuted": false
+    },
+    "disaster_template|transportation|Route optimization required": {
+      "id": 15,
+      "knowledge": "Route optimization required",
+      "description": "A transport whose route optimization status is Required. Selects 37% of rows.",
+      "definition": "TRIM(routeoptstatus) = 'Required'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "transportation"
+      ],
+      "refuted": false
+    },
+    "disaster_template|transportation|Route optimized": {
+      "id": 16,
+      "knowledge": "Route optimized",
+      "description": "A transport whose route optimization status is Optimized. Selects 33% of rows.",
+      "definition": "TRIM(routeoptstatus) = 'Optimized'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "transportation"
+      ],
+      "refuted": false
+    },
+    "disaster_template|transportation|Route optimization in progress": {
+      "id": 17,
+      "knowledge": "Route optimization in progress",
+      "description": "A transport whose route optimization status is In Progress. Selects 30% of rows.",
+      "definition": "TRIM(routeoptstatus) = 'In Progress'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "transportation"
+      ],
+      "refuted": false
+    },
+    "disaster_template|transportation|Maintenance up to date": {
+      "id": 18,
+      "knowledge": "Maintenance up to date",
+      "description": "A vehicle whose maintenance state is Up to Date. Selects 34% of rows.",
+      "definition": "TRIM(maintenancestate) = 'Up to Date'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "transportation"
+      ],
+      "refuted": false
+    },
+    "disaster_template|transportation|Maintenance overdue": {
+      "id": 19,
+      "knowledge": "Maintenance overdue",
+      "description": "A vehicle whose maintenance state is Overdue. Selects 34% of rows.",
+      "definition": "TRIM(maintenancestate) = 'Overdue'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "transportation"
+      ],
+      "refuted": false
+    },
+    "disaster_template|transportation|Maintenance due": {
+      "id": 20,
+      "knowledge": "Maintenance due",
+      "description": "A vehicle whose maintenance state is Due. Selects 32% of rows.",
+      "definition": "TRIM(maintenancestate) = 'Due'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "transportation"
+      ],
+      "refuted": false
+    },
+    "disaster_template|financials|budget allocated": {
+      "id": 21,
+      "knowledge": "budget allocated",
+      "description": "Budget allocated in USD.",
+      "definition": "budgetallotusd != donorcommitmentsusd + resourcegapsusd",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        22,
+        23
+      ],
+      "tables": [
+        "financials"
+      ],
+      "refuted": true
+    },
+    "disaster_template|financials|donor commitments": {
+      "id": 22,
+      "knowledge": "donor commitments",
+      "description": "Donor committed funds in USD.",
+      "definition": "donorcommitmentsusd != budgetallotusd - resourcegapsusd",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        21,
+        23
+      ],
+      "tables": [
+        "financials"
+      ],
+      "refuted": true
+    },
+    "disaster_template|financials|resource gap": {
+      "id": 23,
+      "knowledge": "resource gap",
+      "description": "Funding gap in USD.",
+      "definition": "resourcegapsusd != budgetallotusd - donorcommitmentsusd",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        21,
+        22
+      ],
+      "tables": [
+        "financials"
+      ],
+      "refuted": true
+    },
+    "disaster_template|financials|funds utilization percent": {
+      "id": 24,
+      "knowledge": "funds utilization percent",
+      "description": "Percent of funds utilized.",
+      "definition": "fundsutilpct != (donorcommitmentsusd / budgetallotusd) * 100",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        21,
+        22
+      ],
+      "tables": [
+        "financials"
+      ],
+      "refuted": true
+    },
+    "disaster_template|financials|cost-benefit amount": {
+      "id": 25,
+      "knowledge": "cost-benefit amount",
+      "description": "Cost-benefit amount in USD.",
+      "definition": "costbeneusd != donorcommitmentsusd - opscostsusd",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        22,
+        26
+      ],
+      "tables": [
+        "financials"
+      ],
+      "refuted": true
+    },
+    "disaster_template|financials|operational costs": {
+      "id": 26,
+      "knowledge": "operational costs",
+      "description": "Operational costs in USD.",
+      "definition": "opscostsusd != donorcommitmentsusd - costbeneusd",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        22,
+        25
+      ],
+      "tables": [
+        "financials"
+      ],
+      "refuted": true
+    },
+    "disaster_template|distributionhubs|Used hub capacity": {
+      "id": 27,
+      "knowledge": "Used hub capacity",
+      "description": "Amount of hub capacity currently in use, in tons.",
+      "definition": "hubcaptons * hubutilpct / 100",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "distributionhubs"
+      ],
+      "refuted": false
+    },
+    "disaster_template|distributionhubs|Used storage volume": {
+      "id": 28,
+      "knowledge": "Used storage volume",
+      "description": "Amount of storage space currently occupied, in cubic meters.",
+      "definition": "storecapm3 - storeavailm3",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "distributionhubs"
+      ],
+      "refuted": false
+    },
+    "disaster_template|distributionhubs|Storage utilization percentage": {
+      "id": 29,
+      "knowledge": "Storage utilization percentage",
+      "description": "Percentage of total storage capacity that is occupied.",
+      "definition": "100 * (storecapm3 - storeavailm3) / storecapm3",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "distributionhubs"
+      ],
+      "refuted": false
+    },
+    "disaster_template|distributionhubs|Cold storage share of total capacity": {
+      "id": 30,
+      "knowledge": "Cold storage share of total capacity",
+      "description": "Percentage of total storage capacity that is cold storage.",
+      "definition": "100 * coldstorecapm3 / storecapm3",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "distributionhubs"
+      ],
+      "refuted": false
+    },
+    "disaster_template|distributionhubs|Inventory error rate": {
+      "id": 31,
+      "knowledge": "Inventory error rate",
+      "description": "Percentage of inventory records that are inaccurate.",
+      "definition": "100 - invaccpct",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "distributionhubs"
+      ],
+      "refuted": false
+    },
+    "disaster_template|humanresources|Adequate PPE status": {
+      "id": 32,
+      "knowledge": "Adequate PPE status",
+      "description": "Cohort whose PPE status is recorded as Adequate. Selects 33% of rows.",
+      "definition": "TRIM(json_extract(staffingprofile, '$.readiness.ppe_status')) = 'Adequate'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "humanresources"
+      ],
+      "refuted": false
+    },
+    "disaster_template|humanresources|Limited PPE status": {
+      "id": 33,
+      "knowledge": "Limited PPE status",
+      "description": "Cohort whose PPE status is recorded as Limited. Selects 35% of rows.",
+      "definition": "TRIM(json_extract(staffingprofile, '$.readiness.ppe_status')) = 'Limited'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "humanresources"
+      ],
+      "refuted": false
+    },
+    "disaster_template|humanresources|Critical PPE status": {
+      "id": 34,
+      "knowledge": "Critical PPE status",
+      "description": "Cohort whose PPE status is recorded as Critical. Selects 33% of rows.",
+      "definition": "TRIM(json_extract(staffingprofile, '$.readiness.ppe_status')) = 'Critical'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "humanresources"
+      ],
+      "refuted": false
+    },
+    "disaster_template|humanresources|Training required": {
+      "id": 35,
+      "knowledge": "Training required",
+      "description": "Cohort whose training completion status is recorded as Required. Selects 33% of rows.",
+      "definition": "TRIM(json_extract(staffingprofile, '$.readiness.training_status')) = 'Required'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "humanresources"
+      ],
+      "refuted": false
+    },
+    "disaster_template|humanresources|Training in progress": {
+      "id": 36,
+      "knowledge": "Training in progress",
+      "description": "Cohort whose training completion status is recorded as In Progress. Selects 34% of rows.",
+      "definition": "TRIM(json_extract(staffingprofile, '$.readiness.training_status')) = 'In Progress'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "humanresources"
+      ],
+      "refuted": false
+    },
+    "disaster_template|humanresources|Training complete": {
+      "id": 37,
+      "knowledge": "Training complete",
+      "description": "Cohort whose training completion status is recorded as Complete. Selects 33% of rows.",
+      "definition": "TRIM(json_extract(staffingprofile, '$.readiness.training_status')) = 'Complete'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "humanresources"
+      ],
+      "refuted": false
+    },
+    "disaster_template|coordinationandevaluation|High Risk safety ranking": {
+      "id": 38,
+      "knowledge": "High Risk safety ranking",
+      "description": "Safety ranking assigned to districts with a security incident count above the high-risk threshold. Selects 14% of rows.",
+      "definition": "TRIM(safetyranking) = 'High Risk' AND secincidentcount > 60",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "coordinationandevaluation"
+      ],
+      "refuted": false
+    },
+    "disaster_template|coordinationandevaluation|Effective information sharing": {
+      "id": 39,
+      "knowledge": "Effective information sharing",
+      "description": "Information sharing state rated effective when report compliance and data quality are high. Selects 4% of rows.",
+      "definition": "TRIM(infosharingstate) = 'Effective' AND reportcompliance >= 90 AND dataqualityvalue >= 4",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "coordinationandevaluation"
+      ],
+      "refuted": false
+    },
+    "disaster_template|coordinationandevaluation|Adequate risk mitigation": {
+      "id": 40,
+      "knowledge": "Adequate risk mitigation",
+      "description": "Risk mitigation steps considered adequate when the contingency plan is updated and the audit is completed. Selects 3% of rows.",
+      "definition": "TRIM(riskmitigationsteps) = 'Adequate' AND TRIM(contingencyplanstage) = 'Updated' AND TRIM(auditstate) = 'Completed'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        41
+      ],
+      "tables": [
+        "coordinationandevaluation"
+      ],
+      "refuted": false
+    },
+    "disaster_template|coordinationandevaluation|Completed audit": {
+      "id": 41,
+      "knowledge": "Completed audit",
+      "description": "Audit state that is completed and accompanied by an updated contingency plan. Selects 12% of rows.",
+      "definition": "TRIM(auditstate) = 'Completed' AND TRIM(contingencyplanstage) = 'Updated'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        47
+      ],
+      "tables": [
+        "coordinationandevaluation"
+      ],
+      "refuted": false
+    },
+    "disaster_template|coordinationandevaluation|Full insurance coverage": {
+      "id": 42,
+      "knowledge": "Full insurance coverage",
+      "description": "Insurance coverage rated full when risk mitigation is adequate and the compliance state is compliant. Selects 3% of rows.",
+      "definition": "TRIM(insurancescope) = 'Full' AND TRIM(riskmitigationsteps) = 'Adequate' AND TRIM(compliancestate) = 'Compliant'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        40
+      ],
+      "tables": [
+        "coordinationandevaluation"
+      ],
+      "refuted": false
+    },
+    "disaster_template|coordinationandevaluation|Compliant evaluation": {
+      "id": 43,
+      "knowledge": "Compliant evaluation",
+      "description": "Compliance state achieved when audit is completed and report compliance is high. Selects 4% of rows.",
+      "definition": "TRIM(compliancestate) = 'Compliant' AND TRIM(auditstate) = 'Completed' AND reportcompliance >= 90",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        41
+      ],
+      "tables": [
+        "coordinationandevaluation"
+      ],
+      "refuted": false
+    },
+    "disaster_template|coordinationandevaluation|Strong quality control": {
+      "id": 44,
+      "knowledge": "Strong quality control",
+      "description": "Quality control steps rated strong when data quality is high. Selects 14% of rows.",
+      "definition": "TRIM(qualitycontrolsteps) = 'Strong' AND dataqualityvalue >= 4",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "coordinationandevaluation"
+      ],
+      "refuted": false
+    },
+    "disaster_template|coordinationandevaluation|Positive media sentiment": {
+      "id": 45,
+      "knowledge": "Positive media sentiment",
+      "description": "Media coverage categorized positive when public perception is favorable. Selects 13% of rows.",
+      "definition": "TRIM(mediacoversentiment) = 'Positive' AND publicperception >= 3.5",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "coordinationandevaluation"
+      ],
+      "refuted": false
+    },
+    "disaster_template|coordinationandevaluation|Complete documentation": {
+      "id": 46,
+      "knowledge": "Complete documentation",
+      "description": "Documentation is complete when lessons, best practices, and improvement recommendations are all present. Selects 30% of rows.",
+      "definition": "TRIM(documentationstate) = 'Complete' AND CAST(lessonsrecorded AS INTEGER) > 0 AND CAST(bestpracticeslisted AS INTEGER) > 0 AND CAST(improvementrecs AS INTEGER) > 0",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "coordinationandevaluation"
+      ],
+      "refuted": false
+    },
+    "disaster_template|coordinationandevaluation|Updated contingency plan": {
+      "id": 47,
+      "knowledge": "Updated contingency plan",
+      "description": "Contingency plan updated when audit is complete and evaluation is current. Selects 4% of rows.",
+      "definition": "TRIM(contingencyplanstage) = 'Updated' AND TRIM(auditstate) = 'Completed' AND TRIM(evaluationstage) = 'Current'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        41
+      ],
+      "tables": [
+        "coordinationandevaluation"
+      ],
+      "refuted": false
+    },
+    "disaster_template|coordinationandevaluation|Documented lessons learned": {
+      "id": 48,
+      "knowledge": "Documented lessons learned",
+      "description": "Lessons learned stage is documented when lesson and best-practice counts are recorded. Selects 31% of rows.",
+      "definition": "TRIM(lessonslearnedstage) = 'Documented' AND CAST(lessonsrecorded AS INTEGER) > 0 AND CAST(bestpracticeslisted AS INTEGER) > 0",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "coordinationandevaluation"
+      ],
+      "refuted": false
+    },
+    "disaster_template|coordinationandevaluation|Current evaluation": {
+      "id": 49,
+      "knowledge": "Current evaluation",
+      "description": "Evaluation stage is current when the contingency plan is updated and no audit is overdue. Selects 4% of rows.",
+      "definition": "TRIM(evaluationstage) = 'Current' AND TRIM(contingencyplanstage) = 'Updated' AND TRIM(auditstate) = 'Completed'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        47
+      ],
+      "tables": [
+        "coordinationandevaluation"
+      ],
+      "refuted": false
+    },
+    "disaster_template|coordinationandevaluation|High coordination effectiveness": {
+      "id": 50,
+      "knowledge": "High coordination effectiveness",
+      "description": "Coordination effectiveness level high when information sharing is effective, audits are complete, and key scores are high.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        39,
+        41
+      ],
+      "tables": [
+        "coordinationandevaluation"
+      ],
+      "refuted": false
+    },
+    "disaster_template|coordinationandevaluation|Severe access limitation": {
+      "id": 51,
+      "knowledge": "Severe access limitation",
+      "description": "Access limitation is severe in high-risk safety contexts with insufficient mitigation. Selects 4% of rows.",
+      "definition": "TRIM(accesslimitation) = 'Severe' AND TRIM(safetyranking) = 'High Risk' AND TRIM(riskmitigationsteps) = 'Insufficient'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        38
+      ],
+      "tables": [
+        "coordinationandevaluation"
+      ],
+      "refuted": false
+    },
+    "disaster_template|beneficiariesandassessments|Beneficiary with completed vulnerability review": {
+      "id": 52,
+      "knowledge": "Beneficiary with completed vulnerability review",
+      "description": "A beneficiary whose vulnerability review status is Complete. Selects 35% of rows.",
+      "definition": "TRIM(vulnerabilityreview) = 'Complete'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "beneficiariesandassessments"
+      ],
+      "refuted": false
+    },
+    "disaster_template|beneficiariesandassessments|Beneficiary with updated needs assessment": {
+      "id": 53,
+      "knowledge": "Beneficiary with updated needs assessment",
+      "description": "A beneficiary whose needs assessment status is Updated. Selects 33% of rows.",
+      "definition": "TRIM(needsassessstatus) = 'Updated'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "beneficiariesandassessments"
+      ],
+      "refuted": false
+    },
+    "disaster_template|beneficiariesandassessments|Fully assessed beneficiary": {
+      "id": 54,
+      "knowledge": "Fully assessed beneficiary",
+      "description": "A beneficiary with both a completed vulnerability review and an updated needs assessment. Selects 11% of rows.",
+      "definition": "TRIM(vulnerabilityreview) = 'Complete' AND TRIM(needsassessstatus) = 'Updated'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        52,
+        53
+      ],
+      "tables": [
+        "beneficiariesandassessments"
+      ],
+      "refuted": false
+    },
+    "disaster_template|beneficiariesandassessments|Beneficiary with complete registration": {
+      "id": 55,
+      "knowledge": "Beneficiary with complete registration",
+      "description": "A beneficiary whose registration status is Complete. Selects 34% of rows.",
+      "definition": "TRIM(beneregister) = 'Complete'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "beneficiariesandassessments"
+      ],
+      "refuted": false
+    },
+    "disaster_template|beneficiariesandassessments|Beneficiary with active local capacity growth": {
+      "id": 56,
+      "knowledge": "Beneficiary with active local capacity growth",
+      "description": "A beneficiary whose local capacity growth status is Active. Selects 34% of rows.",
+      "definition": "TRIM(localcapacitygrowth) = 'Active'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "beneficiariesandassessments"
+      ],
+      "refuted": false
+    },
+    "disaster_template|supplies|Blankets per shelter unit": {
+      "id": 58,
+      "knowledge": "Blankets per shelter unit",
+      "description": "Average number of blankets available per shelter unit.",
+      "definition": "json_extract(resourceinventory, '$.shelter.blankets') / json_extract(resourceinventory, '$.shelter.units')",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "supplies"
+      ],
+      "refuted": false
+    },
+    "disaster_template|supplies|Fuel liters per generator": {
+      "id": 59,
+      "knowledge": "Fuel liters per generator",
+      "description": "Average fuel inventory in liters per power generator.",
+      "definition": "json_extract(resourceinventory, '$.power.fuel_liters') / json_extract(resourceinventory, '$.power.generators')",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "supplies"
+      ],
+      "refuted": false
+    },
+    "disaster_template|supplies|High fuel supply": {
+      "id": 60,
+      "knowledge": "High fuel supply",
+      "description": "Supply record with more than 30,000 liters of fuel. Selects 70% of rows.",
+      "definition": "json_extract(resourceinventory, '$.power.fuel_liters') > 30000",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "supplies"
+      ],
+      "refuted": false
+    },
+    "disaster_template|supplies|Large medical stock": {
+      "id": 61,
+      "knowledge": "Large medical stock",
+      "description": "Supply record with more than 50,000 medical supply items. Selects 52% of rows.",
+      "definition": "json_extract(resourceinventory, '$.medical') > 50000",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "supplies"
+      ],
+      "refuted": false
+    },
+    "disaster_template|supplies|Large shelter inventory": {
+      "id": 62,
+      "knowledge": "Large shelter inventory",
+      "description": "Supply record with more than 5,000 shelter units. Selects 51% of rows.",
+      "definition": "json_extract(resourceinventory, '$.shelter.units') > 5000",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "supplies"
+      ],
+      "refuted": false
+    },
+    "disaster_template|disasterevents|Tsunami": {
+      "id": 63,
+      "knowledge": "Tsunami",
+      "description": "Disaster event classified as a tsunami. Selects 20% of rows.",
+      "definition": "haztype = 'Tsunami'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "disasterevents"
+      ],
+      "refuted": false
+    },
+    "disaster_template|disasterevents|Earthquake": {
+      "id": 64,
+      "knowledge": "Earthquake",
+      "description": "Disaster event classified as an earthquake. Selects 20% of rows.",
+      "definition": "haztype = 'Earthquake'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "disasterevents"
+      ],
+      "refuted": false
+    },
+    "disaster_template|disasterevents|Flood": {
+      "id": 65,
+      "knowledge": "Flood",
+      "description": "Disaster event classified as a flood. Selects 20% of rows.",
+      "definition": "haztype = 'Flood'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "disasterevents"
+      ],
+      "refuted": false
+    },
+    "disaster_template|disasterevents|Hurricane": {
+      "id": 66,
+      "knowledge": "Hurricane",
+      "description": "Disaster event classified as a hurricane. Selects 20% of rows.",
+      "definition": "haztype = 'Hurricane'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "disasterevents"
+      ],
+      "refuted": false
+    },
+    "disaster_template|disasterevents|Wildfire": {
+      "id": 67,
+      "knowledge": "Wildfire",
+      "description": "Disaster event classified as a wildfire. Selects 19% of rows.",
+      "definition": "haztype = 'Wildfire'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "disasterevents"
+      ],
+      "refuted": false
+    },
+    "disaster_template|disasterevents|Severe damage": {
+      "id": 68,
+      "knowledge": "Severe damage",
+      "description": "Disaster event with damage severity category Severe.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "disasterevents"
+      ],
+      "refuted": false
+    },
+    "disaster_template|disasterevents|Communication down": {
+      "id": 69,
+      "knowledge": "Communication down",
+      "description": "Disaster event where communication status is Down.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "disasterevents"
+      ],
+      "refuted": false
+    },
+    "disaster_template|disasterevents|Injury rate": {
+      "id": 70,
+      "knowledge": "Injury rate",
+      "description": "Injured people per 100 affected people.",
+      "definition": "\"json_extract(impactmetrics, '$.population.injured')\" * 100.0 / \"json_extract(impactmetrics, '$.population.affected')\"",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "disasterevents"
+      ],
+      "refuted": false
+    },
+    "disaster_template|disasterevents|Casualty rate": {
+      "id": 71,
+      "knowledge": "Casualty rate",
+      "description": "Casualties per 100 affected people.",
+      "definition": "\"json_extract(impactmetrics, '$.population.casualties')\" * 100.0 / \"json_extract(impactmetrics, '$.population.affected')\"",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "disasterevents"
+      ],
+      "refuted": false
+    },
+    "disaster_template|disasterevents|Displacement rate": {
+      "id": 72,
+      "knowledge": "Displacement rate",
+      "description": "Displaced people per 100 affected people.",
+      "definition": "\"json_extract(impactmetrics, '$.population.displaced')\" * 100.0 / \"json_extract(impactmetrics, '$.population.affected')\"",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "disasterevents"
+      ],
+      "refuted": false
+    },
+    "disaster_template|disasterevents|Budget per affected person": {
+      "id": 73,
+      "knowledge": "Budget per affected person",
+      "description": "Budget allocated per affected individual.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        21
+      ],
+      "tables": [
+        "disasterevents"
+      ],
+      "refuted": false
+    },
+    "disaster_template|financials,transportation|Transport cost per delivered ton": {
+      "id": 74,
+      "knowledge": "Transport cost per delivered ton",
+      "description": "Transportation cost associated with each ton delivered.",
+      "definition": "financials.transportcostsusd / transportation.totaldeliverytons",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "financials",
+        "transportation"
+      ],
+      "refuted": false
+    },
+    "disaster_template|disasterevents,humanresources|Medical staff per thousand affected": {
+      "id": 75,
+      "knowledge": "Medical staff per thousand affected",
+      "description": "Medical personnel per one thousand affected people.",
+      "definition": "humanresources.json_extract(staffingprofile, '$.personnel.medical') / disasterevents.json_extract(impactmetrics, '$.population.affected') * 1000",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "disasterevents",
+        "humanresources"
+      ],
+      "refuted": false
+    },
+    "disaster_template|coordinationandevaluation,disasterevents|Security incidents per million affected": {
+      "id": 76,
+      "knowledge": "Security incidents per million affected",
+      "description": "Security incidents per one million affected people.",
+      "definition": "coordinationandevaluation.secincidentcount / disasterevents.json_extract(impactmetrics, '$.population.affected') * 1000000",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "coordinationandevaluation",
+        "disasterevents"
+      ],
+      "refuted": false
+    },
+    "disaster_template|distributionhubs,transportation|Delivery load against hub capacity": {
+      "id": 77,
+      "knowledge": "Delivery load against hub capacity",
+      "description": "Delivered tonnage expressed as a percentage of hub capacity.",
+      "definition": "transportation.totaldeliverytons / distributionhubs.hubcaptons * 100",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "distributionhubs",
+        "transportation"
+      ],
+      "refuted": false
+    },
+    "disaster_template|operations,transportation|Delayed delivery under strained supply": {
+      "id": 79,
+      "knowledge": "Delayed delivery under strained supply",
+      "description": "A delivery that is delayed while supply flow is strained.",
+      "definition": "transportation.lastmilestatus = 'Delayed' AND operations.supplyflowstate = 'Strained'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        14
+      ],
+      "tables": [
+        "operations",
+        "transportation"
+      ],
+      "refuted": false
+    },
+    "disaster_template|disasterevents,environmentandhealth|Severely damaged low vaccination area": {
+      "id": 80,
+      "knowledge": "Severely damaged low vaccination area",
+      "description": "Area with severe damage and below half vaccination coverage.",
+      "definition": "disasterevents.json_extract(impactmetrics, '$.damage_level') = 'Severe' AND environmentandhealth.vaccinationcoverage < 50",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        68
+      ],
+      "tables": [
+        "disasterevents",
+        "environmentandhealth"
+      ],
+      "refuted": false
+    },
+    "disaster_template|disasterevents,humanresources|Critical PPE high-severity hazard": {
+      "id": 81,
+      "knowledge": "Critical PPE high-severity hazard",
+      "description": "Highest hazard severity coinciding with critical PPE status.",
+      "definition": "disasterevents.hazlevel = 'Level 5' AND humanresources.json_extract(staffingprofile, '$.readiness.ppe_status') = 'Critical'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        34
+      ],
+      "tables": [
+        "disasterevents",
+        "humanresources"
+      ],
+      "refuted": false
+    },
+    "disaster_template|financials,operations|Active operation under critical funding": {
+      "id": 82,
+      "knowledge": "Active operation under critical funding",
+      "description": "An active operation whose funding state is critical.",
+      "definition": "operations.opsstatus = 'Active' AND financials.fundingstate = 'Critical'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        8
+      ],
+      "tables": [
+        "financials",
+        "operations"
+      ],
+      "refuted": false
+    }
+  },
+  "meta": {
+    "environmentandhealth": {
+      "profiled_at": "2026-08-30T13:22:46.213639+00:00"
+    },
+    "operations": {
+      "profiled_at": "2026-08-30T13:22:46.213639+00:00"
+    },
+    "financials,operations": {
+      "profiled_at": "2026-08-30T13:22:46.213639+00:00"
+    },
+    "coordinationandevaluation,disasterevents": {
+      "profiled_at": "2026-08-30T13:22:46.213639+00:00"
+    },
+    "distributionhubs,transportation": {
+      "profiled_at": "2026-08-30T13:22:46.213639+00:00"
+    },
+    "transportation": {
+      "profiled_at": "2026-08-30T13:22:46.213639+00:00"
+    },
+    "beneficiariesandassessments": {
+      "profiled_at": "2026-08-30T13:22:46.213639+00:00"
+    },
+    "operations,transportation": {
+      "profiled_at": "2026-08-30T13:22:46.213639+00:00"
+    },
+    "disasterevents,humanresources": {
+      "profiled_at": "2026-08-30T13:22:46.213639+00:00"
+    },
+    "disasterevents,environmentandhealth": {
+      "profiled_at": "2026-08-30T13:22:46.213639+00:00"
+    },
+    "financials": {
+      "profiled_at": "2026-08-30T13:22:46.213639+00:00"
+    },
+    "distributionhubs": {
+      "profiled_at": "2026-08-30T13:22:46.213639+00:00"
+    },
+    "humanresources": {
+      "profiled_at": "2026-08-30T13:22:46.213639+00:00"
+    },
+    "financials,transportation": {
+      "profiled_at": "2026-08-30T13:22:46.213639+00:00"
+    },
+    "coordinationandevaluation": {
+      "profiled_at": "2026-08-30T13:22:46.213639+00:00"
+    },
+    "supplies": {
+      "profiled_at": "2026-08-30T13:22:46.213639+00:00"
+    },
+    "disasterevents": {
+      "profiled_at": "2026-08-30T13:22:46.213639+00:00"
+    }
+  }
+}

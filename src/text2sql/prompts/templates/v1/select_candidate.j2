@@ -1,0 +1,26 @@
+{# version: v1, description: Candidate adjudication — multiple SQL candidates + results → best choice #}
+Select the best SQL candidate that correctly answers the question
+
+Question: {{ question }}
+
+Schema
+{{ schema }}
+
+{% for candidate in candidates %}
+--- Candidate {{ loop.index }} ---
+SQL
+{{ candidate.sql }}
+{% if candidate.error %}
+Error: {{ candidate.error }}
+{% elif candidate.results is not none %}
+Results ({{ candidate.results | length }} rows)
+{% for row in candidate.results[:5] %}  {{ row }}
+{% endfor %}{% if candidate.results | length > 5 %}  ... ({{ candidate.results | length }} total)
+{% endif %}{% else %}
+No results
+{% endif %}
+{% endfor %}
+
+Evaluate correctness, result reasonableness, and JOIN validity
+Be caveman-brief: short, dense reasoning, no filler words
+Return JSON: {"selected": <number>, "reasoning": "<brief>"}

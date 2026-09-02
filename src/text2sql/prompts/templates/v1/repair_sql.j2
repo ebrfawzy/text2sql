@@ -1,0 +1,18 @@
+{# version: v1, description: SQL repair — failing SQL + findings + schema + question → fixed SQL #}
+This {{ dialect }} query failed
+
+{{ sql }}
+
+Findings
+{% for f in findings %}- {{ f }}
+{% endfor %}
+
+{% if schema %}
+Schema
+{{ schema }}
+{% endif %}
+
+Question
+{{ question }}
+
+Return only the corrected {{ dialect }} query

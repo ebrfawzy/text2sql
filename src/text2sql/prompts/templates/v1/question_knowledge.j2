@@ -1,0 +1,8 @@
+{# version: v1, description: benchmark question plus the definitions its instance mandates #}
+{{ question }}
+<definitions> MUST USE
+{% for e in entries %}
+- {{ e.knowledge }}: {{ e.description }}
+  Definition: {{ e.definition }}
+{% endfor %}
+</definitions>

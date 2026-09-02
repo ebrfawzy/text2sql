@@ -1,0 +1,1564 @@
+{
+  "version": 1,
+  "profiled_at": "2026-08-30T14:12:56.823792+00:00",
+  "columns": {
+    "polar_template|scientific|Scientific equipment operational (SEO)": {
+      "id": 0,
+      "knowledge": "Scientific equipment operational (SEO)",
+      "description": "Scientific equipment whose operational status is Operating. Selects 31% of rows.",
+      "definition": "scientificequipmentstatus = 'Operating'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        97
+      ],
+      "tables": [
+        "scientific"
+      ],
+      "refuted": false
+    },
+    "polar_template|scientific|Active data logging (ADL)": {
+      "id": 1,
+      "knowledge": "Active data logging (ADL)",
+      "description": "Data logging activity status is Active. Selects 31% of rows.",
+      "definition": "dataloggingstatus = 'Active'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scientific"
+      ],
+      "refuted": false
+    },
+    "polar_template|scientific|Normal sensor condition (NSC)": {
+      "id": 2,
+      "knowledge": "Normal sensor condition (NSC)",
+      "description": "Sensor health status is Normal. Selects 31% of rows.",
+      "definition": "sensorstatus = 'Normal'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scientific"
+      ],
+      "refuted": false
+    },
+    "polar_template|scientific|Valid calibration (VC)": {
+      "id": 3,
+      "knowledge": "Valid calibration (VC)",
+      "description": "Calibration validity status is Valid. Selects 34% of rows.",
+      "definition": "calibrationstatus = 'Valid'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scientific"
+      ],
+      "refuted": false
+    },
+    "polar_template|scientific|Scientific equipment ready for measurement (SERM)": {
+      "id": 4,
+      "knowledge": "Scientific equipment ready for measurement (SERM)",
+      "description": "Scientific equipment is operating, logging data, with normal sensors and valid calibration. Selects 1% of rows.",
+      "definition": "scientificequipmentstatus = 'Operating' AND dataloggingstatus = 'Active' AND sensorstatus = 'Normal' AND calibrationstatus = 'Valid'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        0,
+        1,
+        2,
+        3,
+        97
+      ],
+      "tables": [
+        "scientific"
+      ],
+      "refuted": false
+    },
+    "polar_template|powerbattery|Battery is charging": {
+      "id": 6,
+      "knowledge": "Battery is charging",
+      "description": "Charging status indicates the battery is charging. Selects 26% of rows.",
+      "definition": "TRIM(chargingstatus) = 'Charging'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "powerbattery"
+      ],
+      "refuted": false
+    },
+    "polar_template|powerbattery|Battery is full": {
+      "id": 7,
+      "knowledge": "Battery is full",
+      "description": "Charging status indicates the battery is fully charged. Selects 24% of rows.",
+      "definition": "TRIM(chargingstatus) = 'Full'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "powerbattery"
+      ],
+      "refuted": false
+    },
+    "polar_template|powerbattery|Battery is not charging": {
+      "id": 8,
+      "knowledge": "Battery is not charging",
+      "description": "Charging status indicates the battery is not charging. Selects 24% of rows.",
+      "definition": "TRIM(chargingstatus) = 'Not Charging'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "powerbattery"
+      ],
+      "refuted": false
+    },
+    "polar_template|powerbattery|Battery charging error": {
+      "id": 9,
+      "knowledge": "Battery charging error",
+      "description": "Charging status indicates an error in charging. Selects 26% of rows.",
+      "definition": "TRIM(chargingstatus) = 'Error'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "powerbattery"
+      ],
+      "refuted": false
+    },
+    "polar_template|powerbattery|Power status is On": {
+      "id": 10,
+      "knowledge": "Power status is On",
+      "description": "Battery power status is On. Selects 26% of rows.",
+      "definition": "TRIM(powerstatus) = 'On'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "powerbattery"
+      ],
+      "refuted": false
+    },
+    "polar_template|powerbattery|Power source is Solar": {
+      "id": 11,
+      "knowledge": "Power source is Solar",
+      "description": "Battery power source is Solar. Selects 21% of rows.",
+      "definition": "TRIM(powersource) = 'Solar'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "powerbattery"
+      ],
+      "refuted": false
+    },
+    "polar_template|chassisandvehicle|chassis engine reference (chassisengref)": {
+      "id": 12,
+      "knowledge": "chassis engine reference (chassisengref)",
+      "description": "Chassis engine reference is identical to the chassis transaction reference.",
+      "definition": "chassisengref = chassistransref",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "chassisandvehicle"
+      ],
+      "refuted": false
+    },
+    "polar_template|chassisandvehicle|chassis registry identifier (chassisregistry)": {
+      "id": 13,
+      "knowledge": "chassis registry identifier (chassisregistry)",
+      "description": "Chassis registry identifier is derived from the chassis transaction reference sequence.",
+      "definition": "chassisregistry != 1001 - chassistransref",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "chassisandvehicle"
+      ],
+      "refuted": true
+    },
+    "polar_template|chassisandvehicle|tire pressure (tiremetrics.pressure_kpa)": {
+      "id": 14,
+      "knowledge": "tire pressure (tiremetrics.pressure_kpa)",
+      "description": "Tire pressure is stored inside the tiremetrics JSON object.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "chassisandvehicle"
+      ],
+      "refuted": false
+    },
+    "polar_template|chassisandvehicle|tire temperature (tiremetrics.temperature_c)": {
+      "id": 15,
+      "knowledge": "tire temperature (tiremetrics.temperature_c)",
+      "description": "Tire temperature is stored inside the tiremetrics JSON object.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "chassisandvehicle"
+      ],
+      "refuted": false
+    },
+    "polar_template|chassisandvehicle|tire tread depth (tiremetrics.tread_depth_mm)": {
+      "id": 16,
+      "knowledge": "tire tread depth (tiremetrics.tread_depth_mm)",
+      "description": "Tire tread depth is stored inside the tiremetrics JSON object.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "chassisandvehicle"
+      ],
+      "refuted": false
+    },
+    "polar_template|chassisandvehicle|worn brake pads": {
+      "id": 17,
+      "knowledge": "worn brake pads",
+      "description": "Brake pads are worn when the brake pad wear percentage exceeds 80 percent. Selects 19% of rows.",
+      "definition": "brakepadwearpercent > 80",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "chassisandvehicle"
+      ],
+      "refuted": false
+    },
+    "polar_template|chassisandvehicle|worn track": {
+      "id": 18,
+      "knowledge": "worn track",
+      "description": "Track is worn when the track wear percentage exceeds 85 percent. Selects 14% of rows.",
+      "definition": "trackwearpercent > 85",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "chassisandvehicle"
+      ],
+      "refuted": false
+    },
+    "polar_template|chassisandvehicle|low brake fluid": {
+      "id": 19,
+      "knowledge": "low brake fluid",
+      "description": "Brake fluid level is low when the brake fluid level percentage drops below 90 percent. Selects 89% of rows.",
+      "definition": "brakefluidlevelpercent < 90",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "chassisandvehicle"
+      ],
+      "refuted": false
+    },
+    "polar_template|chassisandvehicle|high vehicle speed": {
+      "id": 20,
+      "knowledge": "high vehicle speed",
+      "description": "Vehicle speed is high when the speed exceeds 100 kilometers per hour. Selects 17% of rows.",
+      "definition": "vehiclespeedkmh > 100",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "chassisandvehicle"
+      ],
+      "refuted": false
+    },
+    "polar_template|communication|Communication location reference": {
+      "id": 21,
+      "knowledge": "Communication location reference",
+      "description": "Communication location reference ID derived from the communication registry ID.",
+      "definition": "commlocref != 1001 - commregistry",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "communication"
+      ],
+      "refuted": true
+    },
+    "polar_template|communication|Latency": {
+      "id": 22,
+      "knowledge": "Latency",
+      "description": "Latency in milliseconds extracted from the signalmetrics JSON object.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "communication"
+      ],
+      "refuted": false
+    },
+    "polar_template|communication|GPS strength": {
+      "id": 23,
+      "knowledge": "GPS strength",
+      "description": "GPS signal strength category extracted from the signalmetrics JSON object.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "communication"
+      ],
+      "refuted": false
+    },
+    "polar_template|communication|Data rate": {
+      "id": 24,
+      "knowledge": "Data rate",
+      "description": "Data rate in kilobits per second extracted from the signalmetrics JSON object.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "communication"
+      ],
+      "refuted": false
+    },
+    "polar_template|communication|Satellite status": {
+      "id": 25,
+      "knowledge": "Satellite status",
+      "description": "Satellite link status extracted from the signalmetrics JSON object.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "communication"
+      ],
+      "refuted": false
+    },
+    "polar_template|communication|Wi-Fi strength": {
+      "id": 26,
+      "knowledge": "Wi-Fi strength",
+      "description": "Wi-Fi signal strength in dBm extracted from the signalmetrics JSON object.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "communication"
+      ],
+      "refuted": false
+    },
+    "polar_template|communication|Radio strength": {
+      "id": 27,
+      "knowledge": "Radio strength",
+      "description": "Radio signal strength in dBm extracted from the signalmetrics JSON object.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "communication"
+      ],
+      "refuted": false
+    },
+    "polar_template|engineandfluids|engine fluid SPB reference": {
+      "id": 28,
+      "knowledge": "engine fluid SPB reference",
+      "description": "Reference ID derived from the engine registry number.",
+      "definition": "engfluidspbref != 1001 - engineregistry",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "engineandfluids"
+      ],
+      "refuted": true
+    },
+    "polar_template|engineandfluids|engine fluids operational maintenance reference": {
+      "id": 29,
+      "knowledge": "engine fluids operational maintenance reference",
+      "description": "Operational maintenance reference ID derived from the engine registry number.",
+      "definition": "engfluidsopmaintref != 1001 - engineregistry",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "engineandfluids"
+      ],
+      "refuted": true
+    },
+    "polar_template|engineandfluids|high engine speed (RPM)": {
+      "id": 30,
+      "knowledge": "high engine speed (RPM)",
+      "description": "Engine speed condition above 7000 rpm. Selects 12% of rows.",
+      "definition": "enginespeedrpm > 7000",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "engineandfluids"
+      ],
+      "refuted": false
+    },
+    "polar_template|engineandfluids|high engine load (percent)": {
+      "id": 31,
+      "knowledge": "high engine load (percent)",
+      "description": "Engine load condition above 95 percent. Selects 6% of rows.",
+      "definition": "engineloadpercent > 95",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "engineandfluids"
+      ],
+      "refuted": false
+    },
+    "polar_template|engineandfluids|high engine temperature (C)": {
+      "id": 32,
+      "knowledge": "high engine temperature (C)",
+      "description": "Engine temperature condition above 100 degrees Celsius. Selects 31% of rows.",
+      "definition": "enginetemperaturec > 100",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "engineandfluids"
+      ],
+      "refuted": false
+    },
+    "polar_template|engineandfluids|high engine runtime (hours)": {
+      "id": 33,
+      "knowledge": "high engine runtime (hours)",
+      "description": "Engine runtime condition above 4000 hours. Selects 21% of rows.",
+      "definition": "enginehours > 4000",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "engineandfluids"
+      ],
+      "refuted": false
+    },
+    "polar_template|engineandfluids|low oil pressure (kPa)": {
+      "id": 34,
+      "knowledge": "low oil pressure (kPa)",
+      "description": "Oil pressure condition below 1000 kPa. Selects 17% of rows.",
+      "definition": "json_extract(fluidmetrics, '$.oil.pressure_kpa') < 1000",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "engineandfluids"
+      ],
+      "refuted": false
+    },
+    "polar_template|engineandfluids|low fuel level (percent)": {
+      "id": 35,
+      "knowledge": "low fuel level (percent)",
+      "description": "Fuel level condition below 20 percent. Selects 23% of rows.",
+      "definition": "json_extract(fluidmetrics, '$.fuel.level_percent') < 20",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "engineandfluids"
+      ],
+      "refuted": false
+    },
+    "polar_template|engineandfluids|high fuel consumption (L/h)": {
+      "id": 36,
+      "knowledge": "high fuel consumption (L/h)",
+      "description": "Fuel consumption condition above 40 liters per hour. Selects 19% of rows.",
+      "definition": "json_extract(fluidmetrics, '$.fuel.consumption_lh') > 40",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "engineandfluids"
+      ],
+      "refuted": false
+    },
+    "polar_template|engineandfluids|high coolant temperature (C)": {
+      "id": 37,
+      "knowledge": "high coolant temperature (C)",
+      "description": "Coolant temperature condition above 80 degrees Celsius. Selects 30% of rows.",
+      "definition": "json_extract(fluidmetrics, '$.coolant.temperature_c') > 80",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "engineandfluids"
+      ],
+      "refuted": false
+    },
+    "polar_template|engineandfluids|high hydraulic temperature (C)": {
+      "id": 38,
+      "knowledge": "high hydraulic temperature (C)",
+      "description": "Hydraulic temperature condition above 80 degrees Celsius. Selects 30% of rows.",
+      "definition": "json_extract(fluidmetrics, '$.hydraulic.temperature_c') > 80",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "engineandfluids"
+      ],
+      "refuted": false
+    },
+    "polar_template|lightingandsafety|safetysensors": {
+      "id": 39,
+      "knowledge": "safetysensors",
+      "description": "JSON object containing CO, gas, fire, and smoke detection statuses.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        40,
+        41,
+        42,
+        43
+      ],
+      "tables": [
+        "lightingandsafety"
+      ],
+      "refuted": false
+    },
+    "polar_template|lightingandsafety|safetysensors.co_detection": {
+      "id": 40,
+      "knowledge": "safetysensors.co_detection",
+      "description": "CO detection status extracted from the safetysensors JSON object.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        39
+      ],
+      "tables": [
+        "lightingandsafety"
+      ],
+      "refuted": false
+    },
+    "polar_template|lightingandsafety|safetysensors.gas_detection": {
+      "id": 41,
+      "knowledge": "safetysensors.gas_detection",
+      "description": "Gas detection status extracted from the safetysensors JSON object.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        39
+      ],
+      "tables": [
+        "lightingandsafety"
+      ],
+      "refuted": false
+    },
+    "polar_template|lightingandsafety|safetysensors.fire_detection": {
+      "id": 42,
+      "knowledge": "safetysensors.fire_detection",
+      "description": "Fire detection status extracted from the safetysensors JSON object.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        39
+      ],
+      "tables": [
+        "lightingandsafety"
+      ],
+      "refuted": false
+    },
+    "polar_template|lightingandsafety|safetysensors.smoke_detection": {
+      "id": 43,
+      "knowledge": "safetysensors.smoke_detection",
+      "description": "Smoke detection status extracted from the safetysensors JSON object.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        39
+      ],
+      "tables": [
+        "lightingandsafety"
+      ],
+      "refuted": false
+    },
+    "polar_template|lightingandsafety|Critical alarm": {
+      "id": 44,
+      "knowledge": "Critical alarm",
+      "description": "Alarm state indicating a critical condition. Selects 34% of rows.",
+      "definition": "TRIM(alarmstatus) = 'Critical'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "lightingandsafety"
+      ],
+      "refuted": false
+    },
+    "polar_template|lightingandsafety|Active safety system": {
+      "id": 45,
+      "knowledge": "Active safety system",
+      "description": "Safety system state indicating the system is active. Selects 32% of rows.",
+      "definition": "TRIM(safetysystemstatus) = 'Active'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "lightingandsafety"
+      ],
+      "refuted": false
+    },
+    "polar_template|lightingandsafety|Life support critical": {
+      "id": 46,
+      "knowledge": "Life support critical",
+      "description": "Life support state indicating a critical condition. Selects 35% of rows.",
+      "definition": "TRIM(lifesupportstatus) = 'Critical'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "lightingandsafety"
+      ],
+      "refuted": false
+    },
+    "polar_template|lightingandsafety|Emergency stop activated": {
+      "id": 47,
+      "knowledge": "Emergency stop activated",
+      "description": "Emergency stop state indicating the stop has been activated. Selects 33% of rows.",
+      "definition": "TRIM(emergencystopstatus) = 'Activated'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "lightingandsafety"
+      ],
+      "refuted": false
+    },
+    "polar_template|operationmaintenance|Total maintenance cost": {
+      "id": 48,
+      "knowledge": "Total maintenance cost",
+      "description": "Sum of repair, operating, and maintenance costs in US dollars for the maintenance record.",
+      "definition": "json_extract(costmetrics, '$.repair_usd') + json_extract(costmetrics, '$.operating_usd') + json_extract(costmetrics, '$.maintenance_usd')",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "operationmaintenance"
+      ],
+      "refuted": false
+    },
+    "polar_template|operationmaintenance|Maintenance cost per operating hour": {
+      "id": 49,
+      "knowledge": "Maintenance cost per operating hour",
+      "description": "Maintenance cost in US dollars divided by total equipment operation hours.",
+      "definition": "json_extract(costmetrics, '$.maintenance_usd') / operationhours",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "operationmaintenance"
+      ],
+      "refuted": false
+    },
+    "polar_template|operationmaintenance|Maintenance cycle count": {
+      "id": 50,
+      "knowledge": "Maintenance cycle count",
+      "description": "Total operation hours divided by the scheduled maintenance cycle length.",
+      "definition": "operationhours / maintenancecyclehours",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "operationmaintenance"
+      ],
+      "refuted": false
+    },
+    "polar_template|operationmaintenance|Repair cost share": {
+      "id": 51,
+      "knowledge": "Repair cost share",
+      "description": "Repair cost as a percentage of total maintenance cost.",
+      "definition": "json_extract(costmetrics, '$.repair_usd') / (json_extract(costmetrics, '$.repair_usd') + json_extract(costmetrics, '$.operating_usd') + json_extract(costmetrics, '$.maintenance_usd')) * 100",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        48
+      ],
+      "tables": [
+        "operationmaintenance"
+      ],
+      "refuted": false
+    },
+    "polar_template|operationmaintenance|Active equipment": {
+      "id": 52,
+      "knowledge": "Active equipment",
+      "description": "Equipment whose current operational status is Active. Selects 20% of rows.",
+      "definition": "TRIM(operationalstatus) = 'Active'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "operationmaintenance"
+      ],
+      "refuted": false
+    },
+    "polar_template|operationmaintenance|Failed inspection": {
+      "id": 53,
+      "knowledge": "Failed inspection",
+      "description": "Equipment whose latest inspection result is Failed. Selects 34% of rows.",
+      "definition": "TRIM(inspectionstatus) = 'Failed'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "operationmaintenance"
+      ],
+      "refuted": false
+    },
+    "polar_template|operationmaintenance|Valid crew certification": {
+      "id": 54,
+      "knowledge": "Valid crew certification",
+      "description": "Equipment whose crew certification status is Valid. Selects 31% of rows.",
+      "definition": "TRIM(crewcertificationstatus) = 'Valid'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "operationmaintenance"
+      ],
+      "refuted": false
+    },
+    "polar_template|operationmaintenance|Non-compliant equipment": {
+      "id": 55,
+      "knowledge": "Non-compliant equipment",
+      "description": "Equipment whose compliance status is Non-compliant. Selects 33% of rows.",
+      "definition": "TRIM(compliancestatus) = 'Non-compliant'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "operationmaintenance"
+      ],
+      "refuted": false
+    },
+    "polar_template|transmission|Transmission fluids reference matches maintenance reference": {
+      "id": 56,
+      "knowledge": "Transmission fluids reference matches maintenance reference",
+      "description": "The transmission engine fluids reference ID equals the transmission operation/maintenance reference ID.",
+      "definition": "transengfluidsref = transopmaintref",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "transmission"
+      ],
+      "refuted": false
+    },
+    "polar_template|transmission|Transmission equipment reference code prefix": {
+      "id": 57,
+      "knowledge": "Transmission equipment reference code prefix",
+      "description": "Transmission equipment reference codes begin with the letters PE.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "transmission"
+      ],
+      "refuted": false
+    },
+    "polar_template|transmission|Transmission registry identifier range": {
+      "id": 58,
+      "knowledge": "Transmission registry identifier range",
+      "description": "Transmission registry identifiers are between 1 and 10. Selects 1% of rows.",
+      "definition": "transregistry >= 1 AND transregistry <= 10",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "transmission"
+      ],
+      "refuted": false
+    },
+    "polar_template|transmission|Transmission gear position range": {
+      "id": 59,
+      "knowledge": "Transmission gear position range",
+      "description": "Transmission gear positions are between 1 and 10.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "transmission"
+      ],
+      "refuted": false
+    },
+    "polar_template|transmission|Transmission operation/maintenance reference range": {
+      "id": 60,
+      "knowledge": "Transmission operation/maintenance reference range",
+      "description": "Transmission operation/maintenance reference IDs are between 991 and 1000. Selects 1% of rows.",
+      "definition": "transopmaintref >= 991 AND transopmaintref <= 1000",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "transmission"
+      ],
+      "refuted": false
+    },
+    "polar_template|cabinenvironment|Carbon dioxide concentration (CO2)": {
+      "id": 61,
+      "knowledge": "Carbon dioxide concentration (CO2)",
+      "description": "CO2 concentration in parts per million from the cabin climate JSON object.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "cabinenvironment"
+      ],
+      "refuted": false
+    },
+    "polar_template|cabinenvironment|Oxygen concentration (O2)": {
+      "id": 62,
+      "knowledge": "Oxygen concentration (O2)",
+      "description": "Oxygen concentration in percent from the cabin climate JSON object.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "cabinenvironment"
+      ],
+      "refuted": false
+    },
+    "polar_template|cabinenvironment|Cabin air pressure": {
+      "id": 63,
+      "knowledge": "Cabin air pressure",
+      "description": "Cabin air pressure in kilopascals from the cabin climate JSON object.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "cabinenvironment"
+      ],
+      "refuted": false
+    },
+    "polar_template|cabinenvironment|Cabin air temperature": {
+      "id": 64,
+      "knowledge": "Cabin air temperature",
+      "description": "Cabin air temperature in Celsius from the cabin climate JSON object.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "cabinenvironment"
+      ],
+      "refuted": false
+    },
+    "polar_template|cabinenvironment|Cabin humidity": {
+      "id": 65,
+      "knowledge": "Cabin humidity",
+      "description": "Cabin humidity in percent from the cabin climate JSON object.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "cabinenvironment"
+      ],
+      "refuted": false
+    },
+    "polar_template|cabinenvironment|Air quality index (AQI)": {
+      "id": 66,
+      "knowledge": "Air quality index (AQI)",
+      "description": "Air quality index value from the cabin climate JSON object.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "cabinenvironment"
+      ],
+      "refuted": false
+    },
+    "polar_template|cabinenvironment|Window closed": {
+      "id": 67,
+      "knowledge": "Window closed",
+      "description": "Cabin window is in the closed position. Selects 35% of rows.",
+      "definition": "TRIM(windowstatus) = 'Closed'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "cabinenvironment"
+      ],
+      "refuted": false
+    },
+    "polar_template|cabinenvironment|Door locked": {
+      "id": 68,
+      "knowledge": "Door locked",
+      "description": "Cabin door is in the locked state. Selects 35% of rows.",
+      "definition": "TRIM(doorstatus) = 'Locked'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "cabinenvironment"
+      ],
+      "refuted": false
+    },
+    "polar_template|cabinenvironment|Hatch locked": {
+      "id": 69,
+      "knowledge": "Hatch locked",
+      "description": "Cabin hatch is in the locked state. Selects 33% of rows.",
+      "definition": "TRIM(hatchstatus) = 'Locked'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "cabinenvironment"
+      ],
+      "refuted": false
+    },
+    "polar_template|cabinenvironment|Cabin sealed": {
+      "id": 70,
+      "knowledge": "Cabin sealed",
+      "description": "Cabin is sealed when the window is closed and both door and hatch are locked. Selects 5% of rows.",
+      "definition": "(TRIM(windowstatus) = 'Closed') AND (TRIM(doorstatus) = 'Locked') AND (TRIM(hatchstatus) = 'Locked')",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        67,
+        68,
+        69
+      ],
+      "tables": [
+        "cabinenvironment"
+      ],
+      "refuted": false
+    },
+    "polar_template|location|Station number": {
+      "id": 71,
+      "knowledge": "Station number",
+      "description": "Numeric suffix parsed from a Station- identifier.",
+      "definition": "CAST(SUBSTR(TRIM(stationname), 9) AS INTEGER)",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "location"
+      ],
+      "refuted": false
+    },
+    "polar_template|location|Location reference code format": {
+      "id": 72,
+      "knowledge": "Location reference code format",
+      "description": "Location reference codes are eight characters and begin with PE.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "location"
+      ],
+      "refuted": false
+    },
+    "polar_template|location|Arctic location": {
+      "id": 73,
+      "knowledge": "Arctic location",
+      "description": "A location record classified as Arctic. Selects 51% of rows.",
+      "definition": "TRIM(locationtype) = 'Arctic'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "location"
+      ],
+      "refuted": false
+    },
+    "polar_template|location|Antarctic location": {
+      "id": 74,
+      "knowledge": "Antarctic location",
+      "description": "A location record classified as Antarctic. Selects 49% of rows.",
+      "definition": "TRIM(locationtype) = 'Antarctic'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "location"
+      ],
+      "refuted": false
+    },
+    "polar_template|location|High altitude location": {
+      "id": 75,
+      "knowledge": "High altitude location",
+      "description": "Location with altitude above 2000 meters. Selects 48% of rows.",
+      "definition": "altitudem > 2000",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "location"
+      ],
+      "refuted": false
+    },
+    "polar_template|thermalsolarwindandgrid|Thermal comm ref ID": {
+      "id": 76,
+      "knowledge": "Thermal comm ref ID",
+      "description": "Integer comm ref ID.",
+      "definition": "thermalcommref = thermalpowerref",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "thermalsolarwindandgrid"
+      ],
+      "refuted": false
+    },
+    "polar_template|thermalsolarwindandgrid|Thermal registry ID": {
+      "id": 77,
+      "knowledge": "Thermal registry ID",
+      "description": "Integer ID for thermal registry.",
+      "definition": "thermalregistry != 1001 - thermalcommref",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "thermalsolarwindandgrid"
+      ],
+      "refuted": true
+    },
+    "polar_template|thermalsolarwindandgrid|Thermal power ref ID": {
+      "id": 78,
+      "knowledge": "Thermal power ref ID",
+      "description": "Integer thermal power ref ID.",
+      "definition": "thermalpowerref != 1001 - thermalregistry",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "thermalsolarwindandgrid"
+      ],
+      "refuted": true
+    },
+    "polar_template|thermalsolarwindandgrid|Critical thermal imaging status": {
+      "id": 80,
+      "knowledge": "Critical thermal imaging status",
+      "description": "Thermal image status indicating a critical condition. Selects 33% of rows.",
+      "definition": "TRIM(thermalimagingstatus) = 'Critical'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "thermalsolarwindandgrid"
+      ],
+      "refuted": false
+    },
+    "polar_template|thermalsolarwindandgrid|Poor insulation status": {
+      "id": 81,
+      "knowledge": "Poor insulation status",
+      "description": "Insulation grade of Poor. Selects 34% of rows.",
+      "definition": "TRIM(insulationstatus) = 'Poor'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "thermalsolarwindandgrid"
+      ],
+      "refuted": false
+    },
+    "polar_template|thermalsolarwindandgrid|Solar panel fault": {
+      "id": 82,
+      "knowledge": "Solar panel fault",
+      "description": "Solar panel status indicating a fault. Selects 35% of rows.",
+      "definition": "TRIM(solarpanelstatus) = 'Fault'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "thermalsolarwindandgrid"
+      ],
+      "refuted": false
+    },
+    "polar_template|thermalsolarwindandgrid|Wind turbine fault": {
+      "id": 83,
+      "knowledge": "Wind turbine fault",
+      "description": "Wind turbine status indicating a fault. Selects 34% of rows.",
+      "definition": "TRIM(windturbinestatus) = 'Fault'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "thermalsolarwindandgrid"
+      ],
+      "refuted": false
+    },
+    "polar_template|thermalsolarwindandgrid|Grid island mode": {
+      "id": 84,
+      "knowledge": "Grid island mode",
+      "description": "Grid status indicating operation in island mode. Selects 33% of rows.",
+      "definition": "TRIM(powergridstatus) = 'Island Mode'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "thermalsolarwindandgrid"
+      ],
+      "refuted": false
+    },
+    "polar_template|thermalsolarwindandgrid|Backup power fault": {
+      "id": 85,
+      "knowledge": "Backup power fault",
+      "description": "Backup status indicating a fault. Selects 37% of rows.",
+      "definition": "TRIM(backuppowerstatus) = 'Fault'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "thermalsolarwindandgrid"
+      ],
+      "refuted": false
+    },
+    "polar_template|thermalsolarwindandgrid|Fuel cell fault": {
+      "id": 86,
+      "knowledge": "Fuel cell fault",
+      "description": "Fuel cell status indicating a fault. Selects 32% of rows.",
+      "definition": "TRIM(fuelcellstatus) = 'Fault'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "thermalsolarwindandgrid"
+      ],
+      "refuted": false
+    },
+    "polar_template|weatherandstructure|snowloadkgm2": {
+      "id": 87,
+      "knowledge": "snowloadkgm2",
+      "description": "Snow load in kg/m2 approximated as 10 kg/m2 for each centimeter of snow depth.",
+      "definition": "snowloadkgm2 != snowdepthcm * 10",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "weatherandstructure"
+      ],
+      "refuted": true
+    },
+    "polar_template|weatherandstructure|structuralloadpercent": {
+      "id": 88,
+      "knowledge": "structuralloadpercent",
+      "description": "Structural load as a percentage of a 1000 kg/m2 rated capacity.",
+      "definition": "structuralloadpercent != (snowloadkgm2 * 100) / 1000",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        87
+      ],
+      "tables": [
+        "weatherandstructure"
+      ],
+      "refuted": true
+    },
+    "polar_template|weatherandstructure|weatherlocref": {
+      "id": 89,
+      "knowledge": "weatherlocref",
+      "description": "Location reference ID derived from the weather record ID.",
+      "definition": "weatherlocref != 1001 - weatherregistry",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        91
+      ],
+      "tables": [
+        "weatherandstructure"
+      ],
+      "refuted": true
+    },
+    "polar_template|weatherandstructure|weatheropmaintref": {
+      "id": 90,
+      "knowledge": "weatheropmaintref",
+      "description": "Operations and maintenance reference ID equal to the location reference ID.",
+      "definition": "weatheropmaintref = weatherlocref",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        89
+      ],
+      "tables": [
+        "weatherandstructure"
+      ],
+      "refuted": false
+    },
+    "polar_template|weatherandstructure|weatherregistry": {
+      "id": 91,
+      "knowledge": "weatherregistry",
+      "description": "Weather record ID derived from the location reference ID.",
+      "definition": "weatherregistry != 1001 - weatherlocref",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        89
+      ],
+      "tables": [
+        "weatherandstructure"
+      ],
+      "refuted": true
+    },
+    "polar_template|weatherandstructure|precipitationtype None": {
+      "id": 92,
+      "knowledge": "precipitationtype None",
+      "description": "No-precipitation cohort when the precipitation rate is zero.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "weatherandstructure"
+      ],
+      "refuted": false
+    },
+    "polar_template|weatherandstructure|precipitationtype Snow": {
+      "id": 93,
+      "knowledge": "precipitationtype Snow",
+      "description": "Snow cohort at freezing temperature with falling precipitation. Selects 11% of rows.",
+      "definition": "precipitationtype = 'Snow' AND externaltemperaturec <= 0 AND precipitationratemmh > 0",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "weatherandstructure"
+      ],
+      "refuted": false
+    },
+    "polar_template|weatherandstructure|precipitationtype Ice": {
+      "id": 94,
+      "knowledge": "precipitationtype Ice",
+      "description": "Ice cohort when ice thickness is present with falling precipitation. Selects 24% of rows.",
+      "definition": "precipitationtype = 'Ice' AND icethicknesscm > 0 AND precipitationratemmh > 0",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "weatherandstructure"
+      ],
+      "refuted": false
+    },
+    "polar_template|weatherandstructure|precipitationtype Blowing Snow": {
+      "id": 95,
+      "knowledge": "precipitationtype Blowing Snow",
+      "description": "Blowing-snow cohort when strong wind occurs over an existing snowpack. Selects 13% of rows.",
+      "definition": "precipitationtype = 'Blowing Snow' AND windspeedms > 30 AND snowdepthcm > 0",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "weatherandstructure"
+      ],
+      "refuted": false
+    },
+    "polar_template|equipment|Shelter equipment": {
+      "id": 96,
+      "knowledge": "Shelter equipment",
+      "description": "Equipment categorized as Shelter. Selects 19% of rows.",
+      "definition": "TRIM(equipmenttype) = 'Shelter'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "equipment"
+      ],
+      "refuted": false
+    },
+    "polar_template|equipment|Scientific equipment": {
+      "id": 97,
+      "knowledge": "Scientific equipment",
+      "description": "Equipment categorized as Scientific. Selects 17% of rows.",
+      "definition": "TRIM(equipmenttype) = 'Scientific'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "equipment"
+      ],
+      "refuted": false
+    },
+    "polar_template|equipment|Vehicle equipment": {
+      "id": 98,
+      "knowledge": "Vehicle equipment",
+      "description": "Equipment categorized as Vehicle. Selects 17% of rows.",
+      "definition": "TRIM(equipmenttype) = 'Vehicle'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "equipment"
+      ],
+      "refuted": false
+    },
+    "polar_template|equipment|Long service life equipment": {
+      "id": 99,
+      "knowledge": "Long service life equipment",
+      "description": "Equipment with more than 10 years of service life. Selects 48% of rows.",
+      "definition": "servicelifeyears > 10",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "equipment"
+      ],
+      "refuted": false
+    },
+    "polar_template|equipment|Martin Ltd equipment": {
+      "id": 100,
+      "knowledge": "Martin Ltd equipment",
+      "description": "Equipment manufactured by Martin Ltd.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "equipment"
+      ],
+      "refuted": false
+    },
+    "polar_template|waterandwaste|high water pressure": {
+      "id": 101,
+      "knowledge": "high water pressure",
+      "description": "Water pressure above 990 kilopascals. Selects 1% of rows.",
+      "definition": "waterpressurekpa > 990.0",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "waterandwaste"
+      ],
+      "refuted": false
+    },
+    "polar_template|waterandwaste|low water pressure": {
+      "id": 102,
+      "knowledge": "low water pressure",
+      "description": "Water pressure below 900 kilopascals. Selects 90% of rows.",
+      "definition": "waterpressurekpa < 900.0",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "waterandwaste"
+      ],
+      "refuted": false
+    },
+    "polar_template|waterandwaste|high water temperature": {
+      "id": 103,
+      "knowledge": "high water temperature",
+      "description": "Water temperature above 95 degrees Celsius. Selects 5% of rows.",
+      "definition": "watertemperaturec > 95.0",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "waterandwaste"
+      ],
+      "refuted": false
+    },
+    "polar_template|waterandwaste|low water temperature": {
+      "id": 104,
+      "knowledge": "low water temperature",
+      "description": "Water temperature below 75 degrees Celsius. Selects 79% of rows.",
+      "definition": "watertemperaturec < 75.0",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "waterandwaste"
+      ],
+      "refuted": false
+    },
+    "polar_template|waterandwaste|high water flow": {
+      "id": 105,
+      "knowledge": "high water flow",
+      "description": "Water flow rate above 996 liters per minute.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "waterandwaste"
+      ],
+      "refuted": false
+    },
+    "polar_template|chassisandvehicle,powerbattery|Power-to-load ratio (PLR)": {
+      "id": 106,
+      "knowledge": "Power-to-load ratio (PLR)",
+      "description": "Battery power draw per kilogram of vehicle load.",
+      "definition": "powerbattery.powerconsumptionw / chassisandvehicle.vehicleloadkg",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "chassisandvehicle",
+        "powerbattery"
+      ],
+      "refuted": false
+    },
+    "polar_template|chassisandvehicle,engineandfluids|Engine speed per vehicle speed (ESVS)": {
+      "id": 107,
+      "knowledge": "Engine speed per vehicle speed (ESVS)",
+      "description": "Engine revolutions per kilometer-per-hour of vehicle ground speed.",
+      "definition": "engineandfluids.enginespeedrpm / chassisandvehicle.vehiclespeedkmh",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "chassisandvehicle",
+        "engineandfluids"
+      ],
+      "refuted": false
+    },
+    "polar_template|chassisandvehicle,engineandfluids|Fuel consumption per kilometer (FCK)": {
+      "id": 108,
+      "knowledge": "Fuel consumption per kilometer (FCK)",
+      "description": "Fuel burned per kilometer traveled, derived from flow and speed.",
+      "definition": "engineandfluids.json_extract(fluidmetrics, '$.fuel.consumption_lh') / chassisandvehicle.vehiclespeedkmh",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "chassisandvehicle",
+        "engineandfluids"
+      ],
+      "refuted": false
+    },
+    "polar_template|engineandfluids,transmission|Transmission-engine temperature differential (TETD)": {
+      "id": 109,
+      "knowledge": "Transmission-engine temperature differential (TETD)",
+      "description": "Difference between transmission temperature and engine temperature.",
+      "definition": "transmission.transmissiontemperaturec - engineandfluids.enginetemperaturec",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "engineandfluids",
+        "transmission"
+      ],
+      "refuted": false
+    },
+    "polar_template|powerbattery,thermalsolarwindandgrid|Generation-to-load power ratio (GLR)": {
+      "id": 110,
+      "knowledge": "Generation-to-load power ratio (GLR)",
+      "description": "Total wind, solar, and fuel-cell generation per watt of battery consumption.",
+      "definition": "(thermalsolarwindandgrid.json_extract(renewablemetrics, '$.wind.output_w') + thermalsolarwindandgrid.json_extract(renewablemetrics, '$.solar.output_w') + thermalsolarwindandgrid.fuelcelloutputw) / powerbattery.powerconsumptionw",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "powerbattery",
+        "thermalsolarwindandgrid"
+      ],
+      "refuted": false
+    },
+    "polar_template|equipment,operationmaintenance|Maintenance cost per service-life year (MCSY)": {
+      "id": 111,
+      "knowledge": "Maintenance cost per service-life year (MCSY)",
+      "description": "Total maintenance cost normalized by the equipment service life.",
+      "definition": "(operationmaintenance.json_extract(costmetrics, '$.repair_usd') + operationmaintenance.json_extract(costmetrics, '$.operating_usd') + operationmaintenance.json_extract(costmetrics, '$.maintenance_usd')) / equipment.servicelifeyears",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        48
+      ],
+      "tables": [
+        "equipment",
+        "operationmaintenance"
+      ],
+      "refuted": false
+    },
+    "polar_template|engineandfluids,operationmaintenance|Engine hours per maintenance cycle (EHMC)": {
+      "id": 112,
+      "knowledge": "Engine hours per maintenance cycle (EHMC)",
+      "description": "Engine runtime divided by the scheduled maintenance cycle length.",
+      "definition": "engineandfluids.enginehours / operationmaintenance.maintenancecyclehours",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "engineandfluids",
+        "operationmaintenance"
+      ],
+      "refuted": false
+    },
+    "polar_template|location,thermalsolarwindandgrid|Solar panel fault at Antarctic station (SPFAS)": {
+      "id": 113,
+      "knowledge": "Solar panel fault at Antarctic station (SPFAS)",
+      "description": "Solar panel fault occurring on equipment located in Antarctica.",
+      "definition": "TRIM(thermalsolarwindandgrid.solarpanelstatus) = 'Fault' AND TRIM(location.locationtype) = 'Antarctic'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        74,
+        82
+      ],
+      "tables": [
+        "location",
+        "thermalsolarwindandgrid"
+      ],
+      "refuted": false
+    },
+    "polar_template|location,thermalsolarwindandgrid|Wind turbine fault at high altitude (WTFHA)": {
+      "id": 114,
+      "knowledge": "Wind turbine fault at high altitude (WTFHA)",
+      "description": "Wind turbine fault recorded on equipment located above 3000 meters.",
+      "definition": "TRIM(thermalsolarwindandgrid.windturbinestatus) = 'Fault' AND location.altitudem > 3000",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        83
+      ],
+      "tables": [
+        "location",
+        "thermalsolarwindandgrid"
+      ],
+      "refuted": false
+    },
+    "polar_template|communication,scientific|Active logging with high latency": {
+      "id": 115,
+      "knowledge": "Active logging with high latency",
+      "description": "Active data logging on equipment with latency above 1000 milliseconds.",
+      "definition": "TRIM(scientific.dataloggingstatus) = 'Active' AND communication.json_extract(signalmetrics, '$.latency_ms') > 1000",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        1,
+        22
+      ],
+      "tables": [
+        "communication",
+        "scientific"
+      ],
+      "refuted": false
+    },
+    "polar_template|equipment,operationmaintenance|Failed communication equipment inspection": {
+      "id": 116,
+      "knowledge": "Failed communication equipment inspection",
+      "description": "Communication equipment whose inspection result is Failed.",
+      "definition": "TRIM(operationmaintenance.inspectionstatus) = 'Failed' AND TRIM(equipment.equipmenttype) = 'Communication'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        53
+      ],
+      "tables": [
+        "equipment",
+        "operationmaintenance"
+      ],
+      "refuted": false
+    },
+    "polar_template|engineandfluids,operationmaintenance|Non-compliant equipment with high engine temperature": {
+      "id": 117,
+      "knowledge": "Non-compliant equipment with high engine temperature",
+      "description": "Non-compliant equipment with engine temperature above 130 degrees Celsius.",
+      "definition": "TRIM(operationmaintenance.compliancestatus) = 'Non-compliant' AND engineandfluids.enginetemperaturec > 130",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        55
+      ],
+      "tables": [
+        "engineandfluids",
+        "operationmaintenance"
+      ],
+      "refuted": false
+    },
+    "polar_template|communication,operationmaintenance|Active equipment with antenna error": {
+      "id": 118,
+      "knowledge": "Active equipment with antenna error",
+      "description": "Active equipment whose communication antenna is in Error state.",
+      "definition": "TRIM(operationmaintenance.operationalstatus) = 'Active' AND TRIM(communication.antennastatus) = 'Error'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        52
+      ],
+      "tables": [
+        "communication",
+        "operationmaintenance"
+      ],
+      "refuted": false
+    },
+    "polar_template|location,weatherandstructure|Arctic high snow load": {
+      "id": 119,
+      "knowledge": "Arctic high snow load",
+      "description": "Arctic-located weather record with snow load above 800 kilograms per square meter.",
+      "definition": "TRIM(location.locationtype) = 'Arctic' AND weatherandstructure.snowloadkgm2 > 800",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        73,
+        87
+      ],
+      "tables": [
+        "location",
+        "weatherandstructure"
+      ],
+      "refuted": false
+    }
+  },
+  "meta": {
+    "scientific": {
+      "profiled_at": "2026-08-30T14:12:56.823792+00:00"
+    },
+    "powerbattery": {
+      "profiled_at": "2026-08-30T14:12:56.823792+00:00"
+    },
+    "engineandfluids,transmission": {
+      "profiled_at": "2026-08-30T14:12:56.823792+00:00"
+    },
+    "operationmaintenance": {
+      "profiled_at": "2026-08-30T14:12:56.823792+00:00"
+    },
+    "transmission": {
+      "profiled_at": "2026-08-30T14:12:56.823792+00:00"
+    },
+    "equipment,operationmaintenance": {
+      "profiled_at": "2026-08-30T14:12:56.823792+00:00"
+    },
+    "thermalsolarwindandgrid": {
+      "profiled_at": "2026-08-30T14:12:56.823792+00:00"
+    },
+    "weatherandstructure": {
+      "profiled_at": "2026-08-30T14:12:56.823792+00:00"
+    },
+    "communication": {
+      "profiled_at": "2026-08-30T14:12:56.823792+00:00"
+    },
+    "equipment": {
+      "profiled_at": "2026-08-30T14:12:56.823792+00:00"
+    },
+    "location,thermalsolarwindandgrid": {
+      "profiled_at": "2026-08-30T14:12:56.823792+00:00"
+    },
+    "waterandwaste": {
+      "profiled_at": "2026-08-30T14:12:56.823792+00:00"
+    },
+    "communication,operationmaintenance": {
+      "profiled_at": "2026-08-30T14:12:56.823792+00:00"
+    },
+    "chassisandvehicle": {
+      "profiled_at": "2026-08-30T14:12:56.823792+00:00"
+    },
+    "chassisandvehicle,powerbattery": {
+      "profiled_at": "2026-08-30T14:12:56.823792+00:00"
+    },
+    "engineandfluids": {
+      "profiled_at": "2026-08-30T14:12:56.823792+00:00"
+    },
+    "lightingandsafety": {
+      "profiled_at": "2026-08-30T14:12:56.823792+00:00"
+    },
+    "location,weatherandstructure": {
+      "profiled_at": "2026-08-30T14:12:56.823792+00:00"
+    },
+    "chassisandvehicle,engineandfluids": {
+      "profiled_at": "2026-08-30T14:12:56.823792+00:00"
+    },
+    "cabinenvironment": {
+      "profiled_at": "2026-08-30T14:12:56.823792+00:00"
+    },
+    "location": {
+      "profiled_at": "2026-08-30T14:12:56.823792+00:00"
+    },
+    "powerbattery,thermalsolarwindandgrid": {
+      "profiled_at": "2026-08-30T14:12:56.823792+00:00"
+    },
+    "engineandfluids,operationmaintenance": {
+      "profiled_at": "2026-08-30T14:12:56.823792+00:00"
+    },
+    "communication,scientific": {
+      "profiled_at": "2026-08-30T14:12:56.823792+00:00"
+    }
+  }
+}

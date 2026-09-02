@@ -1,0 +1,8178 @@
+{
+  "version": 1,
+  "profiled_at": "2026-08-30T11:31:43.686876+00:00",
+  "columns": {
+    "disaster_template|beneficiariesandassessments|beneregistry": {
+      "table_name": "beneficiariesandassessments",
+      "column_name": "beneregistry",
+      "column_type": "TEXT(20)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "BENE_0332",
+      "max_value": "BENE_ZYH9",
+      "top_k_values": [
+        {
+          "value": "BENE_0332",
+          "count": 1
+        },
+        {
+          "value": "BENE_03K1",
+          "count": 1
+        },
+        {
+          "value": "BENE_03ZG",
+          "count": 1
+        },
+        {
+          "value": "BENE_04TG",
+          "count": 1
+        },
+        {
+          "value": "BENE_07MX",
+          "count": 1
+        },
+        {
+          "value": "BENE_0BFR",
+          "count": 1
+        },
+        {
+          "value": "BENE_0CK3",
+          "count": 1
+        },
+        {
+          "value": "BENE_0E6Q",
+          "count": 1
+        },
+        {
+          "value": "BENE_0EM6",
+          "count": 1
+        },
+        {
+          "value": "BENE_0KCT",
+          "count": 1
+        }
+      ],
+      "min_length": 9,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAA_AAAA",
+        "AAAA_AAAD",
+        "AAAA_ADAA",
+        "AAAA_AADA",
+        "AAAA_DAAA"
+      ]
+    },
+    "disaster_template|beneficiariesandassessments|benedistref": {
+      "table_name": "beneficiariesandassessments",
+      "column_name": "benedistref",
+      "column_type": "TEXT(20)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "DIST_012PI",
+      "max_value": "DIST_ZZ7QZ",
+      "top_k_values": [
+        {
+          "value": "DIST_ZZ7QZ",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZYLZ0",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZY9GU",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZY4O2",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZXYR5",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZW4K1",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZW0SH",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZUZIO",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZU4YG",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZSWB9",
+          "count": 1
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAA_AAAAA",
+        "AAAA_AADAA",
+        "AAAA_ADAAA",
+        "AAAA_AAAAD",
+        "AAAA_DAAAA"
+      ]
+    },
+    "disaster_template|beneficiariesandassessments|beneopsref": {
+      "table_name": "beneficiariesandassessments",
+      "column_name": "beneopsref",
+      "column_type": "TEXT(20)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "OPS_00DPR",
+      "max_value": "OPS_ZZ8DH",
+      "top_k_values": [
+        {
+          "value": "OPS_ZZ8DH",
+          "count": 1
+        },
+        {
+          "value": "OPS_ZY6NC",
+          "count": 1
+        },
+        {
+          "value": "OPS_ZX9YX",
+          "count": 1
+        },
+        {
+          "value": "OPS_ZW2M6",
+          "count": 1
+        },
+        {
+          "value": "OPS_ZVIL9",
+          "count": 1
+        },
+        {
+          "value": "OPS_ZTREC",
+          "count": 1
+        },
+        {
+          "value": "OPS_ZS5UK",
+          "count": 1
+        },
+        {
+          "value": "OPS_ZQ0VL",
+          "count": 1
+        },
+        {
+          "value": "OPS_ZON9J",
+          "count": 1
+        },
+        {
+          "value": "OPS_ZOJL1",
+          "count": 1
+        }
+      ],
+      "min_length": 9,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAA_AAAAA",
+        "AAA_AAADA",
+        "AAA_AADAA",
+        "AAA_DAAAA",
+        "AAA_AAAAD"
+      ]
+    },
+    "disaster_template|beneficiariesandassessments|beneregister": {
+      "table_name": "beneficiariesandassessments",
+      "column_name": "beneregister",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 3,
+      "min_value": "Complete",
+      "max_value": "Pending",
+      "top_k_values": [
+        {
+          "value": "Partial",
+          "count": 343
+        },
+        {
+          "value": "Complete",
+          "count": 336
+        },
+        {
+          "value": "Pending",
+          "count": 320
+        }
+      ],
+      "min_length": 7,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "disaster_template|beneficiariesandassessments|vulnerabilityreview": {
+      "table_name": "beneficiariesandassessments",
+      "column_name": "vulnerabilityreview",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 3,
+      "min_value": "Complete",
+      "max_value": "Pending",
+      "top_k_values": [
+        {
+          "value": "Complete",
+          "count": 352
+        },
+        {
+          "value": "Pending",
+          "count": 332
+        },
+        {
+          "value": "In Progress",
+          "count": 315
+        }
+      ],
+      "min_length": 7,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAAAAA",
+        "AA AAAAAAAA"
+      ]
+    },
+    "disaster_template|beneficiariesandassessments|needsassessstatus": {
+      "table_name": "beneficiariesandassessments",
+      "column_name": "needsassessstatus",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 3,
+      "min_value": "Due",
+      "max_value": "Updated",
+      "top_k_values": [
+        {
+          "value": "Due",
+          "count": 345
+        },
+        {
+          "value": "Overdue",
+          "count": 328
+        },
+        {
+          "value": "Updated",
+          "count": 326
+        }
+      ],
+      "min_length": 3,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAA"
+      ]
+    },
+    "disaster_template|beneficiariesandassessments|distequityidx": {
+      "table_name": "beneficiariesandassessments",
+      "column_name": "distequityidx",
+      "column_type": "REAL",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 51,
+      "min_value": "0.5",
+      "max_value": "1.0",
+      "top_k_values": [
+        {
+          "value": "0.75",
+          "count": 33
+        },
+        {
+          "value": "0.9",
+          "count": 32
+        },
+        {
+          "value": "0.82",
+          "count": 32
+        },
+        {
+          "value": "0.59",
+          "count": 29
+        },
+        {
+          "value": "0.61",
+          "count": 26
+        },
+        {
+          "value": "0.67",
+          "count": 25
+        },
+        {
+          "value": "0.64",
+          "count": 25
+        },
+        {
+          "value": "0.98",
+          "count": 24
+        },
+        {
+          "value": "0.96",
+          "count": 24
+        },
+        {
+          "value": "0.71",
+          "count": 24
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "disaster_template|beneficiariesandassessments|benefeedbackscore": {
+      "table_name": "beneficiariesandassessments",
+      "column_name": "benefeedbackscore",
+      "column_type": "REAL",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 41,
+      "min_value": "1.0",
+      "max_value": "5.0",
+      "top_k_values": [
+        {
+          "value": "4.6",
+          "count": 34
+        },
+        {
+          "value": "4.3",
+          "count": 33
+        },
+        {
+          "value": "4.7",
+          "count": 32
+        },
+        {
+          "value": "2.7",
+          "count": 30
+        },
+        {
+          "value": "2.4",
+          "count": 30
+        },
+        {
+          "value": "1.6",
+          "count": 30
+        },
+        {
+          "value": "2.8",
+          "count": 29
+        },
+        {
+          "value": "2.3",
+          "count": 29
+        },
+        {
+          "value": "2.2",
+          "count": 28
+        },
+        {
+          "value": "1.1",
+          "count": 28
+        }
+      ],
+      "min_length": 3,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D.D"
+      ]
+    },
+    "disaster_template|beneficiariesandassessments|commengagelvl": {
+      "table_name": "beneficiariesandassessments",
+      "column_name": "commengagelvl",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 3,
+      "min_value": "High",
+      "max_value": "Medium",
+      "top_k_values": [
+        {
+          "value": "High",
+          "count": 360
+        },
+        {
+          "value": "Low",
+          "count": 328
+        },
+        {
+          "value": "Medium",
+          "count": 311
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAA",
+        "AAAAAA"
+      ]
+    },
+    "disaster_template|beneficiariesandassessments|localcapacitygrowth": {
+      "table_name": "beneficiariesandassessments",
+      "column_name": "localcapacitygrowth",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 2,
+      "min_value": "Active",
+      "max_value": "Limited",
+      "top_k_values": [
+        {
+          "value": "Limited",
+          "count": 656
+        },
+        {
+          "value": "Active",
+          "count": 343
+        }
+      ],
+      "min_length": 6,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAA"
+      ]
+    },
+    "disaster_template|coordinationandevaluation|coordevalregistry": {
+      "table_name": "coordinationandevaluation",
+      "column_name": "coordevalregistry",
+      "column_type": "TEXT(20)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "COORD_038J",
+      "max_value": "COORD_ZZHV",
+      "top_k_values": [
+        {
+          "value": "COORD_038J",
+          "count": 1
+        },
+        {
+          "value": "COORD_04JE",
+          "count": 1
+        },
+        {
+          "value": "COORD_062T",
+          "count": 1
+        },
+        {
+          "value": "COORD_06FZ",
+          "count": 1
+        },
+        {
+          "value": "COORD_07HN",
+          "count": 1
+        },
+        {
+          "value": "COORD_08GG",
+          "count": 1
+        },
+        {
+          "value": "COORD_08P0",
+          "count": 1
+        },
+        {
+          "value": "COORD_08UI",
+          "count": 1
+        },
+        {
+          "value": "COORD_0ACW",
+          "count": 1
+        },
+        {
+          "value": "COORD_0ASW",
+          "count": 1
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAAA_AAAA",
+        "AAAAA_AADA",
+        "AAAAA_DAAA",
+        "AAAAA_ADAA",
+        "AAAAA_AAAD"
+      ]
+    },
+    "disaster_template|coordinationandevaluation|coorddistref": {
+      "table_name": "coordinationandevaluation",
+      "column_name": "coorddistref",
+      "column_type": "TEXT(20)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "DIST_012PI",
+      "max_value": "DIST_ZZ7QZ",
+      "top_k_values": [
+        {
+          "value": "DIST_ZZ7QZ",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZYLZ0",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZY9GU",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZY4O2",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZXYR5",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZW4K1",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZW0SH",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZUZIO",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZU4YG",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZSWB9",
+          "count": 1
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAA_AAAAA",
+        "AAAA_AADAA",
+        "AAAA_ADAAA",
+        "AAAA_AAAAD",
+        "AAAA_DAAAA"
+      ]
+    },
+    "disaster_template|coordinationandevaluation|coordopsref": {
+      "table_name": "coordinationandevaluation",
+      "column_name": "coordopsref",
+      "column_type": "TEXT(20)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "OPS_00DPR",
+      "max_value": "OPS_ZZ8DH",
+      "top_k_values": [
+        {
+          "value": "OPS_ZZ8DH",
+          "count": 1
+        },
+        {
+          "value": "OPS_ZY6NC",
+          "count": 1
+        },
+        {
+          "value": "OPS_ZX9YX",
+          "count": 1
+        },
+        {
+          "value": "OPS_ZW2M6",
+          "count": 1
+        },
+        {
+          "value": "OPS_ZVIL9",
+          "count": 1
+        },
+        {
+          "value": "OPS_ZTREC",
+          "count": 1
+        },
+        {
+          "value": "OPS_ZS5UK",
+          "count": 1
+        },
+        {
+          "value": "OPS_ZQ0VL",
+          "count": 1
+        },
+        {
+          "value": "OPS_ZON9J",
+          "count": 1
+        },
+        {
+          "value": "OPS_ZOJL1",
+          "count": 1
+        }
+      ],
+      "min_length": 9,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAA_AAAAA",
+        "AAA_AAADA",
+        "AAA_AADAA",
+        "AAA_DAAAA",
+        "AAA_AAAAD"
+      ]
+    },
+    "disaster_template|coordinationandevaluation|secincidentcount": {
+      "table_name": "coordinationandevaluation",
+      "column_name": "secincidentcount",
+      "column_type": "INTEGER",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 101,
+      "min_value": "0",
+      "max_value": "99",
+      "top_k_values": [
+        {
+          "value": "79",
+          "count": 18
+        },
+        {
+          "value": "74",
+          "count": 17
+        },
+        {
+          "value": "72",
+          "count": 17
+        },
+        {
+          "value": "61",
+          "count": 16
+        },
+        {
+          "value": "95",
+          "count": 15
+        },
+        {
+          "value": "38",
+          "count": 15
+        },
+        {
+          "value": "67",
+          "count": 14
+        },
+        {
+          "value": "49",
+          "count": 14
+        },
+        {
+          "value": "41",
+          "count": 14
+        },
+        {
+          "value": "28",
+          "count": 14
+        }
+      ],
+      "min_length": 1,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D",
+        "DDD"
+      ]
+    },
+    "disaster_template|coordinationandevaluation|safetyranking": {
+      "table_name": "coordinationandevaluation",
+      "column_name": "safetyranking",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 3,
+      "min_value": "High Risk",
+      "max_value": "Safe",
+      "top_k_values": [
+        {
+          "value": "Moderate",
+          "count": 355
+        },
+        {
+          "value": "High Risk",
+          "count": 330
+        },
+        {
+          "value": "Safe",
+          "count": 314
+        }
+      ],
+      "min_length": 4,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAA AAAA",
+        "AAAA"
+      ]
+    },
+    "disaster_template|coordinationandevaluation|accesslimitation": {
+      "table_name": "coordinationandevaluation",
+      "column_name": "accesslimitation",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 2,
+      "min_value": "Partial",
+      "max_value": "Severe",
+      "top_k_values": [
+        {
+          "value": "Partial",
+          "count": 658
+        },
+        {
+          "value": "Severe",
+          "count": 341
+        }
+      ],
+      "min_length": 6,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAA"
+      ]
+    },
+    "disaster_template|coordinationandevaluation|coordeffectlvl": {
+      "table_name": "coordinationandevaluation",
+      "column_name": "coordeffectlvl",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 3,
+      "min_value": "High",
+      "max_value": "Medium",
+      "top_k_values": [
+        {
+          "value": "Medium",
+          "count": 351
+        },
+        {
+          "value": "High",
+          "count": 328
+        },
+        {
+          "value": "Low",
+          "count": 320
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AAAA",
+        "AAA"
+      ]
+    },
+    "disaster_template|coordinationandevaluation|partnerorgs": {
+      "table_name": "coordinationandevaluation",
+      "column_name": "partnerorgs",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 46,
+      "min_value": "10",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "9",
+          "count": 30
+        },
+        {
+          "value": "5",
+          "count": 30
+        },
+        {
+          "value": "42",
+          "count": 30
+        },
+        {
+          "value": "40",
+          "count": 30
+        },
+        {
+          "value": "10",
+          "count": 27
+        },
+        {
+          "value": "36",
+          "count": 26
+        },
+        {
+          "value": "15",
+          "count": 26
+        },
+        {
+          "value": "6",
+          "count": 25
+        },
+        {
+          "value": "26",
+          "count": 25
+        },
+        {
+          "value": "24",
+          "count": 25
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D"
+      ]
+    },
+    "disaster_template|coordinationandevaluation|infosharingstate": {
+      "table_name": "coordinationandevaluation",
+      "column_name": "infosharingstate",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 3,
+      "min_value": "Effective",
+      "max_value": "Poor",
+      "top_k_values": [
+        {
+          "value": "Poor",
+          "count": 343
+        },
+        {
+          "value": "Limited",
+          "count": 343
+        },
+        {
+          "value": "Effective",
+          "count": 313
+        }
+      ],
+      "min_length": 4,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAAAAAA",
+        "AAAAAAAAA"
+      ]
+    },
+    "disaster_template|coordinationandevaluation|reportcompliance": {
+      "table_name": "coordinationandevaluation",
+      "column_name": "reportcompliance",
+      "column_type": "REAL",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 292,
+      "min_value": "70.0",
+      "max_value": "99.9",
+      "top_k_values": [
+        {
+          "value": "83.1",
+          "count": 8
+        },
+        {
+          "value": "80.2",
+          "count": 8
+        },
+        {
+          "value": "94.6",
+          "count": 7
+        },
+        {
+          "value": "89.5",
+          "count": 7
+        },
+        {
+          "value": "79.5",
+          "count": 7
+        },
+        {
+          "value": "73.7",
+          "count": 7
+        },
+        {
+          "value": "71.0",
+          "count": 7
+        },
+        {
+          "value": "70.6",
+          "count": 7
+        },
+        {
+          "value": "99.3",
+          "count": 6
+        },
+        {
+          "value": "98.2",
+          "count": 6
+        }
+      ],
+      "min_length": 4,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DD.D"
+      ]
+    },
+    "disaster_template|coordinationandevaluation|dataqualityvalue": {
+      "table_name": "coordinationandevaluation",
+      "column_name": "dataqualityvalue",
+      "column_type": "INTEGER",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 5,
+      "min_value": "1",
+      "max_value": "5",
+      "top_k_values": [
+        {
+          "value": "3",
+          "count": 246
+        },
+        {
+          "value": "4",
+          "count": 240
+        },
+        {
+          "value": "2",
+          "count": 239
+        },
+        {
+          "value": "5",
+          "count": 146
+        },
+        {
+          "value": "1",
+          "count": 128
+        }
+      ],
+      "min_length": 1,
+      "max_length": 1,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D"
+      ]
+    },
+    "disaster_template|coordinationandevaluation|monitoringfreq": {
+      "table_name": "coordinationandevaluation",
+      "column_name": "monitoringfreq",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 3,
+      "min_value": "Daily",
+      "max_value": "Weekly",
+      "top_k_values": [
+        {
+          "value": "Daily",
+          "count": 351
+        },
+        {
+          "value": "Monthly",
+          "count": 340
+        },
+        {
+          "value": "Weekly",
+          "count": 308
+        }
+      ],
+      "min_length": 5,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAA",
+        "AAAAAAA",
+        "AAAAAA"
+      ]
+    },
+    "disaster_template|coordinationandevaluation|evaluationstage": {
+      "table_name": "coordinationandevaluation",
+      "column_name": "evaluationstage",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 3,
+      "min_value": "Current",
+      "max_value": "Overdue",
+      "top_k_values": [
+        {
+          "value": "Current",
+          "count": 344
+        },
+        {
+          "value": "Due",
+          "count": 337
+        },
+        {
+          "value": "Overdue",
+          "count": 318
+        }
+      ],
+      "min_length": 3,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAA"
+      ]
+    },
+    "disaster_template|coordinationandevaluation|lessonslearnedstage": {
+      "table_name": "coordinationandevaluation",
+      "column_name": "lessonslearnedstage",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 3,
+      "min_value": "Documented",
+      "max_value": "Pending",
+      "top_k_values": [
+        {
+          "value": "In Progress",
+          "count": 361
+        },
+        {
+          "value": "Pending",
+          "count": 320
+        },
+        {
+          "value": "Documented",
+          "count": 318
+        }
+      ],
+      "min_length": 7,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AA AAAAAAAA",
+        "AAAAAAA",
+        "AAAAAAAAAA"
+      ]
+    },
+    "disaster_template|coordinationandevaluation|contingencyplanstage": {
+      "table_name": "coordinationandevaluation",
+      "column_name": "contingencyplanstage",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 3,
+      "min_value": "Due",
+      "max_value": "Updated",
+      "top_k_values": [
+        {
+          "value": "Due",
+          "count": 353
+        },
+        {
+          "value": "Overdue",
+          "count": 331
+        },
+        {
+          "value": "Updated",
+          "count": 315
+        }
+      ],
+      "min_length": 3,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAA"
+      ]
+    },
+    "disaster_template|coordinationandevaluation|riskmitigationsteps": {
+      "table_name": "coordinationandevaluation",
+      "column_name": "riskmitigationsteps",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 3,
+      "min_value": "Adequate",
+      "max_value": "Partial",
+      "top_k_values": [
+        {
+          "value": "Partial",
+          "count": 358
+        },
+        {
+          "value": "Adequate",
+          "count": 322
+        },
+        {
+          "value": "Insufficient",
+          "count": 319
+        }
+      ],
+      "min_length": 7,
+      "max_length": 12,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAAAA",
+        "AAAAAAAAAAAA"
+      ]
+    },
+    "disaster_template|coordinationandevaluation|insurancescope": {
+      "table_name": "coordinationandevaluation",
+      "column_name": "insurancescope",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 2,
+      "min_value": "Full",
+      "max_value": "Partial",
+      "top_k_values": [
+        {
+          "value": "Partial",
+          "count": 655
+        },
+        {
+          "value": "Full",
+          "count": 344
+        }
+      ],
+      "min_length": 4,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAA"
+      ]
+    },
+    "disaster_template|coordinationandevaluation|compliancestate": {
+      "table_name": "coordinationandevaluation",
+      "column_name": "compliancestate",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 3,
+      "min_value": "Compliant",
+      "max_value": "Partial",
+      "top_k_values": [
+        {
+          "value": "Compliant",
+          "count": 340
+        },
+        {
+          "value": "Non-Compliant",
+          "count": 335
+        },
+        {
+          "value": "Partial",
+          "count": 324
+        }
+      ],
+      "min_length": 7,
+      "max_length": 13,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAA",
+        "AAA-AAAAAAAAA",
+        "AAAAAAA"
+      ]
+    },
+    "disaster_template|coordinationandevaluation|auditstate": {
+      "table_name": "coordinationandevaluation",
+      "column_name": "auditstate",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 3,
+      "min_value": "Completed",
+      "max_value": "Overdue",
+      "top_k_values": [
+        {
+          "value": "Completed",
+          "count": 350
+        },
+        {
+          "value": "Overdue",
+          "count": 335
+        },
+        {
+          "value": "Due",
+          "count": 314
+        }
+      ],
+      "min_length": 3,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAA",
+        "AAAAAAA",
+        "AAA"
+      ]
+    },
+    "disaster_template|coordinationandevaluation|qualitycontrolsteps": {
+      "table_name": "coordinationandevaluation",
+      "column_name": "qualitycontrolsteps",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 3,
+      "min_value": "Moderate",
+      "max_value": "Weak",
+      "top_k_values": [
+        {
+          "value": "Weak",
+          "count": 353
+        },
+        {
+          "value": "Strong",
+          "count": 347
+        },
+        {
+          "value": "Moderate",
+          "count": 299
+        }
+      ],
+      "min_length": 4,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "disaster_template|coordinationandevaluation|stakeholdersatisf": {
+      "table_name": "coordinationandevaluation",
+      "column_name": "stakeholdersatisf",
+      "column_type": "REAL",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 41,
+      "min_value": "1.0",
+      "max_value": "5.0",
+      "top_k_values": [
+        {
+          "value": "3.7",
+          "count": 38
+        },
+        {
+          "value": "1.1",
+          "count": 33
+        },
+        {
+          "value": "3.8",
+          "count": 31
+        },
+        {
+          "value": "3.3",
+          "count": 31
+        },
+        {
+          "value": "4.5",
+          "count": 30
+        },
+        {
+          "value": "4.4",
+          "count": 30
+        },
+        {
+          "value": "1.9",
+          "count": 30
+        },
+        {
+          "value": "4.3",
+          "count": 29
+        },
+        {
+          "value": "2.2",
+          "count": 29
+        },
+        {
+          "value": "4.8",
+          "count": 28
+        }
+      ],
+      "min_length": 3,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D.D"
+      ]
+    },
+    "disaster_template|coordinationandevaluation|mediacoversentiment": {
+      "table_name": "coordinationandevaluation",
+      "column_name": "mediacoversentiment",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 3,
+      "min_value": "Negative",
+      "max_value": "Positive",
+      "top_k_values": [
+        {
+          "value": "Neutral",
+          "count": 343
+        },
+        {
+          "value": "Positive",
+          "count": 328
+        },
+        {
+          "value": "Negative",
+          "count": 328
+        }
+      ],
+      "min_length": 7,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAAAAA"
+      ]
+    },
+    "disaster_template|coordinationandevaluation|publicperception": {
+      "table_name": "coordinationandevaluation",
+      "column_name": "publicperception",
+      "column_type": "REAL",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 41,
+      "min_value": "1.0",
+      "max_value": "5.0",
+      "top_k_values": [
+        {
+          "value": "2.2",
+          "count": 35
+        },
+        {
+          "value": "1.4",
+          "count": 34
+        },
+        {
+          "value": "3.7",
+          "count": 32
+        },
+        {
+          "value": "2.8",
+          "count": 32
+        },
+        {
+          "value": "1.7",
+          "count": 32
+        },
+        {
+          "value": "3.3",
+          "count": 30
+        },
+        {
+          "value": "3.0",
+          "count": 29
+        },
+        {
+          "value": "1.2",
+          "count": 29
+        },
+        {
+          "value": "1.1",
+          "count": 29
+        },
+        {
+          "value": "2.6",
+          "count": 28
+        }
+      ],
+      "min_length": 3,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D.D"
+      ]
+    },
+    "disaster_template|coordinationandevaluation|documentationstate": {
+      "table_name": "coordinationandevaluation",
+      "column_name": "documentationstate",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 3,
+      "min_value": "Complete",
+      "max_value": "Partial",
+      "top_k_values": [
+        {
+          "value": "Incomplete",
+          "count": 339
+        },
+        {
+          "value": "Partial",
+          "count": 338
+        },
+        {
+          "value": "Complete",
+          "count": 322
+        }
+      ],
+      "min_length": 7,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAAA",
+        "AAAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "disaster_template|coordinationandevaluation|lessonsrecorded": {
+      "table_name": "coordinationandevaluation",
+      "column_name": "lessonsrecorded",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 51,
+      "min_value": "0",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "27",
+          "count": 28
+        },
+        {
+          "value": "26",
+          "count": 27
+        },
+        {
+          "value": "22",
+          "count": 27
+        },
+        {
+          "value": "9",
+          "count": 26
+        },
+        {
+          "value": "43",
+          "count": 25
+        },
+        {
+          "value": "25",
+          "count": 25
+        },
+        {
+          "value": "1",
+          "count": 25
+        },
+        {
+          "value": "40",
+          "count": 24
+        },
+        {
+          "value": "29",
+          "count": 24
+        },
+        {
+          "value": "28",
+          "count": 24
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D"
+      ]
+    },
+    "disaster_template|coordinationandevaluation|bestpracticeslisted": {
+      "table_name": "coordinationandevaluation",
+      "column_name": "bestpracticeslisted",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 31,
+      "min_value": "0",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "26",
+          "count": 47
+        },
+        {
+          "value": "20",
+          "count": 41
+        },
+        {
+          "value": "9",
+          "count": 39
+        },
+        {
+          "value": "11",
+          "count": 39
+        },
+        {
+          "value": "7",
+          "count": 37
+        },
+        {
+          "value": "22",
+          "count": 37
+        },
+        {
+          "value": "15",
+          "count": 37
+        },
+        {
+          "value": "23",
+          "count": 36
+        },
+        {
+          "value": "12",
+          "count": 36
+        },
+        {
+          "value": "18",
+          "count": 35
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D"
+      ]
+    },
+    "disaster_template|coordinationandevaluation|improvementrecs": {
+      "table_name": "coordinationandevaluation",
+      "column_name": "improvementrecs",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 41,
+      "min_value": "0",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "3",
+          "count": 35
+        },
+        {
+          "value": "16",
+          "count": 35
+        },
+        {
+          "value": "28",
+          "count": 34
+        },
+        {
+          "value": "36",
+          "count": 32
+        },
+        {
+          "value": "24",
+          "count": 32
+        },
+        {
+          "value": "15",
+          "count": 32
+        },
+        {
+          "value": "34",
+          "count": 31
+        },
+        {
+          "value": "23",
+          "count": 31
+        },
+        {
+          "value": "20",
+          "count": 31
+        },
+        {
+          "value": "40",
+          "count": 30
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D"
+      ]
+    },
+    "disaster_template|coordinationandevaluation|nextreviewdate": {
+      "table_name": "coordinationandevaluation",
+      "column_name": "nextreviewdate",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 179,
+      "min_value": "2025-02-20",
+      "max_value": "2025-08-18",
+      "top_k_values": [
+        {
+          "value": "2025-07-31",
+          "count": 12
+        },
+        {
+          "value": "2025-07-21",
+          "count": 12
+        },
+        {
+          "value": "2025-04-21",
+          "count": 12
+        },
+        {
+          "value": "2025-08-12",
+          "count": 11
+        },
+        {
+          "value": "2025-07-15",
+          "count": 11
+        },
+        {
+          "value": "2025-07-09",
+          "count": 11
+        },
+        {
+          "value": "2025-06-27",
+          "count": 11
+        },
+        {
+          "value": "2025-04-09",
+          "count": 11
+        },
+        {
+          "value": "2025-08-05",
+          "count": 10
+        },
+        {
+          "value": "2025-07-29",
+          "count": 10
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDD-DD-DD"
+      ]
+    },
+    "disaster_template|coordinationandevaluation|notes": {
+      "table_name": "coordinationandevaluation",
+      "column_name": "notes",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 485,
+      "min_value": "",
+      "max_value": "Yourself pick record ask produce about less.",
+      "top_k_values": [
+        {
+          "value": "",
+          "count": 515
+        },
+        {
+          "value": "Yourself pick record ask produce about less.",
+          "count": 1
+        },
+        {
+          "value": "Yes teach way quality network yes green born.",
+          "count": 1
+        },
+        {
+          "value": "Yes chair voice.",
+          "count": 1
+        },
+        {
+          "value": "Writer shoulder senior beautiful know.",
+          "count": 1
+        },
+        {
+          "value": "Writer anyone floor early major action bill.",
+          "count": 1
+        },
+        {
+          "value": "Write hundred hand manager enjoy region generation.",
+          "count": 1
+        },
+        {
+          "value": "Would kind age easy example stand identify.",
+          "count": 1
+        },
+        {
+          "value": "Word across customer investment common speech machine.",
+          "count": 1
+        },
+        {
+          "value": "Wonder shake my all future score challenge turn.",
+          "count": 1
+        }
+      ],
+      "min_length": 0,
+      "max_length": 64,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "",
+        "AAAA AAAAAA AAAAA AAAAAA.",
+        "AAA AAAAAAAA AAAAAA.",
+        "AAAAAAAAA AAAAA AAAA.",
+        "AAAA AAAA AAAAAAA."
+      ]
+    },
+    "disaster_template|disasterevents|distregistry": {
+      "table_name": "disasterevents",
+      "column_name": "distregistry",
+      "column_type": "TEXT(20)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "DIST_012PI",
+      "max_value": "DIST_ZZ7QZ",
+      "top_k_values": [
+        {
+          "value": "DIST_012PI",
+          "count": 1
+        },
+        {
+          "value": "DIST_01N7D",
+          "count": 1
+        },
+        {
+          "value": "DIST_02996",
+          "count": 1
+        },
+        {
+          "value": "DIST_04SJ3",
+          "count": 1
+        },
+        {
+          "value": "DIST_061G9",
+          "count": 1
+        },
+        {
+          "value": "DIST_073OS",
+          "count": 1
+        },
+        {
+          "value": "DIST_07EN1",
+          "count": 1
+        },
+        {
+          "value": "DIST_081UL",
+          "count": 1
+        },
+        {
+          "value": "DIST_08EGN",
+          "count": 1
+        },
+        {
+          "value": "DIST_09X15",
+          "count": 1
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAA_AAAAA",
+        "AAAA_AADAA",
+        "AAAA_ADAAA",
+        "AAAA_AAAAD",
+        "AAAA_DAAAA"
+      ]
+    },
+    "disaster_template|disasterevents|timemark": {
+      "table_name": "disasterevents",
+      "column_name": "timemark",
+      "column_type": "TEXT(6)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "2024-02-19 08:53:02.788311",
+      "max_value": "2025-02-19 07:36:14.751315",
+      "top_k_values": [
+        {
+          "value": "2025-02-19 07:36:14.751315",
+          "count": 1
+        },
+        {
+          "value": "2025-02-19 05:00:53.749342",
+          "count": 1
+        },
+        {
+          "value": "2025-02-19 00:15:21.749342",
+          "count": 1
+        },
+        {
+          "value": "2025-02-18 19:42:52.740314",
+          "count": 1
+        },
+        {
+          "value": "2025-02-18 13:47:22.777343",
+          "count": 1
+        },
+        {
+          "value": "2025-02-18 10:20:40.807346",
+          "count": 1
+        },
+        {
+          "value": "2025-02-18 06:45:10.740314",
+          "count": 1
+        },
+        {
+          "value": "2025-02-18 03:09:19.805351",
+          "count": 1
+        },
+        {
+          "value": "2025-02-18 02:45:04.806273",
+          "count": 1
+        },
+        {
+          "value": "2025-02-17 23:30:27.743327",
+          "count": 1
+        }
+      ],
+      "min_length": 23,
+      "max_length": 26,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDD-DD-DD DD:DD:DD.DDDDDD",
+        "DDDD-DD-DD DD:DD:DD.DDDDD",
+        "DDDD-DD-DD DD:DD:DD.DDDD",
+        "DDDD-DD-DD DD:DD:DD.DDD"
+      ]
+    },
+    "disaster_template|disasterevents|haztype": {
+      "table_name": "disasterevents",
+      "column_name": "haztype",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 5,
+      "min_value": "Earthquake",
+      "max_value": "Wildfire",
+      "top_k_values": [
+        {
+          "value": "Tsunami",
+          "count": 204
+        },
+        {
+          "value": "Earthquake",
+          "count": 204
+        },
+        {
+          "value": "Flood",
+          "count": 202
+        },
+        {
+          "value": "Hurricane",
+          "count": 195
+        },
+        {
+          "value": "Wildfire",
+          "count": 194
+        }
+      ],
+      "min_length": 5,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAAA",
+        "AAAAAAA",
+        "AAAAA",
+        "AAAAAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "disaster_template|disasterevents|hazlevel": {
+      "table_name": "disasterevents",
+      "column_name": "hazlevel",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 5,
+      "min_value": "Level 1",
+      "max_value": "Level 5",
+      "top_k_values": [
+        {
+          "value": "Level 3",
+          "count": 207
+        },
+        {
+          "value": "Level 5",
+          "count": 202
+        },
+        {
+          "value": "Level 4",
+          "count": 200
+        },
+        {
+          "value": "Level 2",
+          "count": 199
+        },
+        {
+          "value": "Level 1",
+          "count": 191
+        }
+      ],
+      "min_length": 7,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAAA D"
+      ]
+    },
+    "disaster_template|disasterevents|affectedarea": {
+      "table_name": "disasterevents",
+      "column_name": "affectedarea",
+      "column_type": "TEXT(100)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 972,
+      "min_value": "Aaronberg",
+      "max_value": "Zimmermanbury",
+      "top_k_values": [
+        {
+          "value": "South Jessica",
+          "count": 3
+        },
+        {
+          "value": "West Michelle",
+          "count": 2
+        },
+        {
+          "value": "West Michael",
+          "count": 2
+        },
+        {
+          "value": "West Jessica",
+          "count": 2
+        },
+        {
+          "value": "South Thomas",
+          "count": 2
+        },
+        {
+          "value": "South James",
+          "count": 2
+        },
+        {
+          "value": "South Amanda",
+          "count": 2
+        },
+        {
+          "value": "Pricemouth",
+          "count": 2
+        },
+        {
+          "value": "Port Patricia",
+          "count": 2
+        },
+        {
+          "value": "North Michael",
+          "count": 2
+        }
+      ],
+      "min_length": 7,
+      "max_length": 21,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAA",
+        "AAAAAAAAAA",
+        "AAAAAAAAAAA",
+        "AAAAAAAAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "disaster_template|disasterevents|regiontag": {
+      "table_name": "disasterevents",
+      "column_name": "regiontag",
+      "column_type": "TEXT(10)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 937,
+      "min_value": "RC1005    ",
+      "max_value": "RC9997    ",
+      "top_k_values": [
+        {
+          "value": "RC9064    ",
+          "count": 3
+        },
+        {
+          "value": "RC3791    ",
+          "count": 3
+        },
+        {
+          "value": "RC9976    ",
+          "count": 2
+        },
+        {
+          "value": "RC9883    ",
+          "count": 2
+        },
+        {
+          "value": "RC9659    ",
+          "count": 2
+        },
+        {
+          "value": "RC9588    ",
+          "count": 2
+        },
+        {
+          "value": "RC9452    ",
+          "count": 2
+        },
+        {
+          "value": "RC9291    ",
+          "count": 2
+        },
+        {
+          "value": "RC9093    ",
+          "count": 2
+        },
+        {
+          "value": "RC8884    ",
+          "count": 2
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDD    "
+      ]
+    },
+    "disaster_template|disasterevents|latcoord": {
+      "table_name": "disasterevents",
+      "column_name": "latcoord",
+      "column_type": "REAL",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "-0.29667",
+      "max_value": "9.981686",
+      "top_k_values": [
+        {
+          "value": "89.994356",
+          "count": 1
+        },
+        {
+          "value": "89.849812",
+          "count": 1
+        },
+        {
+          "value": "89.80006",
+          "count": 1
+        },
+        {
+          "value": "89.645859",
+          "count": 1
+        },
+        {
+          "value": "89.601442",
+          "count": 1
+        },
+        {
+          "value": "89.553539",
+          "count": 1
+        },
+        {
+          "value": "89.272671",
+          "count": 1
+        },
+        {
+          "value": "89.038965",
+          "count": 1
+        },
+        {
+          "value": "88.77702",
+          "count": 1
+        },
+        {
+          "value": "88.693066",
+          "count": 1
+        }
+      ],
+      "min_length": 6,
+      "max_length": 10,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.DDDDDD",
+        "-DD.DDDDDD",
+        "-D.DDDDDD",
+        "D.DDDDDD",
+        "-DD.DDDDD"
+      ]
+    },
+    "disaster_template|disasterevents|loncoord": {
+      "table_name": "disasterevents",
+      "column_name": "loncoord",
+      "column_type": "REAL",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "-0.261989",
+      "max_value": "99.919487",
+      "top_k_values": [
+        {
+          "value": "179.818604",
+          "count": 1
+        },
+        {
+          "value": "179.745163",
+          "count": 1
+        },
+        {
+          "value": "179.619608",
+          "count": 1
+        },
+        {
+          "value": "178.768094",
+          "count": 1
+        },
+        {
+          "value": "177.659936",
+          "count": 1
+        },
+        {
+          "value": "177.518308",
+          "count": 1
+        },
+        {
+          "value": "176.451678",
+          "count": 1
+        },
+        {
+          "value": "175.838085",
+          "count": 1
+        },
+        {
+          "value": "175.549119",
+          "count": 1
+        },
+        {
+          "value": "175.094595",
+          "count": 1
+        }
+      ],
+      "min_length": 6,
+      "max_length": 11,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.DDDDDD",
+        "-DD.DDDDDD",
+        "-DDD.DDDDDD",
+        "DDD.DDDDDD",
+        "-D.DDDDDD"
+      ]
+    },
+    "disaster_template|disasterevents|impactmetrics": {
+      "table_name": "disasterevents",
+      "column_name": "impactmetrics",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "{\"population\": {\"injured\": 1001, \"missing\": 265, \"affected\": 575309, \"displaced\": 36789, \"casualties\": 444}, \"damage_level\": \"Moderate\", \"communication\": \"Limited\", \"infrastructure\": {\"damage_percent\": 98.50, \"power_outage_percent\": 76.100, \"water_damage_percent\": 10}, \"transportation\": \"Limited\"}",
+      "max_value": "{\"population\": {\"injured\": 993, \"missing\": 143, \"affected\": 247439, \"displaced\": 46737, \"casualties\": 533}, \"damage_level\": \"Severe\", \"communication\": \"Down\", \"infrastructure\": {\"damage_percent\": 41.30, \"power_outage_percent\": 74.700, \"water_damage_percent\": 45}, \"transportation\": \"Minimal\"}",
+      "top_k_values": [
+        {
+          "value": "{\"population\": {\"injured\": 993, \"missing\": 143, \"affected\": 247439, \"displaced\": 46737, \"casualties\": 533}, \"damage_level\": \"Severe\", \"communication\": \"Down\", \"infrastructure\": {\"damage_percent\": 41.30, \"power_outage_percent\": 74.700, \"water_damage_percent\": 45}, \"transportation\": \"Minimal\"}",
+          "count": 1
+        },
+        {
+          "value": "{\"population\": {\"injured\": 991, \"missing\": 474, \"affected\": 932720, \"displaced\": 56579, \"casualties\": 706}, \"damage_level\": \"Severe\", \"communication\": \"Operational\", \"infrastructure\": {\"damage_percent\": 91.40, \"power_outage_percent\": 32.500, \"water_damage_percent\": 5}, \"transportation\": \"Limited\"}",
+          "count": 1
+        },
+        {
+          "value": "{\"population\": {\"injured\": 990, \"missing\": 196, \"affected\": 415442, \"displaced\": 45306, \"casualties\": 514}, \"damage_level\": \"Moderate\", \"communication\": \"Operational\", \"infrastructure\": {\"damage_percent\": 69.30, \"power_outage_percent\": 94.400, \"water_damage_percent\": 1}, \"transportation\": \"Minimal\"}",
+          "count": 1
+        },
+        {
+          "value": "{\"population\": {\"injured\": 977, \"missing\": 66, \"affected\": 431221, \"displaced\": 71020, \"casualties\": 9}, \"damage_level\": \"Moderate\", \"communication\": \"Operational\", \"infrastructure\": {\"damage_percent\": 61.50, \"power_outage_percent\": 86.900, \"water_damage_percent\": 28}, \"transportation\": \"Minimal\"}",
+          "count": 1
+        },
+        {
+          "value": "{\"population\": {\"injured\": 977, \"missing\": 389, \"affected\": 322938, \"displaced\": 68508, \"casualties\": 708}, \"damage_level\": \"Moderate\", \"communication\": \"Down\", \"infrastructure\": {\"damage_percent\": 65.50, \"power_outage_percent\": 33.500, \"water_damage_percent\": 42}, \"transportation\": \"Minimal\"}",
+          "count": 1
+        },
+        {
+          "value": "{\"population\": {\"injured\": 964, \"missing\": 309, \"affected\": 693082, \"displaced\": 30328, \"casualties\": 308}, \"damage_level\": \"Catastrophic\", \"communication\": \"Limited\", \"infrastructure\": {\"damage_percent\": 2.10, \"power_outage_percent\": 11.700, \"water_damage_percent\": 39}, \"transportation\": \"Limited\"}",
+          "count": 1
+        },
+        {
+          "value": "{\"population\": {\"injured\": 945, \"missing\": 12, \"affected\": 470046, \"displaced\": 55253, \"casualties\": 559}, \"damage_level\": \"Severe\", \"communication\": \"Down\", \"infrastructure\": {\"damage_percent\": 59.00, \"power_outage_percent\": 48.300, \"water_damage_percent\": 1}, \"transportation\": \"Full\"}",
+          "count": 1
+        },
+        {
+          "value": "{\"population\": {\"injured\": 940, \"missing\": 195, \"affected\": 129722, \"displaced\": 14149, \"casualties\": 411}, \"damage_level\": \"Moderate\", \"communication\": \"Down\", \"infrastructure\": {\"damage_percent\": 75.90, \"power_outage_percent\": 0.000, \"water_damage_percent\": 97}, \"transportation\": \"Minimal\"}",
+          "count": 1
+        },
+        {
+          "value": "{\"population\": {\"injured\": 936, \"missing\": 10, \"affected\": 128471, \"displaced\": 12190, \"casualties\": 133}, \"damage_level\": \"Moderate\", \"communication\": \"Down\", \"infrastructure\": {\"damage_percent\": 2.40, \"power_outage_percent\": 54.100, \"water_damage_percent\": 79}, \"transportation\": \"Limited\"}",
+          "count": 1
+        },
+        {
+          "value": "{\"population\": {\"injured\": 916, \"missing\": 468, \"affected\": 905861, \"displaced\": 77325, \"casualties\": 658}, \"damage_level\": \"Minor\", \"communication\": \"Operational\", \"infrastructure\": {\"damage_percent\": 60.60, \"power_outage_percent\": 18.600, \"water_damage_percent\": 80}, \"transportation\": \"Limited\"}",
+          "count": 1
+        }
+      ],
+      "min_length": 285,
+      "max_length": 306,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "{\"AAAAAAAAAA\": {\"AAAAAAA\": DDDD, \"AAAAAAA\": DDD, \"AAAAAAAA\": DDDDDD, \"AAAAAAAAA\": DDDDD, \"AAAAAAAAAA\": DDD}, \"AAAAAA_AAAAA\": \"AAAAA\", \"AAAAAAAAAAAAA\": \"AAAAAAAAAAA\", \"AAAAAAAAAAAAAA\": {\"AAAAAA_AAAAAAA\": DD.DD, \"AAAAA_AAAAAA_AAAAAAA\": DD.DDD, \"AAAAA_AAAAAA_AAAAAAA\": DD}, \"AAAAAAAAAAAAAA\": \"AAAAAAA\"}",
+        "{\"AAAAAAAAAA\": {\"AAAAAAA\": DDDD, \"AAAAAAA\": DDD, \"AAAAAAAA\": DDDDDD, \"AAAAAAAAA\": DDDDD, \"AAAAAAAAAA\": DDD}, \"AAAAAA_AAAAA\": \"AAAAAAAAAAAA\", \"AAAAAAAAAAAAA\": \"AAAAAAA\", \"AAAAAAAAAAAAAA\": {\"AAAAAA_AAAAAAA\": DD.DD, \"AAAAA_AAAAAA_AAAAAAA\": DD.DDD, \"AAAAA_AAAAAA_AAAAAAA\": DD}, \"AAAAAAAAAAAAAA\": \"AAAAAAA\"}",
+        "{\"AAAAAAAAAA\": {\"AAAAAAA\": DDDD, \"AAAAAAA\": DDD, \"AAAAAAAA\": DDDDDD, \"AAAAAAAAA\": DDDDD, \"AAAAAAAAAA\": DDD}, \"AAAAAA_AAAAA\": \"AAAAA\", \"AAAAAAAAAAAAA\": \"AAAA\", \"AAAAAAAAAAAAAA\": {\"AAAAAA_AAAAAAA\": DD.DD, \"AAAAA_AAAAAA_AAAAAAA\": DD.DDD, \"AAAAA_AAAAAA_AAAAAAA\": DD}, \"AAAAAAAAAAAAAA\": \"AAAAAAA\"}",
+        "{\"AAAAAAAAAA\": {\"AAAAAAA\": DDDD, \"AAAAAAA\": DDD, \"AAAAAAAA\": DDDDDD, \"AAAAAAAAA\": DDDDD, \"AAAAAAAAAA\": DDD}, \"AAAAAA_AAAAA\": \"AAAAAAAA\", \"AAAAAAAAAAAAA\": \"AAAAAAA\", \"AAAAAAAAAAAAAA\": {\"AAAAAA_AAAAAAA\": DD.DD, \"AAAAA_AAAAAA_AAAAAAA\": DD.DDD, \"AAAAA_AAAAAA_AAAAAAA\": DD}, \"AAAAAAAAAAAAAA\": \"AAAAAAA\"}",
+        "{\"AAAAAAAAAA\": {\"AAAAAAA\": DDDD, \"AAAAAAA\": DDD, \"AAAAAAAA\": DDDDDD, \"AAAAAAAAA\": DDDDD, \"AAAAAAAAAA\": DDD}, \"AAAAAA_AAAAA\": \"AAAAAAAA\", \"AAAAAAAAAAAAA\": \"AAAA\", \"AAAAAAAAAAAAAA\": {\"AAAAAA_AAAAAAA\": DD.DD, \"AAAAA_AAAAAA_AAAAAAA\": DD.DDD, \"AAAAA_AAAAAA_AAAAAAA\": DD}, \"AAAAAAAAAAAAAA\": \"AAAAAAA\"}"
+      ]
+    },
+    "disaster_template|disasterevents|impactmetrics.population.injured": {
+      "table_name": "disasterevents",
+      "column_name": "impactmetrics.population.injured",
+      "column_type": "JSON field",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 905,
+      "min_value": "6",
+      "max_value": "4997",
+      "top_k_values": [
+        {
+          "value": "2799",
+          "count": 4
+        },
+        {
+          "value": "3073",
+          "count": 4
+        },
+        {
+          "value": "1837",
+          "count": 3
+        },
+        {
+          "value": "1780",
+          "count": 3
+        },
+        {
+          "value": "3075",
+          "count": 3
+        },
+        {
+          "value": "4333",
+          "count": 2
+        },
+        {
+          "value": "2143",
+          "count": 2
+        },
+        {
+          "value": "4642",
+          "count": 2
+        },
+        {
+          "value": "3639",
+          "count": 2
+        },
+        {
+          "value": "2939",
+          "count": 2
+        }
+      ],
+      "min_length": 1,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDD",
+        "DDD",
+        "DD",
+        "D"
+      ]
+    },
+    "disaster_template|disasterevents|impactmetrics.population.missing": {
+      "table_name": "disasterevents",
+      "column_name": "impactmetrics.population.missing",
+      "column_type": "JSON field",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 442,
+      "min_value": "0",
+      "max_value": "499",
+      "top_k_values": [
+        {
+          "value": "178",
+          "count": 6
+        },
+        {
+          "value": "434",
+          "count": 6
+        },
+        {
+          "value": "257",
+          "count": 6
+        },
+        {
+          "value": "37",
+          "count": 6
+        },
+        {
+          "value": "335",
+          "count": 6
+        },
+        {
+          "value": "437",
+          "count": 6
+        },
+        {
+          "value": "274",
+          "count": 6
+        },
+        {
+          "value": "367",
+          "count": 6
+        },
+        {
+          "value": "446",
+          "count": 6
+        },
+        {
+          "value": "182",
+          "count": 6
+        }
+      ],
+      "min_length": 1,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D"
+      ]
+    },
+    "disaster_template|disasterevents|impactmetrics.population.affected": {
+      "table_name": "disasterevents",
+      "column_name": "impactmetrics.population.affected",
+      "column_type": "JSON field",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "1625",
+      "max_value": "999761",
+      "top_k_values": [
+        {
+          "value": "228943",
+          "count": 1
+        },
+        {
+          "value": "241273",
+          "count": 1
+        },
+        {
+          "value": "389569",
+          "count": 1
+        },
+        {
+          "value": "90546",
+          "count": 1
+        },
+        {
+          "value": "934630",
+          "count": 1
+        },
+        {
+          "value": "568337",
+          "count": 1
+        },
+        {
+          "value": "958482",
+          "count": 1
+        },
+        {
+          "value": "796436",
+          "count": 1
+        },
+        {
+          "value": "271140",
+          "count": 1
+        },
+        {
+          "value": "945333",
+          "count": 1
+        }
+      ],
+      "min_length": 4,
+      "max_length": 6,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDDD",
+        "DDDDD",
+        "DDDD"
+      ]
+    },
+    "disaster_template|disasterevents|impactmetrics.population.displaced": {
+      "table_name": "disasterevents",
+      "column_name": "impactmetrics.population.displaced",
+      "column_type": "JSON field",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 992,
+      "min_value": "185",
+      "max_value": "99860",
+      "top_k_values": [
+        {
+          "value": "25254",
+          "count": 2
+        },
+        {
+          "value": "67735",
+          "count": 2
+        },
+        {
+          "value": "15473",
+          "count": 2
+        },
+        {
+          "value": "1305",
+          "count": 2
+        },
+        {
+          "value": "35994",
+          "count": 2
+        },
+        {
+          "value": "1487",
+          "count": 2
+        },
+        {
+          "value": "90560",
+          "count": 2
+        },
+        {
+          "value": "38806",
+          "count": 1
+        },
+        {
+          "value": "31578",
+          "count": 1
+        },
+        {
+          "value": "66484",
+          "count": 1
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDD",
+        "DDDD",
+        "DDD"
+      ]
+    },
+    "disaster_template|disasterevents|impactmetrics.population.casualties": {
+      "table_name": "disasterevents",
+      "column_name": "impactmetrics.population.casualties",
+      "column_type": "JSON field",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 646,
+      "min_value": "0",
+      "max_value": "1000",
+      "top_k_values": [
+        {
+          "value": "723",
+          "count": 5
+        },
+        {
+          "value": "884",
+          "count": 4
+        },
+        {
+          "value": "716",
+          "count": 4
+        },
+        {
+          "value": "526",
+          "count": 4
+        },
+        {
+          "value": "353",
+          "count": 4
+        },
+        {
+          "value": "612",
+          "count": 4
+        },
+        {
+          "value": "8",
+          "count": 3
+        },
+        {
+          "value": "32",
+          "count": 3
+        },
+        {
+          "value": "409",
+          "count": 3
+        },
+        {
+          "value": "690",
+          "count": 3
+        }
+      ],
+      "min_length": 1,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D",
+        "DDDD"
+      ]
+    },
+    "disaster_template|disasterevents|impactmetrics.damage_level": {
+      "table_name": "disasterevents",
+      "column_name": "impactmetrics.damage_level",
+      "column_type": "JSON field",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 4,
+      "min_value": "Catastrophic",
+      "max_value": "Severe",
+      "top_k_values": [
+        {
+          "value": "Minor",
+          "count": 268
+        },
+        {
+          "value": "Moderate",
+          "count": 255
+        },
+        {
+          "value": "Catastrophic",
+          "count": 240
+        },
+        {
+          "value": "Severe",
+          "count": 236
+        }
+      ],
+      "min_length": 5,
+      "max_length": 12,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAA",
+        "AAAAAAAA",
+        "AAAAAAAAAAAA",
+        "AAAAAA"
+      ]
+    },
+    "disaster_template|disasterevents|impactmetrics.communication": {
+      "table_name": "disasterevents",
+      "column_name": "impactmetrics.communication",
+      "column_type": "JSON field",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 3,
+      "min_value": "Down",
+      "max_value": "Operational",
+      "top_k_values": [
+        {
+          "value": "Operational",
+          "count": 350
+        },
+        {
+          "value": "Down",
+          "count": 337
+        },
+        {
+          "value": "Limited",
+          "count": 312
+        }
+      ],
+      "min_length": 4,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAAAA",
+        "AAAA",
+        "AAAAAAA"
+      ]
+    },
+    "disaster_template|disasterevents|impactmetrics.infrastructure.damage_percent": {
+      "table_name": "disasterevents",
+      "column_name": "impactmetrics.infrastructure.damage_percent",
+      "column_type": "JSON field",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 633,
+      "min_value": "0.2",
+      "max_value": "100.0",
+      "top_k_values": [
+        {
+          "value": "54.3",
+          "count": 6
+        },
+        {
+          "value": "37.0",
+          "count": 5
+        },
+        {
+          "value": "34.4",
+          "count": 5
+        },
+        {
+          "value": "40.9",
+          "count": 4
+        },
+        {
+          "value": "87.3",
+          "count": 4
+        },
+        {
+          "value": "59.0",
+          "count": 4
+        },
+        {
+          "value": "5.0",
+          "count": 4
+        },
+        {
+          "value": "69.4",
+          "count": 4
+        },
+        {
+          "value": "71.9",
+          "count": 4
+        },
+        {
+          "value": "42.2",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.D",
+        "D.D",
+        "DDD.D"
+      ]
+    },
+    "disaster_template|disasterevents|impactmetrics.infrastructure.power_outage_percent": {
+      "table_name": "disasterevents",
+      "column_name": "impactmetrics.infrastructure.power_outage_percent",
+      "column_type": "JSON field",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 634,
+      "min_value": "0.0",
+      "max_value": "100.0",
+      "top_k_values": [
+        {
+          "value": "81.2",
+          "count": 6
+        },
+        {
+          "value": "19.4",
+          "count": 5
+        },
+        {
+          "value": "51.8",
+          "count": 5
+        },
+        {
+          "value": "55.7",
+          "count": 4
+        },
+        {
+          "value": "6.5",
+          "count": 4
+        },
+        {
+          "value": "60.4",
+          "count": 4
+        },
+        {
+          "value": "7.9",
+          "count": 4
+        },
+        {
+          "value": "19.1",
+          "count": 4
+        },
+        {
+          "value": "59.0",
+          "count": 4
+        },
+        {
+          "value": "28.8",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.D",
+        "D.D",
+        "DDD.D"
+      ]
+    },
+    "disaster_template|disasterevents|impactmetrics.infrastructure.water_damage_percent": {
+      "table_name": "disasterevents",
+      "column_name": "impactmetrics.infrastructure.water_damage_percent",
+      "column_type": "JSON field",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 101,
+      "min_value": "0",
+      "max_value": "100",
+      "top_k_values": [
+        {
+          "value": "10",
+          "count": 20
+        },
+        {
+          "value": "76",
+          "count": 18
+        },
+        {
+          "value": "97",
+          "count": 17
+        },
+        {
+          "value": "40",
+          "count": 16
+        },
+        {
+          "value": "99",
+          "count": 16
+        },
+        {
+          "value": "36",
+          "count": 16
+        },
+        {
+          "value": "77",
+          "count": 15
+        },
+        {
+          "value": "28",
+          "count": 15
+        },
+        {
+          "value": "2",
+          "count": 15
+        },
+        {
+          "value": "80",
+          "count": 15
+        }
+      ],
+      "min_length": 1,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D",
+        "DDD"
+      ]
+    },
+    "disaster_template|disasterevents|impactmetrics.transportation": {
+      "table_name": "disasterevents",
+      "column_name": "impactmetrics.transportation",
+      "column_type": "JSON field",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 3,
+      "min_value": "Full",
+      "max_value": "Minimal",
+      "top_k_values": [
+        {
+          "value": "Limited",
+          "count": 353
+        },
+        {
+          "value": "Minimal",
+          "count": 337
+        },
+        {
+          "value": "Full",
+          "count": 309
+        }
+      ],
+      "min_length": 4,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAA"
+      ]
+    },
+    "disaster_template|distributionhubs|hubregistry": {
+      "table_name": "distributionhubs",
+      "column_name": "hubregistry",
+      "column_type": "TEXT(20)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "HUB_008E",
+      "max_value": "HUB_ZXUR",
+      "top_k_values": [
+        {
+          "value": "HUB_008E",
+          "count": 1
+        },
+        {
+          "value": "HUB_00DV",
+          "count": 1
+        },
+        {
+          "value": "HUB_011M",
+          "count": 1
+        },
+        {
+          "value": "HUB_0151",
+          "count": 1
+        },
+        {
+          "value": "HUB_01SS",
+          "count": 1
+        },
+        {
+          "value": "HUB_01WF",
+          "count": 1
+        },
+        {
+          "value": "HUB_02RJ",
+          "count": 1
+        },
+        {
+          "value": "HUB_02UX",
+          "count": 1
+        },
+        {
+          "value": "HUB_04CO",
+          "count": 1
+        },
+        {
+          "value": "HUB_05ZL",
+          "count": 1
+        }
+      ],
+      "min_length": 8,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAA_AAAA",
+        "AAA_AAAD",
+        "AAA_AADA",
+        "AAA_ADAA",
+        "AAA_DAAA"
+      ]
+    },
+    "disaster_template|distributionhubs|disteventref": {
+      "table_name": "distributionhubs",
+      "column_name": "disteventref",
+      "column_type": "TEXT(20)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "DIST_012PI",
+      "max_value": "DIST_ZZ7QZ",
+      "top_k_values": [
+        {
+          "value": "DIST_ZZ7QZ",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZYLZ0",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZY9GU",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZY4O2",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZXYR5",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZW4K1",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZW0SH",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZUZIO",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZU4YG",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZSWB9",
+          "count": 1
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAA_AAAAA",
+        "AAAA_AADAA",
+        "AAAA_ADAAA",
+        "AAAA_AAAAD",
+        "AAAA_DAAAA"
+      ]
+    },
+    "disaster_template|distributionhubs|hubcaptons": {
+      "table_name": "distributionhubs",
+      "column_name": "hubcaptons",
+      "column_type": "REAL",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 943,
+      "min_value": "1012.0",
+      "max_value": "9997.0",
+      "top_k_values": [
+        {
+          "value": "9565.0",
+          "count": 2
+        },
+        {
+          "value": "9347.0",
+          "count": 2
+        },
+        {
+          "value": "9077.0",
+          "count": 2
+        },
+        {
+          "value": "9074.0",
+          "count": 2
+        },
+        {
+          "value": "8887.0",
+          "count": 2
+        },
+        {
+          "value": "8780.0",
+          "count": 2
+        },
+        {
+          "value": "8634.0",
+          "count": 2
+        },
+        {
+          "value": "8611.0",
+          "count": 2
+        },
+        {
+          "value": "8229.0",
+          "count": 2
+        },
+        {
+          "value": "8143.0",
+          "count": 2
+        }
+      ],
+      "min_length": 5,
+      "max_length": 6,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDD.D",
+        "DDD.D"
+      ]
+    },
+    "disaster_template|distributionhubs|hubutilpct": {
+      "table_name": "distributionhubs",
+      "column_name": "hubutilpct",
+      "column_type": "REAL",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 621,
+      "min_value": "0.1",
+      "max_value": "99.9",
+      "top_k_values": [
+        {
+          "value": "62.4",
+          "count": 6
+        },
+        {
+          "value": "58.4",
+          "count": 5
+        },
+        {
+          "value": "93.4",
+          "count": 4
+        },
+        {
+          "value": "92.9",
+          "count": 4
+        },
+        {
+          "value": "82.3",
+          "count": 4
+        },
+        {
+          "value": "79.2",
+          "count": 4
+        },
+        {
+          "value": "58.3",
+          "count": 4
+        },
+        {
+          "value": "57.5",
+          "count": 4
+        },
+        {
+          "value": "52.1",
+          "count": 4
+        },
+        {
+          "value": "46.6",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.D",
+        "D.D"
+      ]
+    },
+    "disaster_template|distributionhubs|storecapm3": {
+      "table_name": "distributionhubs",
+      "column_name": "storecapm3",
+      "column_type": "REAL",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 997,
+      "min_value": "10104.0",
+      "max_value": "99851.0",
+      "top_k_values": [
+        {
+          "value": "51551.0",
+          "count": 2
+        },
+        {
+          "value": "13893.0",
+          "count": 2
+        },
+        {
+          "value": "99851.0",
+          "count": 1
+        },
+        {
+          "value": "99820.0",
+          "count": 1
+        },
+        {
+          "value": "99742.0",
+          "count": 1
+        },
+        {
+          "value": "99711.0",
+          "count": 1
+        },
+        {
+          "value": "99651.0",
+          "count": 1
+        },
+        {
+          "value": "99430.0",
+          "count": 1
+        },
+        {
+          "value": "99399.0",
+          "count": 1
+        },
+        {
+          "value": "99340.0",
+          "count": 1
+        }
+      ],
+      "min_length": 6,
+      "max_length": 7,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDD.D",
+        "DDDD.D"
+      ]
+    },
+    "disaster_template|distributionhubs|storeavailm3": {
+      "table_name": "distributionhubs",
+      "column_name": "storeavailm3",
+      "column_type": "REAL",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 945,
+      "min_value": "1013.0",
+      "max_value": "9997.0",
+      "top_k_values": [
+        {
+          "value": "9779.0",
+          "count": 2
+        },
+        {
+          "value": "9763.0",
+          "count": 2
+        },
+        {
+          "value": "9653.0",
+          "count": 2
+        },
+        {
+          "value": "9538.0",
+          "count": 2
+        },
+        {
+          "value": "9488.0",
+          "count": 2
+        },
+        {
+          "value": "9052.0",
+          "count": 2
+        },
+        {
+          "value": "8418.0",
+          "count": 2
+        },
+        {
+          "value": "8277.0",
+          "count": 2
+        },
+        {
+          "value": "7558.0",
+          "count": 2
+        },
+        {
+          "value": "7486.0",
+          "count": 2
+        }
+      ],
+      "min_length": 5,
+      "max_length": 6,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDD.D",
+        "DDD.D"
+      ]
+    },
+    "disaster_template|distributionhubs|coldstorecapm3": {
+      "table_name": "distributionhubs",
+      "column_name": "coldstorecapm3",
+      "column_type": "REAL",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 623,
+      "min_value": "100.0",
+      "max_value": "999.0",
+      "top_k_values": [
+        {
+          "value": "946.0",
+          "count": 6
+        },
+        {
+          "value": "836.0",
+          "count": 6
+        },
+        {
+          "value": "290.0",
+          "count": 6
+        },
+        {
+          "value": "990.0",
+          "count": 5
+        },
+        {
+          "value": "583.0",
+          "count": 5
+        },
+        {
+          "value": "321.0",
+          "count": 5
+        },
+        {
+          "value": "104.0",
+          "count": 5
+        },
+        {
+          "value": "880.0",
+          "count": 4
+        },
+        {
+          "value": "797.0",
+          "count": 4
+        },
+        {
+          "value": "610.0",
+          "count": 4
+        }
+      ],
+      "min_length": 5,
+      "max_length": 6,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD.D",
+        "DDDD.D"
+      ]
+    },
+    "disaster_template|distributionhubs|coldstoretempc": {
+      "table_name": "distributionhubs",
+      "column_name": "coldstoretempc",
+      "column_type": "REAL",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 61,
+      "min_value": "2.0",
+      "max_value": "8.0",
+      "top_k_values": [
+        {
+          "value": "2.2",
+          "count": 26
+        },
+        {
+          "value": "6.0",
+          "count": 25
+        },
+        {
+          "value": "2.4",
+          "count": 25
+        },
+        {
+          "value": "2.3",
+          "count": 23
+        },
+        {
+          "value": "6.5",
+          "count": 22
+        },
+        {
+          "value": "4.0",
+          "count": 22
+        },
+        {
+          "value": "2.6",
+          "count": 22
+        },
+        {
+          "value": "7.7",
+          "count": 21
+        },
+        {
+          "value": "6.4",
+          "count": 21
+        },
+        {
+          "value": "3.8",
+          "count": 21
+        }
+      ],
+      "min_length": 3,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D.D"
+      ]
+    },
+    "disaster_template|distributionhubs|warehousestate": {
+      "table_name": "distributionhubs",
+      "column_name": "warehousestate",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 4,
+      "min_value": "Excellent",
+      "max_value": "Poor",
+      "top_k_values": [
+        {
+          "value": "Excellent",
+          "count": 267
+        },
+        {
+          "value": "Fair",
+          "count": 253
+        },
+        {
+          "value": "Good",
+          "count": 250
+        },
+        {
+          "value": "Poor",
+          "count": 229
+        }
+      ],
+      "min_length": 4,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAAAAAAAA"
+      ]
+    },
+    "disaster_template|distributionhubs|invaccpct": {
+      "table_name": "distributionhubs",
+      "column_name": "invaccpct",
+      "column_type": "REAL",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 101,
+      "min_value": "100.0",
+      "max_value": "99.9",
+      "top_k_values": [
+        {
+          "value": "93.6",
+          "count": 18
+        },
+        {
+          "value": "93.3",
+          "count": 18
+        },
+        {
+          "value": "99.7",
+          "count": 17
+        },
+        {
+          "value": "94.3",
+          "count": 17
+        },
+        {
+          "value": "98.0",
+          "count": 16
+        },
+        {
+          "value": "96.8",
+          "count": 16
+        },
+        {
+          "value": "99.4",
+          "count": 15
+        },
+        {
+          "value": "99.0",
+          "count": 15
+        },
+        {
+          "value": "98.7",
+          "count": 15
+        },
+        {
+          "value": "98.5",
+          "count": 15
+        }
+      ],
+      "min_length": 4,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.D",
+        "DDD.D"
+      ]
+    },
+    "disaster_template|distributionhubs|stockturnrate": {
+      "table_name": "distributionhubs",
+      "column_name": "stockturnrate",
+      "column_type": "REAL",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 442,
+      "min_value": "0.1",
+      "max_value": "4.99",
+      "top_k_values": [
+        {
+          "value": "0.62",
+          "count": 9
+        },
+        {
+          "value": "4.06",
+          "count": 8
+        },
+        {
+          "value": "0.37",
+          "count": 7
+        },
+        {
+          "value": "4.11",
+          "count": 6
+        },
+        {
+          "value": "3.86",
+          "count": 6
+        },
+        {
+          "value": "3.72",
+          "count": 6
+        },
+        {
+          "value": "3.31",
+          "count": 6
+        },
+        {
+          "value": "1.75",
+          "count": 6
+        },
+        {
+          "value": "1.31",
+          "count": 6
+        },
+        {
+          "value": "0.82",
+          "count": 6
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "disaster_template|environmentandhealth|envhealthregistry": {
+      "table_name": "environmentandhealth",
+      "column_name": "envhealthregistry",
+      "column_type": "TEXT(20)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "ENV_007X",
+      "max_value": "ENV_ZYG1",
+      "top_k_values": [
+        {
+          "value": "ENV_007X",
+          "count": 1
+        },
+        {
+          "value": "ENV_0085",
+          "count": 1
+        },
+        {
+          "value": "ENV_00M0",
+          "count": 1
+        },
+        {
+          "value": "ENV_013D",
+          "count": 1
+        },
+        {
+          "value": "ENV_01BN",
+          "count": 1
+        },
+        {
+          "value": "ENV_04F4",
+          "count": 1
+        },
+        {
+          "value": "ENV_06S8",
+          "count": 1
+        },
+        {
+          "value": "ENV_07PK",
+          "count": 1
+        },
+        {
+          "value": "ENV_09ZM",
+          "count": 1
+        },
+        {
+          "value": "ENV_0BPB",
+          "count": 1
+        }
+      ],
+      "min_length": 8,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAA_AAAA",
+        "AAA_AADA",
+        "AAA_ADAA",
+        "AAA_AAAD",
+        "AAA_DAAA"
+      ]
+    },
+    "disaster_template|environmentandhealth|envdistref": {
+      "table_name": "environmentandhealth",
+      "column_name": "envdistref",
+      "column_type": "TEXT(20)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "DIST_012PI",
+      "max_value": "DIST_ZZ7QZ",
+      "top_k_values": [
+        {
+          "value": "DIST_ZZ7QZ",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZYLZ0",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZY9GU",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZY4O2",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZXYR5",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZW4K1",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZW0SH",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZUZIO",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZU4YG",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZSWB9",
+          "count": 1
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAA_AAAAA",
+        "AAAA_AADAA",
+        "AAAA_ADAAA",
+        "AAAA_AAAAD",
+        "AAAA_DAAAA"
+      ]
+    },
+    "disaster_template|environmentandhealth|envimpactrate": {
+      "table_name": "environmentandhealth",
+      "column_name": "envimpactrate",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 3,
+      "min_value": "High",
+      "max_value": "Medium",
+      "top_k_values": [
+        {
+          "value": "High",
+          "count": 365
+        },
+        {
+          "value": "Medium",
+          "count": 319
+        },
+        {
+          "value": "Low",
+          "count": 315
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAAAAA",
+        "AAA"
+      ]
+    },
+    "disaster_template|environmentandhealth|wastemanagementstate": {
+      "table_name": "environmentandhealth",
+      "column_name": "wastemanagementstate",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 3,
+      "min_value": "Adequate",
+      "max_value": "Limited",
+      "top_k_values": [
+        {
+          "value": "Adequate",
+          "count": 339
+        },
+        {
+          "value": "Critical",
+          "count": 338
+        },
+        {
+          "value": "Limited",
+          "count": 322
+        }
+      ],
+      "min_length": 7,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAAAAA"
+      ]
+    },
+    "disaster_template|environmentandhealth|recyclepct": {
+      "table_name": "environmentandhealth",
+      "column_name": "recyclepct",
+      "column_type": "REAL",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 631,
+      "min_value": "0.2",
+      "max_value": "99.6",
+      "top_k_values": [
+        {
+          "value": "19.4",
+          "count": 6
+        },
+        {
+          "value": "73.6",
+          "count": 5
+        },
+        {
+          "value": "14.8",
+          "count": 5
+        },
+        {
+          "value": "5.3",
+          "count": 5
+        },
+        {
+          "value": "76.0",
+          "count": 4
+        },
+        {
+          "value": "64.6",
+          "count": 4
+        },
+        {
+          "value": "60.9",
+          "count": 4
+        },
+        {
+          "value": "55.5",
+          "count": 4
+        },
+        {
+          "value": "49.8",
+          "count": 4
+        },
+        {
+          "value": "48.7",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.D",
+        "D.D"
+      ]
+    },
+    "disaster_template|environmentandhealth|carbontons": {
+      "table_name": "environmentandhealth",
+      "column_name": "carbontons",
+      "column_type": "REAL",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 949,
+      "min_value": "10.3",
+      "max_value": "997.7",
+      "top_k_values": [
+        {
+          "value": "887.2",
+          "count": 3
+        },
+        {
+          "value": "164.6",
+          "count": 3
+        },
+        {
+          "value": "987.5",
+          "count": 2
+        },
+        {
+          "value": "982.0",
+          "count": 2
+        },
+        {
+          "value": "976.4",
+          "count": 2
+        },
+        {
+          "value": "965.8",
+          "count": 2
+        },
+        {
+          "value": "939.3",
+          "count": 2
+        },
+        {
+          "value": "931.8",
+          "count": 2
+        },
+        {
+          "value": "917.6",
+          "count": 2
+        },
+        {
+          "value": "868.7",
+          "count": 2
+        }
+      ],
+      "min_length": 4,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD.D",
+        "DD.D"
+      ]
+    },
+    "disaster_template|environmentandhealth|renewenergypct": {
+      "table_name": "environmentandhealth",
+      "column_name": "renewenergypct",
+      "column_type": "REAL",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 635,
+      "min_value": "0.1",
+      "max_value": "99.9",
+      "top_k_values": [
+        {
+          "value": "82.0",
+          "count": 5
+        },
+        {
+          "value": "99.6",
+          "count": 4
+        },
+        {
+          "value": "95.9",
+          "count": 4
+        },
+        {
+          "value": "90.7",
+          "count": 4
+        },
+        {
+          "value": "59.7",
+          "count": 4
+        },
+        {
+          "value": "58.5",
+          "count": 4
+        },
+        {
+          "value": "56.4",
+          "count": 4
+        },
+        {
+          "value": "52.5",
+          "count": 4
+        },
+        {
+          "value": "51.0",
+          "count": 4
+        },
+        {
+          "value": "41.9",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.D",
+        "D.D"
+      ]
+    },
+    "disaster_template|environmentandhealth|waterqualityindex": {
+      "table_name": "environmentandhealth",
+      "column_name": "waterqualityindex",
+      "column_type": "REAL",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 643,
+      "min_value": "0.1",
+      "max_value": "99.9",
+      "top_k_values": [
+        {
+          "value": "62.3",
+          "count": 5
+        },
+        {
+          "value": "58.9",
+          "count": 5
+        },
+        {
+          "value": "93.6",
+          "count": 4
+        },
+        {
+          "value": "90.3",
+          "count": 4
+        },
+        {
+          "value": "87.3",
+          "count": 4
+        },
+        {
+          "value": "85.6",
+          "count": 4
+        },
+        {
+          "value": "82.2",
+          "count": 4
+        },
+        {
+          "value": "75.7",
+          "count": 4
+        },
+        {
+          "value": "71.0",
+          "count": 4
+        },
+        {
+          "value": "69.0",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.D",
+        "D.D",
+        "DDD.D"
+      ]
+    },
+    "disaster_template|environmentandhealth|sanitationcoverage": {
+      "table_name": "environmentandhealth",
+      "column_name": "sanitationcoverage",
+      "column_type": "REAL",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 635,
+      "min_value": "0.1",
+      "max_value": "99.9",
+      "top_k_values": [
+        {
+          "value": "98.2",
+          "count": 4
+        },
+        {
+          "value": "71.9",
+          "count": 4
+        },
+        {
+          "value": "69.8",
+          "count": 4
+        },
+        {
+          "value": "53.9",
+          "count": 4
+        },
+        {
+          "value": "51.9",
+          "count": 4
+        },
+        {
+          "value": "48.4",
+          "count": 4
+        },
+        {
+          "value": "45.4",
+          "count": 4
+        },
+        {
+          "value": "45.2",
+          "count": 4
+        },
+        {
+          "value": "34.7",
+          "count": 4
+        },
+        {
+          "value": "33.3",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.D",
+        "D.D"
+      ]
+    },
+    "disaster_template|environmentandhealth|diseaserisk": {
+      "table_name": "environmentandhealth",
+      "column_name": "diseaserisk",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 3,
+      "min_value": "High",
+      "max_value": "Medium",
+      "top_k_values": [
+        {
+          "value": "Medium",
+          "count": 344
+        },
+        {
+          "value": "High",
+          "count": 332
+        },
+        {
+          "value": "Low",
+          "count": 323
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AAAA",
+        "AAA"
+      ]
+    },
+    "disaster_template|environmentandhealth|medicalemergencycapacity": {
+      "table_name": "environmentandhealth",
+      "column_name": "medicalemergencycapacity",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 3,
+      "min_value": "Adequate",
+      "max_value": "Limited",
+      "top_k_values": [
+        {
+          "value": "Limited",
+          "count": 350
+        },
+        {
+          "value": "Critical",
+          "count": 328
+        },
+        {
+          "value": "Adequate",
+          "count": 321
+        }
+      ],
+      "min_length": 7,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAAAAA"
+      ]
+    },
+    "disaster_template|environmentandhealth|vaccinationcoverage": {
+      "table_name": "environmentandhealth",
+      "column_name": "vaccinationcoverage",
+      "column_type": "REAL",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 628,
+      "min_value": "0.2",
+      "max_value": "99.9",
+      "top_k_values": [
+        {
+          "value": "95.9",
+          "count": 5
+        },
+        {
+          "value": "91.4",
+          "count": 5
+        },
+        {
+          "value": "66.0",
+          "count": 5
+        },
+        {
+          "value": "96.6",
+          "count": 4
+        },
+        {
+          "value": "95.4",
+          "count": 4
+        },
+        {
+          "value": "78.9",
+          "count": 4
+        },
+        {
+          "value": "78.4",
+          "count": 4
+        },
+        {
+          "value": "77.6",
+          "count": 4
+        },
+        {
+          "value": "75.4",
+          "count": 4
+        },
+        {
+          "value": "72.2",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.D",
+        "D.D",
+        "DDD.D"
+      ]
+    },
+    "disaster_template|environmentandhealth|mentalhealthaid": {
+      "table_name": "environmentandhealth",
+      "column_name": "mentalhealthaid",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 2,
+      "min_value": "Available",
+      "max_value": "Limited",
+      "top_k_values": [
+        {
+          "value": "Available",
+          "count": 681
+        },
+        {
+          "value": "Limited",
+          "count": 318
+        }
+      ],
+      "min_length": 7,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAA",
+        "AAAAAAA"
+      ]
+    },
+    "disaster_template|financials|financeregistry": {
+      "table_name": "financials",
+      "column_name": "financeregistry",
+      "column_type": "TEXT(20)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "FIN_01BX",
+      "max_value": "FIN_ZYHT",
+      "top_k_values": [
+        {
+          "value": "FIN_01BX",
+          "count": 1
+        },
+        {
+          "value": "FIN_01DF",
+          "count": 1
+        },
+        {
+          "value": "FIN_08AB",
+          "count": 1
+        },
+        {
+          "value": "FIN_08EX",
+          "count": 1
+        },
+        {
+          "value": "FIN_091I",
+          "count": 1
+        },
+        {
+          "value": "FIN_0AOR",
+          "count": 1
+        },
+        {
+          "value": "FIN_0DZA",
+          "count": 1
+        },
+        {
+          "value": "FIN_0FET",
+          "count": 1
+        },
+        {
+          "value": "FIN_0GTR",
+          "count": 1
+        },
+        {
+          "value": "FIN_0HX4",
+          "count": 1
+        }
+      ],
+      "min_length": 8,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAA_AAAA",
+        "AAA_AAAD",
+        "AAA_AADA",
+        "AAA_ADAA",
+        "AAA_DAAA"
+      ]
+    },
+    "disaster_template|financials|findistref": {
+      "table_name": "financials",
+      "column_name": "findistref",
+      "column_type": "TEXT(20)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "DIST_012PI",
+      "max_value": "DIST_ZZ7QZ",
+      "top_k_values": [
+        {
+          "value": "DIST_ZZ7QZ",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZYLZ0",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZY9GU",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZY4O2",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZXYR5",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZW4K1",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZW0SH",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZUZIO",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZU4YG",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZSWB9",
+          "count": 1
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAA_AAAAA",
+        "AAAA_AADAA",
+        "AAAA_ADAAA",
+        "AAAA_AAAAD",
+        "AAAA_DAAAA"
+      ]
+    },
+    "disaster_template|financials|finopsref": {
+      "table_name": "financials",
+      "column_name": "finopsref",
+      "column_type": "TEXT(20)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "OPS_00DPR",
+      "max_value": "OPS_ZZ8DH",
+      "top_k_values": [
+        {
+          "value": "OPS_ZZ8DH",
+          "count": 1
+        },
+        {
+          "value": "OPS_ZY6NC",
+          "count": 1
+        },
+        {
+          "value": "OPS_ZX9YX",
+          "count": 1
+        },
+        {
+          "value": "OPS_ZW2M6",
+          "count": 1
+        },
+        {
+          "value": "OPS_ZVIL9",
+          "count": 1
+        },
+        {
+          "value": "OPS_ZTREC",
+          "count": 1
+        },
+        {
+          "value": "OPS_ZS5UK",
+          "count": 1
+        },
+        {
+          "value": "OPS_ZQ0VL",
+          "count": 1
+        },
+        {
+          "value": "OPS_ZON9J",
+          "count": 1
+        },
+        {
+          "value": "OPS_ZOJL1",
+          "count": 1
+        }
+      ],
+      "min_length": 9,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAA_AAAAA",
+        "AAA_AAADA",
+        "AAA_AADAA",
+        "AAA_DAAAA",
+        "AAA_AAAAD"
+      ]
+    },
+    "disaster_template|financials|budgetallotusd": {
+      "table_name": "financials",
+      "column_name": "budgetallotusd",
+      "column_type": "REAL",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 998,
+      "min_value": "1002761.0",
+      "max_value": "9987378.0",
+      "top_k_values": [
+        {
+          "value": "2960329.0",
+          "count": 2
+        },
+        {
+          "value": "9987378.0",
+          "count": 1
+        },
+        {
+          "value": "9985998.0",
+          "count": 1
+        },
+        {
+          "value": "9980480.0",
+          "count": 1
+        },
+        {
+          "value": "9973486.0",
+          "count": 1
+        },
+        {
+          "value": "9968111.0",
+          "count": 1
+        },
+        {
+          "value": "9966681.0",
+          "count": 1
+        },
+        {
+          "value": "9958052.0",
+          "count": 1
+        },
+        {
+          "value": "9947535.0",
+          "count": 1
+        },
+        {
+          "value": "9939915.0",
+          "count": 1
+        }
+      ],
+      "min_length": 8,
+      "max_length": 9,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDDDD.D",
+        "DDDDDD.D"
+      ]
+    },
+    "disaster_template|financials|fundsutilpct": {
+      "table_name": "financials",
+      "column_name": "fundsutilpct",
+      "column_type": "REAL",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 631,
+      "min_value": "0.1",
+      "max_value": "99.9",
+      "top_k_values": [
+        {
+          "value": "14.5",
+          "count": 6
+        },
+        {
+          "value": "95.3",
+          "count": 5
+        },
+        {
+          "value": "97.4",
+          "count": 4
+        },
+        {
+          "value": "97.3",
+          "count": 4
+        },
+        {
+          "value": "94.3",
+          "count": 4
+        },
+        {
+          "value": "92.5",
+          "count": 4
+        },
+        {
+          "value": "86.6",
+          "count": 4
+        },
+        {
+          "value": "84.7",
+          "count": 4
+        },
+        {
+          "value": "80.0",
+          "count": 4
+        },
+        {
+          "value": "79.5",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.D",
+        "D.D",
+        "DDD.D"
+      ]
+    },
+    "disaster_template|financials|costbeneusd": {
+      "table_name": "financials",
+      "column_name": "costbeneusd",
+      "column_type": "REAL",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 997,
+      "min_value": "101.03",
+      "max_value": "999.97",
+      "top_k_values": [
+        {
+          "value": "946.46",
+          "count": 2
+        },
+        {
+          "value": "507.6",
+          "count": 2
+        },
+        {
+          "value": "999.97",
+          "count": 1
+        },
+        {
+          "value": "999.82",
+          "count": 1
+        },
+        {
+          "value": "999.71",
+          "count": 1
+        },
+        {
+          "value": "999.42",
+          "count": 1
+        },
+        {
+          "value": "999.19",
+          "count": 1
+        },
+        {
+          "value": "997.84",
+          "count": 1
+        },
+        {
+          "value": "997.35",
+          "count": 1
+        },
+        {
+          "value": "997.18",
+          "count": 1
+        }
+      ],
+      "min_length": 4,
+      "max_length": 6,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD.DD",
+        "DDD.D",
+        "DD.DD",
+        "DD.D"
+      ]
+    },
+    "disaster_template|financials|opscostsusd": {
+      "table_name": "financials",
+      "column_name": "opscostsusd",
+      "column_type": "REAL",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 998,
+      "min_value": "100431.0",
+      "max_value": "997134.0",
+      "top_k_values": [
+        {
+          "value": "370599.0",
+          "count": 2
+        },
+        {
+          "value": "997134.0",
+          "count": 1
+        },
+        {
+          "value": "996824.0",
+          "count": 1
+        },
+        {
+          "value": "996411.0",
+          "count": 1
+        },
+        {
+          "value": "996382.0",
+          "count": 1
+        },
+        {
+          "value": "995523.0",
+          "count": 1
+        },
+        {
+          "value": "994831.0",
+          "count": 1
+        },
+        {
+          "value": "994458.0",
+          "count": 1
+        },
+        {
+          "value": "991421.0",
+          "count": 1
+        },
+        {
+          "value": "990872.0",
+          "count": 1
+        }
+      ],
+      "min_length": 7,
+      "max_length": 8,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDDD.D",
+        "DDDDD.D"
+      ]
+    },
+    "disaster_template|financials|transportcostsusd": {
+      "table_name": "financials",
+      "column_name": "transportcostsusd",
+      "column_type": "INTEGER",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "101195",
+      "max_value": "999318",
+      "top_k_values": [
+        {
+          "value": "999318",
+          "count": 1
+        },
+        {
+          "value": "998702",
+          "count": 1
+        },
+        {
+          "value": "998339",
+          "count": 1
+        },
+        {
+          "value": "997864",
+          "count": 1
+        },
+        {
+          "value": "997663",
+          "count": 1
+        },
+        {
+          "value": "996357",
+          "count": 1
+        },
+        {
+          "value": "996140",
+          "count": 1
+        },
+        {
+          "value": "995417",
+          "count": 1
+        },
+        {
+          "value": "994589",
+          "count": 1
+        },
+        {
+          "value": "993225",
+          "count": 1
+        }
+      ],
+      "min_length": 5,
+      "max_length": 6,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDDD",
+        "DDDDD"
+      ]
+    },
+    "disaster_template|financials|storagecostsusd": {
+      "table_name": "financials",
+      "column_name": "storagecostsusd",
+      "column_type": "REAL",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 996,
+      "min_value": "100446.0",
+      "max_value": "99379.0",
+      "top_k_values": [
+        {
+          "value": "290391.0",
+          "count": 2
+        },
+        {
+          "value": "95240.0",
+          "count": 2
+        },
+        {
+          "value": "27909.0",
+          "count": 2
+        },
+        {
+          "value": "499965.0",
+          "count": 1
+        },
+        {
+          "value": "498660.0",
+          "count": 1
+        },
+        {
+          "value": "498270.0",
+          "count": 1
+        },
+        {
+          "value": "495786.0",
+          "count": 1
+        },
+        {
+          "value": "495151.0",
+          "count": 1
+        },
+        {
+          "value": "495103.0",
+          "count": 1
+        },
+        {
+          "value": "493992.0",
+          "count": 1
+        }
+      ],
+      "min_length": 6,
+      "max_length": 8,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDDD.D",
+        "DDDDD.D",
+        "DDDD.D"
+      ]
+    },
+    "disaster_template|financials|personnelcostsusd": {
+      "table_name": "financials",
+      "column_name": "personnelcostsusd",
+      "column_type": "REAL",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 998,
+      "min_value": "100309.0",
+      "max_value": "999996.0",
+      "top_k_values": [
+        {
+          "value": "906645.0",
+          "count": 2
+        },
+        {
+          "value": "999996.0",
+          "count": 1
+        },
+        {
+          "value": "998953.0",
+          "count": 1
+        },
+        {
+          "value": "997897.0",
+          "count": 1
+        },
+        {
+          "value": "997468.0",
+          "count": 1
+        },
+        {
+          "value": "996061.0",
+          "count": 1
+        },
+        {
+          "value": "995207.0",
+          "count": 1
+        },
+        {
+          "value": "991663.0",
+          "count": 1
+        },
+        {
+          "value": "990404.0",
+          "count": 1
+        },
+        {
+          "value": "990181.0",
+          "count": 1
+        }
+      ],
+      "min_length": 7,
+      "max_length": 8,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDDD.D",
+        "DDDDD.D"
+      ]
+    },
+    "disaster_template|financials|fundingstate": {
+      "table_name": "financials",
+      "column_name": "fundingstate",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 3,
+      "min_value": "Adequate",
+      "max_value": "Limited",
+      "top_k_values": [
+        {
+          "value": "Adequate",
+          "count": 340
+        },
+        {
+          "value": "Critical",
+          "count": 330
+        },
+        {
+          "value": "Limited",
+          "count": 329
+        }
+      ],
+      "min_length": 7,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAAAAA"
+      ]
+    },
+    "disaster_template|financials|donorcommitmentsusd": {
+      "table_name": "financials",
+      "column_name": "donorcommitmentsusd",
+      "column_type": "REAL",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "1052881.0",
+      "max_value": "9994178.0",
+      "top_k_values": [
+        {
+          "value": "9994178.0",
+          "count": 1
+        },
+        {
+          "value": "9984614.0",
+          "count": 1
+        },
+        {
+          "value": "9980911.0",
+          "count": 1
+        },
+        {
+          "value": "9975040.0",
+          "count": 1
+        },
+        {
+          "value": "9969645.0",
+          "count": 1
+        },
+        {
+          "value": "9964826.0",
+          "count": 1
+        },
+        {
+          "value": "9920687.0",
+          "count": 1
+        },
+        {
+          "value": "9911188.0",
+          "count": 1
+        },
+        {
+          "value": "9906983.0",
+          "count": 1
+        },
+        {
+          "value": "9901242.0",
+          "count": 1
+        }
+      ],
+      "min_length": 8,
+      "max_length": 9,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDDDD.D",
+        "DDDDDD.D"
+      ]
+    },
+    "disaster_template|financials|resourcegapsusd": {
+      "table_name": "financials",
+      "column_name": "resourcegapsusd",
+      "column_type": "INTEGER",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "100600",
+      "max_value": "999154",
+      "top_k_values": [
+        {
+          "value": "999154",
+          "count": 1
+        },
+        {
+          "value": "998187",
+          "count": 1
+        },
+        {
+          "value": "996580",
+          "count": 1
+        },
+        {
+          "value": "994296",
+          "count": 1
+        },
+        {
+          "value": "992933",
+          "count": 1
+        },
+        {
+          "value": "992156",
+          "count": 1
+        },
+        {
+          "value": "990527",
+          "count": 1
+        },
+        {
+          "value": "987312",
+          "count": 1
+        },
+        {
+          "value": "987112",
+          "count": 1
+        },
+        {
+          "value": "986809",
+          "count": 1
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDDD",
+        "DDDDD",
+        "DDDD",
+        "DDD"
+      ]
+    },
+    "disaster_template|humanresources|hrregistry": {
+      "table_name": "humanresources",
+      "column_name": "hrregistry",
+      "column_type": "TEXT(20)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "HR_0490",
+      "max_value": "HR_ZZXC",
+      "top_k_values": [
+        {
+          "value": "HR_0490",
+          "count": 1
+        },
+        {
+          "value": "HR_04HG",
+          "count": 1
+        },
+        {
+          "value": "HR_06PZ",
+          "count": 1
+        },
+        {
+          "value": "HR_09BR",
+          "count": 1
+        },
+        {
+          "value": "HR_0IAH",
+          "count": 1
+        },
+        {
+          "value": "HR_0LNC",
+          "count": 1
+        },
+        {
+          "value": "HR_0NFZ",
+          "count": 1
+        },
+        {
+          "value": "HR_0OEF",
+          "count": 1
+        },
+        {
+          "value": "HR_0P4T",
+          "count": 1
+        },
+        {
+          "value": "HR_0QQ1",
+          "count": 1
+        }
+      ],
+      "min_length": 7,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AA_AAAA",
+        "AA_AAAD",
+        "AA_AADA",
+        "AA_DAAA",
+        "AA_ADAA"
+      ]
+    },
+    "disaster_template|humanresources|hrdistref": {
+      "table_name": "humanresources",
+      "column_name": "hrdistref",
+      "column_type": "TEXT(20)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "DIST_012PI",
+      "max_value": "DIST_ZZ7QZ",
+      "top_k_values": [
+        {
+          "value": "DIST_ZZ7QZ",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZYLZ0",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZY9GU",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZY4O2",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZXYR5",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZW4K1",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZW0SH",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZUZIO",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZU4YG",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZSWB9",
+          "count": 1
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAA_AAAAA",
+        "AAAA_AADAA",
+        "AAAA_ADAAA",
+        "AAAA_AAAAD",
+        "AAAA_DAAAA"
+      ]
+    },
+    "disaster_template|humanresources|hropsref": {
+      "table_name": "humanresources",
+      "column_name": "hropsref",
+      "column_type": "TEXT(20)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "OPS_00DPR",
+      "max_value": "OPS_ZZ8DH",
+      "top_k_values": [
+        {
+          "value": "OPS_ZZ8DH",
+          "count": 1
+        },
+        {
+          "value": "OPS_ZY6NC",
+          "count": 1
+        },
+        {
+          "value": "OPS_ZX9YX",
+          "count": 1
+        },
+        {
+          "value": "OPS_ZW2M6",
+          "count": 1
+        },
+        {
+          "value": "OPS_ZVIL9",
+          "count": 1
+        },
+        {
+          "value": "OPS_ZTREC",
+          "count": 1
+        },
+        {
+          "value": "OPS_ZS5UK",
+          "count": 1
+        },
+        {
+          "value": "OPS_ZQ0VL",
+          "count": 1
+        },
+        {
+          "value": "OPS_ZON9J",
+          "count": 1
+        },
+        {
+          "value": "OPS_ZOJL1",
+          "count": 1
+        }
+      ],
+      "min_length": 9,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAA_AAAAA",
+        "AAA_AAADA",
+        "AAA_AADAA",
+        "AAA_DAAAA",
+        "AAA_AAAAD"
+      ]
+    },
+    "disaster_template|humanresources|staffingprofile": {
+      "table_name": "humanresources",
+      "column_name": "staffingprofile",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "{\"personnel\": {\"total\": 100, \"medical\": 28, \"security\": 60, \"logistics\": 20, \"volunteers\": 947}, \"readiness\": {\"ppe_status\": \"Adequate\", \"comm_equipment\": \"Insufficient\", \"training_status\": \"In Progress\", \"availability_percent\": 75.20}}",
+      "max_value": "{\"personnel\": {\"total\": 99, \"medical\": 52, \"security\": 45, \"logistics\": 42, \"volunteers\": 998}, \"readiness\": {\"ppe_status\": \"Adequate\", \"comm_equipment\": \"Sufficient\", \"training_status\": \"Required\", \"availability_percent\": 82.00}}",
+      "top_k_values": [
+        {
+          "value": "{\"personnel\": {\"total\": 99, \"medical\": 52, \"security\": 45, \"logistics\": 42, \"volunteers\": 998}, \"readiness\": {\"ppe_status\": \"Adequate\", \"comm_equipment\": \"Sufficient\", \"training_status\": \"Required\", \"availability_percent\": 82.00}}",
+          "count": 1
+        },
+        {
+          "value": "{\"personnel\": {\"total\": 99, \"medical\": 15, \"security\": 68, \"logistics\": 88, \"volunteers\": 146}, \"readiness\": {\"ppe_status\": \"Limited\", \"comm_equipment\": \"Limited\", \"training_status\": \"Required\", \"availability_percent\": 79.30}}",
+          "count": 1
+        },
+        {
+          "value": "{\"personnel\": {\"total\": 98, \"medical\": 64, \"security\": 62, \"logistics\": 98, \"volunteers\": 782}, \"readiness\": {\"ppe_status\": \"Limited\", \"comm_equipment\": \"Insufficient\", \"training_status\": \"In Progress\", \"availability_percent\": 89.80}}",
+          "count": 1
+        },
+        {
+          "value": "{\"personnel\": {\"total\": 98, \"medical\": 56, \"security\": 44, \"logistics\": 93, \"volunteers\": 920}, \"readiness\": {\"ppe_status\": \"Limited\", \"comm_equipment\": \"Limited\", \"training_status\": \"In Progress\", \"availability_percent\": 85.30}}",
+          "count": 1
+        },
+        {
+          "value": "{\"personnel\": {\"total\": 98, \"medical\": 29, \"security\": 36, \"logistics\": 180, \"volunteers\": 734}, \"readiness\": {\"ppe_status\": \"Adequate\", \"comm_equipment\": \"Insufficient\", \"training_status\": \"Required\", \"availability_percent\": 80.60}}",
+          "count": 1
+        },
+        {
+          "value": "{\"personnel\": {\"total\": 97, \"medical\": 81, \"security\": 21, \"logistics\": 100, \"volunteers\": 453}, \"readiness\": {\"ppe_status\": \"Critical\", \"comm_equipment\": \"Insufficient\", \"training_status\": \"In Progress\", \"availability_percent\": 88.40}}",
+          "count": 1
+        },
+        {
+          "value": "{\"personnel\": {\"total\": 96, \"medical\": 94, \"security\": 73, \"logistics\": 169, \"volunteers\": 379}, \"readiness\": {\"ppe_status\": \"Adequate\", \"comm_equipment\": \"Sufficient\", \"training_status\": \"Required\", \"availability_percent\": 83.50}}",
+          "count": 1
+        },
+        {
+          "value": "{\"personnel\": {\"total\": 96, \"medical\": 34, \"security\": 90, \"logistics\": 159, \"volunteers\": 356}, \"readiness\": {\"ppe_status\": \"Limited\", \"comm_equipment\": \"Insufficient\", \"training_status\": \"Required\", \"availability_percent\": 97.10}}",
+          "count": 1
+        },
+        {
+          "value": "{\"personnel\": {\"total\": 96, \"medical\": 34, \"security\": 12, \"logistics\": 118, \"volunteers\": 789}, \"readiness\": {\"ppe_status\": \"Critical\", \"comm_equipment\": \"Sufficient\", \"training_status\": \"Required\", \"availability_percent\": 80.00}}",
+          "count": 1
+        },
+        {
+          "value": "{\"personnel\": {\"total\": 96, \"medical\": 15, \"security\": 48, \"logistics\": 58, \"volunteers\": 250}, \"readiness\": {\"ppe_status\": \"Limited\", \"comm_equipment\": \"Insufficient\", \"training_status\": \"In Progress\", \"availability_percent\": 85.90}}",
+          "count": 1
+        }
+      ],
+      "min_length": 226,
+      "max_length": 237,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "{\"AAAAAAAAA\": {\"AAAAA\": DDD, \"AAAAAAA\": DD, \"AAAAAAAA\": DD, \"AAAAAAAAA\": DDD, \"AAAAAAAAAA\": DDD}, \"AAAAAAAAA\": {\"AAA_AAAAAA\": \"AAAAAAAA\", \"AAAA_AAAAAAAAA\": \"AAAAAAAAAAAA\", \"AAAAAAAA_AAAAAA\": \"AAAAAAAA\", \"AAAAAAAAAAAA_AAAAAAA\": DD.DD}}",
+        "{\"AAAAAAAAA\": {\"AAAAA\": DDD, \"AAAAAAA\": DD, \"AAAAAAAA\": DD, \"AAAAAAAAA\": DDD, \"AAAAAAAAAA\": DDD}, \"AAAAAAAAA\": {\"AAA_AAAAAA\": \"AAAAAAAA\", \"AAAA_AAAAAAAAA\": \"AAAAAAAAAA\", \"AAAAAAAA_AAAAAA\": \"AAAAAAAA\", \"AAAAAAAAAAAA_AAAAAAA\": DD.DD}}",
+        "{\"AAAAAAAAA\": {\"AAAAA\": DDD, \"AAAAAAA\": DD, \"AAAAAAAA\": DD, \"AAAAAAAAA\": DDD, \"AAAAAAAAAA\": DDD}, \"AAAAAAAAA\": {\"AAA_AAAAAA\": \"AAAAAAAA\", \"AAAA_AAAAAAAAA\": \"AAAAAAA\", \"AAAAAAAA_AAAAAA\": \"AAAAAAAA\", \"AAAAAAAAAAAA_AAAAAAA\": DD.DD}}",
+        "{\"AAAAAAAAA\": {\"AAAAA\": DDD, \"AAAAAAA\": DD, \"AAAAAAAA\": DD, \"AAAAAAAAA\": DD, \"AAAAAAAAAA\": DDD}, \"AAAAAAAAA\": {\"AAA_AAAAAA\": \"AAAAAAAA\", \"AAAA_AAAAAAAAA\": \"AAAAAAAAAA\", \"AAAAAAAA_AAAAAA\": \"AAAAAAAA\", \"AAAAAAAAAAAA_AAAAAAA\": DD.DD}}",
+        "{\"AAAAAAAAA\": {\"AAAAA\": DDD, \"AAAAAAA\": DD, \"AAAAAAAA\": DD, \"AAAAAAAAA\": DD, \"AAAAAAAAAA\": DDD}, \"AAAAAAAAA\": {\"AAA_AAAAAA\": \"AAAAAAAA\", \"AAAA_AAAAAAAAA\": \"AAAAAAAAAAAA\", \"AAAAAAAA_AAAAAA\": \"AAAAAAAA\", \"AAAAAAAAAAAA_AAAAAAA\": DD.DD}}"
+      ]
+    },
+    "disaster_template|humanresources|staffingprofile.personnel.total": {
+      "table_name": "humanresources",
+      "column_name": "staffingprofile.personnel.total",
+      "column_type": "JSON field",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 407,
+      "min_value": "50",
+      "max_value": "500",
+      "top_k_values": [
+        {
+          "value": "292",
+          "count": 8
+        },
+        {
+          "value": "55",
+          "count": 7
+        },
+        {
+          "value": "472",
+          "count": 7
+        },
+        {
+          "value": "430",
+          "count": 7
+        },
+        {
+          "value": "137",
+          "count": 7
+        },
+        {
+          "value": "175",
+          "count": 6
+        },
+        {
+          "value": "253",
+          "count": 6
+        },
+        {
+          "value": "328",
+          "count": 6
+        },
+        {
+          "value": "353",
+          "count": 6
+        },
+        {
+          "value": "140",
+          "count": 5
+        }
+      ],
+      "min_length": 2,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD"
+      ]
+    },
+    "disaster_template|humanresources|staffingprofile.personnel.medical": {
+      "table_name": "humanresources",
+      "column_name": "staffingprofile.personnel.medical",
+      "column_type": "JSON field",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 91,
+      "min_value": "10",
+      "max_value": "100",
+      "top_k_values": [
+        {
+          "value": "88",
+          "count": 20
+        },
+        {
+          "value": "33",
+          "count": 17
+        },
+        {
+          "value": "75",
+          "count": 17
+        },
+        {
+          "value": "50",
+          "count": 16
+        },
+        {
+          "value": "56",
+          "count": 16
+        },
+        {
+          "value": "91",
+          "count": 16
+        },
+        {
+          "value": "85",
+          "count": 16
+        },
+        {
+          "value": "87",
+          "count": 16
+        },
+        {
+          "value": "64",
+          "count": 16
+        },
+        {
+          "value": "53",
+          "count": 16
+        }
+      ],
+      "min_length": 2,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "DDD"
+      ]
+    },
+    "disaster_template|humanresources|staffingprofile.personnel.security": {
+      "table_name": "humanresources",
+      "column_name": "staffingprofile.personnel.security",
+      "column_type": "JSON field",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 91,
+      "min_value": "10",
+      "max_value": "100",
+      "top_k_values": [
+        {
+          "value": "93",
+          "count": 20
+        },
+        {
+          "value": "28",
+          "count": 18
+        },
+        {
+          "value": "48",
+          "count": 17
+        },
+        {
+          "value": "47",
+          "count": 16
+        },
+        {
+          "value": "65",
+          "count": 16
+        },
+        {
+          "value": "11",
+          "count": 16
+        },
+        {
+          "value": "75",
+          "count": 16
+        },
+        {
+          "value": "46",
+          "count": 15
+        },
+        {
+          "value": "17",
+          "count": 15
+        },
+        {
+          "value": "35",
+          "count": 15
+        }
+      ],
+      "min_length": 2,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "DDD"
+      ]
+    },
+    "disaster_template|humanresources|staffingprofile.personnel.logistics": {
+      "table_name": "humanresources",
+      "column_name": "staffingprofile.personnel.logistics",
+      "column_type": "JSON field",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 179,
+      "min_value": "20",
+      "max_value": "200",
+      "top_k_values": [
+        {
+          "value": "169",
+          "count": 14
+        },
+        {
+          "value": "134",
+          "count": 14
+        },
+        {
+          "value": "139",
+          "count": 12
+        },
+        {
+          "value": "170",
+          "count": 11
+        },
+        {
+          "value": "168",
+          "count": 11
+        },
+        {
+          "value": "109",
+          "count": 11
+        },
+        {
+          "value": "62",
+          "count": 11
+        },
+        {
+          "value": "29",
+          "count": 11
+        },
+        {
+          "value": "71",
+          "count": 10
+        },
+        {
+          "value": "54",
+          "count": 10
+        }
+      ],
+      "min_length": 2,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD"
+      ]
+    },
+    "disaster_template|humanresources|staffingprofile.personnel.volunteers": {
+      "table_name": "humanresources",
+      "column_name": "staffingprofile.personnel.volunteers",
+      "column_type": "JSON field",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 613,
+      "min_value": "51",
+      "max_value": "999",
+      "top_k_values": [
+        {
+          "value": "983",
+          "count": 5
+        },
+        {
+          "value": "566",
+          "count": 5
+        },
+        {
+          "value": "359",
+          "count": 5
+        },
+        {
+          "value": "450",
+          "count": 5
+        },
+        {
+          "value": "893",
+          "count": 5
+        },
+        {
+          "value": "140",
+          "count": 4
+        },
+        {
+          "value": "599",
+          "count": 4
+        },
+        {
+          "value": "890",
+          "count": 4
+        },
+        {
+          "value": "625",
+          "count": 4
+        },
+        {
+          "value": "409",
+          "count": 4
+        }
+      ],
+      "min_length": 2,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD"
+      ]
+    },
+    "disaster_template|humanresources|staffingprofile.readiness.ppe_status": {
+      "table_name": "humanresources",
+      "column_name": "staffingprofile.readiness.ppe_status",
+      "column_type": "JSON field",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 3,
+      "min_value": "Adequate",
+      "max_value": "Limited",
+      "top_k_values": [
+        {
+          "value": "Limited",
+          "count": 347
+        },
+        {
+          "value": "Critical",
+          "count": 326
+        },
+        {
+          "value": "Adequate",
+          "count": 326
+        }
+      ],
+      "min_length": 7,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAAAAA"
+      ]
+    },
+    "disaster_template|humanresources|staffingprofile.readiness.comm_equipment": {
+      "table_name": "humanresources",
+      "column_name": "staffingprofile.readiness.comm_equipment",
+      "column_type": "JSON field",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 3,
+      "min_value": "Insufficient",
+      "max_value": "Sufficient",
+      "top_k_values": [
+        {
+          "value": "Limited",
+          "count": 342
+        },
+        {
+          "value": "Insufficient",
+          "count": 340
+        },
+        {
+          "value": "Sufficient",
+          "count": 317
+        }
+      ],
+      "min_length": 7,
+      "max_length": 12,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAAAAAAAA",
+        "AAAAAAAAAA"
+      ]
+    },
+    "disaster_template|humanresources|staffingprofile.readiness.training_status": {
+      "table_name": "humanresources",
+      "column_name": "staffingprofile.readiness.training_status",
+      "column_type": "JSON field",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 3,
+      "min_value": "Complete",
+      "max_value": "Required",
+      "top_k_values": [
+        {
+          "value": "In Progress",
+          "count": 340
+        },
+        {
+          "value": "Required",
+          "count": 333
+        },
+        {
+          "value": "Complete",
+          "count": 326
+        }
+      ],
+      "min_length": 8,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AA AAAAAAAA"
+      ]
+    },
+    "disaster_template|humanresources|staffingprofile.readiness.availability_percent": {
+      "table_name": "humanresources",
+      "column_name": "staffingprofile.readiness.availability_percent",
+      "column_type": "JSON field",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 286,
+      "min_value": "70.0",
+      "max_value": "100.0",
+      "top_k_values": [
+        {
+          "value": "97.1",
+          "count": 10
+        },
+        {
+          "value": "94.2",
+          "count": 10
+        },
+        {
+          "value": "92.0",
+          "count": 8
+        },
+        {
+          "value": "71.7",
+          "count": 8
+        },
+        {
+          "value": "71.0",
+          "count": 8
+        },
+        {
+          "value": "81.1",
+          "count": 8
+        },
+        {
+          "value": "71.6",
+          "count": 8
+        },
+        {
+          "value": "84.0",
+          "count": 7
+        },
+        {
+          "value": "92.8",
+          "count": 7
+        },
+        {
+          "value": "72.4",
+          "count": 7
+        }
+      ],
+      "min_length": 4,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.D",
+        "DDD.D"
+      ]
+    },
+    "disaster_template|operations|opsregistry": {
+      "table_name": "operations",
+      "column_name": "opsregistry",
+      "column_type": "TEXT(20)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "OPS_00DPR",
+      "max_value": "OPS_ZZ8DH",
+      "top_k_values": [
+        {
+          "value": "OPS_00DPR",
+          "count": 1
+        },
+        {
+          "value": "OPS_00LML",
+          "count": 1
+        },
+        {
+          "value": "OPS_02SB5",
+          "count": 1
+        },
+        {
+          "value": "OPS_02T2B",
+          "count": 1
+        },
+        {
+          "value": "OPS_08HOS",
+          "count": 1
+        },
+        {
+          "value": "OPS_092II",
+          "count": 1
+        },
+        {
+          "value": "OPS_093SI",
+          "count": 1
+        },
+        {
+          "value": "OPS_09IVX",
+          "count": 1
+        },
+        {
+          "value": "OPS_09MZT",
+          "count": 1
+        },
+        {
+          "value": "OPS_09NKL",
+          "count": 1
+        }
+      ],
+      "min_length": 9,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAA_AAAAA",
+        "AAA_AAADA",
+        "AAA_AADAA",
+        "AAA_DAAAA",
+        "AAA_AAAAD"
+      ]
+    },
+    "disaster_template|operations|opsdistref": {
+      "table_name": "operations",
+      "column_name": "opsdistref",
+      "column_type": "TEXT(20)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "DIST_012PI",
+      "max_value": "DIST_ZZ7QZ",
+      "top_k_values": [
+        {
+          "value": "DIST_ZZ7QZ",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZYLZ0",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZY9GU",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZY4O2",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZXYR5",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZW4K1",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZW0SH",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZUZIO",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZU4YG",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZSWB9",
+          "count": 1
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAA_AAAAA",
+        "AAAA_AADAA",
+        "AAAA_ADAAA",
+        "AAAA_AAAAD",
+        "AAAA_DAAAA"
+      ]
+    },
+    "disaster_template|operations|opshubref": {
+      "table_name": "operations",
+      "column_name": "opshubref",
+      "column_type": "TEXT(20)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "HUB_008E",
+      "max_value": "HUB_ZXUR",
+      "top_k_values": [
+        {
+          "value": "HUB_ZXUR",
+          "count": 1
+        },
+        {
+          "value": "HUB_ZUNQ",
+          "count": 1
+        },
+        {
+          "value": "HUB_ZUK5",
+          "count": 1
+        },
+        {
+          "value": "HUB_ZSVW",
+          "count": 1
+        },
+        {
+          "value": "HUB_ZRM8",
+          "count": 1
+        },
+        {
+          "value": "HUB_ZR34",
+          "count": 1
+        },
+        {
+          "value": "HUB_ZR0U",
+          "count": 1
+        },
+        {
+          "value": "HUB_ZN8F",
+          "count": 1
+        },
+        {
+          "value": "HUB_ZN03",
+          "count": 1
+        },
+        {
+          "value": "HUB_ZMFS",
+          "count": 1
+        }
+      ],
+      "min_length": 8,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAA_AAAA",
+        "AAA_AAAD",
+        "AAA_AADA",
+        "AAA_ADAA",
+        "AAA_DAAA"
+      ]
+    },
+    "disaster_template|operations|emerglevel": {
+      "table_name": "operations",
+      "column_name": "emerglevel",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 4,
+      "min_value": "Black",
+      "max_value": "Yellow",
+      "top_k_values": [
+        {
+          "value": "Red",
+          "count": 267
+        },
+        {
+          "value": "Orange",
+          "count": 253
+        },
+        {
+          "value": "Black",
+          "count": 240
+        },
+        {
+          "value": "Yellow",
+          "count": 239
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AAA",
+        "AAAAA"
+      ]
+    },
+    "disaster_template|operations|respphase": {
+      "table_name": "operations",
+      "column_name": "respphase",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 4,
+      "min_value": "Emergency",
+      "max_value": "Recovery",
+      "top_k_values": [
+        {
+          "value": "Emergency",
+          "count": 259
+        },
+        {
+          "value": "Reconstruction",
+          "count": 258
+        },
+        {
+          "value": "Initial",
+          "count": 251
+        },
+        {
+          "value": "Recovery",
+          "count": 231
+        }
+      ],
+      "min_length": 7,
+      "max_length": 14,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAA",
+        "AAAAAAAAAAAAAA",
+        "AAAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "disaster_template|operations|opsstatus": {
+      "table_name": "operations",
+      "column_name": "opsstatus",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 4,
+      "min_value": "Active",
+      "max_value": "Scaling Down",
+      "top_k_values": [
+        {
+          "value": "Completed",
+          "count": 272
+        },
+        {
+          "value": "Planning",
+          "count": 246
+        },
+        {
+          "value": "Scaling Down",
+          "count": 243
+        },
+        {
+          "value": "Active",
+          "count": 238
+        }
+      ],
+      "min_length": 6,
+      "max_length": 12,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAA",
+        "AAAAAAAA",
+        "AAAAAAA AAAA",
+        "AAAAAA"
+      ]
+    },
+    "disaster_template|operations|coordcenter": {
+      "table_name": "operations",
+      "column_name": "coordcenter",
+      "column_type": "TEXT(80)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 945,
+      "min_value": "CC1013",
+      "max_value": "CC9963",
+      "top_k_values": [
+        {
+          "value": "CC2096",
+          "count": 3
+        },
+        {
+          "value": "CC1151",
+          "count": 3
+        },
+        {
+          "value": "CC9938",
+          "count": 2
+        },
+        {
+          "value": "CC9823",
+          "count": 2
+        },
+        {
+          "value": "CC9792",
+          "count": 2
+        },
+        {
+          "value": "CC9616",
+          "count": 2
+        },
+        {
+          "value": "CC9566",
+          "count": 2
+        },
+        {
+          "value": "CC9118",
+          "count": 2
+        },
+        {
+          "value": "CC9108",
+          "count": 2
+        },
+        {
+          "value": "CC9006",
+          "count": 2
+        }
+      ],
+      "min_length": 6,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDD"
+      ]
+    },
+    "disaster_template|operations|opsstartdate": {
+      "table_name": "operations",
+      "column_name": "opsstartdate",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 31,
+      "min_value": "2025-01-20",
+      "max_value": "2025-02-19",
+      "top_k_values": [
+        {
+          "value": "2025-01-23",
+          "count": 44
+        },
+        {
+          "value": "2025-02-07",
+          "count": 42
+        },
+        {
+          "value": "2025-01-26",
+          "count": 41
+        },
+        {
+          "value": "2025-02-18",
+          "count": 39
+        },
+        {
+          "value": "2025-01-25",
+          "count": 39
+        },
+        {
+          "value": "2025-01-22",
+          "count": 37
+        },
+        {
+          "value": "2025-02-06",
+          "count": 36
+        },
+        {
+          "value": "2025-02-01",
+          "count": 36
+        },
+        {
+          "value": "2025-01-24",
+          "count": 36
+        },
+        {
+          "value": "2025-02-11",
+          "count": 35
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDD-DD-DD"
+      ]
+    },
+    "disaster_template|operations|estdurationdays": {
+      "table_name": "operations",
+      "column_name": "estdurationdays",
+      "column_type": "INTEGER",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 337,
+      "min_value": "10",
+      "max_value": "99",
+      "top_k_values": [
+        {
+          "value": "194",
+          "count": 8
+        },
+        {
+          "value": "151",
+          "count": 8
+        },
+        {
+          "value": "344",
+          "count": 7
+        },
+        {
+          "value": "265",
+          "count": 7
+        },
+        {
+          "value": "118",
+          "count": 7
+        },
+        {
+          "value": "75",
+          "count": 7
+        },
+        {
+          "value": "58",
+          "count": 7
+        },
+        {
+          "value": "364",
+          "count": 6
+        },
+        {
+          "value": "350",
+          "count": 6
+        },
+        {
+          "value": "349",
+          "count": 6
+        }
+      ],
+      "min_length": 1,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "D"
+      ]
+    },
+    "disaster_template|operations|priorityrank": {
+      "table_name": "operations",
+      "column_name": "priorityrank",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 4,
+      "min_value": "Critical",
+      "max_value": "Medium",
+      "top_k_values": [
+        {
+          "value": "High",
+          "count": 289
+        },
+        {
+          "value": "Medium",
+          "count": 242
+        },
+        {
+          "value": "Low",
+          "count": 240
+        },
+        {
+          "value": "Critical",
+          "count": 228
+        }
+      ],
+      "min_length": 3,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAAAAA",
+        "AAA",
+        "AAAAAAAA"
+      ]
+    },
+    "disaster_template|operations|resourceallocstate": {
+      "table_name": "operations",
+      "column_name": "resourceallocstate",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 3,
+      "min_value": "Critical",
+      "max_value": "Sufficient",
+      "top_k_values": [
+        {
+          "value": "Sufficient",
+          "count": 340
+        },
+        {
+          "value": "Limited",
+          "count": 330
+        },
+        {
+          "value": "Critical",
+          "count": 329
+        }
+      ],
+      "min_length": 7,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAAA",
+        "AAAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "disaster_template|operations|supplyflowstate": {
+      "table_name": "operations",
+      "column_name": "supplyflowstate",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 3,
+      "min_value": "Disrupted",
+      "max_value": "Strained",
+      "top_k_values": [
+        {
+          "value": "Disrupted",
+          "count": 360
+        },
+        {
+          "value": "Stable",
+          "count": 320
+        },
+        {
+          "value": "Strained",
+          "count": 319
+        }
+      ],
+      "min_length": 6,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAA",
+        "AAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "disaster_template|supplies|supplyregistry": {
+      "table_name": "supplies",
+      "column_name": "supplyregistry",
+      "column_type": "TEXT(20)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "SUP_001VD",
+      "max_value": "SUP_ZZDDR",
+      "top_k_values": [
+        {
+          "value": "SUP_001VD",
+          "count": 1
+        },
+        {
+          "value": "SUP_00CIT",
+          "count": 1
+        },
+        {
+          "value": "SUP_00UO6",
+          "count": 1
+        },
+        {
+          "value": "SUP_019DO",
+          "count": 1
+        },
+        {
+          "value": "SUP_01D8K",
+          "count": 1
+        },
+        {
+          "value": "SUP_049IG",
+          "count": 1
+        },
+        {
+          "value": "SUP_05PC0",
+          "count": 1
+        },
+        {
+          "value": "SUP_07YNN",
+          "count": 1
+        },
+        {
+          "value": "SUP_08LTF",
+          "count": 1
+        },
+        {
+          "value": "SUP_09Y7S",
+          "count": 1
+        }
+      ],
+      "min_length": 9,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAA_AAAAA",
+        "AAA_ADAAA",
+        "AAA_AAAAD",
+        "AAA_DAAAA",
+        "AAA_AAADA"
+      ]
+    },
+    "disaster_template|supplies|supplydistref": {
+      "table_name": "supplies",
+      "column_name": "supplydistref",
+      "column_type": "TEXT(20)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "DIST_012PI",
+      "max_value": "DIST_ZZ7QZ",
+      "top_k_values": [
+        {
+          "value": "DIST_ZZ7QZ",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZYLZ0",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZY9GU",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZY4O2",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZXYR5",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZW4K1",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZW0SH",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZUZIO",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZU4YG",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZSWB9",
+          "count": 1
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAA_AAAAA",
+        "AAAA_AADAA",
+        "AAAA_ADAAA",
+        "AAAA_AAAAD",
+        "AAAA_DAAAA"
+      ]
+    },
+    "disaster_template|supplies|supplyhubref": {
+      "table_name": "supplies",
+      "column_name": "supplyhubref",
+      "column_type": "TEXT(20)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "HUB_008E",
+      "max_value": "HUB_ZXUR",
+      "top_k_values": [
+        {
+          "value": "HUB_ZXUR",
+          "count": 1
+        },
+        {
+          "value": "HUB_ZUNQ",
+          "count": 1
+        },
+        {
+          "value": "HUB_ZUK5",
+          "count": 1
+        },
+        {
+          "value": "HUB_ZSVW",
+          "count": 1
+        },
+        {
+          "value": "HUB_ZRM8",
+          "count": 1
+        },
+        {
+          "value": "HUB_ZR34",
+          "count": 1
+        },
+        {
+          "value": "HUB_ZR0U",
+          "count": 1
+        },
+        {
+          "value": "HUB_ZN8F",
+          "count": 1
+        },
+        {
+          "value": "HUB_ZN03",
+          "count": 1
+        },
+        {
+          "value": "HUB_ZMFS",
+          "count": 1
+        }
+      ],
+      "min_length": 8,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAA_AAAA",
+        "AAA_AAAD",
+        "AAA_AADA",
+        "AAA_ADAA",
+        "AAA_DAAA"
+      ]
+    },
+    "disaster_template|supplies|resourceinventory": {
+      "table_name": "supplies",
+      "column_name": "resourceinventory",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "{\"power\": {\"generators\": 10, \"fuel_liters\": 89376.0}, \"medical\": 42006, \"shelter\": {\"units\": 5310, \"blankets\": 10395}, \"essentials\": {\"food_tons\": 966.600, \"water_liters\": 96477.000}, \"hygiene_kits\": 71828}",
+      "max_value": "{\"power\": {\"generators\": 999, \"fuel_liters\": 75648.0}, \"medical\": 9508, \"shelter\": {\"units\": 2598, \"blankets\": 18650}, \"essentials\": {\"food_tons\": 170.900, \"water_liters\": 287544.000}, \"hygiene_kits\": 46395}",
+      "top_k_values": [
+        {
+          "value": "{\"power\": {\"generators\": 999, \"fuel_liters\": 75648.0}, \"medical\": 9508, \"shelter\": {\"units\": 2598, \"blankets\": 18650}, \"essentials\": {\"food_tons\": 170.900, \"water_liters\": 287544.000}, \"hygiene_kits\": 46395}",
+          "count": 1
+        },
+        {
+          "value": "{\"power\": {\"generators\": 999, \"fuel_liters\": 26683.0}, \"medical\": 77416, \"shelter\": {\"units\": 9259, \"blankets\": 66885}, \"essentials\": {\"food_tons\": 861.800, \"water_liters\": 781369.000}, \"hygiene_kits\": 14759}",
+          "count": 1
+        },
+        {
+          "value": "{\"power\": {\"generators\": 998, \"fuel_liters\": 17054.0}, \"medical\": 37910, \"shelter\": {\"units\": 843, \"blankets\": 44191}, \"essentials\": {\"food_tons\": 671.800, \"water_liters\": 253444.000}, \"hygiene_kits\": 49894}",
+          "count": 1
+        },
+        {
+          "value": "{\"power\": {\"generators\": 997, \"fuel_liters\": 10813.0}, \"medical\": 25718, \"shelter\": {\"units\": 9508, \"blankets\": 71667}, \"essentials\": {\"food_tons\": 567.500, \"water_liters\": 881449.000}, \"hygiene_kits\": 66461}",
+          "count": 1
+        },
+        {
+          "value": "{\"power\": {\"generators\": 996, \"fuel_liters\": 8979.0}, \"medical\": 88418, \"shelter\": {\"units\": 6381, \"blankets\": 8929}, \"essentials\": {\"food_tons\": 635.700, \"water_liters\": 814286.000}, \"hygiene_kits\": 43575}",
+          "count": 1
+        },
+        {
+          "value": "{\"power\": {\"generators\": 995, \"fuel_liters\": 58492.0}, \"medical\": 43165, \"shelter\": {\"units\": 7580, \"blankets\": 18020}, \"essentials\": {\"food_tons\": 845.200, \"water_liters\": 434603.000}, \"hygiene_kits\": 15583}",
+          "count": 1
+        },
+        {
+          "value": "{\"power\": {\"generators\": 995, \"fuel_liters\": 42576.0}, \"medical\": 65383, \"shelter\": {\"units\": 8387, \"blankets\": 97810}, \"essentials\": {\"food_tons\": 96.100, \"water_liters\": 895558.000}, \"hygiene_kits\": 72764}",
+          "count": 1
+        },
+        {
+          "value": "{\"power\": {\"generators\": 994, \"fuel_liters\": 24247.0}, \"medical\": 53925, \"shelter\": {\"units\": 5444, \"blankets\": 17376}, \"essentials\": {\"food_tons\": 491.100, \"water_liters\": 801622.000}, \"hygiene_kits\": 44850}",
+          "count": 1
+        },
+        {
+          "value": "{\"power\": {\"generators\": 993, \"fuel_liters\": 35451.0}, \"medical\": 47137, \"shelter\": {\"units\": 3780, \"blankets\": 75590}, \"essentials\": {\"food_tons\": 167.900, \"water_liters\": 173813.000}, \"hygiene_kits\": 54582}",
+          "count": 1
+        },
+        {
+          "value": "{\"power\": {\"generators\": 992, \"fuel_liters\": 27530.0}, \"medical\": 77041, \"shelter\": {\"units\": 3499, \"blankets\": 98213}, \"essentials\": {\"food_tons\": 470.800, \"water_liters\": 842108.000}, \"hygiene_kits\": 27211}",
+          "count": 1
+        }
+      ],
+      "min_length": 204,
+      "max_length": 208,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "{\"AAAAA\": {\"AAAAAAAAAA\": DDD, \"AAAA_AAAAAA\": DDDDD.D}, \"AAAAAAA\": DDDDD, \"AAAAAAA\": {\"AAAAA\": DDDD, \"AAAAAAAA\": DDDDD}, \"AAAAAAAAAA\": {\"AAAA_AAAA\": DDD.DDD, \"AAAAA_AAAAAA\": DDDDDD.DDD}, \"AAAAAAA_AAAA\": DDDDD}",
+        "{\"AAAAA\": {\"AAAAAAAAAA\": DDD, \"AAAA_AAAAAA\": DDDDD.D}, \"AAAAAAA\": DDDDD, \"AAAAAAA\": {\"AAAAA\": DDDD, \"AAAAAAAA\": DDDD}, \"AAAAAAAAAA\": {\"AAAA_AAAA\": DDD.DDD, \"AAAAA_AAAAAA\": DDDDDD.DDD}, \"AAAAAAA_AAAA\": DDDDD}",
+        "{\"AAAAA\": {\"AAAAAAAAAA\": DD, \"AAAA_AAAAAA\": DDDDD.D}, \"AAAAAAA\": DDDDD, \"AAAAAAA\": {\"AAAAA\": DDDD, \"AAAAAAAA\": DDDDD}, \"AAAAAAAAAA\": {\"AAAA_AAAA\": DDD.DDD, \"AAAAA_AAAAAA\": DDDDDD.DDD}, \"AAAAAAA_AAAA\": DDDDD}",
+        "{\"AAAAA\": {\"AAAAAAAAAA\": DDD, \"AAAA_AAAAAA\": DDDDD.D}, \"AAAAAAA\": DDDD, \"AAAAAAA\": {\"AAAAA\": DDDD, \"AAAAAAAA\": DDDDD}, \"AAAAAAAAAA\": {\"AAAA_AAAA\": DDD.DDD, \"AAAAA_AAAAAA\": DDDDDD.DDD}, \"AAAAAAA_AAAA\": DDDDD}",
+        "{\"AAAAA\": {\"AAAAAAAAAA\": DDD, \"AAAA_AAAAAA\": DDDDD.D}, \"AAAAAAA\": DDDDD, \"AAAAAAA\": {\"AAAAA\": DDD, \"AAAAAAAA\": DDDDD}, \"AAAAAAAAAA\": {\"AAAA_AAAA\": DDD.DDD, \"AAAAA_AAAAAA\": DDDDDD.DDD}, \"AAAAAAA_AAAA\": DDDDD}"
+      ]
+    },
+    "disaster_template|supplies|resourceinventory.power.generators": {
+      "table_name": "supplies",
+      "column_name": "resourceinventory.power.generators",
+      "column_type": "JSON field",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 634,
+      "min_value": "10",
+      "max_value": "1000",
+      "top_k_values": [
+        {
+          "value": "309",
+          "count": 5
+        },
+        {
+          "value": "438",
+          "count": 5
+        },
+        {
+          "value": "356",
+          "count": 5
+        },
+        {
+          "value": "733",
+          "count": 4
+        },
+        {
+          "value": "382",
+          "count": 4
+        },
+        {
+          "value": "110",
+          "count": 4
+        },
+        {
+          "value": "397",
+          "count": 4
+        },
+        {
+          "value": "862",
+          "count": 4
+        },
+        {
+          "value": "464",
+          "count": 4
+        },
+        {
+          "value": "226",
+          "count": 4
+        }
+      ],
+      "min_length": 2,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD",
+        "DDDD"
+      ]
+    },
+    "disaster_template|supplies|resourceinventory.power.fuel_liters": {
+      "table_name": "supplies",
+      "column_name": "resourceinventory.power.fuel_liters",
+      "column_type": "JSON field",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 992,
+      "min_value": "1189.0",
+      "max_value": "99993.0",
+      "top_k_values": [
+        {
+          "value": "25795.0",
+          "count": 2
+        },
+        {
+          "value": "10298.0",
+          "count": 2
+        },
+        {
+          "value": "30542.0",
+          "count": 2
+        },
+        {
+          "value": "61360.0",
+          "count": 2
+        },
+        {
+          "value": "1552.0",
+          "count": 2
+        },
+        {
+          "value": "8545.0",
+          "count": 2
+        },
+        {
+          "value": "11107.0",
+          "count": 2
+        },
+        {
+          "value": "86011.0",
+          "count": 1
+        },
+        {
+          "value": "59156.0",
+          "count": 1
+        },
+        {
+          "value": "46825.0",
+          "count": 1
+        }
+      ],
+      "min_length": 6,
+      "max_length": 7,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDD.D",
+        "DDDD.D"
+      ]
+    },
+    "disaster_template|supplies|resourceinventory.medical": {
+      "table_name": "supplies",
+      "column_name": "resourceinventory.medical",
+      "column_type": "JSON field",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 996,
+      "min_value": "1025",
+      "max_value": "99935",
+      "top_k_values": [
+        {
+          "value": "35865",
+          "count": 2
+        },
+        {
+          "value": "33766",
+          "count": 2
+        },
+        {
+          "value": "55653",
+          "count": 2
+        },
+        {
+          "value": "50590",
+          "count": 1
+        },
+        {
+          "value": "51298",
+          "count": 1
+        },
+        {
+          "value": "15593",
+          "count": 1
+        },
+        {
+          "value": "97429",
+          "count": 1
+        },
+        {
+          "value": "6996",
+          "count": 1
+        },
+        {
+          "value": "2974",
+          "count": 1
+        },
+        {
+          "value": "48487",
+          "count": 1
+        }
+      ],
+      "min_length": 4,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDD",
+        "DDDD"
+      ]
+    },
+    "disaster_template|supplies|resourceinventory.shelter.units": {
+      "table_name": "supplies",
+      "column_name": "resourceinventory.shelter.units",
+      "column_type": "JSON field",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 955,
+      "min_value": "105",
+      "max_value": "9988",
+      "top_k_values": [
+        {
+          "value": "880",
+          "count": 4
+        },
+        {
+          "value": "8424",
+          "count": 2
+        },
+        {
+          "value": "9268",
+          "count": 2
+        },
+        {
+          "value": "5753",
+          "count": 2
+        },
+        {
+          "value": "2744",
+          "count": 2
+        },
+        {
+          "value": "7307",
+          "count": 2
+        },
+        {
+          "value": "859",
+          "count": 2
+        },
+        {
+          "value": "9259",
+          "count": 2
+        },
+        {
+          "value": "5014",
+          "count": 2
+        },
+        {
+          "value": "6371",
+          "count": 2
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDD",
+        "DDD"
+      ]
+    },
+    "disaster_template|supplies|resourceinventory.shelter.blankets": {
+      "table_name": "supplies",
+      "column_name": "resourceinventory.shelter.blankets",
+      "column_type": "JSON field",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 996,
+      "min_value": "1014",
+      "max_value": "99940",
+      "top_k_values": [
+        {
+          "value": "96856",
+          "count": 2
+        },
+        {
+          "value": "1014",
+          "count": 2
+        },
+        {
+          "value": "52680",
+          "count": 2
+        },
+        {
+          "value": "46019",
+          "count": 1
+        },
+        {
+          "value": "26671",
+          "count": 1
+        },
+        {
+          "value": "78690",
+          "count": 1
+        },
+        {
+          "value": "51129",
+          "count": 1
+        },
+        {
+          "value": "87751",
+          "count": 1
+        },
+        {
+          "value": "99312",
+          "count": 1
+        },
+        {
+          "value": "94729",
+          "count": 1
+        }
+      ],
+      "min_length": 4,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDD",
+        "DDDD"
+      ]
+    },
+    "disaster_template|supplies|resourceinventory.essentials.food_tons": {
+      "table_name": "supplies",
+      "column_name": "resourceinventory.essentials.food_tons",
+      "column_type": "JSON field",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 950,
+      "min_value": "10.2",
+      "max_value": "999.6",
+      "top_k_values": [
+        {
+          "value": "377.8",
+          "count": 3
+        },
+        {
+          "value": "962.1",
+          "count": 2
+        },
+        {
+          "value": "475.4",
+          "count": 2
+        },
+        {
+          "value": "325.4",
+          "count": 2
+        },
+        {
+          "value": "751.4",
+          "count": 2
+        },
+        {
+          "value": "278.3",
+          "count": 2
+        },
+        {
+          "value": "178.2",
+          "count": 2
+        },
+        {
+          "value": "72.2",
+          "count": 2
+        },
+        {
+          "value": "824.0",
+          "count": 2
+        },
+        {
+          "value": "157.4",
+          "count": 2
+        }
+      ],
+      "min_length": 4,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD.D",
+        "DD.D"
+      ]
+    },
+    "disaster_template|supplies|resourceinventory.essentials.water_liters": {
+      "table_name": "supplies",
+      "column_name": "resourceinventory.essentials.water_liters",
+      "column_type": "JSON field",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "12117.0",
+      "max_value": "998512.0",
+      "top_k_values": [
+        {
+          "value": "283596.0",
+          "count": 1
+        },
+        {
+          "value": "139603.0",
+          "count": 1
+        },
+        {
+          "value": "878396.0",
+          "count": 1
+        },
+        {
+          "value": "685923.0",
+          "count": 1
+        },
+        {
+          "value": "561913.0",
+          "count": 1
+        },
+        {
+          "value": "772127.0",
+          "count": 1
+        },
+        {
+          "value": "186842.0",
+          "count": 1
+        },
+        {
+          "value": "245412.0",
+          "count": 1
+        },
+        {
+          "value": "615560.0",
+          "count": 1
+        },
+        {
+          "value": "465161.0",
+          "count": 1
+        }
+      ],
+      "min_length": 7,
+      "max_length": 8,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDDD.D",
+        "DDDDD.D"
+      ]
+    },
+    "disaster_template|supplies|resourceinventory.hygiene_kits": {
+      "table_name": "supplies",
+      "column_name": "resourceinventory.hygiene_kits",
+      "column_type": "JSON field",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 996,
+      "min_value": "1039",
+      "max_value": "99856",
+      "top_k_values": [
+        {
+          "value": "28144",
+          "count": 2
+        },
+        {
+          "value": "85419",
+          "count": 2
+        },
+        {
+          "value": "60642",
+          "count": 2
+        },
+        {
+          "value": "46981",
+          "count": 1
+        },
+        {
+          "value": "99277",
+          "count": 1
+        },
+        {
+          "value": "31061",
+          "count": 1
+        },
+        {
+          "value": "60837",
+          "count": 1
+        },
+        {
+          "value": "27094",
+          "count": 1
+        },
+        {
+          "value": "66730",
+          "count": 1
+        },
+        {
+          "value": "39127",
+          "count": 1
+        }
+      ],
+      "min_length": 4,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDD",
+        "DDDD"
+      ]
+    },
+    "disaster_template|transportation|transportregistry": {
+      "table_name": "transportation",
+      "column_name": "transportregistry",
+      "column_type": "TEXT(20)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "TRANS_00436",
+      "max_value": "TRANS_ZZN3J",
+      "top_k_values": [
+        {
+          "value": "TRANS_00436",
+          "count": 1
+        },
+        {
+          "value": "TRANS_00HAO",
+          "count": 1
+        },
+        {
+          "value": "TRANS_03HBF",
+          "count": 1
+        },
+        {
+          "value": "TRANS_04MO3",
+          "count": 1
+        },
+        {
+          "value": "TRANS_05MVB",
+          "count": 1
+        },
+        {
+          "value": "TRANS_05SG2",
+          "count": 1
+        },
+        {
+          "value": "TRANS_07L9T",
+          "count": 1
+        },
+        {
+          "value": "TRANS_0870R",
+          "count": 1
+        },
+        {
+          "value": "TRANS_098FB",
+          "count": 1
+        },
+        {
+          "value": "TRANS_09N0D",
+          "count": 1
+        }
+      ],
+      "min_length": 11,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAAA_AAAAA",
+        "AAAAA_AADAA",
+        "AAAAA_AAADA",
+        "AAAAA_AAAAD",
+        "AAAAA_ADAAA"
+      ]
+    },
+    "disaster_template|transportation|transportdistref": {
+      "table_name": "transportation",
+      "column_name": "transportdistref",
+      "column_type": "TEXT(20)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "DIST_012PI",
+      "max_value": "DIST_ZZ7QZ",
+      "top_k_values": [
+        {
+          "value": "DIST_ZZ7QZ",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZYLZ0",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZY9GU",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZY4O2",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZXYR5",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZW4K1",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZW0SH",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZUZIO",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZU4YG",
+          "count": 1
+        },
+        {
+          "value": "DIST_ZSWB9",
+          "count": 1
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAA_AAAAA",
+        "AAAA_AADAA",
+        "AAAA_ADAAA",
+        "AAAA_AAAAD",
+        "AAAA_DAAAA"
+      ]
+    },
+    "disaster_template|transportation|transporthubref": {
+      "table_name": "transportation",
+      "column_name": "transporthubref",
+      "column_type": "TEXT(20)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "HUB_008E",
+      "max_value": "HUB_ZXUR",
+      "top_k_values": [
+        {
+          "value": "HUB_ZXUR",
+          "count": 1
+        },
+        {
+          "value": "HUB_ZUNQ",
+          "count": 1
+        },
+        {
+          "value": "HUB_ZUK5",
+          "count": 1
+        },
+        {
+          "value": "HUB_ZSVW",
+          "count": 1
+        },
+        {
+          "value": "HUB_ZRM8",
+          "count": 1
+        },
+        {
+          "value": "HUB_ZR34",
+          "count": 1
+        },
+        {
+          "value": "HUB_ZR0U",
+          "count": 1
+        },
+        {
+          "value": "HUB_ZN8F",
+          "count": 1
+        },
+        {
+          "value": "HUB_ZN03",
+          "count": 1
+        },
+        {
+          "value": "HUB_ZMFS",
+          "count": 1
+        }
+      ],
+      "min_length": 8,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAA_AAAA",
+        "AAA_AAAD",
+        "AAA_AADA",
+        "AAA_ADAA",
+        "AAA_DAAA"
+      ]
+    },
+    "disaster_template|transportation|transportsupref": {
+      "table_name": "transportation",
+      "column_name": "transportsupref",
+      "column_type": "TEXT(20)",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 999,
+      "min_value": "SUP_001VD",
+      "max_value": "SUP_ZZDDR",
+      "top_k_values": [
+        {
+          "value": "SUP_ZZDDR",
+          "count": 1
+        },
+        {
+          "value": "SUP_ZY3O3",
+          "count": 1
+        },
+        {
+          "value": "SUP_ZXXHM",
+          "count": 1
+        },
+        {
+          "value": "SUP_ZVYQ5",
+          "count": 1
+        },
+        {
+          "value": "SUP_ZP8M6",
+          "count": 1
+        },
+        {
+          "value": "SUP_ZP6EG",
+          "count": 1
+        },
+        {
+          "value": "SUP_ZP5MJ",
+          "count": 1
+        },
+        {
+          "value": "SUP_ZOEVG",
+          "count": 1
+        },
+        {
+          "value": "SUP_ZN3R2",
+          "count": 1
+        },
+        {
+          "value": "SUP_ZL9KP",
+          "count": 1
+        }
+      ],
+      "min_length": 9,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAA_AAAAA",
+        "AAA_ADAAA",
+        "AAA_AAAAD",
+        "AAA_DAAAA",
+        "AAA_AAADA"
+      ]
+    },
+    "disaster_template|transportation|vehiclecount": {
+      "table_name": "transportation",
+      "column_name": "vehiclecount",
+      "column_type": "INTEGER",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 191,
+      "min_value": "10",
+      "max_value": "99",
+      "top_k_values": [
+        {
+          "value": "99",
+          "count": 12
+        },
+        {
+          "value": "127",
+          "count": 11
+        },
+        {
+          "value": "92",
+          "count": 11
+        },
+        {
+          "value": "76",
+          "count": 11
+        },
+        {
+          "value": "153",
+          "count": 10
+        },
+        {
+          "value": "121",
+          "count": 10
+        },
+        {
+          "value": "83",
+          "count": 10
+        },
+        {
+          "value": "180",
+          "count": 9
+        },
+        {
+          "value": "165",
+          "count": 9
+        },
+        {
+          "value": "129",
+          "count": 9
+        }
+      ],
+      "min_length": 2,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD"
+      ]
+    },
+    "disaster_template|transportation|trucksavailable": {
+      "table_name": "transportation",
+      "column_name": "trucksavailable",
+      "column_type": "INTEGER",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 96,
+      "min_value": "10",
+      "max_value": "99",
+      "top_k_values": [
+        {
+          "value": "33",
+          "count": 20
+        },
+        {
+          "value": "69",
+          "count": 19
+        },
+        {
+          "value": "25",
+          "count": 17
+        },
+        {
+          "value": "34",
+          "count": 16
+        },
+        {
+          "value": "29",
+          "count": 16
+        },
+        {
+          "value": "83",
+          "count": 15
+        },
+        {
+          "value": "71",
+          "count": 15
+        },
+        {
+          "value": "64",
+          "count": 15
+        },
+        {
+          "value": "62",
+          "count": 15
+        },
+        {
+          "value": "57",
+          "count": 15
+        }
+      ],
+      "min_length": 1,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D",
+        "DDD"
+      ]
+    },
+    "disaster_template|transportation|helosavailable": {
+      "table_name": "transportation",
+      "column_name": "helosavailable",
+      "column_type": "INTEGER",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 11,
+      "min_value": "0",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "7",
+          "count": 102
+        },
+        {
+          "value": "2",
+          "count": 101
+        },
+        {
+          "value": "1",
+          "count": 98
+        },
+        {
+          "value": "6",
+          "count": 94
+        },
+        {
+          "value": "3",
+          "count": 92
+        },
+        {
+          "value": "10",
+          "count": 91
+        },
+        {
+          "value": "9",
+          "count": 88
+        },
+        {
+          "value": "0",
+          "count": 88
+        },
+        {
+          "value": "8",
+          "count": 87
+        },
+        {
+          "value": "5",
+          "count": 83
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D",
+        "DD"
+      ]
+    },
+    "disaster_template|transportation|boatsavailable": {
+      "table_name": "transportation",
+      "column_name": "boatsavailable",
+      "column_type": "INTEGER",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 21,
+      "min_value": "0",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "16",
+          "count": 60
+        },
+        {
+          "value": "12",
+          "count": 59
+        },
+        {
+          "value": "14",
+          "count": 57
+        },
+        {
+          "value": "4",
+          "count": 57
+        },
+        {
+          "value": "15",
+          "count": 56
+        },
+        {
+          "value": "8",
+          "count": 55
+        },
+        {
+          "value": "0",
+          "count": 52
+        },
+        {
+          "value": "7",
+          "count": 51
+        },
+        {
+          "value": "6",
+          "count": 49
+        },
+        {
+          "value": "20",
+          "count": 48
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D"
+      ]
+    },
+    "disaster_template|transportation|totaldeliverytons": {
+      "table_name": "transportation",
+      "column_name": "totaldeliverytons",
+      "column_type": "REAL",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 895,
+      "min_value": "1001.0",
+      "max_value": "998.0",
+      "top_k_values": [
+        {
+          "value": "4849.0",
+          "count": 3
+        },
+        {
+          "value": "4822.0",
+          "count": 3
+        },
+        {
+          "value": "3939.0",
+          "count": 3
+        },
+        {
+          "value": "3874.0",
+          "count": 3
+        },
+        {
+          "value": "2952.0",
+          "count": 3
+        },
+        {
+          "value": "948.0",
+          "count": 3
+        },
+        {
+          "value": "4959.0",
+          "count": 2
+        },
+        {
+          "value": "4883.0",
+          "count": 2
+        },
+        {
+          "value": "4730.0",
+          "count": 2
+        },
+        {
+          "value": "4687.0",
+          "count": 2
+        }
+      ],
+      "min_length": 5,
+      "max_length": 6,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDD.D",
+        "DDD.D"
+      ]
+    },
+    "disaster_template|transportation|dailydeliverytons": {
+      "table_name": "transportation",
+      "column_name": "dailydeliverytons",
+      "column_type": "REAL",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 434,
+      "min_value": "10.0",
+      "max_value": "99.0",
+      "top_k_values": [
+        {
+          "value": "367.0",
+          "count": 7
+        },
+        {
+          "value": "160.0",
+          "count": 7
+        },
+        {
+          "value": "412.0",
+          "count": 6
+        },
+        {
+          "value": "378.0",
+          "count": 6
+        },
+        {
+          "value": "321.0",
+          "count": 6
+        },
+        {
+          "value": "315.0",
+          "count": 6
+        },
+        {
+          "value": "284.0",
+          "count": 6
+        },
+        {
+          "value": "176.0",
+          "count": 6
+        },
+        {
+          "value": "152.0",
+          "count": 6
+        },
+        {
+          "value": "104.0",
+          "count": 6
+        }
+      ],
+      "min_length": 4,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD.D",
+        "DD.D"
+      ]
+    },
+    "disaster_template|transportation|lastmilestatus": {
+      "table_name": "transportation",
+      "column_name": "lastmilestatus",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 3,
+      "min_value": "Delayed",
+      "max_value": "Suspended",
+      "top_k_values": [
+        {
+          "value": "On Track",
+          "count": 354
+        },
+        {
+          "value": "Suspended",
+          "count": 327
+        },
+        {
+          "value": "Delayed",
+          "count": 318
+        }
+      ],
+      "min_length": 7,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AA AAAAA",
+        "AAAAAAAAA",
+        "AAAAAAA"
+      ]
+    },
+    "disaster_template|transportation|distributionpoints": {
+      "table_name": "transportation",
+      "column_name": "distributionpoints",
+      "column_type": "INTEGER",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 46,
+      "min_value": "10",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "26",
+          "count": 33
+        },
+        {
+          "value": "24",
+          "count": 32
+        },
+        {
+          "value": "36",
+          "count": 30
+        },
+        {
+          "value": "16",
+          "count": 28
+        },
+        {
+          "value": "38",
+          "count": 27
+        },
+        {
+          "value": "37",
+          "count": 27
+        },
+        {
+          "value": "29",
+          "count": 27
+        },
+        {
+          "value": "22",
+          "count": 27
+        },
+        {
+          "value": "20",
+          "count": 27
+        },
+        {
+          "value": "9",
+          "count": 27
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D"
+      ]
+    },
+    "disaster_template|transportation|avgdeliveryhours": {
+      "table_name": "transportation",
+      "column_name": "avgdeliveryhours",
+      "column_type": "REAL",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 550,
+      "min_value": "1.1",
+      "max_value": "9.8",
+      "top_k_values": [
+        {
+          "value": "59.2",
+          "count": 8
+        },
+        {
+          "value": "47.6",
+          "count": 7
+        },
+        {
+          "value": "25.2",
+          "count": 6
+        },
+        {
+          "value": "63.6",
+          "count": 5
+        },
+        {
+          "value": "61.2",
+          "count": 5
+        },
+        {
+          "value": "58.8",
+          "count": 5
+        },
+        {
+          "value": "52.0",
+          "count": 5
+        },
+        {
+          "value": "44.5",
+          "count": 5
+        },
+        {
+          "value": "35.2",
+          "count": 5
+        },
+        {
+          "value": "8.3",
+          "count": 5
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.D",
+        "D.D"
+      ]
+    },
+    "disaster_template|transportation|deliverysuccessrate": {
+      "table_name": "transportation",
+      "column_name": "deliverysuccessrate",
+      "column_type": "REAL",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 290,
+      "min_value": "70.0",
+      "max_value": "99.9",
+      "top_k_values": [
+        {
+          "value": "91.0",
+          "count": 9
+        },
+        {
+          "value": "90.7",
+          "count": 9
+        },
+        {
+          "value": "90.3",
+          "count": 9
+        },
+        {
+          "value": "93.9",
+          "count": 8
+        },
+        {
+          "value": "73.6",
+          "count": 8
+        },
+        {
+          "value": "97.3",
+          "count": 7
+        },
+        {
+          "value": "97.1",
+          "count": 7
+        },
+        {
+          "value": "89.7",
+          "count": 7
+        },
+        {
+          "value": "88.6",
+          "count": 7
+        },
+        {
+          "value": "81.8",
+          "count": 7
+        }
+      ],
+      "min_length": 4,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DD.D"
+      ]
+    },
+    "disaster_template|transportation|routeoptstatus": {
+      "table_name": "transportation",
+      "column_name": "routeoptstatus",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 3,
+      "min_value": "In Progress",
+      "max_value": "Required",
+      "top_k_values": [
+        {
+          "value": "Required",
+          "count": 365
+        },
+        {
+          "value": "Optimized",
+          "count": 331
+        },
+        {
+          "value": "In Progress",
+          "count": 303
+        }
+      ],
+      "min_length": 8,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAAAAAAA",
+        "AA AAAAAAAA"
+      ]
+    },
+    "disaster_template|transportation|fuelefficiencylpk": {
+      "table_name": "transportation",
+      "column_name": "fuelefficiencylpk",
+      "column_type": "REAL",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 150,
+      "min_value": "10.0",
+      "max_value": "9.9",
+      "top_k_values": [
+        {
+          "value": "18.0",
+          "count": 16
+        },
+        {
+          "value": "13.7",
+          "count": 14
+        },
+        {
+          "value": "19.1",
+          "count": 12
+        },
+        {
+          "value": "15.5",
+          "count": 12
+        },
+        {
+          "value": "17.7",
+          "count": 11
+        },
+        {
+          "value": "13.8",
+          "count": 11
+        },
+        {
+          "value": "11.9",
+          "count": 11
+        },
+        {
+          "value": "9.7",
+          "count": 11
+        },
+        {
+          "value": "6.5",
+          "count": 11
+        },
+        {
+          "value": "5.4",
+          "count": 11
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.D",
+        "D.D"
+      ]
+    },
+    "disaster_template|transportation|maintenancestate": {
+      "table_name": "transportation",
+      "column_name": "maintenancestate",
+      "column_type": "TEXT",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 3,
+      "min_value": "Due",
+      "max_value": "Up to Date",
+      "top_k_values": [
+        {
+          "value": "Up to Date",
+          "count": 344
+        },
+        {
+          "value": "Overdue",
+          "count": 340
+        },
+        {
+          "value": "Due",
+          "count": 315
+        }
+      ],
+      "min_length": 3,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AA AA AAAA",
+        "AAAAAAA",
+        "AAA"
+      ]
+    },
+    "disaster_template|transportation|vehiclebreakrate": {
+      "table_name": "transportation",
+      "column_name": "vehiclebreakrate",
+      "column_type": "REAL",
+      "row_count": 999,
+      "null_count": 0,
+      "non_null_count": 999,
+      "distinct_count": 101,
+      "min_value": "0.0",
+      "max_value": "9.9",
+      "top_k_values": [
+        {
+          "value": "2.9",
+          "count": 20
+        },
+        {
+          "value": "4.4",
+          "count": 18
+        },
+        {
+          "value": "9.2",
+          "count": 17
+        },
+        {
+          "value": "6.9",
+          "count": 16
+        },
+        {
+          "value": "4.2",
+          "count": 16
+        },
+        {
+          "value": "4.0",
+          "count": 16
+        },
+        {
+          "value": "5.3",
+          "count": 15
+        },
+        {
+          "value": "3.4",
+          "count": 15
+        },
+        {
+          "value": "2.5",
+          "count": 15
+        },
+        {
+          "value": "8.7",
+          "count": 14
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.D",
+        "DD.D"
+      ]
+    }
+  },
+  "meta": {
+    "environmentandhealth": {
+      "profiled_at": "2026-08-30T11:31:43.686876+00:00",
+      "row_count": 999
+    },
+    "financials": {
+      "profiled_at": "2026-08-30T11:31:43.686876+00:00",
+      "row_count": 999
+    },
+    "coordinationandevaluation": {
+      "profiled_at": "2026-08-30T11:31:43.686876+00:00",
+      "row_count": 999
+    },
+    "operations": {
+      "profiled_at": "2026-08-30T11:31:43.686876+00:00",
+      "row_count": 999
+    },
+    "disasterevents": {
+      "profiled_at": "2026-08-30T11:31:43.686876+00:00",
+      "row_count": 999
+    },
+    "beneficiariesandassessments": {
+      "profiled_at": "2026-08-30T11:31:43.686876+00:00",
+      "row_count": 999
+    },
+    "transportation": {
+      "profiled_at": "2026-08-30T11:31:43.686876+00:00",
+      "row_count": 999
+    },
+    "humanresources": {
+      "profiled_at": "2026-08-30T11:31:43.686876+00:00",
+      "row_count": 999
+    },
+    "distributionhubs": {
+      "profiled_at": "2026-08-30T11:31:43.686876+00:00",
+      "row_count": 999
+    },
+    "supplies": {
+      "profiled_at": "2026-08-30T11:31:43.686876+00:00",
+      "row_count": 999
+    }
+  }
+}

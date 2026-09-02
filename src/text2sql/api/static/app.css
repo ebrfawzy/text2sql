@@ -1,0 +1,8 @@
+/* Only what Tailwind utilities can't express; everything else is a utility class. */
+
+[x-cloak] { display: none !important; }
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb { background: rgba(120, 120, 120, .4); border-radius: 4px; }
+
+.mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }

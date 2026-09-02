@@ -1,0 +1,197 @@
+CREATE TABLE "accountbalances" (
+accountbalancesnode integer(64) NOT NULL,
+walletsum real(12,3) NULL,
+availsum real(12,3) NULL,
+frozensum real(12,3) NULL,
+margsum real(12,3) NULL,
+unrealline integer(53) NULL,
+realline integer(53) NULL,
+usertag text(36) NULL,
+    PRIMARY KEY (accountbalancesnode),
+    FOREIGN KEY (usertag) REFERENCES users(userstamp)
+);
+First 3 rows:
+  accountbalancesnode    walletsum    availsum    frozensum    margsum    unrealline    realline  usertag
+                    1       316483    250958        65525.1     901344       3545.06   -38455.1   U583322
+                    2       506236     91692.6     414544       572884      52010.2      9741.09  U810391
+                    3       729963    545563       184400       321804      52597.6    -81686.6   U485932
+...
+
+CREATE TABLE "analyticsindicators" (
+analyticsindicatorsnode integer(64) NOT NULL,
+mdataref integer(64) NULL,
+mstatsref integer(64) NULL,
+market_sentiment_indicators TEXT NULL,
+    PRIMARY KEY (analyticsindicatorsnode),
+    FOREIGN KEY (mstatsref) REFERENCES marketstats(marketstatsmark),
+    FOREIGN KEY (mdataref) REFERENCES marketdata(marketdatanode)
+);
+First 3 rows:
+  analyticsindicatorsnode    mdataref    mstatsref  market_sentiment_indicators
+                        3           3            3  {"flow": {"instflow": 0.395, "flowimbal": 0.098, "retailflow": 0.552, "smartforce": -0.265, "tradeimbal": -0.55, "largeflowrate": 0.830}, "walls": {"buywallband": 0.052, "sellwallband": 0.014}, "momentum": {"mktfeel": "Bearish", "buyforce": 0.328, "sellforce": 0.506, "techmeter": "Buy"}, "arbitrage": {"fundgap": 0.0041, "basisgap": 0.0048, "xexchband": 0.0033, "arbpotential": 0.0007}, "big_players": {"makermotion": "Low", "whalemotion": "Medium"}, "oscillators": {"bbandspan": 65.310, "macdtrail": 3.640, "rsi14spot": 93.550}}
+                        4           4            4  {"flow": {"instflow": 0.753, "flowimbal": -0.3, "retailflow": 0.023, "smartforce": -0.739, "tradeimbal": 0.848, "largeflowrate": 0.352}, "walls": {"buywallband": 0.019, "sellwallband": 0.068}, "momentum": {"mktfeel": "Bullish", "buyforce": 0.317, "sellforce": 0.824, "techmeter": "Buy"}, "arbitrage": {"fundgap": 0.0073, "basisgap": 0.0012, "xexchband": 0.0021, "arbpotential": 0.0006}, "big_players": {"makermotion": "High", "whalemotion": "Low"}, "oscillators": {"bbandspan": 63.290, "macdtrail": -7.910, "rsi14spot": 51.890}}
+                        5           5            5  {"flow": {"instflow": -0.621, "flowimbal": 0.817, "retailflow": 0.108, "smartforce": -0.049, "tradeimbal": -0.083, "largeflowrate": 0.376}, "walls": {"buywallband": 0.038, "sellwallband": 0.051}, "momentum": {"mktfeel": "Bearish", "buyforce": 0.38, "sellforce": 0.433, "techmeter": "Sell"}, "arbitrage": {"fundgap": 0.0045, "basisgap": 0.0070, "xexchband": 0.0087, "arbpotential": 0.0064}, "big_players": {"makermotion": "Medium", "whalemotion": "Medium"}, "oscillators": {"bbandspan": 88.300, "macdtrail": -5.890, "rsi14spot": 16.520}}
+...
+
+CREATE TABLE "fees" (
+feesnode integer(64) NOT NULL,
+feerange TEXT NULL,
+feerate real(8,5) NULL,
+feetotal real(12,6) NULL,
+feecoin TEXT NULL,
+rebrate real(8,5) NULL,
+rebtotal real(12,6) NULL,
+orderslink text(36) NULL,
+    PRIMARY KEY (feesnode),
+    FOREIGN KEY (orderslink) REFERENCES orders(recordvault)
+);
+First 3 rows:
+  feesnode  feerange      feerate    feetotal  feecoin      rebrate    rebtotal  orderslink
+         1  Tier4          0.0007     26.6001  USDC          0.0009     34.2001  OB333576
+         2  Tier1          0.0015     32.1965  USDC          0.0003      6.4393  OB798737
+         3  Tier3          0.0017     66.5575  USD           0.0003     11.7454  OB179652
+...
+
+CREATE TABLE "marketdata" (
+marketdatanode integer(64) NOT NULL,
+quote_depth_snapshot TEXT NULL,
+    PRIMARY KEY (marketdatanode)
+);
+First 3 rows:
+  marketdatanode  quote_depth_snapshot
+               3  {"depth": {"askdepth": 124, "askunits": 88.5548, "biddepth": 370, "bidunits": 32.7479}, "quotes": {"askquote": 10670.090, "bidquote": 10660.450, "midquote": 10665.270, "markquote": 10659.730, "indexquote": 10670.970}, "spread": {"spreadband": 9.64, "spreadrate": 0.0904}, "metadata": {"exchnote": "EX497     ", "mktcombo": "BTC-USDT", "timetrack": "2025-02-19T08:29:46.049442"}}
+               4  {"depth": {"askdepth": 69, "askunits": 95.6982, "biddepth": 808, "bidunits": 82.0956}, "quotes": {"askquote": 37394.150, "bidquote": 37376.590, "midquote": 37385.370, "markquote": 37399.080, "indexquote": 37371.310}, "spread": {"spreadband": 17.56, "spreadrate": 0.0470}, "metadata": {"exchnote": "EX409     ", "mktcombo": "SOL-USDC", "timetrack": "2025-02-19T08:29:46.049442"}}
+               5  {"depth": {"askdepth": 184, "askunits": 63.6802, "biddepth": 567, "bidunits": 23.2098}, "quotes": {"askquote": 47805.680, "bidquote": 47734.180, "midquote": 47769.930, "markquote": 47789.710, "indexquote": 47814.950}, "spread": {"spreadband": 71.5, "spreadrate": 0.1497}, "metadata": {"exchnote": "EX702     ", "mktcombo": "ETH-USDC", "timetrack": "2025-02-19T08:29:46.049442"}}
+...
+
+CREATE TABLE "marketstats" (
+marketstatsmark integer(64) NOT NULL,
+fundrate real(6,4) NULL,
+fundspot text(6) NULL,
+openstake real(15,5) NULL,
+volday integer(53) NULL,
+tradeday integer(32) NULL,
+tnoverday real(12,3) NULL,
+priceshiftday real(12,3) NULL,
+highspotday real(12,3) NULL,
+lowspotday real(12,3) NULL,
+vwapday real(12,3) NULL,
+mktsize real(13,3) NULL,
+circtotal real(13,3) NULL,
+totsupply real(13,3) NULL,
+maxsupply real(13,3) NULL,
+mkthold real(13,3) NULL,
+traderank integer(32) NULL,
+liquidscore real(8,2) NULL,
+volmeter real(8,2) NULL,
+mdlink integer(64) NULL,
+    PRIMARY KEY (marketstatsmark),
+    FOREIGN KEY (mdlink) REFERENCES marketdata(marketdatanode)
+);
+First 3 rows:
+  marketstatsmark    fundrate  fundspot               openstake       volday    tradeday    tnoverday    priceshiftday    highspotday    lowspotday    vwapday      mktsize    circtotal    totsupply    maxsupply    mkthold    traderank    liquidscore    volmeter    mdlink
+                1      0.0004  2025-02-19 14:29:46       808923  3.04561e+06       73628  9.40605e+06            0.08         27823.7      25912.1    26269.5   4.38987e+08  7.9417e+07   9.62261e+07  1.88392e+08      0.026           52           0.9        55.65         1
+                2      0.001   2025-02-19 09:29:46       809954  7.63342e+06       96633  7.83748e+06           -0.137        10741.9       9151.16    9857.69  9.33923e+08  4.95459e+07  6.13324e+07  6.79171e+07      0.311           76           0.83       96.53         2
+                3     -0.0001  2025-02-19 12:29:46       508323  8.59084e+06       16878  3.6968e+06             0.147        11080.1      10040.8    11107.2   9.62119e+08  7.88948e+07  8.30716e+07  1.1007e+08       0.404           29           0.92       36.88         3
+...
+
+CREATE TABLE "orderexecutions" (
+orderexecmark integer(64) NOT NULL,
+fillcount real(8,4) NULL,
+remaincount real(8,4) NULL,
+fillquote real(12,3) NULL,
+fillsum real(12,3) NULL,
+expirespot text(6) NULL,
+cancelnote TEXT NULL,
+exectune TEXT NULL,
+ordersmark text(36) NULL,
+    PRIMARY KEY (orderexecmark),
+    FOREIGN KEY (ordersmark) REFERENCES orders(recordvault)
+);
+First 3 rows:
+  orderexecmark    fillcount    remaincount    fillquote    fillsum  expirespot                  cancelnote         exectune    ordersmark
+              1       1.4479         0.545       26244.4    38000.1  2025-02-22 08:29:46.049442  Expired                        OB333576
+              2       2.0981         5.9428      10230.1    21464.3  2025-02-26 08:29:46.049442                                 OB798737
+              3       3.588          4.3877      10911.7    39151.5  2025-03-19 08:29:46.049442  InsufficientFunds              OB179652
+...
+
+CREATE TABLE "orders" (
+orderspivot integer(64) NOT NULL,
+recordvault text(36) NOT NULL,
+timecode text(6) NOT NULL,
+exchspot text(10) NULL,
+mktnote text(30) NULL,
+orderstamp text(36) NULL,
+userlink text(36) NULL,
+ordertune TEXT NULL,
+dealedge TEXT NULL,
+dealquote real(12,3) NULL,
+dealcount real(12,4) NULL,
+notionsum real(12,3) NULL,
+orderflow TEXT NULL,
+timespan TEXT NULL,
+orderbase TEXT NULL,
+clientmark text(80) NULL,
+createspot text(6) NULL,
+updatespot text(6) NULL,
+    PRIMARY KEY (orderspivot),
+    FOREIGN KEY (userlink) REFERENCES users(userstamp)
+);
+First 3 rows:
+  orderspivot  recordvault    timecode                    exchspot    mktnote    orderstamp    userlink    ordertune    dealedge      dealquote    dealcount    notionsum  orderflow        timespan    orderbase    clientmark    createspot                  updatespot
+            1  OB333576       2025-02-19 08:29:46.049442  EX203       ETH-USDT   OR6728455     U583322     Stop         Sell            27080.4       1.993       53970    New              IOC         API          CL5311016     2025-02-18 09:54:51.049442  2025-02-19 08:29:46.049442
+            2  OB798737       2025-02-19 08:29:46.049442  EX506       ADA-USDC   OR9929123     U810391     Market       Sell            10075.9       8.041       81019.9  PartiallyFilled  GTC         Web          CL4886815     2025-02-18 19:01:42.049442  2025-02-19 08:29:46.049442
+            3  OB179652       2025-02-19 08:29:46.049442  EX497       BTC-USDT   OR8906157     U485932     Limit        Sell            10665.4       7.9757      85064.1  Cancelled        GTD         Mobile       CL8161496     2025-02-18 20:34:55.049442  2025-02-19 08:29:46.049442
+...
+
+CREATE TABLE "riskandmargin" (
+riskandmarginpivot integer(64) NOT NULL,
+ordervault text(36) NULL,
+risk_margin_profile TEXT NULL,
+    PRIMARY KEY (riskandmarginpivot),
+    FOREIGN KEY (ordervault) REFERENCES orders(recordvault)
+);
+First 3 rows:
+  riskandmarginpivot  ordervault    risk_margin_profile
+                   2  OB798737      {"iceberg": {"viscount": 7.152985, "icebcount": 0.88799}, "leverage": {"levscale": "1", "margform": null}, "position": {"possum": 12995.760, "posedge": null, "posmagn": "1", "poscount": 1.290, "posriskrate": 0.024}, "collateral": {"collsum": 719677.950, "collcoin": "USDC", "collrate": 0.480, "insfundshare": 10.090}, "margin_rates": {"margrate": 0.264, "bkptquote": 4564.250, "margcallquote": 11219.320}, "price_levels": {"liqquote": 14140.010, "stopquote": 10308.060, "traildiff": 0.020, "trigquote": 10689.560}, "risk_factors": {"cpfactor": "0.823", "liqfactor": "0.171", "netfactor": "0.896", "regfactor": "0.975", "setfactor": "0.755", "custfactor": "0.544"}, "margin_thresholds": {"inithold": 81019.900, "mainthold": 40509.950}}
+                   3  OB179652      {"iceberg": {"viscount": 5.334452, "icebcount": 2.641267}, "leverage": {"levscale": "2", "margform": null}, "position": {"possum": 990687.610, "posedge": "Short", "posmagn": "2", "poscount": 92.888, "posriskrate": 0.553}, "collateral": {"collsum": 19000.130, "collcoin": "USDT", "collrate": 0.438, "insfundshare": 4.530}, "margin_rates": {"margrate": 0.826, "bkptquote": 11913.550, "margcallquote": 6818.720}, "price_levels": {"liqquote": 11661.770, "stopquote": 10558.320, "traildiff": 0.030, "trigquote": 11263.900}, "risk_factors": {"cpfactor": "0.286", "liqfactor": "0.639", "netfactor": "0.803", "regfactor": "0.416", "setfactor": "0.538", "custfactor": "0.728"}, "margin_thresholds": {"inithold": 42532.070, "mainthold": 21266.030}}
+                   4  OB827275      {"iceberg": {"viscount": 4.113913, "icebcount": 3.403397}, "leverage": {"levscale": "3", "margform": null}, "position": {"possum": 1210450.200, "posedge": "Long", "posmagn": "1", "poscount": 32.377, "posriskrate": 0.836}, "collateral": {"collsum": 87696.520, "collcoin": "USDT", "collrate": 0.381, "insfundshare": 38.450}, "margin_rates": {"margrate": 0.403, "bkptquote": 27881.460, "margcallquote": 40130.120}, "price_levels": {"liqquote": 34894.200, "stopquote": 34914.370, "traildiff": 0.038, "trigquote": 35326.060}, "risk_factors": {"cpfactor": "0.712", "liqfactor": "0.959", "netfactor": "0.226", "regfactor": "0.421", "setfactor": "0.296", "custfactor": "0.199"}, "margin_thresholds": {"inithold": 93681.570, "mainthold": 46840.790}}
+...
+
+CREATE TABLE "systemmonitoring" (
+systemmonitoringpivot integer(64) NOT NULL,
+apireqtotal integer(32) NULL,
+apierrtotal integer(32) NULL,
+apilatmark integer(24) NULL,
+wsstate TEXT NULL,
+rateremain integer(16) NULL,
+lastupdnote text(60) NULL,
+seqcode text(60) NULL,
+slipratio real(12,3) NULL,
+exectimespan real(8,2) NULL,
+queueline integer(32) NULL,
+mkteffect integer(24) NULL,
+priceeffect integer(24) NULL,
+aitrack integer(64) NULL,
+    PRIMARY KEY (systemmonitoringpivot),
+    FOREIGN KEY (aitrack) REFERENCES analyticsindicators(analyticsindicatorsnode)
+);
+First 3 rows:
+  systemmonitoringpivot    apireqtotal    apierrtotal    apilatmark  wsstate         rateremain    lastupdnote    seqcode    slipratio    exectimespan    queueline    mkteffect    priceeffect    aitrack
+                      1           2984              4           547  Connected              939        9340653    6559236       -0.008             203          810       0.0014         0.0039          1
+                      2           7728             48           199  Connected              408        1943398    5033445        0.005             216          985      -0.0074         0.0011          2
+                      3           5759             41           441  Disconnected           981        5199723    8934815        0.003             431          649      -0.0046         0.0037          3
+...
+
+CREATE TABLE "users" (
+usersnode integer(64) NOT NULL,
+userstamp text(36) NOT NULL,
+acctscope TEXT NULL,
+    PRIMARY KEY (usersnode)
+);
+First 3 rows:
+  usersnode  userstamp    acctscope
+          1  U583322      Margin
+          2  U810391      Spot
+          3  U485932      Options
+...

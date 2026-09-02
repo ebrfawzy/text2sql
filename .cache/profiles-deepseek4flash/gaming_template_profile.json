@@ -1,0 +1,8444 @@
+{
+  "version": 1,
+  "profiled_at": "2026-08-30T11:49:12.445576+00:00",
+  "columns": {
+    "gaming_template|audioandmedia|audregistry": {
+      "table_name": "audioandmedia",
+      "column_name": "audregistry",
+      "column_type": "TEXT(20)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "AUD_00FA2G",
+      "max_value": "AUD_ZTTC7U",
+      "top_k_values": [
+        {
+          "value": "AUD_00FA2G",
+          "count": 1
+        },
+        {
+          "value": "AUD_012SKS",
+          "count": 1
+        },
+        {
+          "value": "AUD_01GP5D",
+          "count": 1
+        },
+        {
+          "value": "AUD_05KNAG",
+          "count": 1
+        },
+        {
+          "value": "AUD_05XDXM",
+          "count": 1
+        },
+        {
+          "value": "AUD_0BKWAX",
+          "count": 1
+        },
+        {
+          "value": "AUD_0CHQVM",
+          "count": 1
+        },
+        {
+          "value": "AUD_0F3L2U",
+          "count": 1
+        },
+        {
+          "value": "AUD_0G3C8S",
+          "count": 1
+        },
+        {
+          "value": "AUD_0GA92A",
+          "count": 1
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAA_AAAAAA",
+        "AAA_ADAAAA",
+        "AAA_AAAAAD",
+        "AAA_DAAAAA",
+        "AAA_AAAADA"
+      ]
+    },
+    "gaming_template|audioandmedia|auddevref": {
+      "table_name": "audioandmedia",
+      "column_name": "auddevref",
+      "column_type": "TEXT(20)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "DEV_00ZEAE",
+      "max_value": "DEV_ZZ7O6O",
+      "top_k_values": [
+        {
+          "value": "DEV_ZZ7O6O",
+          "count": 1
+        },
+        {
+          "value": "DEV_ZXSO5C",
+          "count": 1
+        },
+        {
+          "value": "DEV_ZUFE36",
+          "count": 1
+        },
+        {
+          "value": "DEV_ZTNXY1",
+          "count": 1
+        },
+        {
+          "value": "DEV_ZSWMOQ",
+          "count": 1
+        },
+        {
+          "value": "DEV_ZPZPLM",
+          "count": 1
+        },
+        {
+          "value": "DEV_ZPXZYE",
+          "count": 1
+        },
+        {
+          "value": "DEV_ZN625H",
+          "count": 1
+        },
+        {
+          "value": "DEV_ZJ8U9O",
+          "count": 1
+        },
+        {
+          "value": "DEV_ZI28ZY",
+          "count": 1
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAA_AAAAAA",
+        "AAA_AAAAAD",
+        "AAA_ADAAAA",
+        "AAA_AAAADA",
+        "AAA_DAAAAA"
+      ]
+    },
+    "gaming_template|audioandmedia|audperfref": {
+      "table_name": "audioandmedia",
+      "column_name": "audperfref",
+      "column_type": "TEXT(20)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "PERF_01U390",
+      "max_value": "PERF_ZZJUD9",
+      "top_k_values": [
+        {
+          "value": "PERF_ZZJUD9",
+          "count": 1
+        },
+        {
+          "value": "PERF_ZYLSQ1",
+          "count": 1
+        },
+        {
+          "value": "PERF_ZX65O1",
+          "count": 1
+        },
+        {
+          "value": "PERF_ZWFSMD",
+          "count": 1
+        },
+        {
+          "value": "PERF_ZV04YM",
+          "count": 1
+        },
+        {
+          "value": "PERF_ZUM77X",
+          "count": 1
+        },
+        {
+          "value": "PERF_ZTLP81",
+          "count": 1
+        },
+        {
+          "value": "PERF_ZSJHIG",
+          "count": 1
+        },
+        {
+          "value": "PERF_ZS4VNT",
+          "count": 1
+        },
+        {
+          "value": "PERF_ZR4SHP",
+          "count": 1
+        }
+      ],
+      "min_length": 11,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAA_AAAAAA",
+        "AAAA_AAAAAD",
+        "AAAA_DAAAAA",
+        "AAAA_AADAAA",
+        "AAAA_AAAADA"
+      ]
+    },
+    "gaming_template|audioandmedia|sndleveldb": {
+      "table_name": "audioandmedia",
+      "column_name": "sndleveldb",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 367,
+      "min_value": "30.0",
+      "max_value": "70.0",
+      "top_k_values": [
+        {
+          "value": "33.3",
+          "count": 9
+        },
+        {
+          "value": "62.5",
+          "count": 8
+        },
+        {
+          "value": "56.5",
+          "count": 8
+        },
+        {
+          "value": "36.8",
+          "count": 8
+        },
+        {
+          "value": "67.0",
+          "count": 7
+        },
+        {
+          "value": "52.8",
+          "count": 7
+        },
+        {
+          "value": "42.4",
+          "count": 7
+        },
+        {
+          "value": "65.9",
+          "count": 6
+        },
+        {
+          "value": "64.4",
+          "count": 6
+        },
+        {
+          "value": "59.4",
+          "count": 6
+        }
+      ],
+      "min_length": 4,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DD.D"
+      ]
+    },
+    "gaming_template|audioandmedia|sndsig": {
+      "table_name": "audioandmedia",
+      "column_name": "sndsig",
+      "column_type": "TEXT(30)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "Clicky",
+      "max_value": "Thocky",
+      "top_k_values": [
+        {
+          "value": "Silent",
+          "count": 267
+        },
+        {
+          "value": "Clicky",
+          "count": 258
+        },
+        {
+          "value": "Linear",
+          "count": 243
+        },
+        {
+          "value": "Thocky",
+          "count": 232
+        }
+      ],
+      "min_length": 6,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAAAA"
+      ]
+    },
+    "gaming_template|audioandmedia|noiseisodb": {
+      "table_name": "audioandmedia",
+      "column_name": "noiseisodb",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 21,
+      "min_value": "10",
+      "max_value": "30",
+      "top_k_values": [
+        {
+          "value": "18",
+          "count": 64
+        },
+        {
+          "value": "25",
+          "count": 60
+        },
+        {
+          "value": "14",
+          "count": 59
+        },
+        {
+          "value": "11",
+          "count": 58
+        },
+        {
+          "value": "13",
+          "count": 53
+        },
+        {
+          "value": "27",
+          "count": 52
+        },
+        {
+          "value": "20",
+          "count": 52
+        },
+        {
+          "value": "17",
+          "count": 52
+        },
+        {
+          "value": "29",
+          "count": 50
+        },
+        {
+          "value": "19",
+          "count": 50
+        }
+      ],
+      "min_length": 2,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DD"
+      ]
+    },
+    "gaming_template|audioandmedia|audlatms": {
+      "table_name": "audioandmedia",
+      "column_name": "audlatms",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 189,
+      "min_value": "1.0",
+      "max_value": "9.9",
+      "top_k_values": [
+        {
+          "value": "8.3",
+          "count": 12
+        },
+        {
+          "value": "5.7",
+          "count": 12
+        },
+        {
+          "value": "5.9",
+          "count": 11
+        },
+        {
+          "value": "16.9",
+          "count": 10
+        },
+        {
+          "value": "14.4",
+          "count": 10
+        },
+        {
+          "value": "13.0",
+          "count": 10
+        },
+        {
+          "value": "12.6",
+          "count": 10
+        },
+        {
+          "value": "4.5",
+          "count": 10
+        },
+        {
+          "value": "17.4",
+          "count": 9
+        },
+        {
+          "value": "17.3",
+          "count": 9
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.D",
+        "D.D"
+      ]
+    },
+    "gaming_template|audioandmedia|micsensedb": {
+      "table_name": "audioandmedia",
+      "column_name": "micsensedb",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 21,
+      "min_value": "-30.0",
+      "max_value": "-50.0",
+      "top_k_values": [
+        {
+          "value": "-44.0",
+          "count": 74
+        },
+        {
+          "value": "-48.0",
+          "count": 59
+        },
+        {
+          "value": "-32.0",
+          "count": 57
+        },
+        {
+          "value": "-47.0",
+          "count": 56
+        },
+        {
+          "value": "-34.0",
+          "count": 53
+        },
+        {
+          "value": "-41.0",
+          "count": 53
+        },
+        {
+          "value": "-42.0",
+          "count": 53
+        },
+        {
+          "value": "-35.0",
+          "count": 47
+        },
+        {
+          "value": "-40.0",
+          "count": 47
+        },
+        {
+          "value": "-38.0",
+          "count": 46
+        }
+      ],
+      "min_length": 5,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "-DD.D"
+      ]
+    },
+    "gaming_template|audioandmedia|micfreqresp": {
+      "table_name": "audioandmedia",
+      "column_name": "micfreqresp",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "100-10403Hz",
+      "max_value": "99-16852Hz",
+      "top_k_values": [
+        {
+          "value": "99-16852Hz",
+          "count": 1
+        },
+        {
+          "value": "99-14836Hz",
+          "count": 1
+        },
+        {
+          "value": "99-14303Hz",
+          "count": 1
+        },
+        {
+          "value": "99-13734Hz",
+          "count": 1
+        },
+        {
+          "value": "99-12979Hz",
+          "count": 1
+        },
+        {
+          "value": "99-12867Hz",
+          "count": 1
+        },
+        {
+          "value": "98-19877Hz",
+          "count": 1
+        },
+        {
+          "value": "98-19384Hz",
+          "count": 1
+        },
+        {
+          "value": "98-19174Hz",
+          "count": 1
+        },
+        {
+          "value": "98-19057Hz",
+          "count": 1
+        }
+      ],
+      "min_length": 10,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD-DDDDDAA",
+        "DDD-DDDDDAA"
+      ]
+    },
+    "gaming_template|audioandmedia|spkimpohm": {
+      "table_name": "audioandmedia",
+      "column_name": "spkimpohm",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "16",
+      "max_value": "64",
+      "top_k_values": [
+        {
+          "value": "32",
+          "count": 342
+        },
+        {
+          "value": "64",
+          "count": 337
+        },
+        {
+          "value": "16",
+          "count": 321
+        }
+      ],
+      "min_length": 2,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DD"
+      ]
+    },
+    "gaming_template|audioandmedia|spksensedb": {
+      "table_name": "audioandmedia",
+      "column_name": "spksensedb",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 21,
+      "min_value": "100",
+      "max_value": "99",
+      "top_k_values": [
+        {
+          "value": "94",
+          "count": 60
+        },
+        {
+          "value": "96",
+          "count": 56
+        },
+        {
+          "value": "104",
+          "count": 54
+        },
+        {
+          "value": "93",
+          "count": 54
+        },
+        {
+          "value": "95",
+          "count": 52
+        },
+        {
+          "value": "105",
+          "count": 51
+        },
+        {
+          "value": "91",
+          "count": 51
+        },
+        {
+          "value": "103",
+          "count": 50
+        },
+        {
+          "value": "98",
+          "count": 50
+        },
+        {
+          "value": "108",
+          "count": 49
+        }
+      ],
+      "min_length": 2,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "DDD"
+      ]
+    },
+    "gaming_template|audioandmedia|thdpct": {
+      "table_name": "audioandmedia",
+      "column_name": "thdpct",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 191,
+      "min_value": "0.1",
+      "max_value": "2.0",
+      "top_k_values": [
+        {
+          "value": "1.4",
+          "count": 10
+        },
+        {
+          "value": "1.97",
+          "count": 9
+        },
+        {
+          "value": "1.93",
+          "count": 9
+        },
+        {
+          "value": "1.84",
+          "count": 9
+        },
+        {
+          "value": "1.53",
+          "count": 9
+        },
+        {
+          "value": "0.79",
+          "count": 9
+        },
+        {
+          "value": "0.46",
+          "count": 9
+        },
+        {
+          "value": "0.4",
+          "count": 9
+        },
+        {
+          "value": "0.17",
+          "count": 9
+        },
+        {
+          "value": "1.82",
+          "count": 8
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "gaming_template|audioandmedia|freqresp": {
+      "table_name": "audioandmedia",
+      "column_name": "freqresp",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "10-20386Hz",
+      "max_value": "30-39979Hz",
+      "top_k_values": [
+        {
+          "value": "30-39979Hz",
+          "count": 1
+        },
+        {
+          "value": "30-39383Hz",
+          "count": 1
+        },
+        {
+          "value": "30-39334Hz",
+          "count": 1
+        },
+        {
+          "value": "30-39060Hz",
+          "count": 1
+        },
+        {
+          "value": "30-37972Hz",
+          "count": 1
+        },
+        {
+          "value": "30-37571Hz",
+          "count": 1
+        },
+        {
+          "value": "30-37312Hz",
+          "count": 1
+        },
+        {
+          "value": "30-37269Hz",
+          "count": 1
+        },
+        {
+          "value": "30-36415Hz",
+          "count": 1
+        },
+        {
+          "value": "30-35821Hz",
+          "count": 1
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DD-DDDDDAA"
+      ]
+    },
+    "gaming_template|audioandmedia|drvszmm": {
+      "table_name": "audioandmedia",
+      "column_name": "drvszmm",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "40",
+      "max_value": "53",
+      "top_k_values": [
+        {
+          "value": "53",
+          "count": 338
+        },
+        {
+          "value": "50",
+          "count": 333
+        },
+        {
+          "value": "40",
+          "count": 329
+        }
+      ],
+      "min_length": 2,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DD"
+      ]
+    },
+    "gaming_template|audioandmedia|surrsnd": {
+      "table_name": "audioandmedia",
+      "column_name": "surrsnd",
+      "column_type": "TEXT(30)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "5.1",
+      "max_value": "Stereo",
+      "top_k_values": [
+        {
+          "value": "5.1",
+          "count": 348
+        },
+        {
+          "value": "7.1",
+          "count": 341
+        },
+        {
+          "value": "Stereo",
+          "count": 311
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.D",
+        "AAAAAA"
+      ]
+    },
+    "gaming_template|audioandmedia|eqcount": {
+      "table_name": "audioandmedia",
+      "column_name": "eqcount",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 8,
+      "min_value": "10",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "3",
+          "count": 135
+        },
+        {
+          "value": "8",
+          "count": 134
+        },
+        {
+          "value": "5",
+          "count": 133
+        },
+        {
+          "value": "7",
+          "count": 130
+        },
+        {
+          "value": "9",
+          "count": 128
+        },
+        {
+          "value": "10",
+          "count": 126
+        },
+        {
+          "value": "4",
+          "count": 108
+        },
+        {
+          "value": "6",
+          "count": 106
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D",
+        "DD"
+      ]
+    },
+    "gaming_template|audioandmedia|micmon": {
+      "table_name": "audioandmedia",
+      "column_name": "micmon",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1,
+      "min_value": "0",
+      "max_value": "0",
+      "top_k_values": [
+        {
+          "value": "0",
+          "count": 1000
+        }
+      ],
+      "min_length": 1,
+      "max_length": 1,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D"
+      ]
+    },
+    "gaming_template|audioandmedia|noisecanc": {
+      "table_name": "audioandmedia",
+      "column_name": "noisecanc",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Active",
+      "max_value": "Passive",
+      "top_k_values": [
+        {
+          "value": "Passive",
+          "count": 442
+        },
+        {
+          "value": "Active",
+          "count": 440
+        },
+        {
+          "value": "None",
+          "count": 118
+        }
+      ],
+      "min_length": 4,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAA",
+        "AAAA"
+      ]
+    },
+    "gaming_template|audioandmedia|btversion": {
+      "table_name": "audioandmedia",
+      "column_name": "btversion",
+      "column_type": "TEXT(35)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "4.0",
+      "max_value": "5.2",
+      "top_k_values": [
+        {
+          "value": "5.2",
+          "count": 274
+        },
+        {
+          "value": "5.0",
+          "count": 252
+        },
+        {
+          "value": "4.0",
+          "count": 244
+        },
+        {
+          "value": "5.1",
+          "count": 230
+        }
+      ],
+      "min_length": 3,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D.D"
+      ]
+    },
+    "gaming_template|audioandmedia|btrangem": {
+      "table_name": "audioandmedia",
+      "column_name": "btrangem",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 26,
+      "min_value": "10",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "14",
+          "count": 48
+        },
+        {
+          "value": "24",
+          "count": 46
+        },
+        {
+          "value": "6",
+          "count": 46
+        },
+        {
+          "value": "22",
+          "count": 45
+        },
+        {
+          "value": "5",
+          "count": 44
+        },
+        {
+          "value": "27",
+          "count": 43
+        },
+        {
+          "value": "19",
+          "count": 43
+        },
+        {
+          "value": "11",
+          "count": 43
+        },
+        {
+          "value": "7",
+          "count": 43
+        },
+        {
+          "value": "28",
+          "count": 42
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D"
+      ]
+    },
+    "gaming_template|audioandmedia|btlatms": {
+      "table_name": "audioandmedia",
+      "column_name": "btlatms",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 798,
+      "min_value": "100.2",
+      "max_value": "299.7",
+      "top_k_values": [
+        {
+          "value": "284.6",
+          "count": 4
+        },
+        {
+          "value": "247.8",
+          "count": 4
+        },
+        {
+          "value": "111.7",
+          "count": 4
+        },
+        {
+          "value": "266.8",
+          "count": 3
+        },
+        {
+          "value": "260.0",
+          "count": 3
+        },
+        {
+          "value": "249.6",
+          "count": 3
+        },
+        {
+          "value": "236.7",
+          "count": 3
+        },
+        {
+          "value": "229.2",
+          "count": 3
+        },
+        {
+          "value": "228.1",
+          "count": 3
+        },
+        {
+          "value": "218.6",
+          "count": 3
+        }
+      ],
+      "min_length": 5,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDD.D"
+      ]
+    },
+    "gaming_template|audioandmedia|multidev": {
+      "table_name": "audioandmedia",
+      "column_name": "multidev",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 2,
+      "min_value": "0",
+      "max_value": "1",
+      "top_k_values": [
+        {
+          "value": "0",
+          "count": 665
+        },
+        {
+          "value": "1",
+          "count": 335
+        }
+      ],
+      "min_length": 1,
+      "max_length": 1,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D"
+      ]
+    },
+    "gaming_template|audioandmedia|autoslpmin": {
+      "table_name": "audioandmedia",
+      "column_name": "autoslpmin",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 30,
+      "min_value": "1",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "13",
+          "count": 47
+        },
+        {
+          "value": "11",
+          "count": 44
+        },
+        {
+          "value": "8",
+          "count": 43
+        },
+        {
+          "value": "9",
+          "count": 41
+        },
+        {
+          "value": "17",
+          "count": 39
+        },
+        {
+          "value": "7",
+          "count": 38
+        },
+        {
+          "value": "25",
+          "count": 37
+        },
+        {
+          "value": "21",
+          "count": 37
+        },
+        {
+          "value": "29",
+          "count": 36
+        },
+        {
+          "value": "28",
+          "count": 36
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D"
+      ]
+    },
+    "gaming_template|audioandmedia|wakems": {
+      "table_name": "audioandmedia",
+      "column_name": "wakems",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 954,
+      "min_value": "100.6",
+      "max_value": "999.3",
+      "top_k_values": [
+        {
+          "value": "1000.0",
+          "count": 2
+        },
+        {
+          "value": "992.1",
+          "count": 2
+        },
+        {
+          "value": "986.2",
+          "count": 2
+        },
+        {
+          "value": "966.3",
+          "count": 2
+        },
+        {
+          "value": "925.5",
+          "count": 2
+        },
+        {
+          "value": "924.3",
+          "count": 2
+        },
+        {
+          "value": "897.1",
+          "count": 2
+        },
+        {
+          "value": "893.2",
+          "count": 2
+        },
+        {
+          "value": "881.3",
+          "count": 2
+        },
+        {
+          "value": "878.8",
+          "count": 2
+        }
+      ],
+      "min_length": 5,
+      "max_length": 6,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD.D",
+        "DDDD.D"
+      ]
+    },
+    "gaming_template|deviceidentity|devregistry": {
+      "table_name": "deviceidentity",
+      "column_name": "devregistry",
+      "column_type": "TEXT(20)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "DEV_00ZEAE",
+      "max_value": "DEV_ZZ7O6O",
+      "top_k_values": [
+        {
+          "value": "DEV_00ZEAE",
+          "count": 1
+        },
+        {
+          "value": "DEV_029ZOH",
+          "count": 1
+        },
+        {
+          "value": "DEV_03OB9I",
+          "count": 1
+        },
+        {
+          "value": "DEV_04UK2B",
+          "count": 1
+        },
+        {
+          "value": "DEV_07P80P",
+          "count": 1
+        },
+        {
+          "value": "DEV_08SKMD",
+          "count": 1
+        },
+        {
+          "value": "DEV_09W3KS",
+          "count": 1
+        },
+        {
+          "value": "DEV_0AVGKT",
+          "count": 1
+        },
+        {
+          "value": "DEV_0D4XIE",
+          "count": 1
+        },
+        {
+          "value": "DEV_0FKSVK",
+          "count": 1
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAA_AAAAAA",
+        "AAA_AAAAAD",
+        "AAA_ADAAAA",
+        "AAA_AAAADA",
+        "AAA_DAAAAA"
+      ]
+    },
+    "gaming_template|deviceidentity|devsessionref": {
+      "table_name": "deviceidentity",
+      "column_name": "devsessionref",
+      "column_type": "TEXT(20)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "GPT100866",
+      "max_value": "GPT999946",
+      "top_k_values": [
+        {
+          "value": "GPT999946",
+          "count": 1
+        },
+        {
+          "value": "GPT999646",
+          "count": 1
+        },
+        {
+          "value": "GPT997624",
+          "count": 1
+        },
+        {
+          "value": "GPT993782",
+          "count": 1
+        },
+        {
+          "value": "GPT992350",
+          "count": 1
+        },
+        {
+          "value": "GPT990741",
+          "count": 1
+        },
+        {
+          "value": "GPT989834",
+          "count": 1
+        },
+        {
+          "value": "GPT989749",
+          "count": 1
+        },
+        {
+          "value": "GPT989672",
+          "count": 1
+        },
+        {
+          "value": "GPT989247",
+          "count": 1
+        }
+      ],
+      "min_length": 9,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAADDDDDD"
+      ]
+    },
+    "gaming_template|deviceidentity|makername": {
+      "table_name": "deviceidentity",
+      "column_name": "makername",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 5,
+      "min_value": "Corsair",
+      "max_value": "SteelSeries",
+      "top_k_values": [
+        {
+          "value": "SteelSeries",
+          "count": 224
+        },
+        {
+          "value": "Logitech",
+          "count": 221
+        },
+        {
+          "value": "Corsair",
+          "count": 191
+        },
+        {
+          "value": "HyperX",
+          "count": 185
+        },
+        {
+          "value": "Razer",
+          "count": 179
+        }
+      ],
+      "min_length": 5,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAAAA",
+        "AAAAAAAA",
+        "AAAAAAA",
+        "AAAAAA",
+        "AAAAA"
+      ]
+    },
+    "gaming_template|deviceidentity|modnum": {
+      "table_name": "deviceidentity",
+      "column_name": "modnum",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 941,
+      "min_value": "MDL1014",
+      "max_value": "MDL9990",
+      "top_k_values": [
+        {
+          "value": "MDL4476",
+          "count": 3
+        },
+        {
+          "value": "MDL9990",
+          "count": 2
+        },
+        {
+          "value": "MDL9737",
+          "count": 2
+        },
+        {
+          "value": "MDL9469",
+          "count": 2
+        },
+        {
+          "value": "MDL9263",
+          "count": 2
+        },
+        {
+          "value": "MDL9191",
+          "count": 2
+        },
+        {
+          "value": "MDL8978",
+          "count": 2
+        },
+        {
+          "value": "MDL8898",
+          "count": 2
+        },
+        {
+          "value": "MDL8838",
+          "count": 2
+        },
+        {
+          "value": "MDL8830",
+          "count": 2
+        }
+      ],
+      "min_length": 7,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAADDDD"
+      ]
+    },
+    "gaming_template|deviceidentity|fwver": {
+      "table_name": "deviceidentity",
+      "column_name": "fwver",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 605,
+      "min_value": "1.0.1",
+      "max_value": "9.9.9",
+      "top_k_values": [
+        {
+          "value": "9.1.3",
+          "count": 5
+        },
+        {
+          "value": "5.5.3",
+          "count": 5
+        },
+        {
+          "value": "4.7.9",
+          "count": 5
+        },
+        {
+          "value": "4.4.9",
+          "count": 5
+        },
+        {
+          "value": "9.4.8",
+          "count": 4
+        },
+        {
+          "value": "9.4.4",
+          "count": 4
+        },
+        {
+          "value": "9.2.1",
+          "count": 4
+        },
+        {
+          "value": "8.8.4",
+          "count": 4
+        },
+        {
+          "value": "8.7.6",
+          "count": 4
+        },
+        {
+          "value": "8.5.9",
+          "count": 4
+        }
+      ],
+      "min_length": 5,
+      "max_length": 5,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D.D.D"
+      ]
+    },
+    "gaming_template|deviceidentity|conntype": {
+      "table_name": "deviceidentity",
+      "column_name": "conntype",
+      "column_type": "TEXT(35)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "Bluetooth",
+      "max_value": "Wireless 2.4GHz",
+      "top_k_values": [
+        {
+          "value": "Wireless 2.4GHz",
+          "count": 267
+        },
+        {
+          "value": "Wired",
+          "count": 255
+        },
+        {
+          "value": "Hybrid",
+          "count": 255
+        },
+        {
+          "value": "Bluetooth",
+          "count": 223
+        }
+      ],
+      "min_length": 5,
+      "max_length": 15,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA D.DAAA",
+        "AAAAA",
+        "AAAAAA",
+        "AAAAAAAAA"
+      ]
+    },
+    "gaming_template|deviceidentity|wlrangem": {
+      "table_name": "deviceidentity",
+      "column_name": "wlrangem",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 16,
+      "min_value": "10.0",
+      "max_value": "9.0",
+      "top_k_values": [
+        {
+          "value": "6.0",
+          "count": 71
+        },
+        {
+          "value": "19.0",
+          "count": 69
+        },
+        {
+          "value": "9.0",
+          "count": 69
+        },
+        {
+          "value": "8.0",
+          "count": 69
+        },
+        {
+          "value": "17.0",
+          "count": 67
+        },
+        {
+          "value": "5.0",
+          "count": 66
+        },
+        {
+          "value": "10.0",
+          "count": 64
+        },
+        {
+          "value": "20.0",
+          "count": 62
+        },
+        {
+          "value": "14.0",
+          "count": 62
+        },
+        {
+          "value": "13.0",
+          "count": 62
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.D",
+        "D.D"
+      ]
+    },
+    "gaming_template|deviceidentity|wlinterf": {
+      "table_name": "deviceidentity",
+      "column_name": "wlinterf",
+      "column_type": "TEXT(35)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "High",
+      "max_value": "Medium",
+      "top_k_values": [
+        {
+          "value": "Low",
+          "count": 343
+        },
+        {
+          "value": "Medium",
+          "count": 330
+        },
+        {
+          "value": "High",
+          "count": 327
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAA",
+        "AAAAAA",
+        "AAAA"
+      ]
+    },
+    "gaming_template|deviceidentity|wlchanhop": {
+      "table_name": "deviceidentity",
+      "column_name": "wlchanhop",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1,
+      "min_value": "0",
+      "max_value": "0",
+      "top_k_values": [
+        {
+          "value": "0",
+          "count": 1000
+        }
+      ],
+      "min_length": 1,
+      "max_length": 1,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D"
+      ]
+    },
+    "gaming_template|deviceidentity|wllatvar": {
+      "table_name": "deviceidentity",
+      "column_name": "wllatvar",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 190,
+      "min_value": "0.1",
+      "max_value": "2.0",
+      "top_k_values": [
+        {
+          "value": "1.72",
+          "count": 12
+        },
+        {
+          "value": "0.47",
+          "count": 11
+        },
+        {
+          "value": "1.67",
+          "count": 10
+        },
+        {
+          "value": "0.44",
+          "count": 10
+        },
+        {
+          "value": "1.99",
+          "count": 9
+        },
+        {
+          "value": "1.97",
+          "count": 9
+        },
+        {
+          "value": "1.94",
+          "count": 9
+        },
+        {
+          "value": "1.63",
+          "count": 9
+        },
+        {
+          "value": "1.41",
+          "count": 9
+        },
+        {
+          "value": "1.08",
+          "count": 9
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "gaming_template|deviceidentity|pwridlemw": {
+      "table_name": "deviceidentity",
+      "column_name": "pwridlemw",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 90,
+      "min_value": "10",
+      "max_value": "99",
+      "top_k_values": [
+        {
+          "value": "85",
+          "count": 18
+        },
+        {
+          "value": "78",
+          "count": 18
+        },
+        {
+          "value": "73",
+          "count": 18
+        },
+        {
+          "value": "34",
+          "count": 18
+        },
+        {
+          "value": "83",
+          "count": 17
+        },
+        {
+          "value": "70",
+          "count": 17
+        },
+        {
+          "value": "60",
+          "count": 17
+        },
+        {
+          "value": "37",
+          "count": 17
+        },
+        {
+          "value": "67",
+          "count": 16
+        },
+        {
+          "value": "50",
+          "count": 16
+        }
+      ],
+      "min_length": 2,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DD"
+      ]
+    },
+    "gaming_template|deviceidentity|pwractmw": {
+      "table_name": "deviceidentity",
+      "column_name": "pwractmw",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 375,
+      "min_value": "100",
+      "max_value": "499",
+      "top_k_values": [
+        {
+          "value": "357",
+          "count": 9
+        },
+        {
+          "value": "210",
+          "count": 8
+        },
+        {
+          "value": "295",
+          "count": 7
+        },
+        {
+          "value": "496",
+          "count": 6
+        },
+        {
+          "value": "491",
+          "count": 6
+        },
+        {
+          "value": "482",
+          "count": 6
+        },
+        {
+          "value": "379",
+          "count": 6
+        },
+        {
+          "value": "365",
+          "count": 6
+        },
+        {
+          "value": "239",
+          "count": 6
+        },
+        {
+          "value": "232",
+          "count": 6
+        }
+      ],
+      "min_length": 3,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDD"
+      ]
+    },
+    "gaming_template|deviceidentity|pwrrgbmw": {
+      "table_name": "deviceidentity",
+      "column_name": "pwrrgbmw",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 150,
+      "min_value": "100",
+      "max_value": "99",
+      "top_k_values": [
+        {
+          "value": "147",
+          "count": 14
+        },
+        {
+          "value": "115",
+          "count": 14
+        },
+        {
+          "value": "197",
+          "count": 13
+        },
+        {
+          "value": "188",
+          "count": 13
+        },
+        {
+          "value": "160",
+          "count": 13
+        },
+        {
+          "value": "129",
+          "count": 13
+        },
+        {
+          "value": "108",
+          "count": 13
+        },
+        {
+          "value": "136",
+          "count": 12
+        },
+        {
+          "value": "112",
+          "count": 12
+        },
+        {
+          "value": "195",
+          "count": 11
+        }
+      ],
+      "min_length": 2,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD"
+      ]
+    },
+    "gaming_template|deviceidentity|brdmemmb": {
+      "table_name": "deviceidentity",
+      "column_name": "brdmemmb",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 5,
+      "min_value": "0",
+      "max_value": "8",
+      "top_k_values": [
+        {
+          "value": "0",
+          "count": 210
+        },
+        {
+          "value": "32",
+          "count": 202
+        },
+        {
+          "value": "16",
+          "count": 200
+        },
+        {
+          "value": "64",
+          "count": 197
+        },
+        {
+          "value": "8",
+          "count": 191
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D"
+      ]
+    },
+    "gaming_template|deviceidentity|profcount": {
+      "table_name": "deviceidentity",
+      "column_name": "profcount",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 5,
+      "min_value": "1",
+      "max_value": "5",
+      "top_k_values": [
+        {
+          "value": "1",
+          "count": 208
+        },
+        {
+          "value": "3",
+          "count": 201
+        },
+        {
+          "value": "5",
+          "count": 199
+        },
+        {
+          "value": "2",
+          "count": 197
+        },
+        {
+          "value": "4",
+          "count": 195
+        }
+      ],
+      "min_length": 1,
+      "max_length": 1,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D"
+      ]
+    },
+    "gaming_template|deviceidentity|mcresptime": {
+      "table_name": "deviceidentity",
+      "column_name": "mcresptime",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 414,
+      "min_value": "0.1",
+      "max_value": "5.0",
+      "top_k_values": [
+        {
+          "value": "3.77",
+          "count": 8
+        },
+        {
+          "value": "4.54",
+          "count": 6
+        },
+        {
+          "value": "4.21",
+          "count": 6
+        },
+        {
+          "value": "3.99",
+          "count": 6
+        },
+        {
+          "value": "3.81",
+          "count": 6
+        },
+        {
+          "value": "3.22",
+          "count": 6
+        },
+        {
+          "value": "2.58",
+          "count": 6
+        },
+        {
+          "value": "2.54",
+          "count": 6
+        },
+        {
+          "value": "2.49",
+          "count": 6
+        },
+        {
+          "value": "0.69",
+          "count": 6
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "gaming_template|deviceidentity|mcexecspeed": {
+      "table_name": "deviceidentity",
+      "column_name": "mcexecspeed",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 191,
+      "min_value": "0.1",
+      "max_value": "2.0",
+      "top_k_values": [
+        {
+          "value": "1.35",
+          "count": 12
+        },
+        {
+          "value": "1.77",
+          "count": 10
+        },
+        {
+          "value": "0.98",
+          "count": 10
+        },
+        {
+          "value": "0.92",
+          "count": 10
+        },
+        {
+          "value": "0.66",
+          "count": 10
+        },
+        {
+          "value": "0.55",
+          "count": 10
+        },
+        {
+          "value": "0.54",
+          "count": 10
+        },
+        {
+          "value": "1.85",
+          "count": 9
+        },
+        {
+          "value": "1.5",
+          "count": 9
+        },
+        {
+          "value": "1.12",
+          "count": 9
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "gaming_template|deviceidentity|mctimacc": {
+      "table_name": "deviceidentity",
+      "column_name": "mctimacc",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 101,
+      "min_value": "100.0",
+      "max_value": "99.9",
+      "top_k_values": [
+        {
+          "value": "94.7",
+          "count": 21
+        },
+        {
+          "value": "90.1",
+          "count": 18
+        },
+        {
+          "value": "97.2",
+          "count": 15
+        },
+        {
+          "value": "93.6",
+          "count": 15
+        },
+        {
+          "value": "90.8",
+          "count": 15
+        },
+        {
+          "value": "90.4",
+          "count": 15
+        },
+        {
+          "value": "99.8",
+          "count": 14
+        },
+        {
+          "value": "98.8",
+          "count": 14
+        },
+        {
+          "value": "97.3",
+          "count": 14
+        },
+        {
+          "value": "97.1",
+          "count": 14
+        }
+      ],
+      "min_length": 4,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.D",
+        "DDD.D"
+      ]
+    },
+    "gaming_template|deviceidentity|dpires": {
+      "table_name": "deviceidentity",
+      "column_name": "dpires",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 980,
+      "min_value": "100",
+      "max_value": "9987",
+      "top_k_values": [
+        {
+          "value": "25478",
+          "count": 2
+        },
+        {
+          "value": "25262",
+          "count": 2
+        },
+        {
+          "value": "20243",
+          "count": 2
+        },
+        {
+          "value": "18898",
+          "count": 2
+        },
+        {
+          "value": "17664",
+          "count": 2
+        },
+        {
+          "value": "17489",
+          "count": 2
+        },
+        {
+          "value": "17348",
+          "count": 2
+        },
+        {
+          "value": "16677",
+          "count": 2
+        },
+        {
+          "value": "16588",
+          "count": 2
+        },
+        {
+          "value": "15540",
+          "count": 2
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDD",
+        "DDDD",
+        "DDD"
+      ]
+    },
+    "gaming_template|deviceidentity|dpisteps": {
+      "table_name": "deviceidentity",
+      "column_name": "dpisteps",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 5,
+      "min_value": "1",
+      "max_value": "5",
+      "top_k_values": [
+        {
+          "value": "1",
+          "count": 241
+        },
+        {
+          "value": "5",
+          "count": 206
+        },
+        {
+          "value": "4",
+          "count": 198
+        },
+        {
+          "value": "2",
+          "count": 188
+        },
+        {
+          "value": "3",
+          "count": 167
+        }
+      ],
+      "min_length": 1,
+      "max_length": 1,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D"
+      ]
+    },
+    "gaming_template|deviceidentity|senstype": {
+      "table_name": "deviceidentity",
+      "column_name": "senstype",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "Laser",
+      "max_value": "PMW3389",
+      "top_k_values": [
+        {
+          "value": "Optical",
+          "count": 271
+        },
+        {
+          "value": "Laser",
+          "count": 264
+        },
+        {
+          "value": "PMW3389",
+          "count": 235
+        },
+        {
+          "value": "PAW3399",
+          "count": 230
+        }
+      ],
+      "min_length": 5,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAADDDD",
+        "AAAAAAA",
+        "AAAAA"
+      ]
+    },
+    "gaming_template|deviceidentity|sensres": {
+      "table_name": "deviceidentity",
+      "column_name": "sensres",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 976,
+      "min_value": "10037",
+      "max_value": "9978",
+      "top_k_values": [
+        {
+          "value": "25253",
+          "count": 2
+        },
+        {
+          "value": "23276",
+          "count": 2
+        },
+        {
+          "value": "22317",
+          "count": 2
+        },
+        {
+          "value": "21711",
+          "count": 2
+        },
+        {
+          "value": "18906",
+          "count": 2
+        },
+        {
+          "value": "18508",
+          "count": 2
+        },
+        {
+          "value": "18345",
+          "count": 2
+        },
+        {
+          "value": "16401",
+          "count": 2
+        },
+        {
+          "value": "16122",
+          "count": 2
+        },
+        {
+          "value": "15583",
+          "count": 2
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDD",
+        "DDDD",
+        "DDD"
+      ]
+    },
+    "gaming_template|interactionandcontrol|interactregistry": {
+      "table_name": "interactionandcontrol",
+      "column_name": "interactregistry",
+      "column_type": "TEXT(20)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "INT_00T5B1",
+      "max_value": "INT_ZVT2Q6",
+      "top_k_values": [
+        {
+          "value": "INT_00T5B1",
+          "count": 1
+        },
+        {
+          "value": "INT_02U0W4",
+          "count": 1
+        },
+        {
+          "value": "INT_05FZ89",
+          "count": 1
+        },
+        {
+          "value": "INT_075N84",
+          "count": 1
+        },
+        {
+          "value": "INT_0ANVKZ",
+          "count": 1
+        },
+        {
+          "value": "INT_0B3LR4",
+          "count": 1
+        },
+        {
+          "value": "INT_0B9EPY",
+          "count": 1
+        },
+        {
+          "value": "INT_0CB1B7",
+          "count": 1
+        },
+        {
+          "value": "INT_0D7KGU",
+          "count": 1
+        },
+        {
+          "value": "INT_0GZ1IZ",
+          "count": 1
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAA_AAAAAA",
+        "AAA_AADAAA",
+        "AAA_DAAAAA",
+        "AAA_AAAAAD",
+        "AAA_AAAADA"
+      ]
+    },
+    "gaming_template|interactionandcontrol|interactphysref": {
+      "table_name": "interactionandcontrol",
+      "column_name": "interactphysref",
+      "column_type": "TEXT(20)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "PHYS_01LC4N",
+      "max_value": "PHYS_ZZ6SS5",
+      "top_k_values": [
+        {
+          "value": "PHYS_ZZ6SS5",
+          "count": 1
+        },
+        {
+          "value": "PHYS_ZV1SM0",
+          "count": 1
+        },
+        {
+          "value": "PHYS_ZR6B23",
+          "count": 1
+        },
+        {
+          "value": "PHYS_ZMWAJM",
+          "count": 1
+        },
+        {
+          "value": "PHYS_ZLNTLW",
+          "count": 1
+        },
+        {
+          "value": "PHYS_ZL62WN",
+          "count": 1
+        },
+        {
+          "value": "PHYS_ZKM4R6",
+          "count": 1
+        },
+        {
+          "value": "PHYS_ZJMFBA",
+          "count": 1
+        },
+        {
+          "value": "PHYS_ZH8ZYR",
+          "count": 1
+        },
+        {
+          "value": "PHYS_ZH1R2L",
+          "count": 1
+        }
+      ],
+      "min_length": 11,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAA_AAAAAA",
+        "AAAA_AADAAA",
+        "AAAA_ADAAAA",
+        "AAAA_AAAAAD",
+        "AAAA_AAAADA"
+      ]
+    },
+    "gaming_template|interactionandcontrol|interactdevref": {
+      "table_name": "interactionandcontrol",
+      "column_name": "interactdevref",
+      "column_type": "TEXT(20)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "DEV_00ZEAE",
+      "max_value": "DEV_ZZ7O6O",
+      "top_k_values": [
+        {
+          "value": "DEV_ZZ7O6O",
+          "count": 1
+        },
+        {
+          "value": "DEV_ZXSO5C",
+          "count": 1
+        },
+        {
+          "value": "DEV_ZUFE36",
+          "count": 1
+        },
+        {
+          "value": "DEV_ZTNXY1",
+          "count": 1
+        },
+        {
+          "value": "DEV_ZSWMOQ",
+          "count": 1
+        },
+        {
+          "value": "DEV_ZPZPLM",
+          "count": 1
+        },
+        {
+          "value": "DEV_ZPXZYE",
+          "count": 1
+        },
+        {
+          "value": "DEV_ZN625H",
+          "count": 1
+        },
+        {
+          "value": "DEV_ZJ8U9O",
+          "count": 1
+        },
+        {
+          "value": "DEV_ZI28ZY",
+          "count": 1
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAA_AAAAAA",
+        "AAA_AAAAAD",
+        "AAA_ADAAAA",
+        "AAA_AAAADA",
+        "AAA_DAAAAA"
+      ]
+    },
+    "gaming_template|interactionandcontrol|amblight": {
+      "table_name": "interactionandcontrol",
+      "column_name": "amblight",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 2,
+      "min_value": "0",
+      "max_value": "1",
+      "top_k_values": [
+        {
+          "value": "0",
+          "count": 522
+        },
+        {
+          "value": "1",
+          "count": 478
+        }
+      ],
+      "min_length": 1,
+      "max_length": 1,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D"
+      ]
+    },
+    "gaming_template|interactionandcontrol|tempsense": {
+      "table_name": "interactionandcontrol",
+      "column_name": "tempsense",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 2,
+      "min_value": "0",
+      "max_value": "1",
+      "top_k_values": [
+        {
+          "value": "1",
+          "count": 522
+        },
+        {
+          "value": "0",
+          "count": 478
+        }
+      ],
+      "min_length": 1,
+      "max_length": 1,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D"
+      ]
+    },
+    "gaming_template|interactionandcontrol|accelsense": {
+      "table_name": "interactionandcontrol",
+      "column_name": "accelsense",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 2,
+      "min_value": "0",
+      "max_value": "1",
+      "top_k_values": [
+        {
+          "value": "0",
+          "count": 505
+        },
+        {
+          "value": "1",
+          "count": 495
+        }
+      ],
+      "min_length": 1,
+      "max_length": 1,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D"
+      ]
+    },
+    "gaming_template|interactionandcontrol|gyrosense": {
+      "table_name": "interactionandcontrol",
+      "column_name": "gyrosense",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 2,
+      "min_value": "0",
+      "max_value": "1",
+      "top_k_values": [
+        {
+          "value": "0",
+          "count": 514
+        },
+        {
+          "value": "1",
+          "count": 486
+        }
+      ],
+      "min_length": 1,
+      "max_length": 1,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D"
+      ]
+    },
+    "gaming_template|interactionandcontrol|hapfeed": {
+      "table_name": "interactionandcontrol",
+      "column_name": "hapfeed",
+      "column_type": "TEXT(30)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Advanced",
+      "max_value": "None",
+      "top_k_values": [
+        {
+          "value": "Advanced",
+          "count": 371
+        },
+        {
+          "value": "None",
+          "count": 330
+        },
+        {
+          "value": "Basic",
+          "count": 299
+        }
+      ],
+      "min_length": 4,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAA",
+        "AAAAA"
+      ]
+    },
+    "gaming_template|interactionandcontrol|hapstr": {
+      "table_name": "interactionandcontrol",
+      "column_name": "hapstr",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 10,
+      "min_value": "1",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "8",
+          "count": 115
+        },
+        {
+          "value": "2",
+          "count": 111
+        },
+        {
+          "value": "9",
+          "count": 105
+        },
+        {
+          "value": "5",
+          "count": 104
+        },
+        {
+          "value": "1",
+          "count": 103
+        },
+        {
+          "value": "7",
+          "count": 100
+        },
+        {
+          "value": "6",
+          "count": 100
+        },
+        {
+          "value": "10",
+          "count": 94
+        },
+        {
+          "value": "3",
+          "count": 85
+        },
+        {
+          "value": "4",
+          "count": 83
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D",
+        "DD"
+      ]
+    },
+    "gaming_template|interactionandcontrol|vibmodes": {
+      "table_name": "interactionandcontrol",
+      "column_name": "vibmodes",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 5,
+      "min_value": "1",
+      "max_value": "5",
+      "top_k_values": [
+        {
+          "value": "3",
+          "count": 212
+        },
+        {
+          "value": "5",
+          "count": 203
+        },
+        {
+          "value": "2",
+          "count": 202
+        },
+        {
+          "value": "1",
+          "count": 197
+        },
+        {
+          "value": "4",
+          "count": 186
+        }
+      ],
+      "min_length": 1,
+      "max_length": 1,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D"
+      ]
+    },
+    "gaming_template|interactionandcontrol|forcefeed": {
+      "table_name": "interactionandcontrol",
+      "column_name": "forcefeed",
+      "column_type": "TEXT(35)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Advanced",
+      "max_value": "None",
+      "top_k_values": [
+        {
+          "value": "Advanced",
+          "count": 356
+        },
+        {
+          "value": "None",
+          "count": 331
+        },
+        {
+          "value": "Basic",
+          "count": 313
+        }
+      ],
+      "min_length": 4,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAA",
+        "AAAAA"
+      ]
+    },
+    "gaming_template|interactionandcontrol|trigres": {
+      "table_name": "interactionandcontrol",
+      "column_name": "trigres",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 10,
+      "min_value": "1",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "9",
+          "count": 114
+        },
+        {
+          "value": "1",
+          "count": 113
+        },
+        {
+          "value": "2",
+          "count": 110
+        },
+        {
+          "value": "3",
+          "count": 106
+        },
+        {
+          "value": "5",
+          "count": 101
+        },
+        {
+          "value": "10",
+          "count": 100
+        },
+        {
+          "value": "7",
+          "count": 100
+        },
+        {
+          "value": "8",
+          "count": 92
+        },
+        {
+          "value": "6",
+          "count": 82
+        },
+        {
+          "value": "4",
+          "count": 82
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D",
+        "DD"
+      ]
+    },
+    "gaming_template|interactionandcontrol|trigtravmm": {
+      "table_name": "interactionandcontrol",
+      "column_name": "trigtravmm",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 91,
+      "min_value": "1.0",
+      "max_value": "9.9",
+      "top_k_values": [
+        {
+          "value": "1.6",
+          "count": 20
+        },
+        {
+          "value": "6.2",
+          "count": 19
+        },
+        {
+          "value": "9.0",
+          "count": 18
+        },
+        {
+          "value": "6.7",
+          "count": 18
+        },
+        {
+          "value": "5.8",
+          "count": 17
+        },
+        {
+          "value": "7.0",
+          "count": 16
+        },
+        {
+          "value": "5.4",
+          "count": 16
+        },
+        {
+          "value": "2.9",
+          "count": 16
+        },
+        {
+          "value": "7.8",
+          "count": 15
+        },
+        {
+          "value": "7.5",
+          "count": 15
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.D",
+        "DD.D"
+      ]
+    },
+    "gaming_template|interactionandcontrol|joydead": {
+      "table_name": "interactionandcontrol",
+      "column_name": "joydead",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 21,
+      "min_value": "0.0",
+      "max_value": "0.2",
+      "top_k_values": [
+        {
+          "value": "0.17",
+          "count": 68
+        },
+        {
+          "value": "0.06",
+          "count": 57
+        },
+        {
+          "value": "0.03",
+          "count": 56
+        },
+        {
+          "value": "0.01",
+          "count": 55
+        },
+        {
+          "value": "0.15",
+          "count": 53
+        },
+        {
+          "value": "0.16",
+          "count": 52
+        },
+        {
+          "value": "0.02",
+          "count": 52
+        },
+        {
+          "value": "0.08",
+          "count": 51
+        },
+        {
+          "value": "0.18",
+          "count": 50
+        },
+        {
+          "value": "0.14",
+          "count": 49
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "gaming_template|interactionandcontrol|joyprec": {
+      "table_name": "interactionandcontrol",
+      "column_name": "joyprec",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 101,
+      "min_value": "100.0",
+      "max_value": "99.9",
+      "top_k_values": [
+        {
+          "value": "94.4",
+          "count": 17
+        },
+        {
+          "value": "95.1",
+          "count": 16
+        },
+        {
+          "value": "94.1",
+          "count": 16
+        },
+        {
+          "value": "93.9",
+          "count": 16
+        },
+        {
+          "value": "91.1",
+          "count": 16
+        },
+        {
+          "value": "98.3",
+          "count": 15
+        },
+        {
+          "value": "96.1",
+          "count": 15
+        },
+        {
+          "value": "94.2",
+          "count": 15
+        },
+        {
+          "value": "90.9",
+          "count": 15
+        },
+        {
+          "value": "99.7",
+          "count": 14
+        }
+      ],
+      "min_length": 4,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.D",
+        "DDD.D"
+      ]
+    },
+    "gaming_template|interactionandcontrol|btnspcmm": {
+      "table_name": "interactionandcontrol",
+      "column_name": "btnspcmm",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 31,
+      "min_value": "2.0",
+      "max_value": "5.0",
+      "top_k_values": [
+        {
+          "value": "4.2",
+          "count": 44
+        },
+        {
+          "value": "2.2",
+          "count": 42
+        },
+        {
+          "value": "4.1",
+          "count": 39
+        },
+        {
+          "value": "4.0",
+          "count": 39
+        },
+        {
+          "value": "2.9",
+          "count": 37
+        },
+        {
+          "value": "4.7",
+          "count": 36
+        },
+        {
+          "value": "4.5",
+          "count": 36
+        },
+        {
+          "value": "3.6",
+          "count": 36
+        },
+        {
+          "value": "2.1",
+          "count": 36
+        },
+        {
+          "value": "3.4",
+          "count": 35
+        }
+      ],
+      "min_length": 3,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D.D"
+      ]
+    },
+    "gaming_template|interactionandcontrol|btnszmm": {
+      "table_name": "interactionandcontrol",
+      "column_name": "btnszmm",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 101,
+      "min_value": "10.0",
+      "max_value": "20.0",
+      "top_k_values": [
+        {
+          "value": "19.4",
+          "count": 18
+        },
+        {
+          "value": "10.6",
+          "count": 18
+        },
+        {
+          "value": "17.1",
+          "count": 17
+        },
+        {
+          "value": "14.2",
+          "count": 16
+        },
+        {
+          "value": "11.0",
+          "count": 16
+        },
+        {
+          "value": "17.3",
+          "count": 15
+        },
+        {
+          "value": "14.0",
+          "count": 15
+        },
+        {
+          "value": "16.7",
+          "count": 14
+        },
+        {
+          "value": "15.0",
+          "count": 14
+        },
+        {
+          "value": "11.9",
+          "count": 14
+        }
+      ],
+      "min_length": 4,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DD.D"
+      ]
+    },
+    "gaming_template|interactionandcontrol|dpadvar": {
+      "table_name": "interactionandcontrol",
+      "column_name": "dpadvar",
+      "column_type": "TEXT(30)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Floating",
+      "max_value": "Standard",
+      "top_k_values": [
+        {
+          "value": "Hybrid",
+          "count": 353
+        },
+        {
+          "value": "Standard",
+          "count": 331
+        },
+        {
+          "value": "Floating",
+          "count": 316
+        }
+      ],
+      "min_length": 6,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAAAA"
+      ]
+    },
+    "gaming_template|interactionandcontrol|dpadacc": {
+      "table_name": "interactionandcontrol",
+      "column_name": "dpadacc",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 101,
+      "min_value": "100.0",
+      "max_value": "99.9",
+      "top_k_values": [
+        {
+          "value": "94.4",
+          "count": 18
+        },
+        {
+          "value": "91.8",
+          "count": 17
+        },
+        {
+          "value": "95.9",
+          "count": 16
+        },
+        {
+          "value": "93.3",
+          "count": 16
+        },
+        {
+          "value": "97.8",
+          "count": 15
+        },
+        {
+          "value": "97.7",
+          "count": 15
+        },
+        {
+          "value": "97.3",
+          "count": 15
+        },
+        {
+          "value": "91.9",
+          "count": 15
+        },
+        {
+          "value": "90.9",
+          "count": 15
+        },
+        {
+          "value": "93.8",
+          "count": 14
+        }
+      ],
+      "min_length": 4,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.D",
+        "DDD.D"
+      ]
+    },
+    "gaming_template|interactionandcontrol|astickvar": {
+      "table_name": "interactionandcontrol",
+      "column_name": "astickvar",
+      "column_type": "TEXT(30)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Hall Effect",
+      "max_value": "Standard",
+      "top_k_values": [
+        {
+          "value": "Hall Effect",
+          "count": 368
+        },
+        {
+          "value": "Standard",
+          "count": 331
+        },
+        {
+          "value": "Magnetic",
+          "count": 301
+        }
+      ],
+      "min_length": 8,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAA AAAAAA"
+      ]
+    },
+    "gaming_template|interactionandcontrol|driftres": {
+      "table_name": "interactionandcontrol",
+      "column_name": "driftres",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 101,
+      "min_value": "100.0",
+      "max_value": "99.9",
+      "top_k_values": [
+        {
+          "value": "98.2",
+          "count": 19
+        },
+        {
+          "value": "94.6",
+          "count": 18
+        },
+        {
+          "value": "99.0",
+          "count": 17
+        },
+        {
+          "value": "98.9",
+          "count": 16
+        },
+        {
+          "value": "99.6",
+          "count": 15
+        },
+        {
+          "value": "98.5",
+          "count": 15
+        },
+        {
+          "value": "95.0",
+          "count": 15
+        },
+        {
+          "value": "99.3",
+          "count": 14
+        },
+        {
+          "value": "97.8",
+          "count": 14
+        },
+        {
+          "value": "97.5",
+          "count": 14
+        }
+      ],
+      "min_length": 4,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.D",
+        "DDD.D"
+      ]
+    },
+    "gaming_template|mechanical|mechregistry": {
+      "table_name": "mechanical",
+      "column_name": "mechregistry",
+      "column_type": "TEXT(20)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "MECH_003FVR",
+      "max_value": "MECH_ZZSDZZ",
+      "top_k_values": [
+        {
+          "value": "MECH_003FVR",
+          "count": 1
+        },
+        {
+          "value": "MECH_00DB97",
+          "count": 1
+        },
+        {
+          "value": "MECH_01UXL6",
+          "count": 1
+        },
+        {
+          "value": "MECH_048PEJ",
+          "count": 1
+        },
+        {
+          "value": "MECH_072CT9",
+          "count": 1
+        },
+        {
+          "value": "MECH_07DZX0",
+          "count": 1
+        },
+        {
+          "value": "MECH_07SA1M",
+          "count": 1
+        },
+        {
+          "value": "MECH_08A81W",
+          "count": 1
+        },
+        {
+          "value": "MECH_0ACVKY",
+          "count": 1
+        },
+        {
+          "value": "MECH_0AE0YG",
+          "count": 1
+        }
+      ],
+      "min_length": 11,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAA_AAAAAA",
+        "AAAA_AAADAA",
+        "AAAA_AAAAAD",
+        "AAAA_DAAAAA",
+        "AAAA_AADAAA"
+      ]
+    },
+    "gaming_template|mechanical|mechperfref": {
+      "table_name": "mechanical",
+      "column_name": "mechperfref",
+      "column_type": "TEXT(20)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "PERF_01U390",
+      "max_value": "PERF_ZZJUD9",
+      "top_k_values": [
+        {
+          "value": "PERF_ZZJUD9",
+          "count": 1
+        },
+        {
+          "value": "PERF_ZYLSQ1",
+          "count": 1
+        },
+        {
+          "value": "PERF_ZX65O1",
+          "count": 1
+        },
+        {
+          "value": "PERF_ZWFSMD",
+          "count": 1
+        },
+        {
+          "value": "PERF_ZV04YM",
+          "count": 1
+        },
+        {
+          "value": "PERF_ZUM77X",
+          "count": 1
+        },
+        {
+          "value": "PERF_ZTLP81",
+          "count": 1
+        },
+        {
+          "value": "PERF_ZSJHIG",
+          "count": 1
+        },
+        {
+          "value": "PERF_ZS4VNT",
+          "count": 1
+        },
+        {
+          "value": "PERF_ZR4SHP",
+          "count": 1
+        }
+      ],
+      "min_length": 11,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAA_AAAAAA",
+        "AAAA_AAAAAD",
+        "AAAA_DAAAAA",
+        "AAAA_AADAAA",
+        "AAAA_AAAADA"
+      ]
+    },
+    "gaming_template|mechanical|mechdevref": {
+      "table_name": "mechanical",
+      "column_name": "mechdevref",
+      "column_type": "TEXT(20)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "DEV_00ZEAE",
+      "max_value": "DEV_ZZ7O6O",
+      "top_k_values": [
+        {
+          "value": "DEV_ZZ7O6O",
+          "count": 1
+        },
+        {
+          "value": "DEV_ZXSO5C",
+          "count": 1
+        },
+        {
+          "value": "DEV_ZUFE36",
+          "count": 1
+        },
+        {
+          "value": "DEV_ZTNXY1",
+          "count": 1
+        },
+        {
+          "value": "DEV_ZSWMOQ",
+          "count": 1
+        },
+        {
+          "value": "DEV_ZPZPLM",
+          "count": 1
+        },
+        {
+          "value": "DEV_ZPXZYE",
+          "count": 1
+        },
+        {
+          "value": "DEV_ZN625H",
+          "count": 1
+        },
+        {
+          "value": "DEV_ZJ8U9O",
+          "count": 1
+        },
+        {
+          "value": "DEV_ZI28ZY",
+          "count": 1
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAA_AAAAAA",
+        "AAA_AAAAAD",
+        "AAA_ADAAAA",
+        "AAA_AAAADA",
+        "AAA_DAAAAA"
+      ]
+    },
+    "gaming_template|mechanical|keyforceg": {
+      "table_name": "mechanical",
+      "column_name": "keyforceg",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 330,
+      "min_value": "45.0",
+      "max_value": "80.0",
+      "top_k_values": [
+        {
+          "value": "69.9",
+          "count": 8
+        },
+        {
+          "value": "57.6",
+          "count": 8
+        },
+        {
+          "value": "49.6",
+          "count": 8
+        },
+        {
+          "value": "45.9",
+          "count": 8
+        },
+        {
+          "value": "73.8",
+          "count": 7
+        },
+        {
+          "value": "69.6",
+          "count": 7
+        },
+        {
+          "value": "68.5",
+          "count": 7
+        },
+        {
+          "value": "67.6",
+          "count": 7
+        },
+        {
+          "value": "67.2",
+          "count": 7
+        },
+        {
+          "value": "55.5",
+          "count": 7
+        }
+      ],
+      "min_length": 4,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DD.D"
+      ]
+    },
+    "gaming_template|mechanical|keytravmm": {
+      "table_name": "mechanical",
+      "column_name": "keytravmm",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 26,
+      "min_value": "1.5",
+      "max_value": "4.0",
+      "top_k_values": [
+        {
+          "value": "2.9",
+          "count": 49
+        },
+        {
+          "value": "2.5",
+          "count": 49
+        },
+        {
+          "value": "3.5",
+          "count": 48
+        },
+        {
+          "value": "2.2",
+          "count": 48
+        },
+        {
+          "value": "3.2",
+          "count": 47
+        },
+        {
+          "value": "3.9",
+          "count": 46
+        },
+        {
+          "value": "3.3",
+          "count": 46
+        },
+        {
+          "value": "3.1",
+          "count": 45
+        },
+        {
+          "value": "2.4",
+          "count": 42
+        },
+        {
+          "value": "3.8",
+          "count": 41
+        }
+      ],
+      "min_length": 3,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D.D"
+      ]
+    },
+    "gaming_template|mechanical|swtchvar": {
+      "table_name": "mechanical",
+      "column_name": "swtchvar",
+      "column_type": "TEXT(40)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "Magnetic",
+      "max_value": "Optical",
+      "top_k_values": [
+        {
+          "value": "Membrane",
+          "count": 282
+        },
+        {
+          "value": "Mechanical",
+          "count": 243
+        },
+        {
+          "value": "Magnetic",
+          "count": 239
+        },
+        {
+          "value": "Optical",
+          "count": 236
+        }
+      ],
+      "min_length": 7,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAAAAAAAA",
+        "AAAAAAA"
+      ]
+    },
+    "gaming_template|mechanical|swtchdur": {
+      "table_name": "mechanical",
+      "column_name": "swtchdur",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "20030032",
+      "max_value": "99917893",
+      "top_k_values": [
+        {
+          "value": "99917893",
+          "count": 1
+        },
+        {
+          "value": "99662592",
+          "count": 1
+        },
+        {
+          "value": "99645708",
+          "count": 1
+        },
+        {
+          "value": "99520697",
+          "count": 1
+        },
+        {
+          "value": "99471443",
+          "count": 1
+        },
+        {
+          "value": "99446929",
+          "count": 1
+        },
+        {
+          "value": "99219664",
+          "count": 1
+        },
+        {
+          "value": "99197528",
+          "count": 1
+        },
+        {
+          "value": "99148225",
+          "count": 1
+        },
+        {
+          "value": "98683613",
+          "count": 1
+        }
+      ],
+      "min_length": 8,
+      "max_length": 8,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDDDDDD"
+      ]
+    },
+    "gaming_template|mechanical|ghostkeys": {
+      "table_name": "mechanical",
+      "column_name": "ghostkeys",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 104,
+      "min_value": "1",
+      "max_value": "99",
+      "top_k_values": [
+        {
+          "value": "45",
+          "count": 18
+        },
+        {
+          "value": "52",
+          "count": 17
+        },
+        {
+          "value": "72",
+          "count": 16
+        },
+        {
+          "value": "41",
+          "count": 16
+        },
+        {
+          "value": "24",
+          "count": 16
+        },
+        {
+          "value": "63",
+          "count": 15
+        },
+        {
+          "value": "54",
+          "count": 15
+        },
+        {
+          "value": "31",
+          "count": 15
+        },
+        {
+          "value": "86",
+          "count": 14
+        },
+        {
+          "value": "84",
+          "count": 14
+        }
+      ],
+      "min_length": 1,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D",
+        "DDD"
+      ]
+    },
+    "gaming_template|mechanical|keyrollo": {
+      "table_name": "mechanical",
+      "column_name": "keyrollo",
+      "column_type": "TEXT(35)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "2KRO",
+      "max_value": "NKRO",
+      "top_k_values": [
+        {
+          "value": "2KRO",
+          "count": 353
+        },
+        {
+          "value": "NKRO",
+          "count": 350
+        },
+        {
+          "value": "6KRO",
+          "count": 297
+        }
+      ],
+      "min_length": 4,
+      "max_length": 4,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DAAA",
+        "AAAA"
+      ]
+    },
+    "gaming_template|mechanical|swtchcons": {
+      "table_name": "mechanical",
+      "column_name": "swtchcons",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 101,
+      "min_value": "100.0",
+      "max_value": "99.9",
+      "top_k_values": [
+        {
+          "value": "94.4",
+          "count": 19
+        },
+        {
+          "value": "95.4",
+          "count": 18
+        },
+        {
+          "value": "99.0",
+          "count": 17
+        },
+        {
+          "value": "94.5",
+          "count": 16
+        },
+        {
+          "value": "96.1",
+          "count": 15
+        },
+        {
+          "value": "99.8",
+          "count": 14
+        },
+        {
+          "value": "99.6",
+          "count": 14
+        },
+        {
+          "value": "98.0",
+          "count": 14
+        },
+        {
+          "value": "93.5",
+          "count": 14
+        },
+        {
+          "value": "90.8",
+          "count": 14
+        }
+      ],
+      "min_length": 4,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.D",
+        "DDD.D"
+      ]
+    },
+    "gaming_template|mechanical|ghosteff": {
+      "table_name": "mechanical",
+      "column_name": "ghosteff",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 101,
+      "min_value": "100.0",
+      "max_value": "99.9",
+      "top_k_values": [
+        {
+          "value": "94.7",
+          "count": 20
+        },
+        {
+          "value": "95.7",
+          "count": 17
+        },
+        {
+          "value": "98.0",
+          "count": 16
+        },
+        {
+          "value": "93.7",
+          "count": 16
+        },
+        {
+          "value": "90.5",
+          "count": 16
+        },
+        {
+          "value": "99.0",
+          "count": 15
+        },
+        {
+          "value": "93.8",
+          "count": 15
+        },
+        {
+          "value": "90.9",
+          "count": 14
+        },
+        {
+          "value": "98.4",
+          "count": 13
+        },
+        {
+          "value": "97.0",
+          "count": 13
+        }
+      ],
+      "min_length": 4,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.D",
+        "DDD.D"
+      ]
+    },
+    "gaming_template|mechanical|keychatter": {
+      "table_name": "mechanical",
+      "column_name": "keychatter",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 200,
+      "min_value": "0.0",
+      "max_value": "2.0",
+      "top_k_values": [
+        {
+          "value": "0.46",
+          "count": 12
+        },
+        {
+          "value": "1.86",
+          "count": 11
+        },
+        {
+          "value": "1.61",
+          "count": 11
+        },
+        {
+          "value": "0.96",
+          "count": 11
+        },
+        {
+          "value": "1.73",
+          "count": 10
+        },
+        {
+          "value": "1.07",
+          "count": 10
+        },
+        {
+          "value": "0.87",
+          "count": 10
+        },
+        {
+          "value": "0.68",
+          "count": 10
+        },
+        {
+          "value": "0.15",
+          "count": 10
+        },
+        {
+          "value": "0.11",
+          "count": 10
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "gaming_template|mechanical|actpointmm": {
+      "table_name": "mechanical",
+      "column_name": "actpointmm",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 16,
+      "min_value": "1.0",
+      "max_value": "2.5",
+      "top_k_values": [
+        {
+          "value": "2.1",
+          "count": 82
+        },
+        {
+          "value": "2.3",
+          "count": 76
+        },
+        {
+          "value": "1.2",
+          "count": 76
+        },
+        {
+          "value": "1.7",
+          "count": 71
+        },
+        {
+          "value": "1.8",
+          "count": 69
+        },
+        {
+          "value": "1.6",
+          "count": 69
+        },
+        {
+          "value": "1.5",
+          "count": 69
+        },
+        {
+          "value": "2.2",
+          "count": 67
+        },
+        {
+          "value": "1.1",
+          "count": 67
+        },
+        {
+          "value": "2.0",
+          "count": 65
+        }
+      ],
+      "min_length": 3,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D.D"
+      ]
+    },
+    "gaming_template|mechanical|respointmm": {
+      "table_name": "mechanical",
+      "column_name": "respointmm",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 16,
+      "min_value": "1.0",
+      "max_value": "2.5",
+      "top_k_values": [
+        {
+          "value": "2.1",
+          "count": 77
+        },
+        {
+          "value": "1.3",
+          "count": 75
+        },
+        {
+          "value": "1.7",
+          "count": 74
+        },
+        {
+          "value": "2.3",
+          "count": 70
+        },
+        {
+          "value": "1.8",
+          "count": 70
+        },
+        {
+          "value": "2.4",
+          "count": 69
+        },
+        {
+          "value": "2.0",
+          "count": 68
+        },
+        {
+          "value": "1.1",
+          "count": 68
+        },
+        {
+          "value": "1.5",
+          "count": 67
+        },
+        {
+          "value": "1.9",
+          "count": 66
+        }
+      ],
+      "min_length": 3,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D.D"
+      ]
+    },
+    "gaming_template|mechanical|tacbumpmm": {
+      "table_name": "mechanical",
+      "column_name": "tacbumpmm",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 11,
+      "min_value": "1.5",
+      "max_value": "2.5",
+      "top_k_values": [
+        {
+          "value": "2.1",
+          "count": 120
+        },
+        {
+          "value": "2.4",
+          "count": 108
+        },
+        {
+          "value": "2.0",
+          "count": 104
+        },
+        {
+          "value": "1.6",
+          "count": 103
+        },
+        {
+          "value": "2.2",
+          "count": 98
+        },
+        {
+          "value": "1.7",
+          "count": 95
+        },
+        {
+          "value": "2.3",
+          "count": 86
+        },
+        {
+          "value": "1.8",
+          "count": 86
+        },
+        {
+          "value": "1.9",
+          "count": 84
+        },
+        {
+          "value": "1.5",
+          "count": 65
+        }
+      ],
+      "min_length": 3,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D.D"
+      ]
+    },
+    "gaming_template|mechanical|tottravmm": {
+      "table_name": "mechanical",
+      "column_name": "tottravmm",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 11,
+      "min_value": "3.0",
+      "max_value": "4.0",
+      "top_k_values": [
+        {
+          "value": "3.6",
+          "count": 119
+        },
+        {
+          "value": "3.8",
+          "count": 113
+        },
+        {
+          "value": "3.1",
+          "count": 100
+        },
+        {
+          "value": "3.2",
+          "count": 97
+        },
+        {
+          "value": "3.9",
+          "count": 95
+        },
+        {
+          "value": "3.7",
+          "count": 95
+        },
+        {
+          "value": "3.3",
+          "count": 94
+        },
+        {
+          "value": "3.4",
+          "count": 91
+        },
+        {
+          "value": "3.5",
+          "count": 90
+        },
+        {
+          "value": "3.0",
+          "count": 56
+        }
+      ],
+      "min_length": 3,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D.D"
+      ]
+    },
+    "gaming_template|mechanical|stabrattle": {
+      "table_name": "mechanical",
+      "column_name": "stabrattle",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Minimal",
+      "max_value": "None",
+      "top_k_values": [
+        {
+          "value": "Minimal",
+          "count": 466
+        },
+        {
+          "value": "Moderate",
+          "count": 411
+        },
+        {
+          "value": "None",
+          "count": 123
+        }
+      ],
+      "min_length": 4,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAAAA",
+        "AAAA"
+      ]
+    },
+    "gaming_template|mechanical|stabtype": {
+      "table_name": "mechanical",
+      "column_name": "stabtype",
+      "column_type": "TEXT(30)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "PCB Mount",
+      "max_value": "Screw-in",
+      "top_k_values": [
+        {
+          "value": "PCB Mount",
+          "count": 344
+        },
+        {
+          "value": "Screw-in",
+          "count": 338
+        },
+        {
+          "value": "Plate Mount",
+          "count": 318
+        }
+      ],
+      "min_length": 8,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAA AAAAA",
+        "AAAAA-AA",
+        "AAAAA AAAAA"
+      ]
+    },
+    "gaming_template|mechanical|capthkmm": {
+      "table_name": "mechanical",
+      "column_name": "capthkmm",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 6,
+      "min_value": "1.0",
+      "max_value": "1.5",
+      "top_k_values": [
+        {
+          "value": "1.4",
+          "count": 222
+        },
+        {
+          "value": "1.2",
+          "count": 217
+        },
+        {
+          "value": "1.1",
+          "count": 192
+        },
+        {
+          "value": "1.3",
+          "count": 179
+        },
+        {
+          "value": "1.0",
+          "count": 97
+        },
+        {
+          "value": "1.5",
+          "count": 93
+        }
+      ],
+      "min_length": 3,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D.D"
+      ]
+    },
+    "gaming_template|mechanical|capmat": {
+      "table_name": "mechanical",
+      "column_name": "capmat",
+      "column_type": "TEXT(35)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "ABS",
+      "max_value": "PBT",
+      "top_k_values": [
+        {
+          "value": "ABS",
+          "count": 364
+        },
+        {
+          "value": "PBT",
+          "count": 343
+        },
+        {
+          "value": "Double Shot PBT",
+          "count": 293
+        }
+      ],
+      "min_length": 3,
+      "max_length": 15,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAA",
+        "AAAAAA AAAA AAA"
+      ]
+    },
+    "gaming_template|mechanical|caplegmeth": {
+      "table_name": "mechanical",
+      "column_name": "caplegmeth",
+      "column_type": "TEXT(40)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Double Shot",
+      "max_value": "Laser Etched",
+      "top_k_values": [
+        {
+          "value": "Laser Etched",
+          "count": 350
+        },
+        {
+          "value": "Dye Sub",
+          "count": 329
+        },
+        {
+          "value": "Double Shot",
+          "count": 321
+        }
+      ],
+      "min_length": 7,
+      "max_length": 12,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAA AAAAAA",
+        "AAA AAA",
+        "AAAAAA AAAA"
+      ]
+    },
+    "gaming_template|mechanical|kbdangle": {
+      "table_name": "mechanical",
+      "column_name": "kbdangle",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 10,
+      "min_value": "0",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "5",
+          "count": 110
+        },
+        {
+          "value": "8",
+          "count": 108
+        },
+        {
+          "value": "2",
+          "count": 103
+        },
+        {
+          "value": "1",
+          "count": 103
+        },
+        {
+          "value": "9",
+          "count": 102
+        },
+        {
+          "value": "0",
+          "count": 100
+        },
+        {
+          "value": "7",
+          "count": 99
+        },
+        {
+          "value": "3",
+          "count": 99
+        },
+        {
+          "value": "4",
+          "count": 92
+        },
+        {
+          "value": "6",
+          "count": 84
+        }
+      ],
+      "min_length": 1,
+      "max_length": 1,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D"
+      ]
+    },
+    "gaming_template|mechanical|wristflag": {
+      "table_name": "mechanical",
+      "column_name": "wristflag",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 2,
+      "min_value": "0",
+      "max_value": "1",
+      "top_k_values": [
+        {
+          "value": "1",
+          "count": 508
+        },
+        {
+          "value": "0",
+          "count": 492
+        }
+      ],
+      "min_length": 1,
+      "max_length": 1,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D"
+      ]
+    },
+    "gaming_template|mechanical|palmangle": {
+      "table_name": "mechanical",
+      "column_name": "palmangle",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 16,
+      "min_value": "0",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "13",
+          "count": 72
+        },
+        {
+          "value": "3",
+          "count": 71
+        },
+        {
+          "value": "12",
+          "count": 68
+        },
+        {
+          "value": "11",
+          "count": 68
+        },
+        {
+          "value": "8",
+          "count": 65
+        },
+        {
+          "value": "2",
+          "count": 64
+        },
+        {
+          "value": "1",
+          "count": 64
+        },
+        {
+          "value": "14",
+          "count": 62
+        },
+        {
+          "value": "4",
+          "count": 62
+        },
+        {
+          "value": "15",
+          "count": 61
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D",
+        "DD"
+      ]
+    },
+    "gaming_template|mechanical|ergorate": {
+      "table_name": "mechanical",
+      "column_name": "ergorate",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 10,
+      "min_value": "1",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "9",
+          "count": 127
+        },
+        {
+          "value": "1",
+          "count": 115
+        },
+        {
+          "value": "7",
+          "count": 102
+        },
+        {
+          "value": "6",
+          "count": 101
+        },
+        {
+          "value": "8",
+          "count": 100
+        },
+        {
+          "value": "2",
+          "count": 100
+        },
+        {
+          "value": "3",
+          "count": 99
+        },
+        {
+          "value": "5",
+          "count": 90
+        },
+        {
+          "value": "10",
+          "count": 86
+        },
+        {
+          "value": "4",
+          "count": 80
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D",
+        "DD"
+      ]
+    },
+    "gaming_template|performance|perfregistry": {
+      "table_name": "performance",
+      "column_name": "perfregistry",
+      "column_type": "TEXT(20)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "PERF_01U390",
+      "max_value": "PERF_ZZJUD9",
+      "top_k_values": [
+        {
+          "value": "PERF_01U390",
+          "count": 1
+        },
+        {
+          "value": "PERF_02IPIN",
+          "count": 1
+        },
+        {
+          "value": "PERF_04TU9W",
+          "count": 1
+        },
+        {
+          "value": "PERF_06T4AX",
+          "count": 1
+        },
+        {
+          "value": "PERF_07MYOK",
+          "count": 1
+        },
+        {
+          "value": "PERF_09HBNM",
+          "count": 1
+        },
+        {
+          "value": "PERF_0EKV2E",
+          "count": 1
+        },
+        {
+          "value": "PERF_0EPM8W",
+          "count": 1
+        },
+        {
+          "value": "PERF_0EQDDY",
+          "count": 1
+        },
+        {
+          "value": "PERF_0ETAC5",
+          "count": 1
+        }
+      ],
+      "min_length": 11,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAA_AAAAAA",
+        "AAAA_AAAAAD",
+        "AAAA_DAAAAA",
+        "AAAA_AADAAA",
+        "AAAA_AAAADA"
+      ]
+    },
+    "gaming_template|performance|perfsessionref": {
+      "table_name": "performance",
+      "column_name": "perfsessionref",
+      "column_type": "TEXT(20)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "GPT100866",
+      "max_value": "GPT999946",
+      "top_k_values": [
+        {
+          "value": "GPT999946",
+          "count": 1
+        },
+        {
+          "value": "GPT999646",
+          "count": 1
+        },
+        {
+          "value": "GPT997624",
+          "count": 1
+        },
+        {
+          "value": "GPT993782",
+          "count": 1
+        },
+        {
+          "value": "GPT992350",
+          "count": 1
+        },
+        {
+          "value": "GPT990741",
+          "count": 1
+        },
+        {
+          "value": "GPT989834",
+          "count": 1
+        },
+        {
+          "value": "GPT989749",
+          "count": 1
+        },
+        {
+          "value": "GPT989672",
+          "count": 1
+        },
+        {
+          "value": "GPT989247",
+          "count": 1
+        }
+      ],
+      "min_length": 9,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAADDDDDD"
+      ]
+    },
+    "gaming_template|performance|accelmax": {
+      "table_name": "performance",
+      "column_name": "accelmax",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 31,
+      "min_value": "20",
+      "max_value": "50",
+      "top_k_values": [
+        {
+          "value": "25",
+          "count": 44
+        },
+        {
+          "value": "46",
+          "count": 39
+        },
+        {
+          "value": "42",
+          "count": 39
+        },
+        {
+          "value": "40",
+          "count": 39
+        },
+        {
+          "value": "34",
+          "count": 39
+        },
+        {
+          "value": "20",
+          "count": 37
+        },
+        {
+          "value": "36",
+          "count": 36
+        },
+        {
+          "value": "24",
+          "count": 36
+        },
+        {
+          "value": "48",
+          "count": 35
+        },
+        {
+          "value": "26",
+          "count": 35
+        }
+      ],
+      "min_length": 2,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DD"
+      ]
+    },
+    "gaming_template|performance|speedips": {
+      "table_name": "performance",
+      "column_name": "speedips",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 200,
+      "min_value": "250",
+      "max_value": "450",
+      "top_k_values": [
+        {
+          "value": "362",
+          "count": 11
+        },
+        {
+          "value": "317",
+          "count": 11
+        },
+        {
+          "value": "433",
+          "count": 10
+        },
+        {
+          "value": "429",
+          "count": 10
+        },
+        {
+          "value": "393",
+          "count": 10
+        },
+        {
+          "value": "273",
+          "count": 10
+        },
+        {
+          "value": "258",
+          "count": 10
+        },
+        {
+          "value": "442",
+          "count": 9
+        },
+        {
+          "value": "438",
+          "count": 9
+        },
+        {
+          "value": "398",
+          "count": 9
+        }
+      ],
+      "min_length": 3,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDD"
+      ]
+    },
+    "gaming_template|performance|liftdistmm": {
+      "table_name": "performance",
+      "column_name": "liftdistmm",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 26,
+      "min_value": "0.5",
+      "max_value": "3.0",
+      "top_k_values": [
+        {
+          "value": "2.8",
+          "count": 50
+        },
+        {
+          "value": "1.6",
+          "count": 50
+        },
+        {
+          "value": "1.9",
+          "count": 47
+        },
+        {
+          "value": "2.9",
+          "count": 45
+        },
+        {
+          "value": "2.1",
+          "count": 45
+        },
+        {
+          "value": "0.8",
+          "count": 45
+        },
+        {
+          "value": "0.7",
+          "count": 44
+        },
+        {
+          "value": "0.6",
+          "count": 44
+        },
+        {
+          "value": "1.5",
+          "count": 43
+        },
+        {
+          "value": "1.1",
+          "count": 43
+        }
+      ],
+      "min_length": 3,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D.D"
+      ]
+    },
+    "gaming_template|performance|angsnap": {
+      "table_name": "performance",
+      "column_name": "angsnap",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1,
+      "min_value": "0",
+      "max_value": "0",
+      "top_k_values": [
+        {
+          "value": "0",
+          "count": 1000
+        }
+      ],
+      "min_length": 1,
+      "max_length": 1,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D"
+      ]
+    },
+    "gaming_template|performance|btntens": {
+      "table_name": "performance",
+      "column_name": "btntens",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Heavy",
+      "max_value": "Medium",
+      "top_k_values": [
+        {
+          "value": "Light",
+          "count": 357
+        },
+        {
+          "value": "Medium",
+          "count": 327
+        },
+        {
+          "value": "Heavy",
+          "count": 316
+        }
+      ],
+      "min_length": 5,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAA",
+        "AAAAAA"
+      ]
+    },
+    "gaming_template|performance|clklat": {
+      "table_name": "performance",
+      "column_name": "clklat",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 190,
+      "min_value": "0.1",
+      "max_value": "2.0",
+      "top_k_values": [
+        {
+          "value": "1.81",
+          "count": 11
+        },
+        {
+          "value": "1.26",
+          "count": 11
+        },
+        {
+          "value": "0.42",
+          "count": 11
+        },
+        {
+          "value": "1.5",
+          "count": 10
+        },
+        {
+          "value": "1.97",
+          "count": 9
+        },
+        {
+          "value": "1.93",
+          "count": 9
+        },
+        {
+          "value": "1.06",
+          "count": 9
+        },
+        {
+          "value": "0.81",
+          "count": 9
+        },
+        {
+          "value": "0.8",
+          "count": 9
+        },
+        {
+          "value": "0.55",
+          "count": 9
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "gaming_template|performance|clkdur": {
+      "table_name": "performance",
+      "column_name": "clkdur",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "20017008",
+      "max_value": "69923282",
+      "top_k_values": [
+        {
+          "value": "69923282",
+          "count": 1
+        },
+        {
+          "value": "69756137",
+          "count": 1
+        },
+        {
+          "value": "69711098",
+          "count": 1
+        },
+        {
+          "value": "69500205",
+          "count": 1
+        },
+        {
+          "value": "69494032",
+          "count": 1
+        },
+        {
+          "value": "69402999",
+          "count": 1
+        },
+        {
+          "value": "69323017",
+          "count": 1
+        },
+        {
+          "value": "69256327",
+          "count": 1
+        },
+        {
+          "value": "69151071",
+          "count": 1
+        },
+        {
+          "value": "69134897",
+          "count": 1
+        }
+      ],
+      "min_length": 8,
+      "max_length": 8,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDDDDDD"
+      ]
+    },
+    "gaming_template|performance|screnctyp": {
+      "table_name": "performance",
+      "column_name": "screnctyp",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Magnetic",
+      "max_value": "Optical",
+      "top_k_values": [
+        {
+          "value": "Magnetic",
+          "count": 348
+        },
+        {
+          "value": "Optical",
+          "count": 329
+        },
+        {
+          "value": "Mechanical",
+          "count": 323
+        }
+      ],
+      "min_length": 7,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAAAAA",
+        "AAAAAAAAAA"
+      ]
+    },
+    "gaming_template|performance|scrsteps": {
+      "table_name": "performance",
+      "column_name": "scrsteps",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 13,
+      "min_value": "12",
+      "max_value": "24",
+      "top_k_values": [
+        {
+          "value": "12",
+          "count": 95
+        },
+        {
+          "value": "18",
+          "count": 89
+        },
+        {
+          "value": "22",
+          "count": 86
+        },
+        {
+          "value": "17",
+          "count": 84
+        },
+        {
+          "value": "24",
+          "count": 81
+        },
+        {
+          "value": "15",
+          "count": 76
+        },
+        {
+          "value": "23",
+          "count": 75
+        },
+        {
+          "value": "19",
+          "count": 75
+        },
+        {
+          "value": "20",
+          "count": 73
+        },
+        {
+          "value": "14",
+          "count": 70
+        }
+      ],
+      "min_length": 2,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DD"
+      ]
+    },
+    "gaming_template|performance|scraccy": {
+      "table_name": "performance",
+      "column_name": "scraccy",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 101,
+      "min_value": "100.0",
+      "max_value": "99.9",
+      "top_k_values": [
+        {
+          "value": "99.8",
+          "count": 17
+        },
+        {
+          "value": "97.1",
+          "count": 17
+        },
+        {
+          "value": "96.0",
+          "count": 16
+        },
+        {
+          "value": "96.3",
+          "count": 15
+        },
+        {
+          "value": "94.3",
+          "count": 15
+        },
+        {
+          "value": "91.2",
+          "count": 15
+        },
+        {
+          "value": "98.7",
+          "count": 14
+        },
+        {
+          "value": "98.3",
+          "count": 14
+        },
+        {
+          "value": "97.4",
+          "count": 14
+        },
+        {
+          "value": "94.2",
+          "count": 14
+        }
+      ],
+      "min_length": 4,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.D",
+        "DDD.D"
+      ]
+    },
+    "gaming_template|physicaldurability|physregistry": {
+      "table_name": "physicaldurability",
+      "column_name": "physregistry",
+      "column_type": "TEXT(20)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "PHYS_01LC4N",
+      "max_value": "PHYS_ZZ6SS5",
+      "top_k_values": [
+        {
+          "value": "PHYS_01LC4N",
+          "count": 1
+        },
+        {
+          "value": "PHYS_02RVIY",
+          "count": 1
+        },
+        {
+          "value": "PHYS_03SWN6",
+          "count": 1
+        },
+        {
+          "value": "PHYS_04GRNV",
+          "count": 1
+        },
+        {
+          "value": "PHYS_05EKL0",
+          "count": 1
+        },
+        {
+          "value": "PHYS_05JYTB",
+          "count": 1
+        },
+        {
+          "value": "PHYS_07W0JN",
+          "count": 1
+        },
+        {
+          "value": "PHYS_0831IW",
+          "count": 1
+        },
+        {
+          "value": "PHYS_08APNC",
+          "count": 1
+        },
+        {
+          "value": "PHYS_08KK9T",
+          "count": 1
+        }
+      ],
+      "min_length": 11,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAA_AAAAAA",
+        "AAAA_AADAAA",
+        "AAAA_ADAAAA",
+        "AAAA_AAAAAD",
+        "AAAA_AAAADA"
+      ]
+    },
+    "gaming_template|physicaldurability|physrgbref": {
+      "table_name": "physicaldurability",
+      "column_name": "physrgbref",
+      "column_type": "TEXT(20)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "RGB_0149VY",
+      "max_value": "RGB_ZZBQEX",
+      "top_k_values": [
+        {
+          "value": "RGB_ZZBQEX",
+          "count": 1
+        },
+        {
+          "value": "RGB_ZZ9YQ2",
+          "count": 1
+        },
+        {
+          "value": "RGB_ZZ8YN1",
+          "count": 1
+        },
+        {
+          "value": "RGB_ZZ2336",
+          "count": 1
+        },
+        {
+          "value": "RGB_ZXGIXE",
+          "count": 1
+        },
+        {
+          "value": "RGB_ZXACUZ",
+          "count": 1
+        },
+        {
+          "value": "RGB_ZWG762",
+          "count": 1
+        },
+        {
+          "value": "RGB_ZSVB0N",
+          "count": 1
+        },
+        {
+          "value": "RGB_ZQG709",
+          "count": 1
+        },
+        {
+          "value": "RGB_ZQ90Q2",
+          "count": 1
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAA_AAAAAA",
+        "AAA_AAADAA",
+        "AAA_ADAAAA",
+        "AAA_DAAAAA",
+        "AAA_AAAAAD"
+      ]
+    },
+    "gaming_template|physicaldurability|physperfref": {
+      "table_name": "physicaldurability",
+      "column_name": "physperfref",
+      "column_type": "TEXT(20)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "PERF_01U390",
+      "max_value": "PERF_ZZJUD9",
+      "top_k_values": [
+        {
+          "value": "PERF_ZZJUD9",
+          "count": 1
+        },
+        {
+          "value": "PERF_ZYLSQ1",
+          "count": 1
+        },
+        {
+          "value": "PERF_ZX65O1",
+          "count": 1
+        },
+        {
+          "value": "PERF_ZWFSMD",
+          "count": 1
+        },
+        {
+          "value": "PERF_ZV04YM",
+          "count": 1
+        },
+        {
+          "value": "PERF_ZUM77X",
+          "count": 1
+        },
+        {
+          "value": "PERF_ZTLP81",
+          "count": 1
+        },
+        {
+          "value": "PERF_ZSJHIG",
+          "count": 1
+        },
+        {
+          "value": "PERF_ZS4VNT",
+          "count": 1
+        },
+        {
+          "value": "PERF_ZR4SHP",
+          "count": 1
+        }
+      ],
+      "min_length": 11,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAA_AAAAAA",
+        "AAAA_AAAAAD",
+        "AAAA_DAAAAA",
+        "AAAA_AADAAA",
+        "AAAA_AAAADA"
+      ]
+    },
+    "gaming_template|physicaldurability|wgtgram": {
+      "table_name": "physicaldurability",
+      "column_name": "wgtgram",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 91,
+      "min_value": "100",
+      "max_value": "99",
+      "top_k_values": [
+        {
+          "value": "130",
+          "count": 20
+        },
+        {
+          "value": "135",
+          "count": 18
+        },
+        {
+          "value": "79",
+          "count": 17
+        },
+        {
+          "value": "139",
+          "count": 16
+        },
+        {
+          "value": "132",
+          "count": 16
+        },
+        {
+          "value": "123",
+          "count": 16
+        },
+        {
+          "value": "134",
+          "count": 15
+        },
+        {
+          "value": "124",
+          "count": 15
+        },
+        {
+          "value": "115",
+          "count": 15
+        },
+        {
+          "value": "92",
+          "count": 15
+        }
+      ],
+      "min_length": 2,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD"
+      ]
+    },
+    "gaming_template|physicaldurability|wgtdist": {
+      "table_name": "physicaldurability",
+      "column_name": "wgtdist",
+      "column_type": "TEXT(30)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Back Heavy",
+      "max_value": "Front Heavy",
+      "top_k_values": [
+        {
+          "value": "Back Heavy",
+          "count": 341
+        },
+        {
+          "value": "Balanced",
+          "count": 335
+        },
+        {
+          "value": "Front Heavy",
+          "count": 324
+        }
+      ],
+      "min_length": 8,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA AAAAA",
+        "AAAAAAAA",
+        "AAAAA AAAAA"
+      ]
+    },
+    "gaming_template|physicaldurability|cablegram": {
+      "table_name": "physicaldurability",
+      "column_name": "cablegram",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 101,
+      "min_value": "0",
+      "max_value": "99",
+      "top_k_values": [
+        {
+          "value": "7",
+          "count": 19
+        },
+        {
+          "value": "5",
+          "count": 19
+        },
+        {
+          "value": "30",
+          "count": 17
+        },
+        {
+          "value": "95",
+          "count": 16
+        },
+        {
+          "value": "43",
+          "count": 16
+        },
+        {
+          "value": "100",
+          "count": 15
+        },
+        {
+          "value": "84",
+          "count": 15
+        },
+        {
+          "value": "67",
+          "count": 15
+        },
+        {
+          "value": "54",
+          "count": 15
+        },
+        {
+          "value": "18",
+          "count": 15
+        }
+      ],
+      "min_length": 1,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D",
+        "DDD"
+      ]
+    },
+    "gaming_template|physicaldurability|cabledrag": {
+      "table_name": "physicaldurability",
+      "column_name": "cabledrag",
+      "column_type": "TEXT(25)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Minimal",
+      "max_value": "Significant",
+      "top_k_values": [
+        {
+          "value": "Minimal",
+          "count": 349
+        },
+        {
+          "value": "Moderate",
+          "count": 327
+        },
+        {
+          "value": "Significant",
+          "count": 324
+        }
+      ],
+      "min_length": 7,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAAAA",
+        "AAAAAAAAAAA"
+      ]
+    },
+    "gaming_template|physicaldurability|feetmat": {
+      "table_name": "physicaldurability",
+      "column_name": "feetmat",
+      "column_type": "TEXT(25)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "Ceramic",
+      "max_value": "Virgin PTFE",
+      "top_k_values": [
+        {
+          "value": "Glass",
+          "count": 265
+        },
+        {
+          "value": "Ceramic",
+          "count": 264
+        },
+        {
+          "value": "Virgin PTFE",
+          "count": 242
+        },
+        {
+          "value": "PTFE",
+          "count": 229
+        }
+      ],
+      "min_length": 4,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAA",
+        "AAAAAAA",
+        "AAAAAA AAAA",
+        "AAAA"
+      ]
+    },
+    "gaming_template|physicaldurability|feetthkmm": {
+      "table_name": "physicaldurability",
+      "column_name": "feetthkmm",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 16,
+      "min_value": "0.5",
+      "max_value": "2.0",
+      "top_k_values": [
+        {
+          "value": "1.4",
+          "count": 83
+        },
+        {
+          "value": "1.8",
+          "count": 78
+        },
+        {
+          "value": "0.7",
+          "count": 76
+        },
+        {
+          "value": "0.8",
+          "count": 69
+        },
+        {
+          "value": "0.6",
+          "count": 67
+        },
+        {
+          "value": "1.9",
+          "count": 66
+        },
+        {
+          "value": "1.7",
+          "count": 66
+        },
+        {
+          "value": "0.9",
+          "count": 65
+        },
+        {
+          "value": "1.5",
+          "count": 64
+        },
+        {
+          "value": "1.6",
+          "count": 63
+        }
+      ],
+      "min_length": 3,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D.D"
+      ]
+    },
+    "gaming_template|physicaldurability|glidecons": {
+      "table_name": "physicaldurability",
+      "column_name": "glidecons",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 199,
+      "min_value": "100.0",
+      "max_value": "99.9",
+      "top_k_values": [
+        {
+          "value": "96.8",
+          "count": 10
+        },
+        {
+          "value": "93.3",
+          "count": 10
+        },
+        {
+          "value": "90.6",
+          "count": 10
+        },
+        {
+          "value": "85.7",
+          "count": 10
+        },
+        {
+          "value": "85.1",
+          "count": 10
+        },
+        {
+          "value": "97.0",
+          "count": 9
+        },
+        {
+          "value": "96.7",
+          "count": 9
+        },
+        {
+          "value": "95.9",
+          "count": 9
+        },
+        {
+          "value": "90.2",
+          "count": 9
+        },
+        {
+          "value": "88.8",
+          "count": 9
+        }
+      ],
+      "min_length": 4,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.D",
+        "DDD.D"
+      ]
+    },
+    "gaming_template|physicaldurability|fricstatic": {
+      "table_name": "physicaldurability",
+      "column_name": "fricstatic",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 41,
+      "min_value": "0.1",
+      "max_value": "0.5",
+      "top_k_values": [
+        {
+          "value": "0.34",
+          "count": 37
+        },
+        {
+          "value": "0.17",
+          "count": 31
+        },
+        {
+          "value": "0.49",
+          "count": 30
+        },
+        {
+          "value": "0.35",
+          "count": 30
+        },
+        {
+          "value": "0.45",
+          "count": 29
+        },
+        {
+          "value": "0.38",
+          "count": 29
+        },
+        {
+          "value": "0.22",
+          "count": 29
+        },
+        {
+          "value": "0.14",
+          "count": 29
+        },
+        {
+          "value": "0.44",
+          "count": 28
+        },
+        {
+          "value": "0.41",
+          "count": 28
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "gaming_template|physicaldurability|frickinetic": {
+      "table_name": "physicaldurability",
+      "column_name": "frickinetic",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 33,
+      "min_value": "0.08",
+      "max_value": "0.4",
+      "top_k_values": [
+        {
+          "value": "0.31",
+          "count": 46
+        },
+        {
+          "value": "0.25",
+          "count": 43
+        },
+        {
+          "value": "0.28",
+          "count": 40
+        },
+        {
+          "value": "0.22",
+          "count": 40
+        },
+        {
+          "value": "0.14",
+          "count": 39
+        },
+        {
+          "value": "0.38",
+          "count": 37
+        },
+        {
+          "value": "0.37",
+          "count": 35
+        },
+        {
+          "value": "0.23",
+          "count": 35
+        },
+        {
+          "value": "0.3",
+          "count": 34
+        },
+        {
+          "value": "0.2",
+          "count": 34
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "gaming_template|physicaldurability|surfcompat": {
+      "table_name": "physicaldurability",
+      "column_name": "surfcompat",
+      "column_type": "TEXT(25)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Cloth Preferred",
+      "max_value": "Universal",
+      "top_k_values": [
+        {
+          "value": "Hard Pad Preferred",
+          "count": 365
+        },
+        {
+          "value": "Cloth Preferred",
+          "count": 331
+        },
+        {
+          "value": "Universal",
+          "count": 304
+        }
+      ],
+      "min_length": 9,
+      "max_length": 18,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA AAA AAAAAAAAA",
+        "AAAAA AAAAAAAAA",
+        "AAAAAAAAA"
+      ]
+    },
+    "gaming_template|physicaldurability|gripsty": {
+      "table_name": "physicaldurability",
+      "column_name": "gripsty",
+      "column_type": "TEXT(30)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "Claw",
+      "max_value": "Palm",
+      "top_k_values": [
+        {
+          "value": "Hybrid",
+          "count": 255
+        },
+        {
+          "value": "Palm",
+          "count": 254
+        },
+        {
+          "value": "Fingertip",
+          "count": 253
+        },
+        {
+          "value": "Claw",
+          "count": 238
+        }
+      ],
+      "min_length": 4,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAAAAA",
+        "AAAAAAAAA"
+      ]
+    },
+    "gaming_template|physicaldurability|gripcoat": {
+      "table_name": "physicaldurability",
+      "column_name": "gripcoat",
+      "column_type": "TEXT(30)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "Glossy",
+      "max_value": "Textured",
+      "top_k_values": [
+        {
+          "value": "Glossy",
+          "count": 285
+        },
+        {
+          "value": "Matte",
+          "count": 252
+        },
+        {
+          "value": "Rubberized",
+          "count": 235
+        },
+        {
+          "value": "Textured",
+          "count": 228
+        }
+      ],
+      "min_length": 5,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AAAAA",
+        "AAAAAAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "gaming_template|physicaldurability|gripdur": {
+      "table_name": "physicaldurability",
+      "column_name": "gripdur",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 19,
+      "min_value": "10",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "21",
+          "count": 62
+        },
+        {
+          "value": "14",
+          "count": 62
+        },
+        {
+          "value": "10",
+          "count": 58
+        },
+        {
+          "value": "7",
+          "count": 58
+        },
+        {
+          "value": "6",
+          "count": 57
+        },
+        {
+          "value": "24",
+          "count": 56
+        },
+        {
+          "value": "17",
+          "count": 56
+        },
+        {
+          "value": "18",
+          "count": 55
+        },
+        {
+          "value": "13",
+          "count": 55
+        },
+        {
+          "value": "12",
+          "count": 53
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D"
+      ]
+    },
+    "gaming_template|physicaldurability|sweatres": {
+      "table_name": "physicaldurability",
+      "column_name": "sweatres",
+      "column_type": "TEXT(30)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "High",
+      "max_value": "Medium",
+      "top_k_values": [
+        {
+          "value": "Medium",
+          "count": 339
+        },
+        {
+          "value": "High",
+          "count": 332
+        },
+        {
+          "value": "Low",
+          "count": 329
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AAAA",
+        "AAA"
+      ]
+    },
+    "gaming_template|physicaldurability|tempres": {
+      "table_name": "physicaldurability",
+      "column_name": "tempres",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Enhanced",
+      "max_value": "Standard",
+      "top_k_values": [
+        {
+          "value": "Standard",
+          "count": 357
+        },
+        {
+          "value": "Enhanced",
+          "count": 331
+        },
+        {
+          "value": "Premium",
+          "count": 312
+        }
+      ],
+      "min_length": 7,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAAAAA"
+      ]
+    },
+    "gaming_template|physicaldurability|humidres": {
+      "table_name": "physicaldurability",
+      "column_name": "humidres",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Enhanced",
+      "max_value": "Standard",
+      "top_k_values": [
+        {
+          "value": "Enhanced",
+          "count": 346
+        },
+        {
+          "value": "Premium",
+          "count": 339
+        },
+        {
+          "value": "Standard",
+          "count": 315
+        }
+      ],
+      "min_length": 7,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAAAAA"
+      ]
+    },
+    "gaming_template|physicaldurability|dustres": {
+      "table_name": "physicaldurability",
+      "column_name": "dustres",
+      "column_type": "TEXT(30)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "IPX0",
+      "max_value": "IPX3",
+      "top_k_values": [
+        {
+          "value": "IPX2",
+          "count": 269
+        },
+        {
+          "value": "IPX1",
+          "count": 249
+        },
+        {
+          "value": "IPX3",
+          "count": 247
+        },
+        {
+          "value": "IPX0",
+          "count": 235
+        }
+      ],
+      "min_length": 4,
+      "max_length": 4,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAD"
+      ]
+    },
+    "gaming_template|physicaldurability|waterres": {
+      "table_name": "physicaldurability",
+      "column_name": "waterres",
+      "column_type": "TEXT(35)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "IPX0",
+      "max_value": "IPX3",
+      "top_k_values": [
+        {
+          "value": "IPX3",
+          "count": 260
+        },
+        {
+          "value": "IPX1",
+          "count": 260
+        },
+        {
+          "value": "IPX2",
+          "count": 248
+        },
+        {
+          "value": "IPX0",
+          "count": 232
+        }
+      ],
+      "min_length": 4,
+      "max_length": 4,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAD"
+      ]
+    },
+    "gaming_template|physicaldurability|impres": {
+      "table_name": "physicaldurability",
+      "column_name": "impres",
+      "column_type": "TEXT(30)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Enhanced",
+      "max_value": "Standard",
+      "top_k_values": [
+        {
+          "value": "Standard",
+          "count": 352
+        },
+        {
+          "value": "Military Grade",
+          "count": 338
+        },
+        {
+          "value": "Enhanced",
+          "count": 310
+        }
+      ],
+      "min_length": 8,
+      "max_length": 14,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAAAAAA AAAAA"
+      ]
+    },
+    "gaming_template|physicaldurability|drophtm": {
+      "table_name": "physicaldurability",
+      "column_name": "drophtm",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 16,
+      "min_value": "0.5",
+      "max_value": "2.0",
+      "top_k_values": [
+        {
+          "value": "1.5",
+          "count": 87
+        },
+        {
+          "value": "1.6",
+          "count": 76
+        },
+        {
+          "value": "1.9",
+          "count": 70
+        },
+        {
+          "value": "0.9",
+          "count": 69
+        },
+        {
+          "value": "0.8",
+          "count": 68
+        },
+        {
+          "value": "1.7",
+          "count": 66
+        },
+        {
+          "value": "1.4",
+          "count": 66
+        },
+        {
+          "value": "1.0",
+          "count": 65
+        },
+        {
+          "value": "1.3",
+          "count": 63
+        },
+        {
+          "value": "0.6",
+          "count": 61
+        }
+      ],
+      "min_length": 3,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D.D"
+      ]
+    },
+    "gaming_template|physicaldurability|bendforce": {
+      "table_name": "physicaldurability",
+      "column_name": "bendforce",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 371,
+      "min_value": "100",
+      "max_value": "500",
+      "top_k_values": [
+        {
+          "value": "317",
+          "count": 8
+        },
+        {
+          "value": "126",
+          "count": 8
+        },
+        {
+          "value": "456",
+          "count": 7
+        },
+        {
+          "value": "413",
+          "count": 7
+        },
+        {
+          "value": "366",
+          "count": 7
+        },
+        {
+          "value": "346",
+          "count": 7
+        },
+        {
+          "value": "280",
+          "count": 7
+        },
+        {
+          "value": "474",
+          "count": 6
+        },
+        {
+          "value": "465",
+          "count": 6
+        },
+        {
+          "value": "430",
+          "count": 6
+        }
+      ],
+      "min_length": 3,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDD"
+      ]
+    },
+    "gaming_template|physicaldurability|twistdeg": {
+      "table_name": "physicaldurability",
+      "column_name": "twistdeg",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 31,
+      "min_value": "15",
+      "max_value": "45",
+      "top_k_values": [
+        {
+          "value": "40",
+          "count": 46
+        },
+        {
+          "value": "31",
+          "count": 44
+        },
+        {
+          "value": "25",
+          "count": 43
+        },
+        {
+          "value": "41",
+          "count": 40
+        },
+        {
+          "value": "26",
+          "count": 40
+        },
+        {
+          "value": "16",
+          "count": 39
+        },
+        {
+          "value": "32",
+          "count": 36
+        },
+        {
+          "value": "39",
+          "count": 35
+        },
+        {
+          "value": "29",
+          "count": 35
+        },
+        {
+          "value": "15",
+          "count": 34
+        }
+      ],
+      "min_length": 2,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DD"
+      ]
+    },
+    "gaming_template|physicaldurability|cablebend": {
+      "table_name": "physicaldurability",
+      "column_name": "cablebend",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 897,
+      "min_value": "1003",
+      "max_value": "4995",
+      "top_k_values": [
+        {
+          "value": "4801",
+          "count": 3
+        },
+        {
+          "value": "4138",
+          "count": 3
+        },
+        {
+          "value": "3599",
+          "count": 3
+        },
+        {
+          "value": "3520",
+          "count": 3
+        },
+        {
+          "value": "2040",
+          "count": 3
+        },
+        {
+          "value": "1459",
+          "count": 3
+        },
+        {
+          "value": "1288",
+          "count": 3
+        },
+        {
+          "value": "4918",
+          "count": 2
+        },
+        {
+          "value": "4712",
+          "count": 2
+        },
+        {
+          "value": "4708",
+          "count": 2
+        }
+      ],
+      "min_length": 4,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDD"
+      ]
+    },
+    "gaming_template|physicaldurability|usbconndur": {
+      "table_name": "physicaldurability",
+      "column_name": "usbconndur",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 882,
+      "min_value": "1013",
+      "max_value": "5000",
+      "top_k_values": [
+        {
+          "value": "3005",
+          "count": 4
+        },
+        {
+          "value": "4473",
+          "count": 3
+        },
+        {
+          "value": "3942",
+          "count": 3
+        },
+        {
+          "value": "3640",
+          "count": 3
+        },
+        {
+          "value": "3612",
+          "count": 3
+        },
+        {
+          "value": "3495",
+          "count": 3
+        },
+        {
+          "value": "2621",
+          "count": 3
+        },
+        {
+          "value": "2075",
+          "count": 3
+        },
+        {
+          "value": "4958",
+          "count": 2
+        },
+        {
+          "value": "4803",
+          "count": 2
+        }
+      ],
+      "min_length": 4,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDD"
+      ]
+    },
+    "gaming_template|rgb|rgbregistry": {
+      "table_name": "rgb",
+      "column_name": "rgbregistry",
+      "column_type": "TEXT(20)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "RGB_0149VY",
+      "max_value": "RGB_ZZBQEX",
+      "top_k_values": [
+        {
+          "value": "RGB_0149VY",
+          "count": 1
+        },
+        {
+          "value": "RGB_03KPWY",
+          "count": 1
+        },
+        {
+          "value": "RGB_03MPVG",
+          "count": 1
+        },
+        {
+          "value": "RGB_068IP2",
+          "count": 1
+        },
+        {
+          "value": "RGB_08Y2W7",
+          "count": 1
+        },
+        {
+          "value": "RGB_0DPTX2",
+          "count": 1
+        },
+        {
+          "value": "RGB_0IU66J",
+          "count": 1
+        },
+        {
+          "value": "RGB_0J4B8F",
+          "count": 1
+        },
+        {
+          "value": "RGB_0LTE9W",
+          "count": 1
+        },
+        {
+          "value": "RGB_0M1Z2B",
+          "count": 1
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAA_AAAAAA",
+        "AAA_AAADAA",
+        "AAA_ADAAAA",
+        "AAA_DAAAAA",
+        "AAA_AAAAAD"
+      ]
+    },
+    "gaming_template|rgb|rgbmechref": {
+      "table_name": "rgb",
+      "column_name": "rgbmechref",
+      "column_type": "TEXT(20)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "MECH_003FVR",
+      "max_value": "MECH_ZZSDZZ",
+      "top_k_values": [
+        {
+          "value": "MECH_ZZSDZZ",
+          "count": 1
+        },
+        {
+          "value": "MECH_ZZ6KJS",
+          "count": 1
+        },
+        {
+          "value": "MECH_ZZ2KZJ",
+          "count": 1
+        },
+        {
+          "value": "MECH_ZYXXAG",
+          "count": 1
+        },
+        {
+          "value": "MECH_ZU25VW",
+          "count": 1
+        },
+        {
+          "value": "MECH_ZSVNO7",
+          "count": 1
+        },
+        {
+          "value": "MECH_ZSJ8ZJ",
+          "count": 1
+        },
+        {
+          "value": "MECH_ZS83J0",
+          "count": 1
+        },
+        {
+          "value": "MECH_ZQU7UP",
+          "count": 1
+        },
+        {
+          "value": "MECH_ZQDCCU",
+          "count": 1
+        }
+      ],
+      "min_length": 11,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAA_AAAAAA",
+        "AAAA_AAADAA",
+        "AAAA_AAAAAD",
+        "AAAA_DAAAAA",
+        "AAAA_AADAAA"
+      ]
+    },
+    "gaming_template|rgb|rgbaudref": {
+      "table_name": "rgb",
+      "column_name": "rgbaudref",
+      "column_type": "TEXT(20)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "AUD_00FA2G",
+      "max_value": "AUD_ZTTC7U",
+      "top_k_values": [
+        {
+          "value": "AUD_ZTTC7U",
+          "count": 1
+        },
+        {
+          "value": "AUD_ZSW2KF",
+          "count": 1
+        },
+        {
+          "value": "AUD_ZRDDEA",
+          "count": 1
+        },
+        {
+          "value": "AUD_ZPPC58",
+          "count": 1
+        },
+        {
+          "value": "AUD_ZNJC7T",
+          "count": 1
+        },
+        {
+          "value": "AUD_ZMXBKU",
+          "count": 1
+        },
+        {
+          "value": "AUD_ZMCJ3X",
+          "count": 1
+        },
+        {
+          "value": "AUD_ZM5AGT",
+          "count": 1
+        },
+        {
+          "value": "AUD_ZLI7ZE",
+          "count": 1
+        },
+        {
+          "value": "AUD_ZK4STT",
+          "count": 1
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAA_AAAAAA",
+        "AAA_ADAAAA",
+        "AAA_AAAAAD",
+        "AAA_DAAAAA",
+        "AAA_AAAADA"
+      ]
+    },
+    "gaming_template|rgb|rgbbright": {
+      "table_name": "rgb",
+      "column_name": "rgbbright",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 101,
+      "min_value": "0",
+      "max_value": "99",
+      "top_k_values": [
+        {
+          "value": "96",
+          "count": 17
+        },
+        {
+          "value": "48",
+          "count": 17
+        },
+        {
+          "value": "97",
+          "count": 16
+        },
+        {
+          "value": "90",
+          "count": 15
+        },
+        {
+          "value": "84",
+          "count": 15
+        },
+        {
+          "value": "28",
+          "count": 15
+        },
+        {
+          "value": "92",
+          "count": 14
+        },
+        {
+          "value": "78",
+          "count": 14
+        },
+        {
+          "value": "70",
+          "count": 14
+        },
+        {
+          "value": "38",
+          "count": 14
+        }
+      ],
+      "min_length": 1,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D",
+        "DDD"
+      ]
+    },
+    "gaming_template|rgb|rgbcoloracc": {
+      "table_name": "rgb",
+      "column_name": "rgbcoloracc",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 200,
+      "min_value": "100.0",
+      "max_value": "99.9",
+      "top_k_values": [
+        {
+          "value": "99.7",
+          "count": 13
+        },
+        {
+          "value": "91.1",
+          "count": 10
+        },
+        {
+          "value": "90.8",
+          "count": 10
+        },
+        {
+          "value": "83.7",
+          "count": 10
+        },
+        {
+          "value": "82.0",
+          "count": 10
+        },
+        {
+          "value": "97.6",
+          "count": 9
+        },
+        {
+          "value": "95.2",
+          "count": 9
+        },
+        {
+          "value": "94.0",
+          "count": 9
+        },
+        {
+          "value": "89.2",
+          "count": 9
+        },
+        {
+          "value": "89.0",
+          "count": 9
+        }
+      ],
+      "min_length": 4,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.D",
+        "DDD.D"
+      ]
+    },
+    "gaming_template|rgb|rgbrfrate": {
+      "table_name": "rgb",
+      "column_name": "rgbrfrate",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 618,
+      "min_value": "1000",
+      "max_value": "997",
+      "top_k_values": [
+        {
+          "value": "402",
+          "count": 6
+        },
+        {
+          "value": "535",
+          "count": 5
+        },
+        {
+          "value": "378",
+          "count": 5
+        },
+        {
+          "value": "988",
+          "count": 4
+        },
+        {
+          "value": "893",
+          "count": 4
+        },
+        {
+          "value": "734",
+          "count": 4
+        },
+        {
+          "value": "504",
+          "count": 4
+        },
+        {
+          "value": "501",
+          "count": 4
+        },
+        {
+          "value": "460",
+          "count": 4
+        },
+        {
+          "value": "400",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DDDD"
+      ]
+    },
+    "gaming_template|rgb|rgbmodes": {
+      "table_name": "rgb",
+      "column_name": "rgbmodes",
+      "column_type": "TEXT(25)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 16,
+      "min_value": "10",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "20",
+          "count": 76
+        },
+        {
+          "value": "13",
+          "count": 75
+        },
+        {
+          "value": "15",
+          "count": 72
+        },
+        {
+          "value": "5",
+          "count": 71
+        },
+        {
+          "value": "10",
+          "count": 68
+        },
+        {
+          "value": "14",
+          "count": 64
+        },
+        {
+          "value": "9",
+          "count": 62
+        },
+        {
+          "value": "11",
+          "count": 60
+        },
+        {
+          "value": "16",
+          "count": 59
+        },
+        {
+          "value": "6",
+          "count": 58
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D"
+      ]
+    },
+    "gaming_template|rgb|rgbzones": {
+      "table_name": "rgb",
+      "column_name": "rgbzones",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 10,
+      "min_value": "1",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "10",
+          "count": 117
+        },
+        {
+          "value": "6",
+          "count": 115
+        },
+        {
+          "value": "2",
+          "count": 106
+        },
+        {
+          "value": "1",
+          "count": 103
+        },
+        {
+          "value": "4",
+          "count": 101
+        },
+        {
+          "value": "3",
+          "count": 98
+        },
+        {
+          "value": "8",
+          "count": 92
+        },
+        {
+          "value": "7",
+          "count": 92
+        },
+        {
+          "value": "9",
+          "count": 90
+        },
+        {
+          "value": "5",
+          "count": 86
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D",
+        "DD"
+      ]
+    },
+    "gaming_template|rgb|rgbcolors": {
+      "table_name": "rgb",
+      "column_name": "rgbcolors",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "10015872",
+      "max_value": "9988594",
+      "top_k_values": [
+        {
+          "value": "16686750",
+          "count": 1
+        },
+        {
+          "value": "16646804",
+          "count": 1
+        },
+        {
+          "value": "16636613",
+          "count": 1
+        },
+        {
+          "value": "16600152",
+          "count": 1
+        },
+        {
+          "value": "16586348",
+          "count": 1
+        },
+        {
+          "value": "16564134",
+          "count": 1
+        },
+        {
+          "value": "16555902",
+          "count": 1
+        },
+        {
+          "value": "16555744",
+          "count": 1
+        },
+        {
+          "value": "16550831",
+          "count": 1
+        },
+        {
+          "value": "16550514",
+          "count": 1
+        }
+      ],
+      "min_length": 4,
+      "max_length": 8,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDDDD",
+        "DDDDDDDD",
+        "DDDDDD",
+        "DDDDD",
+        "DDDD"
+      ]
+    },
+    "gaming_template|testsessions|sessionregistry": {
+      "table_name": "testsessions",
+      "column_name": "sessionregistry",
+      "column_type": "TEXT(20)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "GPT100866",
+      "max_value": "GPT999946",
+      "top_k_values": [
+        {
+          "value": "GPT100866",
+          "count": 1
+        },
+        {
+          "value": "GPT101453",
+          "count": 1
+        },
+        {
+          "value": "GPT102092",
+          "count": 1
+        },
+        {
+          "value": "GPT102764",
+          "count": 1
+        },
+        {
+          "value": "GPT103508",
+          "count": 1
+        },
+        {
+          "value": "GPT103626",
+          "count": 1
+        },
+        {
+          "value": "GPT103904",
+          "count": 1
+        },
+        {
+          "value": "GPT104309",
+          "count": 1
+        },
+        {
+          "value": "GPT104502",
+          "count": 1
+        },
+        {
+          "value": "GPT104796",
+          "count": 1
+        }
+      ],
+      "min_length": 9,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAADDDDDD"
+      ]
+    },
+    "gaming_template|testsessions|stampmoment": {
+      "table_name": "testsessions",
+      "column_name": "stampmoment",
+      "column_type": "TEXT(6)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "2024-02-19 08:48:10.841968",
+      "max_value": "2025-02-18 11:00:40.841968",
+      "top_k_values": [
+        {
+          "value": "2025-02-18 11:00:40.841968",
+          "count": 1
+        },
+        {
+          "value": "2025-02-18 09:36:31.841968",
+          "count": 1
+        },
+        {
+          "value": "2025-02-18 04:12:26.841968",
+          "count": 1
+        },
+        {
+          "value": "2025-02-17 23:52:59.810538",
+          "count": 1
+        },
+        {
+          "value": "2025-02-17 23:15:58.810538",
+          "count": 1
+        },
+        {
+          "value": "2025-02-17 15:47:47.827941",
+          "count": 1
+        },
+        {
+          "value": "2025-02-17 06:37:06.796012",
+          "count": 1
+        },
+        {
+          "value": "2025-02-17 01:44:53.796012",
+          "count": 1
+        },
+        {
+          "value": "2025-02-16 23:45:34.796012",
+          "count": 1
+        },
+        {
+          "value": "2025-02-16 14:27:51.810538",
+          "count": 1
+        }
+      ],
+      "min_length": 26,
+      "max_length": 26,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDD-DD-DD DD:DD:DD.DDDDDD"
+      ]
+    },
+    "gaming_template|testsessions|devscope": {
+      "table_name": "testsessions",
+      "column_name": "devscope",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 5,
+      "min_value": "Controller",
+      "max_value": "Mouse",
+      "top_k_values": [
+        {
+          "value": "Headset",
+          "count": 257
+        },
+        {
+          "value": "Keyboard",
+          "count": 197
+        },
+        {
+          "value": "Gamepad",
+          "count": 195
+        },
+        {
+          "value": "Controller",
+          "count": 176
+        },
+        {
+          "value": "Mouse",
+          "count": 175
+        }
+      ],
+      "min_length": 5,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAAAA",
+        "AAAAAAAAAA",
+        "AAAAA"
+      ]
+    },
+    "gaming_template|testsessions|cpuusepct": {
+      "table_name": "testsessions",
+      "column_name": "cpuusepct",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 427,
+      "min_value": "0.0",
+      "max_value": "4.97",
+      "top_k_values": [
+        {
+          "value": "3.16",
+          "count": 8
+        },
+        {
+          "value": "4.42",
+          "count": 7
+        },
+        {
+          "value": "1.01",
+          "count": 7
+        },
+        {
+          "value": "4.69",
+          "count": 6
+        },
+        {
+          "value": "2.77",
+          "count": 6
+        },
+        {
+          "value": "2.69",
+          "count": 6
+        },
+        {
+          "value": "2.64",
+          "count": 6
+        },
+        {
+          "value": "0.24",
+          "count": 6
+        },
+        {
+          "value": "4.91",
+          "count": 5
+        },
+        {
+          "value": "4.63",
+          "count": 5
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "gaming_template|testsessions|memusemb": {
+      "table_name": "testsessions",
+      "column_name": "memusemb",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 90,
+      "min_value": "10",
+      "max_value": "99",
+      "top_k_values": [
+        {
+          "value": "25",
+          "count": 19
+        },
+        {
+          "value": "56",
+          "count": 18
+        },
+        {
+          "value": "83",
+          "count": 17
+        },
+        {
+          "value": "82",
+          "count": 17
+        },
+        {
+          "value": "34",
+          "count": 17
+        },
+        {
+          "value": "28",
+          "count": 17
+        },
+        {
+          "value": "13",
+          "count": 16
+        },
+        {
+          "value": "80",
+          "count": 15
+        },
+        {
+          "value": "72",
+          "count": 15
+        },
+        {
+          "value": "69",
+          "count": 15
+        }
+      ],
+      "min_length": 2,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DD"
+      ]
+    },
+    "gaming_template|testsessions|driverstatus": {
+      "table_name": "testsessions",
+      "column_name": "driverstatus",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Beta",
+      "max_value": "Stable",
+      "top_k_values": [
+        {
+          "value": "Beta",
+          "count": 339
+        },
+        {
+          "value": "Stable",
+          "count": 331
+        },
+        {
+          "value": "Experimental",
+          "count": 330
+        }
+      ],
+      "min_length": 4,
+      "max_length": 12,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAAAAA",
+        "AAAAAAAAAAAA"
+      ]
+    },
+    "gaming_template|testsessions|fwupdur": {
+      "table_name": "testsessions",
+      "column_name": "fwupdur",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 263,
+      "min_value": "100",
+      "max_value": "99",
+      "top_k_values": [
+        {
+          "value": "259",
+          "count": 9
+        },
+        {
+          "value": "196",
+          "count": 9
+        },
+        {
+          "value": "296",
+          "count": 8
+        },
+        {
+          "value": "247",
+          "count": 8
+        },
+        {
+          "value": "216",
+          "count": 8
+        },
+        {
+          "value": "211",
+          "count": 8
+        },
+        {
+          "value": "205",
+          "count": 8
+        },
+        {
+          "value": "88",
+          "count": 8
+        },
+        {
+          "value": "288",
+          "count": 7
+        },
+        {
+          "value": "276",
+          "count": 7
+        }
+      ],
+      "min_length": 2,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD",
+        "DD"
+      ]
+    },
+    "gaming_template|testsessions|wlsignal": {
+      "table_name": "testsessions",
+      "column_name": "wlsignal",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 759,
+      "min_value": "-30.0",
+      "max_value": "99.55",
+      "top_k_values": [
+        {
+          "value": "-30.0",
+          "count": 8
+        },
+        {
+          "value": "-72.0",
+          "count": 8
+        },
+        {
+          "value": "-78.0",
+          "count": 8
+        },
+        {
+          "value": "-52.0",
+          "count": 7
+        },
+        {
+          "value": "-55.0",
+          "count": 7
+        },
+        {
+          "value": "-63.0",
+          "count": 7
+        },
+        {
+          "value": "-73.0",
+          "count": 7
+        },
+        {
+          "value": "-81.0",
+          "count": 7
+        },
+        {
+          "value": "-89.0",
+          "count": 7
+        },
+        {
+          "value": "-31.0",
+          "count": 6
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.DD",
+        "-DD.D",
+        "D.DD",
+        "DD.D",
+        "D.D"
+      ]
+    },
+    "gaming_template|testsessions|battlevel": {
+      "table_name": "testsessions",
+      "column_name": "battlevel",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 101,
+      "min_value": "0",
+      "max_value": "99",
+      "top_k_values": [
+        {
+          "value": "17",
+          "count": 18
+        },
+        {
+          "value": "99",
+          "count": 16
+        },
+        {
+          "value": "50",
+          "count": 16
+        },
+        {
+          "value": "38",
+          "count": 16
+        },
+        {
+          "value": "0",
+          "count": 16
+        },
+        {
+          "value": "26",
+          "count": 15
+        },
+        {
+          "value": "83",
+          "count": 14
+        },
+        {
+          "value": "75",
+          "count": 14
+        },
+        {
+          "value": "41",
+          "count": 14
+        },
+        {
+          "value": "33",
+          "count": 14
+        }
+      ],
+      "min_length": 1,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D",
+        "DDD"
+      ]
+    },
+    "gaming_template|testsessions|battcapmah": {
+      "table_name": "testsessions",
+      "column_name": "battcapmah",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 737,
+      "min_value": "1000",
+      "max_value": "998",
+      "top_k_values": [
+        {
+          "value": "1919",
+          "count": 5
+        },
+        {
+          "value": "714",
+          "count": 5
+        },
+        {
+          "value": "587",
+          "count": 5
+        },
+        {
+          "value": "1618",
+          "count": 4
+        },
+        {
+          "value": "1133",
+          "count": 4
+        },
+        {
+          "value": "1980",
+          "count": 3
+        },
+        {
+          "value": "1931",
+          "count": 3
+        },
+        {
+          "value": "1901",
+          "count": 3
+        },
+        {
+          "value": "1863",
+          "count": 3
+        },
+        {
+          "value": "1857",
+          "count": 3
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDD",
+        "DDD"
+      ]
+    },
+    "gaming_template|testsessions|battlifeh": {
+      "table_name": "testsessions",
+      "column_name": "battlifeh",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 81,
+      "min_value": "100.0",
+      "max_value": "99.0",
+      "top_k_values": [
+        {
+          "value": "92.0",
+          "count": 23
+        },
+        {
+          "value": "75.0",
+          "count": 19
+        },
+        {
+          "value": "95.0",
+          "count": 18
+        },
+        {
+          "value": "85.0",
+          "count": 18
+        },
+        {
+          "value": "61.0",
+          "count": 18
+        },
+        {
+          "value": "36.0",
+          "count": 18
+        },
+        {
+          "value": "77.0",
+          "count": 17
+        },
+        {
+          "value": "63.0",
+          "count": 17
+        },
+        {
+          "value": "51.0",
+          "count": 17
+        },
+        {
+          "value": "100.0",
+          "count": 16
+        }
+      ],
+      "min_length": 4,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD.D",
+        "DDD.D"
+      ]
+    },
+    "gaming_template|testsessions|chgtimemin": {
+      "table_name": "testsessions",
+      "column_name": "chgtimemin",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 181,
+      "min_value": "100.0",
+      "max_value": "99.0",
+      "top_k_values": [
+        {
+          "value": "192.0",
+          "count": 13
+        },
+        {
+          "value": "83.0",
+          "count": 13
+        },
+        {
+          "value": "148.0",
+          "count": 12
+        },
+        {
+          "value": "203.0",
+          "count": 11
+        },
+        {
+          "value": "187.0",
+          "count": 11
+        },
+        {
+          "value": "150.0",
+          "count": 11
+        },
+        {
+          "value": "106.0",
+          "count": 11
+        },
+        {
+          "value": "99.0",
+          "count": 11
+        },
+        {
+          "value": "88.0",
+          "count": 11
+        },
+        {
+          "value": "225.0",
+          "count": 10
+        }
+      ],
+      "min_length": 4,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDD.D",
+        "DD.D"
+      ]
+    },
+    "gaming_template|testsessions|qchgflag": {
+      "table_name": "testsessions",
+      "column_name": "qchgflag",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 2,
+      "min_value": "0",
+      "max_value": "1",
+      "top_k_values": [
+        {
+          "value": "1",
+          "count": 507
+        },
+        {
+          "value": "0",
+          "count": 493
+        }
+      ],
+      "min_length": 1,
+      "max_length": 1,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D"
+      ]
+    },
+    "gaming_template|testsessions|usbpwrline": {
+      "table_name": "testsessions",
+      "column_name": "usbpwrline",
+      "column_type": "TEXT(25)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 227,
+      "min_value": "10W",
+      "max_value": "USB-PDZS",
+      "top_k_values": [
+        {
+          "value": "7.5W",
+          "count": 269
+        },
+        {
+          "value": "5W",
+          "count": 248
+        },
+        {
+          "value": "10W",
+          "count": 235
+        },
+        {
+          "value": "USB-PDDY",
+          "count": 3
+        },
+        {
+          "value": "USB-PDAW",
+          "count": 3
+        },
+        {
+          "value": "USB-PD2M",
+          "count": 3
+        },
+        {
+          "value": "USB-PDZS",
+          "count": 2
+        },
+        {
+          "value": "USB-PDZG",
+          "count": 2
+        },
+        {
+          "value": "USB-PDX6",
+          "count": 2
+        },
+        {
+          "value": "USB-PDWA",
+          "count": 2
+        }
+      ],
+      "min_length": 2,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DA",
+        "DA",
+        "DDA",
+        "AAA-AAAA",
+        "AAA-AAAD"
+      ]
+    },
+    "gaming_template|testsessions|latms": {
+      "table_name": "testsessions",
+      "column_name": "latms",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 775,
+      "min_value": "0.11",
+      "max_value": "9.99",
+      "top_k_values": [
+        {
+          "value": "4.75",
+          "count": 5
+        },
+        {
+          "value": "4.23",
+          "count": 5
+        },
+        {
+          "value": "19.36",
+          "count": 4
+        },
+        {
+          "value": "13.34",
+          "count": 4
+        },
+        {
+          "value": "11.25",
+          "count": 4
+        },
+        {
+          "value": "18.64",
+          "count": 3
+        },
+        {
+          "value": "17.89",
+          "count": 3
+        },
+        {
+          "value": "16.51",
+          "count": 3
+        },
+        {
+          "value": "14.45",
+          "count": 3
+        },
+        {
+          "value": "14.44",
+          "count": 3
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "DD.DD",
+        "D.D",
+        "DD.D"
+      ]
+    },
+    "gaming_template|testsessions|inplagms": {
+      "table_name": "testsessions",
+      "column_name": "inplagms",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 730,
+      "min_value": "0.53",
+      "max_value": "9.99",
+      "top_k_values": [
+        {
+          "value": "14.89",
+          "count": 4
+        },
+        {
+          "value": "9.58",
+          "count": 4
+        },
+        {
+          "value": "9.01",
+          "count": 4
+        },
+        {
+          "value": "6.75",
+          "count": 4
+        },
+        {
+          "value": "5.11",
+          "count": 4
+        },
+        {
+          "value": "4.66",
+          "count": 4
+        },
+        {
+          "value": "4.43",
+          "count": 4
+        },
+        {
+          "value": "3.81",
+          "count": 4
+        },
+        {
+          "value": "14.88",
+          "count": 3
+        },
+        {
+          "value": "14.78",
+          "count": 3
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "DD.DD",
+        "D.D",
+        "DD.D"
+      ]
+    },
+    "gaming_template|testsessions|pollratehz": {
+      "table_name": "testsessions",
+      "column_name": "pollratehz",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 7,
+      "min_value": "1000",
+      "max_value": "8000",
+      "top_k_values": [
+        {
+          "value": "500",
+          "count": 159
+        },
+        {
+          "value": "125",
+          "count": 153
+        },
+        {
+          "value": "250",
+          "count": 146
+        },
+        {
+          "value": "8000",
+          "count": 140
+        },
+        {
+          "value": "1000",
+          "count": 136
+        },
+        {
+          "value": "2000",
+          "count": 135
+        },
+        {
+          "value": "4000",
+          "count": 131
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDD",
+        "DDD"
+      ]
+    },
+    "gaming_template|testsessions|dbtimems": {
+      "table_name": "testsessions",
+      "column_name": "dbtimems",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 635,
+      "min_value": "0.0",
+      "max_value": "9.99",
+      "top_k_values": [
+        {
+          "value": "8.06",
+          "count": 7
+        },
+        {
+          "value": "7.45",
+          "count": 5
+        },
+        {
+          "value": "6.72",
+          "count": 5
+        },
+        {
+          "value": "2.9",
+          "count": 5
+        },
+        {
+          "value": "1.25",
+          "count": 5
+        },
+        {
+          "value": "9.9",
+          "count": 4
+        },
+        {
+          "value": "8.83",
+          "count": 4
+        },
+        {
+          "value": "8.36",
+          "count": 4
+        },
+        {
+          "value": "8.13",
+          "count": 4
+        },
+        {
+          "value": "7.91",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D",
+        "DD.D"
+      ]
+    },
+    "gaming_template|testsessions|resptimems": {
+      "table_name": "testsessions",
+      "column_name": "resptimems",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 425,
+      "min_value": "0.1",
+      "max_value": "5.0",
+      "top_k_values": [
+        {
+          "value": "3.63",
+          "count": 7
+        },
+        {
+          "value": "0.84",
+          "count": 7
+        },
+        {
+          "value": "4.99",
+          "count": 6
+        },
+        {
+          "value": "4.85",
+          "count": 6
+        },
+        {
+          "value": "3.7",
+          "count": 6
+        },
+        {
+          "value": "1.5",
+          "count": 6
+        },
+        {
+          "value": "1.03",
+          "count": 6
+        },
+        {
+          "value": "0.95",
+          "count": 6
+        },
+        {
+          "value": "0.27",
+          "count": 6
+        },
+        {
+          "value": "0.26",
+          "count": 6
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "gaming_template|testsessions|clkregms": {
+      "table_name": "testsessions",
+      "column_name": "clkregms",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 764,
+      "min_value": "0.101",
+      "max_value": "2.0",
+      "top_k_values": [
+        {
+          "value": "0.672",
+          "count": 4
+        },
+        {
+          "value": "0.587",
+          "count": 4
+        },
+        {
+          "value": "0.536",
+          "count": 4
+        },
+        {
+          "value": "0.3",
+          "count": 4
+        },
+        {
+          "value": "1.959",
+          "count": 3
+        },
+        {
+          "value": "1.912",
+          "count": 3
+        },
+        {
+          "value": "1.843",
+          "count": 3
+        },
+        {
+          "value": "1.824",
+          "count": 3
+        },
+        {
+          "value": "1.764",
+          "count": 3
+        },
+        {
+          "value": "1.714",
+          "count": 3
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    }
+  },
+  "meta": {
+    "interactionandcontrol": {
+      "profiled_at": "2026-08-30T11:49:12.445576+00:00",
+      "row_count": 1000
+    },
+    "deviceidentity": {
+      "profiled_at": "2026-08-30T11:49:12.445576+00:00",
+      "row_count": 1000
+    },
+    "testsessions": {
+      "profiled_at": "2026-08-30T11:49:12.445576+00:00",
+      "row_count": 1000
+    },
+    "mechanical": {
+      "profiled_at": "2026-08-30T11:49:12.445576+00:00",
+      "row_count": 1000
+    },
+    "audioandmedia": {
+      "profiled_at": "2026-08-30T11:49:12.445576+00:00",
+      "row_count": 1000
+    },
+    "performance": {
+      "profiled_at": "2026-08-30T11:49:12.445576+00:00",
+      "row_count": 1000
+    },
+    "rgb": {
+      "profiled_at": "2026-08-30T11:49:12.445576+00:00",
+      "row_count": 1000
+    },
+    "physicaldurability": {
+      "profiled_at": "2026-08-30T11:49:12.445576+00:00",
+      "row_count": 1000
+    }
+  }
+}

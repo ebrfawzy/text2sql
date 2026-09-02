@@ -1,0 +1,1281 @@
+{
+  "version": 1,
+  "profiled_at": "2026-08-30T12:49:29.778062+00:00",
+  "columns": {
+    "archeology_template|sites|Bronze Age site": {
+      "id": 0,
+      "knowledge": "Bronze Age site",
+      "description": "A site whose archaeological phase is classified as Bronze Age. Selects 21% of rows.",
+      "definition": "phasefactor = 'Bronze Age'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sites"
+      ],
+      "refuted": false
+    },
+    "archeology_template|sites|Religious site": {
+      "id": 1,
+      "knowledge": "Religious site",
+      "description": "A site whose classification category is Religious. Selects 20% of rows.",
+      "definition": "typesite = 'Religious'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sites"
+      ],
+      "refuted": false
+    },
+    "archeology_template|sites|Good preservation site": {
+      "id": 2,
+      "knowledge": "Good preservation site",
+      "description": "A site whose preservation status is Good. Selects 20% of rows.",
+      "definition": "presstat = 'Good'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sites"
+      ],
+      "refuted": false
+    },
+    "archeology_template|sites|Open site": {
+      "id": 3,
+      "knowledge": "Open site",
+      "description": "A site whose entry access status is Open. Selects 35% of rows.",
+      "definition": "entrystat = 'Open'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sites"
+      ],
+      "refuted": false
+    },
+    "archeology_template|sites|Minimal safety site": {
+      "id": 4,
+      "knowledge": "Minimal safety site",
+      "description": "A site whose safety ranking is Minimal. Selects 33% of rows.",
+      "definition": "saferank = 'Minimal'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sites"
+      ],
+      "refuted": false
+    },
+    "archeology_template|sites|Active insurance site": {
+      "id": 5,
+      "knowledge": "Active insurance site",
+      "description": "A site whose insurance status is Active. Selects 32% of rows.",
+      "definition": "insurstat = 'Active'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sites"
+      ],
+      "refuted": false
+    },
+    "archeology_template|sites|Completed risk evaluation": {
+      "id": 6,
+      "knowledge": "Completed risk evaluation",
+      "description": "A site whose risk evaluation status is Completed. Selects 31% of rows.",
+      "definition": "riskeval = 'Completed'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sites"
+      ],
+      "refuted": false
+    },
+    "archeology_template|sites|Approved health evaluation": {
+      "id": 7,
+      "knowledge": "Approved health evaluation",
+      "description": "A site whose health evaluation status is Approved. Selects 31% of rows.",
+      "definition": "healtheval = 'Approved'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sites"
+      ],
+      "refuted": false
+    },
+    "archeology_template|sites|Low environmental hazard site": {
+      "id": 8,
+      "knowledge": "Low environmental hazard site",
+      "description": "A site whose environmental hazard level is Low. Selects 32% of rows.",
+      "definition": "TRIM(envhaz) = 'Low'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sites"
+      ],
+      "refuted": false
+    },
+    "archeology_template|projects|Project registry identifier (PR code)": {
+      "id": 9,
+      "knowledge": "Project registry identifier (PR code)",
+      "description": "Unique project registry identifier code in PR#### format.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "projects"
+      ],
+      "refuted": false
+    },
+    "archeology_template|projects|Project vessel tag": {
+      "id": 10,
+      "knowledge": "Project vessel tag",
+      "description": "Vessel tag label consisting of the word Project followed by a descriptor word.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "projects"
+      ],
+      "refuted": false
+    },
+    "archeology_template|projects|Funding source (fundflux)": {
+      "id": 11,
+      "knowledge": "Funding source (fundflux)",
+      "description": "Categorical funding source value limited to Government, University, Private, or Grant.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "projects"
+      ],
+      "refuted": false
+    },
+    "archeology_template|projects|Authorization PIN (PMT code)": {
+      "id": 12,
+      "knowledge": "Authorization PIN (PMT code)",
+      "description": "Authorization PIN-like identifier code PMT#### padded with trailing spaces to 50 characters.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "projects"
+      ],
+      "refuted": false
+    },
+    "archeology_template|projects|Authorization halt date (authhalt)": {
+      "id": 13,
+      "knowledge": "Authorization halt date (authhalt)",
+      "description": "Authorization halt date stored in YYYY-MM-DD format between 2025-02-20 and 2026-02-19.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "projects"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scanregistration|Crew reference code (crewref)": {
+      "id": 14,
+      "knowledge": "Crew reference code (crewref)",
+      "description": "Crew reference codes are stored as 'OP' followed by four digits.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scanregistration"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scanregistration|Archive reference code (arcref)": {
+      "id": 15,
+      "knowledge": "Archive reference code (arcref)",
+      "description": "Archive reference codes are stored as 'PR' followed by four digits.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scanregistration"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scanregistration|Logging method category (logmethod)": {
+      "id": 16,
+      "knowledge": "Logging method category (logmethod)",
+      "description": "Logging method is one of Feature-based, Target-based, or Hybrid.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scanregistration"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scanregistration|Error scale metric type (errscale)": {
+      "id": 17,
+      "knowledge": "Error scale metric type (errscale)",
+      "description": "Error scale is one of RMSE, Cloud-to-Cloud, or Cloud-to-Mesh.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scanregistration"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scanregistration|Transformation matrix identifier (transform)": {
+      "id": 18,
+      "knowledge": "Transformation matrix identifier (transform)",
+      "description": "Transformation matrix identifiers are stored as 'Matrix-' followed by digits.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scanregistration"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scanfeatures|Artifact rate": {
+      "id": 19,
+      "knowledge": "Artifact rate",
+      "description": "Artifact count as a percentage of trait count.",
+      "definition": "articount * 100.0 / traitcount",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scanfeatures"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scanfeatures|Automatic trait extraction": {
+      "id": 20,
+      "knowledge": "Automatic trait extraction",
+      "description": "Scan feature whose trait extraction method is Automatic. Selects 33% of rows.",
+      "definition": "traitextract = 'Automatic'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scanfeatures"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scanfeatures|Artifact structure": {
+      "id": 21,
+      "knowledge": "Artifact structure",
+      "description": "Scan feature whose structure kind is Artifact. Selects 17% of rows.",
+      "definition": "structkind = 'Artifact'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scanfeatures"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scanfeatures|Metal material": {
+      "id": 22,
+      "knowledge": "Metal material",
+      "description": "Scan feature whose material kind is Metal. Selects 21% of rows.",
+      "definition": "matkind = 'Metal'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scanfeatures"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scanfeatures|All studies completed": {
+      "id": 23,
+      "knowledge": "All studies completed",
+      "description": "Scan feature with hue, texture, and pattern studies all Completed. Selects 3% of rows.",
+      "definition": "huestudy = 'Completed' AND texturestudy = 'Completed' AND patternnote = 'Completed'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scanfeatures"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scanenvironment|excellent GPS signal": {
+      "id": 24,
+      "knowledge": "excellent GPS signal",
+      "description": "A scan whose GPS signal quality is Excellent. Selects 37% of rows.",
+      "definition": "geosignal = 'Excellent'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scanenvironment"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scanenvironment|good GPS signal": {
+      "id": 25,
+      "knowledge": "good GPS signal",
+      "description": "A scan whose GPS signal quality is Good. Selects 32% of rows.",
+      "definition": "geosignal = 'Good'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scanenvironment"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scanenvironment|poor GPS signal": {
+      "id": 26,
+      "knowledge": "poor GPS signal",
+      "description": "A scan whose GPS signal quality is Poor. Selects 31% of rows.",
+      "definition": "geosignal = 'Poor'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scanenvironment"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scanenvironment|fixed track": {
+      "id": 27,
+      "knowledge": "fixed track",
+      "description": "A scan whose track status is Fixed. Selects 55% of rows.",
+      "definition": "trackstatus = 'Fixed'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scanenvironment"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scanenvironment|connected link": {
+      "id": 28,
+      "knowledge": "connected link",
+      "description": "A scan whose link status is Connected. Selects 36% of rows.",
+      "definition": "linkstatus = 'Connected'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scanenvironment"
+      ],
+      "refuted": false
+    },
+    "archeology_template|equipment|Photogrammetry equipment": {
+      "id": 29,
+      "knowledge": "Photogrammetry equipment",
+      "description": "Equipment categorized as Photogrammetry. Selects 27% of rows.",
+      "definition": "TRIM(equipform) = 'Photogrammetry'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "equipment"
+      ],
+      "refuted": false
+    },
+    "archeology_template|equipment|Laser equipment": {
+      "id": 30,
+      "knowledge": "Laser equipment",
+      "description": "Equipment categorized as Laser. Selects 26% of rows.",
+      "definition": "TRIM(equipform) = 'Laser'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "equipment"
+      ],
+      "refuted": false
+    },
+    "archeology_template|equipment|Structured Light equipment": {
+      "id": 31,
+      "knowledge": "Structured Light equipment",
+      "description": "Equipment categorized as Structured Light. Selects 25% of rows.",
+      "definition": "TRIM(equipform) = 'Structured Light'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "equipment"
+      ],
+      "refuted": false
+    },
+    "archeology_template|equipment|LiDAR equipment": {
+      "id": 32,
+      "knowledge": "LiDAR equipment",
+      "description": "Equipment categorized as LiDAR. Selects 22% of rows.",
+      "definition": "TRIM(equipform) = 'LiDAR'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "equipment"
+      ],
+      "refuted": false
+    },
+    "archeology_template|equipment|Good equipment": {
+      "id": 33,
+      "knowledge": "Good equipment",
+      "description": "Equipment whose condition status is Good. Selects 26% of rows.",
+      "definition": "TRIM(equipstatus) = 'Good'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "equipment"
+      ],
+      "refuted": false
+    },
+    "archeology_template|personnel|crew identifier code (OP code)": {
+      "id": 34,
+      "knowledge": "crew identifier code (OP code)",
+      "description": "Crew registry code starts with OP and has four digits.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "personnel"
+      ],
+      "refuted": false
+    },
+    "archeology_template|personnel|lead identifier code (SV code)": {
+      "id": 35,
+      "knowledge": "lead identifier code (SV code)",
+      "description": "Lead registry code starts with SV and has four digits.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "personnel"
+      ],
+      "refuted": false
+    },
+    "archeology_template|personnel|space-padded registry identifiers": {
+      "id": 36,
+      "knowledge": "space-padded registry identifiers",
+      "description": "Crew and lead registry values are stored as 50 characters with trailing spaces.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        34,
+        35
+      ],
+      "tables": [
+        "personnel"
+      ],
+      "refuted": false
+    },
+    "archeology_template|personnel|crew member full name": {
+      "id": 37,
+      "knowledge": "crew member full name",
+      "description": "Crew display label contains a first and last name.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "personnel"
+      ],
+      "refuted": false
+    },
+    "archeology_template|personnel|lead member full name": {
+      "id": 38,
+      "knowledge": "lead member full name",
+      "description": "Lead display label contains a first and last name.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "personnel"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scanpointcloud|Low-resolution scan": {
+      "id": 39,
+      "knowledge": "Low-resolution scan",
+      "description": "A point cloud scan with resolution coarser than 3.0 mm. Selects 40% of rows.",
+      "definition": "scanresolmm > 3.0",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scanpointcloud"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scanpointcloud|High-noise scan": {
+      "id": 40,
+      "knowledge": "High-noise scan",
+      "description": "A point cloud scan with noise metric greater than 1.9. Selects 6% of rows.",
+      "definition": "noisedb > 1.9",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scanpointcloud"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scanpointcloud|Large point cloud": {
+      "id": 41,
+      "knowledge": "Large point cloud",
+      "description": "A point cloud with more than 99,500,000 total points. Selects 1% of rows.",
+      "definition": "totalpts > 99500000",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scanpointcloud"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scanpointcloud|Crew OP7806": {
+      "id": 42,
+      "knowledge": "Crew OP7806",
+      "description": "A point cloud scan collected by crew OP7806.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scanpointcloud"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scanpointcloud|Arc PR8078": {
+      "id": 43,
+      "knowledge": "Arc PR8078",
+      "description": "A point cloud scan associated with arc PR8078.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scanpointcloud"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scanspatial|Bounding-box footprint area": {
+      "id": 44,
+      "knowledge": "Bounding-box footprint area",
+      "description": "Area of the rectangle with dimensions boxx and boxy.",
+      "definition": "boxx * boxy",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scanspatial"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scanspatial|Bounding-box volume": {
+      "id": 45,
+      "knowledge": "Bounding-box volume",
+      "description": "Volume of the rectangular box with dimensions boxx, boxy, and boxz.",
+      "definition": "boxx * boxy * boxz",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scanspatial"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scanspatial|Ground-plane diagonal": {
+      "id": 46,
+      "knowledge": "Ground-plane diagonal",
+      "description": "Diagonal distance across the X-Y bounding-box footprint.",
+      "definition": "SQRT(boxx * boxx + boxy * boxy)",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scanspatial"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scanspatial|Solid diagonal": {
+      "id": 47,
+      "knowledge": "Solid diagonal",
+      "description": "Diagonal distance through the 3-D bounding box.",
+      "definition": "SQRT(boxx * boxx + boxy * boxy + boxz * boxz)",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scanspatial"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scanspatial|Mean thickness": {
+      "id": 48,
+      "knowledge": "Mean thickness",
+      "description": "Average vertical thickness of a scanned unit, volume divided by area.",
+      "definition": "volm3 / aream2",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scanspatial"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scanqc|Completed accuracy check": {
+      "id": 49,
+      "knowledge": "Completed accuracy check",
+      "description": "Accuracy check status is Completed. Selects 37% of rows.",
+      "definition": "accucheck = 'Completed'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scanqc"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scanqc|Passed control state": {
+      "id": 50,
+      "knowledge": "Passed control state",
+      "description": "Control state status is Passed. Selects 30% of rows.",
+      "definition": "TRIM(ctrlstate) = 'Passed'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scanqc"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scanqc|Approved validation state": {
+      "id": 51,
+      "knowledge": "Approved validation state",
+      "description": "Validation state status is Approved. Selects 33% of rows.",
+      "definition": "valistate = 'Approved'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scanqc"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scanqc|Verified archive status": {
+      "id": 52,
+      "knowledge": "Verified archive status",
+      "description": "Archive status is Verified. Selects 34% of rows.",
+      "definition": "archstat = 'Verified'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scanqc"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scanqc|Published publication status": {
+      "id": 53,
+      "knowledge": "Published publication status",
+      "description": "Publication status is Published. Selects 32% of rows.",
+      "definition": "pubstat = 'Published'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scanqc"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scanqc|Open Access copy status": {
+      "id": 54,
+      "knowledge": "Open Access copy status",
+      "description": "Copy status is Open Access. Selects 32% of rows.",
+      "definition": "TRIM(copystat) = 'Open Access'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scanqc"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scanmesh|texture pixel size (texpix)": {
+      "id": 55,
+      "knowledge": "texture pixel size (texpix)",
+      "description": "Texture pixel size is the pixel width of the texture, equal to 1024 times the numeric value in the texture distance code. Selects 22% of rows.",
+      "definition": "texpix = 1024 * CAST(REPLACE(TRIM(texdist), 'K', '') AS INTEGER)",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        57
+      ],
+      "tables": [
+        "scanmesh"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scanmesh|UV map quality (uvmapqual)": {
+      "id": 56,
+      "knowledge": "UV map quality (uvmapqual)",
+      "description": "UV map quality is High for 4K or larger textures, Medium for 2K, and Low for 1K or smaller textures. Selects 33% of rows.",
+      "definition": "uvmapqual = CASE WHEN texpix >= 4096 THEN 'High' WHEN texpix >= 2048 THEN 'Medium' ELSE 'Low' END",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        55
+      ],
+      "tables": [
+        "scanmesh"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scanmesh|texture distance code (texdist)": {
+      "id": 57,
+      "knowledge": "texture distance code (texdist)",
+      "description": "Texture distance code is nullable and, when not null, contains 1K, 2K, or 4K.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scanmesh"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scanmesh|zone reference code (zoneref)": {
+      "id": 58,
+      "knowledge": "zone reference code (zoneref)",
+      "description": "Zone reference code is six characters long with two letters followed by four digits.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scanmesh"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scanmesh|padded equipment reference (equipref)": {
+      "id": 59,
+      "knowledge": "padded equipment reference (equipref)",
+      "description": "Equipment reference code is stored space-padded to 50 characters.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scanmesh"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scanprocessing|Total storage capacity (TSC)": {
+      "id": 60,
+      "knowledge": "Total storage capacity (TSC)",
+      "description": "Combined used memory and remaining storage capacity for a processing record.",
+      "definition": "memusagegb + remaingb",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scanprocessing"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scanprocessing|Storage utilization rate (SUR)": {
+      "id": 61,
+      "knowledge": "Storage utilization rate (SUR)",
+      "description": "Percentage of total storage capacity used by the processing data.",
+      "definition": "memusagegb / (memusagegb + remaingb) * 100.0",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        60
+      ],
+      "tables": [
+        "scanprocessing"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scanprocessing|Average compute utilization (ACU)": {
+      "id": 62,
+      "knowledge": "Average compute utilization (ACU)",
+      "description": "Mean CPU and GPU utilization percentage during the processing run.",
+      "definition": "(proccpu + procgpu) / 2.0",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scanprocessing"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scanprocessing|CPU-GPU utilization skew": {
+      "id": 63,
+      "knowledge": "CPU-GPU utilization skew",
+      "description": "GPU utilization minus CPU utilization; positive values indicate GPU-bound processing.",
+      "definition": "procgpu - proccpu",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scanprocessing"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scanprocessing|Memory intensity": {
+      "id": 64,
+      "knowledge": "Memory intensity",
+      "description": "Memory usage in gigabytes per processing hour.",
+      "definition": "memusagegb / flowhrs",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scanprocessing"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scanprocessing|Completed cloud backup": {
+      "id": 65,
+      "knowledge": "Completed cloud backup",
+      "description": "Processed data stored in the cloud with a completed backup status. Selects 12% of rows.",
+      "definition": "stashloc = 'Cloud' AND TRIM(safebak) = 'Completed'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scanprocessing"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scanprocessing|Restricted processing record": {
+      "id": 66,
+      "knowledge": "Restricted processing record",
+      "description": "Processing data with a restricted access classification. Selects 34% of rows.",
+      "definition": "datalevel = 'Restricted'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scanprocessing"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scanprocessing|Fully corrected imagery": {
+      "id": 67,
+      "knowledge": "Fully corrected imagery",
+      "description": "Imagery with calibrated camera, corrected lens distortion, and adjusted color. Selects 3% of rows.",
+      "definition": "camcal = 'Calibrated' AND lensdist = 'Corrected' AND TRIM(colortune) = 'Adjusted'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scanprocessing"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scanprocessing|Locally referenced scan": {
+      "id": 68,
+      "knowledge": "Locally referenced scan",
+      "description": "Processing record using local coordinate frame and local elevation datum. Selects 12% of rows.",
+      "definition": "coordframe = 'Local' AND elevref = 'Local'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scanprocessing"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scanprocessing|Geodetically referenced scan": {
+      "id": 69,
+      "knowledge": "Geodetically referenced scan",
+      "description": "Processing record using WGS84 coordinates and sea-level elevation datum. Selects 11% of rows.",
+      "definition": "coordframe = 'WGS84' AND elevref = 'Sea Level'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scanprocessing"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scanconservation|Severe harm": {
+      "id": 70,
+      "knowledge": "Severe harm",
+      "description": "A conservation record whose harm assessment category is Severe. Selects 34% of rows.",
+      "definition": "TRIM(harmassess) = 'Severe'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scanconservation"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scanconservation|Unstable structure": {
+      "id": 71,
+      "knowledge": "Unstable structure",
+      "description": "A conservation record whose structural condition state is Unstable. Selects 34% of rows.",
+      "definition": "TRIM(structstate) = 'Unstable'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scanconservation"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scanconservation|Major intervention history": {
+      "id": 72,
+      "knowledge": "Major intervention history",
+      "description": "A conservation record whose intervention history level is Major. Selects 51% of rows.",
+      "definition": "TRIM(intervhistory) = 'Major'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scanconservation"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scanconservation|Partial prior documentation": {
+      "id": 73,
+      "knowledge": "Partial prior documentation",
+      "description": "A conservation record whose prior documentation status is Partial. Selects 50% of rows.",
+      "definition": "TRIM(priordocs) = 'Partial'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scanconservation"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scanconservation|Severe unstable risk": {
+      "id": 74,
+      "knowledge": "Severe unstable risk",
+      "description": "A conservation record that is both severely harmed and structurally unstable. Selects 10% of rows.",
+      "definition": "TRIM(harmassess) = 'Severe' AND TRIM(structstate) = 'Unstable'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        70,
+        71
+      ],
+      "tables": [
+        "scanconservation"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scans|file size in gigabytes": {
+      "id": 75,
+      "knowledge": "file size in gigabytes",
+      "description": "File size in gigabytes, calculated as scan count times press ratio.",
+      "definition": "gbsize != scancount * pressratio",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        76,
+        77
+      ],
+      "tables": [
+        "scans"
+      ],
+      "refuted": true
+    },
+    "archeology_template|scans|scan count": {
+      "id": 76,
+      "knowledge": "scan count",
+      "description": "Number of scans performed, calculated as file size divided by press ratio.",
+      "definition": "scancount != gbsize / pressratio",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        75,
+        77
+      ],
+      "tables": [
+        "scans"
+      ],
+      "refuted": true
+    },
+    "archeology_template|scans|press ratio": {
+      "id": 77,
+      "knowledge": "press ratio",
+      "description": "Numeric ratio of file size to scan count.",
+      "definition": "pressratio != gbsize / scancount",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        75,
+        76
+      ],
+      "tables": [
+        "scans"
+      ],
+      "refuted": true
+    },
+    "archeology_template|scans|clear weather scan": {
+      "id": 78,
+      "knowledge": "clear weather scan",
+      "description": "A scan performed when the weather condition label is Clear. Selects 24% of rows.",
+      "definition": "climtune = 'Clear'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scans"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scans|RGB capture scan": {
+      "id": 79,
+      "knowledge": "RGB capture scan",
+      "description": "A scan using RGB color capture mode. Selects 54% of rows.",
+      "definition": "huecatch = 'RGB'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scans"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scans|OBJ output scan": {
+      "id": 80,
+      "knowledge": "OBJ output scan",
+      "description": "A scan whose output file format is OBJ. Selects 22% of rows.",
+      "definition": "TRIM(fmtfile) = 'OBJ'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scans"
+      ],
+      "refuted": false
+    },
+    "archeology_template|projects,scans|Government clear-weather scan": {
+      "id": 81,
+      "knowledge": "Government clear-weather scan",
+      "description": "Clear-weather scan of a project funded by Government.",
+      "definition": "projects.fundflux = 'Government' AND scans.climtune = 'Clear'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        11,
+        78
+      ],
+      "tables": [
+        "projects",
+        "scans"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scans,sites|Open site long scan": {
+      "id": 82,
+      "knowledge": "Open site long scan",
+      "description": "Scan lasting more than 60 minutes on a zone with Open entry access.",
+      "definition": "sites.entrystat = 'Open' AND scans.spanmin > 60",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        3
+      ],
+      "tables": [
+        "scans",
+        "sites"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scanenvironment,sites|Burial site high-humidity scan": {
+      "id": 83,
+      "knowledge": "Burial site high-humidity scan",
+      "description": "Environmental scan of a Burial site with humidity above 70 percent.",
+      "definition": "sites.typesite = 'Burial' AND scanenvironment.humepct > 70",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scanenvironment",
+        "sites"
+      ],
+      "refuted": false
+    },
+    "archeology_template|equipment,scanfeatures|LiDAR high-artifact scan": {
+      "id": 84,
+      "knowledge": "LiDAR high-artifact scan",
+      "description": "Feature scan from LiDAR equipment with an artifact count above 50.",
+      "definition": "equipment.equipform = 'LiDAR' AND scanfeatures.articount > 50",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        32
+      ],
+      "tables": [
+        "equipment",
+        "scanfeatures"
+      ],
+      "refuted": false
+    },
+    "archeology_template|equipment,scanfeatures|Photogrammetry complex structure scan": {
+      "id": 85,
+      "knowledge": "Photogrammetry complex structure scan",
+      "description": "Feature scan from Photogrammetry equipment of a Complex structure.",
+      "definition": "equipment.equipform = 'Photogrammetry' AND scanfeatures.structkind = 'Complex'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        29
+      ],
+      "tables": [
+        "equipment",
+        "scanfeatures"
+      ],
+      "refuted": false
+    },
+    "archeology_template|equipment,scanenvironment|Good equipment high-temperature environment": {
+      "id": 86,
+      "knowledge": "Good equipment high-temperature environment",
+      "description": "Environment record for Good-condition equipment in ambient temperature above 35.",
+      "definition": "equipment.equipstatus = 'Good' AND scanenvironment.ambictemp > 35",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        33
+      ],
+      "tables": [
+        "equipment",
+        "scanenvironment"
+      ],
+      "refuted": false
+    },
+    "archeology_template|equipment,scanenvironment|Excellent equipment low-light scan": {
+      "id": 87,
+      "knowledge": "Excellent equipment low-light scan",
+      "description": "Environment record for Excellent-condition equipment in illuminance below 10000 lux.",
+      "definition": "equipment.equipstatus = 'Excellent' AND scanenvironment.illumelux < 10000",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "equipment",
+        "scanenvironment"
+      ],
+      "refuted": false
+    },
+    "archeology_template|equipment,scanmesh|High-vertex mesh from LiDAR": {
+      "id": 88,
+      "knowledge": "High-vertex mesh from LiDAR",
+      "description": "Mesh with more than 9900000 vertices produced by LiDAR equipment.",
+      "definition": "equipment.equipform = 'LiDAR' AND scanmesh.facetverts > 9900000",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        32
+      ],
+      "tables": [
+        "equipment",
+        "scanmesh"
+      ],
+      "refuted": false
+    },
+    "archeology_template|equipment,scanmesh|High-resolution mesh from Photogrammetry": {
+      "id": 89,
+      "knowledge": "High-resolution mesh from Photogrammetry",
+      "description": "Mesh from Photogrammetry equipment with facet resolution below 2 mm.",
+      "definition": "equipment.equipform = 'Photogrammetry' AND scanmesh.facetresmm < 2",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        29
+      ],
+      "tables": [
+        "equipment",
+        "scanmesh"
+      ],
+      "refuted": false
+    },
+    "archeology_template|projects,scanqc|University project open-access QC": {
+      "id": 90,
+      "knowledge": "University project open-access QC",
+      "description": "Quality control record with Open Access copy status for a University-funded project.",
+      "definition": "projects.fundflux = 'University' AND TRIM(scanqc.copystat) = 'Open Access'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        11,
+        54
+      ],
+      "tables": [
+        "projects",
+        "scanqc"
+      ],
+      "refuted": false
+    },
+    "archeology_template|projects,scanqc|Grant-funded verified archive": {
+      "id": 91,
+      "knowledge": "Grant-funded verified archive",
+      "description": "Quality control record with Verified archive status for a Grant-funded project.",
+      "definition": "projects.fundflux = 'Grant' AND scanqc.archstat = 'Verified'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        11,
+        52
+      ],
+      "tables": [
+        "projects",
+        "scanqc"
+      ],
+      "refuted": false
+    },
+    "archeology_template|projects,scanconservation|Private project major intervention": {
+      "id": 92,
+      "knowledge": "Private project major intervention",
+      "description": "Conservation record with Major intervention history for a Private-funded project.",
+      "definition": "projects.fundflux = 'Private' AND scanconservation.intervhistory = 'Major'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        11,
+        72
+      ],
+      "tables": [
+        "projects",
+        "scanconservation"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scanconservation,sites|Poor preservation severe harm site": {
+      "id": 93,
+      "knowledge": "Poor preservation severe harm site",
+      "description": "A zone with poor preservation and severe harm assessment.",
+      "definition": "sites.presstat = 'Poor' AND scanconservation.harmassess = 'Severe'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        70
+      ],
+      "tables": [
+        "scanconservation",
+        "sites"
+      ],
+      "refuted": false
+    },
+    "archeology_template|scanmesh,sites|Settlement zone dense mesh": {
+      "id": 94,
+      "knowledge": "Settlement zone dense mesh",
+      "description": "A Settlement site mesh with more than 9900000 vertices.",
+      "definition": "sites.typesite = 'Settlement' AND scanmesh.facetverts > 9900000",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "scanmesh",
+        "sites"
+      ],
+      "refuted": false
+    }
+  },
+  "meta": {
+    "scanenvironment,sites": {
+      "profiled_at": "2026-08-30T12:49:29.778062+00:00"
+    },
+    "projects,scans": {
+      "profiled_at": "2026-08-30T12:49:29.778062+00:00"
+    },
+    "scanenvironment": {
+      "profiled_at": "2026-08-30T12:49:29.778062+00:00"
+    },
+    "personnel": {
+      "profiled_at": "2026-08-30T12:49:29.778062+00:00"
+    },
+    "scans,sites": {
+      "profiled_at": "2026-08-30T12:49:29.778062+00:00"
+    },
+    "scanpointcloud": {
+      "profiled_at": "2026-08-30T12:49:29.778062+00:00"
+    },
+    "equipment,scanenvironment": {
+      "profiled_at": "2026-08-30T12:49:29.778062+00:00"
+    },
+    "scanspatial": {
+      "profiled_at": "2026-08-30T12:49:29.778062+00:00"
+    },
+    "scanqc": {
+      "profiled_at": "2026-08-30T12:49:29.778062+00:00"
+    },
+    "scanmesh": {
+      "profiled_at": "2026-08-30T12:49:29.778062+00:00"
+    },
+    "equipment,scanfeatures": {
+      "profiled_at": "2026-08-30T12:49:29.778062+00:00"
+    },
+    "scanmesh,sites": {
+      "profiled_at": "2026-08-30T12:49:29.778062+00:00"
+    },
+    "projects,scanconservation": {
+      "profiled_at": "2026-08-30T12:49:29.778062+00:00"
+    },
+    "scans": {
+      "profiled_at": "2026-08-30T12:49:29.778062+00:00"
+    },
+    "sites": {
+      "profiled_at": "2026-08-30T12:49:29.778062+00:00"
+    },
+    "projects": {
+      "profiled_at": "2026-08-30T12:49:29.778062+00:00"
+    },
+    "scanfeatures": {
+      "profiled_at": "2026-08-30T12:49:29.778062+00:00"
+    },
+    "equipment": {
+      "profiled_at": "2026-08-30T12:49:29.778062+00:00"
+    },
+    "scanconservation,sites": {
+      "profiled_at": "2026-08-30T12:49:29.778062+00:00"
+    },
+    "scanprocessing": {
+      "profiled_at": "2026-08-30T12:49:29.778062+00:00"
+    },
+    "projects,scanqc": {
+      "profiled_at": "2026-08-30T12:49:29.778062+00:00"
+    },
+    "scanconservation": {
+      "profiled_at": "2026-08-30T12:49:29.778062+00:00"
+    },
+    "equipment,scanmesh": {
+      "profiled_at": "2026-08-30T12:49:29.778062+00:00"
+    },
+    "scanregistration": {
+      "profiled_at": "2026-08-30T12:49:29.778062+00:00"
+    }
+  }
+}

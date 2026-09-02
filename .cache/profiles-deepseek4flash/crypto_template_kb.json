@@ -1,0 +1,1027 @@
+{
+  "version": 1,
+  "profiled_at": "2026-08-30T13:09:58.017698+00:00",
+  "columns": {
+    "crypto_template|analyticsindicators|Bearish market feel": {
+      "id": 0,
+      "knowledge": "Bearish market feel",
+      "description": "Cohort where the market feel sentiment is Bearish. Selects 34% of rows.",
+      "definition": "TRIM(json_extract(market_sentiment_indicators, '$.momentum.mktfeel')) = 'Bearish'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "analyticsindicators"
+      ],
+      "refuted": false
+    },
+    "crypto_template|analyticsindicators|Neutral market feel": {
+      "id": 1,
+      "knowledge": "Neutral market feel",
+      "description": "Cohort where the market feel sentiment is Neutral. Selects 34% of rows.",
+      "definition": "TRIM(json_extract(market_sentiment_indicators, '$.momentum.mktfeel')) = 'Neutral'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "analyticsindicators"
+      ],
+      "refuted": false
+    },
+    "crypto_template|analyticsindicators|Bullish market feel": {
+      "id": 2,
+      "knowledge": "Bullish market feel",
+      "description": "Cohort where the market feel sentiment is Bullish. Selects 32% of rows.",
+      "definition": "TRIM(json_extract(market_sentiment_indicators, '$.momentum.mktfeel')) = 'Bullish'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "analyticsindicators"
+      ],
+      "refuted": false
+    },
+    "crypto_template|analyticsindicators|Buy technical meter": {
+      "id": 3,
+      "knowledge": "Buy technical meter",
+      "description": "Cohort where the technical meter signal is Buy. Selects 34% of rows.",
+      "definition": "TRIM(json_extract(market_sentiment_indicators, '$.momentum.techmeter')) = 'Buy'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "analyticsindicators"
+      ],
+      "refuted": false
+    },
+    "crypto_template|analyticsindicators|Hold technical meter": {
+      "id": 4,
+      "knowledge": "Hold technical meter",
+      "description": "Cohort where the technical meter signal is Hold. Selects 33% of rows.",
+      "definition": "TRIM(json_extract(market_sentiment_indicators, '$.momentum.techmeter')) = 'Hold'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "analyticsindicators"
+      ],
+      "refuted": false
+    },
+    "crypto_template|analyticsindicators|Sell technical meter": {
+      "id": 5,
+      "knowledge": "Sell technical meter",
+      "description": "Cohort where the technical meter signal is Sell. Selects 33% of rows.",
+      "definition": "TRIM(json_extract(market_sentiment_indicators, '$.momentum.techmeter')) = 'Sell'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "analyticsindicators"
+      ],
+      "refuted": false
+    },
+    "crypto_template|analyticsindicators|Low maker motion": {
+      "id": 6,
+      "knowledge": "Low maker motion",
+      "description": "Cohort where the maker motion category is Low. Selects 34% of rows.",
+      "definition": "TRIM(json_extract(market_sentiment_indicators, '$.big_players.makermotion')) = 'Low'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "analyticsindicators"
+      ],
+      "refuted": false
+    },
+    "crypto_template|analyticsindicators|Medium maker motion": {
+      "id": 7,
+      "knowledge": "Medium maker motion",
+      "description": "Cohort where the maker motion category is Medium. Selects 34% of rows.",
+      "definition": "TRIM(json_extract(market_sentiment_indicators, '$.big_players.makermotion')) = 'Medium'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "analyticsindicators"
+      ],
+      "refuted": false
+    },
+    "crypto_template|analyticsindicators|High maker motion": {
+      "id": 8,
+      "knowledge": "High maker motion",
+      "description": "Cohort where the maker motion category is High. Selects 32% of rows.",
+      "definition": "TRIM(json_extract(market_sentiment_indicators, '$.big_players.makermotion')) = 'High'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "analyticsindicators"
+      ],
+      "refuted": false
+    },
+    "crypto_template|analyticsindicators|Low whale motion": {
+      "id": 9,
+      "knowledge": "Low whale motion",
+      "description": "Cohort where the whale motion category is Low. Selects 34% of rows.",
+      "definition": "TRIM(json_extract(market_sentiment_indicators, '$.big_players.whalemotion')) = 'Low'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "analyticsindicators"
+      ],
+      "refuted": false
+    },
+    "crypto_template|analyticsindicators|Medium whale motion": {
+      "id": 10,
+      "knowledge": "Medium whale motion",
+      "description": "Cohort where the whale motion category is Medium. Selects 32% of rows.",
+      "definition": "TRIM(json_extract(market_sentiment_indicators, '$.big_players.whalemotion')) = 'Medium'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "analyticsindicators"
+      ],
+      "refuted": false
+    },
+    "crypto_template|analyticsindicators|High whale motion": {
+      "id": 11,
+      "knowledge": "High whale motion",
+      "description": "Cohort where the whale motion category is High. Selects 34% of rows.",
+      "definition": "TRIM(json_extract(market_sentiment_indicators, '$.big_players.whalemotion')) = 'High'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "analyticsindicators"
+      ],
+      "refuted": false
+    },
+    "crypto_template|orders|Notional sum (notionsum)": {
+      "id": 12,
+      "knowledge": "Notional sum (notionsum)",
+      "description": "Total value of an order, computed as the quote amount times the quantity.",
+      "definition": "notionsum != dealquote * dealcount",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "orders"
+      ],
+      "refuted": true
+    },
+    "crypto_template|orders|Limit order": {
+      "id": 13,
+      "knowledge": "Limit order",
+      "description": "Order type that is placed with a specified limit price. Selects 25% of rows.",
+      "definition": "ordertune = 'Limit'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "orders"
+      ],
+      "refuted": false
+    },
+    "crypto_template|orders|Market order": {
+      "id": 14,
+      "knowledge": "Market order",
+      "description": "Order type that executes immediately at the current market price. Selects 24% of rows.",
+      "definition": "ordertune = 'Market'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "orders"
+      ],
+      "refuted": false
+    },
+    "crypto_template|orders|Stop order": {
+      "id": 15,
+      "knowledge": "Stop order",
+      "description": "Order type that triggers a market order when a stop price is reached. Selects 26% of rows.",
+      "definition": "ordertune = 'Stop'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        14
+      ],
+      "tables": [
+        "orders"
+      ],
+      "refuted": false
+    },
+    "crypto_template|orders|Stop-limit order": {
+      "id": 16,
+      "knowledge": "Stop-limit order",
+      "description": "Order type that triggers a limit order when a stop price is reached. Selects 26% of rows.",
+      "definition": "ordertune = 'StopLimit'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        13
+      ],
+      "tables": [
+        "orders"
+      ],
+      "refuted": false
+    },
+    "crypto_template|orders|Buy order": {
+      "id": 17,
+      "knowledge": "Buy order",
+      "description": "Trade side indicating that the order buys the trading pair. Selects 48% of rows.",
+      "definition": "dealedge = 'Buy'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "orders"
+      ],
+      "refuted": false
+    },
+    "crypto_template|orders|Filled order": {
+      "id": 18,
+      "knowledge": "Filled order",
+      "description": "Order status indicating that the full quantity has been executed. Selects 25% of rows.",
+      "definition": "orderflow = 'Filled'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "orders"
+      ],
+      "refuted": false
+    },
+    "crypto_template|orders|Good-Till-Cancelled (GTC) order": {
+      "id": 19,
+      "knowledge": "Good-Till-Cancelled (GTC) order",
+      "description": "Time-in-force type for an order that remains active until filled or cancelled. Selects 24% of rows.",
+      "definition": "timespan = 'GTC'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "orders"
+      ],
+      "refuted": false
+    },
+    "crypto_template|orders|API order": {
+      "id": 20,
+      "knowledge": "API order",
+      "description": "Order source indicating that the order was submitted through the API. Selects 23% of rows.",
+      "definition": "orderbase = 'API'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "orders"
+      ],
+      "refuted": false
+    },
+    "crypto_template|marketdata|Spreadrate": {
+      "id": 23,
+      "knowledge": "Spreadrate",
+      "description": "Bid-ask spread as a percentage of the midquote.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "marketdata"
+      ],
+      "refuted": false
+    },
+    "crypto_template|marketdata|Exchange EX130": {
+      "id": 26,
+      "knowledge": "Exchange EX130",
+      "description": "Snapshot from exchange code EX130.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "marketdata"
+      ],
+      "refuted": false
+    },
+    "crypto_template|marketdata|USDT-quoted market": {
+      "id": 27,
+      "knowledge": "USDT-quoted market",
+      "description": "Trading pair whose quote asset is USDT. Selects 33% of rows.",
+      "definition": "json_extract(quote_depth_snapshot, '$.metadata.mktcombo') LIKE '%-USDT'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "marketdata"
+      ],
+      "refuted": false
+    },
+    "crypto_template|marketdata|BTC market": {
+      "id": 28,
+      "knowledge": "BTC market",
+      "description": "Trading pair whose base asset is BTC. Selects 24% of rows.",
+      "definition": "json_extract(quote_depth_snapshot, '$.metadata.mktcombo') LIKE 'BTC-%'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "marketdata"
+      ],
+      "refuted": false
+    },
+    "crypto_template|riskandmargin|Cross Margin": {
+      "id": 31,
+      "knowledge": "Cross Margin",
+      "description": "Margin mode where the entire account balance is shared as collateral for positions. Selects 51% of rows.",
+      "definition": "json_extract(risk_margin_profile, '$.leverage.margform') = 'Cross'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "riskandmargin"
+      ],
+      "refuted": false
+    },
+    "crypto_template|riskandmargin|Isolated Margin": {
+      "id": 32,
+      "knowledge": "Isolated Margin",
+      "description": "Margin mode where only the collateral allocated to a single position is used. Selects 49% of rows.",
+      "definition": "json_extract(risk_margin_profile, '$.leverage.margform') = 'Isolated'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "riskandmargin"
+      ],
+      "refuted": false
+    },
+    "crypto_template|riskandmargin|Long Position": {
+      "id": 33,
+      "knowledge": "Long Position",
+      "description": "Position edge flag indicating a long position. Selects 48% of rows.",
+      "definition": "json_extract(risk_margin_profile, '$.position.posedge') = 'Long'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "riskandmargin"
+      ],
+      "refuted": false
+    },
+    "crypto_template|riskandmargin|Short Position": {
+      "id": 34,
+      "knowledge": "Short Position",
+      "description": "Position edge flag indicating a short position. Selects 52% of rows.",
+      "definition": "json_extract(risk_margin_profile, '$.position.posedge') = 'Short'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "riskandmargin"
+      ],
+      "refuted": false
+    },
+    "crypto_template|riskandmargin|No Position Edge": {
+      "id": 35,
+      "knowledge": "No Position Edge",
+      "description": "Order has no recorded long or short position edge. Selects 36% of rows.",
+      "definition": "json_extract(risk_margin_profile, '$.position.posedge') IS NULL",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        34
+      ],
+      "tables": [
+        "riskandmargin"
+      ],
+      "refuted": false
+    },
+    "crypto_template|riskandmargin|USDT Collateral": {
+      "id": 36,
+      "knowledge": "USDT Collateral",
+      "description": "Orders whose collateral coin is USDT. Selects 26% of rows.",
+      "definition": "json_extract(risk_margin_profile, '$.collateral.collcoin') = 'USDT'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "riskandmargin"
+      ],
+      "refuted": false
+    },
+    "crypto_template|riskandmargin|ETH Collateral": {
+      "id": 37,
+      "knowledge": "ETH Collateral",
+      "description": "Orders whose collateral coin is ETH. Selects 25% of rows.",
+      "definition": "json_extract(risk_margin_profile, '$.collateral.collcoin') = 'ETH'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "riskandmargin"
+      ],
+      "refuted": false
+    },
+    "crypto_template|riskandmargin|BTC Collateral": {
+      "id": 38,
+      "knowledge": "BTC Collateral",
+      "description": "Orders whose collateral coin is BTC. Selects 24% of rows.",
+      "definition": "json_extract(risk_margin_profile, '$.collateral.collcoin') = 'BTC'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "riskandmargin"
+      ],
+      "refuted": false
+    },
+    "crypto_template|riskandmargin|USDC Collateral": {
+      "id": 39,
+      "knowledge": "USDC Collateral",
+      "description": "Orders whose collateral coin is USDC. Selects 25% of rows.",
+      "definition": "json_extract(risk_margin_profile, '$.collateral.collcoin') = 'USDC'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "riskandmargin"
+      ],
+      "refuted": false
+    },
+    "crypto_template|riskandmargin|High Leverage": {
+      "id": 40,
+      "knowledge": "High Leverage",
+      "description": "Leverage scale of 10x or higher. Selects 50% of rows.",
+      "definition": "json_extract(risk_margin_profile, '$.leverage.levscale') IN ('10', '20', '50', '100')",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "riskandmargin"
+      ],
+      "refuted": false
+    },
+    "crypto_template|riskandmargin|High Position Risk Rate": {
+      "id": 41,
+      "knowledge": "High Position Risk Rate",
+      "description": "Position risk rate above 0.8, indicating elevated risk. Selects 18% of rows.",
+      "definition": "json_extract(risk_margin_profile, '$.position.posriskrate') > 0.8",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "riskandmargin"
+      ],
+      "refuted": false
+    },
+    "crypto_template|riskandmargin|High Collateral Rate": {
+      "id": 42,
+      "knowledge": "High Collateral Rate",
+      "description": "Collateral rate above 0.8, meaning collateral covers most of the position. Selects 22% of rows.",
+      "definition": "json_extract(risk_margin_profile, '$.collateral.collrate') > 0.8",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "riskandmargin"
+      ],
+      "refuted": false
+    },
+    "crypto_template|riskandmargin|High Margin Rate": {
+      "id": 43,
+      "knowledge": "High Margin Rate",
+      "description": "Margin rate above 0.5. Selects 48% of rows.",
+      "definition": "json_extract(risk_margin_profile, '$.margin_rates.margrate') > 0.5",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "riskandmargin"
+      ],
+      "refuted": false
+    },
+    "crypto_template|systemmonitoring|AI tracking identifier (AITrack)": {
+      "id": 44,
+      "knowledge": "AI tracking identifier (AITrack)",
+      "description": "AI tracking identifier derived from the monitoring pivot record.",
+      "definition": "aitrack != 1001 - systemmonitoringpivot",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "systemmonitoring"
+      ],
+      "refuted": true
+    },
+    "crypto_template|systemmonitoring|API error rate": {
+      "id": 45,
+      "knowledge": "API error rate",
+      "description": "Percentage of API requests that resulted in errors.",
+      "definition": "apierrtotal * 100.0 / apireqtotal",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "systemmonitoring"
+      ],
+      "refuted": false
+    },
+    "crypto_template|systemmonitoring|API success rate": {
+      "id": 46,
+      "knowledge": "API success rate",
+      "description": "Percentage of API requests that did not result in errors.",
+      "definition": "(apireqtotal - apierrtotal) * 100.0 / apireqtotal",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "systemmonitoring"
+      ],
+      "refuted": false
+    },
+    "crypto_template|systemmonitoring|API request throughput": {
+      "id": 47,
+      "knowledge": "API request throughput",
+      "description": "API requests processed per unit of execution time.",
+      "definition": "apireqtotal / exectimespan",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "systemmonitoring"
+      ],
+      "refuted": false
+    },
+    "crypto_template|systemmonitoring|Queue load ratio": {
+      "id": 48,
+      "knowledge": "Queue load ratio",
+      "description": "Queue line length per API request, expressed as a percentage.",
+      "definition": "queueline * 100.0 / apireqtotal",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "systemmonitoring"
+      ],
+      "refuted": false
+    },
+    "crypto_template|systemmonitoring|WebSocket connected state": {
+      "id": 49,
+      "knowledge": "WebSocket connected state",
+      "description": "Monitoring record whose WebSocket connection state is Connected. Selects 52% of rows.",
+      "definition": "TRIM(wsstate) = 'Connected'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "systemmonitoring"
+      ],
+      "refuted": false
+    },
+    "crypto_template|systemmonitoring|WebSocket disconnected state": {
+      "id": 50,
+      "knowledge": "WebSocket disconnected state",
+      "description": "Monitoring record whose WebSocket connection state is Disconnected. Selects 48% of rows.",
+      "definition": "TRIM(wsstate) = 'Disconnected'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "systemmonitoring"
+      ],
+      "refuted": false
+    },
+    "crypto_template|fees|rebate total (rebtotal)": {
+      "id": 51,
+      "knowledge": "rebate total (rebtotal)",
+      "description": "Total rebate amount equals total fee amount scaled by the ratio of rebate rate to fee rate.",
+      "definition": "rebtotal = feetotal * (rebrate / feerate)",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "fees"
+      ],
+      "refuted": false
+    },
+    "crypto_template|fees|fee schedule node (feesnode)": {
+      "id": 52,
+      "knowledge": "fee schedule node (feesnode)",
+      "description": "Fee schedule node IDs are integers from 1 through 999.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "fees"
+      ],
+      "refuted": false
+    },
+    "crypto_template|fees|fee tier (feerange)": {
+      "id": 53,
+      "knowledge": "fee tier (feerange)",
+      "description": "Fee tier category is one of Tier1 through Tier4.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "fees"
+      ],
+      "refuted": false
+    },
+    "crypto_template|fees|fee rate (feerate)": {
+      "id": 54,
+      "knowledge": "fee rate (feerate)",
+      "description": "Fee rate is a decimal between 0.0001 and 0.002.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "fees"
+      ],
+      "refuted": false
+    },
+    "crypto_template|fees|fee coin (feecoin)": {
+      "id": 55,
+      "knowledge": "fee coin (feecoin)",
+      "description": "Fee currency code is one of USD, USDT, or USDC.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "fees"
+      ],
+      "refuted": false
+    },
+    "crypto_template|orderexecutions|fill amount": {
+      "id": 56,
+      "knowledge": "fill amount",
+      "description": "Cumulative notional value of the filled quantity, computed as quantity times price.",
+      "definition": "fillsum != fillcount * fillquote",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "orderexecutions"
+      ],
+      "refuted": true
+    },
+    "crypto_template|orderexecutions|fill count": {
+      "id": 57,
+      "knowledge": "fill count",
+      "description": "Number of units filled in an execution, computed as amount divided by price.",
+      "definition": "fillcount = fillsum / fillquote",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "orderexecutions"
+      ],
+      "refuted": false
+    },
+    "crypto_template|orderexecutions|fill quote price": {
+      "id": 58,
+      "knowledge": "fill quote price",
+      "description": "Price per unit at which the fill occurred, computed as amount divided by quantity.",
+      "definition": "fillquote != fillsum / fillcount",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "orderexecutions"
+      ],
+      "refuted": true
+    },
+    "crypto_template|orderexecutions|expired cancellation": {
+      "id": 59,
+      "knowledge": "expired cancellation",
+      "description": "Order cancellation reason indicating the order expired before being filled. Selects 36% of rows.",
+      "definition": "cancelnote = 'Expired'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "orderexecutions"
+      ],
+      "refuted": false
+    },
+    "crypto_template|orderexecutions|maker execution": {
+      "id": 60,
+      "knowledge": "maker execution",
+      "description": "Execution type indicating the order was filled as a maker order. Selects 48% of rows.",
+      "definition": "exectune = 'Maker'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "orderexecutions"
+      ],
+      "refuted": false
+    },
+    "crypto_template|users|Spot account": {
+      "id": 61,
+      "knowledge": "Spot account",
+      "description": "Account scope restricted to spot trading. Selects 29% of rows.",
+      "definition": "acctscope = 'Spot'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "users"
+      ],
+      "refuted": false
+    },
+    "crypto_template|users|Futures account": {
+      "id": 62,
+      "knowledge": "Futures account",
+      "description": "Account scope enabled for futures trading. Selects 25% of rows.",
+      "definition": "acctscope = 'Futures'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "users"
+      ],
+      "refuted": false
+    },
+    "crypto_template|users|Options account": {
+      "id": 63,
+      "knowledge": "Options account",
+      "description": "Account scope enabled for options trading. Selects 24% of rows.",
+      "definition": "acctscope = 'Options'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "users"
+      ],
+      "refuted": false
+    },
+    "crypto_template|users|Margin account": {
+      "id": 64,
+      "knowledge": "Margin account",
+      "description": "Account scope enabled for margin trading. Selects 22% of rows.",
+      "definition": "acctscope = 'Margin'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "users"
+      ],
+      "refuted": false
+    },
+    "crypto_template|users|Derivative account": {
+      "id": 65,
+      "knowledge": "Derivative account",
+      "description": "Account scope enabled for futures or options trading. Selects 49% of rows.",
+      "definition": "acctscope IN ('Futures', 'Options')",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        62,
+        63
+      ],
+      "tables": [
+        "users"
+      ],
+      "refuted": false
+    },
+    "crypto_template|accountbalances|walletsum": {
+      "id": 66,
+      "knowledge": "walletsum",
+      "description": "Wallet sum amount.",
+      "definition": "walletsum != availsum + frozensum + margsum - unrealline",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        67,
+        68,
+        69,
+        70
+      ],
+      "tables": [
+        "accountbalances"
+      ],
+      "refuted": true
+    },
+    "crypto_template|accountbalances|availsum": {
+      "id": 67,
+      "knowledge": "availsum",
+      "description": "Available sum amount.",
+      "definition": "availsum != walletsum - frozensum - margsum + unrealline",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        66,
+        68,
+        69,
+        70
+      ],
+      "tables": [
+        "accountbalances"
+      ],
+      "refuted": true
+    },
+    "crypto_template|accountbalances|frozensum": {
+      "id": 68,
+      "knowledge": "frozensum",
+      "description": "Frozen sum amount.",
+      "definition": "frozensum != walletsum - availsum - margsum + unrealline",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        66,
+        67,
+        69,
+        70
+      ],
+      "tables": [
+        "accountbalances"
+      ],
+      "refuted": true
+    },
+    "crypto_template|accountbalances|margsum": {
+      "id": 69,
+      "knowledge": "margsum",
+      "description": "Margin sum amount.",
+      "definition": "margsum != walletsum - availsum - frozensum + unrealline",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        66,
+        67,
+        68,
+        70
+      ],
+      "tables": [
+        "accountbalances"
+      ],
+      "refuted": true
+    },
+    "crypto_template|accountbalances|unrealline": {
+      "id": 70,
+      "knowledge": "unrealline",
+      "description": "Unrealized line amount.",
+      "definition": "unrealline != availsum + frozensum + margsum - walletsum",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        66,
+        67,
+        68,
+        69
+      ],
+      "tables": [
+        "accountbalances"
+      ],
+      "refuted": true
+    },
+    "crypto_template|fees,orders|Fee-to-Notional Ratio (FTNR)": {
+      "id": 71,
+      "knowledge": "Fee-to-Notional Ratio (FTNR)",
+      "description": "Fee amount charged per unit of order notional, expressed as a percentage.",
+      "definition": "feetotal / notionsum * 100",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        12
+      ],
+      "tables": [
+        "fees",
+        "orders"
+      ],
+      "refuted": false
+    },
+    "crypto_template|fees,orders|Rebate-to-Notional Ratio": {
+      "id": 72,
+      "knowledge": "Rebate-to-Notional Ratio",
+      "description": "Rebate earned per unit of order notional, expressed as a percentage.",
+      "definition": "rebtotal / notionsum * 100",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        12,
+        51
+      ],
+      "tables": [
+        "fees",
+        "orders"
+      ],
+      "refuted": false
+    },
+    "crypto_template|orderexecutions,orders|Order Notional Fill Ratio": {
+      "id": 73,
+      "knowledge": "Order Notional Fill Ratio",
+      "description": "Cumulative fill amount as a percentage of the order notional.",
+      "definition": "fillsum / notionsum * 100",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        12,
+        56
+      ],
+      "tables": [
+        "orderexecutions",
+        "orders"
+      ],
+      "refuted": false
+    },
+    "crypto_template|orders,riskandmargin|Leveraged Order Notional": {
+      "id": 74,
+      "knowledge": "Leveraged Order Notional",
+      "description": "Order notional scaled by the account leverage set on the order's risk profile.",
+      "definition": "notionsum * CAST(json_extract(risk_margin_profile, '$.leverage.levscale') AS REAL)",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        12
+      ],
+      "tables": [
+        "orders",
+        "riskandmargin"
+      ],
+      "refuted": false
+    },
+    "crypto_template|orders,riskandmargin|Collateral Coverage Ratio": {
+      "id": 75,
+      "knowledge": "Collateral Coverage Ratio",
+      "description": "Collateral sum as a percentage of the associated order notional.",
+      "definition": "json_extract(risk_margin_profile, '$.collateral.collsum') / notionsum * 100",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        12
+      ],
+      "tables": [
+        "orders",
+        "riskandmargin"
+      ],
+      "refuted": false
+    },
+    "crypto_template|analyticsindicators,marketdata|Bullish Tight-Spread Snapshot": {
+      "id": 76,
+      "knowledge": "Bullish Tight-Spread Snapshot",
+      "description": "Market snapshot with bullish market feel and below-average spread rate.",
+      "definition": "json_extract(market_sentiment_indicators, '$.momentum.mktfeel') = 'Bullish' AND json_extract(quote_depth_snapshot, '$.spread.spreadrate') < 0.05",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        2,
+        23
+      ],
+      "tables": [
+        "analyticsindicators",
+        "marketdata"
+      ],
+      "refuted": false
+    },
+    "crypto_template|analyticsindicators,marketstats|Bearish Funding Divergence": {
+      "id": 77,
+      "knowledge": "Bearish Funding Divergence",
+      "description": "Market stats where bearish sentiment coincides with positive funding rate.",
+      "definition": "json_extract(market_sentiment_indicators, '$.momentum.mktfeel') = 'Bearish' AND fundrate > 0.0007",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        0
+      ],
+      "tables": [
+        "analyticsindicators",
+        "marketstats"
+      ],
+      "refuted": false
+    },
+    "crypto_template|analyticsindicators,systemmonitoring|Bullish API Error Cohort": {
+      "id": 78,
+      "knowledge": "Bullish API Error Cohort",
+      "description": "System monitoring records with bullish sentiment and API error rate above one percent.",
+      "definition": "json_extract(market_sentiment_indicators, '$.momentum.mktfeel') = 'Bullish' AND apierrtotal / apireqtotal * 100 > 1",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        2,
+        45
+      ],
+      "tables": [
+        "analyticsindicators",
+        "systemmonitoring"
+      ],
+      "refuted": false
+    },
+    "crypto_template|accountbalances,users|Futures Available Wallet Cohort": {
+      "id": 79,
+      "knowledge": "Futures Available Wallet Cohort",
+      "description": "Futures-account wallets where available sum exceeds 95 percent of wallet sum.",
+      "definition": "acctscope = 'Futures' AND availsum / walletsum * 100 > 95",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        62,
+        66,
+        67
+      ],
+      "tables": [
+        "accountbalances",
+        "users"
+      ],
+      "refuted": false
+    },
+    "crypto_template|marketdata,marketstats|Midquote-to-VWAP Deviation": {
+      "id": 80,
+      "knowledge": "Midquote-to-VWAP Deviation",
+      "description": "Deviation of the current midquote from the daily volume-weighted average price, in percent.",
+      "definition": "(json_extract(quote_depth_snapshot, '$.quotes.midquote') - vwapday) / vwapday * 100",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "marketdata",
+        "marketstats"
+      ],
+      "refuted": false
+    }
+  },
+  "meta": {
+    "fees,orders": {
+      "profiled_at": "2026-08-30T13:09:58.017698+00:00"
+    },
+    "analyticsindicators,marketstats": {
+      "profiled_at": "2026-08-30T13:09:58.017698+00:00"
+    },
+    "analyticsindicators": {
+      "profiled_at": "2026-08-30T13:09:58.017698+00:00"
+    },
+    "marketdata": {
+      "profiled_at": "2026-08-30T13:09:58.017698+00:00"
+    },
+    "marketdata,marketstats": {
+      "profiled_at": "2026-08-30T13:09:58.017698+00:00"
+    },
+    "accountbalances,users": {
+      "profiled_at": "2026-08-30T13:09:58.017698+00:00"
+    },
+    "systemmonitoring": {
+      "profiled_at": "2026-08-30T13:09:58.017698+00:00"
+    },
+    "orderexecutions,orders": {
+      "profiled_at": "2026-08-30T13:09:58.017698+00:00"
+    },
+    "orders,riskandmargin": {
+      "profiled_at": "2026-08-30T13:09:58.017698+00:00"
+    },
+    "analyticsindicators,marketdata": {
+      "profiled_at": "2026-08-30T13:09:58.017698+00:00"
+    },
+    "fees": {
+      "profiled_at": "2026-08-30T13:09:58.017698+00:00"
+    },
+    "orderexecutions": {
+      "profiled_at": "2026-08-30T13:09:58.017698+00:00"
+    },
+    "accountbalances": {
+      "profiled_at": "2026-08-30T13:09:58.017698+00:00"
+    },
+    "orders": {
+      "profiled_at": "2026-08-30T13:09:58.017698+00:00"
+    },
+    "riskandmargin": {
+      "profiled_at": "2026-08-30T13:09:58.017698+00:00"
+    },
+    "analyticsindicators,systemmonitoring": {
+      "profiled_at": "2026-08-30T13:09:58.017698+00:00"
+    },
+    "users": {
+      "profiled_at": "2026-08-30T13:09:58.017698+00:00"
+    }
+  }
+}

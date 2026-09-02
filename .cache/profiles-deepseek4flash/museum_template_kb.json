@@ -1,0 +1,1487 @@
+{
+  "version": 1,
+  "profiled_at": "2026-08-30T14:02:02.703309+00:00",
+  "columns": {
+    "museum_template|artifactsecurityaccess|Available for loan artifact": {
+      "id": 0,
+      "knowledge": "Available for loan artifact",
+      "description": "Artifact whose loan status is Available. Selects 31% of rows.",
+      "definition": "TRIM(loanstatus) = 'Available'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "artifactsecurityaccess"
+      ],
+      "refuted": false
+    },
+    "museum_template|artifactsecurityaccess|Restricted access artifact": {
+      "id": 1,
+      "knowledge": "Restricted access artifact",
+      "description": "Artifact whose access restriction category is Restricted. Selects 35% of rows.",
+      "definition": "accessrestrictions = 'Restricted'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "artifactsecurityaccess"
+      ],
+      "refuted": false
+    },
+    "museum_template|artifactsecurityaccess|Level 1 security artifact": {
+      "id": 2,
+      "knowledge": "Level 1 security artifact",
+      "description": "Artifact classified at security Level 1. Selects 35% of rows.",
+      "definition": "seclevel = 'Level 1'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "artifactsecurityaccess"
+      ],
+      "refuted": false
+    },
+    "museum_template|artifactsecurityaccess|Complete documentation artifact": {
+      "id": 3,
+      "knowledge": "Complete documentation artifact",
+      "description": "Artifact whose documentation status is Complete. Selects 32% of rows.",
+      "definition": "docustatus = 'Complete'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "artifactsecurityaccess"
+      ],
+      "refuted": false
+    },
+    "museum_template|artifactsecurityaccess|Current condition report artifact": {
+      "id": 4,
+      "knowledge": "Current condition report artifact",
+      "description": "Artifact whose condition report status is Current. Selects 35% of rows.",
+      "definition": "condreportstatus = 'Current'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "artifactsecurityaccess"
+      ],
+      "refuted": false
+    },
+    "museum_template|artifactsecurityaccess|Updated conservation record artifact": {
+      "id": 5,
+      "knowledge": "Updated conservation record artifact",
+      "description": "Artifact whose conservation record status is Updated. Selects 32% of rows.",
+      "definition": "TRIM(conserverecstatus) = 'Updated'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "artifactsecurityaccess"
+      ],
+      "refuted": false
+    },
+    "museum_template|usagerecords|Display cycle length": {
+      "id": 6,
+      "knowledge": "Display cycle length",
+      "description": "Total months in the display-and-rest rotation cycle.",
+      "definition": "displaydurmonths + restperiodmonths",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "usagerecords"
+      ],
+      "refuted": false
+    },
+    "museum_template|usagerecords|Display utilization percentage": {
+      "id": 7,
+      "knowledge": "Display utilization percentage",
+      "description": "Percentage of the rotation cycle spent in active display.",
+      "definition": "displaydurmonths * 100.0 / (displaydurmonths + restperiodmonths)",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        6
+      ],
+      "tables": [
+        "usagerecords"
+      ],
+      "refuted": false
+    },
+    "museum_template|usagerecords|Rest period percentage": {
+      "id": 8,
+      "knowledge": "Rest period percentage",
+      "description": "Percentage of the rotation cycle spent resting.",
+      "definition": "restperiodmonths * 100.0 / (displaydurmonths + restperiodmonths)",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        6
+      ],
+      "tables": [
+        "usagerecords"
+      ],
+      "refuted": false
+    },
+    "museum_template|usagerecords|Active display record": {
+      "id": 9,
+      "knowledge": "Active display record",
+      "description": "Usage record whose display rotation schedule is Active. Selects 34% of rows.",
+      "definition": "TRIM(displayrotatesched) = 'Active'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "usagerecords"
+      ],
+      "refuted": false
+    },
+    "museum_template|usagerecords|Custom requirements record": {
+      "id": 10,
+      "knowledge": "Custom requirements record",
+      "description": "Usage record with at least one Custom-level requirement among display, storage, handling, transport, or packing. Selects 86% of rows.",
+      "definition": "displayreqs = 'Custom' OR storagereqs = 'Custom' OR handlingreqs = 'Custom' OR transportreqs = 'Custom' OR packingreqs = 'Custom'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "usagerecords"
+      ],
+      "refuted": false
+    },
+    "museum_template|usagerecords|Standard requirements record": {
+      "id": 11,
+      "knowledge": "Standard requirements record",
+      "description": "Usage record whose display, storage, handling, transport, and packing requirements are all Standard. Selects 1% of rows.",
+      "definition": "displayreqs = 'Standard' AND storagereqs = 'Standard' AND handlingreqs = 'Standard' AND transportreqs = 'Standard' AND packingreqs = 'Standard'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "usagerecords"
+      ],
+      "refuted": false
+    },
+    "museum_template|usagerecords|Frequent use record": {
+      "id": 12,
+      "knowledge": "Frequent use record",
+      "description": "Usage record with frequent researcher access, public display, loan, handling, or documentation. Selects 87% of rows.",
+      "definition": "TRIM(resaccessfreq) = 'Frequent' OR TRIM(publicdispfreq) = 'Frequent' OR TRIM(loanfreq) = 'Frequent' OR TRIM(handlefreq) = 'Frequent' OR docufreq = 'Frequent'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "usagerecords"
+      ],
+      "refuted": false
+    },
+    "museum_template|usagerecords|Daily monitoring record": {
+      "id": 13,
+      "knowledge": "Daily monitoring record",
+      "description": "Usage record with a daily monitoring frequency. Selects 35% of rows.",
+      "definition": "monitorfreq = 'Daily'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "usagerecords"
+      ],
+      "refuted": false
+    },
+    "museum_template|usagerecords|Quarterly assessment record": {
+      "id": 14,
+      "knowledge": "Quarterly assessment record",
+      "description": "Usage record with quarterly assessment frequency. Selects 34% of rows.",
+      "definition": "TRIM(assessfreq) = 'Quarterly'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "usagerecords"
+      ],
+      "refuted": false
+    },
+    "museum_template|usagerecords|Monthly maintenance record": {
+      "id": 15,
+      "knowledge": "Monthly maintenance record",
+      "description": "Usage record with monthly maintenance frequency. Selects 34% of rows.",
+      "definition": "TRIM(maintfreq) = 'Monthly'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "usagerecords"
+      ],
+      "refuted": false
+    },
+    "museum_template|usagerecords|Annual calibration record": {
+      "id": 16,
+      "knowledge": "Annual calibration record",
+      "description": "Usage record with annual calibration frequency. Selects 36% of rows.",
+      "definition": "TRIM(calibfreq) = 'Annually'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "usagerecords"
+      ],
+      "refuted": false
+    },
+    "museum_template|usagerecords|Fully compliant record": {
+      "id": 17,
+      "knowledge": "Fully compliant record",
+      "description": "Usage record with current certification, Compliant compliance status, Passed audit, and Passed quality control. Selects 1% of rows.",
+      "definition": "certstatus = 'Current' AND compliancestatus = 'Compliant' AND auditstatus = 'Passed' AND qualityctrlstatus = 'Passed'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "usagerecords"
+      ],
+      "refuted": false
+    },
+    "museum_template|usagerecords|At-risk record": {
+      "id": 18,
+      "knowledge": "At-risk record",
+      "description": "Usage record with expired certification, Non-compliant compliance status, Failed audit, or Failed quality control. Selects 82% of rows.",
+      "definition": "certstatus = 'Expired' OR compliancestatus = 'Non-compliant' OR auditstatus = 'Failed' OR qualityctrlstatus = 'Failed'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "usagerecords"
+      ],
+      "refuted": false
+    },
+    "museum_template|showcases|Filter replacement now": {
+      "id": 19,
+      "knowledge": "Filter replacement now",
+      "description": "Showcase filter is flagged as requiring immediate replacement. Selects 38% of rows.",
+      "definition": "filterstatus = 'Replace Now'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "showcases"
+      ],
+      "refuted": false
+    },
+    "museum_template|showcases|Silica gel replacement now": {
+      "id": 20,
+      "knowledge": "Silica gel replacement now",
+      "description": "Showcase silica gel is flagged as requiring immediate replacement. Selects 33% of rows.",
+      "definition": "TRIM(silicagelstatus) = 'Replace Now'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "showcases"
+      ],
+      "refuted": false
+    },
+    "museum_template|showcases|Inert gas system maintenance": {
+      "id": 21,
+      "knowledge": "Inert gas system maintenance",
+      "description": "Inert gas system is in maintenance state. Selects 34% of rows.",
+      "definition": "inertgassysstatus = 'Maintenance'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "showcases"
+      ],
+      "refuted": false
+    },
+    "museum_template|showcases|Fire suppression system maintenance": {
+      "id": 22,
+      "knowledge": "Fire suppression system maintenance",
+      "description": "Fire suppression system is in maintenance state. Selects 33% of rows.",
+      "definition": "firesuppresssys = 'Maintenance'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "showcases"
+      ],
+      "refuted": false
+    },
+    "museum_template|showcases|Empower system testing": {
+      "id": 23,
+      "knowledge": "Empower system testing",
+      "description": "Empower system is in testing state. Selects 33% of rows.",
+      "definition": "TRIM(empowerstatus) = 'Testing'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "showcases"
+      ],
+      "refuted": false
+    },
+    "museum_template|showcases|Backup system testing": {
+      "id": 24,
+      "knowledge": "Backup system testing",
+      "description": "Backup system is in testing state. Selects 32% of rows.",
+      "definition": "backupsysstatus = 'Testing'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "showcases"
+      ],
+      "refuted": false
+    },
+    "museum_template|showcases|Poor seal condition": {
+      "id": 25,
+      "knowledge": "Poor seal condition",
+      "description": "Showcase seal is rated Poor. Selects 23% of rows.",
+      "definition": "sealcondition = 'Poor'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "showcases"
+      ],
+      "refuted": false
+    },
+    "museum_template|showcases|Maintenance overdue": {
+      "id": 26,
+      "knowledge": "Maintenance overdue",
+      "description": "At least one immediate maintenance or testing action is required. Selects 95% of rows.",
+      "definition": "TRIM(maintstatus) = 'Overdue' OR filterstatus = 'Replace Now' OR TRIM(silicagelstatus) = 'Replace Now' OR inertgassysstatus = 'Maintenance' OR firesuppresssys = 'Maintenance' OR TRIM(empowerstatus) = 'Testing' OR backupsysstatus = 'Testing' OR sealcondition = 'Poor'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "tables": [
+        "showcases"
+      ],
+      "refuted": false
+    },
+    "museum_template|conservationandmaintenance|Cleaning interval days (cleanintervaldays)": {
+      "id": 27,
+      "knowledge": "Cleaning interval days (cleanintervaldays)",
+      "description": "Number of days between the last cleaning date and the next cleaning due date. Selects 1% of rows.",
+      "definition": "cleanintervaldays = JULIANDAY(nextcleaningdue) - JULIANDAY(lastcleaningdate)",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "conservationandmaintenance"
+      ],
+      "refuted": false
+    },
+    "museum_template|conservationandmaintenance|Maintained artwork/object reference match": {
+      "id": 28,
+      "knowledge": "Maintained artwork/object reference match",
+      "description": "The maintained artwork reference equals the maintained hall/object reference after trimming padding.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "conservationandmaintenance"
+      ],
+      "refuted": false
+    },
+    "museum_template|conservationandmaintenance|Cleaning date order": {
+      "id": 29,
+      "knowledge": "Cleaning date order",
+      "description": "The last cleaning date always precedes the next cleaning due date.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "conservationandmaintenance"
+      ],
+      "refuted": false
+    },
+    "museum_template|conservationandmaintenance|Scheduled conservation treatment": {
+      "id": 30,
+      "knowledge": "Scheduled conservation treatment",
+      "description": "Maintenance records whose conservation treatment status is Scheduled. Selects 31% of rows.",
+      "definition": "conservetreatstatus = 'Scheduled'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "conservationandmaintenance"
+      ],
+      "refuted": false
+    },
+    "museum_template|conservationandmaintenance|Urgent treatment priority": {
+      "id": 31,
+      "knowledge": "Urgent treatment priority",
+      "description": "Maintenance records whose treatment priority is Urgent. Selects 26% of rows.",
+      "definition": "TRIM(treatpriority) = 'Urgent'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "conservationandmaintenance"
+      ],
+      "refuted": false
+    },
+    "museum_template|conservationandmaintenance|Current emergency drill status": {
+      "id": 32,
+      "knowledge": "Current emergency drill status",
+      "description": "Maintenance records whose emergency drill status is Current. Selects 36% of rows.",
+      "definition": "TRIM(emergencydrillstatus) = 'Current'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "conservationandmaintenance"
+      ],
+      "refuted": false
+    },
+    "museum_template|conservationandmaintenance|Current staff training status": {
+      "id": 33,
+      "knowledge": "Current staff training status",
+      "description": "Maintenance records whose staff training status is Current. Selects 33% of rows.",
+      "definition": "TRIM(stafftrainstatus) = 'Current'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "conservationandmaintenance"
+      ],
+      "refuted": false
+    },
+    "museum_template|conservationandmaintenance|Open incident report": {
+      "id": 34,
+      "knowledge": "Open incident report",
+      "description": "Maintenance records with an open incident report. Selects 48% of rows.",
+      "definition": "incidentreportstatus = 'Open'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "conservationandmaintenance"
+      ],
+      "refuted": false
+    },
+    "museum_template|conservationandmaintenance|Insufficient budget allocation": {
+      "id": 35,
+      "knowledge": "Insufficient budget allocation",
+      "description": "Maintenance records whose budget allocation status is Insufficient. Selects 34% of rows.",
+      "definition": "budgetallocstatus = 'Insufficient'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "conservationandmaintenance"
+      ],
+      "refuted": false
+    },
+    "museum_template|conservationandmaintenance|Depleted maintenance budget": {
+      "id": 36,
+      "knowledge": "Depleted maintenance budget",
+      "description": "Maintenance records whose maintenance budget status is Depleted. Selects 31% of rows.",
+      "definition": "TRIM(maintbudgetstatus) = 'Depleted'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "conservationandmaintenance"
+      ],
+      "refuted": false
+    },
+    "museum_template|artifactscore|Ming dynasty artifact": {
+      "id": 37,
+      "knowledge": "Ming dynasty artifact",
+      "description": "Artifact attributed to the Ming dynasty. Selects 17% of rows.",
+      "definition": "artdynasty = 'Ming'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "artifactscore"
+      ],
+      "refuted": false
+    },
+    "museum_template|artifactscore|Bronze artifact": {
+      "id": 38,
+      "knowledge": "Bronze artifact",
+      "description": "Artifact made of bronze. Selects 14% of rows.",
+      "definition": "mattype = 'Bronze'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "artifactscore"
+      ],
+      "refuted": false
+    },
+    "museum_template|artifactscore|Critical artifact": {
+      "id": 39,
+      "knowledge": "Critical artifact",
+      "description": "Artifact whose conservation status is Critical. Selects 19% of rows.",
+      "definition": "conservestatus = 'Critical'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "artifactscore"
+      ],
+      "refuted": false
+    },
+    "museum_template|artifactscore|Ancient artifact": {
+      "id": 40,
+      "knowledge": "Ancient artifact",
+      "description": "Artifact more than one thousand years old. Selects 65% of rows.",
+      "definition": "artageyears > 1000",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "artifactscore"
+      ],
+      "refuted": false
+    },
+    "museum_template|artifactscore|Painting artifact": {
+      "id": 41,
+      "knowledge": "Painting artifact",
+      "description": "Artifact whose name contains 'Painting'. Selects 22% of rows.",
+      "definition": "artname LIKE '%Painting%'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "artifactscore"
+      ],
+      "refuted": false
+    },
+    "museum_template|conditionassessments|condition assessment interval": {
+      "id": 42,
+      "knowledge": "condition assessment interval",
+      "description": "Number of days between the conservation assessment date and the next assessment due date.",
+      "definition": "julianday(nextassessdue) - julianday(conserveassessdate)",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "conditionassessments"
+      ],
+      "refuted": false
+    },
+    "museum_template|conditionassessments|next assessment due after conservation assessment": {
+      "id": 43,
+      "knowledge": "next assessment due after conservation assessment",
+      "description": "Requirement that the next assessment is scheduled after the conservation assessment date.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "conditionassessments"
+      ],
+      "refuted": false
+    },
+    "museum_template|conditionassessments|high condition assessment score": {
+      "id": 44,
+      "knowledge": "high condition assessment score",
+      "description": "Condition assessment score above 80. Selects 19% of rows.",
+      "definition": "condassessscore > 80",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "conditionassessments"
+      ],
+      "refuted": false
+    },
+    "museum_template|conditionassessments|2024 conservation assessment": {
+      "id": 45,
+      "knowledge": "2024 conservation assessment",
+      "description": "Conservation assessment conducted in calendar year 2024. Selects 85% of rows.",
+      "definition": "conserveassessdate >= '2024-01-01' AND conserveassessdate < '2025-01-01'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "conditionassessments"
+      ],
+      "refuted": false
+    },
+    "museum_template|conditionassessments|high light reading reference": {
+      "id": 46,
+      "knowledge": "high light reading reference",
+      "description": "Light reading reference observed above 945. Selects 1% of rows.",
+      "definition": "lightreadrefobserved > 945",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "conditionassessments"
+      ],
+      "refuted": false
+    },
+    "museum_template|airqualityreadings|environmental reading reference offset": {
+      "id": 47,
+      "knowledge": "environmental reading reference offset",
+      "description": "Reference number tied to the record registry id by a constant offset",
+      "definition": "envreadref != 952 - aqrecordregistry",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "airqualityreadings"
+      ],
+      "refuted": true
+    },
+    "museum_template|airqualityreadings|PM2.5/PM10 ratio": {
+      "id": 48,
+      "knowledge": "PM2.5/PM10 ratio",
+      "description": "Percentage of PM10 particulate matter that is PM2.5",
+      "definition": "pm25conc / pm10conc * 100",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "airqualityreadings"
+      ],
+      "refuted": false
+    },
+    "museum_template|airqualityreadings|coarse particulate matter (PM10-PM2.5)": {
+      "id": 49,
+      "knowledge": "coarse particulate matter (PM10-PM2.5)",
+      "description": "Difference between PM10 and PM2.5 concentration",
+      "definition": "pm10conc - pm25conc",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "airqualityreadings"
+      ],
+      "refuted": false
+    },
+    "museum_template|airqualityreadings|total gaseous pollutants (TGP)": {
+      "id": 50,
+      "knowledge": "total gaseous pollutants (TGP)",
+      "description": "Sum of measured gaseous pollutant concentrations in parts per billion",
+      "definition": "tvocppb + ozoneppb + so2ppb + no2ppb",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "airqualityreadings"
+      ],
+      "refuted": false
+    },
+    "museum_template|airqualityreadings|PM2.5 subset of PM10": {
+      "id": 51,
+      "knowledge": "PM2.5 subset of PM10",
+      "description": "PM2.5 concentration cannot exceed PM10 concentration because PM2.5 particles are part of PM10 Selects 65% of rows.",
+      "definition": "pm25conc <= pm10conc",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "airqualityreadings"
+      ],
+      "refuted": false
+    },
+    "museum_template|airqualityreadings|CO2 concentration in parts per billion (CO2 ppb)": {
+      "id": 52,
+      "knowledge": "CO2 concentration in parts per billion (CO2 ppb)",
+      "description": "Carbon dioxide concentration converted from ppm to ppb",
+      "definition": "co2ppm * 1000",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "airqualityreadings"
+      ],
+      "refuted": false
+    },
+    "museum_template|artifactratings|Deterioration rate": {
+      "id": 53,
+      "knowledge": "Deterioration rate",
+      "description": "Rate at which an artifact deteriorates, inferred from material stability. Selects 35% of rows.",
+      "definition": "deteriorrate = CASE WHEN matstability = 'Unstable' THEN 'Rapid' WHEN matstability = 'Stable' THEN 'Slow' ELSE 'Moderate' END",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "artifactratings"
+      ],
+      "refuted": false
+    },
+    "museum_template|artifactratings|Conservation difficulty": {
+      "id": 54,
+      "knowledge": "Conservation difficulty",
+      "description": "Level of effort needed to conserve an artifact, inferred from stability and deterioration. Selects 32% of rows.",
+      "definition": "conservediff = CASE WHEN matstability = 'Unstable' OR deteriorrate = 'Rapid' THEN 'High' WHEN matstability = 'Stable' AND deteriorrate = 'Slow' THEN 'Low' ELSE 'Medium' END",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        53
+      ],
+      "tables": [
+        "artifactratings"
+      ],
+      "refuted": false
+    },
+    "museum_template|artifactratings|Treatment complexity": {
+      "id": 55,
+      "knowledge": "Treatment complexity",
+      "description": "Complexity of artifact treatment, inferred from conservation difficulty. Selects 34% of rows.",
+      "definition": "TRIM(treatcomplexity) = CASE WHEN conservediff = 'High' THEN 'Complex' WHEN conservediff = 'Low' THEN 'Simple' ELSE 'Moderate' END",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        54
+      ],
+      "tables": [
+        "artifactratings"
+      ],
+      "refuted": false
+    },
+    "museum_template|artifactratings|High conservation difficulty cohort": {
+      "id": 56,
+      "knowledge": "High conservation difficulty cohort",
+      "description": "Artifacts requiring high conservation effort due to unstable material or rapid deterioration. Selects 17% of rows.",
+      "definition": "conservediff = 'High' AND (matstability = 'Unstable' OR deteriorrate = 'Rapid')",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        54
+      ],
+      "tables": [
+        "artifactratings"
+      ],
+      "refuted": false
+    },
+    "museum_template|artifactratings|Stable artifact cohort": {
+      "id": 57,
+      "knowledge": "Stable artifact cohort",
+      "description": "Artifacts with stable material, slow deterioration, and low conservation difficulty. Selects 3% of rows.",
+      "definition": "matstability = 'Stable' AND deteriorrate = 'Slow' AND conservediff = 'Low'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        53,
+        54
+      ],
+      "tables": [
+        "artifactratings"
+      ],
+      "refuted": false
+    },
+    "museum_template|artifactratings|High public access artifact cohort": {
+      "id": 58,
+      "knowledge": "High public access artifact cohort",
+      "description": "Artifacts suitable for high public access based on stability and low conservation difficulty. Selects 3% of rows.",
+      "definition": "publicaccessrating >= 8 AND matstability = 'Stable' AND conservediff = 'Low'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        54,
+        57
+      ],
+      "tables": [
+        "artifactratings"
+      ],
+      "refuted": false
+    },
+    "museum_template|environmentalreadingscore|24-hour temperature variation (tempvar24h)": {
+      "id": 59,
+      "knowledge": "24-hour temperature variation (tempvar24h)",
+      "description": "Difference between maximum and minimum temperature recorded by a monitor in the preceding 24 hours.",
+      "definition": "tempvar24h = MAX(tempc) OVER (PARTITION BY TRIM(monitorcode) ORDER BY CAST(readtimestamp AS TIMESTAMP) RANGE BETWEEN INTERVAL '24 hours' PRECEDING AND CURRENT ROW) - MIN(tempc) OVER (PARTITION BY TRIM(monitorcode) ORDER BY CAST(readtimestamp AS TIMESTAMP) RANGE BETWEEN INTERVAL '24 hours' PRECEDING AND CURRENT ROW)",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "environmentalreadingscore"
+      ],
+      "refuted": false
+    },
+    "museum_template|environmentalreadingscore|24-hour humidity variation (humvar24h)": {
+      "id": 60,
+      "knowledge": "24-hour humidity variation (humvar24h)",
+      "description": "Difference between maximum and minimum relative humidity recorded by a monitor in the preceding 24 hours.",
+      "definition": "humvar24h = MAX(relhumidity) OVER (PARTITION BY TRIM(monitorcode) ORDER BY CAST(readtimestamp AS TIMESTAMP) RANGE BETWEEN INTERVAL '24 hours' PRECEDING AND CURRENT ROW) - MIN(relhumidity) OVER (PARTITION BY TRIM(monitorcode) ORDER BY CAST(readtimestamp AS TIMESTAMP) RANGE BETWEEN INTERVAL '24 hours' PRECEDING AND CURRENT ROW)",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "environmentalreadingscore"
+      ],
+      "refuted": false
+    },
+    "museum_template|environmentalreadingscore|low temperature (LT)": {
+      "id": 61,
+      "knowledge": "low temperature (LT)",
+      "description": "A reading below 20 degrees Celsius. Selects 50% of rows.",
+      "definition": "tempc < 20",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "environmentalreadingscore"
+      ],
+      "refuted": false
+    },
+    "museum_template|environmentalreadingscore|high humidity (HH)": {
+      "id": 62,
+      "knowledge": "high humidity (HH)",
+      "description": "A relative humidity reading above 50 percent. Selects 41% of rows.",
+      "definition": "relhumidity > 50",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "environmentalreadingscore"
+      ],
+      "refuted": false
+    },
+    "museum_template|environmentalreadingscore|high air pressure (HAP)": {
+      "id": 63,
+      "knowledge": "high air pressure (HAP)",
+      "description": "An air pressure reading above 1000 hectopascals. Selects 50% of rows.",
+      "definition": "airpresshpa > 1000",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "environmentalreadingscore"
+      ],
+      "refuted": false
+    },
+    "museum_template|surfaceandphysicalreadings|Mold risk index": {
+      "id": 64,
+      "knowledge": "Mold risk index",
+      "description": "A computed index of mold risk from biological and moisture readings.",
+      "definition": "moldriskidx != (microbialcountcfu * matmoistcontent) / (surfaceph * 1000)",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "surfaceandphysicalreadings"
+      ],
+      "refuted": true
+    },
+    "museum_template|surfaceandphysicalreadings|Organic degradation index": {
+      "id": 65,
+      "knowledge": "Organic degradation index",
+      "description": "A computed index of organic material decay from biological, moisture, and temperature readings.",
+      "definition": "organicdegradidx != (microbialcountcfu * matmoistcontent * surfacetempc) / 100000",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "surfaceandphysicalreadings"
+      ],
+      "refuted": true
+    },
+    "museum_template|surfaceandphysicalreadings|Metal corrosion rate": {
+      "id": 66,
+      "knowledge": "Metal corrosion rate",
+      "description": "A computed corrosion rate from acidity, moisture, and humidity.",
+      "definition": "metalcorroderate != ((14 - surfaceph) * matmoistcontent * surfacerh) / 100000",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "surfaceandphysicalreadings"
+      ],
+      "refuted": true
+    },
+    "museum_template|surfaceandphysicalreadings|High condensation risk": {
+      "id": 67,
+      "knowledge": "High condensation risk",
+      "description": "Condition where surface temperature and humidity indicate condensation. Selects 24% of rows.",
+      "definition": "surfacetempc < 20 AND surfacerh > 50",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "surfaceandphysicalreadings"
+      ],
+      "refuted": false
+    },
+    "museum_template|surfaceandphysicalreadings|High salt crystal risk": {
+      "id": 68,
+      "knowledge": "High salt crystal risk",
+      "description": "Condition promoting salt crystallization damage. Selects 15% of rows.",
+      "definition": "matmoistcontent > 10 AND surfacerh > 50",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "surfaceandphysicalreadings"
+      ],
+      "refuted": false
+    },
+    "museum_template|surfaceandphysicalreadings|High pest activity": {
+      "id": 69,
+      "knowledge": "High pest activity",
+      "description": "Elevated pest activity indicated by a high trap count. Selects 20% of rows.",
+      "definition": "pesttrapcount > 8",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "surfaceandphysicalreadings"
+      ],
+      "refuted": false
+    },
+    "museum_template|surfaceandphysicalreadings|Critical thermal image status": {
+      "id": 70,
+      "knowledge": "Critical thermal image status",
+      "description": "Thermal image anomaly based on abnormally low or high surface temperature. Selects 23% of rows.",
+      "definition": "surfacetempc < 19 OR surfacetempc > 22",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "surfaceandphysicalreadings"
+      ],
+      "refuted": false
+    },
+    "museum_template|surfaceandphysicalreadings|Major structural stability issues": {
+      "id": 71,
+      "knowledge": "Major structural stability issues",
+      "description": "Structural instability indicated by large deformation. Selects 21% of rows.",
+      "definition": "deformmm > 0.4",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "surfaceandphysicalreadings"
+      ],
+      "refuted": false
+    },
+    "museum_template|surfaceandphysicalreadings|Significant crack monitoring changes": {
+      "id": 72,
+      "knowledge": "Significant crack monitoring changes",
+      "description": "Notable crack movement indicated by large deformation. Selects 58% of rows.",
+      "definition": "deformmm > 0.2",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "surfaceandphysicalreadings"
+      ],
+      "refuted": false
+    },
+    "museum_template|surfaceandphysicalreadings|High surface dust coverage": {
+      "id": 73,
+      "knowledge": "High surface dust coverage",
+      "description": "Heavy dust accumulation on a surface. Selects 38% of rows.",
+      "definition": "dustaccummgm2 > 3",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "surfaceandphysicalreadings"
+      ],
+      "refuted": false
+    },
+    "museum_template|surfaceandphysicalreadings|High noise level": {
+      "id": 74,
+      "knowledge": "High noise level",
+      "description": "Noise exposure above a moderate threshold. Selects 34% of rows.",
+      "definition": "noisedb > 50",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "surfaceandphysicalreadings"
+      ],
+      "refuted": false
+    },
+    "museum_template|surfaceandphysicalreadings|High vibration level": {
+      "id": 75,
+      "knowledge": "High vibration level",
+      "description": "Vibration exposure above a moderate threshold. Selects 20% of rows.",
+      "definition": "vibralvlmms2 > 0.4",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "surfaceandphysicalreadings"
+      ],
+      "refuted": false
+    },
+    "museum_template|surfaceandphysicalreadings|Air oxygen-nitrogen balance": {
+      "id": 76,
+      "knowledge": "Air oxygen-nitrogen balance",
+      "description": "The combined oxygen and nitrogen concentrations account for most of the air.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "surfaceandphysicalreadings"
+      ],
+      "refuted": false
+    },
+    "museum_template|exhibitionhalls|visitorflowrate": {
+      "id": 77,
+      "knowledge": "visitorflowrate",
+      "description": "Visitor flow rate category derived from daily visitor count thresholds. Selects 36% of rows.",
+      "definition": "visitorflowrate = CASE WHEN visitorcountdaily < 400 THEN 'Low' WHEN visitorcountdaily < 800 THEN 'Medium' ELSE 'High' END",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "exhibitionhalls"
+      ],
+      "refuted": false
+    },
+    "museum_template|exhibitionhalls|High visitor count": {
+      "id": 78,
+      "knowledge": "High visitor count",
+      "description": "Hall with a daily visitor count above 800. Selects 20% of rows.",
+      "definition": "visitorcountdaily > 800",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "exhibitionhalls"
+      ],
+      "refuted": false
+    },
+    "museum_template|exhibitionhalls|Long visitor dwell": {
+      "id": 79,
+      "knowledge": "Long visitor dwell",
+      "description": "Hall where average visitor dwell time exceeds 20 minutes. Selects 34% of rows.",
+      "definition": "visitordwellmin > 20",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "exhibitionhalls"
+      ],
+      "refuted": false
+    },
+    "museum_template|exhibitionhalls|Active security systems": {
+      "id": 80,
+      "knowledge": "Active security systems",
+      "description": "Hall with full CCTV coverage and all security systems active or armed. Selects 1% of rows.",
+      "definition": "cctvcoverage = 'Full' AND motiondetectstatus = 'Active' AND TRIM(alarmsysstatus) = 'Armed' AND accessctrlstatus = 'Active'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "exhibitionhalls"
+      ],
+      "refuted": false
+    },
+    "museum_template|exhibitionhalls|Maintenance needed": {
+      "id": 81,
+      "knowledge": "Maintenance needed",
+      "description": "Hall with at least one security subsystem under maintenance. Selects 72% of rows.",
+      "definition": "motiondetectstatus = 'Maintenance' OR TRIM(alarmsysstatus) = 'Maintenance' OR accessctrlstatus = 'Maintenance'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "exhibitionhalls"
+      ],
+      "refuted": false
+    },
+    "museum_template|sensitivitydata|High environmental sensitivity": {
+      "id": 82,
+      "knowledge": "High environmental sensitivity",
+      "description": "Artifact rated as having high environmental sensitivity. Selects 34% of rows.",
+      "definition": "TRIM(envsensitivity) = 'High'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sensitivitydata"
+      ],
+      "refuted": false
+    },
+    "museum_template|sensitivitydata|High light sensitivity": {
+      "id": 83,
+      "knowledge": "High light sensitivity",
+      "description": "Artifact rated as having high light sensitivity. Selects 33% of rows.",
+      "definition": "lightsensitivity = 'High'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sensitivitydata"
+      ],
+      "refuted": false
+    },
+    "museum_template|sensitivitydata|High temperature sensitivity": {
+      "id": 84,
+      "knowledge": "High temperature sensitivity",
+      "description": "Artifact rated as having high temperature sensitivity. Selects 33% of rows.",
+      "definition": "tempsensitivity = 'High'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sensitivitydata"
+      ],
+      "refuted": false
+    },
+    "museum_template|sensitivitydata|High humidity sensitivity": {
+      "id": 85,
+      "knowledge": "High humidity sensitivity",
+      "description": "Artifact rated as having high humidity sensitivity. Selects 31% of rows.",
+      "definition": "humiditysensitivity = 'High'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        62
+      ],
+      "tables": [
+        "sensitivitydata"
+      ],
+      "refuted": false
+    },
+    "museum_template|sensitivitydata|High vibration sensitivity": {
+      "id": 86,
+      "knowledge": "High vibration sensitivity",
+      "description": "Artifact rated as having high vibration sensitivity. Selects 32% of rows.",
+      "definition": "TRIM(vibrasensitivity) = 'High'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sensitivitydata"
+      ],
+      "refuted": false
+    },
+    "museum_template|sensitivitydata|High pollutant sensitivity": {
+      "id": 87,
+      "knowledge": "High pollutant sensitivity",
+      "description": "Artifact rated as having high pollutant sensitivity. Selects 34% of rows.",
+      "definition": "pollutantsensitivity = 'High'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sensitivitydata"
+      ],
+      "refuted": false
+    },
+    "museum_template|lightandradiationreadings|Environment reading reference (envreadref)": {
+      "id": 88,
+      "knowledge": "Environment reading reference (envreadref)",
+      "description": "Reference ID of the environment reading associated with a light-radiation reading.",
+      "definition": "envreadref != 952 - lightradregistry",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        89
+      ],
+      "tables": [
+        "lightandradiationreadings"
+      ],
+      "refuted": true
+    },
+    "museum_template|lightandradiationreadings|Light-radiation registry (lightradregistry)": {
+      "id": 89,
+      "knowledge": "Light-radiation registry (lightradregistry)",
+      "description": "Registry ID of the light-radiation reading associated with an environment reading reference.",
+      "definition": "lightradregistry != 952 - envreadref",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        88
+      ],
+      "tables": [
+        "lightandradiationreadings"
+      ],
+      "refuted": true
+    },
+    "museum_template|lightandradiationreadings|High illuminance reading": {
+      "id": 90,
+      "knowledge": "High illuminance reading",
+      "description": "A light-radiation reading with illuminance greater than 157 lux. Selects 29% of rows.",
+      "definition": "lightlux > 157",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "lightandradiationreadings"
+      ],
+      "refuted": false
+    },
+    "museum_template|lightandradiationreadings|High UV irradiance reading": {
+      "id": 91,
+      "knowledge": "High UV irradiance reading",
+      "description": "A light-radiation reading with UV irradiance greater than 63.45 microwatts per square centimeter. Selects 15% of rows.",
+      "definition": "uvuwcm2 > 63.45",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "lightandradiationreadings"
+      ],
+      "refuted": false
+    },
+    "museum_template|lightandradiationreadings|High infrared irradiance reading": {
+      "id": 92,
+      "knowledge": "High infrared irradiance reading",
+      "description": "A light-radiation reading with infrared irradiance greater than 5.09 watts per square meter. Selects 49% of rows.",
+      "definition": "irwm2 > 5.09",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "lightandradiationreadings"
+      ],
+      "refuted": false
+    },
+    "museum_template|riskassessments|High risk assessment": {
+      "id": 93,
+      "knowledge": "High risk assessment",
+      "description": "Risk assessment with riskassesslevel 'High'. Selects 36% of rows.",
+      "definition": "riskassesslevel = 'High'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "riskassessments"
+      ],
+      "refuted": false
+    },
+    "museum_template|riskassessments|Medium risk assessment": {
+      "id": 94,
+      "knowledge": "Medium risk assessment",
+      "description": "Risk assessment with riskassesslevel 'Medium'. Selects 31% of rows.",
+      "definition": "riskassesslevel = 'Medium'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "riskassessments"
+      ],
+      "refuted": false
+    },
+    "museum_template|riskassessments|Low risk assessment": {
+      "id": 95,
+      "knowledge": "Low risk assessment",
+      "description": "Risk assessment with riskassesslevel 'Low'. Selects 33% of rows.",
+      "definition": "riskassesslevel = 'Low'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "riskassessments"
+      ],
+      "refuted": false
+    },
+    "museum_template|riskassessments|Evacuation priority rank": {
+      "id": 96,
+      "knowledge": "Evacuation priority rank",
+      "description": "Evacuation priority rank derived from the risk assessment level. Selects 32% of rows.",
+      "definition": "evacpriority = CASE riskassesslevel WHEN 'High' THEN 'Priority 1' WHEN 'Medium' THEN 'Priority 2' WHEN 'Low' THEN 'Priority 3' END",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        93,
+        94,
+        95
+      ],
+      "tables": [
+        "riskassessments"
+      ],
+      "refuted": false
+    },
+    "museum_template|riskassessments|Handling restriction level": {
+      "id": 97,
+      "knowledge": "Handling restriction level",
+      "description": "Handling restriction level derived from the risk assessment level. Selects 50% of rows.",
+      "definition": "handlerestrictions = CASE WHEN riskassesslevel = 'High' THEN 'Strict' WHEN riskassesslevel = 'Medium' THEN 'Minimal' WHEN riskassesslevel = 'Low' THEN 'Minimal' END",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        93,
+        94,
+        95
+      ],
+      "tables": [
+        "riskassessments"
+      ],
+      "refuted": false
+    },
+    "museum_template|artifactratings,artifactsecurityaccess|Insurance value per historical significance point": {
+      "id": 98,
+      "knowledge": "Insurance value per historical significance point",
+      "description": "Artifact insurance value divided by its historical significance rating.",
+      "definition": "insvalueusd / histsignrating",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "artifactratings",
+        "artifactsecurityaccess"
+      ],
+      "refuted": false
+    },
+    "museum_template|conditionassessments,riskassessments|Conservation priority score per condition point": {
+      "id": 99,
+      "knowledge": "Conservation priority score per condition point",
+      "description": "Conservation priority score normalized by condition assessment score.",
+      "definition": "conservepriorityscore * 1.0 / condassessscore",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "conditionassessments",
+        "riskassessments"
+      ],
+      "refuted": false
+    },
+    "museum_template|artifactratings,artifactsecurityaccess|High-value high-significance artifact": {
+      "id": 100,
+      "knowledge": "High-value high-significance artifact",
+      "description": "Artifact with high insurance value and high historical significance rating.",
+      "definition": "insvalueusd > 990000 AND histsignrating >= 8",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "artifactratings",
+        "artifactsecurityaccess"
+      ],
+      "refuted": false
+    },
+    "museum_template|artifactratings,artifactsecurityaccess|High research value restricted artifact": {
+      "id": 101,
+      "knowledge": "High research value restricted artifact",
+      "description": "Artifact with high research value rating that has restricted access.",
+      "definition": "researchvalrating >= 8 AND accessrestrictions = 'Restricted'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        1
+      ],
+      "tables": [
+        "artifactratings",
+        "artifactsecurityaccess"
+      ],
+      "refuted": false
+    },
+    "museum_template|sensitivitydata,usagerecords|Handling-sensitive frequently handled artifact": {
+      "id": 102,
+      "knowledge": "Handling-sensitive frequently handled artifact",
+      "description": "Artifact with high handling sensitivity that is frequently handled.",
+      "definition": "TRIM(handlefreq) = 'Frequent' AND TRIM(handlesensitivity) = 'High'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sensitivitydata",
+        "usagerecords"
+      ],
+      "refuted": false
+    },
+    "museum_template|sensitivitydata,usagerecords|Transport-sensitive frequently loaned artifact": {
+      "id": 103,
+      "knowledge": "Transport-sensitive frequently loaned artifact",
+      "description": "Artifact with high transport sensitivity that is frequently loaned.",
+      "definition": "TRIM(loanfreq) = 'Frequent' AND transportsensitivity = 'High'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sensitivitydata",
+        "usagerecords"
+      ],
+      "refuted": false
+    },
+    "museum_template|sensitivitydata,usagerecords|Display-sensitive frequently displayed artifact": {
+      "id": 104,
+      "knowledge": "Display-sensitive frequently displayed artifact",
+      "description": "Artifact with high display sensitivity that is frequently publicly displayed.",
+      "definition": "TRIM(publicdispfreq) = 'Frequent' AND displaysensitivity = 'High'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "sensitivitydata",
+        "usagerecords"
+      ],
+      "refuted": false
+    },
+    "museum_template|showcases,usagerecords|Active display in poor-seal showcase": {
+      "id": 105,
+      "knowledge": "Active display in poor-seal showcase",
+      "description": "Active display record placed in a showcase with poor seal condition.",
+      "definition": "TRIM(displayrotatesched) = 'Active' AND sealcondition = 'Poor'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        9,
+        25
+      ],
+      "tables": [
+        "showcases",
+        "usagerecords"
+      ],
+      "refuted": false
+    },
+    "museum_template|showcases,usagerecords|Custom display in maintenance-overdue showcase": {
+      "id": 106,
+      "knowledge": "Custom display in maintenance-overdue showcase",
+      "description": "Custom display requirement placed in a showcase whose maintenance is overdue.",
+      "definition": "displayreqs = 'Custom' AND TRIM(maintstatus) = 'Overdue'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        26
+      ],
+      "tables": [
+        "showcases",
+        "usagerecords"
+      ],
+      "refuted": false
+    },
+    "museum_template|conservationandmaintenance,surfaceandphysicalreadings|Urgent treatment priority for high dust artifact": {
+      "id": 107,
+      "knowledge": "Urgent treatment priority for high dust artifact",
+      "description": "Artifact with urgent treatment priority and high dust accumulation.",
+      "definition": "TRIM(treatpriority) = 'Urgent' AND dustaccummgm2 > 3.0",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        31
+      ],
+      "tables": [
+        "conservationandmaintenance",
+        "surfaceandphysicalreadings"
+      ],
+      "refuted": false
+    },
+    "museum_template|conservationandmaintenance,surfaceandphysicalreadings|Frequent conservation for high corrosion artifact": {
+      "id": 108,
+      "knowledge": "Frequent conservation for high corrosion artifact",
+      "description": "Artifact needing frequent conservation with elevated metal corrosion rate.",
+      "definition": "conservefreq = 'Frequent' AND metalcorroderate > 0.05",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        66
+      ],
+      "tables": [
+        "conservationandmaintenance",
+        "surfaceandphysicalreadings"
+      ],
+      "refuted": false
+    },
+    "museum_template|artifactscore,riskassessments|High risk ancient artifact": {
+      "id": 109,
+      "knowledge": "High risk ancient artifact",
+      "description": "Ancient artifact with a high risk assessment level.",
+      "definition": "riskassesslevel = 'High' AND artageyears > 1000",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        40,
+        93
+      ],
+      "tables": [
+        "artifactscore",
+        "riskassessments"
+      ],
+      "refuted": false
+    },
+    "museum_template|artifactscore,riskassessments|Strict handling restriction for critical artifact": {
+      "id": 110,
+      "knowledge": "Strict handling restriction for critical artifact",
+      "description": "Critical artifact whose handling restrictions are strict.",
+      "definition": "handlerestrictions = 'Strict' AND conservestatus = 'Critical'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        39,
+        97
+      ],
+      "tables": [
+        "artifactscore",
+        "riskassessments"
+      ],
+      "refuted": false
+    },
+    "museum_template|environmentalreadingscore,showcases|High humidity in poor-seal showcase": {
+      "id": 111,
+      "knowledge": "High humidity in poor-seal showcase",
+      "description": "Showcase with poor seal condition and high relative humidity reading.",
+      "definition": "relhumidity > 50 AND sealcondition = 'Poor'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        25,
+        62
+      ],
+      "tables": [
+        "environmentalreadingscore",
+        "showcases"
+      ],
+      "refuted": false
+    }
+  },
+  "meta": {
+    "artifactsecurityaccess": {
+      "profiled_at": "2026-08-30T14:02:02.703309+00:00"
+    },
+    "conditionassessments": {
+      "profiled_at": "2026-08-30T14:02:02.703309+00:00"
+    },
+    "environmentalreadingscore,showcases": {
+      "profiled_at": "2026-08-30T14:02:02.703309+00:00"
+    },
+    "environmentalreadingscore": {
+      "profiled_at": "2026-08-30T14:02:02.703309+00:00"
+    },
+    "sensitivitydata": {
+      "profiled_at": "2026-08-30T14:02:02.703309+00:00"
+    },
+    "conditionassessments,riskassessments": {
+      "profiled_at": "2026-08-30T14:02:02.703309+00:00"
+    },
+    "conservationandmaintenance,surfaceandphysicalreadings": {
+      "profiled_at": "2026-08-30T14:02:02.703309+00:00"
+    },
+    "sensitivitydata,usagerecords": {
+      "profiled_at": "2026-08-30T14:02:02.703309+00:00"
+    },
+    "riskassessments": {
+      "profiled_at": "2026-08-30T14:02:02.703309+00:00"
+    },
+    "usagerecords": {
+      "profiled_at": "2026-08-30T14:02:02.703309+00:00"
+    },
+    "showcases": {
+      "profiled_at": "2026-08-30T14:02:02.703309+00:00"
+    },
+    "conservationandmaintenance": {
+      "profiled_at": "2026-08-30T14:02:02.703309+00:00"
+    },
+    "artifactscore": {
+      "profiled_at": "2026-08-30T14:02:02.703309+00:00"
+    },
+    "airqualityreadings": {
+      "profiled_at": "2026-08-30T14:02:02.703309+00:00"
+    },
+    "artifactratings": {
+      "profiled_at": "2026-08-30T14:02:02.703309+00:00"
+    },
+    "surfaceandphysicalreadings": {
+      "profiled_at": "2026-08-30T14:02:02.703309+00:00"
+    },
+    "exhibitionhalls": {
+      "profiled_at": "2026-08-30T14:02:02.703309+00:00"
+    },
+    "showcases,usagerecords": {
+      "profiled_at": "2026-08-30T14:02:02.703309+00:00"
+    },
+    "artifactratings,artifactsecurityaccess": {
+      "profiled_at": "2026-08-30T14:02:02.703309+00:00"
+    },
+    "artifactscore,riskassessments": {
+      "profiled_at": "2026-08-30T14:02:02.703309+00:00"
+    },
+    "lightandradiationreadings": {
+      "profiled_at": "2026-08-30T14:02:02.703309+00:00"
+    }
+  }
+}

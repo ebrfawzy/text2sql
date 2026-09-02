@@ -1,0 +1,21 @@
+# ── Azure Deployment Variables ──────────────────────────────────────
+# Copy this file to terraform.tfvars and fill in your values.
+# NEVER commit terraform.tfvars to version control.
+
+azure_location = "East US"
+environment    = "dev"
+project_name   = "text2sql"
+
+# ── LLM Configuration ──────────────────────────────────────────────
+openai_api_key = "sk-your-api-key-here"
+llm_model      = "gpt-4o-mini"
+
+# ── Database ────────────────────────────────────────────────────────
+db_uri = "sqlite:///example.db"
+# db_uri = "postgresql://user:pass@your-azure-db.postgres.database.azure.com:5432/mydb"
+
+# ── Container App Settings ─────────────────────────────────────────
+container_cpu    = 1          # CPU cores
+container_memory = "2Gi"      # Memory
+min_replicas     = 0          # 0 = scale to zero
+max_replicas     = 10

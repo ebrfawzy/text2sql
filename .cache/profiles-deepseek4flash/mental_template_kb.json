@@ -1,0 +1,893 @@
+{
+  "version": 1,
+  "profiled_at": "2026-08-30T13:52:16.614926+00:00",
+  "columns": {
+    "mental_template|assessmentbasics|Emergency assessment": {
+      "id": 0,
+      "knowledge": "Emergency assessment",
+      "description": "Assessment whose type is Emergency. Selects 25% of rows.",
+      "definition": "atype = 'Emergency'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "assessmentbasics"
+      ],
+      "refuted": false
+    },
+    "mental_template|assessmentbasics|Telehealth assessment": {
+      "id": 1,
+      "knowledge": "Telehealth assessment",
+      "description": "Assessment conducted using the Telehealth method. Selects 28% of rows.",
+      "definition": "amethod = 'Telehealth'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "assessmentbasics"
+      ],
+      "refuted": false
+    },
+    "mental_template|assessmentbasics|Valid assessment": {
+      "id": 2,
+      "knowledge": "Valid assessment",
+      "description": "Assessment whose overall assessment validity is Valid. Selects 32% of rows.",
+      "definition": "avalid = 'Valid'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "assessmentbasics"
+      ],
+      "refuted": false
+    },
+    "mental_template|assessmentbasics|Symptom-valid assessment": {
+      "id": 3,
+      "knowledge": "Symptom-valid assessment",
+      "description": "Assessment whose symptom validity is Valid. Selects 32% of rows.",
+      "definition": "symptvalid = 'Valid'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        2
+      ],
+      "tables": [
+        "assessmentbasics"
+      ],
+      "refuted": false
+    },
+    "mental_template|assessmentbasics|High response consistency assessment": {
+      "id": 4,
+      "knowledge": "High response consistency assessment",
+      "description": "Assessment whose response consistency is High. Selects 35% of rows.",
+      "definition": "respconsist = 'High'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "assessmentbasics"
+      ],
+      "refuted": false
+    },
+    "mental_template|facilities|Severe environmental stress": {
+      "id": 5,
+      "knowledge": "Severe environmental stress",
+      "description": "Facility environmental stress level is Severe. Selects 24% of rows.",
+      "definition": "envstress = 'Severe'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "facilities"
+      ],
+      "refuted": false
+    },
+    "mental_template|facilities|Severe life impact": {
+      "id": 6,
+      "knowledge": "Severe life impact",
+      "description": "Facility life impact level is Severe. Selects 27% of rows.",
+      "definition": "lifeimpact = 'Severe'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "facilities"
+      ],
+      "refuted": false
+    },
+    "mental_template|facilities|Court referral": {
+      "id": 7,
+      "knowledge": "Court referral",
+      "description": "Facility referral source is Court. Selects 20% of rows.",
+      "definition": "rsource = 'Court'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "facilities"
+      ],
+      "refuted": false
+    },
+    "mental_template|facilities|Active legal issue": {
+      "id": 8,
+      "knowledge": "Active legal issue",
+      "description": "Facility legal issue status is Ongoing or Pending. Selects 49% of rows.",
+      "definition": "leglissue = 'Ongoing' OR leglissue = 'Pending'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "facilities"
+      ],
+      "refuted": false
+    },
+    "mental_template|facilities|Improved support system": {
+      "id": 9,
+      "knowledge": "Improved support system",
+      "description": "Facility support system change is Improved. Selects 24% of rows.",
+      "definition": "ssystemchg = 'Improved'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "facilities"
+      ],
+      "refuted": false
+    },
+    "mental_template|facilities|Comprehensive community resources": {
+      "id": 10,
+      "knowledge": "Comprehensive community resources",
+      "description": "Facility community resource availability is Comprehensive. Selects 27% of rows.",
+      "definition": "json_extract(support_and_resources, '$.community_resources') = 'Comprehensive'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "facilities"
+      ],
+      "refuted": false
+    },
+    "mental_template|treatmentbasics|Medication adherence score": {
+      "id": 11,
+      "knowledge": "Medication adherence score",
+      "description": "Numeric score assigned to the medication adherence level.",
+      "definition": "CASE TRIM(medadh) WHEN 'High' THEN 0 WHEN 'Medium' THEN 1 WHEN 'Low' THEN 2 WHEN 'Non-compliant' THEN 3 END",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "treatmentbasics"
+      ],
+      "refuted": false
+    },
+    "mental_template|treatmentbasics|Medication side effect severity score": {
+      "id": 12,
+      "knowledge": "Medication side effect severity score",
+      "description": "Numeric score assigned to the medication side effect severity.",
+      "definition": "CASE TRIM(medside) WHEN 'Mild' THEN 0 WHEN 'Moderate' THEN 1 WHEN 'Severe' THEN 2 END",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "treatmentbasics"
+      ],
+      "refuted": false
+    },
+    "mental_template|treatmentbasics|Crisis intervention score (crisisint)": {
+      "id": 13,
+      "knowledge": "Crisis intervention score (crisisint)",
+      "description": "Composite crisis intervention score computed from adherence and side effect severity. Selects 17% of rows.",
+      "definition": "crisisint = (CASE TRIM(medadh) WHEN 'High' THEN 0 WHEN 'Medium' THEN 1 WHEN 'Low' THEN 2 WHEN 'Non-compliant' THEN 3 END) + (CASE TRIM(medside) WHEN 'Mild' THEN 0 WHEN 'Moderate' THEN 1 WHEN 'Severe' THEN 2 END)",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        11,
+        12
+      ],
+      "tables": [
+        "treatmentbasics"
+      ],
+      "refuted": false
+    },
+    "mental_template|treatmentbasics|High medication adherence": {
+      "id": 14,
+      "knowledge": "High medication adherence",
+      "description": "Records where medication adherence is High. Selects 26% of rows.",
+      "definition": "TRIM(medadh) = 'High'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "treatmentbasics"
+      ],
+      "refuted": false
+    },
+    "mental_template|treatmentbasics|Severe medication side effects": {
+      "id": 15,
+      "knowledge": "Severe medication side effects",
+      "description": "Records where medication side effect severity is Severe. Selects 26% of rows.",
+      "definition": "TRIM(medside) = 'Severe'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "treatmentbasics"
+      ],
+      "refuted": false
+    },
+    "mental_template|treatmentbasics|Cognitive behavioral therapy (CBT)": {
+      "id": 16,
+      "knowledge": "Cognitive behavioral therapy (CBT)",
+      "description": "Records where therapy modality is CBT. Selects 36% of rows.",
+      "definition": "TRIM(json_extract(therapy_details, '$.type')) = 'CBT'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        63
+      ],
+      "tables": [
+        "treatmentbasics"
+      ],
+      "refuted": false
+    },
+    "mental_template|patients|Employed patient": {
+      "id": 17,
+      "knowledge": "Employed patient",
+      "description": "Patient employment status is Employed. Selects 21% of rows.",
+      "definition": "empstat = 'Employed'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "patients"
+      ],
+      "refuted": false
+    },
+    "mental_template|patients|Patient with severe financial stress": {
+      "id": 18,
+      "knowledge": "Patient with severe financial stress",
+      "description": "Patient financial stress level is Severe. Selects 26% of rows.",
+      "definition": "finstress = 'Severe'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "patients"
+      ],
+      "refuted": false
+    },
+    "mental_template|patients|Patient with severe stigma impact": {
+      "id": 19,
+      "knowledge": "Patient with severe stigma impact",
+      "description": "Patient stigma impact level is Severe. Selects 28% of rows.",
+      "definition": "stigmaimp = 'Severe'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "patients"
+      ],
+      "refuted": false
+    },
+    "mental_template|patients|Homeless patient": {
+      "id": 20,
+      "knowledge": "Homeless patient",
+      "description": "Patient living arrangement or housing stability is Homeless. Selects 38% of rows.",
+      "definition": "livingarr = 'Homeless' OR housestable = 'Homeless'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "patients"
+      ],
+      "refuted": false
+    },
+    "mental_template|patients|Patient with approved insurance": {
+      "id": 21,
+      "knowledge": "Patient with approved insurance",
+      "description": "Patient insurance status is Approved. Selects 37% of rows.",
+      "definition": "insurstat = 'Approved'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "patients"
+      ],
+      "refuted": false
+    },
+    "mental_template|patients|Patient with permanent disability": {
+      "id": 22,
+      "knowledge": "Patient with permanent disability",
+      "description": "Patient disability status is Permanent. Selects 25% of rows.",
+      "definition": "disabstat = 'Permanent'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "patients"
+      ],
+      "refuted": false
+    },
+    "mental_template|patients|Medicare patient": {
+      "id": 23,
+      "knowledge": "Medicare patient",
+      "description": "Patient insurance type is Medicare. Selects 26% of rows.",
+      "definition": "insurtype = 'Medicare'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "patients"
+      ],
+      "refuted": false
+    },
+    "mental_template|patients|Bachelor-educated patient": {
+      "id": 24,
+      "knowledge": "Bachelor-educated patient",
+      "description": "Patient education level is Bachelor. Selects 21% of rows.",
+      "definition": "edulevel = 'Bachelor'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "patients"
+      ],
+      "refuted": false
+    },
+    "mental_template|encounters|Days to next appointment": {
+      "id": 25,
+      "knowledge": "Days to next appointment",
+      "description": "Number of calendar days between the encounter timestamp and the next appointment date.",
+      "definition": "julianday(nxapptdt) - julianday(SUBSTR(timemark, 1, 10))",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "encounters"
+      ],
+      "refuted": false
+    },
+    "mental_template|encounters|Timely follow-up": {
+      "id": 26,
+      "knowledge": "Timely follow-up",
+      "description": "Encounter whose next appointment occurs within 30 days. Selects 32% of rows.",
+      "definition": "julianday(nxapptdt) - julianday(SUBSTR(timemark, 1, 10)) <= 30",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        25
+      ],
+      "tables": [
+        "encounters"
+      ],
+      "refuted": false
+    },
+    "mental_template|encounters|High assessment completion": {
+      "id": 27,
+      "knowledge": "High assessment completion",
+      "description": "Encounter where the assessment completion proportion is at least 0.8. Selects 20% of rows.",
+      "definition": "assesscomplete >= 0.8",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "encounters"
+      ],
+      "refuted": false
+    },
+    "mental_template|encounters|History of missed appointments": {
+      "id": 28,
+      "knowledge": "History of missed appointments",
+      "description": "Encounter where the patient has at least one missed appointment. Selects 82% of rows.",
+      "definition": "missappt > 0",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "encounters"
+      ],
+      "refuted": false
+    },
+    "mental_template|encounters|Multiple treatment barriers": {
+      "id": 29,
+      "knowledge": "Multiple treatment barriers",
+      "description": "Encounter where the treatment barrier type is Multiple. Selects 19% of rows.",
+      "definition": "txbarrier = 'Multiple'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "encounters"
+      ],
+      "refuted": false
+    },
+    "mental_template|assessmentsymptomsandrisk|GAD-7 anxiety score": {
+      "id": 30,
+      "knowledge": "GAD-7 anxiety score",
+      "description": "GAD-7 anxiety score (0-21) extracted from the mental health scores JSON object",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "assessmentsymptomsandrisk"
+      ],
+      "refuted": false
+    },
+    "mental_template|assessmentsymptomsandrisk|PHQ-9 depression score": {
+      "id": 32,
+      "knowledge": "PHQ-9 depression score",
+      "description": "PHQ-9 depression score (0-27) extracted from the mental health scores JSON object",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "assessmentsymptomsandrisk"
+      ],
+      "refuted": false
+    },
+    "mental_template|assessmentsymptomsandrisk|Suicide risk rating": {
+      "id": 34,
+      "knowledge": "Suicide risk rating",
+      "description": "Overall suicide risk rating derived from the suicidal ideation category Selects 27% of rows.",
+      "definition": "suicrisk = CASE TRIM(suicideation) WHEN 'Passive' THEN 'Low' WHEN 'Active' THEN 'Medium' WHEN 'Plan' THEN 'High' WHEN 'Intent' THEN 'Severe' END",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "assessmentsymptomsandrisk"
+      ],
+      "refuted": false
+    },
+    "mental_template|assessmentsymptomsandrisk|Substance use severity rating": {
+      "id": 35,
+      "knowledge": "Substance use severity rating",
+      "description": "Substance use severity rating derived from primary substance use and frequency Selects 26% of rows.",
+      "definition": "subusesev = CASE WHEN TRIM(subusefreq) = 'Daily' OR TRIM(subuse) = 'Opioids' OR TRIM(subuse) = 'Multiple' THEN 'Severe' WHEN TRIM(subusefreq) = 'Regular' OR TRIM(subuse) = 'Alcohol' THEN 'Moderate' ELSE 'Mild' END",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "assessmentsymptomsandrisk"
+      ],
+      "refuted": false
+    },
+    "mental_template|assessmentsymptomsandrisk|Symptom scores": {
+      "id": 36,
+      "knowledge": "Symptom scores",
+      "description": "Array of eight symptom scores extracted from the mental health scores JSON object",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "assessmentsymptomsandrisk"
+      ],
+      "refuted": false
+    },
+    "mental_template|assessmentsocialanddiagnosis|Stable recovery status": {
+      "id": 37,
+      "knowledge": "Stable recovery status",
+      "description": "Recovery status is stable. Selects 27% of rows.",
+      "definition": "recstatus = 'Stable'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "assessmentsocialanddiagnosis"
+      ],
+      "refuted": false
+    },
+    "mental_template|assessmentsocialanddiagnosis|Relapse recovery status": {
+      "id": 38,
+      "knowledge": "Relapse recovery status",
+      "description": "Recovery status is relapse. Selects 25% of rows.",
+      "definition": "recstatus = 'Relapse'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "assessmentsocialanddiagnosis"
+      ],
+      "refuted": false
+    },
+    "mental_template|assessmentsocialanddiagnosis|Severe functional impairment": {
+      "id": 39,
+      "knowledge": "Severe functional impairment",
+      "description": "Functional impairment level is severe. Selects 25% of rows.",
+      "definition": "funcimp = 'Severe'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "assessmentsocialanddiagnosis"
+      ],
+      "refuted": false
+    },
+    "mental_template|assessmentsocialanddiagnosis|Strong social support": {
+      "id": 40,
+      "knowledge": "Strong social support",
+      "description": "Social support level is strong. Selects 24% of rows.",
+      "definition": "socsup = 'Strong'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "assessmentsocialanddiagnosis"
+      ],
+      "refuted": false
+    },
+    "mental_template|assessmentsocialanddiagnosis|High family involvement": {
+      "id": 41,
+      "knowledge": "High family involvement",
+      "description": "Family involvement level is high. Selects 25% of rows.",
+      "definition": "faminv = 'High'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "assessmentsocialanddiagnosis"
+      ],
+      "refuted": false
+    },
+    "mental_template|assessmentsocialanddiagnosis|Disabled work functioning": {
+      "id": 42,
+      "knowledge": "Disabled work functioning",
+      "description": "Work functioning level is disabled. Selects 25% of rows.",
+      "definition": "workfunc = 'Disabled'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "assessmentsocialanddiagnosis"
+      ],
+      "refuted": false
+    },
+    "mental_template|assessmentsocialanddiagnosis|Isolated social functioning": {
+      "id": 43,
+      "knowledge": "Isolated social functioning",
+      "description": "Social functioning level is isolated. Selects 25% of rows.",
+      "definition": "socfunc = 'Isolated'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "assessmentsocialanddiagnosis"
+      ],
+      "refuted": false
+    },
+    "mental_template|assessmentsocialanddiagnosis|Dependent activities of daily living (ADL)": {
+      "id": 44,
+      "knowledge": "Dependent activities of daily living (ADL)",
+      "description": "ADL functioning is dependent. Selects 24% of rows.",
+      "definition": "adlfunc = 'Dependent'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "assessmentsocialanddiagnosis"
+      ],
+      "refuted": false
+    },
+    "mental_template|assessmentsocialanddiagnosis|Post-traumatic stress disorder (PTSD) primary diagnosis": {
+      "id": 45,
+      "knowledge": "Post-traumatic stress disorder (PTSD) primary diagnosis",
+      "description": "Primary diagnosis is PTSD. Selects 22% of rows.",
+      "definition": "primdx = 'PTSD'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "assessmentsocialanddiagnosis"
+      ],
+      "refuted": false
+    },
+    "mental_template|assessmentsocialanddiagnosis|Substance use secondary diagnosis": {
+      "id": 46,
+      "knowledge": "Substance use secondary diagnosis",
+      "description": "Secondary diagnosis is substance use. Selects 19% of rows.",
+      "definition": "secdx = 'Substance Use'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "assessmentsocialanddiagnosis"
+      ],
+      "refuted": false
+    },
+    "mental_template|treatmentoutcomes|Treatment progress rating (THPROG)": {
+      "id": 47,
+      "knowledge": "Treatment progress rating (THPROG)",
+      "description": "Treatment progress is derived from the treatment response rating. Selects 38% of rows.",
+      "definition": "TRIM(thprog) = CASE WHEN TRIM(txresp) = 'Good' THEN 'Good' WHEN TRIM(txresp) = 'Partial' THEN 'Fair' WHEN TRIM(txresp) = 'Poor' THEN 'Poor' END",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "treatmentoutcomes"
+      ],
+      "refuted": false
+    },
+    "mental_template|treatmentoutcomes|Goal status agreement (RECGOALSTAT)": {
+      "id": 48,
+      "knowledge": "Goal status agreement (RECGOALSTAT)",
+      "description": "The recorded goal status rating is the same as the treatment goal status. Selects 25% of rows.",
+      "definition": "TRIM(recgoalstat) = TRIM(txgoalstat)",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "treatmentoutcomes"
+      ],
+      "refuted": false
+    },
+    "mental_template|treatmentoutcomes|Treatment satisfaction rating (TXSAT)": {
+      "id": 49,
+      "knowledge": "Treatment satisfaction rating (TXSAT)",
+      "description": "The treatment satisfaction rating is categorized from the satisfaction score. Selects 26% of rows.",
+      "definition": "TRIM(txsat) = CASE WHEN satscr >= 8 THEN 'High' WHEN satscr >= 5 THEN 'Medium' WHEN satscr >= 3 THEN 'Low' ELSE 'Dissatisfied' END",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "treatmentoutcomes"
+      ],
+      "refuted": false
+    },
+    "mental_template|treatmentoutcomes|Significant clinical improvement (SIGIMPROV)": {
+      "id": 50,
+      "knowledge": "Significant clinical improvement (SIGIMPROV)",
+      "description": "Both symptom improvement and functional improvement are rated significant. Selects 7% of rows.",
+      "definition": "TRIM(sympimp) = 'Significant' AND TRIM(funcimpv) = 'Significant'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "treatmentoutcomes"
+      ],
+      "refuted": false
+    },
+    "mental_template|treatmentoutcomes|Successful treatment outcome (TXSUCCESS)": {
+      "id": 51,
+      "knowledge": "Successful treatment outcome (TXSUCCESS)",
+      "description": "Favorable progress, response, goal achievement, symptom and functional improvement, and mild side-effect burden.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        47,
+        48,
+        50
+      ],
+      "tables": [
+        "treatmentoutcomes"
+      ],
+      "refuted": false
+    },
+    "mental_template|treatmentoutcomes|Treatment non-compliance (NONCOMPLIANT)": {
+      "id": 52,
+      "knowledge": "Treatment non-compliance (NONCOMPLIANT)",
+      "description": "Treatment adherence or treatment engagement is rated non-compliant. Selects 42% of rows.",
+      "definition": "TRIM(txadh) = 'Non-compliant' OR TRIM(txeng) = 'Non-compliant'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "treatmentoutcomes"
+      ],
+      "refuted": false
+    },
+    "mental_template|treatmentoutcomes|Strong therapeutic alliance (STRONGALLIANCE)": {
+      "id": 53,
+      "knowledge": "Strong therapeutic alliance (STRONGALLIANCE)",
+      "description": "The therapeutic alliance is rated strong. Selects 25% of rows.",
+      "definition": "TRIM(theralliance) = 'Strong'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "treatmentoutcomes"
+      ],
+      "refuted": false
+    },
+    "mental_template|clinicians|Clinician confidence level (CLINCONF)": {
+      "id": 54,
+      "knowledge": "Clinician confidence level (CLINCONF)",
+      "description": "Clinician confidence level derived from documentation status. Selects 32% of rows.",
+      "definition": "clinconf = CASE WHEN docustat = 'Complete' THEN 'High' WHEN docustat = 'Incomplete' THEN 'Medium' ELSE 'Low' END",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "clinicians"
+      ],
+      "refuted": false
+    },
+    "mental_template|clinicians|Care coordination level (CARECOORD)": {
+      "id": 55,
+      "knowledge": "Care coordination level (CARECOORD)",
+      "description": "Level of care coordination determined by referral need. Selects 35% of rows.",
+      "definition": "carecoord = CASE WHEN refneed = 'Specialist' THEN 'Intensive' WHEN refneed = 'Testing' THEN 'Limited' ELSE 'Regular' END",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "clinicians"
+      ],
+      "refuted": false
+    },
+    "mental_template|clinicians|Follow-up frequency (FUPFREQ)": {
+      "id": 56,
+      "knowledge": "Follow-up frequency (FUPFREQ)",
+      "description": "Follow-up frequency determined by follow-up type. Selects 26% of rows.",
+      "definition": "fupfreq = CASE WHEN fuptype = 'Urgent' THEN 'Weekly' WHEN fuptype = 'Therapy' THEN 'Biweekly' WHEN fuptype = 'Medication Check' THEN 'Monthly' ELSE 'Quarterly' END",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "clinicians"
+      ],
+      "refuted": false
+    },
+    "mental_template|clinicians|Referral need type (REFNEED)": {
+      "id": 57,
+      "knowledge": "Referral need type (REFNEED)",
+      "description": "Referral need inferred from assessment limitation. Selects 29% of rows.",
+      "definition": "refneed = CASE WHEN assesslim = 'Cognitive' THEN 'Testing' WHEN assesslim = 'Language' THEN 'Specialist' ELSE 'Services' END",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "clinicians"
+      ],
+      "refuted": false
+    },
+    "mental_template|clinicians|Billing code for follow-up type (BILLCODE)": {
+      "id": 58,
+      "knowledge": "Billing code for follow-up type (BILLCODE)",
+      "description": "Billing code mapped from follow-up type. Selects 1% of rows.",
+      "definition": "billcode = CASE WHEN fuptype = 'Therapy' THEN 'CPT90895' WHEN fuptype = 'Medication Check' THEN 'CPT90752' WHEN fuptype = 'Urgent' THEN 'CPT90879' ELSE 'CPT90210' END",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "clinicians"
+      ],
+      "refuted": false
+    },
+    "mental_template|assessmentbasics,patients|Emergency assessment of permanently disabled patient": {
+      "id": 59,
+      "knowledge": "Emergency assessment of permanently disabled patient",
+      "description": "Assessment recorded as Emergency for a patient whose disability status is Permanent.",
+      "definition": "atype = 'Emergency' AND disabstat = 'Permanent'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        0,
+        22
+      ],
+      "tables": [
+        "assessmentbasics",
+        "patients"
+      ],
+      "refuted": false
+    },
+    "mental_template|assessmentbasics,patients|Telehealth assessment of patient with severe stigma impact": {
+      "id": 60,
+      "knowledge": "Telehealth assessment of patient with severe stigma impact",
+      "description": "Telehealth assessment delivered to a patient with Severe stigma impact.",
+      "definition": "amethod = 'Telehealth' AND stigmaimp = 'Severe'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        1,
+        19
+      ],
+      "tables": [
+        "assessmentbasics",
+        "patients"
+      ],
+      "refuted": false
+    },
+    "mental_template|clinicians,facilities|Court-referred facility with limited care coordination": {
+      "id": 61,
+      "knowledge": "Court-referred facility with limited care coordination",
+      "description": "Facility referred from Court and its clinician care coordination is Limited.",
+      "definition": "rsource = 'Court' AND carecoord = 'Limited'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        7,
+        55
+      ],
+      "tables": [
+        "clinicians",
+        "facilities"
+      ],
+      "refuted": false
+    },
+    "mental_template|assessmentbasics,treatmentbasics|Valid assessment with high medication adherence": {
+      "id": 62,
+      "knowledge": "Valid assessment with high medication adherence",
+      "description": "Assessment is Valid and the linked treatment record has High medication adherence.",
+      "definition": "avalid = 'Valid' AND medadh = 'High'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        2,
+        14
+      ],
+      "tables": [
+        "assessmentbasics",
+        "treatmentbasics"
+      ],
+      "refuted": false
+    },
+    "mental_template|facilities,treatmentbasics|Comprehensive community resources with cognitive behavioral therapy (CBT)": {
+      "id": 63,
+      "knowledge": "Comprehensive community resources with cognitive behavioral therapy (CBT)",
+      "description": "Facility has Comprehensive community resources and the treatment episode uses CBT.",
+      "definition": "json_extract(support_and_resources, '$.community_resources') = 'Comprehensive' AND json_extract(therapy_details, '$.type') = 'CBT'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        10,
+        16
+      ],
+      "tables": [
+        "facilities",
+        "treatmentbasics"
+      ],
+      "refuted": false
+    },
+    "mental_template|assessmentsocialanddiagnosis,assessmentsymptomsandrisk|High suicide risk with strong social support": {
+      "id": 64,
+      "knowledge": "High suicide risk with strong social support",
+      "description": "Symptom and risk assessment records High suicide risk while the social assessment reports Strong social support.",
+      "definition": "suicrisk = 'High' AND socsup = 'Strong'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        34,
+        40
+      ],
+      "tables": [
+        "assessmentsocialanddiagnosis",
+        "assessmentsymptomsandrisk"
+      ],
+      "refuted": false
+    },
+    "mental_template|assessmentsocialanddiagnosis,assessmentsymptomsandrisk|Severe substance use with severe functional impairment": {
+      "id": 65,
+      "knowledge": "Severe substance use with severe functional impairment",
+      "description": "Assessment has Severe substance use severity and Severe functional impairment.",
+      "definition": "subusesev = 'Severe' AND funcimp = 'Severe'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        35,
+        39
+      ],
+      "tables": [
+        "assessmentsocialanddiagnosis",
+        "assessmentsymptomsandrisk"
+      ],
+      "refuted": false
+    },
+    "mental_template|assessmentsocialanddiagnosis,treatmentbasics|Crisis intervention intensity per prior hospitalization": {
+      "id": 66,
+      "knowledge": "Crisis intervention intensity per prior hospitalization",
+      "description": "Crisis intervention score divided by the number of previous hospitalizations.",
+      "definition": "crisisint / prevhosp",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        13
+      ],
+      "tables": [
+        "assessmentsocialanddiagnosis",
+        "treatmentbasics"
+      ],
+      "refuted": false
+    },
+    "mental_template|encounters,treatmentbasics|Missed appointments per month of therapy": {
+      "id": 67,
+      "knowledge": "Missed appointments per month of therapy",
+      "description": "Number of missed appointments divided by therapy duration in months.",
+      "definition": "missappt / json_extract(therapy_details, '$.duration_months')",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "encounters",
+        "treatmentbasics"
+      ],
+      "refuted": false
+    }
+  },
+  "meta": {
+    "facilities,treatmentbasics": {
+      "profiled_at": "2026-08-30T13:52:16.614926+00:00"
+    },
+    "assessmentbasics,treatmentbasics": {
+      "profiled_at": "2026-08-30T13:52:16.614926+00:00"
+    },
+    "facilities": {
+      "profiled_at": "2026-08-30T13:52:16.614926+00:00"
+    },
+    "clinicians,facilities": {
+      "profiled_at": "2026-08-30T13:52:16.614926+00:00"
+    },
+    "assessmentsymptomsandrisk": {
+      "profiled_at": "2026-08-30T13:52:16.614926+00:00"
+    },
+    "assessmentbasics,patients": {
+      "profiled_at": "2026-08-30T13:52:16.614926+00:00"
+    },
+    "assessmentsocialanddiagnosis,treatmentbasics": {
+      "profiled_at": "2026-08-30T13:52:16.614926+00:00"
+    },
+    "assessmentbasics": {
+      "profiled_at": "2026-08-30T13:52:16.614926+00:00"
+    },
+    "treatmentbasics": {
+      "profiled_at": "2026-08-30T13:52:16.614926+00:00"
+    },
+    "patients": {
+      "profiled_at": "2026-08-30T13:52:16.614926+00:00"
+    },
+    "encounters": {
+      "profiled_at": "2026-08-30T13:52:16.614926+00:00"
+    },
+    "assessmentsocialanddiagnosis,assessmentsymptomsandrisk": {
+      "profiled_at": "2026-08-30T13:52:16.614926+00:00"
+    },
+    "encounters,treatmentbasics": {
+      "profiled_at": "2026-08-30T13:52:16.614926+00:00"
+    },
+    "assessmentsocialanddiagnosis": {
+      "profiled_at": "2026-08-30T13:52:16.614926+00:00"
+    },
+    "treatmentoutcomes": {
+      "profiled_at": "2026-08-30T13:52:16.614926+00:00"
+    },
+    "clinicians": {
+      "profiled_at": "2026-08-30T13:52:16.614926+00:00"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{# version: v1, description: Knowledge-base generation rules — the cached prefix both knowledge prompts share #}
+You derive the domain knowledge a question would rely on, as JSON
+
+- "knowledge": the term a question would use, plus its acronym if it has one
+- "description": one line, what the term means
+- "definition": one plain-SQL expression over the named columns: no LaTeX, no prose, no
+  WHERE. Either an equality between two expressions or a condition, with every text literal
+  quoted and spelled as that column stores it; a space-padded column stores trailing spaces,
+  so compare it as TRIM(col) = 'value'. A bare column name is that column's description, not
+  knowledge
+- An entry is a metric a question asks for by name, stored or not; a threshold on one raw
+  column counts only as a named cohort's condition, and pick one that splits the data
+- "type": calculation_knowledge (a formula) | domain_knowledge (a cohort rule)
+- "children": the terms this definition builds on, by name
+
+Return ONLY a JSON array, no other text
+[{"knowledge": "<term> (<ACRONYM>)", "description": "<one line>",
+  "definition": "<colA> / <colB> * 100", "type": "calculation_knowledge", "children": []},
+ {"knowledge": "<term>", "description": "<one line>", "definition": "<colC> = <colD> * 12",
+  "type": "calculation_knowledge", "children": ["<term>"]},
+ {"knowledge": "<term>", "description": "<one line>",
+  "definition": "<colE> > 0.8 AND <colF> IS NOT NULL", "type": "domain_knowledge", "children": []}]

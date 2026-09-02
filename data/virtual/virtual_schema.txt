@@ -1,0 +1,291 @@
+CREATE TABLE "additionalnotes" (
+notesreg text(20) NOT NULL,
+notesretainpivot text(20) NULL,
+noteinfo TEXT NULL,
+    PRIMARY KEY (notesreg),
+    FOREIGN KEY (notesretainpivot) REFERENCES retentionandinfluence(retreg)
+);
+First 3 rows:
+notesreg    notesretainpivot    noteinfo
+NOTE_62WV   RET_M9GTT           Take cut east.
+NOTE_FCBF   RET_L8K68
+NOTE_XD4E   RET_4S9OK
+...
+
+CREATE TABLE "commerceandcollection" (
+commercereg text(20) NOT NULL,
+commerceengagepivot text(20) NULL,
+commercememberpivot text(20) NULL,
+merchbuy integer(16) NULL,
+merchspendusd real(10,2) NULL,
+digown integer(32) NULL,
+physown integer(32) NULL,
+collcomprate real(5,1) NULL,
+tradelevel TEXT NULL,
+    PRIMARY KEY (commercereg),
+    FOREIGN KEY (commercememberpivot) REFERENCES membershipandspending(memberreg),
+    FOREIGN KEY (commerceengagepivot) REFERENCES engagement(engagereg)
+);
+First 3 rows:
+commercereg    commerceengagepivot    commercememberpivot      merchbuy    merchspendusd    digown    physown    collcomprate  tradelevel
+COM_02Q3V      ENG_9RLZH              MEM_QCM5T                      37           544.1         80         45            51.8  High
+COM_5C1C3      ENG_FGNJL              MEM_KGCEJ                       0           626.15        69         34            77.9  Low
+COM_Z1O8V      ENG_68S16              MEM_P91DJ                      35           476.54        62         28            24.2  Low
+...
+
+CREATE TABLE "engagement" (
+engagereg text(20) NOT NULL,
+engageactivitypivot text(20) NULL,
+engagememberpivot text(20) NULL,
+socintscore real(6,2) NULL,
+engrate real(6,3) NULL,
+actfreq TEXT NULL,
+peaktime TEXT NULL,
+actdayswk integer(16) NULL,
+avgsesscount integer(16) NULL,
+contpref TEXT NULL,
+langpref TEXT NULL,
+transuse TEXT NULL,
+    PRIMARY KEY (engagereg),
+    FOREIGN KEY (engagememberpivot) REFERENCES membershipandspending(memberreg),
+    FOREIGN KEY (engageactivitypivot) REFERENCES interactions(activityreg)
+);
+First 3 rows:
+engagereg    engageactivitypivot    engagememberpivot      socintscore    engrate  actfreq    peaktime      actdayswk    avgsesscount  contpref    langpref    transuse
+ENG_9RLZH    FI537855               MEM_QCM5T                     13.1      0.522  Weekly     Afternoon             7              20  Music       Both        Always
+ENG_FGNJL    FI528045               MEM_KGCEJ                     86.2      0.64   Monthly    Afternoon             6               9  Dance       Original    Sometimes
+ENG_68S16    FI137526               MEM_P91DJ                     98.8      0.878  Weekly     Evening               1              13  Gaming      Translated  Sometimes
+...
+
+CREATE TABLE "eventsandclub" (
+eventsreg text(20) NOT NULL,
+eventssocialpivot text(20) NULL,
+eventsmemberpivot text(20) NULL,
+clubjdate TEXT NULL,
+participation_summary TEXT NULL,
+    PRIMARY KEY (eventsreg),
+    FOREIGN KEY (eventssocialpivot) REFERENCES socialcommunity(socialreg),
+    FOREIGN KEY (eventsmemberpivot) REFERENCES membershipandspending(memberreg)
+);
+First 3 rows:
+eventsreg    eventssocialpivot    eventsmemberpivot    clubjdate    participation_summary
+EVT_XG51P    SOC_7GA9A            MEM_QCM5T            2023-07-31   {"club": {"clubstat": "Non-member", "clubcontrib": "Medium"}, "engagement": {"camppart": "Selective", "votepartrate": 9.2}, "event_attendance": {"concatt": 17, "evtpart": "Regular", "meetatt": 8, "onevtatt": 12, "offevtatt": 6}}
+EVT_BVAXK    SOC_GIW1H            MEM_KGCEJ            2023-04-07   {"club": {"clubstat": "Non-member", "clubcontrib": "Outstanding"}, "engagement": {"camppart": "Selective", "votepartrate": 34.4}, "event_attendance": {"concatt": 26, "evtpart": "Regular", "meetatt": 10, "onevtatt": 31, "offevtatt": 1}}
+EVT_0C7WE    SOC_8ILAQ            MEM_P91DJ            2023-04-10   {"club": {"clubstat": "Premium", "clubcontrib": "Outstanding"}, "engagement": {"camppart": "Selective", "votepartrate": 38.0}, "event_attendance": {"concatt": 4, "evtpart": "Rare", "meetatt": 4, "onevtatt": 94, "offevtatt": 6}}
+...
+
+CREATE TABLE "fans" (
+userregistry text(20) NOT NULL,
+nicklabel text(100) NULL,
+regmoment TEXT NULL,
+tierstep integer(16) NULL,
+ptsval integer(32) NULL,
+statustag TEXT NULL,
+personal_attributes TEXT NULL,
+    PRIMARY KEY (userregistry)
+);
+First 3 rows:
+userregistry    nicklabel    regmoment      tierstep    ptsval  statustag    personal_attributes
+FAN27103        kmcgee       2023-05-22           52     47635  VIP          {"preferences": {"langpref": "Korean", "occupath": "Student", "interestset": "Art"}, "demographics": {"loctown": "Youngview", "agecount": 39, "locnation": "Botswana", "gendertype": "Female"}}
+FAN55719        brownandrew  2024-07-22           52     93976  Inactive     {"preferences": {"langpref": "Multiple", "occupath": "Professional", "interestset": "Technology"}, "demographics": {"loctown": "Patelbury", "agecount": 55, "locnation": "United States Minor Outlying Islands", "gendertype": "Other"}}
+FAN75581        lauren67     2024-01-23           41     72104  VIP          {"preferences": {"langpref": "Korean", "occupath": "Professional", "interestset": "Anime"}, "demographics": {"loctown": "Virginiabury", "agecount": 38, "locnation": "United States Minor Outlying Islands", "gendertype": "Male"}}
+...
+
+CREATE TABLE "interactions" (
+activityreg text(20) NOT NULL,
+timemark text(6) NULL,
+interactfanpivot text(20) NULL,
+interactidolpivot text(20) NULL,
+actkind TEXT NULL,
+actplat TEXT NULL,
+platused TEXT NULL,
+devtype TEXT NULL,
+appver text(20) NULL,
+giftfreq TEXT NULL,
+gifttot integer(32) NULL,
+giftvalusd real(10,2) NULL,
+favgifttag TEXT NULL,
+engagement_metrics TEXT NULL,
+    PRIMARY KEY (activityreg),
+    FOREIGN KEY (interactidolpivot) REFERENCES virtualidols(entityreg),
+    FOREIGN KEY (interactfanpivot) REFERENCES fans(userregistry)
+);
+First 3 rows:
+activityreg    timemark                    interactfanpivot    interactidolpivot    actkind    actplat       platused    devtype    appver    giftfreq      gifttot    giftvalusd  favgifttag    engagement_metrics
+FI537855       2024-12-10 10:48:19.557855  FAN55719            VI1517               Vote       YouTube       Tablet      Windows    3.4.0     Often             373        663.63  Limited       {"session": {"liveatt": 53, "watchhrs": 359.1, "sessdurmin": 44}, "chat_activity": {"chatmsg": 905, "msgtone": "Negative", "chatlang": "Mixed", "stkcount": 29, "emojicount": 323}}
+FI528045       2024-11-22 11:17:12.560133  FAN75581            VI8705               Comment    Twitter       Mobile      iOS        4.6.7     Often             867       4710.36  Custom        {"session": {"liveatt": 21, "watchhrs": 169.9, "sessdurmin": 79}, "chat_activity": {"chatmsg": 539, "msgtone": "Negative", "chatlang": "Translation", "stkcount": 104, "emojicount": 461}}
+FI137526       2024-08-19 10:13:29.560133  FAN27370            VI6535               Vote       Official App  Console     Android    3.9.2     Rarely            494       3270.78  Custom        {"session": {"liveatt": 73, "watchhrs": 388.1, "sessdurmin": 14}, "chat_activity": {"chatmsg": 424, "msgtone": "Positive", "chatlang": "Mixed", "stkcount": 122, "emojicount": 306}}
+...
+
+CREATE TABLE "loyaltyandachievements" (
+loyaltyreg text(20) NOT NULL,
+loyaltyeventspivot text(20) NULL,
+loyaltyengagepivot text(20) NULL,
+rankpos integer(32) NULL,
+inflscore real(5,2) NULL,
+reputelv TEXT NULL,
+trustval real(4,1) NULL,
+reward_progress TEXT NULL,
+    PRIMARY KEY (loyaltyreg),
+    FOREIGN KEY (loyaltyeventspivot) REFERENCES eventsandclub(eventsreg),
+    FOREIGN KEY (loyaltyengagepivot) REFERENCES engagement(engagereg)
+);
+First 3 rows:
+loyaltyreg    loyaltyeventspivot    loyaltyengagepivot      rankpos    inflscore  reputelv      trustval  reward_progress
+LOY_SIYC9     EVT_XG51P             ENG_9RLZH                  3076         23.2  Respected         38.4  {"loyalty": {"loypts": 36460, "rewtier": "Bronze"}, "achievements": {"achcount": 35, "badgecoll": 13, "spectitles": 9}}
+LOY_NHSG0     EVT_BVAXK             ENG_FGNJL                  6796         42.1  Respected         32.7  {"loyalty": {"loypts": 39494, "rewtier": "Platinum"}, "achievements": {"achcount": 10, "badgecoll": 1, "spectitles": 1}}
+LOY_GCPGX     EVT_0C7WE             ENG_68S16                  6000         35.3  Elite             66.9  {"loyalty": {"loypts": 46199, "rewtier": "Bronze"}, "achievements": {"achcount": 5, "badgecoll": 1, "spectitles": 6}}
+...
+
+CREATE TABLE "membershipandspending" (
+memberreg text(20) NOT NULL,
+memberfanpivot text(20) NULL,
+membkind TEXT NULL,
+membdays integer(16) NULL,
+spendusd real(10,2) NULL,
+spendfreq TEXT NULL,
+paymethod TEXT NULL,
+    PRIMARY KEY (memberreg),
+    FOREIGN KEY (memberfanpivot) REFERENCES fans(userregistry)
+);
+First 3 rows:
+memberreg    memberfanpivot    membkind      membdays    spendusd  spendfreq    paymethod
+MEM_QCM5T    FAN55719          Free               194     6265.46  Occasional   Credit Card
+MEM_KGCEJ    FAN75581          Basic              798     9993.63  Weekly       Mobile Payment
+MEM_P91DJ    FAN27370          Diamond             36     6280.49  Occasional   PayPal
+...
+
+CREATE TABLE "moderationandcompliance" (
+modreg text(20) NOT NULL,
+moderationinteractpivot text(20) NULL,
+moderationsocialpivot text(20) NULL,
+rptcount integer(16) NULL,
+warncount integer(16) NULL,
+violhist TEXT NULL,
+modstat TEXT NULL,
+contcomp TEXT NULL,
+ageverif TEXT NULL,
+payverif TEXT NULL,
+idverif text(50) NULL,
+    PRIMARY KEY (modreg),
+    FOREIGN KEY (moderationsocialpivot) REFERENCES socialcommunity(socialreg),
+    FOREIGN KEY (moderationinteractpivot) REFERENCES interactions(activityreg)
+);
+First 3 rows:
+modreg     moderationinteractpivot    moderationsocialpivot      rptcount    warncount  violhist    modstat        contcomp    ageverif      payverif    idverif
+MOD_TK0G3  FI537855                   SOC_7GA9A                         6            3  Minor       Warning        Warning     Not Required  Pending     Verified
+MOD_OU2ND  FI528045                   SOC_GIW1H                         2            0  Major       Warning        Violation   Verified      Pending     N/A
+MOD_IZ7D7  FI137526                   SOC_8ILAQ                         9            2  Minor       Good Standing  Compliant   Pending       Pending     Pending
+...
+
+CREATE TABLE "preferencesandsettings" (
+prefreg text(20) NOT NULL,
+preferencesmemberpivot text(20) NULL,
+preferencessocialpivot text(20) NULL,
+privset TEXT NULL,
+dsconsent TEXT NULL,
+notifpref TEXT NULL,
+commpref TEXT NULL,
+markpref TEXT NULL,
+langset TEXT NULL,
+accessset TEXT NULL,
+devcount integer(16) NULL,
+logfreq TEXT NULL,
+lastlogdt TEXT NULL,
+sesscount integer(32) NULL,
+timehrs integer(32) NULL,
+avgdailymin integer(16) NULL,
+peaksess integer(16) NULL,
+intconsist real(3,2) NULL,
+platstable real(3,2) NULL,
+connqual TEXT NULL,
+    PRIMARY KEY (prefreg),
+    FOREIGN KEY (preferencessocialpivot) REFERENCES socialcommunity(socialreg),
+    FOREIGN KEY (preferencesmemberpivot) REFERENCES membershipandspending(memberreg)
+);
+First 3 rows:
+prefreg    preferencesmemberpivot    preferencessocialpivot    privset       dsconsent    notifpref    commpref    markpref    langset     accessset      devcount  logfreq    lastlogdt      sesscount    timehrs    avgdailymin    peaksess    intconsist    platstable  connqual
+PREF_DPIK  MEM_QCM5T                 SOC_7GA9A                 Private       Partial      Important    SMS         Opted In    Translated  Standard              1  Rare       2025-02-06           281       3833            334           5          0.79          0.72  Poor
+PREF_S4J5  MEM_KGCEJ                 SOC_GIW1H                 Friends Only  Partial      Important    Email       Opted In    Auto        Custom                5  Rare       2025-02-16           678       2427            315           5          0.59          0.44  Excellent
+PREF_0XSU  MEM_P91DJ                 SOC_8ILAQ                 Private       Minimal      Important    SMS         Selective   Auto        Enhanced              4  Monthly    2025-01-25           108       1383            295           2          0.2           0.53  Good
+...
+
+CREATE TABLE "retentionandinfluence" (
+retreg text(20) NOT NULL,
+retainengagepivot text(20) NULL,
+retainloyaltypivot text(20) NULL,
+churnflag TEXT NULL,
+reactcount integer(16) NULL,
+refcount integer(16) NULL,
+contreach integer(32) NULL,
+viralcont integer(16) NULL,
+trendpart integer(16) NULL,
+hashuse integer(16) NULL,
+    PRIMARY KEY (retreg),
+    FOREIGN KEY (retainloyaltypivot) REFERENCES loyaltyandachievements(loyaltyreg),
+    FOREIGN KEY (retainengagepivot) REFERENCES engagement(engagereg)
+);
+First 3 rows:
+retreg     retainengagepivot    retainloyaltypivot    churnflag      reactcount    refcount    contreach    viralcont    trendpart    hashuse
+RET_M9GTT  ENG_9RLZH            LOY_SIYC9             Medium                  3           0        19013            3           17        651
+RET_L8K68  ENG_FGNJL            LOY_NHSG0             High                    2           6        55638            5           50        435
+RET_4S9OK  ENG_68S16            LOY_GCPGX             Medium                  1           9        70438            2           48          5
+...
+
+CREATE TABLE "socialcommunity" (
+socialreg text(20) NOT NULL,
+socialengagepivot text(20) NULL,
+socialcommercepivot text(20) NULL,
+collabcount integer(16) NULL,
+community_engagement TEXT NULL,
+    PRIMARY KEY (socialreg),
+    FOREIGN KEY (socialengagepivot) REFERENCES engagement(engagereg),
+    FOREIGN KEY (socialcommercepivot) REFERENCES commerceandcollection(commercereg)
+);
+First 3 rows:
+socialreg    socialengagepivot    socialcommercepivot      collabcount  community_engagement
+SOC_7GA9A    ENG_9RLZH            COM_02Q3V                          6  {"network": {"socnetsz": 851, "fingcount": 940, "follcount": 935, "friendcon": 140}, "content_creation": {"ugcval": 63, "artsubs": 10, "ficsubs": 3, "commcontrib": "Low", "contqualrate": 2.6, "coverperfcnt": 20, "contcreatestat": "Active"}, "group_involvement": {"grpmemb": 6, "grprole": "Member"}}
+SOC_GIW1H    ENG_FGNJL            COM_5C1C3                         14  {"network": {"socnetsz": 753, "fingcount": 143, "follcount": 4068, "friendcon": 450}, "content_creation": {"ugcval": 6, "artsubs": 34, "ficsubs": 1, "commcontrib": "Low", "contqualrate": 1.9, "coverperfcnt": 30, "contcreatestat": "Active"}, "group_involvement": {"grpmemb": 8, "grprole": "Member"}}
+SOC_8ILAQ    ENG_68S16            COM_Z1O8V                         16  {"network": {"socnetsz": 421, "fingcount": 132, "follcount": 286, "friendcon": 449}, "content_creation": {"ugcval": 43, "artsubs": 31, "ficsubs": 7, "commcontrib": "Low", "contqualrate": 0.5, "coverperfcnt": 2, "contcreatestat": "Occasional"}, "group_involvement": {"grpmemb": 2, "grprole": "Member"}}
+...
+
+CREATE TABLE "supportandfeedback" (
+supportreg text(20) NOT NULL,
+supportinteractpivot text(20) NULL,
+supportprefpivot text(20) NULL,
+techissuerpt integer(16) NULL,
+supptix integer(16) NULL,
+fbsubs integer(16) NULL,
+survpart TEXT NULL,
+betapart TEXT NULL,
+featreqsubs integer(16) NULL,
+bugsubs integer(16) NULL,
+satrate real(3,1) NULL,
+npsval integer(16) NULL,
+    PRIMARY KEY (supportreg),
+    FOREIGN KEY (supportprefpivot) REFERENCES preferencesandsettings(prefreg),
+    FOREIGN KEY (supportinteractpivot) REFERENCES interactions(activityreg)
+);
+First 3 rows:
+supportreg    supportinteractpivot    supportprefpivot      techissuerpt    supptix    fbsubs  survpart    betapart      featreqsubs    bugsubs    satrate    npsval
+SUP_S756R     FI537855                PREF_DPIK                        4          5         9  Never       Former                  8         15        1.9         0
+SUP_FMC75     FI528045                PREF_S4J5                        6          1        29  Active      Yes                     4          5        3.6         0
+SUP_5KZEX     FI137526                PREF_0XSU                        3          3        12  Active      Former                  9         11        3.3         8
+...
+
+CREATE TABLE "virtualidols" (
+entityreg text(20) NOT NULL,
+nametag text(100) NULL,
+kindtag TEXT NULL,
+debdate TEXT NULL,
+assocgroup text(100) NULL,
+genretag TEXT NULL,
+primlang text(50) NULL,
+    PRIMARY KEY (entityreg)
+);
+First 3 rows:
+entityreg    nametag           kindtag       debdate     assocgroup                    genretag    primlang
+VI1517       Brandon Buck      2D            2025-02-01  Archer, Martinez and Jimenez  Electronic  English
+VI8705       Brittney Freeman  AI Generated  2022-05-20  Carpenter and Sons            Electronic  Chinese
+VI6535       Anita Snyder      3D            2020-04-24  Tran, Aguirre and Jenkins     Dance       English
+...

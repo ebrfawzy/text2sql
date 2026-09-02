@@ -1,0 +1,6566 @@
+{
+  "version": 1,
+  "profiled_at": "2026-08-30T11:01:05.489976+00:00",
+  "columns": {
+    "credit_template|bank_and_transactions|bankexpref": {
+      "table_name": "bank_and_transactions",
+      "column_name": "bankexpref",
+      "column_type": "TEXT(20)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "CS100439",
+      "max_value": "CS999369",
+      "top_k_values": [
+        {
+          "value": "CS100439",
+          "count": 1
+        },
+        {
+          "value": "CS100596",
+          "count": 1
+        },
+        {
+          "value": "CS100625",
+          "count": 1
+        },
+        {
+          "value": "CS101227",
+          "count": 1
+        },
+        {
+          "value": "CS101678",
+          "count": 1
+        },
+        {
+          "value": "CS103479",
+          "count": 1
+        },
+        {
+          "value": "CS104169",
+          "count": 1
+        },
+        {
+          "value": "CS104621",
+          "count": 1
+        },
+        {
+          "value": "CS104627",
+          "count": 1
+        },
+        {
+          "value": "CS106874",
+          "count": 1
+        }
+      ],
+      "min_length": 8,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDDDD"
+      ]
+    },
+    "credit_template|bank_and_transactions|banktxfreq": {
+      "table_name": "bank_and_transactions",
+      "column_name": "banktxfreq",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "High",
+      "max_value": "Medium",
+      "top_k_values": [
+        {
+          "value": "Low",
+          "count": 347
+        },
+        {
+          "value": "Medium",
+          "count": 329
+        },
+        {
+          "value": "High",
+          "count": 324
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAA",
+        "AAAAAA",
+        "AAAA"
+      ]
+    },
+    "credit_template|bank_and_transactions|banktxamt": {
+      "table_name": "bank_and_transactions",
+      "column_name": "banktxamt",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 952,
+      "min_value": "1021.0",
+      "max_value": "9998.0",
+      "top_k_values": [
+        {
+          "value": "9983.0",
+          "count": 2
+        },
+        {
+          "value": "9922.0",
+          "count": 2
+        },
+        {
+          "value": "9594.0",
+          "count": 2
+        },
+        {
+          "value": "9341.0",
+          "count": 2
+        },
+        {
+          "value": "9144.0",
+          "count": 2
+        },
+        {
+          "value": "8938.0",
+          "count": 2
+        },
+        {
+          "value": "8717.0",
+          "count": 2
+        },
+        {
+          "value": "8501.0",
+          "count": 2
+        },
+        {
+          "value": "8434.0",
+          "count": 2
+        },
+        {
+          "value": "8229.0",
+          "count": 2
+        }
+      ],
+      "min_length": 5,
+      "max_length": 6,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDD.D",
+        "DDD.D"
+      ]
+    },
+    "credit_template|bank_and_transactions|bankrelscore": {
+      "table_name": "bank_and_transactions",
+      "column_name": "bankrelscore",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 637,
+      "min_value": "0.001",
+      "max_value": "0.999",
+      "top_k_values": [
+        {
+          "value": "0.673",
+          "count": 6
+        },
+        {
+          "value": "0.873",
+          "count": 5
+        },
+        {
+          "value": "0.852",
+          "count": 5
+        },
+        {
+          "value": "0.905",
+          "count": 4
+        },
+        {
+          "value": "0.701",
+          "count": 4
+        },
+        {
+          "value": "0.621",
+          "count": 4
+        },
+        {
+          "value": "0.595",
+          "count": 4
+        },
+        {
+          "value": "0.499",
+          "count": 4
+        },
+        {
+          "value": "0.321",
+          "count": 4
+        },
+        {
+          "value": "0.234",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "credit_template|bank_and_transactions|ovrfreq": {
+      "table_name": "bank_and_transactions",
+      "column_name": "ovrfreq",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "Frequent",
+      "max_value": "Rare",
+      "top_k_values": [
+        {
+          "value": "Frequent",
+          "count": 284
+        },
+        {
+          "value": "Occasional",
+          "count": 254
+        },
+        {
+          "value": "Never",
+          "count": 238
+        },
+        {
+          "value": "Rare",
+          "count": 224
+        }
+      ],
+      "min_length": 4,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAAAAAAAA",
+        "AAAAA",
+        "AAAA"
+      ]
+    },
+    "credit_template|bank_and_transactions|bouncecount": {
+      "table_name": "bank_and_transactions",
+      "column_name": "bouncecount",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 11,
+      "min_value": "0",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "10",
+          "count": 107
+        },
+        {
+          "value": "0",
+          "count": 103
+        },
+        {
+          "value": "8",
+          "count": 98
+        },
+        {
+          "value": "5",
+          "count": 94
+        },
+        {
+          "value": "6",
+          "count": 91
+        },
+        {
+          "value": "2",
+          "count": 90
+        },
+        {
+          "value": "9",
+          "count": 88
+        },
+        {
+          "value": "7",
+          "count": 87
+        },
+        {
+          "value": "3",
+          "count": 85
+        },
+        {
+          "value": "1",
+          "count": 85
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D",
+        "DD"
+      ]
+    },
+    "credit_template|bank_and_transactions|inscoverage": {
+      "table_name": "bank_and_transactions",
+      "column_name": "inscoverage",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 330,
+      "non_null_count": 670,
+      "distinct_count": 2,
+      "min_value": "Basic",
+      "max_value": "Comprehensive",
+      "top_k_values": [
+        {
+          "value": "Comprehensive",
+          "count": 335
+        },
+        {
+          "value": "Basic",
+          "count": 335
+        }
+      ],
+      "min_length": 5,
+      "max_length": 13,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAA",
+        "AAAAAAAAAAAAA"
+      ]
+    },
+    "credit_template|bank_and_transactions|lifeinsval": {
+      "table_name": "bank_and_transactions",
+      "column_name": "lifeinsval",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 999,
+      "min_value": "100007.0",
+      "max_value": "999906.0",
+      "top_k_values": [
+        {
+          "value": "123854.0",
+          "count": 2
+        },
+        {
+          "value": "999906.0",
+          "count": 1
+        },
+        {
+          "value": "995502.0",
+          "count": 1
+        },
+        {
+          "value": "995092.0",
+          "count": 1
+        },
+        {
+          "value": "993950.0",
+          "count": 1
+        },
+        {
+          "value": "993089.0",
+          "count": 1
+        },
+        {
+          "value": "992306.0",
+          "count": 1
+        },
+        {
+          "value": "991887.0",
+          "count": 1
+        },
+        {
+          "value": "990941.0",
+          "count": 1
+        },
+        {
+          "value": "990172.0",
+          "count": 1
+        }
+      ],
+      "min_length": 5,
+      "max_length": 8,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDDD.D",
+        "DDDDD.D",
+        "DDDD.D",
+        "DDD.D"
+      ]
+    },
+    "credit_template|bank_and_transactions|hlthinsstat": {
+      "table_name": "bank_and_transactions",
+      "column_name": "hlthinsstat",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 323,
+      "non_null_count": 677,
+      "distinct_count": 2,
+      "min_value": "Basic",
+      "max_value": "Premium",
+      "top_k_values": [
+        {
+          "value": "Basic",
+          "count": 342
+        },
+        {
+          "value": "Premium",
+          "count": 335
+        }
+      ],
+      "min_length": 5,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAA",
+        "AAAAAAA"
+      ]
+    },
+    "credit_template|bank_and_transactions|fraudrisk": {
+      "table_name": "bank_and_transactions",
+      "column_name": "fraudrisk",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 622,
+      "min_value": "0.001",
+      "max_value": "0.999",
+      "top_k_values": [
+        {
+          "value": "0.3",
+          "count": 5
+        },
+        {
+          "value": "0.264",
+          "count": 5
+        },
+        {
+          "value": "0.001",
+          "count": 5
+        },
+        {
+          "value": "0.97",
+          "count": 4
+        },
+        {
+          "value": "0.954",
+          "count": 4
+        },
+        {
+          "value": "0.949",
+          "count": 4
+        },
+        {
+          "value": "0.925",
+          "count": 4
+        },
+        {
+          "value": "0.81",
+          "count": 4
+        },
+        {
+          "value": "0.786",
+          "count": 4
+        },
+        {
+          "value": "0.74",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "credit_template|bank_and_transactions|idverscore": {
+      "table_name": "bank_and_transactions",
+      "column_name": "idverscore",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 631,
+      "min_value": "0.003",
+      "max_value": "1.0",
+      "top_k_values": [
+        {
+          "value": "0.188",
+          "count": 7
+        },
+        {
+          "value": "0.667",
+          "count": 5
+        },
+        {
+          "value": "0.088",
+          "count": 5
+        },
+        {
+          "value": "0.953",
+          "count": 4
+        },
+        {
+          "value": "0.932",
+          "count": 4
+        },
+        {
+          "value": "0.831",
+          "count": 4
+        },
+        {
+          "value": "0.763",
+          "count": 4
+        },
+        {
+          "value": "0.747",
+          "count": 4
+        },
+        {
+          "value": "0.733",
+          "count": 4
+        },
+        {
+          "value": "0.696",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "credit_template|bank_and_transactions|docverstat": {
+      "table_name": "bank_and_transactions",
+      "column_name": "docverstat",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Failed",
+      "max_value": "Verified",
+      "top_k_values": [
+        {
+          "value": "Pending",
+          "count": 355
+        },
+        {
+          "value": "Failed",
+          "count": 336
+        },
+        {
+          "value": "Verified",
+          "count": 309
+        }
+      ],
+      "min_length": 6,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "credit_template|bank_and_transactions|kycstat": {
+      "table_name": "bank_and_transactions",
+      "column_name": "kycstat",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Completed",
+      "max_value": "Pending",
+      "top_k_values": [
+        {
+          "value": "Pending",
+          "count": 334
+        },
+        {
+          "value": "Failed",
+          "count": 333
+        },
+        {
+          "value": "Completed",
+          "count": 333
+        }
+      ],
+      "min_length": 6,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAA",
+        "AAAAAAAAA"
+      ]
+    },
+    "credit_template|bank_and_transactions|amlresult": {
+      "table_name": "bank_and_transactions",
+      "column_name": "amlresult",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Fail",
+      "max_value": "Pass",
+      "top_k_values": [
+        {
+          "value": "Pass",
+          "count": 356
+        },
+        {
+          "value": "Flag",
+          "count": 334
+        },
+        {
+          "value": "Fail",
+          "count": 310
+        }
+      ],
+      "min_length": 4,
+      "max_length": 4,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAA"
+      ]
+    },
+    "credit_template|bank_and_transactions|chaninvdatablock": {
+      "table_name": "bank_and_transactions",
+      "column_name": "chaninvdatablock",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 810,
+      "min_value": "{\"autopay\": \"No\", \"depostat\": \"No\", \"mobileuse\": \"High\", \"onlineuse\": \"High\", \"invcluster\": {\"tradeact\": \"High\", \"investexp\": \"Moderate\", \"investport\": \"Conservative\"}}",
+      "max_value": "{\"autopay\": \"Yes\", \"depostat\": \"Yes\", \"mobileuse\": \"Medium\", \"onlineuse\": \"Medium\", \"invcluster\": {\"tradeact\": null, \"investexp\": null, \"investport\": \"Moderate\"}}",
+      "top_k_values": [
+        {
+          "value": "{\"autopay\": \"Yes\", \"depostat\": \"No\", \"mobileuse\": \"Low\", \"onlineuse\": \"High\", \"invcluster\": {\"tradeact\": \"Medium\", \"investexp\": \"Moderate\", \"investport\": \"Conservative\"}}",
+          "count": 4
+        },
+        {
+          "value": "{\"autopay\": \"Yes\", \"depostat\": \"Yes\", \"mobileuse\": \"Medium\", \"onlineuse\": \"Low\", \"invcluster\": {\"tradeact\": \"Medium\", \"investexp\": \"Moderate\", \"investport\": \"Aggressive\"}}",
+          "count": 3
+        },
+        {
+          "value": "{\"autopay\": \"Yes\", \"depostat\": \"Yes\", \"mobileuse\": \"Medium\", \"onlineuse\": \"Low\", \"invcluster\": {\"tradeact\": \"Medium\", \"investexp\": \"Extensive\", \"investport\": null}}",
+          "count": 3
+        },
+        {
+          "value": "{\"autopay\": \"Yes\", \"depostat\": \"Yes\", \"mobileuse\": \"Low\", \"onlineuse\": \"Medium\", \"invcluster\": {\"tradeact\": \"Low\", \"investexp\": null, \"investport\": \"Moderate\"}}",
+          "count": 3
+        },
+        {
+          "value": "{\"autopay\": \"Yes\", \"depostat\": \"Yes\", \"mobileuse\": \"Low\", \"onlineuse\": \"Medium\", \"invcluster\": {\"tradeact\": \"Low\", \"investexp\": \"Limited\", \"investport\": \"Conservative\"}}",
+          "count": 3
+        },
+        {
+          "value": "{\"autopay\": \"Yes\", \"depostat\": \"Yes\", \"mobileuse\": \"Low\", \"onlineuse\": \"Low\", \"invcluster\": {\"tradeact\": null, \"investexp\": \"Moderate\", \"investport\": null}}",
+          "count": 3
+        },
+        {
+          "value": "{\"autopay\": \"Yes\", \"depostat\": \"Yes\", \"mobileuse\": \"Low\", \"onlineuse\": \"High\", \"invcluster\": {\"tradeact\": null, \"investexp\": \"Limited\", \"investport\": null}}",
+          "count": 3
+        },
+        {
+          "value": "{\"autopay\": \"Yes\", \"depostat\": \"Yes\", \"mobileuse\": \"Low\", \"onlineuse\": \"High\", \"invcluster\": {\"tradeact\": null, \"investexp\": \"Extensive\", \"investport\": \"Moderate\"}}",
+          "count": 3
+        },
+        {
+          "value": "{\"autopay\": \"Yes\", \"depostat\": \"Yes\", \"mobileuse\": \"High\", \"onlineuse\": \"Medium\", \"invcluster\": {\"tradeact\": \"Medium\", \"investexp\": null, \"investport\": \"Moderate\"}}",
+          "count": 3
+        },
+        {
+          "value": "{\"autopay\": \"Yes\", \"depostat\": \"Yes\", \"mobileuse\": \"High\", \"onlineuse\": \"Medium\", \"invcluster\": {\"tradeact\": \"Medium\", \"investexp\": \"Moderate\", \"investport\": \"Aggressive\"}}",
+          "count": 3
+        }
+      ],
+      "min_length": 149,
+      "max_length": 177,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "{\"AAAAAAA\": \"AAA\", \"AAAAAAAA\": \"AA\", \"AAAAAAAAA\": \"AAA\", \"AAAAAAAAA\": \"AAAA\", \"AAAAAAAAAA\": {\"AAAAAAAA\": \"AAAAAA\", \"AAAAAAAAA\": \"AAAAAAAA\", \"AAAAAAAAAA\": \"AAAAAAAAAAAA\"}}",
+        "{\"AAAAAAA\": \"AAA\", \"AAAAAAAA\": \"AA\", \"AAAAAAAAA\": \"AAAA\", \"AAAAAAAAA\": \"AAAA\", \"AAAAAAAAAA\": {\"AAAAAAAA\": \"AAAA\", \"AAAAAAAAA\": \"AAAAAAA\", \"AAAAAAAAAA\": \"AAAAAAAAAAAA\"}}",
+        "{\"AAAAAAA\": \"AAA\", \"AAAAAAAA\": \"AAA\", \"AAAAAAAAA\": \"AAA\", \"AAAAAAAAA\": \"AAAA\", \"AAAAAAAAAA\": {\"AAAAAAAA\": AAAA, \"AAAAAAAAA\": \"AAAAAAA\", \"AAAAAAAAAA\": AAAA}}",
+        "{\"AAAAAAA\": \"AA\", \"AAAAAAAA\": \"AA\", \"AAAAAAAAA\": \"AAA\", \"AAAAAAAAA\": \"AAAA\", \"AAAAAAAAAA\": {\"AAAAAAAA\": \"AAAA\", \"AAAAAAAAA\": \"AAAAAAAAA\", \"AAAAAAAAAA\": \"AAAAAAAAAAAA\"}}",
+        "{\"AAAAAAA\": \"AA\", \"AAAAAAAA\": \"AA\", \"AAAAAAAAA\": \"AAAAAA\", \"AAAAAAAAA\": \"AAAA\", \"AAAAAAAAAA\": {\"AAAAAAAA\": AAAA, \"AAAAAAAAA\": \"AAAAAAAA\", \"AAAAAAAAAA\": AAAA}}"
+      ]
+    },
+    "credit_template|bank_and_transactions|chaninvdatablock.autopay": {
+      "table_name": "bank_and_transactions",
+      "column_name": "chaninvdatablock.autopay",
+      "column_type": "JSON field",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 2,
+      "min_value": "No",
+      "max_value": "Yes",
+      "top_k_values": [
+        {
+          "value": "Yes",
+          "count": 518
+        },
+        {
+          "value": "No",
+          "count": 482
+        }
+      ],
+      "min_length": 2,
+      "max_length": 3,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAA",
+        "AA"
+      ]
+    },
+    "credit_template|bank_and_transactions|chaninvdatablock.depostat": {
+      "table_name": "bank_and_transactions",
+      "column_name": "chaninvdatablock.depostat",
+      "column_type": "JSON field",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 2,
+      "min_value": "No",
+      "max_value": "Yes",
+      "top_k_values": [
+        {
+          "value": "Yes",
+          "count": 520
+        },
+        {
+          "value": "No",
+          "count": 480
+        }
+      ],
+      "min_length": 2,
+      "max_length": 3,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAA",
+        "AA"
+      ]
+    },
+    "credit_template|bank_and_transactions|chaninvdatablock.mobileuse": {
+      "table_name": "bank_and_transactions",
+      "column_name": "chaninvdatablock.mobileuse",
+      "column_type": "JSON field",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "High",
+      "max_value": "Medium",
+      "top_k_values": [
+        {
+          "value": "Low",
+          "count": 337
+        },
+        {
+          "value": "Medium",
+          "count": 336
+        },
+        {
+          "value": "High",
+          "count": 327
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAA",
+        "AAAAAA",
+        "AAAA"
+      ]
+    },
+    "credit_template|bank_and_transactions|chaninvdatablock.onlineuse": {
+      "table_name": "bank_and_transactions",
+      "column_name": "chaninvdatablock.onlineuse",
+      "column_type": "JSON field",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "High",
+      "max_value": "Medium",
+      "top_k_values": [
+        {
+          "value": "High",
+          "count": 340
+        },
+        {
+          "value": "Low",
+          "count": 334
+        },
+        {
+          "value": "Medium",
+          "count": 326
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAA",
+        "AAAAAA"
+      ]
+    },
+    "credit_template|bank_and_transactions|chaninvdatablock.invcluster.tradeact": {
+      "table_name": "bank_and_transactions",
+      "column_name": "chaninvdatablock.invcluster.tradeact",
+      "column_type": "JSON field",
+      "row_count": 1000,
+      "null_count": 275,
+      "non_null_count": 725,
+      "distinct_count": 3,
+      "min_value": "High",
+      "max_value": "Medium",
+      "top_k_values": [
+        {
+          "value": "Medium",
+          "count": 264
+        },
+        {
+          "value": "High",
+          "count": 234
+        },
+        {
+          "value": "Low",
+          "count": 227
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AAAA",
+        "AAA"
+      ]
+    },
+    "credit_template|bank_and_transactions|chaninvdatablock.invcluster.investexp": {
+      "table_name": "bank_and_transactions",
+      "column_name": "chaninvdatablock.invcluster.investexp",
+      "column_type": "JSON field",
+      "row_count": 1000,
+      "null_count": 246,
+      "non_null_count": 754,
+      "distinct_count": 3,
+      "min_value": "Extensive",
+      "max_value": "Moderate",
+      "top_k_values": [
+        {
+          "value": "Limited",
+          "count": 265
+        },
+        {
+          "value": "Extensive",
+          "count": 248
+        },
+        {
+          "value": "Moderate",
+          "count": 241
+        }
+      ],
+      "min_length": 7,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "credit_template|bank_and_transactions|chaninvdatablock.invcluster.investport": {
+      "table_name": "bank_and_transactions",
+      "column_name": "chaninvdatablock.invcluster.investport",
+      "column_type": "JSON field",
+      "row_count": 1000,
+      "null_count": 249,
+      "non_null_count": 751,
+      "distinct_count": 3,
+      "min_value": "Aggressive",
+      "max_value": "Moderate",
+      "top_k_values": [
+        {
+          "value": "Moderate",
+          "count": 267
+        },
+        {
+          "value": "Aggressive",
+          "count": 247
+        },
+        {
+          "value": "Conservative",
+          "count": 237
+        }
+      ],
+      "min_length": 8,
+      "max_length": 12,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAAAAAAAA",
+        "AAAAAAAAAAAA"
+      ]
+    },
+    "credit_template|core_record|coreregistry": {
+      "table_name": "core_record",
+      "column_name": "coreregistry",
+      "column_type": "TEXT(20)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "CS100439",
+      "max_value": "CS999369",
+      "top_k_values": [
+        {
+          "value": "CS100439",
+          "count": 1
+        },
+        {
+          "value": "CS100596",
+          "count": 1
+        },
+        {
+          "value": "CS100625",
+          "count": 1
+        },
+        {
+          "value": "CS101227",
+          "count": 1
+        },
+        {
+          "value": "CS101678",
+          "count": 1
+        },
+        {
+          "value": "CS103479",
+          "count": 1
+        },
+        {
+          "value": "CS104169",
+          "count": 1
+        },
+        {
+          "value": "CS104621",
+          "count": 1
+        },
+        {
+          "value": "CS104627",
+          "count": 1
+        },
+        {
+          "value": "CS106874",
+          "count": 1
+        }
+      ],
+      "min_length": 8,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDDDD"
+      ]
+    },
+    "credit_template|core_record|timemark": {
+      "table_name": "core_record",
+      "column_name": "timemark",
+      "column_type": "TEXT(6)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 198,
+      "min_value": "2025-02-19 08:29:36.526509",
+      "max_value": "2025-02-19 08:29:36.653337",
+      "top_k_values": [
+        {
+          "value": "2025-02-19 08:29:36.566292",
+          "count": 11
+        },
+        {
+          "value": "2025-02-19 08:29:36.647932",
+          "count": 10
+        },
+        {
+          "value": "2025-02-19 08:29:36.6283",
+          "count": 10
+        },
+        {
+          "value": "2025-02-19 08:29:36.608336",
+          "count": 10
+        },
+        {
+          "value": "2025-02-19 08:29:36.577399",
+          "count": 10
+        },
+        {
+          "value": "2025-02-19 08:29:36.643445",
+          "count": 9
+        },
+        {
+          "value": "2025-02-19 08:29:36.640298",
+          "count": 9
+        },
+        {
+          "value": "2025-02-19 08:29:36.638338",
+          "count": 9
+        },
+        {
+          "value": "2025-02-19 08:29:36.632423",
+          "count": 9
+        },
+        {
+          "value": "2025-02-19 08:29:36.627256",
+          "count": 9
+        }
+      ],
+      "min_length": 24,
+      "max_length": 26,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDD-DD-DD DD:DD:DD.DDDDDD",
+        "DDDD-DD-DD DD:DD:DD.DDDDD",
+        "DDDD-DD-DD DD:DD:DD.DDDD"
+      ]
+    },
+    "credit_template|core_record|clientref": {
+      "table_name": "core_record",
+      "column_name": "clientref",
+      "column_type": "TEXT(20)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "CU100745",
+      "max_value": "CU998921",
+      "top_k_values": [
+        {
+          "value": "CU998921",
+          "count": 1
+        },
+        {
+          "value": "CU998765",
+          "count": 1
+        },
+        {
+          "value": "CU998179",
+          "count": 1
+        },
+        {
+          "value": "CU997366",
+          "count": 1
+        },
+        {
+          "value": "CU995342",
+          "count": 1
+        },
+        {
+          "value": "CU993201",
+          "count": 1
+        },
+        {
+          "value": "CU991499",
+          "count": 1
+        },
+        {
+          "value": "CU991309",
+          "count": 1
+        },
+        {
+          "value": "CU990818",
+          "count": 1
+        },
+        {
+          "value": "CU990238",
+          "count": 1
+        }
+      ],
+      "min_length": 8,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDDDD"
+      ]
+    },
+    "credit_template|core_record|appref": {
+      "table_name": "core_record",
+      "column_name": "appref",
+      "column_type": "TEXT(20)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 998,
+      "min_value": "AP103937",
+      "max_value": "AP999798",
+      "top_k_values": [
+        {
+          "value": "AP741230",
+          "count": 2
+        },
+        {
+          "value": "AP405578",
+          "count": 2
+        },
+        {
+          "value": "AP999798",
+          "count": 1
+        },
+        {
+          "value": "AP999447",
+          "count": 1
+        },
+        {
+          "value": "AP999170",
+          "count": 1
+        },
+        {
+          "value": "AP996750",
+          "count": 1
+        },
+        {
+          "value": "AP996575",
+          "count": 1
+        },
+        {
+          "value": "AP994726",
+          "count": 1
+        },
+        {
+          "value": "AP993917",
+          "count": 1
+        },
+        {
+          "value": "AP993700",
+          "count": 1
+        }
+      ],
+      "min_length": 8,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDDDD"
+      ]
+    },
+    "credit_template|core_record|modelline": {
+      "table_name": "core_record",
+      "column_name": "modelline",
+      "column_type": "TEXT(10)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 50,
+      "min_value": "v1.0",
+      "max_value": "v5.9",
+      "top_k_values": [
+        {
+          "value": "v2.1",
+          "count": 29
+        },
+        {
+          "value": "v5.2",
+          "count": 28
+        },
+        {
+          "value": "v4.9",
+          "count": 28
+        },
+        {
+          "value": "v5.4",
+          "count": 26
+        },
+        {
+          "value": "v3.6",
+          "count": 25
+        },
+        {
+          "value": "v2.6",
+          "count": 24
+        },
+        {
+          "value": "v2.5",
+          "count": 24
+        },
+        {
+          "value": "v1.6",
+          "count": 24
+        },
+        {
+          "value": "v4.7",
+          "count": 23
+        },
+        {
+          "value": "v3.0",
+          "count": 23
+        }
+      ],
+      "min_length": 4,
+      "max_length": 4,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AD.D"
+      ]
+    },
+    "credit_template|core_record|scoredate": {
+      "table_name": "core_record",
+      "column_name": "scoredate",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1,
+      "min_value": "2025-02-19",
+      "max_value": "2025-02-19",
+      "top_k_values": [
+        {
+          "value": "2025-02-19",
+          "count": 1000
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDD-DD-DD"
+      ]
+    },
+    "credit_template|core_record|nextcheck": {
+      "table_name": "core_record",
+      "column_name": "nextcheck",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 321,
+      "min_value": "2025-03-21",
+      "max_value": "2026-02-19",
+      "top_k_values": [
+        {
+          "value": "2025-11-15",
+          "count": 9
+        },
+        {
+          "value": "2025-09-06",
+          "count": 9
+        },
+        {
+          "value": "2025-08-07",
+          "count": 9
+        },
+        {
+          "value": "2025-11-05",
+          "count": 8
+        },
+        {
+          "value": "2025-12-10",
+          "count": 7
+        },
+        {
+          "value": "2025-11-07",
+          "count": 7
+        },
+        {
+          "value": "2025-09-11",
+          "count": 7
+        },
+        {
+          "value": "2025-07-27",
+          "count": 7
+        },
+        {
+          "value": "2025-05-15",
+          "count": 7
+        },
+        {
+          "value": "2026-02-11",
+          "count": 6
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDD-DD-DD"
+      ]
+    },
+    "credit_template|core_record|dataqscore": {
+      "table_name": "core_record",
+      "column_name": "dataqscore",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 625,
+      "min_value": "0.0",
+      "max_value": "1.0",
+      "top_k_values": [
+        {
+          "value": "0.307",
+          "count": 6
+        },
+        {
+          "value": "0.695",
+          "count": 5
+        },
+        {
+          "value": "0.691",
+          "count": 5
+        },
+        {
+          "value": "0.988",
+          "count": 4
+        },
+        {
+          "value": "0.976",
+          "count": 4
+        },
+        {
+          "value": "0.962",
+          "count": 4
+        },
+        {
+          "value": "0.926",
+          "count": 4
+        },
+        {
+          "value": "0.844",
+          "count": 4
+        },
+        {
+          "value": "0.813",
+          "count": 4
+        },
+        {
+          "value": "0.767",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "credit_template|core_record|confscore": {
+      "table_name": "core_record",
+      "column_name": "confscore",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 641,
+      "min_value": "0.0",
+      "max_value": "1.0",
+      "top_k_values": [
+        {
+          "value": "0.984",
+          "count": 5
+        },
+        {
+          "value": "0.865",
+          "count": 5
+        },
+        {
+          "value": "0.519",
+          "count": 5
+        },
+        {
+          "value": "0.985",
+          "count": 4
+        },
+        {
+          "value": "0.864",
+          "count": 4
+        },
+        {
+          "value": "0.803",
+          "count": 4
+        },
+        {
+          "value": "0.635",
+          "count": 4
+        },
+        {
+          "value": "0.451",
+          "count": 4
+        },
+        {
+          "value": "0.442",
+          "count": 4
+        },
+        {
+          "value": "0.413",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "credit_template|core_record|overridestat": {
+      "table_name": "core_record",
+      "column_name": "overridestat",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 347,
+      "non_null_count": 653,
+      "distinct_count": 2,
+      "min_value": "Manual",
+      "max_value": "Policy",
+      "top_k_values": [
+        {
+          "value": "Policy",
+          "count": 332
+        },
+        {
+          "value": "Manual",
+          "count": 321
+        }
+      ],
+      "min_length": 6,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAAAA"
+      ]
+    },
+    "credit_template|core_record|overridenote": {
+      "table_name": "core_record",
+      "column_name": "overridenote",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 345,
+      "non_null_count": 655,
+      "distinct_count": 2,
+      "min_value": "Management Decision",
+      "max_value": "Policy Exception",
+      "top_k_values": [
+        {
+          "value": "Management Decision",
+          "count": 338
+        },
+        {
+          "value": "Policy Exception",
+          "count": 317
+        }
+      ],
+      "min_length": 16,
+      "max_length": 19,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAAA AAAAAAAA",
+        "AAAAAA AAAAAAAAA"
+      ]
+    },
+    "credit_template|core_record|decidestat": {
+      "table_name": "core_record",
+      "column_name": "decidestat",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Approved",
+      "max_value": "Rejected",
+      "top_k_values": [
+        {
+          "value": "Pending",
+          "count": 353
+        },
+        {
+          "value": "Approved",
+          "count": 340
+        },
+        {
+          "value": "Rejected",
+          "count": 307
+        }
+      ],
+      "min_length": 7,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAA",
+        "AAAAAAA"
+      ]
+    },
+    "credit_template|core_record|decidedate": {
+      "table_name": "core_record",
+      "column_name": "decidedate",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1,
+      "min_value": "2025-02-19",
+      "max_value": "2025-02-19",
+      "top_k_values": [
+        {
+          "value": "2025-02-19",
+          "count": 1000
+        }
+      ],
+      "min_length": 10,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDD-DD-DD"
+      ]
+    },
+    "credit_template|core_record|agespan": {
+      "table_name": "core_record",
+      "column_name": "agespan",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 63,
+      "min_value": "18",
+      "max_value": "80",
+      "top_k_values": [
+        {
+          "value": "80",
+          "count": 24
+        },
+        {
+          "value": "52",
+          "count": 23
+        },
+        {
+          "value": "58",
+          "count": 22
+        },
+        {
+          "value": "55",
+          "count": 22
+        },
+        {
+          "value": "66",
+          "count": 21
+        },
+        {
+          "value": "39",
+          "count": 21
+        },
+        {
+          "value": "77",
+          "count": 20
+        },
+        {
+          "value": "71",
+          "count": 20
+        },
+        {
+          "value": "70",
+          "count": 20
+        },
+        {
+          "value": "69",
+          "count": 20
+        }
+      ],
+      "min_length": 2,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DD"
+      ]
+    },
+    "credit_template|core_record|gendlabel": {
+      "table_name": "core_record",
+      "column_name": "gendlabel",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 2,
+      "min_value": "F",
+      "max_value": "M",
+      "top_k_values": [
+        {
+          "value": "F",
+          "count": 501
+        },
+        {
+          "value": "M",
+          "count": 499
+        }
+      ],
+      "min_length": 1,
+      "max_length": 1,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "A"
+      ]
+    },
+    "credit_template|core_record|maritalform": {
+      "table_name": "core_record",
+      "column_name": "maritalform",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "Divorced",
+      "max_value": "Widowed",
+      "top_k_values": [
+        {
+          "value": "Married",
+          "count": 271
+        },
+        {
+          "value": "Single",
+          "count": 261
+        },
+        {
+          "value": "Divorced",
+          "count": 242
+        },
+        {
+          "value": "Widowed",
+          "count": 226
+        }
+      ],
+      "min_length": 6,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAA",
+        "AAAAAAAA"
+      ]
+    },
+    "credit_template|core_record|depcount": {
+      "table_name": "core_record",
+      "column_name": "depcount",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 6,
+      "min_value": "0",
+      "max_value": "5",
+      "top_k_values": [
+        {
+          "value": "2",
+          "count": 184
+        },
+        {
+          "value": "5",
+          "count": 182
+        },
+        {
+          "value": "4",
+          "count": 174
+        },
+        {
+          "value": "0",
+          "count": 161
+        },
+        {
+          "value": "1",
+          "count": 160
+        },
+        {
+          "value": "3",
+          "count": 139
+        }
+      ],
+      "min_length": 1,
+      "max_length": 1,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D"
+      ]
+    },
+    "credit_template|core_record|resdform": {
+      "table_name": "core_record",
+      "column_name": "resdform",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Foreign",
+      "max_value": "Temporary",
+      "top_k_values": [
+        {
+          "value": "Temporary",
+          "count": 352
+        },
+        {
+          "value": "Foreign",
+          "count": 337
+        },
+        {
+          "value": "Permanent",
+          "count": 311
+        }
+      ],
+      "min_length": 7,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAA",
+        "AAAAAAA"
+      ]
+    },
+    "credit_template|core_record|addrstab": {
+      "table_name": "core_record",
+      "column_name": "addrstab",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 21,
+      "min_value": "0",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "4",
+          "count": 56
+        },
+        {
+          "value": "15",
+          "count": 55
+        },
+        {
+          "value": "14",
+          "count": 55
+        },
+        {
+          "value": "18",
+          "count": 54
+        },
+        {
+          "value": "1",
+          "count": 54
+        },
+        {
+          "value": "13",
+          "count": 52
+        },
+        {
+          "value": "9",
+          "count": 52
+        },
+        {
+          "value": "8",
+          "count": 51
+        },
+        {
+          "value": "2",
+          "count": 51
+        },
+        {
+          "value": "17",
+          "count": 50
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D"
+      ]
+    },
+    "credit_template|core_record|phonestab": {
+      "table_name": "core_record",
+      "column_name": "phonestab",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 16,
+      "min_value": "0",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "0",
+          "count": 79
+        },
+        {
+          "value": "7",
+          "count": 76
+        },
+        {
+          "value": "9",
+          "count": 67
+        },
+        {
+          "value": "12",
+          "count": 64
+        },
+        {
+          "value": "6",
+          "count": 64
+        },
+        {
+          "value": "10",
+          "count": 63
+        },
+        {
+          "value": "15",
+          "count": 62
+        },
+        {
+          "value": "2",
+          "count": 62
+        },
+        {
+          "value": "11",
+          "count": 61
+        },
+        {
+          "value": "4",
+          "count": 61
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D",
+        "DD"
+      ]
+    },
+    "credit_template|core_record|emailstab": {
+      "table_name": "core_record",
+      "column_name": "emailstab",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 11,
+      "min_value": "0",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "9",
+          "count": 98
+        },
+        {
+          "value": "8",
+          "count": 98
+        },
+        {
+          "value": "4",
+          "count": 97
+        },
+        {
+          "value": "0",
+          "count": 94
+        },
+        {
+          "value": "6",
+          "count": 92
+        },
+        {
+          "value": "1",
+          "count": 90
+        },
+        {
+          "value": "7",
+          "count": 89
+        },
+        {
+          "value": "10",
+          "count": 89
+        },
+        {
+          "value": "5",
+          "count": 87
+        },
+        {
+          "value": "2",
+          "count": 84
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D",
+        "DD"
+      ]
+    },
+    "credit_template|core_record|clientseg": {
+      "table_name": "core_record",
+      "column_name": "clientseg",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Basic",
+      "max_value": "Standard",
+      "top_k_values": [
+        {
+          "value": "Basic",
+          "count": 346
+        },
+        {
+          "value": "Standard",
+          "count": 340
+        },
+        {
+          "value": "Premium",
+          "count": 314
+        }
+      ],
+      "min_length": 5,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAA",
+        "AAAAAAAA",
+        "AAAAAAA"
+      ]
+    },
+    "credit_template|core_record|tenureyrs": {
+      "table_name": "core_record",
+      "column_name": "tenureyrs",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 31,
+      "min_value": "0",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "8",
+          "count": 45
+        },
+        {
+          "value": "13",
+          "count": 43
+        },
+        {
+          "value": "7",
+          "count": 42
+        },
+        {
+          "value": "0",
+          "count": 39
+        },
+        {
+          "value": "9",
+          "count": 38
+        },
+        {
+          "value": "22",
+          "count": 36
+        },
+        {
+          "value": "15",
+          "count": 36
+        },
+        {
+          "value": "5",
+          "count": 36
+        },
+        {
+          "value": "25",
+          "count": 35
+        },
+        {
+          "value": "2",
+          "count": 35
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D"
+      ]
+    },
+    "credit_template|core_record|crossratio": {
+      "table_name": "core_record",
+      "column_name": "crossratio",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 632,
+      "min_value": "0.001",
+      "max_value": "0.999",
+      "top_k_values": [
+        {
+          "value": "0.278",
+          "count": 6
+        },
+        {
+          "value": "0.765",
+          "count": 5
+        },
+        {
+          "value": "0.462",
+          "count": 5
+        },
+        {
+          "value": "0.986",
+          "count": 4
+        },
+        {
+          "value": "0.977",
+          "count": 4
+        },
+        {
+          "value": "0.866",
+          "count": 4
+        },
+        {
+          "value": "0.761",
+          "count": 4
+        },
+        {
+          "value": "0.625",
+          "count": 4
+        },
+        {
+          "value": "0.549",
+          "count": 4
+        },
+        {
+          "value": "0.448",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "credit_template|core_record|profitscore": {
+      "table_name": "core_record",
+      "column_name": "profitscore",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 641,
+      "min_value": "0.0",
+      "max_value": "0.998",
+      "top_k_values": [
+        {
+          "value": "0.84",
+          "count": 5
+        },
+        {
+          "value": "0.771",
+          "count": 5
+        },
+        {
+          "value": "0.951",
+          "count": 4
+        },
+        {
+          "value": "0.933",
+          "count": 4
+        },
+        {
+          "value": "0.794",
+          "count": 4
+        },
+        {
+          "value": "0.755",
+          "count": 4
+        },
+        {
+          "value": "0.747",
+          "count": 4
+        },
+        {
+          "value": "0.702",
+          "count": 4
+        },
+        {
+          "value": "0.322",
+          "count": 4
+        },
+        {
+          "value": "0.253",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "credit_template|core_record|churnrate": {
+      "table_name": "core_record",
+      "column_name": "churnrate",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 645,
+      "min_value": "0.001",
+      "max_value": "0.999",
+      "top_k_values": [
+        {
+          "value": "0.743",
+          "count": 5
+        },
+        {
+          "value": "0.709",
+          "count": 5
+        },
+        {
+          "value": "0.642",
+          "count": 5
+        },
+        {
+          "value": "0.388",
+          "count": 5
+        },
+        {
+          "value": "0.285",
+          "count": 5
+        },
+        {
+          "value": "0.23",
+          "count": 5
+        },
+        {
+          "value": "0.207",
+          "count": 5
+        },
+        {
+          "value": "0.179",
+          "count": 5
+        },
+        {
+          "value": "0.082",
+          "count": 5
+        },
+        {
+          "value": "0.994",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "credit_template|credit_accounts_and_history|histcompref": {
+      "table_name": "credit_accounts_and_history",
+      "column_name": "histcompref",
+      "column_type": "TEXT(20)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "CS100439",
+      "max_value": "CS999369",
+      "top_k_values": [
+        {
+          "value": "CS100439",
+          "count": 1
+        },
+        {
+          "value": "CS100596",
+          "count": 1
+        },
+        {
+          "value": "CS100625",
+          "count": 1
+        },
+        {
+          "value": "CS101227",
+          "count": 1
+        },
+        {
+          "value": "CS101678",
+          "count": 1
+        },
+        {
+          "value": "CS103479",
+          "count": 1
+        },
+        {
+          "value": "CS104169",
+          "count": 1
+        },
+        {
+          "value": "CS104621",
+          "count": 1
+        },
+        {
+          "value": "CS104627",
+          "count": 1
+        },
+        {
+          "value": "CS106874",
+          "count": 1
+        }
+      ],
+      "min_length": 8,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDDDD"
+      ]
+    },
+    "credit_template|credit_accounts_and_history|newaccage": {
+      "table_name": "credit_accounts_and_history",
+      "column_name": "newaccage",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 6,
+      "min_value": "0",
+      "max_value": "5",
+      "top_k_values": [
+        {
+          "value": "5",
+          "count": 185
+        },
+        {
+          "value": "3",
+          "count": 172
+        },
+        {
+          "value": "0",
+          "count": 172
+        },
+        {
+          "value": "2",
+          "count": 165
+        },
+        {
+          "value": "4",
+          "count": 157
+        },
+        {
+          "value": "1",
+          "count": 149
+        }
+      ],
+      "min_length": 1,
+      "max_length": 1,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D"
+      ]
+    },
+    "credit_template|credit_accounts_and_history|avgaccage": {
+      "table_name": "credit_accounts_and_history",
+      "column_name": "avgaccage",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 200,
+      "min_value": "0.0",
+      "max_value": "9.9",
+      "top_k_values": [
+        {
+          "value": "8.8",
+          "count": 12
+        },
+        {
+          "value": "19.4",
+          "count": 11
+        },
+        {
+          "value": "9.7",
+          "count": 11
+        },
+        {
+          "value": "19.2",
+          "count": 10
+        },
+        {
+          "value": "13.3",
+          "count": 10
+        },
+        {
+          "value": "9.6",
+          "count": 10
+        },
+        {
+          "value": "7.8",
+          "count": 10
+        },
+        {
+          "value": "4.5",
+          "count": 10
+        },
+        {
+          "value": "0.3",
+          "count": 10
+        },
+        {
+          "value": "15.2",
+          "count": 9
+        }
+      ],
+      "min_length": 3,
+      "max_length": 4,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.D",
+        "DD.D"
+      ]
+    },
+    "credit_template|credit_accounts_and_history|accmixscore": {
+      "table_name": "credit_accounts_and_history",
+      "column_name": "accmixscore",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 628,
+      "min_value": "0.002",
+      "max_value": "1.0",
+      "top_k_values": [
+        {
+          "value": "0.968",
+          "count": 5
+        },
+        {
+          "value": "0.456",
+          "count": 5
+        },
+        {
+          "value": "0.938",
+          "count": 4
+        },
+        {
+          "value": "0.935",
+          "count": 4
+        },
+        {
+          "value": "0.879",
+          "count": 4
+        },
+        {
+          "value": "0.871",
+          "count": 4
+        },
+        {
+          "value": "0.816",
+          "count": 4
+        },
+        {
+          "value": "0.81",
+          "count": 4
+        },
+        {
+          "value": "0.775",
+          "count": 4
+        },
+        {
+          "value": "0.395",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "credit_template|credit_accounts_and_history|credlimusage": {
+      "table_name": "credit_accounts_and_history",
+      "column_name": "credlimusage",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 622,
+      "min_value": "0.0",
+      "max_value": "1.0",
+      "top_k_values": [
+        {
+          "value": "0.773",
+          "count": 5
+        },
+        {
+          "value": "0.681",
+          "count": 5
+        },
+        {
+          "value": "0.562",
+          "count": 5
+        },
+        {
+          "value": "0.978",
+          "count": 4
+        },
+        {
+          "value": "0.945",
+          "count": 4
+        },
+        {
+          "value": "0.932",
+          "count": 4
+        },
+        {
+          "value": "0.845",
+          "count": 4
+        },
+        {
+          "value": "0.728",
+          "count": 4
+        },
+        {
+          "value": "0.723",
+          "count": 4
+        },
+        {
+          "value": "0.601",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "credit_template|credit_accounts_and_history|payconsist": {
+      "table_name": "credit_accounts_and_history",
+      "column_name": "payconsist",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 638,
+      "min_value": "0.0",
+      "max_value": "0.999",
+      "top_k_values": [
+        {
+          "value": "0.244",
+          "count": 6
+        },
+        {
+          "value": "0.969",
+          "count": 5
+        },
+        {
+          "value": "0.853",
+          "count": 5
+        },
+        {
+          "value": "0.764",
+          "count": 5
+        },
+        {
+          "value": "0.548",
+          "count": 5
+        },
+        {
+          "value": "0.534",
+          "count": 5
+        },
+        {
+          "value": "0.113",
+          "count": 5
+        },
+        {
+          "value": "0.062",
+          "count": 5
+        },
+        {
+          "value": "0.999",
+          "count": 4
+        },
+        {
+          "value": "0.96",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "credit_template|credit_accounts_and_history|recentbeh": {
+      "table_name": "credit_accounts_and_history",
+      "column_name": "recentbeh",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Deteriorating",
+      "max_value": "Stable",
+      "top_k_values": [
+        {
+          "value": "Deteriorating",
+          "count": 339
+        },
+        {
+          "value": "Improving",
+          "count": 334
+        },
+        {
+          "value": "Stable",
+          "count": 327
+        }
+      ],
+      "min_length": 6,
+      "max_length": 13,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAAAAAA",
+        "AAAAAAAAA",
+        "AAAAAA"
+      ]
+    },
+    "credit_template|credit_accounts_and_history|seekbeh": {
+      "table_name": "credit_accounts_and_history",
+      "column_name": "seekbeh",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "High",
+      "max_value": "Medium",
+      "top_k_values": [
+        {
+          "value": "Low",
+          "count": 343
+        },
+        {
+          "value": "High",
+          "count": 331
+        },
+        {
+          "value": "Medium",
+          "count": 326
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAA",
+        "AAAA",
+        "AAAAAA"
+      ]
+    },
+    "credit_template|credit_accounts_and_history|cardcount": {
+      "table_name": "credit_accounts_and_history",
+      "column_name": "cardcount",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 11,
+      "min_value": "0",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "8",
+          "count": 109
+        },
+        {
+          "value": "7",
+          "count": 98
+        },
+        {
+          "value": "4",
+          "count": 98
+        },
+        {
+          "value": "10",
+          "count": 94
+        },
+        {
+          "value": "1",
+          "count": 93
+        },
+        {
+          "value": "5",
+          "count": 91
+        },
+        {
+          "value": "2",
+          "count": 90
+        },
+        {
+          "value": "0",
+          "count": 86
+        },
+        {
+          "value": "3",
+          "count": 82
+        },
+        {
+          "value": "6",
+          "count": 81
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D",
+        "DD"
+      ]
+    },
+    "credit_template|credit_accounts_and_history|totcredlimit": {
+      "table_name": "credit_accounts_and_history",
+      "column_name": "totcredlimit",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 998,
+      "min_value": "100042.0",
+      "max_value": "99901.0",
+      "top_k_values": [
+        {
+          "value": "90667.0",
+          "count": 2
+        },
+        {
+          "value": "22449.0",
+          "count": 2
+        },
+        {
+          "value": "199639.0",
+          "count": 1
+        },
+        {
+          "value": "199471.0",
+          "count": 1
+        },
+        {
+          "value": "199446.0",
+          "count": 1
+        },
+        {
+          "value": "199445.0",
+          "count": 1
+        },
+        {
+          "value": "199399.0",
+          "count": 1
+        },
+        {
+          "value": "198918.0",
+          "count": 1
+        },
+        {
+          "value": "198880.0",
+          "count": 1
+        },
+        {
+          "value": "198863.0",
+          "count": 1
+        }
+      ],
+      "min_length": 5,
+      "max_length": 8,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDDD.D",
+        "DDDDD.D",
+        "DDDD.D",
+        "DDD.D"
+      ]
+    },
+    "credit_template|credit_accounts_and_history|credutil": {
+      "table_name": "credit_accounts_and_history",
+      "column_name": "credutil",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 647,
+      "min_value": "0.0",
+      "max_value": "1.0",
+      "top_k_values": [
+        {
+          "value": "0.983",
+          "count": 8
+        },
+        {
+          "value": "0.742",
+          "count": 6
+        },
+        {
+          "value": "0.978",
+          "count": 5
+        },
+        {
+          "value": "0.966",
+          "count": 5
+        },
+        {
+          "value": "0.787",
+          "count": 5
+        },
+        {
+          "value": "0.408",
+          "count": 5
+        },
+        {
+          "value": "0.977",
+          "count": 4
+        },
+        {
+          "value": "0.93",
+          "count": 4
+        },
+        {
+          "value": "0.8",
+          "count": 4
+        },
+        {
+          "value": "0.73",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "credit_template|credit_accounts_and_history|cardpayhist": {
+      "table_name": "credit_accounts_and_history",
+      "column_name": "cardpayhist",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "Excellent",
+      "max_value": "Poor",
+      "top_k_values": [
+        {
+          "value": "Good",
+          "count": 276
+        },
+        {
+          "value": "Fair",
+          "count": 260
+        },
+        {
+          "value": "Excellent",
+          "count": 236
+        },
+        {
+          "value": "Poor",
+          "count": 228
+        }
+      ],
+      "min_length": 4,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAAAAAAAA"
+      ]
+    },
+    "credit_template|credit_accounts_and_history|loancount": {
+      "table_name": "credit_accounts_and_history",
+      "column_name": "loancount",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 6,
+      "min_value": "0",
+      "max_value": "5",
+      "top_k_values": [
+        {
+          "value": "0",
+          "count": 178
+        },
+        {
+          "value": "1",
+          "count": 175
+        },
+        {
+          "value": "4",
+          "count": 173
+        },
+        {
+          "value": "3",
+          "count": 172
+        },
+        {
+          "value": "2",
+          "count": 164
+        },
+        {
+          "value": "5",
+          "count": 138
+        }
+      ],
+      "min_length": 1,
+      "max_length": 1,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D"
+      ]
+    },
+    "credit_template|credit_accounts_and_history|activeloan": {
+      "table_name": "credit_accounts_and_history",
+      "column_name": "activeloan",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "0",
+      "max_value": "3",
+      "top_k_values": [
+        {
+          "value": "2",
+          "count": 262
+        },
+        {
+          "value": "1",
+          "count": 262
+        },
+        {
+          "value": "3",
+          "count": 256
+        },
+        {
+          "value": "0",
+          "count": 220
+        }
+      ],
+      "min_length": 1,
+      "max_length": 1,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D"
+      ]
+    },
+    "credit_template|credit_accounts_and_history|totloanamt": {
+      "table_name": "credit_accounts_and_history",
+      "column_name": "totloanamt",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "100695",
+      "max_value": "99791",
+      "top_k_values": [
+        {
+          "value": "499406",
+          "count": 1
+        },
+        {
+          "value": "499382",
+          "count": 1
+        },
+        {
+          "value": "499263",
+          "count": 1
+        },
+        {
+          "value": "499137",
+          "count": 1
+        },
+        {
+          "value": "498190",
+          "count": 1
+        },
+        {
+          "value": "496065",
+          "count": 1
+        },
+        {
+          "value": "495027",
+          "count": 1
+        },
+        {
+          "value": "495016",
+          "count": 1
+        },
+        {
+          "value": "493985",
+          "count": 1
+        },
+        {
+          "value": "493274",
+          "count": 1
+        }
+      ],
+      "min_length": 2,
+      "max_length": 6,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDDD",
+        "DDDDD",
+        "DDDD",
+        "DDD",
+        "DD"
+      ]
+    },
+    "credit_template|credit_accounts_and_history|loanpayhist": {
+      "table_name": "credit_accounts_and_history",
+      "column_name": "loanpayhist",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "Excellent",
+      "max_value": "Poor",
+      "top_k_values": [
+        {
+          "value": "Excellent",
+          "count": 254
+        },
+        {
+          "value": "Fair",
+          "count": 253
+        },
+        {
+          "value": "Good",
+          "count": 250
+        },
+        {
+          "value": "Poor",
+          "count": 243
+        }
+      ],
+      "min_length": 4,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAAAAAAAA"
+      ]
+    },
+    "credit_template|credit_accounts_and_history|custservint": {
+      "table_name": "credit_accounts_and_history",
+      "column_name": "custservint",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 21,
+      "min_value": "0",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "14",
+          "count": 60
+        },
+        {
+          "value": "4",
+          "count": 58
+        },
+        {
+          "value": "20",
+          "count": 55
+        },
+        {
+          "value": "9",
+          "count": 54
+        },
+        {
+          "value": "11",
+          "count": 52
+        },
+        {
+          "value": "5",
+          "count": 52
+        },
+        {
+          "value": "17",
+          "count": 50
+        },
+        {
+          "value": "6",
+          "count": 50
+        },
+        {
+          "value": "3",
+          "count": 50
+        },
+        {
+          "value": "16",
+          "count": 49
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D"
+      ]
+    },
+    "credit_template|credit_accounts_and_history|complainthist": {
+      "table_name": "credit_accounts_and_history",
+      "column_name": "complainthist",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 249,
+      "non_null_count": 751,
+      "distinct_count": 3,
+      "min_value": "High",
+      "max_value": "Medium",
+      "top_k_values": [
+        {
+          "value": "Low",
+          "count": 259
+        },
+        {
+          "value": "High",
+          "count": 248
+        },
+        {
+          "value": "Medium",
+          "count": 244
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAA",
+        "AAAA",
+        "AAAAAA"
+      ]
+    },
+    "credit_template|credit_accounts_and_history|produsescore": {
+      "table_name": "credit_accounts_and_history",
+      "column_name": "produsescore",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 626,
+      "min_value": "0.0",
+      "max_value": "0.999",
+      "top_k_values": [
+        {
+          "value": "0.835",
+          "count": 5
+        },
+        {
+          "value": "0.004",
+          "count": 5
+        },
+        {
+          "value": "0.992",
+          "count": 4
+        },
+        {
+          "value": "0.936",
+          "count": 4
+        },
+        {
+          "value": "0.803",
+          "count": 4
+        },
+        {
+          "value": "0.767",
+          "count": 4
+        },
+        {
+          "value": "0.657",
+          "count": 4
+        },
+        {
+          "value": "0.533",
+          "count": 4
+        },
+        {
+          "value": "0.527",
+          "count": 4
+        },
+        {
+          "value": "0.476",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "credit_template|credit_accounts_and_history|chanusescore": {
+      "table_name": "credit_accounts_and_history",
+      "column_name": "chanusescore",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 617,
+      "min_value": "0.001",
+      "max_value": "1.0",
+      "top_k_values": [
+        {
+          "value": "0.699",
+          "count": 5
+        },
+        {
+          "value": "0.68",
+          "count": 5
+        },
+        {
+          "value": "0.974",
+          "count": 4
+        },
+        {
+          "value": "0.953",
+          "count": 4
+        },
+        {
+          "value": "0.878",
+          "count": 4
+        },
+        {
+          "value": "0.819",
+          "count": 4
+        },
+        {
+          "value": "0.756",
+          "count": 4
+        },
+        {
+          "value": "0.563",
+          "count": 4
+        },
+        {
+          "value": "0.49",
+          "count": 4
+        },
+        {
+          "value": "0.485",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "credit_template|credit_accounts_and_history|custlifeval": {
+      "table_name": "credit_accounts_and_history",
+      "column_name": "custlifeval",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "10068.82",
+      "max_value": "99925.86",
+      "top_k_values": [
+        {
+          "value": "99925.86",
+          "count": 1
+        },
+        {
+          "value": "99725.17",
+          "count": 1
+        },
+        {
+          "value": "99543.11",
+          "count": 1
+        },
+        {
+          "value": "99525.95",
+          "count": 1
+        },
+        {
+          "value": "99473.08",
+          "count": 1
+        },
+        {
+          "value": "99370.09",
+          "count": 1
+        },
+        {
+          "value": "99367.31",
+          "count": 1
+        },
+        {
+          "value": "99211.3",
+          "count": 1
+        },
+        {
+          "value": "98873.38",
+          "count": 1
+        },
+        {
+          "value": "98644.55",
+          "count": 1
+        }
+      ],
+      "min_length": 5,
+      "max_length": 8,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDD.DD",
+        "DDDDD.D",
+        "DDDD.DD",
+        "DDDD.D",
+        "DDD.DD"
+      ]
+    },
+    "credit_template|credit_and_compliance|compbankref": {
+      "table_name": "credit_and_compliance",
+      "column_name": "compbankref",
+      "column_type": "TEXT(20)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "CS100439",
+      "max_value": "CS999369",
+      "top_k_values": [
+        {
+          "value": "CS100439",
+          "count": 1
+        },
+        {
+          "value": "CS100596",
+          "count": 1
+        },
+        {
+          "value": "CS100625",
+          "count": 1
+        },
+        {
+          "value": "CS101227",
+          "count": 1
+        },
+        {
+          "value": "CS101678",
+          "count": 1
+        },
+        {
+          "value": "CS103479",
+          "count": 1
+        },
+        {
+          "value": "CS104169",
+          "count": 1
+        },
+        {
+          "value": "CS104621",
+          "count": 1
+        },
+        {
+          "value": "CS104627",
+          "count": 1
+        },
+        {
+          "value": "CS106874",
+          "count": 1
+        }
+      ],
+      "min_length": 8,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDDDD"
+      ]
+    },
+    "credit_template|credit_and_compliance|sancresult": {
+      "table_name": "credit_and_compliance",
+      "column_name": "sancresult",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Fail",
+      "max_value": "Pass",
+      "top_k_values": [
+        {
+          "value": "Fail",
+          "count": 344
+        },
+        {
+          "value": "Pass",
+          "count": 335
+        },
+        {
+          "value": "Flag",
+          "count": 321
+        }
+      ],
+      "min_length": 4,
+      "max_length": 4,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAA"
+      ]
+    },
+    "credit_template|credit_and_compliance|pepresult": {
+      "table_name": "credit_and_compliance",
+      "column_name": "pepresult",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Fail",
+      "max_value": "Pass",
+      "top_k_values": [
+        {
+          "value": "Fail",
+          "count": 346
+        },
+        {
+          "value": "Flag",
+          "count": 333
+        },
+        {
+          "value": "Pass",
+          "count": 321
+        }
+      ],
+      "min_length": 4,
+      "max_length": 4,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AAAA"
+      ]
+    },
+    "credit_template|credit_and_compliance|legalstat": {
+      "table_name": "credit_and_compliance",
+      "column_name": "legalstat",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Clear",
+      "max_value": "Under Review",
+      "top_k_values": [
+        {
+          "value": "Restricted",
+          "count": 339
+        },
+        {
+          "value": "Under Review",
+          "count": 333
+        },
+        {
+          "value": "Clear",
+          "count": 328
+        }
+      ],
+      "min_length": 5,
+      "max_length": 12,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAAA",
+        "AAAAA AAAAAA",
+        "AAAAA"
+      ]
+    },
+    "credit_template|credit_and_compliance|regcompliance": {
+      "table_name": "credit_and_compliance",
+      "column_name": "regcompliance",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 2,
+      "min_value": "Compliant",
+      "max_value": "Non-compliant",
+      "top_k_values": [
+        {
+          "value": "Compliant",
+          "count": 503
+        },
+        {
+          "value": "Non-compliant",
+          "count": 497
+        }
+      ],
+      "min_length": 9,
+      "max_length": 13,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAA",
+        "AAA-AAAAAAAAA"
+      ]
+    },
+    "credit_template|credit_and_compliance|credscore": {
+      "table_name": "credit_and_compliance",
+      "column_name": "credscore",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 468,
+      "min_value": "300",
+      "max_value": "850",
+      "top_k_values": [
+        {
+          "value": "423",
+          "count": 7
+        },
+        {
+          "value": "742",
+          "count": 6
+        },
+        {
+          "value": "717",
+          "count": 6
+        },
+        {
+          "value": "844",
+          "count": 5
+        },
+        {
+          "value": "836",
+          "count": 5
+        },
+        {
+          "value": "787",
+          "count": 5
+        },
+        {
+          "value": "755",
+          "count": 5
+        },
+        {
+          "value": "670",
+          "count": 5
+        },
+        {
+          "value": "657",
+          "count": 5
+        },
+        {
+          "value": "600",
+          "count": 5
+        }
+      ],
+      "min_length": 3,
+      "max_length": 3,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDD"
+      ]
+    },
+    "credit_template|credit_and_compliance|risklev": {
+      "table_name": "credit_and_compliance",
+      "column_name": "risklev",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "High",
+      "max_value": "Very High",
+      "top_k_values": [
+        {
+          "value": "Medium",
+          "count": 258
+        },
+        {
+          "value": "Very High",
+          "count": 254
+        },
+        {
+          "value": "Low",
+          "count": 253
+        },
+        {
+          "value": "High",
+          "count": 235
+        }
+      ],
+      "min_length": 3,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AAAA AAAA",
+        "AAA",
+        "AAAA"
+      ]
+    },
+    "credit_template|credit_and_compliance|defhist": {
+      "table_name": "credit_and_compliance",
+      "column_name": "defhist",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 329,
+      "non_null_count": 671,
+      "distinct_count": 2,
+      "min_value": "Current",
+      "max_value": "Past",
+      "top_k_values": [
+        {
+          "value": "Current",
+          "count": 336
+        },
+        {
+          "value": "Past",
+          "count": 335
+        }
+      ],
+      "min_length": 4,
+      "max_length": 7,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAA"
+      ]
+    },
+    "credit_template|credit_and_compliance|delinqcount": {
+      "table_name": "credit_and_compliance",
+      "column_name": "delinqcount",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 11,
+      "min_value": "0",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "10",
+          "count": 103
+        },
+        {
+          "value": "2",
+          "count": 102
+        },
+        {
+          "value": "5",
+          "count": 100
+        },
+        {
+          "value": "1",
+          "count": 98
+        },
+        {
+          "value": "9",
+          "count": 95
+        },
+        {
+          "value": "4",
+          "count": 88
+        },
+        {
+          "value": "3",
+          "count": 88
+        },
+        {
+          "value": "7",
+          "count": 86
+        },
+        {
+          "value": "0",
+          "count": 84
+        },
+        {
+          "value": "8",
+          "count": 82
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D",
+        "DD"
+      ]
+    },
+    "credit_template|credit_and_compliance|latepaycount": {
+      "table_name": "credit_and_compliance",
+      "column_name": "latepaycount",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 21,
+      "min_value": "0",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "14",
+          "count": 62
+        },
+        {
+          "value": "17",
+          "count": 54
+        },
+        {
+          "value": "15",
+          "count": 52
+        },
+        {
+          "value": "8",
+          "count": 52
+        },
+        {
+          "value": "10",
+          "count": 51
+        },
+        {
+          "value": "6",
+          "count": 51
+        },
+        {
+          "value": "3",
+          "count": 51
+        },
+        {
+          "value": "2",
+          "count": 51
+        },
+        {
+          "value": "9",
+          "count": 50
+        },
+        {
+          "value": "1",
+          "count": 49
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D"
+      ]
+    },
+    "credit_template|credit_and_compliance|collacc": {
+      "table_name": "credit_and_compliance",
+      "column_name": "collacc",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 6,
+      "min_value": "0",
+      "max_value": "5",
+      "top_k_values": [
+        {
+          "value": "2",
+          "count": 190
+        },
+        {
+          "value": "5",
+          "count": 176
+        },
+        {
+          "value": "0",
+          "count": 164
+        },
+        {
+          "value": "3",
+          "count": 158
+        },
+        {
+          "value": "4",
+          "count": 156
+        },
+        {
+          "value": "1",
+          "count": 156
+        }
+      ],
+      "min_length": 1,
+      "max_length": 1,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D"
+      ]
+    },
+    "credit_template|credit_and_compliance|choffs": {
+      "table_name": "credit_and_compliance",
+      "column_name": "choffs",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "0",
+      "max_value": "3",
+      "top_k_values": [
+        {
+          "value": "2",
+          "count": 275
+        },
+        {
+          "value": "1",
+          "count": 252
+        },
+        {
+          "value": "0",
+          "count": 241
+        },
+        {
+          "value": "3",
+          "count": 232
+        }
+      ],
+      "min_length": 1,
+      "max_length": 1,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D"
+      ]
+    },
+    "credit_template|credit_and_compliance|bankr": {
+      "table_name": "credit_and_compliance",
+      "column_name": "bankr",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 2,
+      "min_value": "0",
+      "max_value": "1",
+      "top_k_values": [
+        {
+          "value": "0",
+          "count": 502
+        },
+        {
+          "value": "1",
+          "count": 498
+        }
+      ],
+      "min_length": 1,
+      "max_length": 1,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D"
+      ]
+    },
+    "credit_template|credit_and_compliance|taxlien": {
+      "table_name": "credit_and_compliance",
+      "column_name": "taxlien",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 2,
+      "min_value": "0",
+      "max_value": "1",
+      "top_k_values": [
+        {
+          "value": "1",
+          "count": 515
+        },
+        {
+          "value": "0",
+          "count": 485
+        }
+      ],
+      "min_length": 1,
+      "max_length": 1,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D"
+      ]
+    },
+    "credit_template|credit_and_compliance|civiljudge": {
+      "table_name": "credit_and_compliance",
+      "column_name": "civiljudge",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "0",
+      "max_value": "2",
+      "top_k_values": [
+        {
+          "value": "1",
+          "count": 343
+        },
+        {
+          "value": "2",
+          "count": 333
+        },
+        {
+          "value": "0",
+          "count": 324
+        }
+      ],
+      "min_length": 1,
+      "max_length": 1,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D"
+      ]
+    },
+    "credit_template|credit_and_compliance|credinq": {
+      "table_name": "credit_and_compliance",
+      "column_name": "credinq",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 16,
+      "min_value": "0",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "4",
+          "count": 74
+        },
+        {
+          "value": "2",
+          "count": 74
+        },
+        {
+          "value": "14",
+          "count": 72
+        },
+        {
+          "value": "10",
+          "count": 72
+        },
+        {
+          "value": "3",
+          "count": 71
+        },
+        {
+          "value": "1",
+          "count": 70
+        },
+        {
+          "value": "15",
+          "count": 67
+        },
+        {
+          "value": "11",
+          "count": 65
+        },
+        {
+          "value": "13",
+          "count": 60
+        },
+        {
+          "value": "8",
+          "count": 59
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D",
+        "DD"
+      ]
+    },
+    "credit_template|credit_and_compliance|hardinq": {
+      "table_name": "credit_and_compliance",
+      "column_name": "hardinq",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 11,
+      "min_value": "0",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "1",
+          "count": 103
+        },
+        {
+          "value": "6",
+          "count": 102
+        },
+        {
+          "value": "8",
+          "count": 96
+        },
+        {
+          "value": "7",
+          "count": 94
+        },
+        {
+          "value": "5",
+          "count": 91
+        },
+        {
+          "value": "3",
+          "count": 91
+        },
+        {
+          "value": "9",
+          "count": 90
+        },
+        {
+          "value": "0",
+          "count": 86
+        },
+        {
+          "value": "4",
+          "count": 85
+        },
+        {
+          "value": "10",
+          "count": 81
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D",
+        "DD"
+      ]
+    },
+    "credit_template|credit_and_compliance|softinq": {
+      "table_name": "credit_and_compliance",
+      "column_name": "softinq",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 21,
+      "min_value": "0",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "10",
+          "count": 60
+        },
+        {
+          "value": "9",
+          "count": 56
+        },
+        {
+          "value": "15",
+          "count": 55
+        },
+        {
+          "value": "5",
+          "count": 53
+        },
+        {
+          "value": "2",
+          "count": 52
+        },
+        {
+          "value": "1",
+          "count": 51
+        },
+        {
+          "value": "13",
+          "count": 49
+        },
+        {
+          "value": "3",
+          "count": 49
+        },
+        {
+          "value": "14",
+          "count": 48
+        },
+        {
+          "value": "6",
+          "count": 48
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D"
+      ]
+    },
+    "credit_template|credit_and_compliance|credrepdisp": {
+      "table_name": "credit_and_compliance",
+      "column_name": "credrepdisp",
+      "column_type": "TEXT(50)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 6,
+      "min_value": "0",
+      "max_value": "5",
+      "top_k_values": [
+        {
+          "value": "4",
+          "count": 172
+        },
+        {
+          "value": "0",
+          "count": 171
+        },
+        {
+          "value": "2",
+          "count": 170
+        },
+        {
+          "value": "1",
+          "count": 166
+        },
+        {
+          "value": "3",
+          "count": 165
+        },
+        {
+          "value": "5",
+          "count": 156
+        }
+      ],
+      "min_length": 1,
+      "max_length": 1,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D"
+      ]
+    },
+    "credit_template|credit_and_compliance|credageyrs": {
+      "table_name": "credit_and_compliance",
+      "column_name": "credageyrs",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 31,
+      "min_value": "0",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "24",
+          "count": 46
+        },
+        {
+          "value": "21",
+          "count": 44
+        },
+        {
+          "value": "25",
+          "count": 41
+        },
+        {
+          "value": "8",
+          "count": 41
+        },
+        {
+          "value": "27",
+          "count": 38
+        },
+        {
+          "value": "13",
+          "count": 37
+        },
+        {
+          "value": "9",
+          "count": 37
+        },
+        {
+          "value": "30",
+          "count": 36
+        },
+        {
+          "value": "20",
+          "count": 35
+        },
+        {
+          "value": "10",
+          "count": 35
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D"
+      ]
+    },
+    "credit_template|credit_and_compliance|oldaccage": {
+      "table_name": "credit_and_compliance",
+      "column_name": "oldaccage",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 31,
+      "min_value": "0",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "22",
+          "count": 42
+        },
+        {
+          "value": "24",
+          "count": 41
+        },
+        {
+          "value": "9",
+          "count": 40
+        },
+        {
+          "value": "25",
+          "count": 38
+        },
+        {
+          "value": "10",
+          "count": 38
+        },
+        {
+          "value": "3",
+          "count": 38
+        },
+        {
+          "value": "2",
+          "count": 38
+        },
+        {
+          "value": "18",
+          "count": 36
+        },
+        {
+          "value": "0",
+          "count": 36
+        },
+        {
+          "value": "26",
+          "count": 35
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D"
+      ]
+    },
+    "credit_template|employment_and_income|emplcoreref": {
+      "table_name": "employment_and_income",
+      "column_name": "emplcoreref",
+      "column_type": "TEXT(20)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "CS100439",
+      "max_value": "CS999369",
+      "top_k_values": [
+        {
+          "value": "CS100439",
+          "count": 1
+        },
+        {
+          "value": "CS100596",
+          "count": 1
+        },
+        {
+          "value": "CS100625",
+          "count": 1
+        },
+        {
+          "value": "CS101227",
+          "count": 1
+        },
+        {
+          "value": "CS101678",
+          "count": 1
+        },
+        {
+          "value": "CS103479",
+          "count": 1
+        },
+        {
+          "value": "CS104169",
+          "count": 1
+        },
+        {
+          "value": "CS104621",
+          "count": 1
+        },
+        {
+          "value": "CS104627",
+          "count": 1
+        },
+        {
+          "value": "CS106874",
+          "count": 1
+        }
+      ],
+      "min_length": 8,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDDDD"
+      ]
+    },
+    "credit_template|employment_and_income|emplstat": {
+      "table_name": "employment_and_income",
+      "column_name": "emplstat",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "Employed",
+      "max_value": "Unemployed",
+      "top_k_values": [
+        {
+          "value": "Unemployed",
+          "count": 257
+        },
+        {
+          "value": "Self-employed",
+          "count": 248
+        },
+        {
+          "value": "Employed",
+          "count": 248
+        },
+        {
+          "value": "Retired",
+          "count": 247
+        }
+      ],
+      "min_length": 7,
+      "max_length": 13,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAAA",
+        "AAAA-AAAAAAAA",
+        "AAAAAAAA",
+        "AAAAAAA"
+      ]
+    },
+    "credit_template|employment_and_income|empllen": {
+      "table_name": "employment_and_income",
+      "column_name": "empllen",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 41,
+      "min_value": "0",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "40",
+          "count": 34
+        },
+        {
+          "value": "26",
+          "count": 33
+        },
+        {
+          "value": "22",
+          "count": 33
+        },
+        {
+          "value": "12",
+          "count": 33
+        },
+        {
+          "value": "32",
+          "count": 32
+        },
+        {
+          "value": "24",
+          "count": 30
+        },
+        {
+          "value": "23",
+          "count": 30
+        },
+        {
+          "value": "28",
+          "count": 29
+        },
+        {
+          "value": "14",
+          "count": 28
+        },
+        {
+          "value": "34",
+          "count": 27
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D"
+      ]
+    },
+    "credit_template|employment_and_income|joblabel": {
+      "table_name": "employment_and_income",
+      "column_name": "joblabel",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 5,
+      "min_value": "Doctor",
+      "max_value": "Teacher",
+      "top_k_values": [
+        {
+          "value": "Engineer",
+          "count": 213
+        },
+        {
+          "value": "Other",
+          "count": 211
+        },
+        {
+          "value": "Doctor",
+          "count": 195
+        },
+        {
+          "value": "Teacher",
+          "count": 194
+        },
+        {
+          "value": "Manager",
+          "count": 187
+        }
+      ],
+      "min_length": 5,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAAAA",
+        "AAAAA",
+        "AAAAAA"
+      ]
+    },
+    "credit_template|employment_and_income|indsector": {
+      "table_name": "employment_and_income",
+      "column_name": "indsector",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 5,
+      "min_value": "Education",
+      "max_value": "Technology",
+      "top_k_values": [
+        {
+          "value": "Healthcare",
+          "count": 224
+        },
+        {
+          "value": "Other",
+          "count": 214
+        },
+        {
+          "value": "Finance",
+          "count": 209
+        },
+        {
+          "value": "Education",
+          "count": 177
+        },
+        {
+          "value": "Technology",
+          "count": 176
+        }
+      ],
+      "min_length": 5,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAAAAA",
+        "AAAAA",
+        "AAAAAAA",
+        "AAAAAAAAA"
+      ]
+    },
+    "credit_template|employment_and_income|employerref": {
+      "table_name": "employment_and_income",
+      "column_name": "employerref",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 972,
+      "min_value": "Acosta-Lynch",
+      "max_value": "Young-Martin",
+      "top_k_values": [
+        {
+          "value": "Smith PLC",
+          "count": 3
+        },
+        {
+          "value": "Johnson and Sons",
+          "count": 3
+        },
+        {
+          "value": "Johnson PLC",
+          "count": 3
+        },
+        {
+          "value": "Brown Ltd",
+          "count": 3
+        },
+        {
+          "value": "Wilson PLC",
+          "count": 2
+        },
+        {
+          "value": "Wilson Inc",
+          "count": 2
+        },
+        {
+          "value": "Williams Group",
+          "count": 2
+        },
+        {
+          "value": "Turner Ltd",
+          "count": 2
+        },
+        {
+          "value": "Torres-Jones",
+          "count": 2
+        },
+        {
+          "value": "Torres and Sons",
+          "count": 2
+        }
+      ],
+      "min_length": 7,
+      "max_length": 33,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA AAA",
+        "AAAAA AAA",
+        "AAAAAAA AAA",
+        "AAAA AAA",
+        "AAAAAAAA AAA"
+      ]
+    },
+    "credit_template|employment_and_income|annlincome": {
+      "table_name": "employment_and_income",
+      "column_name": "annlincome",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 999,
+      "min_value": "101452.0",
+      "max_value": "98398.0",
+      "top_k_values": [
+        {
+          "value": "151876.0",
+          "count": 2
+        },
+        {
+          "value": "499544.0",
+          "count": 1
+        },
+        {
+          "value": "499004.0",
+          "count": 1
+        },
+        {
+          "value": "497455.0",
+          "count": 1
+        },
+        {
+          "value": "496954.0",
+          "count": 1
+        },
+        {
+          "value": "496886.0",
+          "count": 1
+        },
+        {
+          "value": "496686.0",
+          "count": 1
+        },
+        {
+          "value": "496531.0",
+          "count": 1
+        },
+        {
+          "value": "496471.0",
+          "count": 1
+        },
+        {
+          "value": "495321.0",
+          "count": 1
+        }
+      ],
+      "min_length": 7,
+      "max_length": 8,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDDD.D",
+        "DDDDD.D"
+      ]
+    },
+    "credit_template|employment_and_income|mthincome": {
+      "table_name": "employment_and_income",
+      "column_name": "mthincome",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 999,
+      "min_value": "10015.92",
+      "max_value": "9934.08",
+      "top_k_values": [
+        {
+          "value": "12656.33",
+          "count": 2
+        },
+        {
+          "value": "41628.67",
+          "count": 1
+        },
+        {
+          "value": "41583.67",
+          "count": 1
+        },
+        {
+          "value": "41454.58",
+          "count": 1
+        },
+        {
+          "value": "41412.83",
+          "count": 1
+        },
+        {
+          "value": "41407.17",
+          "count": 1
+        },
+        {
+          "value": "41390.5",
+          "count": 1
+        },
+        {
+          "value": "41377.58",
+          "count": 1
+        },
+        {
+          "value": "41372.58",
+          "count": 1
+        },
+        {
+          "value": "41276.75",
+          "count": 1
+        }
+      ],
+      "min_length": 6,
+      "max_length": 8,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDD.DD",
+        "DDDD.DD",
+        "DDDDD.D",
+        "DDDD.D"
+      ]
+    },
+    "credit_template|employment_and_income|incverify": {
+      "table_name": "employment_and_income",
+      "column_name": "incverify",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Failed",
+      "max_value": "Verified",
+      "top_k_values": [
+        {
+          "value": "Pending",
+          "count": 344
+        },
+        {
+          "value": "Verified",
+          "count": 334
+        },
+        {
+          "value": "Failed",
+          "count": 322
+        }
+      ],
+      "min_length": 6,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAAA",
+        "AAAAAAAA",
+        "AAAAAA"
+      ]
+    },
+    "credit_template|employment_and_income|incstabscore": {
+      "table_name": "employment_and_income",
+      "column_name": "incstabscore",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 640,
+      "min_value": "0.001",
+      "max_value": "0.999",
+      "top_k_values": [
+        {
+          "value": "0.896",
+          "count": 5
+        },
+        {
+          "value": "0.734",
+          "count": 5
+        },
+        {
+          "value": "0.029",
+          "count": 5
+        },
+        {
+          "value": "0.932",
+          "count": 4
+        },
+        {
+          "value": "0.926",
+          "count": 4
+        },
+        {
+          "value": "0.907",
+          "count": 4
+        },
+        {
+          "value": "0.9",
+          "count": 4
+        },
+        {
+          "value": "0.862",
+          "count": 4
+        },
+        {
+          "value": "0.774",
+          "count": 4
+        },
+        {
+          "value": "0.69",
+          "count": 4
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "credit_template|employment_and_income|addincome": {
+      "table_name": "employment_and_income",
+      "column_name": "addincome",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 992,
+      "min_value": "10045.0",
+      "max_value": "9963.0",
+      "top_k_values": [
+        {
+          "value": "49362.0",
+          "count": 2
+        },
+        {
+          "value": "38088.0",
+          "count": 2
+        },
+        {
+          "value": "37211.0",
+          "count": 2
+        },
+        {
+          "value": "15587.0",
+          "count": 2
+        },
+        {
+          "value": "12660.0",
+          "count": 2
+        },
+        {
+          "value": "12360.0",
+          "count": 2
+        },
+        {
+          "value": "8852.0",
+          "count": 2
+        },
+        {
+          "value": "7625.0",
+          "count": 2
+        },
+        {
+          "value": "49953.0",
+          "count": 1
+        },
+        {
+          "value": "49952.0",
+          "count": 1
+        }
+      ],
+      "min_length": 4,
+      "max_length": 7,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDD.D",
+        "DDDD.D",
+        "DDD.D",
+        "DD.D"
+      ]
+    },
+    "credit_template|employment_and_income|addincomesrc": {
+      "table_name": "employment_and_income",
+      "column_name": "addincomesrc",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 255,
+      "non_null_count": 745,
+      "distinct_count": 3,
+      "min_value": "Investment",
+      "max_value": "Rental",
+      "top_k_values": [
+        {
+          "value": "Part-time",
+          "count": 258
+        },
+        {
+          "value": "Rental",
+          "count": 255
+        },
+        {
+          "value": "Investment",
+          "count": 232
+        }
+      ],
+      "min_length": 6,
+      "max_length": 10,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA-AAAA",
+        "AAAAAA",
+        "AAAAAAAAAA"
+      ]
+    },
+    "credit_template|employment_and_income|hshincome": {
+      "table_name": "employment_and_income",
+      "column_name": "hshincome",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "101164.0",
+      "max_value": "99875.0",
+      "top_k_values": [
+        {
+          "value": "797514.0",
+          "count": 1
+        },
+        {
+          "value": "793906.0",
+          "count": 1
+        },
+        {
+          "value": "793557.0",
+          "count": 1
+        },
+        {
+          "value": "793488.0",
+          "count": 1
+        },
+        {
+          "value": "792967.0",
+          "count": 1
+        },
+        {
+          "value": "792657.0",
+          "count": 1
+        },
+        {
+          "value": "792616.0",
+          "count": 1
+        },
+        {
+          "value": "791853.0",
+          "count": 1
+        },
+        {
+          "value": "791786.0",
+          "count": 1
+        },
+        {
+          "value": "788058.0",
+          "count": 1
+        }
+      ],
+      "min_length": 7,
+      "max_length": 8,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDDD.D",
+        "DDDDD.D"
+      ]
+    },
+    "credit_template|employment_and_income|emplstable": {
+      "table_name": "employment_and_income",
+      "column_name": "emplstable",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 21,
+      "min_value": "0",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "20",
+          "count": 59
+        },
+        {
+          "value": "14",
+          "count": 56
+        },
+        {
+          "value": "1",
+          "count": 56
+        },
+        {
+          "value": "17",
+          "count": 55
+        },
+        {
+          "value": "4",
+          "count": 54
+        },
+        {
+          "value": "3",
+          "count": 51
+        },
+        {
+          "value": "7",
+          "count": 49
+        },
+        {
+          "value": "13",
+          "count": 47
+        },
+        {
+          "value": "19",
+          "count": 46
+        },
+        {
+          "value": "15",
+          "count": 46
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D"
+      ]
+    },
+    "credit_template|employment_and_income|indrisklvl": {
+      "table_name": "employment_and_income",
+      "column_name": "indrisklvl",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "High",
+      "max_value": "Medium",
+      "top_k_values": [
+        {
+          "value": "Medium",
+          "count": 344
+        },
+        {
+          "value": "High",
+          "count": 332
+        },
+        {
+          "value": "Low",
+          "count": 324
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AAAA",
+        "AAA"
+      ]
+    },
+    "credit_template|employment_and_income|occrisklvl": {
+      "table_name": "employment_and_income",
+      "column_name": "occrisklvl",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "High",
+      "max_value": "Medium",
+      "top_k_values": [
+        {
+          "value": "Medium",
+          "count": 337
+        },
+        {
+          "value": "High",
+          "count": 337
+        },
+        {
+          "value": "Low",
+          "count": 326
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AAAA",
+        "AAA"
+      ]
+    },
+    "credit_template|employment_and_income|incsrcrisk": {
+      "table_name": "employment_and_income",
+      "column_name": "incsrcrisk",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "High",
+      "max_value": "Medium",
+      "top_k_values": [
+        {
+          "value": "Low",
+          "count": 335
+        },
+        {
+          "value": "High",
+          "count": 334
+        },
+        {
+          "value": "Medium",
+          "count": 331
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAA",
+        "AAAA",
+        "AAAAAA"
+      ]
+    },
+    "credit_template|employment_and_income|georisk": {
+      "table_name": "employment_and_income",
+      "column_name": "georisk",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "High",
+      "max_value": "Medium",
+      "top_k_values": [
+        {
+          "value": "Medium",
+          "count": 342
+        },
+        {
+          "value": "High",
+          "count": 336
+        },
+        {
+          "value": "Low",
+          "count": 322
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAAA",
+        "AAAA",
+        "AAA"
+      ]
+    },
+    "credit_template|employment_and_income|demrisk": {
+      "table_name": "employment_and_income",
+      "column_name": "demrisk",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "High",
+      "max_value": "Medium",
+      "top_k_values": [
+        {
+          "value": "Low",
+          "count": 341
+        },
+        {
+          "value": "Medium",
+          "count": 330
+        },
+        {
+          "value": "High",
+          "count": 329
+        }
+      ],
+      "min_length": 3,
+      "max_length": 6,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAA",
+        "AAAAAA",
+        "AAAA"
+      ]
+    },
+    "credit_template|employment_and_income|edulevel": {
+      "table_name": "employment_and_income",
+      "column_name": "edulevel",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "Bachelor",
+      "max_value": "Master",
+      "top_k_values": [
+        {
+          "value": "High School",
+          "count": 258
+        },
+        {
+          "value": "Bachelor",
+          "count": 252
+        },
+        {
+          "value": "Doctorate",
+          "count": 246
+        },
+        {
+          "value": "Master",
+          "count": 244
+        }
+      ],
+      "min_length": 6,
+      "max_length": 11,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA AAAAAA",
+        "AAAAAAAA",
+        "AAAAAAAAA",
+        "AAAAAA"
+      ]
+    },
+    "credit_template|employment_and_income|debincratio": {
+      "table_name": "employment_and_income",
+      "column_name": "debincratio",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 484,
+      "min_value": "0.001",
+      "max_value": "0.598",
+      "top_k_values": [
+        {
+          "value": "0.506",
+          "count": 8
+        },
+        {
+          "value": "0.066",
+          "count": 7
+        },
+        {
+          "value": "0.326",
+          "count": 6
+        },
+        {
+          "value": "0.262",
+          "count": 6
+        },
+        {
+          "value": "0.591",
+          "count": 5
+        },
+        {
+          "value": "0.463",
+          "count": 5
+        },
+        {
+          "value": "0.432",
+          "count": 5
+        },
+        {
+          "value": "0.417",
+          "count": 5
+        },
+        {
+          "value": "0.377",
+          "count": 5
+        },
+        {
+          "value": "0.327",
+          "count": 5
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "credit_template|expenses_and_assets|expemplref": {
+      "table_name": "expenses_and_assets",
+      "column_name": "expemplref",
+      "column_type": "TEXT(20)",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "CS100439",
+      "max_value": "CS999369",
+      "top_k_values": [
+        {
+          "value": "CS100439",
+          "count": 1
+        },
+        {
+          "value": "CS100596",
+          "count": 1
+        },
+        {
+          "value": "CS100625",
+          "count": 1
+        },
+        {
+          "value": "CS101227",
+          "count": 1
+        },
+        {
+          "value": "CS101678",
+          "count": 1
+        },
+        {
+          "value": "CS103479",
+          "count": 1
+        },
+        {
+          "value": "CS104169",
+          "count": 1
+        },
+        {
+          "value": "CS104621",
+          "count": 1
+        },
+        {
+          "value": "CS104627",
+          "count": 1
+        },
+        {
+          "value": "CS106874",
+          "count": 1
+        }
+      ],
+      "min_length": 8,
+      "max_length": 8,
+      "is_always_numeric": false,
+      "is_constant_length": true,
+      "common_patterns": [
+        "AADDDDDD"
+      ]
+    },
+    "credit_template|expenses_and_assets|mthexp": {
+      "table_name": "expenses_and_assets",
+      "column_name": "mthexp",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 944,
+      "min_value": "1032.0",
+      "max_value": "9998.0",
+      "top_k_values": [
+        {
+          "value": "5512.0",
+          "count": 3
+        },
+        {
+          "value": "4757.0",
+          "count": 3
+        },
+        {
+          "value": "1723.0",
+          "count": 3
+        },
+        {
+          "value": "9758.0",
+          "count": 2
+        },
+        {
+          "value": "9640.0",
+          "count": 2
+        },
+        {
+          "value": "9420.0",
+          "count": 2
+        },
+        {
+          "value": "9171.0",
+          "count": 2
+        },
+        {
+          "value": "9121.0",
+          "count": 2
+        },
+        {
+          "value": "8936.0",
+          "count": 2
+        },
+        {
+          "value": "8847.0",
+          "count": 2
+        }
+      ],
+      "min_length": 6,
+      "max_length": 6,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "DDDD.D"
+      ]
+    },
+    "credit_template|expenses_and_assets|fixexpratio": {
+      "table_name": "expenses_and_assets",
+      "column_name": "fixexpratio",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 484,
+      "min_value": "0.2",
+      "max_value": "0.8",
+      "top_k_values": [
+        {
+          "value": "0.237",
+          "count": 7
+        },
+        {
+          "value": "0.758",
+          "count": 6
+        },
+        {
+          "value": "0.538",
+          "count": 6
+        },
+        {
+          "value": "0.472",
+          "count": 6
+        },
+        {
+          "value": "0.781",
+          "count": 5
+        },
+        {
+          "value": "0.695",
+          "count": 5
+        },
+        {
+          "value": "0.687",
+          "count": 5
+        },
+        {
+          "value": "0.685",
+          "count": 5
+        },
+        {
+          "value": "0.673",
+          "count": 5
+        },
+        {
+          "value": "0.617",
+          "count": 5
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "credit_template|expenses_and_assets|discexpratio": {
+      "table_name": "expenses_and_assets",
+      "column_name": "discexpratio",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 367,
+      "min_value": "0.101",
+      "max_value": "0.499",
+      "top_k_values": [
+        {
+          "value": "0.495",
+          "count": 7
+        },
+        {
+          "value": "0.162",
+          "count": 7
+        },
+        {
+          "value": "0.131",
+          "count": 7
+        },
+        {
+          "value": "0.479",
+          "count": 6
+        },
+        {
+          "value": "0.385",
+          "count": 6
+        },
+        {
+          "value": "0.374",
+          "count": 6
+        },
+        {
+          "value": "0.361",
+          "count": 6
+        },
+        {
+          "value": "0.35",
+          "count": 6
+        },
+        {
+          "value": "0.332",
+          "count": 6
+        },
+        {
+          "value": "0.293",
+          "count": 6
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "D.DDD",
+        "D.DD",
+        "D.D"
+      ]
+    },
+    "credit_template|expenses_and_assets|savamount": {
+      "table_name": "expenses_and_assets",
+      "column_name": "savamount",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "100143.0",
+      "max_value": "99093.0",
+      "top_k_values": [
+        {
+          "value": "499775.0",
+          "count": 1
+        },
+        {
+          "value": "499567.0",
+          "count": 1
+        },
+        {
+          "value": "499344.0",
+          "count": 1
+        },
+        {
+          "value": "499148.0",
+          "count": 1
+        },
+        {
+          "value": "499074.0",
+          "count": 1
+        },
+        {
+          "value": "498880.0",
+          "count": 1
+        },
+        {
+          "value": "498684.0",
+          "count": 1
+        },
+        {
+          "value": "498524.0",
+          "count": 1
+        },
+        {
+          "value": "497901.0",
+          "count": 1
+        },
+        {
+          "value": "497577.0",
+          "count": 1
+        }
+      ],
+      "min_length": 5,
+      "max_length": 8,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDDD.D",
+        "DDDDD.D",
+        "DDDD.D",
+        "DDD.D"
+      ]
+    },
+    "credit_template|expenses_and_assets|investamt": {
+      "table_name": "expenses_and_assets",
+      "column_name": "investamt",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 998,
+      "min_value": "100351.0",
+      "max_value": "9990.0",
+      "top_k_values": [
+        {
+          "value": "995124.0",
+          "count": 2
+        },
+        {
+          "value": "382720.0",
+          "count": 2
+        },
+        {
+          "value": "998728.0",
+          "count": 1
+        },
+        {
+          "value": "997679.0",
+          "count": 1
+        },
+        {
+          "value": "997522.0",
+          "count": 1
+        },
+        {
+          "value": "996961.0",
+          "count": 1
+        },
+        {
+          "value": "996039.0",
+          "count": 1
+        },
+        {
+          "value": "995911.0",
+          "count": 1
+        },
+        {
+          "value": "993350.0",
+          "count": 1
+        },
+        {
+          "value": "992799.0",
+          "count": 1
+        }
+      ],
+      "min_length": 6,
+      "max_length": 8,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDDD.D",
+        "DDDDD.D",
+        "DDDD.D"
+      ]
+    },
+    "credit_template|expenses_and_assets|liqassets": {
+      "table_name": "expenses_and_assets",
+      "column_name": "liqassets",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 999,
+      "min_value": "100715.0",
+      "max_value": "996.0",
+      "top_k_values": [
+        {
+          "value": "144612.0",
+          "count": 2
+        },
+        {
+          "value": "499937.0",
+          "count": 1
+        },
+        {
+          "value": "499775.0",
+          "count": 1
+        },
+        {
+          "value": "499513.0",
+          "count": 1
+        },
+        {
+          "value": "499361.0",
+          "count": 1
+        },
+        {
+          "value": "498912.0",
+          "count": 1
+        },
+        {
+          "value": "498749.0",
+          "count": 1
+        },
+        {
+          "value": "498085.0",
+          "count": 1
+        },
+        {
+          "value": "497656.0",
+          "count": 1
+        },
+        {
+          "value": "497339.0",
+          "count": 1
+        }
+      ],
+      "min_length": 5,
+      "max_length": 8,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDDD.D",
+        "DDDDD.D",
+        "DDDD.D",
+        "DDD.D"
+      ]
+    },
+    "credit_template|expenses_and_assets|totassets": {
+      "table_name": "expenses_and_assets",
+      "column_name": "totassets",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "1000480.0",
+      "max_value": "997451.0",
+      "top_k_values": [
+        {
+          "value": "1999400.0",
+          "count": 1
+        },
+        {
+          "value": "1994651.0",
+          "count": 1
+        },
+        {
+          "value": "1993645.0",
+          "count": 1
+        },
+        {
+          "value": "1990968.0",
+          "count": 1
+        },
+        {
+          "value": "1987962.0",
+          "count": 1
+        },
+        {
+          "value": "1985841.0",
+          "count": 1
+        },
+        {
+          "value": "1983655.0",
+          "count": 1
+        },
+        {
+          "value": "1983531.0",
+          "count": 1
+        },
+        {
+          "value": "1980512.0",
+          "count": 1
+        },
+        {
+          "value": "1979418.0",
+          "count": 1
+        }
+      ],
+      "min_length": 6,
+      "max_length": 9,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDDDD.D",
+        "DDDDDD.D",
+        "DDDDD.D",
+        "DDDD.D"
+      ]
+    },
+    "credit_template|expenses_and_assets|totliabs": {
+      "table_name": "expenses_and_assets",
+      "column_name": "totliabs",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 999,
+      "min_value": "102254.0",
+      "max_value": "999971.0",
+      "top_k_values": [
+        {
+          "value": "511506.0",
+          "count": 2
+        },
+        {
+          "value": "999971.0",
+          "count": 1
+        },
+        {
+          "value": "999457.0",
+          "count": 1
+        },
+        {
+          "value": "994493.0",
+          "count": 1
+        },
+        {
+          "value": "991292.0",
+          "count": 1
+        },
+        {
+          "value": "991024.0",
+          "count": 1
+        },
+        {
+          "value": "990998.0",
+          "count": 1
+        },
+        {
+          "value": "990707.0",
+          "count": 1
+        },
+        {
+          "value": "990153.0",
+          "count": 1
+        },
+        {
+          "value": "989992.0",
+          "count": 1
+        }
+      ],
+      "min_length": 4,
+      "max_length": 8,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDDD.D",
+        "DDDDD.D",
+        "DDDD.D",
+        "DD.D"
+      ]
+    },
+    "credit_template|expenses_and_assets|networth": {
+      "table_name": "expenses_and_assets",
+      "column_name": "networth",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 999,
+      "min_value": "-101281.0",
+      "max_value": "999538.0",
+      "top_k_values": [
+        {
+          "value": "-391524.0",
+          "count": 2
+        },
+        {
+          "value": "1499805.0",
+          "count": 1
+        },
+        {
+          "value": "1499436.0",
+          "count": 1
+        },
+        {
+          "value": "1499173.0",
+          "count": 1
+        },
+        {
+          "value": "1496328.0",
+          "count": 1
+        },
+        {
+          "value": "1496314.0",
+          "count": 1
+        },
+        {
+          "value": "1493569.0",
+          "count": 1
+        },
+        {
+          "value": "1493126.0",
+          "count": 1
+        },
+        {
+          "value": "1492705.0",
+          "count": 1
+        },
+        {
+          "value": "1490344.0",
+          "count": 1
+        }
+      ],
+      "min_length": 5,
+      "max_length": 9,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDDD.D",
+        "DDDDDDD.D",
+        "-DDDDDD.D",
+        "DDDDD.D",
+        "-DDDDD.D"
+      ]
+    },
+    "credit_template|expenses_and_assets|vehown": {
+      "table_name": "expenses_and_assets",
+      "column_name": "vehown",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 319,
+      "non_null_count": 681,
+      "distinct_count": 2,
+      "min_value": "Lease",
+      "max_value": "Own",
+      "top_k_values": [
+        {
+          "value": "Lease",
+          "count": 367
+        },
+        {
+          "value": "Own",
+          "count": 314
+        }
+      ],
+      "min_length": 3,
+      "max_length": 5,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAA",
+        "AAA"
+      ]
+    },
+    "credit_template|expenses_and_assets|vehvalue": {
+      "table_name": "expenses_and_assets",
+      "column_name": "vehvalue",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "10005.0",
+      "max_value": "99697.0",
+      "top_k_values": [
+        {
+          "value": "99697.0",
+          "count": 1
+        },
+        {
+          "value": "99672.0",
+          "count": 1
+        },
+        {
+          "value": "99531.0",
+          "count": 1
+        },
+        {
+          "value": "99402.0",
+          "count": 1
+        },
+        {
+          "value": "99365.0",
+          "count": 1
+        },
+        {
+          "value": "99264.0",
+          "count": 1
+        },
+        {
+          "value": "99195.0",
+          "count": 1
+        },
+        {
+          "value": "99171.0",
+          "count": 1
+        },
+        {
+          "value": "98920.0",
+          "count": 1
+        },
+        {
+          "value": "98734.0",
+          "count": 1
+        }
+      ],
+      "min_length": 5,
+      "max_length": 7,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDD.D",
+        "DDDD.D",
+        "DDD.D"
+      ]
+    },
+    "credit_template|expenses_and_assets|bankacccount": {
+      "table_name": "expenses_and_assets",
+      "column_name": "bankacccount",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 5,
+      "min_value": "1",
+      "max_value": "5",
+      "top_k_values": [
+        {
+          "value": "5",
+          "count": 217
+        },
+        {
+          "value": "4",
+          "count": 214
+        },
+        {
+          "value": "1",
+          "count": 198
+        },
+        {
+          "value": "3",
+          "count": 191
+        },
+        {
+          "value": "2",
+          "count": 180
+        }
+      ],
+      "min_length": 1,
+      "max_length": 1,
+      "is_always_numeric": true,
+      "is_constant_length": true,
+      "common_patterns": [
+        "D"
+      ]
+    },
+    "credit_template|expenses_and_assets|bankaccage": {
+      "table_name": "expenses_and_assets",
+      "column_name": "bankaccage",
+      "column_type": "INTEGER",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 21,
+      "min_value": "0",
+      "max_value": "9",
+      "top_k_values": [
+        {
+          "value": "17",
+          "count": 64
+        },
+        {
+          "value": "20",
+          "count": 61
+        },
+        {
+          "value": "3",
+          "count": 60
+        },
+        {
+          "value": "11",
+          "count": 57
+        },
+        {
+          "value": "6",
+          "count": 57
+        },
+        {
+          "value": "2",
+          "count": 53
+        },
+        {
+          "value": "12",
+          "count": 52
+        },
+        {
+          "value": "1",
+          "count": 51
+        },
+        {
+          "value": "4",
+          "count": 49
+        },
+        {
+          "value": "19",
+          "count": 48
+        }
+      ],
+      "min_length": 1,
+      "max_length": 2,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DD",
+        "D"
+      ]
+    },
+    "credit_template|expenses_and_assets|bankaccbal": {
+      "table_name": "expenses_and_assets",
+      "column_name": "bankaccbal",
+      "column_type": "REAL",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 999,
+      "min_value": "-164.0",
+      "max_value": "99844.0",
+      "top_k_values": [
+        {
+          "value": "64260.0",
+          "count": 2
+        },
+        {
+          "value": "99844.0",
+          "count": 1
+        },
+        {
+          "value": "99801.0",
+          "count": 1
+        },
+        {
+          "value": "99710.0",
+          "count": 1
+        },
+        {
+          "value": "99644.0",
+          "count": 1
+        },
+        {
+          "value": "99581.0",
+          "count": 1
+        },
+        {
+          "value": "99569.0",
+          "count": 1
+        },
+        {
+          "value": "99442.0",
+          "count": 1
+        },
+        {
+          "value": "99355.0",
+          "count": 1
+        },
+        {
+          "value": "99344.0",
+          "count": 1
+        }
+      ],
+      "min_length": 5,
+      "max_length": 7,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDD.D",
+        "DDDD.D",
+        "-DDD.D",
+        "DDD.D"
+      ]
+    },
+    "credit_template|expenses_and_assets|propfinancialdata": {
+      "table_name": "expenses_and_assets",
+      "column_name": "propfinancialdata",
+      "column_type": "TEXT",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "{\"propown\": \"Living with Parents\", \"proptype\": \"Apartment\", \"propvalue\": 1000482.00, \"rentpayhist\": \"Excellent\", \"mortgagebits\": {\"mortbalance\": 631010.00, \"mortpayhist\": \"Good\"}}",
+      "max_value": "{\"propown\": \"Rent\", \"proptype\": null, \"propvalue\": 969667.00, \"rentpayhist\": \"Poor\", \"mortgagebits\": {\"mortbalance\": 557270.00, \"mortpayhist\": \"Excellent\"}}",
+      "top_k_values": [
+        {
+          "value": "{\"propown\": \"Rent\", \"proptype\": null, \"propvalue\": 969667.00, \"rentpayhist\": \"Poor\", \"mortgagebits\": {\"mortbalance\": 557270.00, \"mortpayhist\": \"Excellent\"}}",
+          "count": 1
+        },
+        {
+          "value": "{\"propown\": \"Rent\", \"proptype\": null, \"propvalue\": 957564.00, \"rentpayhist\": \"Good\", \"mortgagebits\": {\"mortbalance\": 1408875.00, \"mortpayhist\": \"Fair\"}}",
+          "count": 1
+        },
+        {
+          "value": "{\"propown\": \"Rent\", \"proptype\": null, \"propvalue\": 95185.00, \"rentpayhist\": \"Poor\", \"mortgagebits\": {\"mortbalance\": 271585.00, \"mortpayhist\": \"Fair\"}}",
+          "count": 1
+        },
+        {
+          "value": "{\"propown\": \"Rent\", \"proptype\": null, \"propvalue\": 950483.00, \"rentpayhist\": \"Fair\", \"mortgagebits\": {\"mortbalance\": 330219.00, \"mortpayhist\": \"Good\"}}",
+          "count": 1
+        },
+        {
+          "value": "{\"propown\": \"Rent\", \"proptype\": null, \"propvalue\": 946131.00, \"rentpayhist\": \"Fair\", \"mortgagebits\": {\"mortbalance\": 249507.00, \"mortpayhist\": \"Excellent\"}}",
+          "count": 1
+        },
+        {
+          "value": "{\"propown\": \"Rent\", \"proptype\": null, \"propvalue\": 940292.00, \"rentpayhist\": \"Poor\", \"mortgagebits\": {\"mortbalance\": 597240.00, \"mortpayhist\": \"Poor\"}}",
+          "count": 1
+        },
+        {
+          "value": "{\"propown\": \"Rent\", \"proptype\": null, \"propvalue\": 887638.00, \"rentpayhist\": \"Good\", \"mortgagebits\": {\"mortbalance\": 33829.00, \"mortpayhist\": \"Fair\"}}",
+          "count": 1
+        },
+        {
+          "value": "{\"propown\": \"Rent\", \"proptype\": null, \"propvalue\": 883857.00, \"rentpayhist\": \"Excellent\", \"mortgagebits\": {\"mortbalance\": 687607.00, \"mortpayhist\": \"Good\"}}",
+          "count": 1
+        },
+        {
+          "value": "{\"propown\": \"Rent\", \"proptype\": null, \"propvalue\": 877968.00, \"rentpayhist\": \"Poor\", \"mortgagebits\": {\"mortbalance\": 1247851.00, \"mortpayhist\": \"Excellent\"}}",
+          "count": 1
+        },
+        {
+          "value": "{\"propown\": \"Rent\", \"proptype\": null, \"propvalue\": 858602.00, \"rentpayhist\": \"Fair\", \"mortgagebits\": {\"mortbalance\": 785090.00, \"mortpayhist\": \"Poor\"}}",
+          "count": 1
+        }
+      ],
+      "min_length": 149,
+      "max_length": 184,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "{\"AAAAAAA\": \"AAAA\", \"AAAAAAAA\": \"AAAAA\", \"AAAAAAAAA\": DDDDDDD.DD, \"AAAAAAAAAAA\": \"AAAA\", \"AAAAAAAAAAAA\": {\"AAAAAAAAAAA\": DDDDDD.DD, \"AAAAAAAAAAA\": \"AAAA\"}}",
+        "{\"AAAAAAA\": \"AAA\", \"AAAAAAAA\": \"AAAAA\", \"AAAAAAAAA\": DDDDDD.DD, \"AAAAAAAAAAA\": \"AAAA\", \"AAAAAAAAAAAA\": {\"AAAAAAAAAAA\": DDDDDD.DD, \"AAAAAAAAAAA\": \"AAAA\"}}",
+        "{\"AAAAAAA\": \"AAA\", \"AAAAAAAA\": \"AAAAA\", \"AAAAAAAAA\": DDDDDDD.DD, \"AAAAAAAAAAA\": \"AAAA\", \"AAAAAAAAAAAA\": {\"AAAAAAAAAAA\": DDDDDD.DD, \"AAAAAAAAAAA\": \"AAAA\"}}",
+        "{\"AAAAAAA\": \"AAAAAA AAAA AAAAAAA\", \"AAAAAAAA\": \"AAAAA\", \"AAAAAAAAA\": DDDDDD.DD, \"AAAAAAAAAAA\": \"AAAA\", \"AAAAAAAAAAAA\": {\"AAAAAAAAAAA\": DDDDDD.DD, \"AAAAAAAAAAA\": \"AAAA\"}}",
+        "{\"AAAAAAA\": \"AAA\", \"AAAAAAAA\": \"AAAAAAAAA\", \"AAAAAAAAA\": DDDDDDD.DD, \"AAAAAAAAAAA\": \"AAAA\", \"AAAAAAAAAAAA\": {\"AAAAAAAAAAA\": DDDDDD.DD, \"AAAAAAAAAAA\": \"AAAA\"}}"
+      ]
+    },
+    "credit_template|expenses_and_assets|propfinancialdata.propown": {
+      "table_name": "expenses_and_assets",
+      "column_name": "propfinancialdata.propown",
+      "column_type": "JSON field",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 3,
+      "min_value": "Living with Parents",
+      "max_value": "Rent",
+      "top_k_values": [
+        {
+          "value": "Own",
+          "count": 337
+        },
+        {
+          "value": "Rent",
+          "count": 332
+        },
+        {
+          "value": "Living with Parents",
+          "count": 331
+        }
+      ],
+      "min_length": 3,
+      "max_length": 19,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAA",
+        "AAAA",
+        "AAAAAA AAAA AAAAAAA"
+      ]
+    },
+    "credit_template|expenses_and_assets|propfinancialdata.propvalue": {
+      "table_name": "expenses_and_assets",
+      "column_name": "propfinancialdata.propvalue",
+      "column_type": "JSON field",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "389.0",
+      "max_value": "1999880.0",
+      "top_k_values": [
+        {
+          "value": "615904.0",
+          "count": 1
+        },
+        {
+          "value": "1201841.0",
+          "count": 1
+        },
+        {
+          "value": "339977.0",
+          "count": 1
+        },
+        {
+          "value": "1234339.0",
+          "count": 1
+        },
+        {
+          "value": "1799995.0",
+          "count": 1
+        },
+        {
+          "value": "448006.0",
+          "count": 1
+        },
+        {
+          "value": "1551182.0",
+          "count": 1
+        },
+        {
+          "value": "66103.0",
+          "count": 1
+        },
+        {
+          "value": "1707270.0",
+          "count": 1
+        },
+        {
+          "value": "487436.0",
+          "count": 1
+        }
+      ],
+      "min_length": 5,
+      "max_length": 9,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDDDD.D",
+        "DDDDDD.D",
+        "DDDDD.D",
+        "DDDD.D",
+        "DDD.D"
+      ]
+    },
+    "credit_template|expenses_and_assets|propfinancialdata.rentpayhist": {
+      "table_name": "expenses_and_assets",
+      "column_name": "propfinancialdata.rentpayhist",
+      "column_type": "JSON field",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "Excellent",
+      "max_value": "Poor",
+      "top_k_values": [
+        {
+          "value": "Poor",
+          "count": 281
+        },
+        {
+          "value": "Fair",
+          "count": 269
+        },
+        {
+          "value": "Good",
+          "count": 228
+        },
+        {
+          "value": "Excellent",
+          "count": 222
+        }
+      ],
+      "min_length": 4,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAAAAAAAA"
+      ]
+    },
+    "credit_template|expenses_and_assets|propfinancialdata.mortgagebits.mortbalance": {
+      "table_name": "expenses_and_assets",
+      "column_name": "propfinancialdata.mortgagebits.mortbalance",
+      "column_type": "JSON field",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 1000,
+      "min_value": "3108.0",
+      "max_value": "1499328.0",
+      "top_k_values": [
+        {
+          "value": "1148577.0",
+          "count": 1
+        },
+        {
+          "value": "450289.0",
+          "count": 1
+        },
+        {
+          "value": "4809.0",
+          "count": 1
+        },
+        {
+          "value": "1387602.0",
+          "count": 1
+        },
+        {
+          "value": "682803.0",
+          "count": 1
+        },
+        {
+          "value": "983084.0",
+          "count": 1
+        },
+        {
+          "value": "602359.0",
+          "count": 1
+        },
+        {
+          "value": "1164642.0",
+          "count": 1
+        },
+        {
+          "value": "1428142.0",
+          "count": 1
+        },
+        {
+          "value": "50516.0",
+          "count": 1
+        }
+      ],
+      "min_length": 6,
+      "max_length": 9,
+      "is_always_numeric": true,
+      "is_constant_length": false,
+      "common_patterns": [
+        "DDDDDD.D",
+        "DDDDDDD.D",
+        "DDDDD.D",
+        "DDDD.D"
+      ]
+    },
+    "credit_template|expenses_and_assets|propfinancialdata.mortgagebits.mortpayhist": {
+      "table_name": "expenses_and_assets",
+      "column_name": "propfinancialdata.mortgagebits.mortpayhist",
+      "column_type": "JSON field",
+      "row_count": 1000,
+      "null_count": 0,
+      "non_null_count": 1000,
+      "distinct_count": 4,
+      "min_value": "Excellent",
+      "max_value": "Poor",
+      "top_k_values": [
+        {
+          "value": "Excellent",
+          "count": 259
+        },
+        {
+          "value": "Fair",
+          "count": 254
+        },
+        {
+          "value": "Poor",
+          "count": 249
+        },
+        {
+          "value": "Good",
+          "count": 238
+        }
+      ],
+      "min_length": 4,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAA",
+        "AAAAAAAAA"
+      ]
+    },
+    "credit_template|expenses_and_assets|propfinancialdata.proptype": {
+      "table_name": "expenses_and_assets",
+      "column_name": "propfinancialdata.proptype",
+      "column_type": "JSON field",
+      "row_count": 1000,
+      "null_count": 258,
+      "non_null_count": 742,
+      "distinct_count": 3,
+      "min_value": "Apartment",
+      "max_value": "House",
+      "top_k_values": [
+        {
+          "value": "House",
+          "count": 261
+        },
+        {
+          "value": "Apartment",
+          "count": 242
+        },
+        {
+          "value": "Condo",
+          "count": 239
+        }
+      ],
+      "min_length": 5,
+      "max_length": 9,
+      "is_always_numeric": false,
+      "is_constant_length": false,
+      "common_patterns": [
+        "AAAAA",
+        "AAAAAAAAA"
+      ]
+    }
+  },
+  "meta": {
+    "credit_accounts_and_history": {
+      "profiled_at": "2026-08-30T11:01:05.489976+00:00",
+      "row_count": 1000
+    },
+    "expenses_and_assets": {
+      "profiled_at": "2026-08-30T11:01:05.489976+00:00",
+      "row_count": 1000
+    },
+    "credit_and_compliance": {
+      "profiled_at": "2026-08-30T11:01:05.489976+00:00",
+      "row_count": 1000
+    },
+    "bank_and_transactions": {
+      "profiled_at": "2026-08-30T11:01:05.489976+00:00",
+      "row_count": 1000
+    },
+    "core_record": {
+      "profiled_at": "2026-08-30T11:01:05.489976+00:00",
+      "row_count": 1000
+    },
+    "employment_and_income": {
+      "profiled_at": "2026-08-30T11:01:05.489976+00:00",
+      "row_count": 1000
+    }
+  }
+}

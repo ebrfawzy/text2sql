@@ -1,0 +1,205 @@
+CREATE TABLE "assessmentbasics" (
+abkey text(30) NOT NULL,
+atype TEXT NULL,
+amethod TEXT NULL,
+adurmin integer(16) NULL,
+alang TEXT NULL,
+avalid TEXT NULL,
+respconsist TEXT NULL,
+symptvalid TEXT NULL,
+patownerref text(20) NULL,
+    PRIMARY KEY (abkey),
+    FOREIGN KEY (patownerref) REFERENCES patients(patkey)
+);
+First 3 rows:
+abkey    atype      amethod        adurmin  alang    avalid        respconsist    symptvalid    patownerref
+A567210  Initial    Phone               93  Chinese  Questionable  Medium         Questionable  P425079
+A981114  Emergency  Self-report        112  French   Invalid       High           Valid         P883117
+A734744  Routine    Phone               81  French   Questionable  Medium         Invalid       P871358
+...
+
+CREATE TABLE "assessmentsocialanddiagnosis" (
+asdkey text(30) NOT NULL,
+recstatus TEXT NULL,
+socsup TEXT NULL,
+faminv TEXT NULL,
+relqual TEXT NULL,
+workfunc TEXT NULL,
+socfunc TEXT NULL,
+adlfunc TEXT NULL,
+strslvl real(3,1) NULL,
+copskill TEXT NULL,
+resscr real(3,1) NULL,
+inlevel TEXT NULL,
+motivlevel TEXT NULL,
+primdx TEXT NULL,
+secdx TEXT NULL,
+dxdurm integer(16) NULL,
+prevhosp integer(16) NULL,
+lasthospdt TEXT NULL,
+qolscr integer(16) NULL,
+funcimp TEXT NULL,
+    PRIMARY KEY (asdkey),
+    FOREIGN KEY (asdkey) REFERENCES assessmentbasics(abkey)
+);
+First 3 rows:
+asdkey    recstatus    socsup    faminv    relqual     workfunc    socfunc    adlfunc         strslvl  copskill      resscr  inlevel    motivlevel    primdx    secdx                   dxdurm    prevhosp  lasthospdt      qolscr  funcimp
+A567210   Relapse      Strong    Low       Poor        Disabled    Isolated   Minimal Help          8  Good               9  Fair       Medium        Anxiety   OCD                         33           1  2024-12-13          78  Severe
+A981114   Stable       Strong    Low       Conflicted  Poor        Fair       Minimal Help          3  Good               2  Fair       Medium        Anxiety   Personality Disorder       221           7  2023-11-09           7  Moderate
+A734744   Advanced     Limited   High      Conflicted  Poor        Good       Minimal Help          5  Poor               3  Good       High          PTSD      OCD                         32           1  2025-02-13          42  Severe
+...
+
+CREATE TABLE "assessmentsymptomsandrisk" (
+asrkey text(30) NOT NULL,
+suicideation TEXT NULL,
+suicrisk TEXT NULL,
+selfharm TEXT NULL,
+violrisk TEXT NULL,
+subuse TEXT NULL,
+subusefreq TEXT NULL,
+subusesev TEXT NULL,
+mental_health_scores TEXT NULL,
+    PRIMARY KEY (asrkey),
+    FOREIGN KEY (asrkey) REFERENCES assessmentbasics(abkey)
+);
+First 3 rows:
+asrkey    suicideation    suicrisk    selfharm    violrisk    subuse    subusefreq    subusesev    mental_health_scores
+A921610   Passive         Severe      Past        Low         Opioids   Daily         Mild         {"anxiety": {"gad7_score": 5, "gad7_severity": "Mild"}, "depression": {"phq9_score": 13, "phq9_severity": "Mild"}, "symptom_scores": [3.0, 1.0, 6.0, 6.0, 7.0, 6.0, 1.0, 9.0]}
+A599516   Plan            High        Current     Medium      Multiple  Occasional    Moderate     {"anxiety": {"gad7_score": 7, "gad7_severity": "Moderate"}, "depression": {"phq9_score": 2, "phq9_severity": "Moderately Severe"}, "symptom_scores": [8.0, 8.0, 3.0, 10.0, 6.0, 7.0, 1.0, 9.0]}
+A515871   Passive         High        Past        High        Multiple  Never         Severe       {"anxiety": {"gad7_score": 14, "gad7_severity": "Mild"}, "depression": {"phq9_score": 24, "phq9_severity": "Mild"}, "symptom_scores": [6.0, 3.0, 5.0, 2.0, 2.0, 2.0, 10.0, 7.0]}
+...
+
+CREATE TABLE "clinicians" (
+clinkey text(20) NOT NULL,
+clinconf TEXT NULL,
+assesslim TEXT NULL,
+docustat TEXT NULL,
+billcode text(15) NULL,
+nxtrevdt TEXT NULL,
+carecoord TEXT NULL,
+refneed TEXT NULL,
+fuptype TEXT NULL,
+fupfreq TEXT NULL,
+facconnect text(20) NULL,
+    PRIMARY KEY (clinkey),
+    FOREIGN KEY (facconnect) REFERENCES facilities(fackey)
+);
+First 3 rows:
+clinkey    clinconf    assesslim    docustat    billcode    nxtrevdt    carecoord    refneed    fuptype    fupfreq    facconnect
+C8738      Medium      Cognitive    Complete    CPT90511    2025-05-09  Intensive    Services   Therapy    Weekly     F801
+C6837      Low         Cognitive    Incomplete  CPT90696    2025-08-14  Regular      Testing    Therapy    Quarterly  F533
+C6539      Low         Engagement   Incomplete  CPT90854    2025-05-05  Regular      Services   Routine    Biweekly   F392
+...
+
+CREATE TABLE "encounters" (
+enckey text(30) NOT NULL,
+timemark text(6) NOT NULL,
+abref text(30) NOT NULL,
+patref text(20) NOT NULL,
+clinid text(20) NULL,
+facid text(20) NULL,
+missappt real(2,1) NULL,
+txbarrier TEXT NULL,
+nxapptdt TEXT NULL,
+dqscore integer(16) NULL,
+assesscomplete text(250) NULL,
+    PRIMARY KEY (enckey),
+    FOREIGN KEY (patref) REFERENCES patients(patkey),
+    FOREIGN KEY (abref) REFERENCES assessmentbasics(abkey)
+);
+First 3 rows:
+enckey    timemark                    abref    patref    clinid    facid      missappt  txbarrier    nxapptdt      dqscore    assesscomplete
+MH378084  2025-02-19 08:30:58.912609  A567210  P425079   C8738     F801              5  Multiple     2025-02-21          0             0.889
+MH353857  2025-02-19 08:30:58.912609  A981114  P883117   C6837     F533              1  Time         2025-04-18          0             0.852
+MH156602  2025-02-19 08:30:58.912609  A734744  P871358   C6539     F392              5  Multiple     2025-04-13          0             0.929
+...
+
+CREATE TABLE "facilities" (
+fackey text(20) NOT NULL,
+rsource TEXT NULL,
+envstress TEXT NULL,
+lifeimpact TEXT NULL,
+seasonpat TEXT NULL,
+leglissue TEXT NULL,
+ssystemchg TEXT NULL,
+support_and_resources TEXT NULL,
+    PRIMARY KEY (fackey)
+);
+First 3 rows:
+fackey    rsource    envstress    lifeimpact    seasonpat    leglissue    ssystemchg    support_and_resources
+F306      Emergency  Severe       Mild          Winter       Ongoing      Variable      {"plans": {"crisis_plan_status": "Needs Update", "safety_plan_status": "Not Needed"}, "support_services": "Housing,Employment,Case Management", "emergency_contact": "3", "community_resources": "Limited"}
+F492      Court      Mild         Mild          Winter       Resolved     Variable      {"plans": {"crisis_plan_status": "Not Needed", "safety_plan_status": "Needs Update"}, "support_services": "", "emergency_contact": "1", "community_resources": "Limited"}
+F562      Emergency  Moderate     Severe        Variable     Resolved     Improved      {"plans": {"crisis_plan_status": "In Place", "safety_plan_status": "In Place"}, "support_services": "Case Management,Employment,None", "emergency_contact": "1", "community_resources": "Adequate"}
+...
+
+CREATE TABLE "patients" (
+patkey text(20) NOT NULL,
+patage integer(16) NULL,
+patgender TEXT NULL,
+pateth TEXT NULL,
+edulevel TEXT NULL,
+empstat TEXT NULL,
+maristat TEXT NULL,
+livingarr TEXT NULL,
+insurtype TEXT NULL,
+insurstat TEXT NULL,
+disabstat TEXT NULL,
+housestable TEXT NULL,
+cultfactor TEXT NULL,
+stigmaimp TEXT NULL,
+finstress TEXT NULL,
+clinleadref text(20) NULL,
+    PRIMARY KEY (patkey),
+    FOREIGN KEY (clinleadref) REFERENCES clinicians(clinkey)
+);
+First 3 rows:
+patkey      patage  patgender    pateth    edulevel     empstat    maristat    livingarr    insurtype    insurstat    disabstat    housestable    cultfactor    stigmaimp    finstress    clinleadref
+P425079         23  Other        Other     High School  Retired    Widowed     Alone        Medicaid     Pending      Pending      Homeless       Language      Moderate     Mild         C8738
+P883117         42  F            Other     High School  Retired    Married     Partner      Medicare     Approved     Permanent    Stable         Beliefs       Mild         Severe       C6837
+P871358         32  M            Hispanic  High School  Employed   Single      Family       Medicaid     Approved     Temporary    Stable         Language      Mild         Severe       C6539
+...
+
+CREATE TABLE "treatmentbasics" (
+txkey integer(32) NOT NULL,
+encref text(30) NOT NULL,
+curmed TEXT NULL,
+medadh TEXT NULL,
+medside TEXT NULL,
+medchg TEXT NULL,
+crisisint real(2,1) NULL,
+therapy_details TEXT NULL,
+    PRIMARY KEY (txkey),
+    FOREIGN KEY (encref) REFERENCES encounters(enckey)
+);
+First 3 rows:
+  txkey  encref    curmed                             medadh         medside    medchg             crisisint  therapy_details
+     17  MH485293  Antipsychotic,Antidepressant,None  Low            Moderate   Augmentation               3  {"type": "Group", "changes": "Therapist Change", "frequency": "Weekly", "engagement": "Low", "duration_months": 35}
+     18  MH600211  Antipsychotic,None                 Medium         Severe     Dose Adjustment            1  {"type": "CBT", "changes": "Modality Change", "frequency": "Weekly", "engagement": "Low", "duration_months": 49}
+     19  MH821921  Antipsychotic                      Non-compliant  Moderate   Switch                     3  {"type": "Psychodynamic", "changes": "Modality Change", "frequency": "Weekly", "engagement": "Medium", "duration_months": 55}
+...
+
+CREATE TABLE "treatmentoutcomes" (
+txoutkey integer(32) NOT NULL,
+txref integer(32) NOT NULL,
+thprog TEXT NULL,
+txadh TEXT NULL,
+txresp TEXT NULL,
+sideburd TEXT NULL,
+txgoalstat TEXT NULL,
+recgoalstat TEXT NULL,
+sympimp TEXT NULL,
+funcimpv TEXT NULL,
+workstatchg TEXT NULL,
+satscr real(3,1) NULL,
+theralliance TEXT NULL,
+txeng TEXT NULL,
+txsat TEXT NULL,
+    PRIMARY KEY (txoutkey),
+    FOREIGN KEY (txref) REFERENCES treatmentbasics(txkey)
+);
+First 3 rows:
+  txoutkey    txref  thprog    txadh          txresp    sideburd    txgoalstat    recgoalstat    sympimp    funcimpv    workstatchg      satscr  theralliance    txeng          txsat
+         1        1  Fair      Non-compliant  Poor      Mild        Not Started   Not Started    Moderate   Moderate    Leave                 9  Moderate        Non-compliant  Medium
+         2        2  Fair      Medium         Good      Moderate    Not Started   Achieved       Moderate   Minimal     Leave                 8  Poor            High           Dissatisfied
+         3        3  Good      Non-compliant  Partial   Mild        Achieved      In Progress    Moderate   Moderate    Leave                 4  Strong          High           Dissatisfied
+...

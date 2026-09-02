@@ -1,0 +1,1148 @@
+{
+  "version": 1,
+  "profiled_at": "2026-08-30T13:17:09.438460+00:00",
+  "columns": {
+    "cybermarket_template|communication|low communication frequency (commfreq = 'Low')": {
+      "id": 0,
+      "knowledge": "low communication frequency (commfreq = 'Low')",
+      "description": "Communication frequency level when the message tally is below 20. Selects 12% of rows.",
+      "definition": "commfreq = 'Low' AND msgtally < 20",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "communication"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|communication|medium communication frequency (commfreq = 'Medium')": {
+      "id": 1,
+      "knowledge": "medium communication frequency (commfreq = 'Medium')",
+      "description": "Communication frequency level when the message tally is between 20 and 40 inclusive. Selects 16% of rows.",
+      "definition": "commfreq = 'Medium' AND msgtally >= 20 AND msgtally <= 40",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "communication"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|communication|high communication frequency (commfreq = 'High')": {
+      "id": 2,
+      "knowledge": "high communication frequency (commfreq = 'High')",
+      "description": "Communication frequency level when the message tally exceeds 40. Selects 6% of rows.",
+      "definition": "commfreq = 'High' AND msgtally > 40",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "communication"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|communication|consistent language pattern (langpattern = 'Consistent')": {
+      "id": 3,
+      "knowledge": "consistent language pattern (langpattern = 'Consistent')",
+      "description": "Language pattern category when sentiment is strongly positive and keyword matches are low. Selects 2% of rows.",
+      "definition": "langpattern = 'Consistent' AND sentiscore > 0.7 AND keymatchcount <= 20",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "communication"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|communication|suspicious language pattern (langpattern = 'Suspicious')": {
+      "id": 4,
+      "knowledge": "suspicious language pattern (langpattern = 'Suspicious')",
+      "description": "Language pattern category when sentiment is negative or keyword matches are high. Selects 15% of rows.",
+      "definition": "langpattern = 'Suspicious' AND (sentiscore < 0.3 OR keymatchcount > 80)",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "communication"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|communication|variable language pattern (langpattern = 'Variable')": {
+      "id": 5,
+      "knowledge": "variable language pattern (langpattern = 'Variable')",
+      "description": "Language pattern category when neither the consistent nor the suspicious language pattern condition applies. Selects 15% of rows.",
+      "definition": "langpattern = 'Variable' AND NOT (sentiscore > 0.7 AND keymatchcount <= 20) AND NOT (sentiscore < 0.3 OR keymatchcount > 80)",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        3,
+        4
+      ],
+      "tables": [
+        "communication"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|communication|no VPN usage (vpnflag = 'No')": {
+      "id": 6,
+      "knowledge": "no VPN usage (vpnflag = 'No')",
+      "description": "VPN usage flag when no Tor nodes are observed.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "communication"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|communication|suspected VPN usage (vpnflag = 'Suspected')": {
+      "id": 7,
+      "knowledge": "suspected VPN usage (vpnflag = 'Suspected')",
+      "description": "VPN usage flag when Tor nodes are present but the count is 30 or less. Selects 10% of rows.",
+      "definition": "vpnflag = 'Suspected' AND tornodecount > 0 AND tornodecount <= 30",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "communication"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|communication|confirmed VPN usage (vpnflag = 'Yes')": {
+      "id": 8,
+      "knowledge": "confirmed VPN usage (vpnflag = 'Yes')",
+      "description": "VPN usage flag when the Tor node count exceeds 30. Selects 22% of rows.",
+      "definition": "vpnflag = 'Yes' AND tornodecount > 30",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "communication"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|transactions|Escrow used": {
+      "id": 9,
+      "knowledge": "Escrow used",
+      "description": "Transaction uses escrow. Selects 50% of rows.",
+      "definition": "escrowused = 'Yes'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "transactions"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|transactions|Multisignature transaction": {
+      "id": 10,
+      "knowledge": "Multisignature transaction",
+      "description": "Transaction is flagged for multisignature. Selects 50% of rows.",
+      "definition": "multisigflag = 'Yes'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "transactions"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|transactions|Cross-border transaction": {
+      "id": 11,
+      "knowledge": "Cross-border transaction",
+      "description": "Transaction is flagged as cross-border shipping. Selects 46% of rows.",
+      "definition": "crossborderflag = 'Yes'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "transactions"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|transactions|Completed transaction": {
+      "id": 12,
+      "knowledge": "Completed transaction",
+      "description": "Transaction has completed status. Selects 26% of rows.",
+      "definition": "txstatus = 'Completed'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "transactions"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|transactions|Express shipment": {
+      "id": 13,
+      "knowledge": "Express shipment",
+      "description": "Transaction uses express shipping. Selects 25% of rows.",
+      "definition": "shipmethod = 'Express'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "transactions"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|transactions|Token payment": {
+      "id": 14,
+      "knowledge": "Token payment",
+      "description": "Transaction payment method is Token. Selects 25% of rows.",
+      "definition": "paymethod = 'Token'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "transactions"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|transactions|Source region Region_A": {
+      "id": 15,
+      "knowledge": "Source region Region_A",
+      "description": "Shipping source region is Region_A. Selects 26% of rows.",
+      "definition": "shipregionsrc = 'Region_A'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "transactions"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|transactions|Destination region Region_X": {
+      "id": 16,
+      "knowledge": "Destination region Region_X",
+      "description": "Shipping destination region is Region_X. Selects 26% of rows.",
+      "definition": "shipregiondst = 'Region_X'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "transactions"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|transactions|Complex route": {
+      "id": 17,
+      "knowledge": "Complex route",
+      "description": "Transaction has complex shipping route. Selects 33% of rows.",
+      "definition": "routecomplexity = 'Complex'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "transactions"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|markets|Marketplace market": {
+      "id": 18,
+      "knowledge": "Marketplace market",
+      "description": "Market whose category type is Marketplace. Selects 26% of rows.",
+      "definition": "mktclass = 'Marketplace'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "markets"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|markets|Forum market": {
+      "id": 19,
+      "knowledge": "Forum market",
+      "description": "Market whose category type is Forum. Selects 27% of rows.",
+      "definition": "mktclass = 'Forum'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "markets"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|markets|Service market": {
+      "id": 20,
+      "knowledge": "Service market",
+      "description": "Market whose category type is Service. Selects 24% of rows.",
+      "definition": "mktclass = 'Service'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "markets"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|markets|Exchange market": {
+      "id": 21,
+      "knowledge": "Exchange market",
+      "description": "Market whose category type is Exchange. Selects 23% of rows.",
+      "definition": "mktclass = 'Exchange'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "markets"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|markets|Small market": {
+      "id": 22,
+      "knowledge": "Small market",
+      "description": "Market in the Small size bucket. Selects 27% of rows.",
+      "definition": "sizecluster = 'Small'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "markets"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|markets|Medium market": {
+      "id": 23,
+      "knowledge": "Medium market",
+      "description": "Market in the Medium size bucket. Selects 25% of rows.",
+      "definition": "sizecluster = 'Medium'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "markets"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|markets|Large market": {
+      "id": 24,
+      "knowledge": "Large market",
+      "description": "Market in the Large size bucket. Selects 24% of rows.",
+      "definition": "sizecluster = 'Large'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "markets"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|markets|Mega market": {
+      "id": 25,
+      "knowledge": "Mega market",
+      "description": "Market in the Mega size bucket. Selects 24% of rows.",
+      "definition": "sizecluster = 'Mega'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "markets"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|markets|Under Investigation market": {
+      "id": 26,
+      "knowledge": "Under Investigation market",
+      "description": "Market whose status is Under Investigation. Selects 24% of rows.",
+      "definition": "json_extract(market_status_reputation, '$.status') = 'Under Investigation'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "markets"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|markets|High trust market": {
+      "id": 27,
+      "knowledge": "High trust market",
+      "description": "Market whose reputation trust level is High. Selects 26% of rows.",
+      "definition": "json_extract(market_status_reputation, '$.trust_level') = 'High'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "markets"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|markets|Full restriction market": {
+      "id": 28,
+      "knowledge": "Full restriction market",
+      "description": "Market whose compliance restriction level is Full. Selects 50% of rows.",
+      "definition": "json_extract(market_status_reputation, '$.compliance_metrics.restriction_level') = 'Full'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "markets"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|vendors|successful transaction count bound": {
+      "id": 29,
+      "knowledge": "successful transaction count bound",
+      "description": "Successful vendor transactions cannot exceed total vendor transactions. Selects 51% of rows.",
+      "definition": "vendsucccount <= vendtxcount",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "vendors"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|vendors|dispute count bound": {
+      "id": 30,
+      "knowledge": "dispute count bound",
+      "description": "Vendor disputes cannot exceed total vendor transactions. Selects 95% of rows.",
+      "definition": "venddisputecount <= vendtxcount",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "vendors"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|vendors|vendor check level": {
+      "id": 31,
+      "knowledge": "vendor check level",
+      "description": "Vendor check level is one of Basic, Advanced, or Premium.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "vendors"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|vendors|vendor place count range": {
+      "id": 32,
+      "knowledge": "vendor place count range",
+      "description": "Vendor place count is an integer from 1 through 10.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "vendors"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|vendors|vendor payment methods count range": {
+      "id": 33,
+      "knowledge": "vendor payment methods count range",
+      "description": "Vendor payment methods count is an integer from 1 through 10.",
+      "definition": "",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "vendors"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|investigation|Active Investigation": {
+      "id": 34,
+      "knowledge": "Active Investigation",
+      "description": "An investigation whose current status is Active. Selects 32% of rows.",
+      "definition": "investstat = 'Active'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "investigation"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|investigation|High Regulatory Risk": {
+      "id": 35,
+      "knowledge": "High Regulatory Risk",
+      "description": "An investigation with a regulatory risk level of High. Selects 35% of rows.",
+      "definition": "regrisklvl = 'High'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "investigation"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|investigation|High Legal Interest": {
+      "id": 36,
+      "knowledge": "High Legal Interest",
+      "description": "An investigation with a legal interest level of High. Selects 31% of rows.",
+      "definition": "lawinterest = 'High'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "investigation"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|investigation|High Priority Investigation": {
+      "id": 37,
+      "knowledge": "High Priority Investigation",
+      "description": "An investigation with priority set to High. Selects 33% of rows.",
+      "definition": "investpriority = 'High'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "investigation"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|investigation|Follow-up Required": {
+      "id": 38,
+      "knowledge": "Follow-up Required",
+      "description": "An investigation whose follow-up flag is Yes. Selects 51% of rows.",
+      "definition": "followuprequired = 'Yes'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "investigation"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|investigation|Case Resolved": {
+      "id": 39,
+      "knowledge": "Case Resolved",
+      "description": "A case whose status is Resolved. Selects 27% of rows.",
+      "definition": "casestatus = 'Resolved'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "investigation"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|investigation|High Compliance": {
+      "id": 40,
+      "knowledge": "High Compliance",
+      "description": "An investigation with a compliance score of at least 80. Selects 21% of rows.",
+      "definition": "compliancescore >= 80",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "investigation"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|investigation|Response Time in Hours": {
+      "id": 41,
+      "knowledge": "Response Time in Hours",
+      "description": "Response time converted from minutes to hours.",
+      "definition": "resptimemins / 60.0",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "investigation"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|investigation|Resolution Time in Days": {
+      "id": 42,
+      "knowledge": "Resolution Time in Days",
+      "description": "Resolution time converted from hours to days.",
+      "definition": "resolutiontimehours / 24.0",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "investigation"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|investigation|Update Frequency in Days": {
+      "id": 43,
+      "knowledge": "Update Frequency in Days",
+      "description": "Update frequency converted from hours to days.",
+      "definition": "updatefrequencyhours / 24.0",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "investigation"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|buyers|High spending buyers": {
+      "id": 44,
+      "knowledge": "High spending buyers",
+      "description": "Buyers whose spending level is High. Selects 25% of rows.",
+      "definition": "buyspending = 'High'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "buyers"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|buyers|Low spending buyers": {
+      "id": 45,
+      "knowledge": "Low spending buyers",
+      "description": "Buyers whose spending level is Low. Selects 23% of rows.",
+      "definition": "buyspending = 'Low'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "buyers"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|buyers|Heavy frequency buyers": {
+      "id": 46,
+      "knowledge": "Heavy frequency buyers",
+      "description": "Buyers whose purchase frequency category is Heavy. Selects 25% of rows.",
+      "definition": "buyfreqcat = 'Heavy'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "buyers"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|buyers|One-time buyers": {
+      "id": 47,
+      "knowledge": "One-time buyers",
+      "description": "Buyers whose purchase frequency category is One-time. Selects 26% of rows.",
+      "definition": "buyfreqcat = 'One-time'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "buyers"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|buyers|Advanced check buyers": {
+      "id": 48,
+      "knowledge": "Advanced check buyers",
+      "description": "Buyers whose check level is Advanced. Selects 50% of rows.",
+      "definition": "buychecklvl = 'Advanced'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "buyers"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|securitymonitoring|threat_analysis_metrics": {
+      "id": 49,
+      "knowledge": "threat_analysis_metrics",
+      "description": "JSON object containing the threat-analysis metric fields for a security monitoring registry.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58
+      ],
+      "tables": [
+        "securitymonitoring"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|securitymonitoring|threat_analysis_metrics.anonymity_level": {
+      "id": 50,
+      "knowledge": "threat_analysis_metrics.anonymity_level",
+      "description": "Anonymity level category stored inside the threat_analysis_metrics JSON object.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        49
+      ],
+      "tables": [
+        "securitymonitoring"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|securitymonitoring|threat_analysis_metrics.traceability_score": {
+      "id": 51,
+      "knowledge": "threat_analysis_metrics.traceability_score",
+      "description": "Traceability numeric score stored inside the threat_analysis_metrics JSON object.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        49
+      ],
+      "tables": [
+        "securitymonitoring"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|securitymonitoring|threat_analysis_metrics.ml_confidence_score": {
+      "id": 52,
+      "knowledge": "threat_analysis_metrics.ml_confidence_score",
+      "description": "Machine learning confidence numeric score stored inside the threat_analysis_metrics JSON object.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        49
+      ],
+      "tables": [
+        "securitymonitoring"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|securitymonitoring|threat_analysis_metrics.pattern_matching_score": {
+      "id": 53,
+      "knowledge": "threat_analysis_metrics.pattern_matching_score",
+      "description": "Pattern matching numeric score stored inside the threat_analysis_metrics JSON object.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        49
+      ],
+      "tables": [
+        "securitymonitoring"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|securitymonitoring|threat_analysis_metrics.anomaly_detection_score": {
+      "id": 54,
+      "knowledge": "threat_analysis_metrics.anomaly_detection_score",
+      "description": "Anomaly detection numeric score stored inside the threat_analysis_metrics JSON object.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        49
+      ],
+      "tables": [
+        "securitymonitoring"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|securitymonitoring|threat_analysis_metrics.detection_evasion_score": {
+      "id": 55,
+      "knowledge": "threat_analysis_metrics.detection_evasion_score",
+      "description": "Detection evasion numeric score stored inside the threat_analysis_metrics JSON object.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        49
+      ],
+      "tables": [
+        "securitymonitoring"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|securitymonitoring|threat_analysis_metrics.behavioral_analysis_score": {
+      "id": 56,
+      "knowledge": "threat_analysis_metrics.behavioral_analysis_score",
+      "description": "Behavioral analysis numeric score stored inside the threat_analysis_metrics JSON object.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        49
+      ],
+      "tables": [
+        "securitymonitoring"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|securitymonitoring|threat_analysis_metrics.threat_intelligence_score": {
+      "id": 57,
+      "knowledge": "threat_analysis_metrics.threat_intelligence_score",
+      "description": "Threat intelligence numeric score stored inside the threat_analysis_metrics JSON object.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        49
+      ],
+      "tables": [
+        "securitymonitoring"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|securitymonitoring|threat_analysis_metrics.event_correlation_strength": {
+      "id": 58,
+      "knowledge": "threat_analysis_metrics.event_correlation_strength",
+      "description": "Event correlation strength numeric score stored inside the threat_analysis_metrics JSON object.",
+      "definition": "",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        49
+      ],
+      "tables": [
+        "securitymonitoring"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|securitymonitoring|securityauditstatus Pass": {
+      "id": 59,
+      "knowledge": "securityauditstatus Pass",
+      "description": "Security audit status category assigned when a registry has no vulnerabilities and no incidents. Selects 1% of rows.",
+      "definition": "vulntally = 0 AND inctally = 0",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "securitymonitoring"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|securitymonitoring|securityauditstatus Warning": {
+      "id": 60,
+      "knowledge": "securityauditstatus Warning",
+      "description": "Security audit status category assigned when exactly one of the vulnerability tally or incident tally is above zero. Selects 15% of rows.",
+      "definition": "(vulntally = 0 AND inctally > 0) OR (vulntally > 0 AND inctally = 0)",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "securitymonitoring"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|securitymonitoring|securityauditstatus Fail": {
+      "id": 61,
+      "knowledge": "securityauditstatus Fail",
+      "description": "Security audit status category assigned when both vulnerability tally and incident tally are above zero. Selects 85% of rows.",
+      "definition": "vulntally > 0 AND inctally > 0",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "securitymonitoring"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|products|inventory value": {
+      "id": 62,
+      "knowledge": "inventory value",
+      "description": "Total dollar value represented by a product's unit price and quantity",
+      "definition": "prodpriceusd * prodqty",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "products"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|products|premium product": {
+      "id": 63,
+      "knowledge": "premium product",
+      "description": "Product whose price is greater than 5000 US dollars Selects 50% of rows.",
+      "definition": "prodpriceusd > 5000",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "products"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|products|long-listing product": {
+      "id": 64,
+      "knowledge": "long-listing product",
+      "description": "Product listed for more than 40 days Selects 76% of rows.",
+      "definition": "prodlistdays > 40",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "products"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|products|bulk-quantity product": {
+      "id": 65,
+      "knowledge": "bulk-quantity product",
+      "description": "Product with quantity greater than 50 units Selects 49% of rows.",
+      "definition": "prodqty > 50",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "products"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|products|digital product": {
+      "id": 66,
+      "knowledge": "digital product",
+      "description": "Product categorized under the Digital theme Selects 24% of rows.",
+      "definition": "prodtheme = 'Digital'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "products"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|riskanalysis|Fraud probability (fraudprob)": {
+      "id": 67,
+      "knowledge": "Fraud probability (fraudprob)",
+      "description": "Probability that the risk registry transaction is fraudulent.",
+      "definition": "fraudprob != (linkedtxcount * txchainlen) / (50 + linkedtxcount * txchainlen)",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "riskanalysis"
+      ],
+      "refuted": true
+    },
+    "cybermarket_template|riskanalysis|Wallet risk score (wallrisksc)": {
+      "id": 68,
+      "knowledge": "Wallet risk score (wallrisksc)",
+      "description": "Composite wallet risk score based on fraud probability, turnover, and transaction velocity.",
+      "definition": "wallrisksc != (fraudprob * 100 + wallturnrt + txvel) / 3",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        67,
+        71,
+        72
+      ],
+      "tables": [
+        "riskanalysis"
+      ],
+      "refuted": true
+    },
+    "cybermarket_template|riskanalysis|Money risk category (moneyrisk)": {
+      "id": 69,
+      "knowledge": "Money risk category (moneyrisk)",
+      "description": "Categorical money risk label assigned from the wallet risk score. Selects 25% of rows.",
+      "definition": "moneyrisk = CASE WHEN wallrisksc >= 75 THEN 'High' WHEN wallrisksc >= 50 THEN 'Medium' WHEN wallrisksc < 50 THEN 'Low' ELSE 'Unknown' END",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        68
+      ],
+      "tables": [
+        "riskanalysis"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|riskanalysis|Profile completeness (profilecomplete)": {
+      "id": 70,
+      "knowledge": "Profile completeness (profilecomplete)",
+      "description": "Level of profile completeness from identity verification and feedback authentication scores.",
+      "definition": "profilecomplete != (idverifyscore + feedbackauthscore) / 2",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "riskanalysis"
+      ],
+      "refuted": true
+    },
+    "cybermarket_template|riskanalysis|Transaction velocity (txvel)": {
+      "id": 71,
+      "knowledge": "Transaction velocity (txvel)",
+      "description": "Rate of linked transaction activity over the transaction chain.",
+      "definition": "txvel != linkedtxcount * txchainlen / 5",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "riskanalysis"
+      ],
+      "refuted": true
+    },
+    "cybermarket_template|riskanalysis|Wallet turnover rate (wallturnrt)": {
+      "id": 72,
+      "knowledge": "Wallet turnover rate (wallturnrt)",
+      "description": "Wallet turnover normalised by balance and linked transaction activity.",
+      "definition": "wallturnrt != (linkedtxcount * txchainlen * 10000) / wallbalusd",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "riskanalysis"
+      ],
+      "refuted": true
+    },
+    "cybermarket_template|riskanalysis|High network centrality": {
+      "id": 74,
+      "knowledge": "High network centrality",
+      "description": "Cohort of records with network centrality score above 90. Selects 10% of rows.",
+      "definition": "json_extract(network_behavior_analytics, '$.network_analysis.centrality_score') > 90",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "riskanalysis"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|riskanalysis|Consistent behavior": {
+      "id": 75,
+      "knowledge": "Consistent behavior",
+      "description": "Cohort of records with behavior consistency score above 80. Selects 20% of rows.",
+      "definition": "json_extract(network_behavior_analytics, '$.behavioral_analysis.behavior_consistency_score') > 80",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "riskanalysis"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|riskanalysis|High transaction velocity": {
+      "id": 76,
+      "knowledge": "High transaction velocity",
+      "description": "Cohort of records with transaction velocity above 90. Selects 11% of rows.",
+      "definition": "txvel > 90",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        71
+      ],
+      "tables": [
+        "riskanalysis"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|riskanalysis|High wallet risk": {
+      "id": 77,
+      "knowledge": "High wallet risk",
+      "description": "Cohort of records with wallet risk score above 75. Selects 26% of rows.",
+      "definition": "wallrisksc > 75.0",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        68
+      ],
+      "tables": [
+        "riskanalysis"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|communication,riskanalysis|sentiment-weighted fraud probability": {
+      "id": 78,
+      "knowledge": "sentiment-weighted fraud probability",
+      "description": "Fraud probability scaled by the sentiment score of the linked communication.",
+      "definition": "riskanalysis.fraudprob * communication.sentiscore",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        67
+      ],
+      "tables": [
+        "communication",
+        "riskanalysis"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|products,transactions|escrow duration per listing day": {
+      "id": 79,
+      "knowledge": "escrow duration per listing day",
+      "description": "Escrow duration in hours per day the linked product has been listed.",
+      "definition": "transactions.escrowhrs / NULLIF(products.prodlistdays, 0)",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "products",
+        "transactions"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|riskanalysis,transactions|transaction fee share of wallet balance": {
+      "id": 80,
+      "knowledge": "transaction fee share of wallet balance",
+      "description": "Transaction fee in USD divided by the wallet balance in USD of the linked risk record.",
+      "definition": "transactions.txfeeusd / NULLIF(riskanalysis.wallbalusd, 0)",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "riskanalysis",
+        "transactions"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|riskanalysis,securitymonitoring|vulnerability-weighted fraud probability": {
+      "id": 81,
+      "knowledge": "vulnerability-weighted fraud probability",
+      "description": "Fraud probability multiplied by the vulnerability tally of the linked security monitoring record.",
+      "definition": "securitymonitoring.vulntally * riskanalysis.fraudprob",
+      "type": "calculation_knowledge",
+      "children_knowledge": [
+        67
+      ],
+      "tables": [
+        "riskanalysis",
+        "securitymonitoring"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|markets,vendors|vendor transaction density per market buyer": {
+      "id": 82,
+      "knowledge": "vendor transaction density per market buyer",
+      "description": "Vendor transaction count per buyer registered at the vendor's market.",
+      "definition": "vendors.vendtxcount / NULLIF(markets.buycount, 0)",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "markets",
+        "vendors"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|products,transactions|high-value digital completed transaction": {
+      "id": 83,
+      "knowledge": "high-value digital completed transaction",
+      "description": "A completed transaction for a digital product priced above 9000 USD.",
+      "definition": "products.prodpriceusd > 9000 AND products.prodtheme = 'Digital' AND transactions.txstatus = 'Completed'",
+      "type": "domain_knowledge",
+      "children_knowledge": [
+        12,
+        66
+      ],
+      "tables": [
+        "products",
+        "transactions"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|communication,markets|high-message low-flow market communication": {
+      "id": 84,
+      "knowledge": "high-message low-flow market communication",
+      "description": "A communication with more than 40 messages linked to a market with daily flow below 9000.",
+      "definition": "communication.msgtally > 40 AND markets.dlyflow < 9000",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "communication",
+        "markets"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|investigation,securitymonitoring|critical-alert long-response investigation": {
+      "id": 85,
+      "knowledge": "critical-alert long-response investigation",
+      "description": "An investigation with response time over 1200 minutes linked to a critical-severity security alert.",
+      "definition": "investigation.resptimemins > 1200 AND securitymonitoring.alertsev = 'Critical'",
+      "type": "domain_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "investigation",
+        "securitymonitoring"
+      ],
+      "refuted": false
+    },
+    "cybermarket_template|buyers,transactions|buyer risk-weighted transaction amount": {
+      "id": 86,
+      "knowledge": "buyer risk-weighted transaction amount",
+      "description": "Transaction amount in USD weighted by the linked buyer risk rate.",
+      "definition": "transactions.payamtusd * buyers.buyriskrate / 100",
+      "type": "calculation_knowledge",
+      "children_knowledge": -1,
+      "tables": [
+        "buyers",
+        "transactions"
+      ],
+      "refuted": false
+    }
+  },
+  "meta": {
+    "communication,markets": {
+      "profiled_at": "2026-08-30T13:17:09.438460+00:00"
+    },
+    "communication": {
+      "profiled_at": "2026-08-30T13:17:09.438460+00:00"
+    },
+    "communication,riskanalysis": {
+      "profiled_at": "2026-08-30T13:17:09.438460+00:00"
+    },
+    "markets": {
+      "profiled_at": "2026-08-30T13:17:09.438460+00:00"
+    },
+    "vendors": {
+      "profiled_at": "2026-08-30T13:17:09.438460+00:00"
+    },
+    "investigation": {
+      "profiled_at": "2026-08-30T13:17:09.438460+00:00"
+    },
+    "buyers": {
+      "profiled_at": "2026-08-30T13:17:09.438460+00:00"
+    },
+    "securitymonitoring": {
+      "profiled_at": "2026-08-30T13:17:09.438460+00:00"
+    },
+    "investigation,securitymonitoring": {
+      "profiled_at": "2026-08-30T13:17:09.438460+00:00"
+    },
+    "markets,vendors": {
+      "profiled_at": "2026-08-30T13:17:09.438460+00:00"
+    },
+    "products,transactions": {
+      "profiled_at": "2026-08-30T13:17:09.438460+00:00"
+    },
+    "transactions": {
+      "profiled_at": "2026-08-30T13:17:09.438460+00:00"
+    },
+    "riskanalysis,securitymonitoring": {
+      "profiled_at": "2026-08-30T13:17:09.438460+00:00"
+    },
+    "buyers,transactions": {
+      "profiled_at": "2026-08-30T13:17:09.438460+00:00"
+    },
+    "products": {
+      "profiled_at": "2026-08-30T13:17:09.438460+00:00"
+    },
+    "riskanalysis": {
+      "profiled_at": "2026-08-30T13:17:09.438460+00:00"
+    },
+    "riskanalysis,transactions": {
+      "profiled_at": "2026-08-30T13:17:09.438460+00:00"
+    }
+  }
+}

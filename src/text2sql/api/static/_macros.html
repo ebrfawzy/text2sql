@@ -1,0 +1,228 @@
+{# Repeated UI blocks, defined once and rendered wherever they are needed.
+
+   Each macro takes Alpine *expressions* as strings (e.g. "ask.sel"), so the emitted
+   markup keeps full reactivity — unlike a JS string helper, typing in a search box
+   or ticking a checkbox re-renders only what changed. #}
+
+{% set CARD = "rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4" %}
+{% set BOX = "rounded-md border border-slate-200 dark:border-slate-800" %}
+{% set BTN = "rounded-md border border-slate-300 dark:border-slate-600 px-4 py-2 text-sm font-medium
+              hover:bg-slate-100 dark:hover:bg-slate-800 disabled:opacity-40" %}
+{% set BTN_XS = "text-xs rounded-md border border-slate-300 dark:border-slate-600 px-2 py-1
+                 hover:bg-slate-100 dark:hover:bg-slate-800 disabled:opacity-40" %}
+{% set INPUT = "w-full rounded-md border border-slate-200 dark:border-slate-700 bg-transparent px-2 py-1 text-xs
+                focus:outline-none focus:ring-2 focus:ring-indigo-500" %}
+{% set TH = "px-2 py-1.5 text-left" %}
+{% set ROW = "odd:bg-slate-50 dark:odd:bg-slate-900/50 align-top" %}
+{% set CHIP = "inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[11px] mono" %}
+
+{# Run / Stop toggle — every tab drives a stream, so every tab can interrupt one.
+   `blocked` is the Alpine expression that disables Run (never Stop). #}
+{% macro run_button(state, start, blocked='false', label='Run') %}
+<button @click="{{ state }}.running ? cancel({{ state }}) : {{ start }}"
+  :disabled="!{{ state }}.running && ({{ blocked }})"
+  :class="{{ state }}.running ? 'bg-rose-600 hover:bg-rose-700' : 'bg-indigo-600 hover:bg-indigo-700 disabled:opacity-40'"
+  class="rounded-md px-4 py-2 text-sm font-medium text-white">
+  <span x-text="{{ state }}.running ? 'Stop' : '{{ label }}'"></span>
+</button>
+{% endmacro %}
+
+{# Pipeline stepper. Only the stages that tab can emit are drawn. #}
+{% macro stepper(state, tab) %}
+<div class="flex items-center justify-between overflow-x-auto gap-2">
+  <template x-for="(s, i) in stagesFor('{{ tab }}')" :key="s.key">
+    <div class="flex items-center gap-2 shrink-0">
+      <div class="flex flex-col items-center gap-1">
+        <div class="flex h-9 w-9 items-center justify-center rounded-full text-sm font-semibold border-2 transition"
+          :class="{
+              'border-slate-300 text-slate-400 dark:border-slate-700': {{ state }}.stageStatus[s.key] === 'idle',
+              'border-indigo-500 text-indigo-600 animate-pulse': {{ state }}.stageStatus[s.key] === 'active',
+              'border-emerald-500 bg-emerald-500 text-white': {{ state }}.stageStatus[s.key] === 'done',
+              'border-rose-500 bg-rose-500 text-white': {{ state }}.stageStatus[s.key] === 'error'}">
+          <span x-text="s.icon"></span>
+        </div>
+        <span class="text-[11px] text-slate-500 whitespace-nowrap" x-text="s.label"></span>
+      </div>
+      <div class="h-0.5 w-8 bg-slate-200 dark:bg-slate-700" x-show="i < stagesFor('{{ tab }}').length - 1"></div>
+    </div>
+  </template>
+</div>
+{% endmacro %}
+
+{# Live SSE log. Token rows only ever appear on Ask — nothing else streams tokens. #}
+{% macro events(state, ref) %}
+<div class="flex items-center justify-between mb-2">
+  <h3 class="text-sm font-semibold">Live events</h3>
+  <span class="text-xs text-slate-400" x-text="{{ state }}.events.length + ' messages'"></span>
+</div>
+<div class="h-72 overflow-y-auto space-y-1.5 mono text-xs" x-ref="{{ ref }}">
+  <template x-for="(e, i) in {{ state }}.events" :key="i">
+    <div class="rounded-md px-2 py-1.5 border-l-4" :class="{
+          'border-sky-400 bg-sky-50 dark:bg-sky-950/40': e.type === 'progress',
+          'border-violet-400 bg-violet-50 dark:bg-violet-950/40': e.type === 'token',
+          'border-emerald-400 bg-emerald-50 dark:bg-emerald-950/40': e.type === 'result',
+          'border-rose-400 bg-rose-50 dark:bg-rose-950/40': e.type === 'error'}">
+      <div class="flex items-center justify-between gap-2">
+        <span class="font-semibold uppercase tracking-wide" x-text="e.type + (e.stage ? ':' + e.stage : '')"></span>
+        <span class="text-slate-400" x-text="e.elapsed_seconds !== undefined ? e.elapsed_seconds + 's' : ''"></span>
+      </div>
+      <div x-show="e.type === 'progress'" x-text="(e.message || '').replace(/^\S+\s/, '')"></div>
+      <div x-show="e.type === 'token'"><span x-show="e.is_thinking" class="italic text-slate-400">(thinking)
+        </span><span x-text="e.text"></span></div>
+      <div x-show="e.type === 'result'" class="text-slate-500">final result received</div>
+      <div x-show="e.type === 'error'" x-text="e.error"></div>
+    </div>
+  </template>
+  <p x-show="!{{ state }}.events.length" class="text-slate-400 italic">No events yet — run to see the stream live.</p>
+</div>
+{% endmacro %}
+
+{# Table/column picker. Identical for both tabs: Ask simply has no locked columns,
+   so the cached chips and the lock guards render as nothing there. #}
+{% macro picker(sel) %}
+<div class="flex items-center gap-3 text-xs mb-2">
+  <span class="text-slate-400">Pick columns per table; picks show as tags.</span>
+  <span class="text-slate-400 ml-auto" x-text="selectionSummary({{ sel }})"></span>
+  <button @click="selectAll({{ sel }}, true)" class="hover:underline">Select all</button>
+  <button @click="selectAll({{ sel }}, false)" class="hover:underline">Clear</button>
+</div>
+<div class="space-y-1.5 max-h-96 overflow-auto">
+  <template x-for="[t, node] in Object.entries({{ sel }})" :key="t">
+    <div class="{{ BOX }}" @click.outside="node.open = false">
+      <div class="flex items-center gap-2 px-2 py-1.5">
+        <span class="font-medium text-sm mono flex-1 truncate" x-text="t"></span>
+        <span x-show="node.cached" x-text="agoBadge(node.cached)"
+          class="text-[10px] rounded-full px-2 py-0.5 bg-emerald-100 text-emerald-700
+                 dark:bg-emerald-950/60 dark:text-emerald-300"></span>
+        <button type="button" @click="node.open = !node.open" class="{{ BTN_XS }} flex items-center gap-1 shrink-0">
+          <span x-text="colBadge(node)"></span><span x-text="node.open ? '▴' : '▾'"></span>
+        </button>
+      </div>
+      <div class="flex flex-wrap gap-1 px-2 pb-1.5" x-show="colCount(node)">
+        <template x-for="c in lockedCols(node)" :key="'L' + c">
+          <span title="Already cached — excluded from Run (edit via Show cached profile)"
+            class="{{ CHIP }} bg-emerald-100 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300">
+            <span x-text="c"></span><span class="text-[9px] uppercase tracking-wide opacity-70">cached</span>
+          </span>
+        </template>
+        <template x-for="c in newCols(node)" :key="c">
+          <span class="{{ CHIP }} bg-indigo-100 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300">
+            <span x-text="c"></span>
+            <button type="button" class="leading-none hover:text-rose-500" @click="node.cols[c] = false">&times;</button>
+          </span>
+        </template>
+      </div>
+      <p x-show="!colCount(node)" class="px-2 pb-1.5 text-[11px] text-slate-400 italic">
+        No columns selected — table excluded.</p>
+      <div x-show="node.open" x-cloak class="border-t border-slate-200 dark:border-slate-700 p-2 space-y-1">
+        <input type="text" x-model="node.search" placeholder="Search columns…" class="{{ INPUT }}">
+        <div class="flex gap-3 text-[11px] text-slate-400 px-1">
+          <button type="button" @click="setTable(node, true)" class="hover:underline">Select all</button>
+          <button type="button" @click="setTable(node, false)" class="hover:underline">Clear</button>
+          <span class="ml-auto" x-text="newCols(node).length + ' selected'"></span>
+        </div>
+        <div class="max-h-44 overflow-auto">
+          <template x-for="c in filteredCols(node)" :key="c">
+            <button type="button" :disabled="isLocked(node, c)" @click="isLocked(node, c) || (node.cols[c] = !node.cols[c])"
+              class="flex w-full items-center gap-2 px-2 py-1 text-left text-xs rounded hover:bg-slate-100
+                     dark:hover:bg-slate-800 disabled:cursor-not-allowed">
+              <span class="flex h-3.5 w-3.5 items-center justify-center rounded border shrink-0 text-[10px] text-white"
+                :class="!node.cols[c] ? 'border-slate-400 dark:border-slate-500'
+                  : (isLocked(node, c) ? 'bg-emerald-500 border-emerald-500' : 'bg-indigo-600 border-indigo-600')"
+                x-text="node.cols[c] ? '✓' : ''"></span>
+              <span class="mono truncate" :class="isLocked(node, c) && 'text-slate-400'" x-text="c"></span>
+              <span x-show="isLocked(node, c)" class="ml-auto text-[10px] text-emerald-600 dark:text-emerald-400">cached</span>
+            </button>
+          </template>
+          <p x-show="!filteredCols(node).length" class="text-[11px] text-slate-400 italic px-2 py-1">No matching columns.</p>
+        </div>
+      </div>
+    </div>
+  </template>
+</div>
+{% endmacro %}
+
+{# Per-column statistics for one profiled table; `actions` adds the cache edit buttons. #}
+{% macro columns_table(src, actions=false) %}
+<div class="overflow-auto max-h-72 {{ BOX }}">
+  <table class="w-full text-xs">
+    <thead class="bg-slate-100 dark:bg-slate-800 sticky top-0">
+      <tr>
+        {% for h in ['Column', 'Type', 'Nulls', 'Distinct', 'Min / Max', 'Summary'] %}
+        <th class="{{ TH }}">{{ h }}</th>
+        {% endfor %}
+        {% if actions %}<th class="px-2 py-1.5 text-right">Actions</th>{% endif %}
+      </tr>
+    </thead>
+    <tbody>
+      <template x-for="[cname, c] in Object.entries(t.columns || {})" :key="cname">
+        <tr class="{{ ROW }}">
+          <td class="px-2 py-1 mono" x-text="cname"></td>
+          <td class="px-2 py-1 mono" x-text="c.column_type"></td>
+          <td class="px-2 py-1" x-text="c.null_count"></td>
+          <td class="px-2 py-1" x-text="c.distinct_count"></td>
+          <td class="px-2 py-1 mono" x-text="(c.min_value ?? '') + ' / ' + (c.max_value ?? '')"></td>
+          <td class="px-2 py-1 text-slate-500" x-text="summaryFor({{ src }}, tname, cname)"></td>
+          {% if actions %}
+          <td class="px-2 py-1">
+            <div class="flex justify-end gap-2">
+              <button @click="refreshCache(tname, [cname])" :disabled="profile.cacheBusy" x-html="icon('reload', 13)"
+                aria-label="Refresh column" title="Re-profile this column"
+                class="hover:text-indigo-600 disabled:opacity-40"></button>
+              <button @click="deleteCache(tname, cname)" :disabled="profile.cacheBusy" x-html="icon('trash', 13)"
+                aria-label="Delete column" title="Delete this column"
+                class="hover:text-rose-600 disabled:opacity-40"></button>
+            </div>
+          </td>
+          {% endif %}
+        </tr>
+      </template>
+    </tbody>
+  </table>
+</div>
+{% endmacro %}
+
+{# Stat tiles from [label, value] pairs — LLM usage bars and the benchmark report. #}
+{% macro tiles(items) %}
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+  <template x-for="s in {{ items }}" :key="s[0]">
+    <div class="rounded-md bg-slate-100 dark:bg-slate-800 p-2 text-center">
+      <div class="text-base font-semibold" x-text="s[1]"></div>
+      <div class="text-[10px] uppercase tracking-wide text-slate-500" x-text="s[0]"></div>
+    </div>
+  </template>
+</div>
+{% endmacro %}
+
+{# Error banner. #}
+{% macro alert(expr) %}
+<div x-show="{{ expr }}" x-text="{{ expr }}" x-cloak
+  class="rounded-md border border-rose-300 bg-rose-50 dark:bg-rose-950/40 p-3 text-sm
+         text-rose-700 dark:text-rose-300"></div>
+{% endmacro %}
+
+
+{# Highlighted SQL + its result rows — the benchmark's predicted/gold comparison. #}
+{% macro sql_pane(title, sql, rows) %}
+<div>
+  <div class="text-[11px] uppercase tracking-wide text-slate-400 mb-1">{{ title }}</div>
+  <pre class="rounded-md overflow-x-auto"><code class="language-sql mono text-xs" x-html="highlightSql({{ sql }})"></code></pre>
+  <div class="mt-1" x-html="resultTable({{ rows }})"></div>
+</div>
+{% endmacro %}
+
+{# Read-only table: headers declared once, the caller supplies the <td> cells. #}
+{% macro table(headers, rows, key, var='r', height='72') %}
+<div class="overflow-auto max-h-{{ height }} {{ BOX }}">
+  <table class="w-full text-xs">
+    <thead class="bg-slate-100 dark:bg-slate-800 sticky top-0">
+      <tr>{% for h in headers %}<th class="{{ TH }}">{{ h }}</th>{% endfor %}</tr>
+    </thead>
+    <tbody>
+      <template x-for="{{ var }} in {{ rows }}" :key="{{ key }}">
+        <tr class="{{ ROW }}">{{ caller() }}</tr>
+      </template>
+    </tbody>
+  </table>
+</div>
+{% endmacro %}
